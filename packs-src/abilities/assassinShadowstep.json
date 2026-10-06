@@ -52,7 +52,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "move",
+        "mode": "teleport",
+        "tiles": 3,
+        "through": true,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "move 3 ignoring enemies or free row swap"
+    ],
+    "automation": "full",
     "identifier": "assassinShadowstep"
   },
   "effects": [],

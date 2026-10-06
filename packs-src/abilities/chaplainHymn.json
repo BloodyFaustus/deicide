@@ -34,7 +34,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "companiesInRadius",
+      "effects": [
+        {
+          "kind": "pool",
+          "key": "strength",
+          "delta": 5,
+          "target": "companies"
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "chaplainHymn"
   },
   "effects": [],

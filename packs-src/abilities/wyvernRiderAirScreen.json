@@ -36,7 +36,31 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "companiesInRadius",
+      "companyTypes": [
+        "flying"
+      ],
+      "effects": [
+        {
+          "kind": "applyStatus",
+          "statusId": "ordered",
+          "target": "companies",
+          "turns": "thisPhase",
+          "modifiers": [
+            {
+              "key": "avoid",
+              "value": 10
+            }
+          ]
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "wyvernRiderAirScreen"
   },
   "effects": [],

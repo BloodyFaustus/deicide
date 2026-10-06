@@ -1,0 +1,61 @@
+<div class="gm-tool-root">
+  <div class="dials">
+    <label>{{localize "DEICIDE.Generate.KindLabel"}}
+      <select name="kind"><option value="war" {{#if isWar}}selected{{/if}}>{{localize "DEICIDE.Generate.WarCard"}}</option><option value="dungeon" {{#unless isWar}}selected{{/unless}}>{{localize "DEICIDE.Generate.DungeonCard"}}</option></select></label>
+    <label>{{localize "DEICIDE.Generate.Name"}} <input type="text" name="name" value="{{input.name}}"></label>
+    <label>{{localize "DEICIDE.Generate.Month"}} <input type="number" name="warMonth" value="{{input.warMonth}}" min="1" max="12"></label>
+    <label>{{localize "DEICIDE.Generate.DifficultyLabel"}}
+      <select name="difficulty">{{#each difficulties}}<option value="{{id}}" {{#if (eq id @root.input.difficulty)}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+  </div>
+
+  {{#if isWar}}
+  <h3>{{localize "DEICIDE.Generate.Map"}}</h3>
+  <div class="dials">
+    <label>{{localize "DEICIDE.Generate.Width"}} <input type="number" name="mapWidth" value="{{input.mapWidth}}" min="8" max="60"></label>
+    <label>{{localize "DEICIDE.Generate.Height"}} <input type="number" name="mapHeight" value="{{input.mapHeight}}" min="8" max="60"></label>
+    <label><input type="checkbox" name="fog" {{#if input.fog}}checked{{/if}}> {{localize "DEICIDE.Generate.Fog"}}</label>
+    <label><input type="checkbox" name="naval" {{#if input.naval}}checked{{/if}}> {{localize "DEICIDE.Generate.Naval"}}</label>
+    <label><input type="checkbox" name="arena" {{#if input.arena}}checked{{/if}}> {{localize "DEICIDE.Generate.Arena"}}</label>
+  </div>
+  <div class="form-group"><label>{{localize "DEICIDE.Generate.Terrain"}}</label><input type="text" name="terrain" value="{{input.terrain}}" placeholder="{{localize 'DEICIDE.Generate.TerrainHint'}}"></div>
+  <div class="dials">
+    <label>{{localize "DEICIDE.Generate.VictoryLabel"}}
+      <select name="victoryType">{{#each victoryTypes}}<option value="{{id}}" {{#if (eq id @root.input.victoryType)}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+    {{#if (eq input.victoryType "survive")}}<label>{{localize "DEICIDE.Generate.Rounds"}} <input type="number" name="victoryRounds" value="{{input.victoryRounds}}" min="1"></label>{{/if}}
+  </div>
+  <div class="form-group"><label>{{localize "DEICIDE.Generate.VictoryNote"}}</label><input type="text" name="victoryNote" value="{{input.victoryNote}}"></div>
+  <div class="form-group"><label>{{localize "DEICIDE.Generate.Defeat"}}</label><input type="text" name="defeat" value="{{input.defeat}}"></div>
+
+  <h3>{{localize "DEICIDE.Generate.Army"}}</h3>
+  <div class="dials">
+    <label>{{localize "DEICIDE.Generate.SideLabel"}}
+      <select name="side">{{#each sides}}<option value="{{id}}" {{#if (eq id @root.input.side)}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+    <label>{{localize "DEICIDE.Generate.BattleSizeLabel"}}
+      <select name="battleSize">{{#each battleSizes}}<option value="{{id}}" {{#if (eq id @root.input.battleSize)}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+    <label>{{localize "DEICIDE.Generate.Officers"}} <input type="number" name="officers" value="{{input.officers}}" min="0" max="6"></label>
+    <label><input type="checkbox" name="chained" {{#if input.chained}}checked{{/if}}> {{localize "DEICIDE.Generate.Chained"}}</label>
+    <button type="button" data-action="pullArmy"><i class="fa-solid fa-people-group"></i> {{localize "DEICIDE.Generate.PullArmy"}}</button>
+    {{#if army}}<button type="button" data-action="clearArmy"><i class="fa-solid fa-xmark"></i> {{localize "DEICIDE.Generate.ClearArmy"}}</button>{{/if}}
+  </div>
+  {{#if army}}
+  <p class="summary">{{army.text}}</p>
+  <ul class="plain">{{#each army.officers}}<li>{{this}}</li>{{/each}}</ul>
+  {{/if}}
+  {{else}}
+  <h3>{{localize "DEICIDE.Generate.Expedition"}}</h3>
+  <div class="form-group"><label>{{localize "DEICIDE.Generate.Region"}}</label><input type="text" name="region" value="{{input.region}}"></div>
+  <div class="form-group"><label>{{localize "DEICIDE.Generate.Floors"}}</label><input type="text" name="floors" value="{{input.floors}}" placeholder="{{localize 'DEICIDE.Generate.FloorsHint'}}"></div>
+  <div class="form-group stacked"><label>{{localize "DEICIDE.Generate.Encounters"}}</label><textarea name="encounters" rows="4" placeholder="{{localize 'DEICIDE.Generate.EncountersHint'}}">{{input.encounters}}</textarea></div>
+  <div class="form-group"><label>{{localize "DEICIDE.Generate.Boss"}}</label>
+    <select name="bossId"><option value="">{{localize "DEICIDE.Generate.None"}}</option>{{#each monsters}}<option value="{{id}}" {{#if (eq id @root.input.bossId)}}selected{{/if}}>{{name}}{{#if boss}} ({{localize "DEICIDE.Generate.BossTag"}}){{/if}}</option>{{/each}}</select></div>
+  <div class="form-group"><label>{{localize "DEICIDE.Generate.Hazards"}}</label><input type="text" name="hazards" value="{{input.hazards}}" placeholder="{{localize 'DEICIDE.Generate.HazardsHint'}}"></div>
+  {{/if}}
+
+  <h3>{{localize "DEICIDE.Generate.Payout"}}</h3>
+  <div class="form-group"><label>{{localize "DEICIDE.Generate.PayoutTracks"}}</label><input type="text" name="payoutTracks" value="{{input.payoutTracks}}" placeholder="fortifications +1, soldiers +1"></div>
+  <div class="form-group"><label>{{localize "DEICIDE.Generate.Drops"}}</label><input type="text" name="drops" value="{{input.drops}}" placeholder="redWater, steelGauntlet"></div>
+  <div class="form-group"><label>{{localize "DEICIDE.Generate.PayoutDust"}}</label><input type="number" name="dust" value="{{input.dust}}" min="0"></div>
+  <div class="form-group stacked"><label>{{localize "DEICIDE.Generate.Briefing"}}</label><textarea name="briefing" rows="3">{{input.briefing}}</textarea></div>
+
+  {{#if isGM}}<p class="buttons"><button type="button" data-action="publish"><i class="fa-solid fa-book-open"></i> {{localize "DEICIDE.Generate.Publish"}}</button></p>{{/if}}
+</div>

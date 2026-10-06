@@ -1,10 +1,10 @@
 <section class="tab standing {{tab.cssClass}}" data-tab="standing" data-group="primary">
   <div class="columns">
     <div class="column">
-      <h3>Faction Standing <small>0 to 100</small> <button type="button" class="inline-control icon fa-solid fa-plus" data-action="addStanding" data-tooltip="Track another faction"></button></h3>
+      <h3>{{localize "DEICIDE.Character.FactionStanding"}} <small>{{localize "DEICIDE.Character.StandingRange"}}</small> <button type="button" class="inline-control icon fa-solid fa-plus" data-action="addStanding" data-tooltip="{{localize 'DEICIDE.Character.TrackFaction'}}"></button></h3>
       <ul class="standing-list plain">
         {{#each standing}}
-        <li class="band-{{band}}"><span>{{label}}</span><input type="number" data-standing="{{id}}" value="{{value}}" min="0" max="100" placeholder="untracked"><small>{{band}}</small></li>
+        <li class="band-{{band}}"><span>{{label}}</span><input type="number" data-standing="{{id}}" value="{{value}}" min="0" max="100" placeholder="{{localize 'DEICIDE.Character.Untracked'}}"><small>{{band}}</small></li>
         {{/each}}
         {{#each extraStanding}}
         <li class="band-{{band}}"><span>{{label}}</span><input type="number" data-standing="{{id}}" value="{{value}}" min="0" max="100"><small>{{band}}</small></li>
@@ -12,7 +12,7 @@
       </ul>
     </div>
     <div class="column">
-      <h3>Bonds <button type="button" class="inline-control icon fa-solid fa-plus" data-action="addBond" data-tooltip="New Bond"></button></h3>
+      <h3>{{localize "DEICIDE.Character.Bonds"}} <button type="button" class="inline-control icon fa-solid fa-plus" data-action="addBond" data-tooltip="{{localize 'DEICIDE.Character.NewBond'}}"></button></h3>
       <ul class="bond-list plain">
         {{#each bonds}}
         <li class="{{#if broken}}broken{{/if}}">
@@ -20,25 +20,25 @@
           <input type="number" name="system.bonds.{{@index}}.points" value="{{points}}" min="0">
           <strong>{{rank}}</strong>
           <select name="system.bonds.{{@index}}.skill">
-            <option value="">no skill</option>
+            <option value="">{{localize "DEICIDE.Character.NoSkill"}}</option>
             {{#each @root.bondSkills}}<option value="{{this}}" {{#if (eq this ../skill)}}selected{{/if}}>{{this}}</option>{{/each}}
           </select>
           <button type="button" class="inline-control icon fa-solid fa-trash" data-action="removeBond" data-actor-id="{{actorId}}"></button>
         </li>
         {{else}}
-        <li class="empty">No Bonds. C at 3 points, B at 8, A at 15.</li>
+        <li class="empty">{{localize "DEICIDE.Character.NoBonds"}}</li>
         {{/each}}
       </ul>
 
-      <h3>Recruitment</h3>
+      <h3>{{localize "DEICIDE.Character.Recruitment"}}</h3>
       <div class="recruit">
-        <label>Profile <select name="system.recruit.profile"><option value="">story PC</option>{{#each profiles}}<option value="{{this}}" {{#if (eq this @root.recruit.profile)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
-        <label>Status <input type="text" name="system.recruit.status" value="{{recruit.status}}" placeholder="known, attached, sworn, bound"></label>
-        <label>Personal skill <input type="text" name="system.recruit.personalSkillId" value="{{recruit.personalSkillId}}" placeholder="ability id"></label>
-        <label><input type="checkbox" name="system.recruit.gmRun" {{#if recruit.gmRun}}checked{{/if}}> GM run</label>
+        <label>{{localize "DEICIDE.Character.Profile"}} <select name="system.recruit.profile"><option value="">{{localize "DEICIDE.Character.StoryPC"}}</option>{{#each profiles}}<option value="{{this}}" {{#if (eq this @root.recruit.profile)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
+        <label>{{localize "DEICIDE.Character.Status"}} <input type="text" name="system.recruit.status" value="{{recruit.status}}" placeholder="{{localize 'DEICIDE.Character.StatusHint'}}"></label>
+        <label>{{localize "DEICIDE.Character.PersonalSkill"}} <input type="text" name="system.recruit.personalSkillId" value="{{recruit.personalSkillId}}" placeholder="{{localize 'DEICIDE.Character.AbilityId'}}"></label>
+        <label><input type="checkbox" name="system.recruit.gmRun" {{#if recruit.gmRun}}checked{{/if}}> {{localize "DEICIDE.Character.GmRun"}}</label>
       </div>
       {{#if personalStanding.length}}
-      <h3>Personal Standing</h3>
+      <h3>{{localize "DEICIDE.Character.PersonalStanding"}}</h3>
       <ul class="plain">{{#each personalStanding}}<li>{{name}}: {{value}}</li>{{/each}}</ul>
       {{/if}}
     </div>

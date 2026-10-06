@@ -36,10 +36,34 @@
       {
         "key": "immune",
         "value": "rowSwap"
+      },
+      {
+        "key": "immune",
+        "value": "push"
+      },
+      {
+        "key": "immune",
+        "value": "pull"
       }
     ],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "flag",
+        "key": "immovable",
+        "value": true,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "pull",
+      "swap",
+      "immune to push"
+    ],
+    "automation": "full",
     "identifier": "knightImmovable"
   },
   "effects": [],

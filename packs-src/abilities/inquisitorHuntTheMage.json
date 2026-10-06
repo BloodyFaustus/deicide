@@ -32,9 +32,24 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "might",
+        "value": 6,
+        "when": {
+          "targetClassType": "caster"
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Might \\+6 vs Caster"
+    ],
+    "automation": "full",
     "identifier": "inquisitorHuntTheMage"
   },
   "effects": [],

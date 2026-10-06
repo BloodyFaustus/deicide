@@ -16,8 +16,8 @@
     "direct": false,
     "trigger": "",
     "usage": {
-      "limit": null,
-      "per": null
+      "limit": 1,
+      "per": "targetPerEncounter"
     },
     "cost": {
       "channel": 0,
@@ -48,7 +48,15 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "partial",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "no Channel",
+      "once per target per encounter"
+    ],
+    "automation": "full",
     "identifier": "chirurgeonFieldDressing"
   },
   "effects": [],

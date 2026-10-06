@@ -5,7 +5,7 @@
   "img": "icons/svg/skull.svg",
   "system": {
     "identifier": "pride",
-    "level": 28,
+    "level": 26,
     "hp": {
       "value": 600,
       "max": 600
@@ -14,6 +14,7 @@
     "res": 20,
     "spd": 18,
     "mag": 26,
+    "skl": 0,
     "delay": {
       "mode": "fixed",
       "value": 30
@@ -43,7 +44,8 @@
         "redWater",
         "redWater",
         "philosophersStone"
-      ]
+      ],
+      "divineAttention": 0
     },
     "row": "front",
     "description": "<p></p>",
@@ -112,6 +114,11 @@
         "modifiers": [],
         "roll": null,
         "art": null,
+        "effects": [],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [],
         "automation": "manual"
       },
       "effects": [],
@@ -194,7 +201,12 @@
         "modifiers": [],
         "roll": null,
         "art": null,
-        "automation": "partial"
+        "effects": [],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [],
+        "automation": "full"
       },
       "effects": [],
       "folder": null,
@@ -262,6 +274,11 @@
         "modifiers": [],
         "roll": null,
         "art": null,
+        "effects": [],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [],
         "automation": "manual"
       },
       "effects": [],
@@ -346,7 +363,12 @@
         "modifiers": [],
         "roll": null,
         "art": null,
-        "automation": "partial"
+        "effects": [],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [],
+        "automation": "full"
       },
       "effects": [],
       "folder": null,

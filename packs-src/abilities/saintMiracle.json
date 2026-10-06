@@ -46,7 +46,26 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "revive",
+        "fraction": 1,
+        "target": "ally"
+      }
+    ],
+    "reaction": {
+      "trigger": "allyDowned",
+      "window": {
+        "tiles": 99,
+        "row": "any"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "they live at full HP"
+    ],
+    "automation": "full",
     "identifier": "saintMiracle"
   },
   "effects": [],

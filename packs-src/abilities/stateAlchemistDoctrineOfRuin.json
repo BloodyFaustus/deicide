@@ -34,7 +34,27 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "companiesInRadius",
+      "effects": [
+        {
+          "kind": "applyStatus",
+          "statusId": "ordered",
+          "target": "companies",
+          "turns": "thisPhase",
+          "flags": {
+            "ignoreFortAvoid": true
+          }
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [
+      "companies in radius ignore enemy Fort Avoid this phase"
+    ],
+    "automation": "full",
     "identifier": "stateAlchemistDoctrineOfRuin"
   },
   "effects": [],

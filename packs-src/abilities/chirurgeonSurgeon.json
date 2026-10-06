@@ -34,7 +34,20 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "partial",
+    "effects": [
+      {
+        "kind": "revive",
+        "fraction": 0.25,
+        "target": "ally"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "revive a Downed ally at 25 percent"
+    ],
+    "automation": "full",
     "identifier": "chirurgeonSurgeon"
   },
   "effects": [],

@@ -34,7 +34,26 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "applyStatus",
+        "statusId": "stagger",
+        "target": "target",
+        "turns": 1,
+        "chance": "onHit",
+        "trigger": "ownAttack",
+        "when": {
+          "actionId": "lancerLanceCharge"
+        }
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "charge hits inflict Stagger"
+    ],
+    "automation": "full",
     "identifier": "lancerShock"
   },
   "effects": [],

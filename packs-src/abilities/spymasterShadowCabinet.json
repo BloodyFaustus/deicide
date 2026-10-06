@@ -32,9 +32,22 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "preBattleSabotage",
+        "op": "set",
+        "value": 2
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "two pre battle sabotage effects instead of one"
+    ],
+    "automation": "full",
     "identifier": "spymasterShadowCabinet"
   },
   "effects": [],

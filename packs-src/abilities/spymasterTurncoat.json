@@ -36,7 +36,31 @@
     "roll": {
       "formula": "3 * skl - 2 * enemyOfficerCmd"
     },
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "oneEnemyCompany",
+      "radius": 99,
+      "roll": {
+        "d100Under": "3 * skl - 2 * enemyOfficerCmd"
+      },
+      "when": {
+        "targetHpBelow": 0.4
+      },
+      "effects": [
+        {
+          "kind": "flag",
+          "key": "turncoat",
+          "value": true,
+          "target": "companies"
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [
+      "one enemy company under Strength 40 joins you"
+    ],
+    "automation": "full",
     "identifier": "spymasterTurncoat"
   },
   "effects": [],

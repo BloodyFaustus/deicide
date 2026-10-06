@@ -1,0 +1,5579 @@
+{
+ "summary": {
+  "label": "Run 4: Mire Drake alone at party level 8 (Deadly)",
+  "seeds": 100,
+  "outcomes": {
+   "victory": 100,
+   "defeat": 0,
+   "timeout": 0
+  },
+  "rotations": {
+   "mean": 7.61,
+   "p10": 6,
+   "p90": 9,
+   "n": 100
+  },
+  "bossActions": {
+   "mean": 6.22,
+   "p10": 5,
+   "p90": 7,
+   "n": 100
+  },
+  "ticks": {
+   "mean": 172.3,
+   "p10": 140,
+   "p90": 204,
+   "n": 100
+  },
+  "damageBy": {
+   "Mercer": {
+    "mean": 108.55,
+    "p10": 82,
+    "p90": 143,
+    "n": 100
+   },
+   "Hyacinth": {
+    "mean": 64.84,
+    "p10": 50,
+    "p90": 87,
+    "n": 100
+   },
+   "Rista": {
+    "mean": 99.45,
+    "p10": 85,
+    "p90": 125,
+    "n": 100
+   },
+   "Xidrathira": {
+    "mean": 56.63,
+    "p10": 42,
+    "p90": 73,
+    "n": 100
+   }
+  },
+  "overcast": {
+   "Mercer": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   },
+   "Hyacinth": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   },
+   "Rista": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   },
+   "Xidrathira": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   }
+  },
+  "burn": {
+   "Mercer": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   },
+   "Hyacinth": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   },
+   "Rista": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   },
+   "Xidrathira": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   }
+  },
+  "harvests": {
+   "Mercer": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   },
+   "Hyacinth": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   },
+   "Rista": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   },
+   "Xidrathira": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   }
+  },
+  "soulPriceHp": {
+   "Mercer": {
+    "mean": 20.4,
+    "p10": 16,
+    "p90": 24,
+    "n": 100
+   },
+   "Hyacinth": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   },
+   "Rista": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   },
+   "Xidrathira": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   }
+  },
+  "partyHpPercent": {
+   "mean": 74.07,
+   "p10": 61,
+   "p90": 81,
+   "n": 100
+  },
+  "downedPerFight": {
+   "mean": 0.34,
+   "p10": 0,
+   "p90": 1,
+   "n": 100
+  },
+  "reactions": {
+   "alchemistDeconstruct": 354,
+   "knightGuardian": 254
+  },
+  "dualStrikes": 0,
+  "anomalies": 0
+ },
+ "results": [
+  {
+   "rotations": 10,
+   "bossActions": 8,
+   "ticksElapsed": 220,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 11,
+    "Xidrathira": 4,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4801,
+   "partyHpPercent": 66,
+   "damageBy": {
+    "Mercer": 61,
+    "Hyacinth": 50,
+    "Rista": 145,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 81,
+   "enemyActions": 8,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 29
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4802,
+   "partyHpPercent": 89,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 75,
+    "Rista": 80,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 2,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 198,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4803,
+   "partyHpPercent": 61,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 75,
+    "Rista": 125,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 80,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 154,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4804,
+   "partyHpPercent": 80,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 85,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 23,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 154,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4805,
+   "partyHpPercent": 89,
+   "damageBy": {
+    "Mercer": 143,
+    "Hyacinth": 50,
+    "Rista": 85,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 2,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4806,
+   "partyHpPercent": 78,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 85,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 29,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 154,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4807,
+   "partyHpPercent": 73,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 95,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 42,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4808,
+   "partyHpPercent": 78,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 90,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 29,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 10,
+   "bossActions": 8,
+   "ticksElapsed": 220,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 11,
+    "Xidrathira": 4,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4809,
+   "partyHpPercent": 53,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 50,
+    "Rista": 125,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 100,
+   "enemyActions": 8,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 28
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4810,
+   "partyHpPercent": 67,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 75,
+    "Rista": 105,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 66,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 198,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4811,
+   "partyHpPercent": 75,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 75,
+    "Rista": 120,
+    "Xidrathira": 52
+   },
+   "enemyDamage": 47,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4812,
+   "partyHpPercent": 76,
+   "damageBy": {
+    "Mercer": 102,
+    "Hyacinth": 87,
+    "Rista": 95,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 41,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 10,
+   "bossActions": 8,
+   "ticksElapsed": 220,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 11,
+    "Xidrathira": 4,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4813,
+   "partyHpPercent": 54,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 62,
+    "Rista": 125,
+    "Xidrathira": 52
+   },
+   "enemyDamage": 97,
+   "enemyActions": 8,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 28
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4814,
+   "partyHpPercent": 82,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 95,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 20,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 1
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 204,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 4,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4815,
+   "partyHpPercent": 60,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 75,
+    "Rista": 130,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 82,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 26
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4816,
+   "partyHpPercent": 76,
+   "damageBy": {
+    "Mercer": 102,
+    "Hyacinth": 87,
+    "Rista": 100,
+    "Xidrathira": 62
+   },
+   "enemyDamage": 42,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 11,
+   "bossActions": 9,
+   "ticksElapsed": 246,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 12,
+    "Xidrathira": 4,
+    "Hyacinth": 4,
+    "Mercer": 2
+   },
+   "seed": 4817,
+   "partyHpPercent": 68,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 87,
+    "Rista": 135,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 64,
+   "enemyActions": 9,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 31
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4818,
+   "partyHpPercent": 76,
+   "damageBy": {
+    "Mercer": 102,
+    "Hyacinth": 87,
+    "Rista": 100,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 41,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 154,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4819,
+   "partyHpPercent": 66,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 90,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 58,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 8,
+   "bossActions": 6,
+   "ticksElapsed": 176,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 9,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4820,
+   "partyHpPercent": 76,
+   "damageBy": {
+    "Mercer": 102,
+    "Hyacinth": 75,
+    "Rista": 105,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 41,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 24
+  },
+  {
+   "rotations": 8,
+   "bossActions": 6,
+   "ticksElapsed": 176,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 9,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4821,
+   "partyHpPercent": 68,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 87,
+    "Rista": 105,
+    "Xidrathira": 52
+   },
+   "enemyDamage": 65,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 204,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 4,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4822,
+   "partyHpPercent": 76,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 75,
+    "Rista": 105,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 42,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 27
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4823,
+   "partyHpPercent": 61,
+   "damageBy": {
+    "Mercer": 102,
+    "Hyacinth": 75,
+    "Rista": 85,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 81,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 154,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4824,
+   "partyHpPercent": 76,
+   "damageBy": {
+    "Mercer": 102,
+    "Hyacinth": 50,
+    "Rista": 95,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 42,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 8,
+   "bossActions": 6,
+   "ticksElapsed": 176,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 9,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4825,
+   "partyHpPercent": 72,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 75,
+    "Rista": 105,
+    "Xidrathira": 21
+   },
+   "enemyDamage": 44,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 24
+  },
+  {
+   "rotations": 10,
+   "bossActions": 8,
+   "ticksElapsed": 220,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 11,
+    "Xidrathira": 4,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4826,
+   "partyHpPercent": 61,
+   "damageBy": {
+    "Mercer": 41,
+    "Hyacinth": 75,
+    "Rista": 120,
+    "Xidrathira": 84
+   },
+   "enemyDamage": 81,
+   "enemyActions": 8,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 29
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4827,
+   "partyHpPercent": 81,
+   "damageBy": {
+    "Mercer": 143,
+    "Hyacinth": 50,
+    "Rista": 95,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 21,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 198,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4828,
+   "partyHpPercent": 69,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 50,
+    "Rista": 130,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 62,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4829,
+   "partyHpPercent": 81,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 75,
+    "Rista": 100,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 22,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 8,
+   "bossActions": 6,
+   "ticksElapsed": 176,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 9,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4830,
+   "partyHpPercent": 78,
+   "damageBy": {
+    "Mercer": 143,
+    "Hyacinth": 37,
+    "Rista": 110,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 29,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 24
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 154,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4831,
+   "partyHpPercent": 78,
+   "damageBy": {
+    "Mercer": 143,
+    "Hyacinth": 50,
+    "Rista": 95,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 29,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 154,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4832,
+   "partyHpPercent": 82,
+   "damageBy": {
+    "Mercer": 143,
+    "Hyacinth": 25,
+    "Rista": 90,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 20,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 204,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 4,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4833,
+   "partyHpPercent": 75,
+   "damageBy": {
+    "Mercer": 41,
+    "Hyacinth": 87,
+    "Rista": 115,
+    "Xidrathira": 84
+   },
+   "enemyDamage": 48,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 26
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4834,
+   "partyHpPercent": 81,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 87,
+    "Rista": 85,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 21,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 198,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4835,
+   "partyHpPercent": 61,
+   "damageBy": {
+    "Mercer": 102,
+    "Hyacinth": 87,
+    "Rista": 115,
+    "Xidrathira": 21
+   },
+   "enemyDamage": 81,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 204,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 4,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4836,
+   "partyHpPercent": 67,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 75,
+    "Rista": 115,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 66,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 26
+  },
+  {
+   "rotations": 8,
+   "bossActions": 6,
+   "ticksElapsed": 176,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 9,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4837,
+   "partyHpPercent": 80,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 75,
+    "Rista": 110,
+    "Xidrathira": 21
+   },
+   "enemyDamage": 23,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 24
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4838,
+   "partyHpPercent": 75,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 80,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 37,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 11,
+   "bossActions": 9,
+   "ticksElapsed": 242,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 12,
+    "Xidrathira": 4,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4839,
+   "partyHpPercent": 53,
+   "damageBy": {
+    "Mercer": 41,
+    "Hyacinth": 75,
+    "Rista": 145,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 99,
+   "enemyActions": 9,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 4
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 30
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4840,
+   "partyHpPercent": 80,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 75,
+    "Rista": 85,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 23,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4841,
+   "partyHpPercent": 63,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 75,
+    "Rista": 100,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 76,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 198,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4842,
+   "partyHpPercent": 73,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 75,
+    "Rista": 105,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 53,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 198,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4843,
+   "partyHpPercent": 55,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 87,
+    "Rista": 110,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 95,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 198,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4844,
+   "partyHpPercent": 66,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 105,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 58,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 26
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 198,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4845,
+   "partyHpPercent": 74,
+   "damageBy": {
+    "Mercer": 102,
+    "Hyacinth": 62,
+    "Rista": 110,
+    "Xidrathira": 52
+   },
+   "enemyDamage": 62,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 26
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4846,
+   "partyHpPercent": 81,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 85,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 21,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 154,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4847,
+   "partyHpPercent": 72,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 37,
+    "Rista": 90,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 43,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 204,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 4,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4848,
+   "partyHpPercent": 75,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 62,
+    "Rista": 110,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 48,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 26
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 154,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4849,
+   "partyHpPercent": 79,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 90,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 27,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4850,
+   "partyHpPercent": 81,
+   "damageBy": {
+    "Mercer": 143,
+    "Hyacinth": 25,
+    "Rista": 85,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 21,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4851,
+   "partyHpPercent": 87,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 62,
+    "Rista": 95,
+    "Xidrathira": 52
+   },
+   "enemyDamage": 8,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4852,
+   "partyHpPercent": 76,
+   "damageBy": {
+    "Mercer": 102,
+    "Hyacinth": 99,
+    "Rista": 100,
+    "Xidrathira": 52
+   },
+   "enemyDamage": 42,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4853,
+   "partyHpPercent": 76,
+   "damageBy": {
+    "Mercer": 143,
+    "Hyacinth": 50,
+    "Rista": 80,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 34,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 154,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4854,
+   "partyHpPercent": 80,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 90,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 23,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4855,
+   "partyHpPercent": 76,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 75,
+    "Rista": 90,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 34,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4856,
+   "partyHpPercent": 76,
+   "damageBy": {
+    "Mercer": 102,
+    "Hyacinth": 99,
+    "Rista": 90,
+    "Xidrathira": 52
+   },
+   "enemyDamage": 41,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4857,
+   "partyHpPercent": 81,
+   "damageBy": {
+    "Mercer": 143,
+    "Hyacinth": 50,
+    "Rista": 75,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 22,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 204,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 4,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4858,
+   "partyHpPercent": 90,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 25,
+    "Rista": 115,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 1,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 27
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4859,
+   "partyHpPercent": 67,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 75,
+    "Rista": 100,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 67,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4860,
+   "partyHpPercent": 72,
+   "damageBy": {
+    "Mercer": 102,
+    "Hyacinth": 99,
+    "Rista": 85,
+    "Xidrathira": 52
+   },
+   "enemyDamage": 43,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4861,
+   "partyHpPercent": 78,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 85,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 28,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4862,
+   "partyHpPercent": 81,
+   "damageBy": {
+    "Mercer": 143,
+    "Hyacinth": 50,
+    "Rista": 75,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 22,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4863,
+   "partyHpPercent": 67,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 75,
+    "Rista": 95,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 67,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4864,
+   "partyHpPercent": 81,
+   "damageBy": {
+    "Mercer": 102,
+    "Hyacinth": 75,
+    "Rista": 85,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 22,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4865,
+   "partyHpPercent": 78,
+   "damageBy": {
+    "Mercer": 143,
+    "Hyacinth": 62,
+    "Rista": 85,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 28,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 10,
+   "bossActions": 8,
+   "ticksElapsed": 220,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 11,
+    "Xidrathira": 4,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4866,
+   "partyHpPercent": 54,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 50,
+    "Rista": 125,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 98,
+   "enemyActions": 8,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 28
+  },
+  {
+   "rotations": 10,
+   "bossActions": 8,
+   "ticksElapsed": 220,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 11,
+    "Xidrathira": 4,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4867,
+   "partyHpPercent": 66,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 50,
+    "Rista": 135,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 68,
+   "enemyActions": 8,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 29
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4868,
+   "partyHpPercent": 81,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 99,
+    "Rista": 90,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 22,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 154,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4869,
+   "partyHpPercent": 73,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 85,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 42,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 204,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 4,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4870,
+   "partyHpPercent": 74,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 75,
+    "Rista": 100,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 50,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 27
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 204,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 4,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4871,
+   "partyHpPercent": 68,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 87,
+    "Rista": 120,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 65,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 26
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4872,
+   "partyHpPercent": 77,
+   "damageBy": {
+    "Mercer": 122,
+    "Hyacinth": 62,
+    "Rista": 75,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 40,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4873,
+   "partyHpPercent": 80,
+   "damageBy": {
+    "Mercer": 143,
+    "Hyacinth": 62,
+    "Rista": 90,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 23,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4874,
+   "partyHpPercent": 90,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 75,
+    "Xidrathira": 83
+   },
+   "enemyDamage": 0,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4875,
+   "partyHpPercent": 81,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 80,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 21,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4876,
+   "partyHpPercent": 76,
+   "damageBy": {
+    "Mercer": 102,
+    "Hyacinth": 87,
+    "Rista": 85,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 41,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 198,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4877,
+   "partyHpPercent": 74,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 75,
+    "Rista": 125,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 49,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4878,
+   "partyHpPercent": 76,
+   "damageBy": {
+    "Mercer": 102,
+    "Hyacinth": 75,
+    "Rista": 90,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 42,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 204,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 4,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4879,
+   "partyHpPercent": 65,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 62,
+    "Rista": 115,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 70,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 26
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 154,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4880,
+   "partyHpPercent": 87,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 85,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 8,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4881,
+   "partyHpPercent": 78,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 75,
+    "Rista": 105,
+    "Xidrathira": 21
+   },
+   "enemyDamage": 30,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4882,
+   "partyHpPercent": 72,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 75,
+    "Rista": 85,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 43,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 8,
+   "bossActions": 6,
+   "ticksElapsed": 176,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 9,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4883,
+   "partyHpPercent": 80,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 75,
+    "Rista": 105,
+    "Xidrathira": 21
+   },
+   "enemyDamage": 23,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 24
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 154,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4884,
+   "partyHpPercent": 78,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 80,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 29,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 154,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4885,
+   "partyHpPercent": 78,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 90,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 29,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 8,
+   "bossActions": 6,
+   "ticksElapsed": 176,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 9,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4886,
+   "partyHpPercent": 78,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 50,
+    "Rista": 100,
+    "Xidrathira": 52
+   },
+   "enemyDamage": 29,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 24
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4887,
+   "partyHpPercent": 77,
+   "damageBy": {
+    "Mercer": 122,
+    "Hyacinth": 75,
+    "Rista": 85,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 40,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 11,
+   "bossActions": 9,
+   "ticksElapsed": 246,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 12,
+    "Xidrathira": 4,
+    "Hyacinth": 4,
+    "Mercer": 4
+   },
+   "seed": 4888,
+   "partyHpPercent": 76,
+   "damageBy": {
+    "Mercer": 122,
+    "Hyacinth": 75,
+    "Rista": 120,
+    "Xidrathira": 21
+   },
+   "enemyDamage": 42,
+   "enemyActions": 9,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 5,
+    "knightGuardian": 4
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 33
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4889,
+   "partyHpPercent": 68,
+   "damageBy": {
+    "Mercer": 102,
+    "Hyacinth": 75,
+    "Rista": 85,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 65,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 8,
+   "bossActions": 6,
+   "ticksElapsed": 176,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 9,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4890,
+   "partyHpPercent": 76,
+   "damageBy": {
+    "Mercer": 102,
+    "Hyacinth": 50,
+    "Rista": 105,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 42,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 24
+  },
+  {
+   "rotations": 8,
+   "bossActions": 6,
+   "ticksElapsed": 176,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 9,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 2
+   },
+   "seed": 4891,
+   "partyHpPercent": 67,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 87,
+    "Rista": 105,
+    "Xidrathira": 52
+   },
+   "enemyDamage": 67,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 198,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4892,
+   "partyHpPercent": 75,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 62,
+    "Rista": 100,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 48,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 26
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 204,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 4,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4893,
+   "partyHpPercent": 76,
+   "damageBy": {
+    "Mercer": 102,
+    "Hyacinth": 75,
+    "Rista": 110,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 42,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 27
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4894,
+   "partyHpPercent": 78,
+   "damageBy": {
+    "Mercer": 143,
+    "Hyacinth": 50,
+    "Rista": 85,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 28,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 154,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 2
+   },
+   "seed": 4895,
+   "partyHpPercent": 61,
+   "damageBy": {
+    "Mercer": 102,
+    "Hyacinth": 50,
+    "Rista": 100,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 81,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4896,
+   "partyHpPercent": 81,
+   "damageBy": {
+    "Mercer": 143,
+    "Hyacinth": 50,
+    "Rista": 90,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 22,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4897,
+   "partyHpPercent": 76,
+   "damageBy": {
+    "Mercer": 132,
+    "Hyacinth": 50,
+    "Rista": 85,
+    "Xidrathira": 63
+   },
+   "enemyDamage": 41,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 16,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 6,
+   "bossActions": 5,
+   "ticksElapsed": 140,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 7,
+    "Xidrathira": 3,
+    "Hyacinth": 2,
+    "Mercer": 3
+   },
+   "seed": 4898,
+   "partyHpPercent": 78,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 62,
+    "Rista": 75,
+    "Xidrathira": 73
+   },
+   "enemyDamage": 28,
+   "enemyActions": 5,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 3,
+    "knightGuardian": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 198,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 10,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4899,
+   "partyHpPercent": 68,
+   "damageBy": {
+    "Mercer": 82,
+    "Hyacinth": 75,
+    "Rista": 125,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 64,
+   "enemyActions": 7,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 1,
+   "anomalies": 0,
+   "cards": 26
+  },
+  {
+   "rotations": 7,
+   "bossActions": 6,
+   "ticksElapsed": 164,
+   "outcome": "victory",
+   "partyActions": {
+    "Rista": 8,
+    "Xidrathira": 3,
+    "Hyacinth": 3,
+    "Mercer": 3
+   },
+   "seed": 4900,
+   "partyHpPercent": 81,
+   "damageBy": {
+    "Mercer": 123,
+    "Hyacinth": 75,
+    "Rista": 100,
+    "Xidrathira": 42
+   },
+   "enemyDamage": 21,
+   "enemyActions": 6,
+   "overcast": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "burn": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "harvests": {
+    "Mercer": 0,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "soulPriceHp": {
+    "Mercer": 24,
+    "Hyacinth": 0,
+    "Rista": 0,
+    "Xidrathira": 0
+   },
+   "reactions": {
+    "alchemistDeconstruct": 4,
+    "knightGuardian": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  }
+ ]
+}

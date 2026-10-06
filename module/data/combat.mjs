@@ -14,7 +14,11 @@ export class WarCombatData extends foundry.abstract.TypeDataModel {
         rounds: new fields.NumberField({required: true, nullable: true, integer: true, min: 1, initial: null}),
         note: new fields.StringField({required: true, blank: true, initial: ""})
       }),
-      log: new fields.ArrayField(new fields.ObjectField())
+      log: new fields.ArrayField(new fields.ObjectField()),
+
+      bondLog: new fields.ObjectField(),
+
+      reactionsUsed: new fields.ObjectField()
     };
   }
 }
@@ -34,7 +38,9 @@ export class DungeonCombatData extends foundry.abstract.TypeDataModel {
       arena: new fields.BooleanField({initial: false}),
       reactionsUsed: new fields.ObjectField(),
       barriers: new fields.SchemaField({party: pool(), enemy: pool()}),
-      log: new fields.ArrayField(new fields.ObjectField())
+      log: new fields.ArrayField(new fields.ObjectField()),
+
+      bondLog: new fields.ObjectField()
     };
   }
 }
@@ -55,7 +61,15 @@ export class UnitCombatantData extends foundry.abstract.TypeDataModel {
       row: new fields.StringField({required: true, choices: DEICIDE.dungeon.rows, initial: "front"}),
       tilesMoved: new fields.NumberField({required: true, integer: true, min: 0, initial: 0}),
       wardedTaken: new fields.NumberField({required: true, integer: true, min: 0, initial: 0}),
-      fled: new fields.BooleanField({initial: false})
+      fled: new fields.BooleanField({initial: false}),
+
+      activations: new fields.NumberField({required: true, integer: true, min: 0, initial: 0}),
+
+      reactionsThisRound: new fields.ObjectField(),
+
+      firedThisEncounter: new fields.ArrayField(new fields.StringField({required: true, blank: false})),
+
+      undamaged: new fields.BooleanField({initial: true})
     };
   }
 }
@@ -73,7 +87,16 @@ export class StatusEffectData extends foundry.data.ActiveEffectTypeDataModel {
       element: new fields.StringField({required: true, nullable: true, blank: false, initial: null}),
       sourceUuid: new fields.StringField({required: true, nullable: true, blank: false, initial: null}),
       row: new fields.StringField({required: true, nullable: true, blank: false, initial: null}),
-      description: new fields.HTMLField({required: true, blank: true, initial: ""})
+      description: new fields.HTMLField({required: true, blank: true, initial: ""}),
+
+      stance: new fields.BooleanField({initial: false}),
+      abilityId: new fields.StringField({required: true, blank: true, initial: ""}),
+
+      expires: new fields.ObjectField({required: true, nullable: true, initial: null}),
+
+      flags: new fields.ObjectField(),
+
+      modifiers: new fields.ArrayField(new fields.ObjectField())
     };
   }
 }

@@ -31,15 +31,15 @@
     "heal": null,
     "war": {
       "range": [
-        0,
-        0
+        1,
+        1
       ],
       "area": {
         "shape": "single",
         "size": 1
       },
       "target": "ally",
-      "movement": null,
+      "movement": "carry",
       "terrain": false
     },
     "dungeon": {
@@ -49,7 +49,21 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "move",
+        "mode": "carry",
+        "tiles": 4,
+        "target": "ally"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "carry adjacent ally 4 tiles"
+    ],
+    "automation": "full",
     "identifier": "wyvernRiderTalonGrip"
   },
   "effects": [],

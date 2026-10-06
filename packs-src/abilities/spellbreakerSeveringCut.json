@@ -55,7 +55,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "partial",
+    "effects": [
+      {
+        "kind": "pool",
+        "key": "channel",
+        "delta": "-floor(damage / 2)",
+        "target": "target",
+        "chance": "onHit"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "target loses Channel equal to damage/2"
+    ],
+    "automation": "full",
     "identifier": "spellbreakerSeveringCut"
   },
   "effects": [],

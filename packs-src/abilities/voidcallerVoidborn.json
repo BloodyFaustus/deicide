@@ -32,9 +32,25 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "opposedMultiplier",
+        "op": "set",
+        "value": 1,
+        "when": {
+          "actionElement": "divine"
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Divine deals x1\\.0 to you instead of x1\\.5"
+    ],
+    "automation": "full",
     "identifier": "voidcallerVoidborn"
   },
   "effects": [],

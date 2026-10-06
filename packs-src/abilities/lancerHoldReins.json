@@ -44,9 +44,29 @@
     },
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "defense.def",
+        "value": 4
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": {
+      "trigger": "targetedByAttack",
+      "window": {
+        "self": true
+      },
+      "when": {
+        "selfMoved": {
+          "min": 1
+        }
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "lancerHoldReins"
   },
   "effects": [],

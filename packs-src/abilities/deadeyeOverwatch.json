@@ -46,7 +46,24 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "counter"
+      }
+    ],
+    "reaction": {
+      "trigger": "enemyEnteredRange",
+      "window": {
+        "tiles": 4,
+        "row": "any"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "enemy moves within range"
+    ],
+    "automation": "full",
     "identifier": "deadeyeOverwatch"
   },
   "effects": [],

@@ -34,7 +34,27 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "companiesInRadius",
+      "effects": [
+        {
+          "kind": "applyStatus",
+          "statusId": "ordered",
+          "target": "companies",
+          "turns": "thisPhase",
+          "flags": {
+            "immuneDivine": true
+          }
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [
+      "companies in radius immune to Divine effects"
+    ],
+    "automation": "full",
     "identifier": "philosopherGreatWork"
   },
   "effects": [],

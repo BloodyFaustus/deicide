@@ -5,7 +5,7 @@
   "img": "icons/svg/village.svg",
   "system": {
     "kind": "background",
-    "description": "<p>Static (max 5), Omen, Lightning Strike origin Action. Soldier Rank 2.</p>",
+    "description": "<p>Static (max 5), Omen, Lightning Strike origin Action. Soldier Rank 2. Standing Dune tribes 70, Crown 30.</p>",
     "points": {
       "str": 2,
       "spd": 2
@@ -23,7 +23,11 @@
       "engines": [
         "originOmen"
       ],
-      "staticCharge": true
+      "staticCharge": true,
+      "standing": {
+        "duneTribes": 70,
+        "crown": 30
+      }
     },
     "story": true,
     "identifier": "duneHunter"

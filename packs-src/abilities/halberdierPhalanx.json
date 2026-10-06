@@ -34,7 +34,26 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "aura",
+        "radius": 1,
+        "target": "allies",
+        "modifiers": [
+          {
+            "key": "defense.def",
+            "value": 2
+          }
+        ]
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "adjacent allies DEF \\+2"
+    ],
+    "automation": "full",
     "identifier": "halberdierPhalanx"
   },
   "effects": [],

@@ -34,7 +34,32 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "companiesInRadius",
+      "companyTypes": [
+        "pike"
+      ],
+      "effects": [
+        {
+          "kind": "applyStatus",
+          "statusId": "ordered",
+          "target": "companies",
+          "turns": "thisPhase",
+          "modifiers": [
+            {
+              "key": "companyMultiplier.mounted",
+              "op": "set",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "halberdierPikeWall"
   },
   "effects": [],

@@ -46,7 +46,27 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "counter"
+      }
+    ],
+    "reaction": {
+      "trigger": "enemyMoved",
+      "window": {
+        "tiles": 3,
+        "row": "any"
+      },
+      "when": {
+        "targetType": "ship"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "enemy ship moves within 3"
+    ],
+    "automation": "full",
     "identifier": "admiralWeatherEye"
   },
   "effects": [],

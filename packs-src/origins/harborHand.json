@@ -5,7 +5,7 @@
   "img": "icons/svg/village.svg",
   "system": {
     "kind": "background",
-    "description": "<p>Mariner Rank 2.</p>",
+    "description": "<p>Mariner Rank 2. Standing Brasswater 55.</p>",
     "points": {
       "str": 2,
       "spd": 2
@@ -16,7 +16,10 @@
           "id": "mariner",
           "rank": 2
         }
-      ]
+      ],
+      "standing": {
+        "brasswater": 55
+      }
     },
     "identifier": "harborHand"
   },

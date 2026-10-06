@@ -1,19 +1,20 @@
 <div class="deicide-card action company">
+  {{#if (gt strikes 1)}}<p class="meta">{{localize "DEICIDE.Card.StrikesUnderOrders" strikes=strikes total=total}}</p>{{/if}}
   <header class="card-header">
     <img src="{{attacker.img}}" alt="{{attacker.name}}">
     <div>
-      <h3>{{attacker.name}} attacks {{target.name}}</h3>
-      <p class="meta">Quality {{attacker.system.quality}} ({{attacker.system.derived.qualityGrade}}), Strength {{attacker.system.strength}}{{#if charge}}, charge{{/if}}</p>
+      <h3>{{localize "DEICIDE.Card.Attacks" attacker=attacker.name target=target.name}}</h3>
+      <p class="meta">{{localize "DEICIDE.Common.Quality"}} {{attacker.system.quality}} ({{attacker.system.derived.qualityGrade}}), {{localize "DEICIDE.Common.Strength"}} {{attacker.system.strength}}{{#if charge}}, {{localize "DEICIDE.Card.Charge"}}{{/if}}</p>
     </div>
   </header>
-  <p class="roll-line">Hit {{hit}}%: d100 {{roll}}, {{#if success}}hit{{else}}miss{{/if}}</p>
+  <p class="roll-line">{{localize "DEICIDE.Card.HitChance" chance=hit}}: d100 {{roll}}, {{#if success}}{{localize "DEICIDE.Common.HitShort"}}{{else}}{{localize "DEICIDE.Common.Miss"}}{{/if}}</p>
   <details class="breakdown">
-    <summary>{{#if (eq targetKind "company")}}Strength{{else}}HP{{/if}} loss {{damage.total}}</summary>
+    <summary>{{#if (eq targetKind "company")}}{{localize "DEICIDE.Card.StrengthLoss" value=damage.total}}{{else}}{{localize "DEICIDE.Card.HpLoss" value=damage.total}}{{/if}}</summary>
     <ul class="plain">
-      <li>Attack {{damage.attack}}</li>
-      <li>Defense {{damage.defense}}</li>
+      <li>{{localize "DEICIDE.Card.AttackPart" value=damage.attack}}</li>
+      <li>{{localize "DEICIDE.Card.DefensePart" value=damage.defense}}</li>
       {{#if (ne damage.multiplier 1)}}<li>x{{damage.multiplier}}</li>{{/if}}
     </ul>
   </details>
-  {{#if success}}<button type="button" class="apply" data-action="applyTarget" data-index="0">Apply {{damage.total}}</button>{{/if}}
+  {{#if success}}<button type="button" class="apply" data-action="applyTarget" data-index="0">{{localize "DEICIDE.Common.Apply"}} {{damage.total}}</button>{{/if}}
 </div>

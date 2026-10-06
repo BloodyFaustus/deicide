@@ -32,9 +32,23 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "cost.matter",
+        "op": "set",
+        "value": 1,
+        "when": {
+          "actionId": "transmuterTransmuteTerrain"
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "transmuterArchitect"
   },
   "effects": [],

@@ -3,6 +3,7 @@ import {join} from "node:path";
 import {DEICIDE} from "../module/config.mjs";
 import {PACKS_SRC, pascalId, stableId, writeSource} from "./lib/sources.mjs";
 import {monsters, companies, scenarios} from "./content/actors.mjs";
+import {gradeAutomation} from "./lib/automation.mjs";
 
 function clean(folder) {
   const dir = join(PACKS_SRC, folder);
@@ -29,12 +30,7 @@ function moveItem(monsterId, mv) {
   const defense = mv.direct ? "none" : (mv.defense ?? "def");
   const dungeonTarget = {single: "single", row: "row", all: "all", column: "column", self: "self"}[lineMatch ? "column" : (mv.area ?? "single")];
   const text = [isAttack ? `M${mv.might} ${mv.area ?? "single"}` : null, mv.note].filter(Boolean).join(". ");
-  return {
-    _id: stableId("ability", id),
-    name: mv.name,
-    type: "ability",
-    img: isAttack ? "icons/svg/sword.svg" : "icons/svg/aura.svg",
-    system: {
+  const system = {
       identifier: id,
       type: "action",
       source: {kind: "monster", id: monsterId, rank: null},
@@ -57,8 +53,21 @@ function moveItem(monsterId, mv) {
       modifiers: [],
       roll: null,
       art: null,
-      automation: isAttack ? "partial" : "manual"
-    },
+      effects: mv.effects ?? [],
+      reaction: mv.reaction ?? null,
+      command: null,
+      stance: null,
+      coverage: mv.coverage ?? [],
+      automation: "manual"
+  };
+  system.type = mv.reaction ? "reaction" : "action";
+  system.automation = gradeAutomation(system).automation;
+  return {
+    _id: stableId("ability", id),
+    name: mv.name,
+    type: "ability",
+    img: isAttack ? "icons/svg/sword.svg" : "icons/svg/aura.svg",
+    system,
     effects: [], folder: null, sort: 0, ownership: {default: 0}, flags: {deicide: {generated: true}}
   };
 }
@@ -75,7 +84,7 @@ for ( const monster of monsters ) {
       identifier: monster.id,
       level: monster.level,
       hp: {value: monster.hp, max: monster.hp},
-      def: monster.def, res: monster.res, spd: monster.spd, mag: monster.mag ?? 0,
+      def: monster.def, res: monster.res, spd: monster.spd, mag: monster.mag ?? 0, skl: monster.skl ?? 0,
       delay: monster.delay ?? {mode: "spd", value: 30},
       hitBase: null,
       tags,
@@ -85,7 +94,7 @@ for ( const monster of monsters ) {
       resistance: monster.resistance ?? null,
       immunities: monster.immunities ?? [],
       phaseBreaks: (monster.phaseBreaks ?? []).map(entry => ({...entry, triggered: false})),
-      yield: {saturation: 0, dust: 0, drops: [], ...(monster.yield ?? {})},
+      yield: {saturation: 0, dust: 0, drops: [], divineAttention: 0, ...(monster.yield ?? {})},
       row: "front",
       description: `<p>${monster.description ?? ""}</p>`,
       notes: ""
@@ -112,7 +121,7 @@ for ( const company of companies ) {
       veterancy: 0, veterancyQuality: 0, owner: null, banner: "", named: false, routed: false, acted: false, facing: 0,
       notes: ""
     },
-    prototypeToken: {name: company.name, actorLink: true, displayBars: 50, texture: {src: company.type === "ship" ? "icons/svg/anchor.svg" : "icons/svg/tower.svg"}},
+    prototypeToken: {name: company.name, actorLink: true, displayBars: 50, bar1: {attribute: "hp"}, texture: {src: company.type === "ship" ? "icons/svg/anchor.svg" : "icons/svg/tower.svg"}},
     items: [], effects: [], folder: null, sort: 0, ownership: {default: 0}, flags: {deicide: {generated: true}}
   });
 }

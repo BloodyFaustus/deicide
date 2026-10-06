@@ -39,7 +39,22 @@
       }
     ],
     "roll": null,
-    "automation": "partial",
+    "effects": [
+      {
+        "kind": "pool",
+        "key": "divineAttention",
+        "delta": 1,
+        "target": "self",
+        "once": true
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Divine Attention \\+1"
+    ],
+    "automation": "full",
     "identifier": "diabolistPact"
   },
   "effects": [],

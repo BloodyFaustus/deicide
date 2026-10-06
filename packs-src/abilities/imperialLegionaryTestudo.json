@@ -39,6 +39,19 @@
       }
     ],
     "roll": null,
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": {
+      "modifiers": [
+        {
+          "key": "defense.def",
+          "value": 8
+        }
+      ],
+      "effects": []
+    },
+    "coverage": [],
     "automation": "full",
     "identifier": "imperialLegionaryTestudo"
   },

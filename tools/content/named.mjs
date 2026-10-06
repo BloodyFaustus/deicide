@@ -81,8 +81,8 @@ export const namedItems = [
     text: "Command radius +3. Companies in radius Quality +1."
   },
   {
-    id: "wallOfMarr",
-    name: "Wall of Marr",
+    id: "breakwaterAegis",
+    name: "Breakwater Aegis",
     slot: "offhand",
     base: {line: "towerShield", tier: "iron"},
     stats: {def: 8, avoid: -10, negateHitPerRound: 1},
@@ -92,7 +92,7 @@ export const namedItems = [
     ],
     drawback: {text: "Move minus 1. Burden 2.", flags: {burden: 2}, refund: "burden2"},
     pp: 32,
-    hook: "Selwyn Marr.",
+    hook: "Ilwen Ashcroft, the engineer restoring the Breakwater Forts. Selwyn Marr is an archivist, not a shield bearer.",
     text: "DEF +8. Negate one hit per round. Avoid minus 10."
   },
   {

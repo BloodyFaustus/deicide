@@ -42,7 +42,23 @@
       }
     ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": {
+      "modifiers": [
+        {
+          "key": "might",
+          "value": 4,
+          "when": {
+            "actionWeaponLine": "gun"
+          }
+        }
+      ],
+      "effects": []
+    },
+    "coverage": [],
+    "automation": "full",
     "identifier": "gunnerReload"
   },
   "effects": [],

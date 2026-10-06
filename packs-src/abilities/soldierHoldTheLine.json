@@ -34,7 +34,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "companiesInRadius",
+      "effects": [
+        {
+          "kind": "applyStatus",
+          "statusId": "formed",
+          "target": "companies",
+          "turns": "thisPhase"
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "soldierHoldTheLine"
   },
   "effects": [],

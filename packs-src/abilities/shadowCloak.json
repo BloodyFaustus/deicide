@@ -40,7 +40,23 @@
       }
     ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": {
+      "modifiers": [
+        {
+          "key": "untargetableAtRange",
+          "op": "set",
+          "value": 3
+        }
+      ],
+      "effects": []
+    },
+    "coverage": [
+      "untargetable at range 3\\+"
+    ],
+    "automation": "full",
     "identifier": "shadowCloak"
   },
   "effects": [],

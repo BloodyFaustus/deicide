@@ -51,9 +51,11 @@ export function encounterAwards({kind, level, enemyTier = 1, difficulty = "stand
     dungeonExpedition: {xp: 0, cp: 0, dust: evaluate(income.dungeonExpedition, {level})}
   }[kind];
   if ( !base ) throw new Error(`Unknown encounter kind "${kind}"`);
+  const cp100 = Math.round(base.cp * multiplier * 100);
   return {
     xp: award(base.xp, multiplier),
-    cp: award(base.cp, multiplier),
+    cp: cp100 / 100,
+    cp100,
     dust: award(base.dust, multiplier),
     multiplier
   };

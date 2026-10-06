@@ -59,7 +59,24 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "partial",
+    "effects": [
+      {
+        "kind": "terrain",
+        "op": "remove",
+        "tileType": "wall"
+      },
+      {
+        "kind": "cancel",
+        "what": "barrier"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "destroy a Wall tile or Barrier"
+    ],
+    "automation": "full",
     "identifier": "siegeAlchemistBreach"
   },
   "effects": [],

@@ -1,0 +1,521 @@
+{
+ "summary": {
+  "label": "Run 6: Great Knight Juggernaut at 30 (H4)",
+  "seeds": 100,
+  "damagePerVolleyToKnight": {
+   "mean": 0.3,
+   "p10": 0.2222222222222222,
+   "p90": 0.4444444444444444,
+   "n": 100
+  },
+  "mercerActionsToDownKnight": {
+   "mean": 3.41,
+   "p10": 3,
+   "p90": 4,
+   "n": 100
+  },
+  "knightBeatsMercerRate": 37
+ },
+ "results": [
+  {
+   "seed": 1,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 2,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 3,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 4
+  },
+  {
+   "seed": 4,
+   "damagePerVolley": 0.4444444444444444,
+   "mercerActions": 3
+  },
+  {
+   "seed": 5,
+   "damagePerVolley": 0.4444444444444444,
+   "mercerActions": 3
+  },
+  {
+   "seed": 6,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 4
+  },
+  {
+   "seed": 7,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 4
+  },
+  {
+   "seed": 8,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 4
+  },
+  {
+   "seed": 9,
+   "damagePerVolley": 0.4444444444444444,
+   "mercerActions": 3
+  },
+  {
+   "seed": 10,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 11,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 12,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 4
+  },
+  {
+   "seed": 13,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 4
+  },
+  {
+   "seed": 14,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 4
+  },
+  {
+   "seed": 15,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 16,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 17,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 18,
+   "damagePerVolley": 0.4444444444444444,
+   "mercerActions": 4
+  },
+  {
+   "seed": 19,
+   "damagePerVolley": 0.1111111111111111,
+   "mercerActions": 3
+  },
+  {
+   "seed": 20,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 21,
+   "damagePerVolley": 0.4444444444444444,
+   "mercerActions": 3
+  },
+  {
+   "seed": 22,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 4
+  },
+  {
+   "seed": 23,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 24,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 25,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 26,
+   "damagePerVolley": 0.1111111111111111,
+   "mercerActions": 3
+  },
+  {
+   "seed": 27,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 4
+  },
+  {
+   "seed": 28,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 4
+  },
+  {
+   "seed": 29,
+   "damagePerVolley": 0.4444444444444444,
+   "mercerActions": 4
+  },
+  {
+   "seed": 30,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 31,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 4
+  },
+  {
+   "seed": 32,
+   "damagePerVolley": 0.4444444444444444,
+   "mercerActions": 3
+  },
+  {
+   "seed": 33,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 34,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 4
+  },
+  {
+   "seed": 35,
+   "damagePerVolley": 0.4444444444444444,
+   "mercerActions": 3
+  },
+  {
+   "seed": 36,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 37,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 4
+  },
+  {
+   "seed": 38,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 4
+  },
+  {
+   "seed": 39,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 4
+  },
+  {
+   "seed": 40,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 41,
+   "damagePerVolley": 0.1111111111111111,
+   "mercerActions": 4
+  },
+  {
+   "seed": 42,
+   "damagePerVolley": 0.1111111111111111,
+   "mercerActions": 4
+  },
+  {
+   "seed": 43,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 4
+  },
+  {
+   "seed": 44,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 4
+  },
+  {
+   "seed": 45,
+   "damagePerVolley": 0.5555555555555556,
+   "mercerActions": 3
+  },
+  {
+   "seed": 46,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 4
+  },
+  {
+   "seed": 47,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 4
+  },
+  {
+   "seed": 48,
+   "damagePerVolley": 0.4444444444444444,
+   "mercerActions": 4
+  },
+  {
+   "seed": 49,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 50,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 4
+  },
+  {
+   "seed": 51,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 52,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 53,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 4
+  },
+  {
+   "seed": 54,
+   "damagePerVolley": 0.1111111111111111,
+   "mercerActions": 4
+  },
+  {
+   "seed": 55,
+   "damagePerVolley": 0.1111111111111111,
+   "mercerActions": 3
+  },
+  {
+   "seed": 56,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 57,
+   "damagePerVolley": 0.4444444444444444,
+   "mercerActions": 3
+  },
+  {
+   "seed": 58,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 59,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 4
+  },
+  {
+   "seed": 60,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 61,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 62,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 63,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 4
+  },
+  {
+   "seed": 64,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 65,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 66,
+   "damagePerVolley": 0.1111111111111111,
+   "mercerActions": 3
+  },
+  {
+   "seed": 67,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 68,
+   "damagePerVolley": 0.4444444444444444,
+   "mercerActions": 4
+  },
+  {
+   "seed": 69,
+   "damagePerVolley": 0.4444444444444444,
+   "mercerActions": 3
+  },
+  {
+   "seed": 70,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 4
+  },
+  {
+   "seed": 71,
+   "damagePerVolley": 0.4444444444444444,
+   "mercerActions": 3
+  },
+  {
+   "seed": 72,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 73,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 74,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 75,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 76,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 77,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 78,
+   "damagePerVolley": 0.1111111111111111,
+   "mercerActions": 4
+  },
+  {
+   "seed": 79,
+   "damagePerVolley": 0.1111111111111111,
+   "mercerActions": 3
+  },
+  {
+   "seed": 80,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 81,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 82,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 83,
+   "damagePerVolley": 0.4444444444444444,
+   "mercerActions": 3
+  },
+  {
+   "seed": 84,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 4
+  },
+  {
+   "seed": 85,
+   "damagePerVolley": 0.1111111111111111,
+   "mercerActions": 4
+  },
+  {
+   "seed": 86,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 4
+  },
+  {
+   "seed": 87,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 88,
+   "damagePerVolley": 0.4444444444444444,
+   "mercerActions": 3
+  },
+  {
+   "seed": 89,
+   "damagePerVolley": 0.4444444444444444,
+   "mercerActions": 4
+  },
+  {
+   "seed": 90,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 4
+  },
+  {
+   "seed": 91,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 92,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 4
+  },
+  {
+   "seed": 93,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 94,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 3
+  },
+  {
+   "seed": 95,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 96,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 4
+  },
+  {
+   "seed": 97,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  },
+  {
+   "seed": 98,
+   "damagePerVolley": 0.2222222222222222,
+   "mercerActions": 4
+  },
+  {
+   "seed": 99,
+   "damagePerVolley": 0.4444444444444444,
+   "mercerActions": 4
+  },
+  {
+   "seed": 100,
+   "damagePerVolley": 0.3333333333333333,
+   "mercerActions": 3
+  }
+ ]
+}

@@ -34,7 +34,31 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "companiesInRadius",
+      "effects": [
+        {
+          "kind": "applyStatus",
+          "statusId": "ordered",
+          "target": "companies",
+          "turns": "thisPhase",
+          "modifiers": [
+            {
+              "key": "terrainHeal.fort",
+              "op": "set",
+              "value": 20
+            }
+          ]
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [
+      "companies in radius inside Forts heal 20 percent"
+    ],
+    "automation": "full",
     "identifier": "grandTransmuterFortressDoctrine"
   },
   "effects": [],

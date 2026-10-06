@@ -34,7 +34,32 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "oneCompany",
+      "radius": 99,
+      "includeRouted": true,
+      "effects": [
+        {
+          "kind": "removeStatus",
+          "statusId": "routed",
+          "target": "companies"
+        },
+        {
+          "kind": "pool",
+          "key": "strength",
+          "delta": 30,
+          "target": "companies",
+          "op": "set"
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [
+      "one routed company returns at Strength 30"
+    ],
+    "automation": "full",
     "identifier": "warlordReserve"
   },
   "effects": [],

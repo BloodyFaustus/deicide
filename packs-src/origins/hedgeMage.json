@@ -5,7 +5,7 @@
   "img": "icons/svg/village.svg",
   "system": {
     "kind": "background",
-    "description": "<p>Adept Rank 2, Void E, Civilians Standing minus 10.</p>",
+    "description": "<p>Adept Rank 2, Void E. Standing Mage communities 55, Civilians 30.</p>",
     "points": {
       "mag": 2,
       "res": 2
@@ -20,8 +20,9 @@
       "proficiencies": {
         "void": "E"
       },
-      "standingBonus": {
-        "civilians": -10
+      "standing": {
+        "mages": 55,
+        "civilians": 30
       }
     },
     "identifier": "hedgeMage"

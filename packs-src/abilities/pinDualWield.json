@@ -34,7 +34,24 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "extraStrike",
+        "source": "sidearm",
+        "might": -3,
+        "trigger": "ownAttack",
+        "when": {
+          "actionSource": "weapon"
+        }
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Sidearm attacks with every weapon attack at Might minus 3"
+    ],
+    "automation": "full",
     "identifier": "pinDualWield"
   },
   "effects": [],

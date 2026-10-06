@@ -32,9 +32,26 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "cost.hp",
+        "op": "set",
+        "value": 0,
+        "when": {
+          "actionElement": "void",
+          "hpAbove": 0.5
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Void arts cost no HP while above half HP"
+    ],
+    "automation": "full",
     "identifier": "dreadKnightLordOfThePall"
   },
   "effects": [],

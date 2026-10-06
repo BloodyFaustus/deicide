@@ -10,23 +10,23 @@
       "caster"
     ],
     "growth": {
-      "str": "A",
+      "str": "B",
       "mag": "B",
       "skl": "A",
-      "spd": "B",
+      "spd": "C",
       "def": "C",
       "res": "A",
-      "cmd": "D"
+      "cmd": "C"
     },
     "hp": 3,
     "trains": {
       "primary": [
         "sword",
-        "reason"
+        "faith"
       ],
       "secondary": [
-        "faith",
-        "gun"
+        "reason",
+        "void"
       ]
     },
     "trainsText": "",
@@ -73,7 +73,7 @@
     "grantsFullTruth": false,
     "choices": [],
     "kit": {},
-    "description": "<p>Spellbreaker Rank 1 to 6 plus Faith. Hunts Void users first.</p>",
+    "description": "<p>Spellbreaker Rank 1 to 6 plus Faith. Hunts Void users first. Growth STR B, MAG B, SKL A, SPD C, DEF C, RES A, CMD C.</p>",
     "ladder": "standard",
     "identifier": "inquisitor"
   },

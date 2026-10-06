@@ -32,9 +32,22 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "healing",
+        "op": "mul",
+        "value": 1.5
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "heals \\+50 percent"
+    ],
+    "automation": "full",
     "identifier": "chaplainMartyr"
   },
   "effects": [],

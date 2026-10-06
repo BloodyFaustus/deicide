@@ -41,6 +41,13 @@ export class AbilityData extends ItemDataBase {
       modifiers: modifierArray(),
       roll: new fields.ObjectField({required: true, nullable: true, initial: null}),
       art: new fields.ObjectField({required: true, nullable: true, initial: null}),
+
+      effects: new fields.ArrayField(new fields.ObjectField()),
+      reaction: new fields.ObjectField({required: true, nullable: true, initial: null}),
+      command: new fields.ObjectField({required: true, nullable: true, initial: null}),
+      stance: new fields.ObjectField({required: true, nullable: true, initial: null}),
+
+      coverage: new fields.ArrayField(new fields.StringField({required: true, blank: false})),
       automation: new fields.StringField({required: true, choices: ["full", "partial", "manual"], initial: "manual"})
     };
   }

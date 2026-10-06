@@ -3,50 +3,79 @@
     <img src="{{actor.img}}" alt="{{actor.name}}">
     <div>
       <h3>{{abilityName}}</h3>
-      <p class="meta">{{actor.name}}{{#if weight}}, Weight {{weight}}{{/if}}{{#if (eq automation "manual")}}, text only{{/if}}{{#if (eq automation "partial")}}, numbers automated, riders by hand{{/if}}</p>
+      <p class="meta">{{actor.name}}{{#if weight}}, {{localize "DEICIDE.Card.WeightLine" weight=weight}}{{/if}}{{#if (eq automation "manual")}}, {{localize "DEICIDE.Card.TextOnly"}}{{/if}}{{#if (eq automation "partial")}}, {{localize "DEICIDE.Card.Partial"}}{{/if}}</p>
     </div>
   </header>
   {{#if description}}<p class="description">{{description}}</p>{{/if}}
   <p class="attributes">{{#each attributes}}<span>{{this}}</span>{{/each}}</p>
+  {{#if cancelled}}<p class="cancelled"><strong>{{localize "DEICIDE.Card.Cancelled"}}</strong> {{localize "DEICIDE.Card.CancelledBy" by=cancelled.by ability=cancelled.ability}}</p>{{/if}}
+  {{#if reactions.length}}
+  <ul class="reactions plain">
+    {{#each reactions}}
+    <li class="reaction {{#unless success}}failed{{/unless}}"><i class="fa-solid fa-bolt"></i> {{reactor}}: <strong>{{name}}</strong>{{#if roll}} (d100 {{roll}} {{localize "DEICIDE.Card.Under"}} {{threshold}}, {{#if success}}{{localize "DEICIDE.Card.Success"}}{{else}}{{localize "DEICIDE.Card.Fails"}}{{/if}}){{/if}}{{#if notes.length}}, {{#each notes}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}{{/if}}</li>
+    {{/each}}
+  </ul>
+  {{/if}}
 
   {{#if costs}}
   <ul class="costs plain">
-    {{#if costs.channel}}<li>Channel {{costs.channel.paid}} paid{{#if costs.channel.overcast}}, Overcast {{costs.channel.overcast}} for {{costs.channel.burn}} Burn{{/if}}</li>{{/if}}
-    {{#if costs.matter}}<li>Matter {{costs.matter}}</li>{{/if}}
-    {{#if costs.hp}}<li>HP {{costs.hp}}</li>{{/if}}
-    {{#if costs.dust}}<li>Dust {{costs.dust}}</li>{{/if}}
-    {{#if costs.soulPrice}}<li>Soul Price {{costs.soulPrice.price}}{{#if costs.soulPrice.catalyst}} paid by {{costs.soulPrice.catalyst}}{{else}}{{#if costs.soulPrice.hp}} in HP{{else}} in Channel{{/if}}{{/if}}</li>{{/if}}
-    {{#if costs.static}}<li>Static {{costs.static}} spent</li>{{/if}}
+    {{#if costs.channel}}<li>{{localize "DEICIDE.Card.ChannelPaid" paid=costs.channel.paid}}{{#if costs.channel.overcast}}, {{localize "DEICIDE.Card.Overcast" points=costs.channel.overcast burn=costs.channel.burn}}{{/if}}</li>{{/if}}
+    {{#if costs.matter}}<li>{{localize "DEICIDE.Common.Matter"}} {{costs.matter}}</li>{{/if}}
+    {{#if costs.hp}}<li>{{localize "DEICIDE.Common.HP"}} {{costs.hp}}</li>{{/if}}
+    {{#if costs.dust}}<li>{{localize "DEICIDE.Common.Dust"}} {{costs.dust}}</li>{{/if}}
+    {{#if costs.soulPrice}}<li>{{localize "DEICIDE.Card.SoulPrice" price=costs.soulPrice.price}}{{#if costs.soulPrice.catalyst}} {{localize "DEICIDE.Card.PaidBy" catalyst=costs.soulPrice.catalyst}}{{else}}{{#if costs.soulPrice.hp}} {{localize "DEICIDE.Card.InHp"}}{{else}} {{localize "DEICIDE.Card.InChannel"}}{{/if}}{{/if}}</li>{{/if}}
+    {{#if costs.static}}<li>{{localize "DEICIDE.Card.StaticSpent" value=costs.static}}</li>{{/if}}
   </ul>
   {{/if}}
 
   {{#each targets as |target index|}}
   <section class="target">
-    <h4>{{target.name}}{{#if target.self}} (self){{/if}}</h4>
+    <h4>{{target.name}}{{#if target.self}} ({{localize "DEICIDE.Common.Self"}}){{/if}}</h4>
     {{#if target.hit}}
-    <p class="roll-line">Hit {{target.hit.chance}}%{{#if target.crit.chance}}, Crit {{target.crit.chance}}%{{/if}}</p>
+    <p class="roll-line">{{localize "DEICIDE.Card.HitChance" chance=target.hit.chance}}{{#if target.crit.chance}}, {{localize "DEICIDE.Card.CritChance" chance=target.crit.chance}}{{/if}}</p>
     <ul class="strikes plain">
       {{#each target.strikes}}
         <li class="{{#if hit}}hit{{else}}miss{{/if}} {{#if crit}}crit{{/if}}">
-          {{#if hitRoll}}d100 {{hitRoll}}{{else}}auto{{/if}}: {{#if hit}}hit{{#if critRoll}}, crit d100 {{critRoll}}{{/if}}{{#if crit}}, CRIT{{/if}}, <strong>{{damage}}</strong>{{else}}miss{{/if}}
+          {{#if hitRoll}}d100 {{hitRoll}}{{else}}{{localize "DEICIDE.Common.Auto"}}{{/if}}: {{#if hit}}{{localize "DEICIDE.Common.HitShort"}}{{#if critRoll}}, {{localize "DEICIDE.Common.Crit"}} d100 {{critRoll}}{{/if}}{{#if crit}}, {{localize "DEICIDE.Card.CritMark"}}{{/if}}, <strong>{{damage}}</strong>{{else}}{{localize "DEICIDE.Common.Miss"}}{{/if}}
         </li>
       {{/each}}
     </ul>
     <details class="breakdown">
-      <summary>{{#if target.isTruth}}<span class="truth">TRUE</span> {{/if}}{{target.typeLabel}} {{target.damage.total}} ({{target.damage.critTotal}} on crit), {{target.defenseLabel}}</summary>
+      <summary>{{#if target.isTruth}}<span class="truth">TRUE</span> {{/if}}{{target.typeLabel}} {{target.damage.total}} {{localize "DEICIDE.Card.OnCrit" value=target.damage.critTotal}}, {{target.defenseLabel}}</summary>
       <ul class="plain">
         {{#each target.parts}}<li>{{label}}: {{value}}</li>{{/each}}
-        <li>Defense: {{target.damage.defense}}</li>
+        <li>{{localize "DEICIDE.Card.Defense"}} {{target.damage.defense}}</li>
         {{#each target.multipliers}}<li>x{{value}} ({{id}})</li>{{/each}}
-        <li>Crit multiplier: x{{target.damage.critMultiplier}}</li>
+        <li>{{localize "DEICIDE.Card.CritMultiplier"}} x{{target.damage.critMultiplier}}</li>
       </ul>
     </details>
     {{/if}}
-    {{#if target.heal}}<p class="roll-line">Heals <strong>{{target.heal.total}}</strong></p>{{/if}}
-    {{#if target.statuses.length}}<p class="statuses">Statuses: {{#each target.statuses}}{{id}}{{#if turns}} ({{turns}} turns){{/if}} {{/each}}</p>{{/if}}
-    <button type="button" class="apply" data-action="applyTarget" data-index="{{index}}">Apply{{#if target.total}} {{target.total}} damage{{/if}}{{#if target.heal}} heal{{/if}}{{#if target.statuses.length}} and statuses{{/if}}</button>
+    {{#if target.heal}}<p class="roll-line">{{localize "DEICIDE.Card.Heals"}} <strong>{{target.heal.total}}</strong></p>{{/if}}
+    {{#if target.redirectedFrom}}<p class="note">{{localize "DEICIDE.Card.TakesHitFor" name=target.redirectedFrom}}</p>{{/if}}
+    {{#if target.absorbed}}<p class="note">{{localize "DEICIDE.Card.Absorbed" value=target.absorbed}}</p>{{/if}}
+    {{#if target.reduced}}<p class="note">{{localize "DEICIDE.Card.Reduced"}}</p>{{/if}}
+    {{#if target.survive}}<p class="note">{{localize "DEICIDE.Card.Survives"}}</p>{{/if}}
+    {{#if target.statuses.length}}<p class="statuses">{{localize "DEICIDE.Card.Statuses"}} {{#each target.statuses}}{{id}}{{#if turns}} {{localize "DEICIDE.Card.Turns" turns=turns}}{{/if}} {{/each}}</p>{{/if}}
+    {{#if target.outcomes.length}}<ul class="outcomes plain">{{#each target.outcomes}}<li><i class="fa-solid fa-wand-sparkles"></i> {{text}}{{#if applied}} ({{localize "DEICIDE.Common.Applied"}}){{/if}}</li>{{/each}}</ul>{{/if}}
+    <button type="button" class="apply" data-action="applyTarget" data-index="{{index}}">{{localize "DEICIDE.Common.Apply"}}{{#if target.total}} {{localize "DEICIDE.Card.ApplyDamage" value=target.total}}{{/if}}{{#if target.heal}} {{localize "DEICIDE.Card.ApplyHeal"}}{{/if}}{{#if target.statuses.length}} {{localize "DEICIDE.Card.AndStatuses"}}{{/if}}{{#if target.outcomes.length}} {{localize "DEICIDE.Card.AndEffects"}}{{/if}}</button>
   </section>
   {{/each}}
-  {{#unless targets.length}}<p class="no-targets">No targets.</p>{{/unless}}
+  {{#unless targets.length}}<p class="no-targets">{{#if isCommand}}{{localize "DEICIDE.Card.NoCompany"}}{{else}}{{localize "DEICIDE.Card.NoTargets"}}{{/if}}</p>{{/unless}}
+  {{#each extra as |sub index|}}
+  <section class="target extra">
+    <h4>{{localize "DEICIDE.Card.SubAttack" label=sub.label attacker=sub.attacker name=sub.name}}</h4>
+    <p class="roll-line">{{localize "DEICIDE.Card.HitChance" chance=sub.hit.chance}}{{#if sub.crit.chance}}, {{localize "DEICIDE.Card.CritChance" chance=sub.crit.chance}}{{/if}}</p>
+    <ul class="strikes plain">
+      {{#each sub.strikes}}<li class="{{#if hit}}hit{{else}}miss{{/if}} {{#if crit}}crit{{/if}}">d100 {{hitRoll}}: {{#if hit}}{{localize "DEICIDE.Common.HitShort"}}{{#if crit}}, {{localize "DEICIDE.Card.CritMark"}}{{/if}}, <strong>{{damage}}</strong>{{else}}{{localize "DEICIDE.Common.Miss"}}{{/if}}</li>{{/each}}
+    </ul>
+    <details class="breakdown"><summary>{{sub.damage.label}} {{sub.damage.total}} {{localize "DEICIDE.Card.OnCrit" value=sub.damage.critTotal}}</summary><ul class="plain">{{#each sub.parts}}<li>{{label}}: {{value}}</li>{{/each}}<li>{{localize "DEICIDE.Card.Defense"}} {{sub.damage.defense}}</li></ul></details>
+    <button type="button" class="apply" data-action="applyExtra" data-index="{{index}}">{{localize "DEICIDE.Common.Apply"}} {{localize "DEICIDE.Card.ApplyDamage" value=sub.total}}</button>
+  </section>
+  {{/each}}
+  {{#if outcomes.length}}
+  <ul class="outcomes plain">
+    {{#each outcomes}}<li><i class="fa-solid fa-wand-sparkles"></i> {{text}}{{#if applied}} ({{localize "DEICIDE.Common.Applied"}}){{/if}}</li>{{/each}}
+  </ul>
+  {{/if}}
   {{#if dungeon.note}}<p class="note">{{dungeon.note}}</p>{{/if}}
 </div>

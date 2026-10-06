@@ -34,7 +34,35 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "companiesInRadius",
+      "companyTypes": [
+        "cavalry"
+      ],
+      "effects": [
+        {
+          "kind": "applyStatus",
+          "statusId": "ordered",
+          "target": "companies",
+          "turns": "thisPhase",
+          "modifiers": [
+            {
+              "key": "companyMultiplier.infantry",
+              "op": "set",
+              "value": 2,
+              "when": {
+                "charge": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "lancerWedge"
   },
   "effects": [],

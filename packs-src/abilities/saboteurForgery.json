@@ -32,9 +32,21 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "standing.infiltration",
+        "value": 10
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Standing \\+10 in infiltration scenes"
+    ],
+    "automation": "full",
     "identifier": "saboteurForgery"
   },
   "effects": [],

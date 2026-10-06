@@ -57,7 +57,14 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "partial",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "\\+6 vs unwarded"
+    ],
+    "automation": "full",
     "identifier": "gunnerShot"
   },
   "effects": [],

@@ -52,7 +52,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "terrain",
+        "op": "barrier",
+        "barrier": "3 * mag",
+        "side": "ally",
+        "row": "front"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "tile or row Barrier absorbs 3 x MAG"
+    ],
+    "automation": "full",
     "identifier": "wardenBarrier"
   },
   "effects": [],

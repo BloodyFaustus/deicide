@@ -50,7 +50,20 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "terrain",
+        "op": "set",
+        "tileType": "plague"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "2 Burn per turn"
+    ],
+    "automation": "full",
     "identifier": "plagueDoctorCulture"
   },
   "effects": [],

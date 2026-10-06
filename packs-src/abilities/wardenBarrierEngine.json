@@ -40,7 +40,14 @@
       }
     ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Barrier absorbs 5 x MAG"
+    ],
+    "automation": "full",
     "identifier": "wardenBarrierEngine"
   },
   "effects": [],

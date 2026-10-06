@@ -32,9 +32,22 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "refine.dust",
+        "op": "set",
+        "value": 10
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Refine yields 10 Dust"
+    ],
+    "automation": "full",
     "identifier": "dustwrightDustLord"
   },
   "effects": [],

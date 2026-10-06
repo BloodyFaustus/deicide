@@ -32,9 +32,31 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "avoid",
+        "value": 10,
+        "when": {
+          "terrain": "forest"
+        }
+      },
+      {
+        "key": "avoid",
+        "value": 10,
+        "when": {
+          "night": true
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Avoid \\+10 in Forest and at night"
+    ],
+    "automation": "full",
     "identifier": "darkMageShadeStep"
   },
   "effects": [],

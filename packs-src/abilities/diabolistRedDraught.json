@@ -35,8 +35,8 @@
         0
       ],
       "area": {
-        "shape": "single",
-        "size": 1
+        "shape": "self",
+        "size": 0
       },
       "target": "self",
       "movement": null,
@@ -46,7 +46,36 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "pool",
+        "key": "redWater",
+        "delta": -1,
+        "target": "self"
+      },
+      {
+        "kind": "applyStatus",
+        "statusId": "empowered",
+        "target": "self",
+        "turns": 3
+      },
+      {
+        "kind": "pool",
+        "key": "marks",
+        "delta": 1,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "1 Red Water",
+      "\\+4 all stats 3 turns",
+      "1 Mark",
+      "Void"
+    ],
+    "automation": "full",
     "identifier": "diabolistRedDraught"
   },
   "effects": [],

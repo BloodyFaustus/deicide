@@ -32,9 +32,21 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "immune",
+        "value": "attunedElement"
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "immune to your element"
+    ],
+    "automation": "full",
     "identifier": "elementalistElementalBody"
   },
   "effects": [],

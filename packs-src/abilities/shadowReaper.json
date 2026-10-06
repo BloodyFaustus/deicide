@@ -34,7 +34,19 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "refundAction",
+        "condition": "onKillOfficer"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "killing an Officer refunds your action"
+    ],
+    "automation": "full",
     "identifier": "shadowReaper"
   },
   "effects": [],

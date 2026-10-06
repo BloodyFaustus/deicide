@@ -45,6 +45,11 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [],
     "art": {
       "lines": [
         "tome"
@@ -52,9 +57,11 @@
       "minTier": "silver",
       "spellMight": 6,
       "rowHealFraction": 0,
-      "nextMatterCost": null
+      "nextMatterCost": null,
+      "targetDef": 0,
+      "turns": 0
     },
-    "automation": "manual",
+    "automation": "full",
     "identifier": "artRuin"
   },
   "effects": [],

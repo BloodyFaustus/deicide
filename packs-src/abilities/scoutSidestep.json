@@ -46,7 +46,24 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "move",
+        "mode": "teleport",
+        "tiles": 1,
+        "target": "self"
+      }
+    ],
+    "reaction": {
+      "trigger": "missedByMelee",
+      "window": {
+        "self": true
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "scoutSidestep"
   },
   "effects": [],

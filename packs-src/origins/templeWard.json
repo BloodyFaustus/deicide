@@ -5,7 +5,7 @@
   "img": "icons/svg/village.svg",
   "system": {
     "kind": "background",
-    "description": "<p>Acolyte Rank 2.</p>",
+    "description": "<p>Acolyte Rank 2. Standing Temple 60.</p>",
     "points": {
       "res": 2,
       "mag": 2
@@ -16,7 +16,10 @@
           "id": "acolyte",
           "rank": 2
         }
-      ]
+      ],
+      "standing": {
+        "temple": 60
+      }
     },
     "identifier": "templeWard"
   },

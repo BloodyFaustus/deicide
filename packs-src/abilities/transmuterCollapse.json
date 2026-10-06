@@ -63,7 +63,19 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "partial",
+    "effects": [
+      {
+        "kind": "terrain",
+        "op": "remove"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "a Wall or Hill falls"
+    ],
+    "automation": "full",
     "identifier": "transmuterCollapse"
   },
   "effects": [],

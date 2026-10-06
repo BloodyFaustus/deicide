@@ -48,7 +48,31 @@
     "roll": {
       "formula": "3 * skl"
     },
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "redirect",
+        "to": "attacker"
+      }
+    ],
+    "reaction": {
+      "trigger": "targetedByAttack",
+      "window": {
+        "self": true
+      },
+      "roll": {
+        "d100Under": "3 * skl"
+      },
+      "when": {
+        "attackerTag": "divine"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "targeted by a god",
+      "the attack resolves against the god"
+    ],
+    "automation": "full",
     "identifier": "godslayerAnomaly"
   },
   "effects": [],

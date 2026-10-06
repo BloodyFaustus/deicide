@@ -32,9 +32,24 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "crit",
+        "value": 20,
+        "when": {
+          "actionId": "lancerLanceCharge"
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "charge crit \\+20"
+    ],
+    "automation": "full",
     "identifier": "lancerLanceOfTheCrown"
   },
   "effects": [],

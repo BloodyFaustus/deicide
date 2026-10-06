@@ -45,7 +45,24 @@
       }
     ],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "pool",
+        "key": "divineAttention",
+        "delta": 1,
+        "target": "self",
+        "per": "session"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Matter costs 0",
+      "Soul Prices 0",
+      "Divine Attention \\+1 per session"
+    ],
+    "automation": "full",
     "identifier": "philosopherTheStone"
   },
   "effects": [],

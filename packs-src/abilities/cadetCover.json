@@ -46,7 +46,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "redirect",
+        "to": "self"
+      }
+    ],
+    "reaction": {
+      "trigger": "allyTargeted",
+      "window": {
+        "adjacent": true
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "cadetCover"
   },
   "effects": [],

@@ -48,7 +48,26 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "partial",
+    "effects": [
+      {
+        "kind": "heal",
+        "amount": "mag",
+        "target": "ally"
+      }
+    ],
+    "reaction": {
+      "trigger": "allyDowned",
+      "window": {
+        "adjacent": true
+      },
+      "cost": {
+        "matter": 3
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "bioAlchemistGraft"
   },
   "effects": [],

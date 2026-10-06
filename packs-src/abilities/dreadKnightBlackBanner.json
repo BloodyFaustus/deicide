@@ -34,7 +34,33 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "companiesInRadius",
+      "effects": [
+        {
+          "kind": "applyStatus",
+          "statusId": "ordered",
+          "target": "companies",
+          "turns": "thisPhase",
+          "modifiers": [
+            {
+              "key": "quality",
+              "value": 1,
+              "when": {
+                "targetTag": "divine"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [
+      "companies in radius Quality \\+1 against Divine users"
+    ],
+    "automation": "full",
     "identifier": "dreadKnightBlackBanner"
   },
   "effects": [],

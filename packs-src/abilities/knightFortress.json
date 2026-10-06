@@ -35,9 +35,22 @@
       "note": "No forts in Dungeon Mode."
     },
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "terrainHeal.fort",
+        "op": "set",
+        "value": 20
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "forts heal 20 percent"
+    ],
+    "automation": "full",
     "identifier": "knightFortress"
   },
   "effects": [],

@@ -43,6 +43,23 @@
       }
     ],
     "roll": null,
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": {
+      "modifiers": [
+        {
+          "key": "hit",
+          "value": 15
+        },
+        {
+          "key": "delay",
+          "value": 5
+        }
+      ],
+      "effects": []
+    },
+    "coverage": [],
     "automation": "full",
     "identifier": "marksmanAim"
   },

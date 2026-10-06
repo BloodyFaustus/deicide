@@ -71,5 +71,71 @@ conditions.registerAll({
   actionElement: (expected, context) => asArray(expected).includes(context.action?.element),
   actionWeaponLine: (expected, context) => asArray(expected).includes(context.action?.weaponLine),
   actionSource: (expected, context) => asArray(expected).includes(context.action?.source),
-  actionId: (expected, context) => asArray(expected).includes(context.action?.identifier)
+  actionId: (expected, context) => asArray(expected).includes(context.action?.identifier),
+
+  hpBelow: (fraction, context) => {
+    const hp = context.subject?.hp;
+    return Boolean(hp) && (hp.value < hp.max * fraction);
+  },
+  hpAtOrBelow: (fraction, context) => {
+    const hp = context.subject?.hp;
+    return Boolean(hp) && (hp.value <= hp.max * fraction);
+  },
+  targetType: (expected, context) => asArray(expected).some(id => contains(context.target?.classTypes, id)
+    || contains(context.target?.tags, id) || (context.target?.kind === id)),
+  targetHasStatus: (expected, context) => asArray(expected).every(id => contains(context.target?.statuses, id)),
+  attackerRange: (expected, context) => {
+    const distance = context.distance ?? context.attackerDistance ?? 0;
+    const min = expected?.min ?? 0;
+    const max = expected?.max ?? Infinity;
+    return (distance >= min) && (distance <= max);
+  },
+  fromFlank: (expected, context) => Boolean(context.flank) === Boolean(expected),
+  sameRow: (expected, context) => Boolean(context.sameRow) === Boolean(expected),
+  adjacent: (expected, context) => Boolean(context.adjacent ?? ((context.distance ?? Infinity) <= 1)) === Boolean(expected),
+  moved: (expected, context) => {
+    const tiles = context.tilesMoved ?? 0;
+    return (tiles >= (expected?.min ?? 0)) && (tiles <= (expected?.max ?? Infinity));
+  },
+  night: (expected, context) => Boolean(context.night) === Boolean(expected),
+  elementTag: (expected, context) => asArray(expected).some(id => contains(context.action?.tags, id) || (context.action?.element === id)),
+  targetIsOfficer: (expected, context) => (contains(context.target?.classTypes, "officer") || Boolean(context.target?.officer)) === Boolean(expected),
+  targetUndamaged: (expected, context) => {
+    const hp = context.target?.hp;
+    return (Boolean(hp) && (hp.value >= hp.max)) === Boolean(expected);
+  },
+  firstThisEncounter: (expected, context) => Boolean(context.firstThisEncounter) === Boolean(expected),
+  bondRank: (expected, context) => asArray(expected).includes(context.bondRank),
+  tilesMovedThisTurn: (expected, context) => (context.tilesMoved ?? 0) >= expected,
+  trigger: (expected, context) => asArray(expected).includes(context.trigger),
+  targetSide: (expected, context) => asArray(expected).includes(context.target?.side),
+  round: (expected, context) => {
+    const round = context.round ?? 0;
+    return (round >= (expected?.min ?? 0)) && (round <= (expected?.max ?? Infinity));
+  },
+  weight: (expected, context) => {
+    const weight = context.weight ?? context.action?.weight ?? 0;
+    return (weight >= (expected?.min ?? 0)) && (weight <= (expected?.max ?? Infinity));
+  },
+  damageAtLeast: (expected, context) => (context.damage ?? 0) >= expected,
+  actionArea: (expected, context) => asArray(expected).includes(context.action?.area?.shape ?? context.action?.area),
+  actionPhysical: (expected, context) => {
+    const action = context.action ?? {};
+    const physical = (action.source === "weapon") || ((action.source === "none") && !action.element);
+    return physical === Boolean(expected);
+  },
+  targetHpBelow: (fraction, context) => {
+    const hp = context.target?.hp;
+    return Boolean(hp) && (hp.value < hp.max * fraction);
+  },
+  actionMelee: (expected, context) => {
+    const range = context.action?.range ?? [1, 1];
+    return ((range[1] ?? range[0] ?? 1) <= 1) === Boolean(expected);
+  },
+  charge: (expected, context) => Boolean(context.charge) === Boolean(expected),
+  attackerTag: (expected, context) => asArray(expected).some(id => contains(context.target?.tags, id) || contains(context.attacker?.tags, id)),
+  selfMoved: (expected, context) => {
+    const tiles = context.selfTilesMoved ?? 0;
+    return (tiles >= (expected?.min ?? 0)) && (tiles <= (expected?.max ?? Infinity));
+  }
 });

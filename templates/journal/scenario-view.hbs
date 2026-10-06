@@ -1,17 +1,17 @@
 <div class="deicide-scenario-view journal-page-content">
-  <p class="kind"><strong>{{kindLabel}}</strong>, month {{system.warMonth}}, {{system.difficulty}}{{#if system.payout.applied}}, payout applied{{/if}}</p>
+  <p class="kind"><strong>{{kindLabel}}</strong>, {{localize "DEICIDE.Scenario.MonthLine" month=system.warMonth}}, {{system.difficulty}}{{#if system.payout.applied}}, {{localize "DEICIDE.Scenario.PayoutApplied"}}{{/if}}</p>
   <div class="description">{{{descriptionHtml}}}</div>
-  <h3>Payout</h3>
+  <h3>{{localize "DEICIDE.Scenario.Payout"}}</h3>
   <ul>
     {{#each payoutTracks}}<li>{{label}} {{#if (gt delta 0)}}+{{/if}}{{delta}}</li>{{/each}}
-    {{#if system.payout.dust}}<li>{{system.payout.dust}} Dust</li>{{/if}}
-    {{#if dropsText}}<li>Drops: {{dropsText}}</li>{{/if}}
+    {{#if system.payout.dust}}<li>{{localize "DEICIDE.Scenario.DustLine" dust=system.payout.dust}}</li>{{/if}}
+    {{#if dropsText}}<li>{{localize "DEICIDE.Scenario.DropsLine" drops=dropsText}}</li>{{/if}}
   </ul>
   {{#if isGM}}
   <p class="controls">
-    <button type="button" data-action="applyPayout" {{#if system.payout.applied}}disabled{{/if}}><i class="fa-solid fa-flag"></i> Apply payout</button>
-    {{#if (eq system.kind "war")}}<button type="button" data-action="applyDefeat" {{#if system.payout.applied}}disabled{{/if}}><i class="fa-solid fa-skull"></i> Apply defeat</button>{{/if}}
+    <button type="button" data-action="applyPayout" {{#if system.payout.applied}}disabled{{/if}}><i class="fa-solid fa-flag"></i> {{localize "DEICIDE.Scenario.ApplyPayout"}}</button>
+    {{#if (eq system.kind "war")}}<button type="button" data-action="applyDefeat" {{#if system.payout.applied}}disabled{{/if}}><i class="fa-solid fa-skull"></i> {{localize "DEICIDE.Scenario.ApplyDefeat"}}</button>{{/if}}
   </p>
   {{/if}}
-  <details><summary>Card data</summary><pre>{{cardJson}}</pre></details>
+  <details><summary>{{localize "DEICIDE.Scenario.CardData"}}</summary><pre>{{cardJson}}</pre></details>
 </div>

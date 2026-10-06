@@ -32,9 +32,24 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "avoid",
+        "value": 10,
+        "when": {
+          "terrain": "forest"
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "forest Avoid \\+10 more"
+    ],
+    "automation": "full",
     "identifier": "rangerWoodcraft"
   },
   "effects": [],

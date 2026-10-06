@@ -26,7 +26,7 @@
       "dust": 0,
       "soulPrice": 0
     },
-    "weight": null,
+    "weight": 12,
     "attack": null,
     "heal": null,
     "war": null,
@@ -34,7 +34,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "flag",
+        "key": "doublecast",
+        "value": true,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "cast two spells as one Action at full cost",
+      "Weight 12"
+    ],
+    "automation": "full",
     "identifier": "pinDoublecast"
   },
   "effects": [],

@@ -27,7 +27,14 @@
       "soulPrice": 0
     },
     "weight": 8,
-    "attack": null,
+    "attack": {
+      "basis": "str",
+      "source": "weapon",
+      "defense": "def",
+      "might": 0,
+      "element": null,
+      "bonuses": []
+    },
     "heal": null,
     "war": {
       "range": [
@@ -46,7 +53,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "move",
+        "mode": "pull",
+        "tiles": 1,
+        "target": "target",
+        "chance": "onHit"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "pull 1 tile or force row swap"
+    ],
+    "automation": "full",
     "identifier": "marinerGrapple"
   },
   "effects": [],

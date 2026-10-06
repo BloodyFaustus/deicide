@@ -53,7 +53,15 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "STR \\+ MAG/2 physical",
+      "0 Mt"
+    ],
+    "automation": "full",
     "identifier": "alchemistTransmuteStrike"
   },
   "effects": [],

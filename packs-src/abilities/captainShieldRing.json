@@ -46,7 +46,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "redirect",
+        "to": "adjacentCompany"
+      }
+    ],
+    "reaction": {
+      "trigger": "targetedByAttack",
+      "window": {
+        "self": true
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "captainShieldRing"
   },
   "effects": [],

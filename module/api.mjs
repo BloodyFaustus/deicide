@@ -18,6 +18,15 @@ import * as economy from "./rules/economy.mjs";
 import * as doctrine from "./rules/doctrine.mjs";
 import * as derive from "./rules/derive.mjs";
 import * as creation from "./rules/creation.mjs";
+import * as effects from "./rules/effects.mjs";
+import * as reactions from "./rules/reactions.mjs";
+import * as bonds from "./rules/bonds.mjs";
+import * as commands from "./rules/commands.mjs";
+import * as facing from "./rules/facing.mjs";
+import * as generateNpc from "./rules/generate/npc.mjs";
+import * as generateArmy from "./rules/generate/army.mjs";
+import * as generateLoot from "./rules/generate/loot.mjs";
+import * as generateEncounter from "./rules/generate/encounter.mjs";
 import {sceneEngine, sceneMode, setSceneMode} from "./hooks/scene-mode.mjs";
 
 export function buildApi({catalog, documents = {}, apps = {}, version = "0.0.0"}) {
@@ -27,14 +36,18 @@ export function buildApi({catalog, documents = {}, apps = {}, version = "0.0.0"}
     config: DEICIDE,
     catalog,
 
-    rules: {grades, growth, proficiency, collapse, resolve, delay, company, pacing, economy, doctrine, derive, creation},
+    rules: {
+      grades, growth, proficiency, collapse, resolve, delay, company, pacing, economy, doctrine, derive, creation, effects, reactions, bonds, commands, facing,
+      generate: {npc: generateNpc, army: generateArmy, loot: generateLoot, encounter: generateEncounter}
+    },
 
     core: {Registry, Pipeline, Catalog, expression, predicate, modifiers, random},
 
     registries: {
       conditions: predicate.conditions,
       prerequisiteKinds: proficiency.prerequisiteKinds,
-      doctrineBehaviors: doctrine.doctrineBehaviors
+      doctrineBehaviors: doctrine.doctrineBehaviors,
+      effectKinds: effects.effectKinds
     },
 
     pipelines: {

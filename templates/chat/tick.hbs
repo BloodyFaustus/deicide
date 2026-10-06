@@ -1,8 +1,8 @@
 <div class="deicide-card tick">
-  <p><strong>Tick {{tick}}</strong>: {{name}} acts.</p>
+  <p><strong>{{localize "DEICIDE.Common.Tick"}} {{tick}}</strong>: {{localize "DEICIDE.Card.TickActs" name=name}}</p>
   {{#if ticked.length}}
   <ul class="plain">
-    {{#each ticked}}<li>{{statusId}}{{#if burn}}: {{burn}} Burn{{/if}}{{#if ended}} ends{{/if}}.</li>{{/each}}
+    {{#each ticked}}<li>{{statusId}}{{#if burn}}: {{localize "DEICIDE.Card.Burn" burn=burn}}{{/if}}{{#if ended}} {{localize "DEICIDE.Card.Ends"}}{{/if}}.</li>{{/each}}
   </ul>
   {{/if}}
 </div>

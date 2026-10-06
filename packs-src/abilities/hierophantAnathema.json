@@ -32,9 +32,33 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "might",
+        "value": 6,
+        "when": {
+          "actionTag": "faith",
+          "targetType": [
+            "homunculus",
+            "undead",
+            "voidUser",
+            "diabolist"
+          ]
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Homunculi",
+      "undead",
+      "Void users",
+      "and Diabolists take \\+6 from your Faith spells"
+    ],
+    "automation": "full",
     "identifier": "hierophantAnathema"
   },
   "effects": [],

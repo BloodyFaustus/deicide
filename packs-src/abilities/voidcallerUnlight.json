@@ -32,9 +32,24 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "ignoreDivineResistance",
+        "value": 1,
+        "when": {
+          "actionElement": "void"
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "your Void spells ignore Divine resistance entirely"
+    ],
+    "automation": "full",
     "identifier": "voidcallerUnlight"
   },
   "effects": [],

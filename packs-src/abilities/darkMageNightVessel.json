@@ -42,7 +42,14 @@
       }
     ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Void spells cost 1 less Channel"
+    ],
+    "automation": "full",
     "identifier": "darkMageNightVessel"
   },
   "effects": [],

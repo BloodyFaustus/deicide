@@ -34,7 +34,25 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "enemyCompaniesWithin",
+      "radius": 1,
+      "anchor": "slainOfficer",
+      "effects": [
+        {
+          "kind": "applyStatus",
+          "statusId": "routed",
+          "target": "companies"
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [
+      "enemy companies adjacent to a slain officer rout"
+    ],
+    "automation": "full",
     "identifier": "shadowTerror"
   },
   "effects": [],

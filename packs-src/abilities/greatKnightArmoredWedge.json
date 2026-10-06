@@ -34,7 +34,35 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "companiesInRadius",
+      "companyTypes": [
+        "cavalry",
+        "legionary"
+      ],
+      "effects": [
+        {
+          "kind": "applyStatus",
+          "statusId": "ordered",
+          "target": "companies",
+          "turns": "thisPhase",
+          "modifiers": [
+            {
+              "key": "chargeMultiplier",
+              "op": "set",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [
+      "armored and mounted companies in radius x2 on charge"
+    ],
+    "automation": "full",
     "identifier": "greatKnightArmoredWedge"
   },
   "effects": [],

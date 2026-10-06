@@ -46,7 +46,26 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "strikeFirst"
+      }
+    ],
+    "reaction": {
+      "trigger": "targetedByAttack",
+      "window": {
+        "self": true
+      },
+      "when": {
+        "hpAtOrBelow": 0.5
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "When attacked at or below half HP"
+    ],
+    "automation": "full",
     "identifier": "pinVantage"
   },
   "effects": [],

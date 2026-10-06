@@ -44,9 +44,28 @@
     },
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "damageTaken",
+        "op": "mul",
+        "value": 0.5
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": {
+      "trigger": "targetedByAttack",
+      "window": {
+        "self": true
+      },
+      "when": {
+        "actionArea": "blast"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "marinerBraceDeck"
   },
   "effects": [],

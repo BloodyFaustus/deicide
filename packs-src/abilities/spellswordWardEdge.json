@@ -44,9 +44,27 @@
     },
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "defense.res",
+        "value": 6
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": {
+      "trigger": "targetedByAttack",
+      "window": {
+        "self": true
+      },
+      "when": {
+        "actionSource": "spell"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "spellswordWardEdge"
   },
   "effects": [],

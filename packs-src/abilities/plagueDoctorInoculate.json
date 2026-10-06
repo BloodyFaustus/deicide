@@ -46,7 +46,21 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "applyStatus",
+        "statusId": "inoculated",
+        "target": "ally",
+        "expires": "session"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "ally immune to plague and Manaburn 1 session"
+    ],
+    "automation": "full",
     "identifier": "plagueDoctorInoculate"
   },
   "effects": [],

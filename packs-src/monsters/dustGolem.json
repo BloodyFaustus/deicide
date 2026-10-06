@@ -14,6 +14,7 @@
     "res": 18,
     "spd": 6,
     "mag": 0,
+    "skl": 0,
     "delay": {
       "mode": "spd",
       "value": 30
@@ -34,7 +35,8 @@
     "yield": {
       "saturation": 0,
       "dust": 10,
-      "drops": []
+      "drops": [],
+      "divineAttention": 0
     },
     "row": "front",
     "description": "<p></p>",
@@ -124,7 +126,12 @@
         "modifiers": [],
         "roll": null,
         "art": null,
-        "automation": "partial"
+        "effects": [],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [],
+        "automation": "full"
       },
       "effects": [],
       "folder": null,

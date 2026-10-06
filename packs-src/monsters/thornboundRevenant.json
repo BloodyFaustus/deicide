@@ -14,6 +14,7 @@
     "res": 20,
     "spd": 11,
     "mag": 0,
+    "skl": 0,
     "delay": {
       "mode": "spd",
       "value": 30
@@ -31,7 +32,8 @@
     "yield": {
       "saturation": 3,
       "dust": 0,
-      "drops": []
+      "drops": [],
+      "divineAttention": 0
     },
     "row": "front",
     "description": "<p></p>",
@@ -121,7 +123,12 @@
         "modifiers": [],
         "roll": null,
         "art": null,
-        "automation": "partial"
+        "effects": [],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [],
+        "automation": "full"
       },
       "effects": [],
       "folder": null,
@@ -189,6 +196,11 @@
         "modifiers": [],
         "roll": null,
         "art": null,
+        "effects": [],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [],
         "automation": "manual"
       },
       "effects": [],

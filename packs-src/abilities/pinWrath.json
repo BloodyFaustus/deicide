@@ -42,7 +42,15 @@
       }
     ],
     "roll": null,
-    "automation": "partial",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "At or below half HP",
+      "crit \\+30"
+    ],
+    "automation": "full",
     "identifier": "pinWrath"
   },
   "effects": [],

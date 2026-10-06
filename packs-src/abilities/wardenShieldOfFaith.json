@@ -46,7 +46,24 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "absorb",
+        "amount": "floor(mag / 2)",
+        "target": "ally"
+      }
+    ],
+    "reaction": {
+      "trigger": "allyHit",
+      "window": {
+        "tiles": 3,
+        "row": "any"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "wardenShieldOfFaith"
   },
   "effects": [],

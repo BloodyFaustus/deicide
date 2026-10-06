@@ -34,7 +34,7 @@ export const classOverrides = {
   godslayer: {choices: ["weapon"]},
 
   hero: {
-    layered: true, grantsCap: "SS", storyGate: "heroAwakening",
+    layered: true, grantsCap: "SS", storyGate: "",
     prerequisites: {all: [{saturation: 50}]},
     growth: {}, hp: 0
   },
@@ -52,7 +52,9 @@ export const classOverrides = {
     prerequisites: {all: [{prof: "alchemy", grade: "A"}]}
   },
 
-  stateAlchemist: {grantsFullTruth: true}
+  stateAlchemist: {grantsFullTruth: true},
+
+  greatKnight: {move: 5}
 };
 
 export const abilityOverrides = {
@@ -66,7 +68,7 @@ export const abilityOverrides = {
 
   saboteurIncendiary: {attack: {basis: "skl", source: "none", defense: "res", might: 8, element: "fire"}},
   dustwrightPowderCharge: {attack: {basis: "mag", source: "alchemy", defense: "def", might: 10, element: "fire"}},
-  dustwrightRefine: {automation: "manual", dungeon: {available: false, note: "Between sessions only."}},
+  dustwrightRefine: {dungeon: {available: false, note: "Between sessions only."}},
 
   transmuterTransmuteTerrain: {war: {terrain: true, target: "tile"}, tags: ["alchemy", "terrain"]},
   transmuterBridge: {...notInDungeon("No rivers in Dungeon Mode."), war: {terrain: true, target: "tile"}},
@@ -81,7 +83,6 @@ export const abilityOverrides = {
   grandTransmuterQuake: {attack: {basis: "mag", source: "alchemy", defense: "def", might: 16}},
   grandTransmuterWorldMason: notInDungeon("Transmute Terrain has no free action in Dungeon Mode."),
   knightFortress: notInDungeon("No forts in Dungeon Mode."),
-  transmuterMason: {automation: "manual"},
 
   riderTrample: notInDungeon("Companies do not appear in Dungeon Mode."),
   greatKnightTrampleLine: notInDungeon("Companies do not appear in Dungeon Mode."),
@@ -149,14 +150,11 @@ export const abilityOverrides = {
   chevalierHorselord: {modifiers: [{key: "move", value: 2}]},
   wyvernRiderUpdraft: {modifiers: [{key: "move", value: 1}]},
   wyvernLordLordOfTheSky: {modifiers: [{key: "move", value: 3}]},
-  rangerTrailblazer: {automation: "manual"},
   adeptFocus: {modifiers: [{key: "channel.max", value: 3}]},
   battlemageCommission: {modifiers: [{key: "channel.max", value: 6}]},
   diabolistPact: {modifiers: [{key: "channel.max", value: 10}]},
   wardenBulwarkMind: {modifiers: [{key: "defense.res", value: 3}]},
-  halberdierPhalanx: {automation: "manual"},
   knightImmovable: {modifiers: [{key: "immune", value: "rowSwap"}]},
-  elementalistElementalBody: {automation: "manual"},
   spellswordTwinDiscipline: {modifiers: [{key: "attackBasis", basis: "twin", value: 0, when: {actionId: "spellswordSpellblade"}}]},
   spellswordSpellblade: {attack: {basis: "hybrid", source: "weapon", defense: "lower", might: 6}},
   spellbreakerSeveringCut: {attack: {basis: "hybrid", source: "weapon", defense: "lower", might: 9}},
@@ -166,13 +164,10 @@ export const abilityOverrides = {
   magusSaturatedVessel: {modifiers: [{key: "overcast.multiplier", op: "set", value: 0.5}]},
   darkMageNightVessel: {modifiers: [{key: "cost.channel", value: -1, when: {actionElement: "void"}}]},
   stateAlchemistEquivalentExchange: {modifiers: [{key: "soulPrice.multiplier", op: "set", value: 0.5}]},
-  stateAlchemistArray: {automation: "manual"},
   alchemistCircle: {modifiers: [{key: "matter.max", value: 4}]},
   alchemistHarvestEye: {modifiers: [{key: "harvest.yield", op: "max", value: 3}]},
   philosopherTheStone: {modifiers: [{key: "cost.matter", op: "set", value: 0}, {key: "soulPrice.multiplier", op: "set", value: 0}]},
-  heroAdaptation: {automation: "manual"},
-  heroSaturatedStrike: {attack: {basis: "str", source: "weapon", defense: "def", might: 0}, automation: "partial"},
-  heroWeaponOfWar: {automation: "manual"},
+  heroSaturatedStrike: {attack: {basis: "str", source: "weapon", defense: "def", might: 0}},
 
   soldierShieldWall: {modifiers: [{key: "defense.def", value: 4}, {key: "immune", value: "rowSwap"}]},
   knightBulwark: {modifiers: [{key: "defense.def", value: 6}, {key: "defense.res", value: 2}, {key: "delay", value: 10}]},
@@ -188,20 +183,17 @@ export const abilityOverrides = {
   outriderSkirmish: {modifiers: [{key: "avoid", value: 10, when: {movedAtLeast: 1}}]},
   shadowCloak: {modifiers: [{key: "untargetableAtRange", op: "set", value: 3}]},
   gunnerReload: {modifiers: [{key: "might", value: 4, when: {actionWeaponLine: "gun"}}]},
-  elementalistAttune: {automation: "manual"},
 
   pinWrath: {modifiers: [{key: "crit", value: 30, when: {hpAtMost: 0.5}}]},
   pinBerserk: {modifiers: [
     {key: "attributes.str", value: 6}, {key: "might", value: 4}, {key: "delay", value: -10},
     {key: "damageTaken", op: "mul", value: 1.25}, {key: "immune", value: "guard"}
   ]},
-  pinDualWield: {automation: "manual"},
-  pinDoublecast: {automation: "manual", usage: {limit: 1, per: "encounter"}},
+  pinDoublecast: {usage: {limit: 1, per: "encounter"}},
   pinCounter: {attack: {basis: "str", source: "weapon", defense: "def", might: -2}},
   pinLancet: {attack: {basis: "str", source: "weapon", defense: "def", might: 0}, weight: 8},
   pinMiracle: {usage: {limit: 1, per: "encounter"}},
   pinGaleforce: {usage: {limit: 1, per: "round"}},
-  pinDrain: {automation: "manual"}
 };
 
 export const enemyClasses = [
@@ -210,10 +202,10 @@ export const enemyClasses = [
     name: "Imperial Legionary",
     tier: 2,
     types: ["armored", "infantry"],
-    growth: {str: "B", mag: "F", skl: "C", spd: "D", def: "S", res: "C", cmd: "C"},
+    growth: {str: "A", mag: "F", skl: "B", spd: "D", def: "S", res: "C", cmd: "C"},
     hp: 4,
-    trains: {primary: ["lance", "armor"], secondary: ["sword", "authority"]},
-    description: "Lance S, DEF S, companies count Quality 5.",
+    trains: {primary: ["lance", "armor"], secondary: ["authority", "sword"]},
+    description: "Lance S, DEF S, companies count Quality 5. Growth STR A, MAG F, SKL B, SPD D, DEF S, RES C, CMD C.",
     cells: [
       "Testudo [Stance]: DEF +8",
       "Shield Push [Action]: M8 W8, push 1 tile or force row swap",
@@ -226,10 +218,10 @@ export const enemyClasses = [
     name: "Inquisitor",
     tier: 3,
     types: ["infantry", "caster"],
-    growth: {str: "A", mag: "B", skl: "A", spd: "B", def: "C", res: "A", cmd: "D"},
+    growth: {str: "B", mag: "B", skl: "A", spd: "C", def: "C", res: "A", cmd: "C"},
     hp: 3,
-    trains: {primary: ["sword", "reason"], secondary: ["faith", "gun"]},
-    description: "Spellbreaker Rank 1 to 6 plus Faith. Hunts Void users first.",
+    trains: {primary: ["sword", "faith"], secondary: ["reason", "void"]},
+    description: "Spellbreaker Rank 1 to 6 plus Faith. Hunts Void users first. Growth STR B, MAG B, SKL A, SPD C, DEF C, RES A, CMD C.",
     borrows: [
       {rank: 1, id: "spellbreakerNullEdge"}, {rank: 2, id: "spellbreakerSeveringCut"},
       {rank: 4, id: "spellbreakerSpellEater"}, {rank: 6, id: "spellbreakerSuppression"}
@@ -237,21 +229,6 @@ export const enemyClasses = [
     cells: [
       "Writ of Silence [Action]: W8, target Silenced 2 turns, 3 Ch",
       "Hunt the Mage [Support]: Might +6 vs Caster"
-    ]
-  },
-  {
-    id: "divineAgent",
-    name: "Divine Agent",
-    tier: 4,
-    types: ["caster", "officer"],
-    growth: {str: "C", mag: "S", skl: "A", spd: "B", def: "B", res: "S", cmd: "A"},
-    hp: 3,
-    trains: {primary: ["faith", "authority"], secondary: ["reason", "sword"]},
-    description: "SSS RES, SS MAG, Delay 25. Phase 50 percent: all companies on the map rout. Caldus Rime.",
-    cells: [
-      "Judgement [Action]: Divine M20, all enemies, W8",
-      "Erasure [Action]: target Saturation minus 10, W8",
-      "Unmaking [Reaction]: alchemy against him fails on d100 over 50"
     ]
   }
 ];

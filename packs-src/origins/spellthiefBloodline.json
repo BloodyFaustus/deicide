@@ -5,7 +5,7 @@
   "img": "icons/svg/village.svg",
   "system": {
     "kind": "background",
-    "description": "<p>Spellthief reaction, 2 Stolen slots (3 at level 15). Rogue Rank 2.</p>",
+    "description": "<p>Spellthief reaction, 2 Stolen slots (3 at level 15). Rogue Rank 2. Standing Temple 25, Underworld 50.</p>",
     "points": {
       "skl": 2,
       "spd": 2
@@ -20,7 +20,11 @@
       "engines": [
         "originSpellthief"
       ],
-      "stolenSlots": true
+      "stolenSlots": true,
+      "standing": {
+        "temple": 25,
+        "underworld": 50
+      }
     },
     "story": true,
     "identifier": "spellthiefBloodline"

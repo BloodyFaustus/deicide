@@ -35,9 +35,24 @@
       "note": "Cannon range is a War Mode number."
     },
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "range.max",
+        "value": 2,
+        "when": {
+          "actionId": "artilleristCannon"
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Cannon range 3 to 10"
+    ],
+    "automation": "full",
     "identifier": "artilleristBombard"
   },
   "effects": [],

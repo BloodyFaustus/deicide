@@ -46,7 +46,29 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "damage",
+        "amount": "floor(mag / 2)",
+        "tag": "attunedElement",
+        "target": "attacker"
+      }
+    ],
+    "reaction": {
+      "trigger": "hitByAttack",
+      "window": {
+        "self": true
+      },
+      "when": {
+        "attackerRange": {
+          "max": 1
+        }
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "elementalistDischarge"
   },
   "effects": [],

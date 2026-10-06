@@ -34,7 +34,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "flag",
+        "key": "preBattle.enemyOfficerHpPercent",
+        "value": -20,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "pre battle",
+      "one enemy officer starts at HP minus 20 percent"
+    ],
+    "automation": "full",
     "identifier": "spymasterPlantAgent"
   },
   "effects": [],

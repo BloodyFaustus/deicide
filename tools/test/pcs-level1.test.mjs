@@ -39,7 +39,7 @@ for ( const [name, fixture] of Object.entries(fixtures) ) {
     const system = created.system;
 
     test("background grants reproduce the fixture class list", () => {
-      const classes = system.classes.map(({id, rank, cp}) => ({id, rank, cp}));
+      const classes = system.classes.map(({id, rank, cp100}) => ({id, rank, cp: cp100 / 100}));
       assert.deepEqual(classes, fixture.classes);
       assert.equal(system.activeClass, fixture.activeClass);
     });

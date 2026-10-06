@@ -48,7 +48,31 @@
     "roll": {
       "formula": "3 * skl"
     },
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "cancel",
+        "what": "command"
+      }
+    ],
+    "reaction": {
+      "trigger": "enemyCommand",
+      "window": {
+        "tiles": 99,
+        "row": "any"
+      },
+      "roll": {
+        "d100Under": "3 * skl"
+      },
+      "when": {
+        "actionTag": "intel"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "enemy reveals or sabotages"
+    ],
+    "automation": "full",
     "identifier": "spymasterCounterintel"
   },
   "effects": [],

@@ -1,0 +1,48 @@
+<div class="gm-tool-root">
+  {{#unless nation}}<p class="warn">{{localize "DEICIDE.Generate.NoNation"}}</p>{{/unless}}
+  <div class="dials">
+    <label>N <input type="number" name="N" value="{{input.N}}" min="1" max="8"></label>
+    <label>S <input type="number" name="S" value="{{input.S}}" min="1"></label>
+    <label>L <input type="number" name="L" value="{{input.L}}" min="1" max="30"></label>
+    <label>{{localize "DEICIDE.Generate.PartyLevel"}} <input type="number" name="partyLevel" value="{{input.partyLevel}}" min="1" max="30"></label>
+    <span class="p">P {{plan.displayP}}</span>
+  </div>
+  <div class="dials">
+    <label>{{localize "DEICIDE.Generate.DifficultyLabel"}}
+      <select name="difficulty">{{#each difficulties}}<option value="{{id}}" {{#if (eq id @root.input.difficulty)}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+    <label>{{localize "DEICIDE.Generate.KindLabel"}}
+      <select name="kind">{{#each kinds}}<option value="{{id}}" {{#if (eq id @root.input.kind)}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+    <label>{{localize "DEICIDE.Generate.EnemyTier"}} <input type="number" name="enemyTier" value="{{input.enemyTier}}" min="1" max="4"></label>
+  </div>
+
+  <table class="plan">
+    <tr><th>{{localize "DEICIDE.Generate.Enemies"}}</th><td>{{localize "DEICIDE.Generate.EnemiesLine" level=plan.enemyLevel low=plan.count.[0] high=plan.count.[1]}}{{#if plan.altCount}} {{localize "DEICIDE.Generate.AltCount" count=plan.altCount}}{{/if}}</td></tr>
+    <tr><th>{{localize "DEICIDE.Generate.StandardRow"}}</th><td>HP {{plan.standard.hp}}, DEF {{plan.standard.def}}, RES {{plan.standard.res}}, M{{plan.standard.might}}, Hit {{plan.standard.hit}}</td></tr>
+    <tr><th>{{localize "DEICIDE.Generate.BossRow"}}</th><td>{{localize "DEICIDE.Generate.BossLine" row=plan.boss.row hp=plan.boss.hp base=plan.boss.hpBase}}, DEF {{plan.boss.def}}, RES {{plan.boss.res}}, M{{plan.boss.single}} / M{{plan.boss.area}}, Hit {{plan.boss.hit}}</td></tr>
+    <tr><th>{{localize "DEICIDE.Generate.CompanyQ"}}</th><td>{{plan.companyQ}}</td></tr>
+    <tr><th>{{localize "DEICIDE.Generate.AwardsPerSheet"}}</th><td>{{awards}}</td></tr>
+    <tr><th>{{localize "DEICIDE.Generate.Deployed"}}</th><td>{{#if deployed}}{{deployed}}{{else}}{{localize "DEICIDE.Generate.NoDeployed"}}{{/if}}</td></tr>
+  </table>
+
+  {{#if isGM}}
+  <p class="buttons">
+    <button type="button" data-action="award"><i class="fa-solid fa-medal"></i> {{localize "DEICIDE.Generate.Award"}}</button>
+    <button type="button" data-action="buildMonsters"><i class="fa-solid fa-skull"></i> {{localize "DEICIDE.Generate.BuildMonsters"}}</button>
+    <button type="button" data-action="buildBoss"><i class="fa-solid fa-dragon"></i> {{localize "DEICIDE.Generate.BuildBoss"}}</button>
+    <button type="button" data-action="buildOfficers"><i class="fa-solid fa-user-tie"></i> {{localize "DEICIDE.Generate.BuildOfficers"}}</button>
+    <button type="button" data-action="journal"><i class="fa-solid fa-book"></i> {{localize "DEICIDE.Generate.Journal"}}</button>
+  </p>
+
+  <h3>{{localize "DEICIDE.Generate.Loot"}}</h3>
+  <div class="dials">
+    <label>{{localize "DEICIDE.Generate.LootKind"}}
+      <select name="lootKind">{{#each lootKinds}}<option value="{{id}}" {{#if (eq id @root.input.lootKind)}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+    <label>{{localize "DEICIDE.Generate.LootMode"}}
+      <select name="lootMode"><option value="dungeon" {{#if (eq input.lootMode "dungeon")}}selected{{/if}}>{{localize "DEICIDE.Mode.dungeon"}}</option><option value="war" {{#if (eq input.lootMode "war")}}selected{{/if}}>{{localize "DEICIDE.Mode.war"}}</option></select></label>
+    {{#if (eq input.lootKind "officer")}}<label>{{localize "DEICIDE.Generate.OfficerWeapon"}} <input type="text" name="officerWeapon" value="{{input.officerWeapon}}" placeholder="steelLance"></label>{{/if}}
+    {{#if (eq input.lootKind "homunculus")}}<label>{{localize "DEICIDE.Generate.Homunculus"}}
+      <select name="homunculusId">{{#each homunculi}}<option value="{{id}}" {{#if (eq id @root.input.homunculusId)}}selected{{/if}}>{{name}}</option>{{/each}}</select></label>{{/if}}
+    <button type="button" data-action="postLoot"><i class="fa-solid fa-gem"></i> {{localize "DEICIDE.Generate.PostLoot"}}</button>
+  </div>
+  {{/if}}
+</div>

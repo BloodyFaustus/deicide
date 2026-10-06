@@ -44,9 +44,24 @@
     },
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "defense.res",
+        "value": 8
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": {
+      "trigger": "hitByDivine",
+      "window": {
+        "self": true
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "darkMageHollow"
   },
   "effects": [],

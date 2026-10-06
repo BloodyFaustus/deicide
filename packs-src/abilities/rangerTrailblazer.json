@@ -34,7 +34,29 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "aura",
+        "radius": 99,
+        "target": "allies",
+        "modifiers": [
+          {
+            "key": "move",
+            "value": 1
+          }
+        ],
+        "when": {
+          "engine": "war"
+        }
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "party Move \\+1 in War"
+    ],
+    "automation": "full",
     "identifier": "rangerTrailblazer"
   },
   "effects": [],

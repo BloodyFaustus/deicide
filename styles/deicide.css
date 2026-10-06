@@ -861,3 +861,80 @@
   .controls button { font-size: var(--font-size-12); }
   pre { font-size: var(--font-size-10); }
 }
+
+.deicide.reaction-prompt .reaction-prompt-body { padding: 0.5rem 0.75rem; }
+.deicide.reaction-prompt .lead { margin: 0 0 0.25rem; }
+.deicide.reaction-prompt .timer { margin: 0 0 0.5rem; color: var(--color-text-secondary, #999); }
+.deicide.reaction-prompt .countdown { font-size: 1.2em; }
+.deicide.reaction-prompt .option { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.5rem; padding: 0.35rem 0.25rem; border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+.deicide.reaction-prompt .option label { flex: 1 1 auto; display: flex; align-items: center; gap: 0.4rem; cursor: pointer; }
+.deicide.reaction-prompt .option .meta { color: var(--color-text-secondary, #999); font-size: 0.9em; }
+.deicide.reaction-prompt .option .summary { flex: 1 0 100%; margin: 0; font-size: 0.85em; }
+.deicide.reaction-prompt .option .order { display: flex; gap: 0.15rem; }
+.deicide.reaction-prompt .buttons { display: flex; gap: 0.5rem; margin-top: 0.5rem; }
+.deicide.reaction-prompt .buttons button { flex: 1; }
+
+.deicide-card .cancelled { color: #a33; }
+.deicide-card .reactions .reaction.failed { opacity: 0.7; }
+.deicide-card .outcomes li { font-size: 0.9em; }
+.deicide-card .target.extra { border-left: 3px solid #88a; }
+.deicide-tracker .activations { font-weight: bold; color: #2a7; margin-left: 0.25rem; }
+
+.deicide.dungeon-stage .phase-banner.boss { margin: 0.25rem 0; padding: 0.25rem 0.5rem; border-left: 4px solid #a33; background: rgba(170, 51, 51, 0.1); }
+.deicide.dungeon-stage .phase-banner.boss .breaks { margin-left: 0.5rem; }
+.deicide.dungeon-stage .phase-banner.boss .break { margin-right: 0.35rem; opacity: 0.6; }
+.deicide.dungeon-stage .phase-banner.boss .break.done { opacity: 1; font-weight: bold; color: #a33; }
+.deicide.dungeon-stage .barrier-bar { display: inline-block; width: 60px; height: 6px; margin-left: 0.3rem; background: rgba(0, 0, 0, 0.2); vertical-align: middle; }
+.deicide.dungeon-stage .barrier-bar .fill { display: block; height: 100%; background: #4a8; }
+.deicide.dungeon-stage .setup .choices button.on, .deicide.dungeon-stage .controls button.on { outline: 2px solid #4a8; }
+.deicide.dungeon-stage .unit.fled { opacity: 0.4; }
+.deicide.dungeon-stage .queue .label.guard { margin-left: 1rem; color: #4a8; }
+.deicide.dungeon-stage .queue .projected.current { font-weight: bold; }
+
+.deicide-gm-tools { flex: 0 0 auto; gap: 0.25rem; }
+.deicide-gm-tools .deicide-tool { flex: 0 0 auto; width: 2rem; }
+.deicide.gm-tool .gm-tool-root { padding: 0.5rem 0.75rem; font-size: var(--font-size-12); display: flex; flex-direction: column; gap: 0.4rem; }
+.deicide.gm-tool .columns { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+.deicide.gm-tool .form-group { display: flex; align-items: center; gap: 0.5rem; margin: 0.15rem 0; }
+.deicide.gm-tool .form-group > label { flex: 0 0 9rem; font-weight: bold; }
+.deicide.gm-tool .form-group > input, .deicide.gm-tool .form-group > select, .deicide.gm-tool .form-group > textarea, .deicide.gm-tool .form-group > .seed { flex: 1 1 auto; min-width: 0; }
+.deicide.gm-tool .form-group.stacked { flex-direction: column; align-items: stretch; }
+.deicide.gm-tool .form-group.stacked > label { flex: 0 0 auto; }
+.deicide.gm-tool .seed { display: flex; gap: 0.25rem; }
+.deicide.gm-tool .seed button { flex: 0 0 2rem; }
+.deicide.gm-tool .dials { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.75rem; }
+.deicide.gm-tool .dials label { display: flex; align-items: center; gap: 0.3rem; }
+.deicide.gm-tool .dials input[type="number"] { width: 4.5rem; }
+.deicide.gm-tool .dials .p { font-weight: bold; margin-left: auto; }
+.deicide.gm-tool .buttons { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0.25rem 0; }
+.deicide.gm-tool .buttons button, .deicide.gm-tool .dials button { flex: 0 0 auto; }
+.deicide.gm-tool .preview { border-left: 1px solid rgba(0, 0, 0, 0.15); padding-left: 0.75rem; }
+.deicide.gm-tool .preview .summary, .deicide.gm-tool .summary { font-style: italic; }
+.deicide.gm-tool table.detail, .deicide.gm-tool table.plan { width: 100%; border-collapse: collapse; }
+.deicide.gm-tool table.detail th, .deicide.gm-tool table.plan th { text-align: left; width: 9rem; padding: 0.15rem 0.3rem; vertical-align: top; }
+.deicide.gm-tool table.detail td, .deicide.gm-tool table.plan td { padding: 0.15rem 0.3rem; }
+.deicide.gm-tool .warnings { margin: 0; padding-left: 1rem; }
+.deicide.gm-tool .warn, .deicide.gm-tool p.warn { color: #a33; }
+.deicide.gm-tool h3 { margin: 0.4rem 0 0.1rem; font-size: var(--font-size-13); border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+.deicide-card.loot .loot-item { display: flex; align-items: center; gap: 0.4rem; padding: 0.15rem 0; }
+.deicide-card.loot .loot-item img { width: 24px; height: 24px; border: none; }
+.deicide-card.loot .loot-item span { flex: 1 1 auto; }
+.deicide-card.loot .loot-item button, .deicide-card.loot .dust button { flex: 0 0 auto; width: auto; line-height: 1.4; font-size: 0.9em; }
+.deicide-card.loot .note { font-size: 0.9em; opacity: 0.85; }
+
+.deicide.sheet.company .doctrine-row { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0.25rem 0; }
+.deicide.sheet.company .doctrine-badge { padding: 0.1rem 0.4rem; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 3px; opacity: 0.5; font-size: var(--font-size-11); }
+.deicide.sheet.company .doctrine-badge.on { opacity: 1; border-color: #4a8; font-weight: bold; }
+.deicide.sheet.company .doctrine-icon { color: #4a8; }
+.deicide.sheet.monster .phase-breaks .phase-break { display: flex; align-items: center; gap: 0.4rem; padding: 0.15rem 0; }
+.deicide.sheet.monster .phase-breaks .phase-break input[type="text"] { flex: 1 1 auto; }
+.deicide.sheet.monster .phase-breaks .phase-break.done { opacity: 0.7; }
+.deicide.sheet.character .divine-log li { display: flex; gap: 0.4rem; align-items: baseline; }
+.deicide.sheet.character .divine-log li small { opacity: 0.7; }
+.deicide.sheet.character .attribute-table .over-cap .value { color: #a33; }
+.deicide.sheet.character .attribute-table .value .warn { color: #a33; }
+.deicide-creation label { display: flex; align-items: center; gap: 0.5rem; margin: 0.2rem 0; }
+.deicide-creation label > input, .deicide-creation label > select { flex: 1 1 auto; }
+.deicide-creation fieldset { display: flex; flex-wrap: wrap; gap: 0.3rem 0.6rem; }
+.deicide-creation fieldset label { flex: 0 0 auto; }
+.deicide-creation fieldset input { width: 3.2rem; }

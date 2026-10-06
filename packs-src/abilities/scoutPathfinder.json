@@ -32,9 +32,27 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "terrainCost.forest",
+        "op": "set",
+        "value": 1
+      },
+      {
+        "key": "terrainCost.hill",
+        "op": "set",
+        "value": 1
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "forest and hill cost 1"
+    ],
+    "automation": "full",
     "identifier": "scoutPathfinder"
   },
   "effects": [],

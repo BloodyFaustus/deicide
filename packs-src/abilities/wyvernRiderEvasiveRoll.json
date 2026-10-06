@@ -44,9 +44,28 @@
     },
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "avoid",
+        "value": 20
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": {
+      "trigger": "targetedByAttack",
+      "window": {
+        "self": true
+      },
+      "when": {
+        "actionWeaponLine": "bow"
+      },
+      "usesPerRound": 1
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "wyvernRiderEvasiveRoll"
   },
   "effects": [],

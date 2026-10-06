@@ -44,9 +44,32 @@
     },
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "defense.def",
+        "value": 5
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": {
+      "trigger": "targetedByAttack",
+      "window": {
+        "self": true
+      },
+      "when": {
+        "actionPhysical": true
+      },
+      "cost": {
+        "matter": 1
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "1 Mt for DEF \\+5"
+    ],
+    "automation": "full",
     "identifier": "alchemistDeconstruct"
   },
   "effects": [],

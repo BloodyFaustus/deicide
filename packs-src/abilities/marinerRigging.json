@@ -32,9 +32,29 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "move",
+        "value": 1,
+        "when": {
+          "mode": "naval"
+        }
+      },
+      {
+        "key": "terrainCost.wall",
+        "op": "set",
+        "value": 2
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "climb walls at cost 2"
+    ],
+    "automation": "full",
     "identifier": "marinerRigging"
   },
   "effects": [],

@@ -27,18 +27,26 @@
       "soulPrice": 0
     },
     "weight": null,
-    "attack": null,
+    "attack": {
+      "basis": "str",
+      "source": "weapon",
+      "defense": "def",
+      "might": 0,
+      "element": null,
+      "multiplierVs": {
+        "targetStatus": "routed",
+        "value": 2
+      },
+      "bonuses": []
+    },
     "heal": null,
     "war": {
-      "range": [
-        0,
-        0
-      ],
+      "range": null,
       "area": {
         "shape": "single",
         "size": 1
       },
-      "target": "self",
+      "target": "enemy",
       "movement": null,
       "terrain": false
     },
@@ -46,7 +54,14 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "attack a routing company for x2 Strength loss"
+    ],
+    "automation": "full",
     "identifier": "chevalierPursuit"
   },
   "effects": [],

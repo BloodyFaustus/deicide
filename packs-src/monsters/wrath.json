@@ -5,7 +5,7 @@
   "img": "icons/svg/skull.svg",
   "system": {
     "identifier": "wrath",
-    "level": 22,
+    "level": 20,
     "hp": {
       "value": 450,
       "max": 450
@@ -14,6 +14,7 @@
     "res": 12,
     "spd": 15,
     "mag": 16,
+    "skl": 0,
     "delay": {
       "mode": "fixed",
       "value": 30
@@ -42,7 +43,8 @@
         "redWater",
         "redWater",
         "stoneFragment"
-      ]
+      ],
+      "divineAttention": 0
     },
     "row": "front",
     "description": "<p></p>",
@@ -125,7 +127,12 @@
         "modifiers": [],
         "roll": null,
         "art": null,
-        "automation": "partial"
+        "effects": [],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [],
+        "automation": "full"
       },
       "effects": [],
       "folder": null,
@@ -207,7 +214,12 @@
         "modifiers": [],
         "roll": null,
         "art": null,
-        "automation": "partial"
+        "effects": [],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [],
+        "automation": "full"
       },
       "effects": [],
       "folder": null,
@@ -275,6 +287,11 @@
         "modifiers": [],
         "roll": null,
         "art": null,
+        "effects": [],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [],
         "automation": "manual"
       },
       "effects": [],
@@ -359,7 +376,12 @@
         "modifiers": [],
         "roll": null,
         "art": null,
-        "automation": "partial"
+        "effects": [],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [],
+        "automation": "full"
       },
       "effects": [],
       "folder": null,

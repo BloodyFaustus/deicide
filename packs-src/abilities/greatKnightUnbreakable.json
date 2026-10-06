@@ -44,9 +44,30 @@
     },
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "damageTaken",
+        "op": "add",
+        "value": "-floor(def / 2)"
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": {
+      "trigger": "hitByAttack",
+      "window": {
+        "self": true
+      },
+      "when": {
+        "damageAtLeast": 20
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "reduce by DEF/2"
+    ],
+    "automation": "full",
     "identifier": "greatKnightUnbreakable"
   },
   "effects": [],

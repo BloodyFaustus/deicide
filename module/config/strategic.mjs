@@ -39,10 +39,10 @@ export const companyTypes = {
 };
 
 export const doctrines = {
-  hold: {label: "DEICIDE.Doctrine.hold"},
-  advance: {label: "DEICIDE.Doctrine.advance"},
-  volley: {label: "DEICIDE.Doctrine.volley", retreat: 1},
-  screen: {label: "DEICIDE.Doctrine.screen"}
+  hold: {label: "DEICIDE.Doctrine.hold", icon: "fa-shield"},
+  advance: {label: "DEICIDE.Doctrine.advance", icon: "fa-arrow-right"},
+  volley: {label: "DEICIDE.Doctrine.volley", retreat: 1, icon: "fa-bullseye"},
+  screen: {label: "DEICIDE.Doctrine.screen", icon: "fa-people-arrows"}
 };
 
 export const nationTracks = {

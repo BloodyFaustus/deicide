@@ -44,9 +44,25 @@
     },
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "damageTaken",
+        "op": "add",
+        "value": "-floor(def / 4)"
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": {
+      "trigger": "hitByPhysical",
+      "window": {
+        "self": true
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "soldierBrace"
   },
   "effects": [],

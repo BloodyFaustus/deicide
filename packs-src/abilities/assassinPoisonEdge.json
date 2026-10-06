@@ -34,7 +34,26 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "applyStatus",
+        "statusId": "poison",
+        "target": "target",
+        "turns": 3,
+        "chance": "onHit",
+        "trigger": "ownAttack",
+        "when": {
+          "actionSource": "weapon"
+        }
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "hits inflict Poison"
+    ],
+    "automation": "full",
     "identifier": "assassinPoisonEdge"
   },
   "effects": [],

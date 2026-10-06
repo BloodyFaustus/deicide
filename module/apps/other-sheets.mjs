@@ -28,7 +28,9 @@ export class CompanySheet extends DeicideActorSheetBase {
     context.derived = system.derived;
     context.types = Object.entries(DEICIDE.companyTypes).map(([id, type]) => ({id, label: game.i18n.localize(type.label)}));
     context.ships = Object.keys(DEICIDE.ships);
-    context.doctrines = Object.entries(DEICIDE.doctrines).map(([id, doctrine]) => ({id, label: game.i18n.localize(doctrine.label)}));
+    context.doctrines = Object.entries(DEICIDE.doctrines).map(([id, doctrine]) => ({id, label: game.i18n.localize(doctrine.label), icon: doctrine.icon, active: system.doctrine === id}));
+    context.doctrineIcon = DEICIDE.doctrines[system.doctrine]?.icon ?? null;
+    context.doctrineLabel = system.doctrine ? game.i18n.localize(DEICIDE.doctrines[system.doctrine].label) : "";
     context.sides = ["lathander", "enemy", "foreign"];
     context.owners = game.actors.filter(a => (a.type === "character") && a.derived?.isOfficer).map(a => ({id: a.id, name: a.name}));
     context.qualityCap = nation.tracks ? qualityCap(nation.tracks, system.type) : 5;
@@ -42,12 +44,28 @@ export class CompanySheet extends DeicideActorSheetBase {
   static async #onVeterancy() {
     const actor = this.document;
     const ownerAdjacent = await foundry.applications.api.DialogV2.confirm({
-      window: {title: "Veterancy"}, content: "<p>Did a Sworn owner end the battle adjacent to this company?</p>"
+      window: {title: game.i18n.localize("DEICIDE.Company.VeterancyTitle")}, content: `<p>${game.i18n.localize("DEICIDE.Company.VeterancyPrompt")}</p>`
     });
     const nation = game.deicide.nation;
     const result = veterancyAfterBattle(actor.system, {ownerAdjacent, routed: actor.system.routed, qualityCap: nation.tracks ? qualityCap(nation.tracks, actor.system.type) : 5});
-    await actor.update({"system.veterancy": result.veterancy, "system.quality": result.quality, "system.veterancyQuality": result.veterancyQuality, "system.named": actor.system.named || result.promoted, "system.routed": false});
-    ui.notifications.info(`${actor.name}: veterancy ${result.veterancy}${result.promoted ? ", Quality rises to " + result.quality : ""}${result.demoted ? ", Quality falls to " + result.quality : ""}.`);
+    const update = {"system.veterancy": result.veterancy, "system.quality": result.quality, "system.veterancyQuality": result.veterancyQuality, "system.named": actor.system.named || result.promoted, "system.routed": false};
+    if ( result.promoted ) {
+
+      const named = await foundry.applications.api.DialogV2.prompt({
+        window: {title: game.i18n.format("DEICIDE.Company.PromotedTitle", {name: actor.name})},
+        content: `<p>${game.i18n.format("DEICIDE.Company.PromotedPrompt", {quality: result.quality})}</p><label>${game.i18n.localize("DEICIDE.Company.PromotedName")} <input type="text" name="name" value="${actor.name}" autofocus></label><label>${game.i18n.localize("DEICIDE.Company.PromotedBanner")} <input type="text" name="banner" value="${actor.system.banner}"></label>`,
+        ok: {label: game.i18n.localize("DEICIDE.Company.PromotedOk"), callback: (event, button) => ({name: button.form.elements.name.value.trim(), banner: button.form.elements.banner.value.trim()})},
+        rejectClose: false
+      });
+      if ( named?.name ) update.name = named.name;
+      if ( named?.banner ) update["system.banner"] = named.banner;
+    }
+    await actor.update(update);
+    ui.notifications.info(game.i18n.format("DEICIDE.Company.Result", {
+      name: actor.name, veterancy: result.veterancy,
+      promoted: result.promoted ? game.i18n.format("DEICIDE.Company.RisesTo", {quality: result.quality}) : "",
+      demoted: result.demoted ? game.i18n.format("DEICIDE.Company.FallsTo", {quality: result.quality}) : ""
+    }));
   }
 
   static async #onUpgrade() {
@@ -55,9 +73,9 @@ export class CompanySheet extends DeicideActorSheetBase {
     const nation = game.deicide.nation.actor;
     const cost = companyUpgradeCost(actor.system.quality + 1);
     const cap = nation ? qualityCap(nation.system.tracks, actor.system.type) : 5;
-    if ( actor.system.quality >= cap ) return ui.notifications.warn(`Quality is capped at ${cap} by the Weapons track.`);
-    if ( nation && (nation.system.dust < cost) ) return ui.notifications.warn(`The Nation needs ${cost} Dust.`);
-    if ( !(await foundry.applications.api.DialogV2.confirm({window: {title: "Upgrade"}, content: `<p>Raise Quality to ${actor.system.quality + 1} for ${cost} Nation Dust?</p>`})) ) return;
+    if ( actor.system.quality >= cap ) return ui.notifications.warn(game.i18n.format("DEICIDE.Company.CapWarn", {cap}));
+    if ( nation && (nation.system.dust < cost) ) return ui.notifications.warn(game.i18n.format("DEICIDE.Company.NeedDust", {cost}));
+    if ( !(await foundry.applications.api.DialogV2.confirm({window: {title: game.i18n.localize("DEICIDE.Company.UpgradeTitle")}, content: `<p>${game.i18n.format("DEICIDE.Company.UpgradePrompt", {quality: actor.system.quality + 1, cost})}</p>`})) ) return;
     if ( nation ) await nation.update({"system.dust": nation.system.dust - cost});
     await actor.update({"system.quality": actor.system.quality + 1});
   }
@@ -79,7 +97,9 @@ export class MonsterSheet extends DeicideActorSheetBase {
       useMove: MonsterSheet.#onUseMove,
       editItem: MonsterSheet.#onEditItem,
       deleteItem: MonsterSheet.#onDeleteItem,
-      addMove: MonsterSheet.#onAddMove
+      addMove: MonsterSheet.#onAddMove,
+      addPhaseBreak: MonsterSheet.#onAddPhaseBreak,
+      removePhaseBreak: MonsterSheet.#onRemovePhaseBreak
     }
   };
 
@@ -99,6 +119,7 @@ export class MonsterSheet extends DeicideActorSheetBase {
       might: item.system.attack?.might ?? null, area: item.system.dungeon?.target ?? "single"
     }));
     context.hpPercent = Math.round(system.hp.value / Math.max(system.hp.max, 1) * 100);
+    context.phaseBreaks = system.phaseBreaks.map(entry => entry.toObject?.() ?? entry);
     context.descriptionHtml = await TextEditor.implementation.enrichHTML(system.description, {relativeTo: this.document});
     context.isGM = game.user.isGM;
     return context;
@@ -129,6 +150,17 @@ export class MonsterSheet extends DeicideActorSheetBase {
     await this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId)?.delete();
   }
 
+  static async #onAddPhaseBreak() {
+    const breaks = this.document.system.phaseBreaks.map(entry => entry.toObject?.() ?? entry);
+    await this.document.update({"system.phaseBreaks": [...breaks, {percent: 50, note: "", triggered: false}]});
+  }
+
+  static async #onRemovePhaseBreak(event, target) {
+    const index = Number(target.dataset.index);
+    const breaks = this.document.system.phaseBreaks.map(entry => entry.toObject?.() ?? entry).filter((entry, i) => i !== index);
+    await this.document.update({"system.phaseBreaks": breaks});
+  }
+
   static async #onAddMove() {
     const [item] = await this.document.createEmbeddedDocuments("Item", [{
       name: "New move", type: "ability",
@@ -147,6 +179,7 @@ export class NationSheet extends DeicideActorSheetBase {
     position: {width: 760, height: 720},
     actions: {
       advanceWeek: NationSheet.#onAdvanceWeek,
+      advanceMonth: NationSheet.#onAdvanceMonth,
       fundTrack: NationSheet.#onFundTrack,
       addVenture: NationSheet.#onAddVenture,
       resolveVentures: NationSheet.#onResolveVentures,
@@ -188,16 +221,32 @@ export class NationSheet extends DeicideActorSheetBase {
     let week = actor.system.warWeek + 1;
     let month = actor.system.warMonth;
     if ( week > DEICIDE.warClock.weeksPerMonth ) { week = 1; month = Math.min(month + 1, DEICIDE.warClock.months); }
-    const update = {"system.warWeek": week, "system.warMonth": month};
-    if ( month !== actor.system.warMonth ) {
-      const log = [...actor.system.log.map(entry => entry.toObject?.() ?? entry), {month, text: `Month ${month} begins.`, changes: {}}];
+    await NationSheet.#advanceTo(actor, month, week);
+  }
 
-      log.push({month, text: "Offweiss: raise two tracks by 1 (GM choice).", changes: {}});
-      if ( month >= DEICIDE.offweiss.frigateFromMonth ) log.push({month, text: "Offweiss gains 1 frigate.", changes: {}});
+  static async #onAdvanceMonth() {
+    const actor = this.document;
+    if ( actor.system.warMonth >= DEICIDE.warClock.months ) return ui.notifications.warn(game.i18n.localize("DEICIDE.Nation.ClockEnd"));
+    await NationSheet.#advanceTo(actor, actor.system.warMonth + 1, 1);
+  }
+
+  static async #advanceTo(actor, month, week) {
+    const update = {"system.warWeek": week, "system.warMonth": month};
+    const newMonth = month !== actor.system.warMonth;
+    if ( newMonth ) {
+      const log = [...actor.system.log.map(entry => entry.toObject?.() ?? entry), {month, text: game.i18n.format("DEICIDE.Nation.MonthBegins", {month}), changes: {}}];
+
+      log.push({month, text: game.i18n.localize("DEICIDE.Nation.OffweissTracks"), changes: {}});
+      if ( month >= DEICIDE.offweiss.frigateFromMonth ) log.push({month, text: game.i18n.localize("DEICIDE.Nation.OffweissFrigate"), changes: {}});
+      if ( DEICIDE.warClock.dustCollapseMonths.includes(month) ) {
+        const collapse = actor.system.tracks.dust < DEICIDE.commissions.dustCollapseMinDustTrack;
+        log.push({month, text: collapse ? game.i18n.format("DEICIDE.Nation.CollapseOn", {month}) : game.i18n.format("DEICIDE.Nation.CollapseOff", {month, value: actor.system.tracks.dust}), changes: {}});
+        if ( collapse ) ui.notifications.warn(game.i18n.format("DEICIDE.Nation.CollapseOn", {month}));
+      }
       update["system.log"] = log;
     }
     await actor.update(update);
-    if ( month !== actor.system.warMonth ) await game.deicide.strategic?.resolveVentures?.(actor);
+    if ( newMonth ) await game.deicide.strategic?.resolveVentures?.(actor);
   }
 
   static async #onFundTrack(event, target) {

@@ -48,7 +48,29 @@
     "roll": {
       "formula": "10 + 3 * skl - 2 * casterMag"
     },
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "cancel",
+        "what": "triggeringAction"
+      }
+    ],
+    "reaction": {
+      "trigger": "enemyCast",
+      "window": {
+        "tiles": 3,
+        "row": "any"
+      },
+      "roll": {
+        "d100Under": "10 + 3 * skl - 2 * casterMag"
+      },
+      "cost": {
+        "channel": 4
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "magusCounterspell"
   },
   "effects": [],

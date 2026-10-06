@@ -1,29 +1,29 @@
 <div class="deployment-root">
   <p class="summary">
     <span class="mode-badge {{mode}}">{{modeLabel}}</span>
-    <span>Sheets {{counts.sheets}} / {{limits.sheets}}</span>
-    <span>Sworn {{counts.sworn}} / {{limits.sworn}}</span>
-    {{#if (eq engine "war")}}<span>Companies {{counts.companies}} / {{limits.companies}}</span>{{else}}<span>Stage {{limits.stage}}</span>{{/if}}
+    <span>{{localize "DEICIDE.Deployment.Sheets" count=counts.sheets limit=limits.sheets}}</span>
+    <span>{{localize "DEICIDE.Deployment.Sworn" count=counts.sworn limit=limits.sworn}}</span>
+    {{#if (eq engine "war")}}<span>{{localize "DEICIDE.Deployment.Companies" count=counts.companies limit=limits.companies}}</span>{{else}}<span>{{localize "DEICIDE.Deployment.Stage" capacity=limits.stage}}</span>{{/if}}
   </p>
   {{#if warnings.length}}
   <ul class="warnings">{{#each warnings}}<li class="warn">{{this}}</li>{{/each}}</ul>
   {{else}}
-  <p class="ok">Deployment is within the Nation's limits.</p>
+  <p class="ok">{{localize "DEICIDE.Deployment.Ok"}}</p>
   {{/if}}
 
-  <h3>PC sheets</h3>
+  <h3>{{localize "DEICIDE.Deployment.PcSheets"}}</h3>
   <ul class="plain pick-list">
-    {{#each story}}<li class="{{#if selected}}selected{{/if}}" data-actor-id="{{id}}" data-action="toggle"><img src="{{img}}" alt=""><span>{{name}}</span><small>{{detail}}</small></li>{{else}}<li class="empty">No characters.</li>{{/each}}
+    {{#each story}}<li class="{{#if selected}}selected{{/if}}" data-actor-id="{{id}}" data-action="toggle"><img src="{{img}}" alt=""><span>{{name}}</span><small>{{detail}}</small></li>{{else}}<li class="empty">{{localize "DEICIDE.Deployment.NoCharacters"}}</li>{{/each}}
   </ul>
-  <h3>Recruits <small>Attached and Sworn deploy, Known do not</small></h3>
+  <h3>{{localize "DEICIDE.Deployment.Recruits"}} <small>{{localize "DEICIDE.Deployment.RecruitsHint"}}</small></h3>
   <ul class="plain pick-list">
-    {{#each recruits}}<li class="{{#if selected}}selected{{/if}}" data-actor-id="{{id}}" data-action="toggle"><img src="{{img}}" alt=""><span>{{name}}</span><small>{{status}}, {{detail}}</small></li>{{else}}<li class="empty">No recruits.</li>{{/each}}
+    {{#each recruits}}<li class="{{#if selected}}selected{{/if}}" data-actor-id="{{id}}" data-action="toggle"><img src="{{img}}" alt=""><span>{{name}}</span><small>{{status}}, {{detail}}</small></li>{{else}}<li class="empty">{{localize "DEICIDE.Deployment.NoRecruits"}}</li>{{/each}}
   </ul>
   {{#if (eq engine "war")}}
-  <h3>Companies</h3>
+  <h3>{{localize "DEICIDE.Deployment.CompaniesTitle"}}</h3>
   <ul class="plain pick-list">
-    {{#each companies}}<li class="{{#if selected}}selected{{/if}}" data-actor-id="{{id}}" data-action="toggle"><img src="{{img}}" alt=""><span>{{name}}</span><small>{{detail}}</small></li>{{else}}<li class="empty">No Lathander companies.</li>{{/each}}
+    {{#each companies}}<li class="{{#if selected}}selected{{/if}}" data-actor-id="{{id}}" data-action="toggle"><img src="{{img}}" alt=""><span>{{name}}</span><small>{{detail}}</small></li>{{else}}<li class="empty">{{localize "DEICIDE.Deployment.NoCompanies"}}</li>{{/each}}
   </ul>
   {{/if}}
-  {{#if isGM}}<p><button type="button" data-action="placeAll"><i class="fa-solid fa-location-dot"></i> Place selected tokens on the scene</button></p>{{/if}}
+  {{#if isGM}}<p><button type="button" data-action="placeAll"><i class="fa-solid fa-location-dot"></i> {{localize "DEICIDE.Deployment.PlaceAll"}}</button></p>{{/if}}
 </div>

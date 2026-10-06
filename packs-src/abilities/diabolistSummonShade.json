@@ -50,7 +50,29 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "summon",
+        "companyType": "shade",
+        "strength": 50,
+        "quality": 3,
+        "duration": "battle"
+      },
+      {
+        "kind": "pool",
+        "key": "marks",
+        "delta": 1,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Void company Strength 50 Quality 3",
+      "1 Mark"
+    ],
+    "automation": "full",
     "identifier": "diabolistSummonShade"
   },
   "effects": [],

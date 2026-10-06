@@ -1,15 +1,17 @@
 {
   "name": "deicide",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Deicide, a Foundry VTT v14 game system.",
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node tools/test/run.mjs",
+    "test": "node tools/test/run.mjs && node tools/validate-automation.mjs",
     "import:docs": "node tools/import-docs.mjs",
     "build:weapons": "node tools/build-weapons.mjs",
     "build:catalog": "node tools/build-catalog.mjs",
     "build:packs": "node tools/build-packs.mjs",
+    "build:npcs": "node tools/build-npcs.mjs",
+    "build:scenes": "node tools/build-scenes.mjs",
     "build": "npm run build:weapons && npm run build:catalog && npm run build:packs"
   },
   "devDependencies": {

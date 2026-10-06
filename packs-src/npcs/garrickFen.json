@@ -1,0 +1,648 @@
+{
+  "name": "Garrick Fen",
+  "type": "character",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "level": 16,
+    "xp": 0,
+    "attributes": {
+      "str": 8,
+      "mag": 6,
+      "skl": 16,
+      "spd": 14,
+      "def": 8,
+      "res": 6,
+      "cmd": 6
+    },
+    "growthTenths": {
+      "str": 8,
+      "mag": 8,
+      "skl": 1,
+      "spd": 6,
+      "def": 5,
+      "res": 4,
+      "cmd": 4
+    },
+    "growthLog": [
+      {
+        "level": 1,
+        "classId": "scout",
+        "tier": 1,
+        "tenths": {},
+        "gains": {},
+        "hp": 3
+      },
+      {
+        "level": 2,
+        "classId": "scout",
+        "tier": 1,
+        "tenths": {
+          "str": 4,
+          "mag": 0,
+          "skl": 9,
+          "spd": 11,
+          "def": 3,
+          "res": 1,
+          "cmd": 1
+        },
+        "gains": {
+          "spd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 3,
+        "classId": "scout",
+        "tier": 1,
+        "tenths": {
+          "str": 4,
+          "mag": 0,
+          "skl": 9,
+          "spd": 11,
+          "def": 3,
+          "res": 1,
+          "cmd": 1
+        },
+        "gains": {
+          "skl": 1,
+          "spd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 4,
+        "classId": "scout",
+        "tier": 1,
+        "tenths": {
+          "str": 4,
+          "mag": 0,
+          "skl": 9,
+          "spd": 11,
+          "def": 3,
+          "res": 1,
+          "cmd": 1
+        },
+        "gains": {
+          "str": 1,
+          "skl": 1,
+          "spd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 5,
+        "classId": "scout",
+        "tier": 1,
+        "tenths": {
+          "str": 4,
+          "mag": 0,
+          "skl": 9,
+          "spd": 11,
+          "def": 3,
+          "res": 1,
+          "cmd": 1
+        },
+        "gains": {
+          "skl": 1,
+          "spd": 1,
+          "def": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 6,
+        "classId": "scout",
+        "tier": 1,
+        "tenths": {
+          "str": 4,
+          "mag": 0,
+          "skl": 9,
+          "spd": 11,
+          "def": 3,
+          "res": 1,
+          "cmd": 1
+        },
+        "gains": {
+          "str": 1,
+          "spd": 1
+        },
+        "hp": 3,
+        "lost": {
+          "skl": 9
+        }
+      },
+      {
+        "level": 7,
+        "classId": "scout",
+        "tier": 1,
+        "tenths": {
+          "str": 4,
+          "mag": 0,
+          "skl": 9,
+          "spd": 11,
+          "def": 3,
+          "res": 1,
+          "cmd": 1
+        },
+        "gains": {
+          "spd": 1
+        },
+        "hp": 3,
+        "lost": {
+          "skl": 9
+        }
+      },
+      {
+        "level": 8,
+        "classId": "ranger",
+        "tier": 2,
+        "tenths": {
+          "str": 6,
+          "mag": 2,
+          "skl": 9,
+          "spd": 10,
+          "def": 3,
+          "res": 2,
+          "cmd": 2
+        },
+        "gains": {
+          "str": 1,
+          "skl": 1,
+          "spd": 1,
+          "def": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 9,
+        "classId": "ranger",
+        "tier": 2,
+        "tenths": {
+          "str": 6,
+          "mag": 2,
+          "skl": 9,
+          "spd": 10,
+          "def": 3,
+          "res": 2,
+          "cmd": 2
+        },
+        "gains": {
+          "skl": 1,
+          "spd": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 10,
+        "classId": "ranger",
+        "tier": 2,
+        "tenths": {
+          "str": 6,
+          "mag": 2,
+          "skl": 9,
+          "spd": 10,
+          "def": 3,
+          "res": 2,
+          "cmd": 2
+        },
+        "gains": {
+          "str": 1,
+          "skl": 1,
+          "spd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 11,
+        "classId": "ranger",
+        "tier": 2,
+        "tenths": {
+          "str": 6,
+          "mag": 2,
+          "skl": 9,
+          "spd": 10,
+          "def": 3,
+          "res": 2,
+          "cmd": 2
+        },
+        "gains": {
+          "skl": 1,
+          "spd": 1,
+          "def": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 12,
+        "classId": "ranger",
+        "tier": 2,
+        "tenths": {
+          "str": 6,
+          "mag": 2,
+          "skl": 9,
+          "spd": 10,
+          "def": 3,
+          "res": 2,
+          "cmd": 2
+        },
+        "gains": {
+          "str": 1,
+          "mag": 1,
+          "skl": 1
+        },
+        "hp": 3,
+        "lost": {
+          "spd": 10
+        }
+      },
+      {
+        "level": 13,
+        "classId": "ranger",
+        "tier": 2,
+        "tenths": {
+          "str": 6,
+          "mag": 2,
+          "skl": 9,
+          "spd": 10,
+          "def": 3,
+          "res": 2,
+          "cmd": 2
+        },
+        "gains": {
+          "str": 1
+        },
+        "hp": 3,
+        "lost": {
+          "skl": 9,
+          "spd": 10
+        }
+      },
+      {
+        "level": 14,
+        "classId": "ranger",
+        "tier": 2,
+        "tenths": {
+          "str": 6,
+          "mag": 2,
+          "skl": 9,
+          "spd": 10,
+          "def": 3,
+          "res": 2,
+          "cmd": 2
+        },
+        "gains": {
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 3,
+        "lost": {
+          "skl": 9,
+          "spd": 10
+        }
+      },
+      {
+        "level": 15,
+        "classId": "ranger",
+        "tier": 2,
+        "tenths": {
+          "str": 6,
+          "mag": 2,
+          "skl": 9,
+          "spd": 10,
+          "def": 3,
+          "res": 2,
+          "cmd": 2
+        },
+        "gains": {
+          "str": 1,
+          "def": 1
+        },
+        "hp": 3,
+        "lost": {
+          "skl": 9,
+          "spd": 10
+        }
+      },
+      {
+        "level": 16,
+        "classId": "ranger",
+        "tier": 2,
+        "tenths": {
+          "str": 6,
+          "mag": 2,
+          "skl": 9,
+          "spd": 10,
+          "def": 3,
+          "res": 2,
+          "cmd": 2
+        },
+        "gains": {},
+        "hp": 3,
+        "lost": {
+          "skl": 9,
+          "spd": 10
+        }
+      }
+    ],
+    "promotionBonuses": [
+      {
+        "tier": 2,
+        "classId": "ranger",
+        "stats": {
+          "skl": 1,
+          "spd": 1
+        }
+      }
+    ],
+    "rankBonuses": [],
+    "adaptations": [],
+    "people": "beastman",
+    "peopleSubtype": "canine",
+    "background": null,
+    "talent": {
+      "id": "earlyPeak",
+      "stat": null,
+      "penaltyStat": null,
+      "proficiency": null,
+      "placement": {
+        "str": 0,
+        "mag": 0,
+        "skl": 4,
+        "spd": 4,
+        "def": 0,
+        "res": 0,
+        "cmd": 0
+      }
+    },
+    "personalGrowth": {
+      "str": 0,
+      "mag": 0,
+      "skl": 3,
+      "spd": 3,
+      "def": 0,
+      "res": 0,
+      "cmd": 0
+    },
+    "classes": [
+      {
+        "id": "scout",
+        "rank": 6,
+        "cp100": 2900,
+        "choices": {}
+      },
+      {
+        "id": "ranger",
+        "rank": 10,
+        "cp100": 6767,
+        "choices": {}
+      }
+    ],
+    "activeClass": "ranger",
+    "loadout": {
+      "secondary": "scout",
+      "reaction": "rangerAmbush",
+      "supports": [
+        "rangerWoodcraft",
+        "scoutPathfinder"
+      ],
+      "stance": null
+    },
+    "manaburn": 0,
+    "saturation": null,
+    "marks": 0,
+    "divineAttention": 0,
+    "static": 0,
+    "stolen": [],
+    "standingFaction": {
+      "crown": 40,
+      "army": 40,
+      "civilians": 40,
+      "temple": 40,
+      "mages": 40,
+      "brasswater": 40,
+      "underworld": 40,
+      "duneTribes": 40,
+      "offweiss": 40,
+      "council": 40,
+      "gravetide": 40,
+      "briarwall": 40,
+      "valedorn": 40,
+      "seastrand": 40
+    },
+    "dust": 15,
+    "storyGates": [],
+    "hp": {
+      "value": 100
+    },
+    "channel": {
+      "value": 11
+    },
+    "matter": {
+      "value": 0
+    },
+    "recruit": {
+      "profile": "veteran",
+      "ownerId": null,
+      "status": "known",
+      "personalSkillId": "personalTracker",
+      "story": false,
+      "gmRun": true
+    },
+    "standingPersonal": {},
+    "notes": "<p>Commander of the Saltmarch Wardens, monster hunter.</p><p>Plague ecology, monster expeditions, Saturation sources. Personal skill Tracker: Ambush fires at range 4.</p><p>Personal skill Tracker: Ambush fires at range 4.</p><p>Garrick Fen, Beastman Ranger of Lathander, level 16. Commander of the Saltmarch Wardens, monster hunter. Carries Royal Keen Bow, Royal Light Armor and Royal Quiver. Garrick keeps a ledger of every favor owed.</p>"
+  },
+  "items": [
+    {
+      "name": "Royal Keen Bow",
+      "type": "weapon",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "royalKeenBow",
+        "line": "bow",
+        "tier": "royal",
+        "prefix": "keen",
+        "forge": 0,
+        "element": null,
+        "asSidearm": false,
+        "equipped": true,
+        "quantity": 1,
+        "description": ""
+      },
+      "_id": "Mk771OGEX0w44H1E",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Royal Light Armor",
+      "type": "armor",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "identifier": "royalLight",
+        "equipped": true,
+        "description": ""
+      },
+      "_id": "bTEPQgGaRSgkyNco",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Royal Quiver",
+      "type": "offhand",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "identifier": "royalQuiver",
+        "line": "quiver",
+        "tier": "royal",
+        "equipped": true,
+        "description": ""
+      },
+      "_id": "HBmRY9NE6O00p1wA",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Tracker",
+      "type": "ability",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "identifier": "personalTracker",
+        "type": "support",
+        "source": {
+          "kind": "personal",
+          "id": "npcGarrickFen",
+          "rank": null
+        },
+        "description": "<p>Ambush fires at range 4.</p>",
+        "summary": "Ambush fires at range 4",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": null,
+        "heal": null,
+        "war": null,
+        "dungeon": null,
+        "statuses": [],
+        "modifiers": [
+          {
+            "key": "reaction.range",
+            "value": 1,
+            "when": {
+              "ability": "rangerAmbush"
+            }
+          }
+        ],
+        "roll": null,
+        "art": null,
+        "effects": [],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [
+          "Ambush"
+        ],
+        "automation": "partial"
+      },
+      "_id": "a4Xv7SCPQVrXKxH2",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "prototypeToken": {
+    "name": "Garrick Fen",
+    "actorLink": true,
+    "disposition": 0,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "flags": {
+    "deicide": {
+      "generated": {
+        "kind": "npc",
+        "seed": "garrickFen",
+        "input": {
+          "level": 16,
+          "classLine": [
+            "scout",
+            "ranger"
+          ],
+          "people": "beastman",
+          "subtype": "canine",
+          "profile": "veteran",
+          "personalSkill": "personalTracker",
+          "seed": "garrickFen",
+          "name": "Garrick Fen",
+          "faction": "lathander",
+          "role": "Commander of the Saltmarch Wardens, monster hunter",
+          "description": "Plague ecology, monster expeditions, Saturation sources. Personal skill Tracker: Ambush fires at range 4.",
+          "dials": {
+            "S": 45,
+            "L": 30
+          }
+        },
+        "role": "Commander of the Saltmarch Wardens, monster hunter",
+        "recruit": "Veteran Ranger"
+      },
+      "faction": "lathander",
+      "identifier": "garrickFen"
+    }
+  },
+  "_id": "22zYYOT7w2A3SWXY",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

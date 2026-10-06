@@ -46,7 +46,21 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "strikeFirst"
+      }
+    ],
+    "reaction": {
+      "trigger": "mountedAttacker",
+      "window": {
+        "self": true
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "halberdierSetSpear"
   },
   "effects": [],

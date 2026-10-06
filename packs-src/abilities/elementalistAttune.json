@@ -32,9 +32,52 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "might",
+        "value": 2,
+        "when": {
+          "actionElement": "attuned"
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": {
+      "modifiers": [
+        {
+          "key": "might",
+          "value": 2,
+          "when": {
+            "actionElement": "attuned"
+          }
+        }
+      ],
+      "effects": [
+        {
+          "kind": "applyStatus",
+          "statusId": "attuned",
+          "target": "self"
+        }
+      ],
+      "onExit": [
+        {
+          "kind": "removeStatus",
+          "statusId": "attuned",
+          "target": "self"
+        }
+      ]
+    },
+    "coverage": [
+      "choose a natural element",
+      "Might \\+2 with it"
+    ],
+    "automation": "full",
+    "choices": [
+      "element"
+    ],
     "identifier": "elementalistAttune"
   },
   "effects": [],

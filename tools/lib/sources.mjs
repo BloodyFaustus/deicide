@@ -19,6 +19,7 @@ export const PACKS = [
   {folder: "named", name: "deicide-named", label: "Named Items", type: "Item", catalog: true},
   {folder: "companies", name: "deicide-companies", label: "Companies and Ships", type: "Actor", catalog: true},
   {folder: "monsters", name: "deicide-monsters", label: "Monsters", type: "Actor", catalog: true},
+  {folder: "npcs", name: "deicide-npcs", label: "Named NPCs", type: "Actor", catalog: false},
   {folder: "scenarios", name: "deicide-scenarios", label: "Scenarios", type: "JournalEntry", catalog: false}
 ];
 

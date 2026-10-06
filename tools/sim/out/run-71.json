@@ -1,0 +1,4577 @@
+{
+ "summary": {
+  "label": "Run 7: invasion battle at 28, hoarder party (H8)",
+  "seeds": 100,
+  "rounds": {
+   "mean": 3.11,
+   "p10": 3,
+   "p90": 4,
+   "n": 100
+  },
+  "outcomes": {
+   "held": 0,
+   "victory": 100,
+   "defeat": 0
+  },
+  "decisionsPerPhase": {
+   "mean": 2.77,
+   "p10": 0,
+   "p90": 8,
+   "n": 311
+  },
+  "tilesPerDecision": {
+   "mean": 38.61,
+   "p10": 0,
+   "p90": 81.875,
+   "n": 311
+  },
+  "cardsPerPhase": {
+   "mean": 4.46,
+   "p10": 0,
+   "p90": 9,
+   "n": 622
+  },
+  "noRadiusPerRound": {
+   "mean": 0,
+   "p10": 0,
+   "p90": 0,
+   "n": 311
+  },
+  "strengthPerPcPerRound": {
+   "Mercer": {
+    "mean": 13.82,
+    "p10": 10.333333333333334,
+    "p90": 18,
+    "n": 100
+   },
+   "Hyacinth": {
+    "mean": 230.66,
+    "p10": 180.75,
+    "p90": 244.33333333333334,
+    "n": 100
+   },
+   "Rista": {
+    "mean": 3.81,
+    "p10": 3,
+    "p90": 4,
+    "n": 100
+   },
+   "Xidrathira": {
+    "mean": 4.57,
+    "p10": 1.3333333333333333,
+    "p90": 7.666666666666667,
+    "n": 100
+   },
+   "Irena Vos": {
+    "mean": 0.5,
+    "p10": 0,
+    "p90": 1.6666666666666667,
+    "n": 100
+   }
+  },
+  "stoneLancePerCast": {
+   "mean": 0,
+   "p10": 0,
+   "p90": 0,
+   "n": 0
+  },
+  "stoneLanceCasts": {
+   "mean": 0,
+   "p10": 0,
+   "p90": 0,
+   "n": 100
+  },
+  "downedRate": 0,
+  "downedPerBattle": {
+   "mean": 0,
+   "p10": 0,
+   "p90": 0,
+   "n": 100
+  },
+  "partyHpPercent": {
+   "mean": 100,
+   "p10": 100,
+   "p90": 100,
+   "n": 100
+  },
+  "enemyStrengthLeft": {
+   "mean": 0,
+   "p10": 0,
+   "p90": 0,
+   "n": 100
+  },
+  "resupplyDust": 0,
+  "anomalies": 0,
+  "reactions": {
+   "captainShieldRing": 311,
+   "knightGuardian": 10
+  }
+ },
+ "results": [
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    69,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 43,
+    "Hyacinth": 701,
+    "Rista": 12,
+    "Xidrathira": 22,
+    "Irena Vos": 2
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7501,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 719,
+    "Rista": 12,
+    "Xidrathira": 19,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7502,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    3
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 31,
+    "Hyacinth": 733,
+    "Rista": 12,
+    "Xidrathira": 16,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7503,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 719,
+    "Rista": 12,
+    "Xidrathira": 25,
+    "Irena Vos": 2
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7504,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 727,
+    "Rista": 12,
+    "Xidrathira": 10,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7505,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    68,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 707,
+    "Rista": 12,
+    "Xidrathira": 12,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7506,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    3
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 715,
+    "Rista": 12,
+    "Xidrathira": 24,
+    "Irena Vos": 2
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7507,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 4,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    70,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    1,
+    9,
+    0,
+    2
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 41,
+    "Hyacinth": 723,
+    "Rista": 12,
+    "Xidrathira": 8,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7508,
+   "reactions": {
+    "captainShieldRing": 4,
+    "knightGuardian": 1
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    73,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 42,
+    "Hyacinth": 711,
+    "Rista": 12,
+    "Xidrathira": 15,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7509,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 4,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    71,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    1,
+    8,
+    0,
+    2
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 36,
+    "Hyacinth": 713,
+    "Rista": 12,
+    "Xidrathira": 22,
+    "Irena Vos": 2
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7510,
+   "reactions": {
+    "captainShieldRing": 4,
+    "knightGuardian": 1
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 719,
+    "Rista": 12,
+    "Xidrathira": 15,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7511,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    2,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    72,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    3,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 58,
+    "Hyacinth": 690,
+    "Rista": 12,
+    "Xidrathira": 15,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7512,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    2,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    72,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    3,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 42,
+    "Hyacinth": 719,
+    "Rista": 12,
+    "Xidrathira": 7,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7513,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    71,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 723,
+    "Rista": 12,
+    "Xidrathira": 10,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7514,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    68,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 707,
+    "Rista": 12,
+    "Xidrathira": 12,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7515,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    8,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 31,
+    "Hyacinth": 713,
+    "Rista": 12,
+    "Xidrathira": 0,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7516,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    73,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 42,
+    "Hyacinth": 711,
+    "Rista": 12,
+    "Xidrathira": 15,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7517,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 707,
+    "Rista": 12,
+    "Xidrathira": 19,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7518,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    69,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 66,
+    "Hyacinth": 686,
+    "Rista": 12,
+    "Xidrathira": 14,
+    "Irena Vos": 2
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7519,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 711,
+    "Rista": 12,
+    "Xidrathira": 25,
+    "Irena Vos": 2
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7520,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    72,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 59,
+    "Hyacinth": 686,
+    "Rista": 12,
+    "Xidrathira": 18,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7521,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 4,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    68,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    1,
+    9,
+    0,
+    2
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 66,
+    "Hyacinth": 686,
+    "Rista": 12,
+    "Xidrathira": 16,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7522,
+   "reactions": {
+    "captainShieldRing": 4,
+    "knightGuardian": 1
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 715,
+    "Rista": 12,
+    "Xidrathira": 16,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7523,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    71,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 42,
+    "Hyacinth": 707,
+    "Rista": 12,
+    "Xidrathira": 19,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7524,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    2,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    71,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    3,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 66,
+    "Hyacinth": 682,
+    "Rista": 12,
+    "Xidrathira": 15,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7525,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 54,
+    "Hyacinth": 694,
+    "Rista": 12,
+    "Xidrathira": 22,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7526,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    8
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 743,
+    "Rista": 8,
+    "Xidrathira": 7,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7527,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 707,
+    "Rista": 12,
+    "Xidrathira": 26,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7528,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    71,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    8,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 731,
+    "Rista": 12,
+    "Xidrathira": 0,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7529,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 727,
+    "Rista": 12,
+    "Xidrathira": 11,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7530,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 4,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    71,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    1,
+    8,
+    0,
+    2
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 42,
+    "Hyacinth": 707,
+    "Rista": 12,
+    "Xidrathira": 19,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7531,
+   "reactions": {
+    "captainShieldRing": 4,
+    "knightGuardian": 1
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 4,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    70,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    1,
+    9,
+    0,
+    2
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 42,
+    "Hyacinth": 719,
+    "Rista": 12,
+    "Xidrathira": 12,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7532,
+   "reactions": {
+    "captainShieldRing": 4,
+    "knightGuardian": 1
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    3
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 54,
+    "Hyacinth": 702,
+    "Rista": 12,
+    "Xidrathira": 19,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7533,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 719,
+    "Rista": 12,
+    "Xidrathira": 22,
+    "Irena Vos": 2
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7534,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 31,
+    "Hyacinth": 701,
+    "Rista": 12,
+    "Xidrathira": 15,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7535,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    2,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    69.5,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    3,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 719,
+    "Rista": 12,
+    "Xidrathira": 7,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7536,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    73,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 42,
+    "Hyacinth": 711,
+    "Rista": 12,
+    "Xidrathira": 15,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7537,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 4,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    70,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    1,
+    8,
+    0,
+    2
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 42,
+    "Hyacinth": 715,
+    "Rista": 12,
+    "Xidrathira": 16,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7538,
+   "reactions": {
+    "captainShieldRing": 4,
+    "knightGuardian": 1
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    74,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 31,
+    "Hyacinth": 733,
+    "Rista": 12,
+    "Xidrathira": 11,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7539,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 54,
+    "Hyacinth": 698,
+    "Rista": 12,
+    "Xidrathira": 21,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7540,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 727,
+    "Rista": 12,
+    "Xidrathira": 14,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7541,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    2,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    72,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    3,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 66,
+    "Hyacinth": 702,
+    "Rista": 12,
+    "Xidrathira": 7,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7542,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    74,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    3
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 719,
+    "Rista": 12,
+    "Xidrathira": 14,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7543,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    70,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 42,
+    "Hyacinth": 727,
+    "Rista": 12,
+    "Xidrathira": 4,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7544,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    68,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    7
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 66,
+    "Hyacinth": 662,
+    "Rista": 12,
+    "Xidrathira": 12,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7545,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    68,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 49,
+    "Hyacinth": 703,
+    "Rista": 12,
+    "Xidrathira": 16,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7546,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    71,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 49,
+    "Hyacinth": 699,
+    "Rista": 12,
+    "Xidrathira": 15,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7547,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 731,
+    "Rista": 12,
+    "Xidrathira": 7,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7548,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    72,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 42,
+    "Hyacinth": 695,
+    "Rista": 12,
+    "Xidrathira": 29,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7549,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 54,
+    "Hyacinth": 690,
+    "Rista": 12,
+    "Xidrathira": 26,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7550,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 4,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    71,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    1,
+    8,
+    0,
+    3
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 42,
+    "Hyacinth": 707,
+    "Rista": 12,
+    "Xidrathira": 19,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7551,
+   "reactions": {
+    "captainShieldRing": 4,
+    "knightGuardian": 1
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    72,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 59,
+    "Hyacinth": 654,
+    "Rista": 12,
+    "Xidrathira": 28,
+    "Irena Vos": 2
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7552,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    3
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 54,
+    "Hyacinth": 706,
+    "Rista": 12,
+    "Xidrathira": 15,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7553,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 31,
+    "Hyacinth": 725,
+    "Rista": 12,
+    "Xidrathira": 19,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7554,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    69,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    7
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 43,
+    "Hyacinth": 697,
+    "Rista": 12,
+    "Xidrathira": 23,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7555,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 4,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    71,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    1,
+    8,
+    0,
+    2
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 58,
+    "Hyacinth": 698,
+    "Rista": 12,
+    "Xidrathira": 11,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7556,
+   "reactions": {
+    "captainShieldRing": 4,
+    "knightGuardian": 1
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    8,
+    0,
+    3
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 31,
+    "Hyacinth": 745,
+    "Rista": 12,
+    "Xidrathira": 0,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7557,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 54,
+    "Hyacinth": 690,
+    "Rista": 12,
+    "Xidrathira": 19,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7558,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    68,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    8
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 49,
+    "Hyacinth": 703,
+    "Rista": 12,
+    "Xidrathira": 16,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7559,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 4,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    72,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    1,
+    8,
+    0,
+    2
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 42,
+    "Hyacinth": 711,
+    "Rista": 12,
+    "Xidrathira": 15,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7560,
+   "reactions": {
+    "captainShieldRing": 4
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    72,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 36,
+    "Hyacinth": 721,
+    "Rista": 12,
+    "Xidrathira": 14,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7561,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    69,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    8
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 49,
+    "Hyacinth": 691,
+    "Rista": 12,
+    "Xidrathira": 23,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7562,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    71,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 49,
+    "Hyacinth": 707,
+    "Rista": 12,
+    "Xidrathira": 7,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7563,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    8,
+    0,
+    6
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 31,
+    "Hyacinth": 745,
+    "Rista": 12,
+    "Xidrathira": 0,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7564,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 731,
+    "Rista": 4,
+    "Xidrathira": 15,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7565,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    71,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 31,
+    "Hyacinth": 725,
+    "Rista": 12,
+    "Xidrathira": 7,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7566,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    2,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    68.5,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    3,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 43,
+    "Hyacinth": 703,
+    "Rista": 12,
+    "Xidrathira": 23,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7567,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    2,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    71,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    3,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 66,
+    "Hyacinth": 682,
+    "Rista": 12,
+    "Xidrathira": 15,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7568,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 707,
+    "Rista": 12,
+    "Xidrathira": 29,
+    "Irena Vos": 2
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7569,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 4,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    71,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    1,
+    8,
+    0,
+    2
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 66,
+    "Hyacinth": 686,
+    "Rista": 12,
+    "Xidrathira": 23,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7570,
+   "reactions": {
+    "captainShieldRing": 4,
+    "knightGuardian": 1
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 31,
+    "Hyacinth": 737,
+    "Rista": 12,
+    "Xidrathira": 7,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7571,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 719,
+    "Rista": 12,
+    "Xidrathira": 19,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7572,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    8,
+    0,
+    3
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 743,
+    "Rista": 12,
+    "Xidrathira": 0,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7573,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    68,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    7
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 49,
+    "Hyacinth": 703,
+    "Rista": 12,
+    "Xidrathira": 16,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7574,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    8,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 31,
+    "Hyacinth": 745,
+    "Rista": 12,
+    "Xidrathira": 0,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7575,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    73,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 59,
+    "Hyacinth": 702,
+    "Rista": 12,
+    "Xidrathira": 7,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7576,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    3
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 711,
+    "Rista": 12,
+    "Xidrathira": 4,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7577,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    74,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 31,
+    "Hyacinth": 733,
+    "Rista": 12,
+    "Xidrathira": 11,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7578,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    69,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 49,
+    "Hyacinth": 691,
+    "Rista": 12,
+    "Xidrathira": 26,
+    "Irena Vos": 2
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7579,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 4,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    70,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    1,
+    9,
+    0,
+    2
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 42,
+    "Hyacinth": 719,
+    "Rista": 12,
+    "Xidrathira": 12,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7580,
+   "reactions": {
+    "captainShieldRing": 4,
+    "knightGuardian": 1
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 31,
+    "Hyacinth": 713,
+    "Rista": 12,
+    "Xidrathira": 19,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7581,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    3
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 54,
+    "Hyacinth": 706,
+    "Rista": 12,
+    "Xidrathira": 15,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7582,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    71,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 54,
+    "Hyacinth": 682,
+    "Rista": 12,
+    "Xidrathira": 15,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7583,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    8,
+    0,
+    3
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 715,
+    "Rista": 12,
+    "Xidrathira": 0,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7584,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    71,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 49,
+    "Hyacinth": 707,
+    "Rista": 12,
+    "Xidrathira": 7,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7585,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    74,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 715,
+    "Rista": 12,
+    "Xidrathira": 18,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7586,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    73,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 42,
+    "Hyacinth": 711,
+    "Rista": 12,
+    "Xidrathira": 15,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7587,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    2,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    71,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    3,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 49,
+    "Hyacinth": 703,
+    "Rista": 12,
+    "Xidrathira": 7,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7588,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    1,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    68,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    2,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 42,
+    "Hyacinth": 719,
+    "Rista": 12,
+    "Xidrathira": 14,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7589,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 735,
+    "Rista": 12,
+    "Xidrathira": 8,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7590,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    8,
+    0,
+    3
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 31,
+    "Hyacinth": 745,
+    "Rista": 12,
+    "Xidrathira": 0,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7591,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 719,
+    "Rista": 12,
+    "Xidrathira": 14,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7592,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 31,
+    "Hyacinth": 687,
+    "Rista": 12,
+    "Xidrathira": 26,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7593,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    2,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    71,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    3,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 49,
+    "Hyacinth": 707,
+    "Rista": 12,
+    "Xidrathira": 7,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7594,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    8,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 31,
+    "Hyacinth": 725,
+    "Rista": 8,
+    "Xidrathira": 0,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7595,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    3
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 31,
+    "Hyacinth": 721,
+    "Rista": 12,
+    "Xidrathira": 16,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7596,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 723,
+    "Rista": 12,
+    "Xidrathira": 7,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7597,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 37,
+    "Hyacinth": 731,
+    "Rista": 4,
+    "Xidrathira": 15,
+    "Irena Vos": 5
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7598,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    4
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 54,
+    "Hyacinth": 706,
+    "Rista": 12,
+    "Xidrathira": 15,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7599,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  },
+  {
+   "rounds": 3,
+   "outcome": "victory",
+   "decisionsPerPhase": [
+    8,
+    0,
+    0
+   ],
+   "tilesPerDecision": [
+    81.875,
+    0,
+    0
+   ],
+   "cardsPerPhase": [
+    8,
+    4,
+    1,
+    9,
+    0,
+    5
+   ],
+   "noRadiusPerRound": [
+    0,
+    0,
+    0
+   ],
+   "strengthByPc": {
+    "Mercer": 31,
+    "Hyacinth": 725,
+    "Rista": 12,
+    "Xidrathira": 18,
+    "Irena Vos": 0
+   },
+   "stoneLance": [],
+   "downed": 0,
+   "resupplyDust": 0,
+   "seed": 7600,
+   "reactions": {
+    "captainShieldRing": 3
+   },
+   "anomalies": 0,
+   "enemyStrengthLeft": 0,
+   "partyHpPercent": 100
+  }
+ ]
+}

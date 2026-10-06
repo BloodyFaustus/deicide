@@ -38,7 +38,7 @@
         "shape": "single",
         "size": 1
       },
-      "target": "self",
+      "target": "ally",
       "movement": null,
       "terrain": false
     },
@@ -46,7 +46,33 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "removeStatus",
+        "statusId": "poison",
+        "target": "ally"
+      },
+      {
+        "kind": "removeStatus",
+        "statusId": "crystalline",
+        "target": "ally"
+      },
+      {
+        "kind": "pool",
+        "key": "manaburn",
+        "delta": -10,
+        "target": "ally"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "remove Poison",
+      "Crystalline",
+      "or 10 Manaburn"
+    ],
+    "automation": "full",
     "identifier": "bioAlchemistMendFlesh"
   },
   "effects": [],

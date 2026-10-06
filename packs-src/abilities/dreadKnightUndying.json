@@ -46,7 +46,32 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "survive",
+        "hp": 1,
+        "target": "self"
+      },
+      {
+        "kind": "flag",
+        "key": "undyingDebt",
+        "value": 20,
+        "target": "self",
+        "duration": "longRest"
+      }
+    ],
+    "reaction": {
+      "trigger": "lethalHit",
+      "window": {
+        "self": true
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "costs 20 HP at next long rest"
+    ],
+    "automation": "full",
     "identifier": "dreadKnightUndying"
   },
   "effects": [],

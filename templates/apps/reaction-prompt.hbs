@@ -1,0 +1,26 @@
+<div class="reaction-prompt-body">
+  <p class="lead">{{localize "DEICIDE.Reaction.PromptLead" name=reactorName}}{{#if attackerName}} {{localize "DEICIDE.Reaction.PromptAgainst" attacker=attackerName ability=abilityName}}{{/if}}</p>
+  <p class="timer">{{localize "DEICIDE.Reaction.SecondsLeft"}} <strong class="countdown">{{seconds}}</strong></p>
+  <ul class="options plain">
+    {{#each options}}
+    <li class="option" data-ability-id="{{abilityId}}">
+      <label>
+        <input type="checkbox" data-ability-id="{{abilityId}}" {{#if selected}}checked{{/if}}>
+        <strong>{{name}}</strong>
+        <span class="meta">{{trigger}}{{#if roll}}, d100 under {{roll}}{{/if}}{{#if cost}}{{#if cost.channel}}, {{cost.channel}} {{localize "DEICIDE.Common.Channel"}}{{/if}}{{#if cost.matter}}, {{cost.matter}} {{localize "DEICIDE.Common.Matter"}}{{/if}}{{/if}}</span>
+      </label>
+      {{#if summary}}<p class="summary">{{summary}}</p>{{/if}}
+      {{#if @root.multiple}}
+      <span class="order">
+        <button type="button" class="inline-control icon fa-solid fa-arrow-up" data-action="moveUp" {{#if first}}disabled{{/if}} data-tooltip="{{localize 'DEICIDE.Reaction.Earlier'}}"></button>
+        <button type="button" class="inline-control icon fa-solid fa-arrow-down" data-action="moveDown" {{#if last}}disabled{{/if}} data-tooltip="{{localize 'DEICIDE.Reaction.Later'}}"></button>
+      </span>
+      {{/if}}
+    </li>
+    {{/each}}
+  </ul>
+  <footer class="buttons">
+    <button type="button" data-action="accept"><i class="fa-solid fa-bolt"></i> {{localize "DEICIDE.Reaction.Accept"}}</button>
+    <button type="button" data-action="skip"><i class="fa-solid fa-forward"></i> {{localize "DEICIDE.Reaction.Skip"}}</button>
+  </footer>
+</div>

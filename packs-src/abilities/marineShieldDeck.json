@@ -44,6 +44,26 @@
       }
     ],
     "roll": null,
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": {
+      "modifiers": [
+        {
+          "key": "defense.def",
+          "value": 4
+        },
+        {
+          "key": "move",
+          "op": "set",
+          "value": 0
+        }
+      ],
+      "effects": []
+    },
+    "coverage": [
+      "Move 0"
+    ],
     "automation": "full",
     "identifier": "marineShieldDeck"
   },

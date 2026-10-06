@@ -37,7 +37,21 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "flag",
+        "key": "deployFromAnyEdge",
+        "value": 2,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "deploy from any map edge on round 2"
+    ],
+    "automation": "full",
     "identifier": "shadowOffMap"
   },
   "effects": [],

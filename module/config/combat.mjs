@@ -204,7 +204,61 @@ export const statuses = {
   },
   routed: {
     label: "DEICIDE.Status.routed", img: "icons/svg/falling.svg", duration: {until: "nextBattle"}, defeated: true
+  },
+
+  formed: {
+    label: "DEICIDE.Status.formed", img: "icons/svg/tower.svg", duration: {until: "phaseEnd"},
+    modifiers: [{key: "defense.def", value: 2}], company: true
+  },
+  stance: {
+    label: "DEICIDE.Status.stance", img: "icons/svg/statue.svg", duration: {until: "stanceChange"}, stance: true
+  },
+  untargetable: {
+    label: "DEICIDE.Status.untargetable", img: "icons/svg/invisible.svg", duration: {until: "ownTurn"},
+    flags: {untargetable: true}
+  },
+  braced: {
+    label: "DEICIDE.Status.braced", img: "icons/svg/shield.svg", duration: {turns: 1}
+  },
+  empowered: {
+    label: "DEICIDE.Status.empowered", img: "icons/svg/upgrade.svg", duration: {turns: 3},
+    modifiers: [{key: "attributes.str", value: 4}, {key: "attributes.mag", value: 4}, {key: "attributes.skl", value: 4}, {key: "attributes.spd", value: 4}, {key: "attributes.def", value: 4}, {key: "attributes.res", value: 4}, {key: "attributes.cmd", value: 4}]
+  },
+  inoculated: {
+    label: "DEICIDE.Status.inoculated", img: "icons/svg/regen.svg", duration: {until: "session"},
+    flags: {immunePlague: true, immuneManaburn: true}
+  },
+  burning: {
+    label: "DEICIDE.Status.burning", img: "icons/svg/fire.svg", duration: {turns: 3},
+    tick: {burn: 2, at: "turnStart"}
+  },
+  exposed: {
+    label: "DEICIDE.Status.exposed", img: "icons/svg/eye.svg", duration: {turns: 1},
+    modifiers: [{key: "avoid", value: -10}]
+  },
+  smoke: {
+    label: "DEICIDE.Status.smoke", img: "icons/svg/clouds.svg", duration: {turns: 2},
+    modifiers: [{key: "avoid", value: 15}]
+  },
+  ordered: {
+    label: "DEICIDE.Status.ordered", img: "icons/svg/sound.svg", duration: {until: "phaseEnd"}, company: true
+  },
+  steadfast: {
+    label: "DEICIDE.Status.steadfast", img: "icons/svg/holy-shield.svg", duration: {until: "roundEnd"}, company: true,
+    flags: {passMorale: true}
+  },
+  rooted: {
+    label: "DEICIDE.Status.rooted", img: "icons/svg/anchor.svg", duration: {turns: 1},
+    flags: {cannotSwapRow: true, cannotCanto: true}, modifiers: [{key: "canto", op: "set", value: 0}]
+  },
+  voidEdge: {
+    label: "DEICIDE.Status.voidEdge", img: "icons/svg/blood.svg", duration: {turns: 1},
+    modifiers: [{key: "might", value: 2, when: {actionElement: "void"}}]
+  },
+  misdirected: {
+    label: "DEICIDE.Status.misdirected", img: "icons/svg/direction.svg", duration: {until: "phaseEnd"}, company: true,
+    flags: {doctrine: "hold"}
   }
 };
 
-export const reactions = {perInterval: 1};
+export const reactions = {perInterval: 1, promptTimeoutMs: 20000, defaultResponse: "skip"};

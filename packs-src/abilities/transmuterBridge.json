@@ -49,7 +49,21 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "terrain",
+        "op": "set",
+        "tileType": "road",
+        "size": 4
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "river line of 4 becomes Road for the battle"
+    ],
+    "automation": "full",
     "identifier": "transmuterBridge"
   },
   "effects": [],

@@ -566,12 +566,12 @@
       ],
       "people": "manaborne",
       "expected": {
-        "str": 30,
-        "mag": 9,
-        "skl": 21,
+        "str": 29,
+        "mag": 14,
+        "skl": 22,
         "spd": 11,
-        "def": 30,
-        "res": 17,
+        "def": 29,
+        "res": 22,
         "cmd": 18,
         "hp": 200
       }
@@ -584,15 +584,15 @@
       ],
       "people": "highElf",
       "expected": {
-        "str": 7,
+        "str": 8,
         "mag": 30,
-        "skl": 21,
-        "spd": 14,
-        "def": 10,
-        "res": 27,
-        "cmd": 14,
-        "hp": 82,
-        "channel": 48
+        "skl": 22,
+        "spd": 16,
+        "def": 11,
+        "res": 30,
+        "cmd": 13,
+        "hp": 140,
+        "channel": 34
       }
     },
     "spellswordLine": {
@@ -603,7 +603,7 @@
       "people": "foreignHuman",
       "expected": {
         "str": 23,
-        "mag": 23,
+        "mag": 18,
         "note": "capped by Tier 2 B caps"
       }
     }

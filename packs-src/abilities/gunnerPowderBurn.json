@@ -42,6 +42,11 @@
       }
     ],
     "roll": null,
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [],
     "automation": "full",
     "identifier": "gunnerPowderBurn"
   },

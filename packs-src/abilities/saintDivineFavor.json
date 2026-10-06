@@ -34,7 +34,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "flag",
+        "key": "divineAttentionAsChannel",
+        "value": 5,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Divine Attention spent as Channel",
+      "1 for 5"
+    ],
+    "automation": "full",
     "identifier": "saintDivineFavor"
   },
   "effects": [],

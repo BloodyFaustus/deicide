@@ -81,7 +81,7 @@
         "mastery": true
       }
     ],
-    "move": null,
+    "move": 5,
     "affinities": [],
     "enemyOnly": false,
     "layered": false,

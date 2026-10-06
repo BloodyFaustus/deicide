@@ -46,7 +46,19 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "applyStatus",
+        "statusId": "exposed",
+        "target": "target",
+        "turns": 1
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "scoutMarkTarget"
   },
   "effects": [],

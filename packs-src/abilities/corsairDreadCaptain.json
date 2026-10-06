@@ -32,9 +32,29 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "shipQuality",
+        "value": 1
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "standing",
+        "faction": "underworld",
+        "delta": 20,
+        "scope": "character",
+        "once": true
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "ships Quality \\+1"
+    ],
+    "automation": "full",
     "identifier": "corsairDreadCaptain"
   },
   "effects": [],

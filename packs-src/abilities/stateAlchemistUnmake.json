@@ -61,7 +61,32 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "partial",
+    "effects": [
+      {
+        "kind": "cancel",
+        "what": "barrier"
+      },
+      {
+        "kind": "removeStatus",
+        "statusId": "warded",
+        "target": "target"
+      },
+      {
+        "kind": "flag",
+        "key": "destroyRelic",
+        "value": true,
+        "target": "target"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "destroys one Barrier",
+      "ward",
+      "or relic"
+    ],
+    "automation": "full",
     "identifier": "stateAlchemistUnmake"
   },
   "effects": [],

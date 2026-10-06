@@ -1,0 +1,686 @@
+{
+  "name": "Marshal Ottmar Krieg",
+  "type": "character",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "level": 20,
+    "xp": 0,
+    "attributes": {
+      "str": 12,
+      "mag": 6,
+      "skl": 8,
+      "spd": 6,
+      "def": 8,
+      "res": 8,
+      "cmd": 14
+    },
+    "growthTenths": {
+      "str": 6,
+      "mag": 8,
+      "skl": 8,
+      "spd": 6,
+      "def": 8,
+      "res": 8,
+      "cmd": 7
+    },
+    "growthLog": [
+      {
+        "level": 1,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {},
+        "gains": {},
+        "hp": 3
+      },
+      {
+        "level": 2,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {
+          "str": 7,
+          "mag": 2,
+          "skl": 5,
+          "spd": 4,
+          "def": 5,
+          "res": 2,
+          "cmd": 4
+        },
+        "gains": {},
+        "hp": 3
+      },
+      {
+        "level": 3,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {
+          "str": 7,
+          "mag": 2,
+          "skl": 5,
+          "spd": 4,
+          "def": 5,
+          "res": 2,
+          "cmd": 4
+        },
+        "gains": {
+          "str": 1,
+          "skl": 1,
+          "def": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 4,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {
+          "str": 7,
+          "mag": 2,
+          "skl": 5,
+          "spd": 4,
+          "def": 5,
+          "res": 2,
+          "cmd": 4
+        },
+        "gains": {
+          "str": 1,
+          "spd": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 5,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {
+          "str": 7,
+          "mag": 2,
+          "skl": 5,
+          "spd": 4,
+          "def": 5,
+          "res": 2,
+          "cmd": 4
+        },
+        "gains": {
+          "skl": 1,
+          "def": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 6,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {
+          "str": 7,
+          "mag": 2,
+          "skl": 5,
+          "spd": 4,
+          "def": 5,
+          "res": 2,
+          "cmd": 4
+        },
+        "gains": {
+          "str": 1,
+          "mag": 1,
+          "spd": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 7,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {
+          "str": 7,
+          "mag": 2,
+          "skl": 5,
+          "spd": 4,
+          "def": 5,
+          "res": 2,
+          "cmd": 4
+        },
+        "gains": {
+          "str": 1,
+          "skl": 1,
+          "def": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 8,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 8,
+          "mag": 2,
+          "skl": 6,
+          "spd": 4,
+          "def": 6,
+          "res": 2,
+          "cmd": 6
+        },
+        "gains": {
+          "str": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 9,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 8,
+          "mag": 2,
+          "skl": 6,
+          "spd": 4,
+          "def": 6,
+          "res": 2,
+          "cmd": 6
+        },
+        "gains": {
+          "skl": 1,
+          "spd": 1,
+          "def": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 10,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 8,
+          "mag": 2,
+          "skl": 6,
+          "spd": 4,
+          "def": 6,
+          "res": 2,
+          "cmd": 6
+        },
+        "gains": {
+          "str": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 11,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 8,
+          "mag": 2,
+          "skl": 6,
+          "spd": 4,
+          "def": 6,
+          "res": 2,
+          "cmd": 6
+        },
+        "gains": {
+          "str": 1,
+          "mag": 1,
+          "skl": 1,
+          "spd": 1,
+          "def": 1,
+          "res": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 12,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 8,
+          "mag": 2,
+          "skl": 6,
+          "spd": 4,
+          "def": 6,
+          "res": 2,
+          "cmd": 6
+        },
+        "gains": {
+          "str": 1,
+          "skl": 1,
+          "def": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 13,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 8,
+          "mag": 2,
+          "skl": 6,
+          "spd": 4,
+          "def": 6,
+          "res": 2,
+          "cmd": 6
+        },
+        "gains": {
+          "str": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 14,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 8,
+          "mag": 2,
+          "skl": 6,
+          "spd": 4,
+          "def": 6,
+          "res": 2,
+          "cmd": 6
+        },
+        "gains": {
+          "skl": 1,
+          "spd": 1,
+          "def": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 15,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 8,
+          "mag": 2,
+          "skl": 6,
+          "spd": 4,
+          "def": 6,
+          "res": 2,
+          "cmd": 6
+        },
+        "gains": {
+          "str": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 16,
+        "classId": "warlord",
+        "tier": 3,
+        "tenths": {
+          "str": 10,
+          "mag": 2,
+          "skl": 6,
+          "spd": 4,
+          "def": 8,
+          "res": 2,
+          "cmd": 7
+        },
+        "gains": {
+          "str": 1,
+          "mag": 1,
+          "skl": 1,
+          "spd": 1,
+          "def": 1,
+          "res": 1
+        },
+        "hp": 4
+      },
+      {
+        "level": 17,
+        "classId": "warlord",
+        "tier": 3,
+        "tenths": {
+          "str": 10,
+          "mag": 2,
+          "skl": 6,
+          "spd": 4,
+          "def": 8,
+          "res": 2,
+          "cmd": 7
+        },
+        "gains": {
+          "str": 1,
+          "skl": 1,
+          "def": 1,
+          "cmd": 1
+        },
+        "hp": 4
+      },
+      {
+        "level": 18,
+        "classId": "warlord",
+        "tier": 3,
+        "tenths": {
+          "str": 10,
+          "mag": 2,
+          "skl": 6,
+          "spd": 4,
+          "def": 8,
+          "res": 2,
+          "cmd": 7
+        },
+        "gains": {
+          "str": 1,
+          "def": 1,
+          "cmd": 1
+        },
+        "hp": 4
+      },
+      {
+        "level": 19,
+        "classId": "warlord",
+        "tier": 3,
+        "tenths": {
+          "str": 10,
+          "mag": 2,
+          "skl": 6,
+          "spd": 4,
+          "def": 8,
+          "res": 2,
+          "cmd": 7
+        },
+        "gains": {
+          "str": 1,
+          "skl": 1,
+          "spd": 1,
+          "def": 1,
+          "cmd": 1
+        },
+        "hp": 4
+      },
+      {
+        "level": 20,
+        "classId": "warlord",
+        "tier": 3,
+        "tenths": {
+          "str": 10,
+          "mag": 2,
+          "skl": 6,
+          "spd": 4,
+          "def": 8,
+          "res": 2,
+          "cmd": 7
+        },
+        "gains": {
+          "str": 1
+        },
+        "hp": 4
+      }
+    ],
+    "promotionBonuses": [
+      {
+        "tier": 2,
+        "classId": "captain",
+        "stats": {
+          "cmd": 1
+        }
+      },
+      {
+        "tier": 3,
+        "classId": "warlord",
+        "stats": {
+          "str": 2,
+          "def": 2,
+          "cmd": 2
+        }
+      }
+    ],
+    "rankBonuses": [
+      {
+        "classId": "warlord",
+        "rank": 3,
+        "stat": "cmd",
+        "value": 1
+      },
+      {
+        "classId": "warlord",
+        "rank": 5,
+        "stat": "cmd",
+        "value": 1
+      },
+      {
+        "classId": "warlord",
+        "rank": 7,
+        "stat": "cmd",
+        "value": 1
+      }
+    ],
+    "adaptations": [],
+    "people": "foreignHuman",
+    "peopleSubtype": "",
+    "background": null,
+    "talent": {
+      "id": "earlyPeak",
+      "stat": null,
+      "penaltyStat": null,
+      "proficiency": null,
+      "placement": {
+        "str": 4,
+        "mag": 0,
+        "skl": 0,
+        "spd": 0,
+        "def": 0,
+        "res": 0,
+        "cmd": 4
+      }
+    },
+    "personalGrowth": {
+      "str": 3,
+      "mag": 0,
+      "skl": 0,
+      "spd": 0,
+      "def": 3,
+      "res": 0,
+      "cmd": 0
+    },
+    "classes": [
+      {
+        "id": "cadet",
+        "rank": 1,
+        "cp100": 0,
+        "choices": {}
+      },
+      {
+        "id": "captain",
+        "rank": 7,
+        "cp100": 3625,
+        "choices": {
+          "weapon": "lance"
+        }
+      },
+      {
+        "id": "warlord",
+        "rank": 10,
+        "cp100": 8458,
+        "choices": {
+          "weapon": "lance"
+        }
+      }
+    ],
+    "activeClass": "warlord",
+    "loadout": {
+      "secondary": "captain",
+      "reaction": "warlordVeto",
+      "supports": [
+        "captainLogistics",
+        "warlordGrandCommand"
+      ],
+      "stance": null
+    },
+    "manaburn": 0,
+    "saturation": null,
+    "marks": 0,
+    "divineAttention": 0,
+    "static": 0,
+    "stolen": [],
+    "standingFaction": {
+      "crown": 40,
+      "army": 40,
+      "civilians": 40,
+      "temple": 40,
+      "mages": 40,
+      "brasswater": 40,
+      "underworld": 40,
+      "duneTribes": 40,
+      "offweiss": 40,
+      "council": 40,
+      "gravetide": 40,
+      "briarwall": 40,
+      "valedorn": 40,
+      "seastrand": 40
+    },
+    "dust": 15,
+    "storyGates": [],
+    "hp": {
+      "value": 125
+    },
+    "channel": {
+      "value": 13
+    },
+    "matter": {
+      "value": 0
+    },
+    "recruit": {
+      "profile": "",
+      "ownerId": null,
+      "status": "",
+      "personalSkillId": "",
+      "story": false,
+      "gmRun": true
+    },
+    "standingPersonal": {},
+    "notes": "<p>Commander of the invasion, methodical, adapts.</p><p>Warlord built at party level +4 for the invasion chain, Early Peak Talent, an antagonist (enemy profile, named budget). This snapshot is level 20. Krieg's Baton is not in the Named table yet: he carries a generated kit until V writes it.</p><p>Marshal Ottmar Krieg, Foreign Human Warlord of Offweiss, level 20. Commander of the invasion, methodical, adapts. Carries Royal Killer Lance, Royal Light Armor and Royal Banner. Ottmar laughs at the wrong moments.</p>"
+  },
+  "items": [
+    {
+      "name": "Royal Killer Lance",
+      "type": "weapon",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "royalKillerLance",
+        "line": "lance",
+        "tier": "royal",
+        "prefix": "killer",
+        "forge": 0,
+        "element": null,
+        "asSidearm": false,
+        "equipped": true,
+        "quantity": 1,
+        "description": ""
+      },
+      "_id": "O3Hoq70Nbp5677HM",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Royal Light Armor",
+      "type": "armor",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "identifier": "royalLight",
+        "equipped": true,
+        "description": ""
+      },
+      "_id": "fl0xIT6pBGrrKiW7",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Royal Banner",
+      "type": "offhand",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "identifier": "royalBanner",
+        "line": "banner",
+        "tier": "royal",
+        "equipped": true,
+        "description": ""
+      },
+      "_id": "n3cpCC4qec1dRR7X",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "prototypeToken": {
+    "name": "Marshal Ottmar Krieg",
+    "actorLink": true,
+    "disposition": -1,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "flags": {
+    "deicide": {
+      "generated": {
+        "kind": "npc",
+        "seed": "ottmarKrieg",
+        "input": {
+          "level": 20,
+          "classLine": [
+            "cadet",
+            "captain",
+            "warlord"
+          ],
+          "people": "foreignHuman",
+          "profile": "enemy",
+          "talent": "earlyPeak",
+          "named": true,
+          "seed": "ottmarKrieg",
+          "name": "Marshal Ottmar Krieg",
+          "faction": "offweiss",
+          "role": "Commander of the invasion, methodical, adapts",
+          "description": "Warlord built at party level +4 for the invasion chain, Early Peak Talent, an antagonist (enemy profile, named budget). This snapshot is level 20. Krieg's Baton is not in the Named table yet: he carries a generated kit until V writes it.",
+          "dials": {
+            "S": 45,
+            "L": 30
+          }
+        },
+        "role": "Commander of the invasion, methodical, adapts",
+        "recruit": null
+      },
+      "faction": "offweiss",
+      "identifier": "ottmarKrieg"
+    }
+  },
+  "_id": "Dk0x09uBJGfmHwiF",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

@@ -49,14 +49,45 @@
         "key": "damageTaken",
         "op": "mul",
         "value": 1.25
-      },
-      {
-        "key": "immune",
-        "value": "guard"
       }
     ],
     "roll": null,
-    "automation": "partial",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": {
+      "modifiers": [
+        {
+          "key": "attributes.str",
+          "value": 6
+        },
+        {
+          "key": "might",
+          "value": 4
+        },
+        {
+          "key": "delay",
+          "value": -10
+        },
+        {
+          "key": "damageTaken",
+          "op": "mul",
+          "value": 1.25
+        }
+      ],
+      "effects": [
+        {
+          "kind": "flag",
+          "key": "cannotGuard",
+          "value": true,
+          "target": "self"
+        }
+      ]
+    },
+    "coverage": [
+      "take \\+25 percent damage"
+    ],
+    "automation": "full",
     "identifier": "pinBerserk"
   },
   "effects": [],

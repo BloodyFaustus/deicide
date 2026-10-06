@@ -36,14 +36,29 @@
       {
         "key": "defense.def",
         "value": 4
-      },
-      {
-        "key": "immune",
-        "value": "rowSwap"
       }
     ],
     "roll": null,
-    "automation": "partial",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": {
+      "modifiers": [
+        {
+          "key": "defense.def",
+          "value": 4
+        }
+      ],
+      "effects": [
+        {
+          "kind": "flag",
+          "key": "cannotSwapRow",
+          "value": true
+        }
+      ]
+    },
+    "coverage": [],
+    "automation": "full",
     "identifier": "soldierShieldWall"
   },
   "effects": [],

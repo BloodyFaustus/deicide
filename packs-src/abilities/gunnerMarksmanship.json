@@ -40,7 +40,14 @@
       }
     ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "gun Might 3 vs Warded instead of 0"
+    ],
+    "automation": "full",
     "identifier": "gunnerMarksmanship"
   },
   "effects": [],

@@ -34,7 +34,21 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "nationTrack",
+        "track": "navy",
+        "delta": 1,
+        "once": true
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Navy track \\+1 at campaign start"
+    ],
+    "automation": "full",
     "identifier": "admiralBlockade"
   },
   "effects": [],

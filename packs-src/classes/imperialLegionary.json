@@ -10,9 +10,9 @@
       "infantry"
     ],
     "growth": {
-      "str": "B",
+      "str": "A",
       "mag": "F",
-      "skl": "C",
+      "skl": "B",
       "spd": "D",
       "def": "S",
       "res": "C",
@@ -25,8 +25,8 @@
         "armor"
       ],
       "secondary": [
-        "sword",
-        "authority"
+        "authority",
+        "sword"
       ]
     },
     "trainsText": "",
@@ -63,7 +63,7 @@
     "grantsFullTruth": false,
     "choices": [],
     "kit": {},
-    "description": "<p>Lance S, DEF S, companies count Quality 5.</p>",
+    "description": "<p>Lance S, DEF S, companies count Quality 5. Growth STR A, MAG F, SKL B, SPD D, DEF S, RES C, CMD C.</p>",
     "ladder": "standard",
     "identifier": "imperialLegionary"
   },

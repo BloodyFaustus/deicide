@@ -32,9 +32,25 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "damageMultiplier",
+        "op": "set",
+        "value": 1.5,
+        "when": {
+          "targetKind": "company"
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "all attacks vs companies x1\\.5"
+    ],
+    "automation": "full",
     "identifier": "heroWeaponOfWar"
   },
   "effects": [],

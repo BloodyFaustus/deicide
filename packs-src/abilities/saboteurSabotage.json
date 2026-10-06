@@ -34,7 +34,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "flag",
+        "key": "preBattle.enemyCompanyStrength",
+        "value": 70,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "pre battle",
+      "one enemy company starts at Strength 70"
+    ],
+    "automation": "full",
     "identifier": "saboteurSabotage"
   },
   "effects": [],

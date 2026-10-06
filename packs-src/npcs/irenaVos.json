@@ -1,0 +1,535 @@
+{
+  "name": "Captain Irena Vos",
+  "type": "character",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "level": 10,
+    "xp": 0,
+    "attributes": {
+      "str": 8,
+      "mag": 6,
+      "skl": 8,
+      "spd": 6,
+      "def": 8,
+      "res": 8,
+      "cmd": 10
+    },
+    "growthTenths": {
+      "str": 3,
+      "mag": 7,
+      "skl": 5,
+      "spd": 1,
+      "def": 4,
+      "res": 6,
+      "cmd": 7
+    },
+    "growthLog": [
+      {
+        "level": 1,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {},
+        "gains": {},
+        "hp": 3
+      },
+      {
+        "level": 2,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {
+          "str": 7,
+          "mag": 3,
+          "skl": 5,
+          "spd": 2,
+          "def": 2,
+          "res": 4,
+          "cmd": 9
+        },
+        "gains": {},
+        "hp": 3
+      },
+      {
+        "level": 3,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {
+          "str": 7,
+          "mag": 3,
+          "skl": 5,
+          "spd": 2,
+          "def": 2,
+          "res": 4,
+          "cmd": 9
+        },
+        "gains": {
+          "str": 1,
+          "skl": 1,
+          "cmd": 2
+        },
+        "hp": 3,
+        "flex": "cmd"
+      },
+      {
+        "level": 4,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {
+          "str": 7,
+          "mag": 3,
+          "skl": 5,
+          "spd": 2,
+          "def": 2,
+          "res": 4,
+          "cmd": 9
+        },
+        "gains": {
+          "str": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 5,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {
+          "str": 7,
+          "mag": 3,
+          "skl": 5,
+          "spd": 2,
+          "def": 2,
+          "res": 4,
+          "cmd": 9
+        },
+        "gains": {
+          "mag": 1,
+          "skl": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 6,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {
+          "str": 7,
+          "mag": 3,
+          "skl": 5,
+          "spd": 2,
+          "def": 2,
+          "res": 4,
+          "cmd": 9
+        },
+        "gains": {
+          "str": 1,
+          "spd": 1,
+          "def": 1,
+          "res": 1,
+          "cmd": 2
+        },
+        "hp": 3,
+        "flex": "cmd"
+      },
+      {
+        "level": 7,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {
+          "str": 7,
+          "mag": 3,
+          "skl": 5,
+          "spd": 2,
+          "def": 2,
+          "res": 4,
+          "cmd": 9
+        },
+        "gains": {
+          "str": 1,
+          "skl": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 8,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 7,
+          "mag": 3,
+          "skl": 5,
+          "spd": 3,
+          "def": 4,
+          "res": 4,
+          "cmd": 11
+        },
+        "gains": {
+          "mag": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 9,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 7,
+          "mag": 3,
+          "skl": 5,
+          "spd": 3,
+          "def": 4,
+          "res": 4,
+          "cmd": 11
+        },
+        "gains": {
+          "str": 1,
+          "skl": 1,
+          "def": 1,
+          "res": 1,
+          "cmd": 2
+        },
+        "hp": 3,
+        "flex": "cmd"
+      },
+      {
+        "level": 10,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 7,
+          "mag": 3,
+          "skl": 5,
+          "spd": 3,
+          "def": 4,
+          "res": 4,
+          "cmd": 11
+        },
+        "gains": {
+          "str": 1,
+          "spd": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      }
+    ],
+    "promotionBonuses": [
+      {
+        "tier": 2,
+        "classId": "captain",
+        "stats": {
+          "cmd": 1
+        }
+      }
+    ],
+    "rankBonuses": [
+      {
+        "classId": "captain",
+        "rank": 3,
+        "stat": "cmd",
+        "value": 1
+      },
+      {
+        "classId": "captain",
+        "rank": 5,
+        "stat": "cmd",
+        "value": 1
+      },
+      {
+        "classId": "captain",
+        "rank": 7,
+        "stat": "cmd",
+        "value": 1
+      }
+    ],
+    "adaptations": [],
+    "people": "manaborne",
+    "peopleSubtype": "",
+    "background": null,
+    "talent": {
+      "id": "steady",
+      "stat": null,
+      "penaltyStat": null,
+      "proficiency": null,
+      "placement": {}
+    },
+    "personalGrowth": {
+      "str": 3,
+      "mag": 0,
+      "skl": 0,
+      "spd": 0,
+      "def": 0,
+      "res": 0,
+      "cmd": 3
+    },
+    "classes": [
+      {
+        "id": "cadet",
+        "rank": 5,
+        "cp100": 1813,
+        "choices": {}
+      },
+      {
+        "id": "captain",
+        "rank": 8,
+        "cp100": 4229,
+        "choices": {
+          "weapon": "lance"
+        }
+      }
+    ],
+    "activeClass": "captain",
+    "loadout": {
+      "secondary": "cadet",
+      "reaction": "captainShieldRing",
+      "supports": [
+        "cadetSteady",
+        "captainLogistics"
+      ],
+      "stance": null
+    },
+    "manaburn": 0,
+    "saturation": null,
+    "marks": 0,
+    "divineAttention": 0,
+    "static": 0,
+    "stolen": [],
+    "standingFaction": {
+      "crown": 40,
+      "army": 40,
+      "civilians": 40,
+      "temple": 40,
+      "mages": 40,
+      "brasswater": 40,
+      "underworld": 40,
+      "duneTribes": 40,
+      "offweiss": 40,
+      "council": 40,
+      "gravetide": 40,
+      "briarwall": 40,
+      "valedorn": 40,
+      "seastrand": 40
+    },
+    "dust": 15,
+    "storyGates": [],
+    "hp": {
+      "value": 70
+    },
+    "channel": {
+      "value": 13
+    },
+    "matter": {
+      "value": 0
+    },
+    "recruit": {
+      "profile": "standard",
+      "ownerId": null,
+      "status": "attached",
+      "personalSkillId": "personalHardLine",
+      "story": false,
+      "gmRun": true
+    },
+    "standingPersonal": {
+      "party": 40
+    },
+    "notes": "<p>Royal liaison assigned to Mercer's unit, becomes his adjutant. The most recurring NPC.</p><p>Personal skill Hard Line: Hold the Line also grants Avoid +5. Starts Attached at personal Standing 40 by assignment.</p><p>Personal skill Hard Line: Hold the Line also grants Avoid +5 to companies in radius this phase.</p><p>Captain Irena Vos, Manaborne Human Captain of Lathander, level 10. Royal liaison assigned to Mercer's unit, becomes his adjutant. The most recurring NPC. Carries Silver Lance, Silver Medium Armor and Silver Banner. Irena owes Nessa Pike money.</p>"
+  },
+  "items": [
+    {
+      "name": "Silver Lance",
+      "type": "weapon",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "silverLance",
+        "line": "lance",
+        "tier": "silver",
+        "prefix": null,
+        "forge": 0,
+        "element": null,
+        "asSidearm": false,
+        "equipped": true,
+        "quantity": 1,
+        "description": ""
+      },
+      "_id": "ztMZREphZpdpN3CJ",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Silver Medium Armor",
+      "type": "armor",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "identifier": "silverMedium",
+        "equipped": true,
+        "description": ""
+      },
+      "_id": "lz5entSX30UIh7Xf",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Silver Banner",
+      "type": "offhand",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "identifier": "silverBanner",
+        "line": "banner",
+        "tier": "silver",
+        "equipped": true,
+        "description": ""
+      },
+      "_id": "Xl65VYrtLw3D1pIH",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Hard Line",
+      "type": "ability",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "identifier": "personalHardLine",
+        "type": "support",
+        "source": {
+          "kind": "personal",
+          "id": "npcIrenaVos",
+          "rank": null
+        },
+        "description": "<p>Hold the Line also grants Avoid +5 to companies in radius this phase.</p>",
+        "summary": "Hold the Line also grants Avoid +5 to companies in radius this phase",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": null,
+        "heal": null,
+        "war": null,
+        "dungeon": null,
+        "statuses": [],
+        "modifiers": [
+          {
+            "key": "avoid",
+            "value": 5,
+            "when": {
+              "status": "formed"
+            }
+          }
+        ],
+        "roll": null,
+        "art": null,
+        "effects": [],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [
+          "Avoid \\+5"
+        ],
+        "automation": "partial"
+      },
+      "_id": "qYGahSiIJe4Y9gDL",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "prototypeToken": {
+    "name": "Captain Irena Vos",
+    "actorLink": true,
+    "disposition": 0,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "flags": {
+    "deicide": {
+      "generated": {
+        "kind": "npc",
+        "seed": "irenaVos",
+        "input": {
+          "level": 10,
+          "classLine": [
+            "cadet",
+            "captain"
+          ],
+          "people": "manaborne",
+          "profile": "standard",
+          "personalSkill": "personalHardLine",
+          "seed": "irenaVos",
+          "choices": {
+            "captain": {
+              "weapon": "lance"
+            }
+          },
+          "name": "Captain Irena Vos",
+          "faction": "lathander",
+          "role": "Royal liaison assigned to Mercer's unit, becomes his adjutant. The most recurring NPC",
+          "description": "Personal skill Hard Line: Hold the Line also grants Avoid +5. Starts Attached at personal Standing 40 by assignment.",
+          "dials": {
+            "S": 45,
+            "L": 30
+          }
+        },
+        "role": "Royal liaison assigned to Mercer's unit, becomes his adjutant. The most recurring NPC",
+        "recruit": "Standard Captain, Steady, starts Attached 40 by assignment"
+      },
+      "faction": "lathander",
+      "identifier": "irenaVos"
+    }
+  },
+  "_id": "9S0maZHM04wwvpgL",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

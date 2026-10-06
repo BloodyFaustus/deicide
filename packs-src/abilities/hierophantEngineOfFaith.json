@@ -34,7 +34,21 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "flag",
+        "key": "barriersPersist",
+        "value": true,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Barriers you raise persist until destroyed"
+    ],
+    "automation": "full",
     "identifier": "hierophantEngineOfFaith"
   },
   "effects": [],

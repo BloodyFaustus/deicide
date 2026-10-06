@@ -46,7 +46,31 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "counter"
+      },
+      {
+        "kind": "move",
+        "mode": "swapRow",
+        "target": "self"
+      }
+    ],
+    "reaction": {
+      "trigger": "hitByAttack",
+      "window": {
+        "self": true
+      },
+      "when": {
+        "attackerRange": {
+          "max": 1
+        }
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "gunnerFlinch"
   },
   "effects": [],

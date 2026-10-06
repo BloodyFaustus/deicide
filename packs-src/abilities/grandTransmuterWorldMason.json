@@ -37,7 +37,21 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "flag",
+        "key": "freeTransmuteTerrainPerRound",
+        "value": 1,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Transmute Terrain is a free action once per round"
+    ],
+    "automation": "full",
     "identifier": "grandTransmuterWorldMason"
   },
   "effects": [],

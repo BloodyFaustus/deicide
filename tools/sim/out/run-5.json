@@ -1,0 +1,3432 @@
+{
+ "summary": {
+  "label": "Run 5: Wrath at 20 against the Vantage Assassin (H3)",
+  "seeds": 100,
+  "outcomes": {
+   "victory": 100,
+   "defeat": 0,
+   "timeout": 0
+  },
+  "rotations": {
+   "mean": 12.58,
+   "p10": 11,
+   "p90": 14,
+   "n": 100
+  },
+  "bossActions": {
+   "mean": 8.8,
+   "p10": 8,
+   "p90": 10,
+   "n": 100
+  },
+  "ticks": {
+   "mean": 252.2,
+   "p10": 220,
+   "p90": 280,
+   "n": 100
+  },
+  "damageBy": {
+   "Vantage Assassin": {
+    "mean": 440.79,
+    "p10": 431,
+    "p90": 460,
+    "n": 100
+   }
+  },
+  "overcast": {
+   "Vantage Assassin": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   }
+  },
+  "burn": {
+   "Vantage Assassin": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   }
+  },
+  "harvests": {
+   "Vantage Assassin": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   }
+  },
+  "soulPriceHp": {
+   "Vantage Assassin": {
+    "mean": 0,
+    "p10": 0,
+    "p90": 0,
+    "n": 100
+   }
+  },
+  "partyHpPercent": {
+   "mean": 54.38,
+   "p10": 35,
+   "p90": 75,
+   "n": 100
+  },
+  "downedPerFight": {
+   "mean": 0,
+   "p10": 0,
+   "p90": 0,
+   "n": 100
+  },
+  "reactions": {
+   "pinVantage": 37
+  },
+  "dualStrikes": 0,
+  "anomalies": 0
+ },
+ "results": [
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5001,
+   "partyHpPercent": 75,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 30,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 14,
+   "bossActions": 10,
+   "ticksElapsed": 280,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 15
+   },
+   "seed": 5002,
+   "partyHpPercent": 53,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 56,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5003,
+   "partyHpPercent": 100,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 0,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5004,
+   "partyHpPercent": 62,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 46,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 15,
+   "bossActions": 10,
+   "ticksElapsed": 300,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 16
+   },
+   "seed": 5005,
+   "partyHpPercent": 58,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 50,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 26
+  },
+  {
+   "rotations": 16,
+   "bossActions": 11,
+   "ticksElapsed": 320,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 17
+   },
+   "seed": 5006,
+   "partyHpPercent": 68,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 38,
+   "enemyActions": 11,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 28
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5007,
+   "partyHpPercent": 53,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 56,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 16,
+   "bossActions": 11,
+   "ticksElapsed": 330,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 17
+   },
+   "seed": 5008,
+   "partyHpPercent": 75,
+   "damageBy": {
+    "Vantage Assassin": 414
+   },
+   "enemyDamage": 30,
+   "enemyActions": 11,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 28
+  },
+  {
+   "rotations": 12,
+   "bossActions": 9,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5009,
+   "partyHpPercent": 45,
+   "damageBy": {
+    "Vantage Assassin": 431
+   },
+   "enemyDamage": 66,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 1
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 14,
+   "bossActions": 10,
+   "ticksElapsed": 280,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 15
+   },
+   "seed": 5010,
+   "partyHpPercent": 83,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 20,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5011,
+   "partyHpPercent": 68,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 38,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5012,
+   "partyHpPercent": 92,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 10,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5013,
+   "partyHpPercent": 70,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 36,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5014,
+   "partyHpPercent": 52,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 58,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5015,
+   "partyHpPercent": 75,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 30,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5016,
+   "partyHpPercent": 60,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 48,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 14,
+   "bossActions": 10,
+   "ticksElapsed": 280,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 15
+   },
+   "seed": 5017,
+   "partyHpPercent": 60,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 48,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 10,
+   "bossActions": 8,
+   "ticksElapsed": 210,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 11
+   },
+   "seed": 5018,
+   "partyHpPercent": 30,
+   "damageBy": {
+    "Vantage Assassin": 436
+   },
+   "enemyDamage": 84,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 19
+  },
+  {
+   "rotations": 13,
+   "bossActions": 10,
+   "ticksElapsed": 270,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5019,
+   "partyHpPercent": 43,
+   "damageBy": {
+    "Vantage Assassin": 431
+   },
+   "enemyDamage": 68,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 1
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 24
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5020,
+   "partyHpPercent": 85,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 18,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5021,
+   "partyHpPercent": 62,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 46,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5022,
+   "partyHpPercent": 62,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 46,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 10,
+   "bossActions": 7,
+   "ticksElapsed": 200,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 11
+   },
+   "seed": 5023,
+   "partyHpPercent": 43,
+   "damageBy": {
+    "Vantage Assassin": 448
+   },
+   "enemyDamage": 68,
+   "enemyActions": 7,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 18
+  },
+  {
+   "rotations": 16,
+   "bossActions": 11,
+   "ticksElapsed": 320,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 17
+   },
+   "seed": 5024,
+   "partyHpPercent": 85,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 18,
+   "enemyActions": 11,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 28
+  },
+  {
+   "rotations": 15,
+   "bossActions": 11,
+   "ticksElapsed": 300,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 16
+   },
+   "seed": 5025,
+   "partyHpPercent": 37,
+   "damageBy": {
+    "Vantage Assassin": 448
+   },
+   "enemyDamage": 76,
+   "enemyActions": 11,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 1
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 27
+  },
+  {
+   "rotations": 14,
+   "bossActions": 10,
+   "ticksElapsed": 280,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 15
+   },
+   "seed": 5026,
+   "partyHpPercent": 62,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 46,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 14,
+   "bossActions": 10,
+   "ticksElapsed": 280,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 15
+   },
+   "seed": 5027,
+   "partyHpPercent": 37,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 76,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 11,
+   "bossActions": 8,
+   "ticksElapsed": 220,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 12
+   },
+   "seed": 5028,
+   "partyHpPercent": 85,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 18,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 14,
+   "bossActions": 10,
+   "ticksElapsed": 280,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 15
+   },
+   "seed": 5029,
+   "partyHpPercent": 37,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 76,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5030,
+   "partyHpPercent": 52,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 58,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 11,
+   "bossActions": 8,
+   "ticksElapsed": 220,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 12
+   },
+   "seed": 5031,
+   "partyHpPercent": 75,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 30,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5032,
+   "partyHpPercent": 60,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 48,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 15,
+   "bossActions": 10,
+   "ticksElapsed": 300,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 16
+   },
+   "seed": 5033,
+   "partyHpPercent": 43,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 68,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 26
+  },
+  {
+   "rotations": 14,
+   "bossActions": 10,
+   "ticksElapsed": 280,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 15
+   },
+   "seed": 5034,
+   "partyHpPercent": 68,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 38,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5035,
+   "partyHpPercent": 52,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 58,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 10,
+   "bossActions": 7,
+   "ticksElapsed": 200,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 11
+   },
+   "seed": 5036,
+   "partyHpPercent": 52,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 58,
+   "enemyActions": 7,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 18
+  },
+  {
+   "rotations": 11,
+   "bossActions": 8,
+   "ticksElapsed": 220,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 12
+   },
+   "seed": 5037,
+   "partyHpPercent": 58,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 50,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 14,
+   "bossActions": 10,
+   "ticksElapsed": 280,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 15
+   },
+   "seed": 5038,
+   "partyHpPercent": 43,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 68,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5039,
+   "partyHpPercent": 68,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 38,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5040,
+   "partyHpPercent": 52,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 58,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5041,
+   "partyHpPercent": 60,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 48,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5042,
+   "partyHpPercent": 68,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 38,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5043,
+   "partyHpPercent": 68,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 38,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5044,
+   "partyHpPercent": 35,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 78,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5045,
+   "partyHpPercent": 35,
+   "damageBy": {
+    "Vantage Assassin": 425
+   },
+   "enemyDamage": 78,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 1
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5046,
+   "partyHpPercent": 52,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 58,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 10,
+   "bossActions": 7,
+   "ticksElapsed": 200,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 11
+   },
+   "seed": 5047,
+   "partyHpPercent": 43,
+   "damageBy": {
+    "Vantage Assassin": 448
+   },
+   "enemyDamage": 68,
+   "enemyActions": 7,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 1
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 18
+  },
+  {
+   "rotations": 15,
+   "bossActions": 10,
+   "ticksElapsed": 300,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 16
+   },
+   "seed": 5048,
+   "partyHpPercent": 68,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 38,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 26
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5049,
+   "partyHpPercent": 67,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 40,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5050,
+   "partyHpPercent": 52,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 58,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 10,
+   "bossActions": 7,
+   "ticksElapsed": 200,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 11
+   },
+   "seed": 5051,
+   "partyHpPercent": 13,
+   "damageBy": {
+    "Vantage Assassin": 436
+   },
+   "enemyDamage": 104,
+   "enemyActions": 7,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 18
+  },
+  {
+   "rotations": 11,
+   "bossActions": 8,
+   "ticksElapsed": 220,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 12
+   },
+   "seed": 5052,
+   "partyHpPercent": 55,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 54,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 9,
+   "bossActions": 7,
+   "ticksElapsed": 180,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 10
+   },
+   "seed": 5053,
+   "partyHpPercent": 28,
+   "damageBy": {
+    "Vantage Assassin": 436
+   },
+   "enemyDamage": 86,
+   "enemyActions": 7,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 17
+  },
+  {
+   "rotations": 14,
+   "bossActions": 10,
+   "ticksElapsed": 280,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 15
+   },
+   "seed": 5054,
+   "partyHpPercent": 62,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 46,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 14,
+   "bossActions": 10,
+   "ticksElapsed": 280,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 15
+   },
+   "seed": 5055,
+   "partyHpPercent": 38,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 74,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5056,
+   "partyHpPercent": 67,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 40,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 14,
+   "bossActions": 10,
+   "ticksElapsed": 280,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 15
+   },
+   "seed": 5057,
+   "partyHpPercent": 43,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 68,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5058,
+   "partyHpPercent": 53,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 56,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5059,
+   "partyHpPercent": 42,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 70,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 11,
+   "bossActions": 8,
+   "ticksElapsed": 220,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 12
+   },
+   "seed": 5060,
+   "partyHpPercent": 52,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 58,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 14,
+   "bossActions": 10,
+   "ticksElapsed": 280,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 15
+   },
+   "seed": 5061,
+   "partyHpPercent": 37,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 76,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5062,
+   "partyHpPercent": 52,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 58,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 11,
+   "bossActions": 8,
+   "ticksElapsed": 220,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 12
+   },
+   "seed": 5063,
+   "partyHpPercent": 77,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 28,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 10,
+   "bossActions": 8,
+   "ticksElapsed": 210,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 11
+   },
+   "seed": 5064,
+   "partyHpPercent": 45,
+   "damageBy": {
+    "Vantage Assassin": 436
+   },
+   "enemyDamage": 66,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 3
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 19
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5065,
+   "partyHpPercent": 37,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 76,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5066,
+   "partyHpPercent": 43,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 68,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 15,
+   "bossActions": 10,
+   "ticksElapsed": 300,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 16
+   },
+   "seed": 5067,
+   "partyHpPercent": 67,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 40,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 26
+  },
+  {
+   "rotations": 10,
+   "bossActions": 8,
+   "ticksElapsed": 210,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 11
+   },
+   "seed": 5068,
+   "partyHpPercent": 22,
+   "damageBy": {
+    "Vantage Assassin": 441
+   },
+   "enemyDamage": 94,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 4
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 19
+  },
+  {
+   "rotations": 12,
+   "bossActions": 9,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5069,
+   "partyHpPercent": 35,
+   "damageBy": {
+    "Vantage Assassin": 431
+   },
+   "enemyDamage": 78,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 1
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 12,
+   "bossActions": 9,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5070,
+   "partyHpPercent": 43,
+   "damageBy": {
+    "Vantage Assassin": 431
+   },
+   "enemyDamage": 68,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 1
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 12,
+   "bossActions": 9,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5071,
+   "partyHpPercent": 50,
+   "damageBy": {
+    "Vantage Assassin": 431
+   },
+   "enemyDamage": 60,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 1
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 22
+  },
+  {
+   "rotations": 11,
+   "bossActions": 8,
+   "ticksElapsed": 220,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 12
+   },
+   "seed": 5072,
+   "partyHpPercent": 52,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 58,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5073,
+   "partyHpPercent": 55,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 54,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5074,
+   "partyHpPercent": 12,
+   "damageBy": {
+    "Vantage Assassin": 425
+   },
+   "enemyDamage": 106,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5075,
+   "partyHpPercent": 58,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 50,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 11,
+   "bossActions": 8,
+   "ticksElapsed": 220,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 12
+   },
+   "seed": 5076,
+   "partyHpPercent": 37,
+   "damageBy": {
+    "Vantage Assassin": 431
+   },
+   "enemyDamage": 76,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 1
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5077,
+   "partyHpPercent": 52,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 58,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 14,
+   "bossActions": 10,
+   "ticksElapsed": 280,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 15
+   },
+   "seed": 5078,
+   "partyHpPercent": 58,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 50,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5079,
+   "partyHpPercent": 27,
+   "damageBy": {
+    "Vantage Assassin": 431
+   },
+   "enemyDamage": 88,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 1
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 13,
+   "bossActions": 10,
+   "ticksElapsed": 270,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5080,
+   "partyHpPercent": 43,
+   "damageBy": {
+    "Vantage Assassin": 431
+   },
+   "enemyDamage": 68,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 1
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 24
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5081,
+   "partyHpPercent": 68,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 38,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 11,
+   "bossActions": 8,
+   "ticksElapsed": 220,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 12
+   },
+   "seed": 5082,
+   "partyHpPercent": 83,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 20,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5083,
+   "partyHpPercent": 58,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 50,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 14,
+   "bossActions": 10,
+   "ticksElapsed": 280,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 15
+   },
+   "seed": 5084,
+   "partyHpPercent": 45,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 66,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5085,
+   "partyHpPercent": 20,
+   "damageBy": {
+    "Vantage Assassin": 431
+   },
+   "enemyDamage": 96,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 1
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5086,
+   "partyHpPercent": 60,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 48,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 14,
+   "bossActions": 10,
+   "ticksElapsed": 280,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 15
+   },
+   "seed": 5087,
+   "partyHpPercent": 52,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 58,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5088,
+   "partyHpPercent": 35,
+   "damageBy": {
+    "Vantage Assassin": 448
+   },
+   "enemyDamage": 78,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 14,
+   "bossActions": 10,
+   "ticksElapsed": 280,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 15
+   },
+   "seed": 5089,
+   "partyHpPercent": 37,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 76,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 11,
+   "bossActions": 8,
+   "ticksElapsed": 220,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 12
+   },
+   "seed": 5090,
+   "partyHpPercent": 58,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 50,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5091,
+   "partyHpPercent": 53,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 56,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 14,
+   "bossActions": 10,
+   "ticksElapsed": 280,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 15
+   },
+   "seed": 5092,
+   "partyHpPercent": 70,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 36,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 14,
+   "bossActions": 10,
+   "ticksElapsed": 280,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 15
+   },
+   "seed": 5093,
+   "partyHpPercent": 60,
+   "damageBy": {
+    "Vantage Assassin": 460
+   },
+   "enemyDamage": 48,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 25
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5094,
+   "partyHpPercent": 68,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 38,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 13,
+   "bossActions": 9,
+   "ticksElapsed": 260,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 14
+   },
+   "seed": 5095,
+   "partyHpPercent": 37,
+   "damageBy": {
+    "Vantage Assassin": 425
+   },
+   "enemyDamage": 76,
+   "enemyActions": 9,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 2
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 23
+  },
+  {
+   "rotations": 15,
+   "bossActions": 10,
+   "ticksElapsed": 300,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 16
+   },
+   "seed": 5096,
+   "partyHpPercent": 67,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 40,
+   "enemyActions": 10,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 26
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5097,
+   "partyHpPercent": 83,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 20,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 10,
+   "bossActions": 7,
+   "ticksElapsed": 200,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 11
+   },
+   "seed": 5098,
+   "partyHpPercent": 67,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 40,
+   "enemyActions": 7,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 18
+  },
+  {
+   "rotations": 12,
+   "bossActions": 8,
+   "ticksElapsed": 240,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 13
+   },
+   "seed": 5099,
+   "partyHpPercent": 37,
+   "damageBy": {
+    "Vantage Assassin": 437
+   },
+   "enemyDamage": 76,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {},
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 21
+  },
+  {
+   "rotations": 11,
+   "bossActions": 8,
+   "ticksElapsed": 220,
+   "outcome": "victory",
+   "partyActions": {
+    "Vantage Assassin": 12
+   },
+   "seed": 5100,
+   "partyHpPercent": 37,
+   "damageBy": {
+    "Vantage Assassin": 448
+   },
+   "enemyDamage": 76,
+   "enemyActions": 8,
+   "overcast": {
+    "Vantage Assassin": 0
+   },
+   "burn": {
+    "Vantage Assassin": 0
+   },
+   "harvests": {
+    "Vantage Assassin": 0
+   },
+   "soulPriceHp": {
+    "Vantage Assassin": 0
+   },
+   "reactions": {
+    "pinVantage": 1
+   },
+   "dualStrikes": 0,
+   "downed": 0,
+   "anomalies": 0,
+   "cards": 20
+  }
+ ]
+}

@@ -29,12 +29,38 @@
     "weight": null,
     "attack": null,
     "heal": null,
-    "war": null,
+    "war": {
+      "range": [
+        1,
+        1
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "ally",
+      "movement": null,
+      "terrain": false
+    },
     "dungeon": null,
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "partial",
+    "effects": [
+      {
+        "kind": "pool",
+        "key": "manaburn",
+        "delta": -10,
+        "target": "ally"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "remove 10 Manaburn permanently"
+    ],
+    "automation": "full",
     "identifier": "plagueDoctorCure"
   },
   "effects": [],

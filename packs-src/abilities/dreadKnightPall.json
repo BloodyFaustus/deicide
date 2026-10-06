@@ -47,7 +47,46 @@
       }
     ],
     "roll": null,
-    "automation": "partial",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": {
+      "modifiers": [
+        {
+          "key": "defense.def",
+          "value": 6
+        },
+        {
+          "key": "defense.res",
+          "value": 4
+        },
+        {
+          "key": "delay",
+          "value": 10
+        }
+      ],
+      "effects": [
+        {
+          "kind": "aura",
+          "radius": 1,
+          "target": "allies",
+          "modifiers": [
+            {
+              "key": "damageTaken",
+              "op": "mul",
+              "value": 0.75,
+              "when": {
+                "actionElement": "divine"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "coverage": [
+      "adjacent allies take x0\\.75 from Divine"
+    ],
+    "automation": "full",
     "identifier": "dreadKnightPall"
   },
   "effects": [],

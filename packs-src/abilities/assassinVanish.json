@@ -44,9 +44,31 @@
     },
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "avoid",
+        "value": 30
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "applyStatus",
+        "statusId": "untargetable",
+        "target": "self",
+        "expires": "ownTurn"
+      }
+    ],
+    "reaction": {
+      "trigger": "targetedByAttack",
+      "window": {
+        "self": true
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "assassinVanish"
   },
   "effects": [],

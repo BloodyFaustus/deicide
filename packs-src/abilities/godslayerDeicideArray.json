@@ -32,9 +32,25 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "damageMultiplier",
+        "op": "set",
+        "value": 2,
+        "when": {
+          "targetTag": "divine"
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Divine Agents take x2 from you"
+    ],
+    "automation": "full",
     "identifier": "godslayerDeicideArray"
   },
   "effects": [],

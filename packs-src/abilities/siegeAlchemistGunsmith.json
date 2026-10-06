@@ -34,7 +34,27 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "nationTrack",
+        "track": "weapons",
+        "delta": 1,
+        "once": true
+      },
+      {
+        "kind": "flag",
+        "key": "gunsOneTierEarly",
+        "value": true,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Lathander guns available one shop tier early"
+    ],
+    "automation": "full",
     "identifier": "siegeAlchemistGunsmith"
   },
   "effects": [],

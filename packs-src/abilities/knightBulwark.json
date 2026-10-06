@@ -47,6 +47,27 @@
       }
     ],
     "roll": null,
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": {
+      "modifiers": [
+        {
+          "key": "defense.def",
+          "value": 6
+        },
+        {
+          "key": "defense.res",
+          "value": 2
+        },
+        {
+          "key": "delay",
+          "value": 10
+        }
+      ],
+      "effects": []
+    },
+    "coverage": [],
     "automation": "full",
     "identifier": "knightBulwark"
   },

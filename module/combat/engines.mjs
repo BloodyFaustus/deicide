@@ -3,9 +3,56 @@ import {Registry} from "../core/registry.mjs";
 import {actionDelay, compareTicks, dismountPenalty, projectQueue, reinforcementTick, startingTicks} from "../rules/delay.mjs";
 import {needsMorale, rollMorale} from "../rules/company.mjs";
 import {decideAll} from "../rules/doctrine.mjs";
-import {tickStatuses} from "./statuses.mjs";
+import {inAnyRadius} from "../rules/commands.mjs";
+import {expireStatuses, tickStatuses} from "./statuses.mjs";
+import {fieldSnapshot} from "./field.mjs";
+import {logAdjacency, accrueBondPoints} from "../rules/bonds.mjs";
+
+async function expireAll(combat, now) {
+  for ( const combatant of combat.combatants ) {
+    if ( combatant.actor ) await expireStatuses(combatant.actor, now);
+  }
+}
+
+async function logBonds(combat) {
+  const field = fieldSnapshot(combat);
+  if ( !field?.pairs.length ) return;
+  await combat.update({"system.bondLog": logAdjacency(combat.system.bondLog ?? {}, field.pairs)});
+}
+
+export async function settleBonds(combat) {
+  const awards = accrueBondPoints(combat.system?.bondLog ?? {});
+  for ( const award of awards ) {
+    for ( const [actorId, partnerId] of [[award.actorA, award.actorB], [award.actorB, award.actorA]] ) {
+      const actor = game.actors.get(actorId);
+      if ( !actor || (actor.type !== "character") ) continue;
+      const bonds = foundry.utils.deepClone(actor.system.toObject().bonds);
+      const bond = bonds.find(entry => entry.actorId === partnerId);
+      if ( bond ) bond.points += award.points;
+      else bonds.push({actorId: partnerId, points: award.points, skill: "", broken: false});
+      await actor.update({"system.bonds": bonds});
+    }
+  }
+  if ( awards.length ) {
+    const names = awards.map(a => `${game.actors.get(a.actorA)?.name ?? a.actorA} and ${game.actors.get(a.actorB)?.name ?? a.actorB} (${a.rounds} rounds)`);
+    await ChatMessage.implementation.create({content: `<p class="deicide-bonds">Bond points: ${names.join(", ")}.</p>`, speaker: {alias: "Bonds"}});
+  }
+  return awards;
+}
 
 export const combatEngines = new Registry("combatEngines");
+
+export const WAR_QUERY = "deicide.warActivate";
+
+export function registerWarQueries() {
+  CONFIG.queries[WAR_QUERY] = async ({combatId, data}) => {
+    if ( !game.user.isGM ) return false;
+    const combat = game.combats.get(combatId);
+    if ( !combat ) return false;
+    await combat.update(data);
+    return true;
+  };
+}
 
 export function engineForMode(mode) {
   for ( const engine of combatEngines.values() ) {
@@ -51,14 +98,32 @@ const warEngine = {
 
   async toggleActed(combat, combatant, state) {
     const acted = state ?? !combatant.system.acted;
+    if ( !game.user.isGM && !combatant.isOwner ) {
+      ui.notifications?.warn("You can only mark your own units.");
+      return;
+    }
+    if ( acted && (combatant.system.activations ?? 0) > 0 ) {
+      await combatant.update({"system.activations": combatant.system.activations - 1, "system.acted": false});
+      return;
+    }
     await combatant.update({"system.acted": acted});
-    if ( acted && (combat.turn !== null) && (combat.turns[combat.turn]?.id === combatant.id) ) await combat.update({turn: null});
+    if ( acted && (combat.turn !== null) && (combat.turns[combat.turn]?.id === combatant.id) ) {
+      await this.gmUpdate(combat, {turn: null});
+    }
   },
 
   async activate(combat, combatant) {
-    if ( combatant.system.acted ) return;
+    if ( combatant.system.acted && !(combatant.system.activations > 0) ) return;
+    if ( !game.user.isGM && !combatant.isOwner ) return;
     const index = combat.turns.findIndex(c => c.id === combatant.id);
-    if ( index >= 0 ) await combat.update({turn: index});
+    if ( index >= 0 ) await this.gmUpdate(combat, {turn: index});
+  },
+
+  async gmUpdate(combat, data) {
+    if ( game.user.isGM ) return combat.update(data);
+    const gm = game.users.activeGM;
+    if ( !gm ) { ui.notifications?.warn("No GM is connected to record the activation."); return null; }
+    return gm.query(WAR_QUERY, {combatId: combat.id, data}, {timeout: 10000});
   },
 
   async nextTurn(combat) {
@@ -66,6 +131,8 @@ const warEngine = {
     const index = phases.indexOf(combat.system.phase);
     if ( index >= phases.length - 1 ) return this.nextRound(combat);
     const phase = phases[index + 1];
+    await expireAll(combat, {kind: "phase", round: combat.round, phase});
+    await logBonds(combat);
     await combat.update({turn: null, "system.phase": phase});
     if ( phase === "enemy" ) await this.planEnemyPhase(combat);
     await this.announce(combat);
@@ -82,7 +149,9 @@ const warEngine = {
 
   async nextRound(combat) {
     await this.endRound(combat);
-    const updates = combat.combatants.map(c => ({_id: c.id, "system.acted": false, "system.tilesMoved": 0, "system.reactionUsed": false}));
+    await expireAll(combat, {kind: "round", round: combat.round});
+    await logBonds(combat);
+    const updates = combat.combatants.map(c => ({_id: c.id, "system.acted": false, "system.tilesMoved": 0, "system.reactionUsed": false, "system.activations": 0, "system.reactionsThisRound": {}}));
     await updateCombatants(combat, updates);
     await combat.update({round: combat.round + 1, turn: null, "system.phase": DEICIDE.war.phases[0], "system.doctrineQueue": []});
     await this.announce(combat);
@@ -103,6 +172,10 @@ const warEngine = {
     await this.toggleActed(combat, combatant, true);
   },
 
+  canAct(combatant) {
+    return !combatant.system.acted || (combatant.system.activations ?? 0) > 0;
+  },
+
   async endRound(combat) {
     const log = [];
     for ( const combatant of combat.combatants ) {
@@ -110,7 +183,12 @@ const warEngine = {
       if ( !actor ) continue;
       if ( actor.type === "company" && needsMorale(actor.system.strength) ) {
         const inRadius = this.inFriendlyRadius(combat, combatant);
-        const result = rollMorale({quality: actor.system.quality, inRadius});
+        const flags = {...(actor.derived?.flags ?? {}), ...(actor.system.derived?.flags ?? {})};
+        const firstCheck = !combatant.getFlag(SYSTEM_ID, "moraleChecked");
+        const result = (flags.passMorale || (flags.ignoreFirstMorale && firstCheck))
+          ? {passed: true, roll: null, threshold: null, auto: true}
+          : rollMorale({quality: actor.system.derived?.effectiveQuality ?? actor.system.quality, inRadius});
+        if ( firstCheck ) await combatant.setFlag(SYSTEM_ID, "moraleChecked", true);
         log.push({kind: "morale", name: actor.name, ...result});
         if ( !result.passed ) {
           await actor.update({"system.routed": true, "system.strength": 0});
@@ -133,19 +211,10 @@ const warEngine = {
   },
 
   inFriendlyRadius(combat, combatant) {
-    const token = combatant.token;
-    if ( !token ) return false;
-    const side = combatant.system.side;
-    for ( const other of combat.combatants ) {
-      if ( other.system.side !== side || other.id === combatant.id ) continue;
-      const actor = other.actor;
-      if ( !actor || !actor.derived?.isOfficer ) continue;
-      const otherToken = other.token;
-      if ( !otherToken ) continue;
-      const distance = Math.max(Math.abs(otherToken.x - token.x), Math.abs(otherToken.y - token.y)) / (canvas.grid?.size ?? 100);
-      if ( distance <= (actor.derived.commandRadius ?? 0) ) return true;
-    }
-    return false;
+    const field = fieldSnapshot(combat);
+    const unit = field?.units.find(u => u.id === combatant.id);
+    if ( !unit || (typeof unit.x !== "number") ) return false;
+    return inAnyRadius(unit, {units: field.units});
   },
 
   snapshot(combat) {
@@ -234,8 +303,10 @@ const warEngine = {
     for ( const turn of context.turns ) {
       const combatant = combat.combatants.get(turn.id);
       turn.side = combatant?.system.side ?? "party";
-      turn.acted = Boolean(combatant?.system.acted);
+      turn.acted = Boolean(combatant?.system.acted) && !(combatant?.system.activations > 0);
+      turn.activations = combatant?.system.activations ?? 0;
       turn.canAct = (turn.side === side) && !turn.acted && !turn.isDefeated;
+      turn.mine = Boolean(combatant?.isOwner);
       turn.strength = combatant?.actor?.type === "company" ? combatant.actor.system.strength : null;
       turn.quality = combatant?.actor?.type === "company" ? combatant.actor.system.derived?.qualityGrade : null;
       turn.wavering = combatant?.actor?.type === "company" ? needsMorale(combatant.actor.system.strength) : false;
@@ -301,6 +372,10 @@ const dungeonEngine = {
 
   async endAction(combat, combatant, {weight, penalty = 0, guard = false} = {}) {
     const actor = combatant.actor;
+    if ( guard && (actor?.derived?.flags?.cannotGuard || actor?.derived?.immunities?.includes("guard")) ) {
+      ui.notifications?.warn(`${actor.name} cannot Guard in this stance.`);
+      guard = false;
+    }
     const profile = actor?.profile;
     const spd = profile?.attributes?.spd ?? 0;
     const fixed = actor?.system.derived?.fixedDelay ?? null;
@@ -356,11 +431,21 @@ const dungeonEngine = {
   async announceTurn(combat) {
     const current = this.current(combat);
     if ( !current?.actor ) return;
+    await logBonds(combat);
+    await current.update({"system.reactionsThisRound": {}});
     const ticked = await tickStatuses(current.actor, "turnStart");
     const content = await foundry.applications.handlebars.renderTemplate("systems/deicide/templates/chat/tick.hbs", {
       tick: current.system.nextTick, name: current.name, ticked
     });
     await ChatMessage.implementation.create({content, speaker: {alias: "Dungeon Mode"}});
+  },
+
+  canSwapRow(combatant) {
+    const actor = combatant.actor;
+    const flags = actor?.derived?.flags ?? {};
+    if ( flags.cannotSwapRow || flags.immovable ) return false;
+    if ( actor?.derived?.immunities?.includes("rowSwap") ) return false;
+    return true;
   },
 
   projection(combat, count = 10) {
@@ -401,6 +486,7 @@ const dungeonEngine = {
       const combat = this.viewed;
       const combatant = combat?.combatants.get(target.closest("[data-combatant-id]")?.dataset.combatantId);
       if ( !combatant ) return;
+      if ( !dungeonEngine.canSwapRow(combatant) ) { ui.notifications?.warn(`${combatant.name} cannot Swap Row now.`); return; }
       const row = combatant.system.row === "front" ? "back" : "front";
       await combatant.update({"system.row": row});
       if ( combatant.actor ) await combatant.actor.update({"system.row": row});

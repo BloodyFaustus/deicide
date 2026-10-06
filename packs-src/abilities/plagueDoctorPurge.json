@@ -38,7 +38,7 @@
         "shape": "single",
         "size": 1
       },
-      "target": "self",
+      "target": "ally",
       "movement": null,
       "terrain": false
     },
@@ -46,7 +46,25 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "removeStatus",
+        "statusId": "all",
+        "target": "ally"
+      },
+      {
+        "kind": "heal",
+        "amount": 20,
+        "target": "ally"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "remove all statuses and 20 Burn"
+    ],
+    "automation": "full",
     "identifier": "plagueDoctorPurge"
   },
   "effects": [],

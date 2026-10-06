@@ -46,7 +46,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "counter"
+      }
+    ],
+    "reaction": {
+      "trigger": "enemyEnteredRange",
+      "window": {
+        "tiles": 3,
+        "row": "any"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "rangerAmbush"
   },
   "effects": [],

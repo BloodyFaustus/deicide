@@ -5,7 +5,7 @@
   "img": "icons/svg/village.svg",
   "system": {
     "kind": "background",
-    "description": "<p>Cadet Rank 2, Crown Standing +20.</p>",
+    "description": "<p>Cadet Rank 2. Standing Crown 60.</p>",
     "points": {
       "cmd": 2,
       "skl": 2
@@ -17,8 +17,8 @@
           "rank": 2
         }
       ],
-      "standingBonus": {
-        "crown": 20
+      "standing": {
+        "crown": 60
       }
     },
     "identifier": "nobleCadet"

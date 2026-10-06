@@ -1,0 +1,571 @@
+{
+  "name": "Ilwen Ashcroft",
+  "type": "character",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "level": 10,
+    "xp": 0,
+    "attributes": {
+      "str": 6,
+      "mag": 10,
+      "skl": 8,
+      "spd": 6,
+      "def": 6,
+      "res": 8,
+      "cmd": 10
+    },
+    "growthTenths": {
+      "str": 8,
+      "mag": 3,
+      "skl": 2,
+      "spd": 9,
+      "def": 4,
+      "res": 2,
+      "cmd": 7
+    },
+    "growthLog": [
+      {
+        "level": 1,
+        "classId": "alchemist",
+        "tier": 1,
+        "tenths": {},
+        "gains": {},
+        "hp": 3
+      },
+      {
+        "level": 2,
+        "classId": "alchemist",
+        "tier": 1,
+        "tenths": {
+          "str": 2,
+          "mag": 10,
+          "skl": 8,
+          "spd": 1,
+          "def": 2,
+          "res": 4,
+          "cmd": 3
+        },
+        "gains": {
+          "mag": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 3,
+        "classId": "alchemist",
+        "tier": 1,
+        "tenths": {
+          "str": 2,
+          "mag": 10,
+          "skl": 8,
+          "spd": 1,
+          "def": 2,
+          "res": 4,
+          "cmd": 3
+        },
+        "gains": {
+          "mag": 1,
+          "skl": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 4,
+        "classId": "alchemist",
+        "tier": 1,
+        "tenths": {
+          "str": 2,
+          "mag": 10,
+          "skl": 8,
+          "spd": 1,
+          "def": 2,
+          "res": 4,
+          "cmd": 3
+        },
+        "gains": {
+          "mag": 1,
+          "skl": 1,
+          "res": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 5,
+        "classId": "alchemist",
+        "tier": 1,
+        "tenths": {
+          "str": 2,
+          "mag": 10,
+          "skl": 8,
+          "spd": 1,
+          "def": 2,
+          "res": 4,
+          "cmd": 3
+        },
+        "gains": {
+          "mag": 1,
+          "skl": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 6,
+        "classId": "alchemist",
+        "tier": 1,
+        "tenths": {
+          "str": 2,
+          "mag": 10,
+          "skl": 8,
+          "spd": 1,
+          "def": 2,
+          "res": 4,
+          "cmd": 3
+        },
+        "gains": {
+          "str": 1,
+          "mag": 1,
+          "skl": 1,
+          "def": 1,
+          "res": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 7,
+        "classId": "alchemist",
+        "tier": 1,
+        "tenths": {
+          "str": 2,
+          "mag": 10,
+          "skl": 8,
+          "spd": 1,
+          "def": 2,
+          "res": 4,
+          "cmd": 3
+        },
+        "gains": {
+          "mag": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 8,
+        "classId": "transmuter",
+        "tier": 2,
+        "tenths": {
+          "str": 2,
+          "mag": 11,
+          "skl": 8,
+          "spd": 1,
+          "def": 4,
+          "res": 6,
+          "cmd": 3
+        },
+        "gains": {
+          "mag": 1,
+          "skl": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 9,
+        "classId": "transmuter",
+        "tier": 2,
+        "tenths": {
+          "str": 2,
+          "mag": 11,
+          "skl": 8,
+          "spd": 1,
+          "def": 4,
+          "res": 6,
+          "cmd": 3
+        },
+        "gains": {
+          "mag": 1,
+          "skl": 1,
+          "def": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 10,
+        "classId": "transmuter",
+        "tier": 2,
+        "tenths": {
+          "str": 2,
+          "mag": 11,
+          "skl": 8,
+          "spd": 1,
+          "def": 4,
+          "res": 6,
+          "cmd": 3
+        },
+        "gains": {
+          "mag": 1,
+          "skl": 1,
+          "res": 1
+        },
+        "hp": 3
+      }
+    ],
+    "promotionBonuses": [
+      {
+        "tier": 2,
+        "classId": "transmuter",
+        "stats": {
+          "mag": 1
+        }
+      }
+    ],
+    "rankBonuses": [
+      {
+        "classId": "transmuter",
+        "rank": 3,
+        "stat": "mag",
+        "value": 1
+      },
+      {
+        "classId": "transmuter",
+        "rank": 5,
+        "stat": "mag",
+        "value": 1
+      },
+      {
+        "classId": "transmuter",
+        "rank": 7,
+        "stat": "mag",
+        "value": 1
+      }
+    ],
+    "adaptations": [],
+    "people": "manaborne",
+    "peopleSubtype": "",
+    "background": null,
+    "talent": {
+      "id": "savant",
+      "stat": null,
+      "penaltyStat": null,
+      "proficiency": "alchemy",
+      "placement": {}
+    },
+    "personalGrowth": {
+      "str": 0,
+      "mag": 3,
+      "skl": 3,
+      "spd": 0,
+      "def": 0,
+      "res": 0,
+      "cmd": 0
+    },
+    "classes": [
+      {
+        "id": "alchemist",
+        "rank": 5,
+        "cp100": 1813,
+        "choices": {}
+      },
+      {
+        "id": "transmuter",
+        "rank": 8,
+        "cp100": 4229,
+        "choices": {}
+      }
+    ],
+    "activeClass": "transmuter",
+    "loadout": {
+      "secondary": "alchemist",
+      "reaction": null,
+      "supports": [
+        "alchemistHarvestEye",
+        "transmuterMason"
+      ],
+      "stance": null
+    },
+    "manaburn": 0,
+    "saturation": null,
+    "marks": 0,
+    "divineAttention": 0,
+    "static": 0,
+    "stolen": [],
+    "standingFaction": {
+      "crown": 40,
+      "army": 40,
+      "civilians": 40,
+      "temple": 40,
+      "mages": 40,
+      "brasswater": 40,
+      "underworld": 40,
+      "duneTribes": 40,
+      "offweiss": 40,
+      "council": 40,
+      "gravetide": 40,
+      "briarwall": 40,
+      "valedorn": 40,
+      "seastrand": 40
+    },
+    "dust": 15,
+    "storyGates": [],
+    "hp": {
+      "value": 70
+    },
+    "channel": {
+      "value": 21
+    },
+    "matter": {
+      "value": 11
+    },
+    "recruit": {
+      "profile": "specialist",
+      "ownerId": null,
+      "status": "known",
+      "personalSkillId": "personalLamplighter",
+      "story": false,
+      "gmRun": true
+    },
+    "standingPersonal": {},
+    "notes": "<p>Military engineer restoring the Breakwater Forts.</p><p>Fortifications track. Personal skill Lamplighter: Barriers also give Avoid +5. First local expert excited by alchemy, the natural first Lesson of Equivalence student. Carries the Breakwater Aegis.</p><p>Personal skill Lamplighter: a row behind a Barrier also gains Avoid +5.</p><p>Ilwen Ashcroft, Manaborne Human Transmuter of Lathander, level 10. Military engineer restoring the Breakwater Forts. Carries Silver Gauntlet, Silver Medium Armor and Breakwater Aegis. Ilwen trusts alchemy and nothing else.</p>"
+  },
+  "items": [
+    {
+      "name": "Silver Gauntlet",
+      "type": "weapon",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "silverGauntlet",
+        "line": "gauntlet",
+        "tier": "silver",
+        "prefix": null,
+        "forge": 0,
+        "element": null,
+        "asSidearm": false,
+        "equipped": true,
+        "quantity": 1,
+        "description": ""
+      },
+      "_id": "ahHa2mq3S9kOU6nU",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Silver Medium Armor",
+      "type": "armor",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "identifier": "silverMedium",
+        "equipped": true,
+        "description": ""
+      },
+      "_id": "svOSa68AKprMxrXF",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Breakwater Aegis",
+      "type": "named",
+      "img": "icons/svg/holy-shield.svg",
+      "system": {
+        "fills": "offhand",
+        "base": {
+          "line": "towerShield",
+          "tier": "iron"
+        },
+        "stats": {
+          "def": 8,
+          "avoid": -10,
+          "negateHitPerRound": 1
+        },
+        "modifiers": [
+          {
+            "key": "defense.def",
+            "value": 8
+          },
+          {
+            "key": "avoid",
+            "value": -10
+          },
+          {
+            "key": "move",
+            "value": -1
+          },
+          {
+            "key": "delay",
+            "value": 8,
+            "when": {
+              "engine": "dungeon"
+            }
+          },
+          {
+            "key": "avoid",
+            "value": -10,
+            "when": {
+              "engine": "war"
+            }
+          }
+        ],
+        "special": "",
+        "drawback": {
+          "text": "Move minus 1. Burden 2.",
+          "flags": {
+            "burden": 2
+          },
+          "refund": "burden2"
+        },
+        "pp": 32,
+        "hook": "Ilwen Ashcroft, the engineer restoring the Breakwater Forts. Selwyn Marr is an archivist, not a shield bearer.",
+        "description": "<p>DEF +8. Negate one hit per round. Avoid minus 10.</p><p>Drawback: Move minus 1. Burden 2.</p>",
+        "equipped": true,
+        "identifier": "breakwaterAegis"
+      },
+      "_id": "XA4ri7liSTtjZ5DU",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Lamplighter",
+      "type": "ability",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "identifier": "personalLamplighter",
+        "type": "support",
+        "source": {
+          "kind": "personal",
+          "id": "npcIlwenAshcroft",
+          "rank": null
+        },
+        "description": "<p>A row behind a Barrier also gains Avoid +5.</p>",
+        "summary": "a row behind a Barrier also gains Avoid +5",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": null,
+        "heal": null,
+        "war": null,
+        "dungeon": null,
+        "statuses": [],
+        "modifiers": [
+          {
+            "key": "avoid",
+            "value": 5,
+            "when": {
+              "behindBarrier": true
+            }
+          }
+        ],
+        "roll": null,
+        "art": null,
+        "effects": [],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [
+          "Avoid \\+5"
+        ],
+        "automation": "partial"
+      },
+      "_id": "wChOp5es3zVNpeV5",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "prototypeToken": {
+    "name": "Ilwen Ashcroft",
+    "actorLink": true,
+    "disposition": 0,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "flags": {
+    "deicide": {
+      "generated": {
+        "kind": "npc",
+        "seed": "ilwenAshcroft",
+        "input": {
+          "level": 10,
+          "classLine": [
+            "alchemist",
+            "transmuter"
+          ],
+          "people": "manaborne",
+          "profile": "specialist",
+          "personalSkill": "personalLamplighter",
+          "namedItems": [
+            "breakwaterAegis"
+          ],
+          "seed": "ilwenAshcroft",
+          "name": "Ilwen Ashcroft",
+          "faction": "lathander",
+          "role": "Military engineer restoring the Breakwater Forts",
+          "description": "Fortifications track. Personal skill Lamplighter: Barriers also give Avoid +5. First local expert excited by alchemy, the natural first Lesson of Equivalence student. Carries the Breakwater Aegis.",
+          "dials": {
+            "S": 45,
+            "L": 30
+          }
+        },
+        "role": "Military engineer restoring the Breakwater Forts",
+        "recruit": "Specialist Transmuter (taught by Mercer) or Warden"
+      },
+      "faction": "lathander",
+      "identifier": "ilwenAshcroft"
+    }
+  },
+  "_id": "A1oE2VKTxoF8TP12",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

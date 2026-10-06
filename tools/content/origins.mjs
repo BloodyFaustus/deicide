@@ -44,9 +44,11 @@ export const peoples = {
     growth: {spd: "D", str: "D", skl: "E", def: "E"},
     subtypes: {
       feline: {name: "Feline", startBonus: {spd: 2}},
+      canine: {name: "Canine", startBonus: {skl: 2}},
+      ursine: {name: "Ursine", startBonus: {str: 2}},
       avian: {name: "Avian", growth: {skl: "D", str: "D", spd: "E", def: "E"}, proficiencies: {flying: "D"}}
     },
-    rider: "Subtype swaps one D. Avian: Flying starts D, SPD D becomes SKL D. Feline: starting SPD +2."
+    rider: "Feline: starting SPD +2. Canine: starting SKL +2. Ursine: starting STR +2. Avian: Flying starts D, growth SKL D, STR D, SPD E, DEF E."
   },
   vitrean: {
     name: "Vitrean",
@@ -123,26 +125,26 @@ export const backgrounds = {
     points: {mag: 4},
     modifiers: [{key: "channel.max", op: "mul", value: 0.5, stage: "origin"}],
     flags: {manaburnThresholds: false, overcastMight: 1},
-    grants: {classes: [{id: "adept", rank: 3}], manaburn: 60},
+    grants: {classes: [{id: "adept", rank: 3}], manaburn: 60, standing: {temple: 30, mages: 30, army: 40}},
     story: true,
-    text: "Channel halved. Overcast: +1 Might per point as well as 2 Burn. Manaburn starts 60. Adept Rank 3 (military asset)."
+    text: "Channel halved. Overcast: +1 Might per point as well as 2 Burn. Manaburn starts 60. Adept Rank 3 (military asset). Standing Temple 30, Mage communities 30, Army 40."
   },
   spellthiefBloodline: {
     name: "Spellthief Bloodline",
     points: {skl: 2, spd: 2},
-    grants: {classes: [{id: "rogue", rank: 2}], engines: ["originSpellthief"], stolenSlots: true},
+    grants: {classes: [{id: "rogue", rank: 2}], engines: ["originSpellthief"], stolenSlots: true, standing: {temple: 25, underworld: 50}},
     story: true,
-    text: "Spellthief reaction, 2 Stolen slots (3 at level 15). Rogue Rank 2."
+    text: "Spellthief reaction, 2 Stolen slots (3 at level 15). Rogue Rank 2. Standing Temple 25, Underworld 50."
   },
   duneHunter: {
     name: "Dune Hunter",
     points: {str: 2, spd: 2},
     grants: {
       classes: [{id: "soldier", rank: 2}], abilities: ["originLightningStrike"], engines: ["originOmen"],
-      staticCharge: true
+      staticCharge: true, standing: {duneTribes: 70, crown: 30}
     },
     story: true,
-    text: "Static (max 5), Omen, Lightning Strike origin Action. Soldier Rank 2."
+    text: "Static (max 5), Omen, Lightning Strike origin Action. Soldier Rank 2. Standing Dune tribes 70, Crown 30."
   },
   failedHero: {
     name: "Failed Hero",
@@ -156,38 +158,38 @@ export const backgrounds = {
   conscript: {
     name: "Conscript",
     points: {def: 2, cmd: 2},
-    grants: {classes: [{id: "soldier", rank: 2}]},
-    text: "Soldier Rank 2."
+    grants: {classes: [{id: "soldier", rank: 2}], standing: {army: 55}},
+    text: "Soldier Rank 2. Standing Army 55."
   },
   guildThief: {
     name: "Guild Thief",
     points: {skl: 2, spd: 2},
-    grants: {classes: [{id: "rogue", rank: 2}]},
-    text: "Rogue Rank 2."
+    grants: {classes: [{id: "rogue", rank: 2}], standing: {underworld: 55}},
+    text: "Rogue Rank 2. Standing Underworld 55."
   },
   templeWard: {
     name: "Temple Ward",
     points: {res: 2, mag: 2},
-    grants: {classes: [{id: "acolyte", rank: 2}]},
-    text: "Acolyte Rank 2."
+    grants: {classes: [{id: "acolyte", rank: 2}], standing: {temple: 60}},
+    text: "Acolyte Rank 2. Standing Temple 60."
   },
   nobleCadet: {
     name: "Noble Cadet",
     points: {cmd: 2, skl: 2},
-    grants: {classes: [{id: "cadet", rank: 2}], standingBonus: {crown: 20}},
-    text: "Cadet Rank 2, Crown Standing +20."
+    grants: {classes: [{id: "cadet", rank: 2}], standing: {crown: 60}},
+    text: "Cadet Rank 2. Standing Crown 60."
   },
   harborHand: {
     name: "Harbor Hand",
     points: {str: 2, spd: 2},
-    grants: {classes: [{id: "mariner", rank: 2}]},
-    text: "Mariner Rank 2."
+    grants: {classes: [{id: "mariner", rank: 2}], standing: {brasswater: 55}},
+    text: "Mariner Rank 2. Standing Brasswater 55."
   },
   hedgeMage: {
     name: "Hedge Mage",
     points: {mag: 2, res: 2},
-    grants: {classes: [{id: "adept", rank: 2}], proficiencies: {void: "E"}, standingBonus: {civilians: -10}},
-    text: "Adept Rank 2, Void E, Civilians Standing minus 10."
+    grants: {classes: [{id: "adept", rank: 2}], proficiencies: {void: "E"}, standing: {mages: 55, civilians: 30}},
+    text: "Adept Rank 2, Void E. Standing Mage communities 55, Civilians 30."
   }
 };
 

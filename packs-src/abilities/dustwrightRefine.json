@@ -49,7 +49,28 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "pool",
+        "key": "matter",
+        "delta": -10,
+        "target": "self"
+      },
+      {
+        "kind": "pool",
+        "key": "dust",
+        "delta": 5,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "between sessions",
+      "10 Mt to 5 Dust"
+    ],
+    "automation": "full",
     "identifier": "dustwrightRefine"
   },
   "effects": [],

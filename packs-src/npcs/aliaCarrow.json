@@ -1,0 +1,709 @@
+{
+  "name": "Alia Carrow",
+  "type": "character",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "level": 16,
+    "xp": 0,
+    "attributes": {
+      "str": 6,
+      "mag": 14,
+      "skl": 6,
+      "spd": 6,
+      "def": 8,
+      "res": 14,
+      "cmd": 8
+    },
+    "growthTenths": {
+      "str": 3,
+      "mag": 7,
+      "skl": 5,
+      "spd": 3,
+      "def": 2,
+      "res": 8,
+      "cmd": 7
+    },
+    "growthLog": [
+      {
+        "level": 1,
+        "classId": "acolyte",
+        "tier": 1,
+        "tenths": {},
+        "gains": {},
+        "hp": 3
+      },
+      {
+        "level": 2,
+        "classId": "acolyte",
+        "tier": 1,
+        "tenths": {
+          "str": 1,
+          "mag": 5,
+          "skl": 3,
+          "spd": 1,
+          "def": 2,
+          "res": 11,
+          "cmd": 6
+        },
+        "gains": {
+          "res": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 3,
+        "classId": "acolyte",
+        "tier": 1,
+        "tenths": {
+          "str": 1,
+          "mag": 5,
+          "skl": 3,
+          "spd": 1,
+          "def": 2,
+          "res": 11,
+          "cmd": 6
+        },
+        "gains": {
+          "mag": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 4,
+        "classId": "acolyte",
+        "tier": 1,
+        "tenths": {
+          "str": 1,
+          "mag": 5,
+          "skl": 3,
+          "spd": 1,
+          "def": 2,
+          "res": 11,
+          "cmd": 6
+        },
+        "gains": {
+          "res": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 5,
+        "classId": "acolyte",
+        "tier": 1,
+        "tenths": {
+          "str": 1,
+          "mag": 5,
+          "skl": 3,
+          "spd": 1,
+          "def": 2,
+          "res": 11,
+          "cmd": 6
+        },
+        "gains": {
+          "mag": 1,
+          "skl": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 6,
+        "classId": "acolyte",
+        "tier": 1,
+        "tenths": {
+          "str": 1,
+          "mag": 5,
+          "skl": 3,
+          "spd": 1,
+          "def": 2,
+          "res": 11,
+          "cmd": 6
+        },
+        "gains": {
+          "def": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 7,
+        "classId": "acolyte",
+        "tier": 1,
+        "tenths": {
+          "str": 1,
+          "mag": 5,
+          "skl": 3,
+          "spd": 1,
+          "def": 2,
+          "res": 11,
+          "cmd": 6
+        },
+        "gains": {
+          "mag": 1,
+          "res": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 8,
+        "classId": "chaplain",
+        "tier": 2,
+        "tenths": {
+          "str": 2,
+          "mag": 6,
+          "skl": 3,
+          "spd": 2,
+          "def": 2,
+          "res": 10,
+          "cmd": 9
+        },
+        "gains": {
+          "skl": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 9,
+        "classId": "chaplain",
+        "tier": 2,
+        "tenths": {
+          "str": 2,
+          "mag": 6,
+          "skl": 3,
+          "spd": 2,
+          "def": 2,
+          "res": 10,
+          "cmd": 9
+        },
+        "gains": {
+          "str": 1,
+          "mag": 1,
+          "spd": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 10,
+        "classId": "chaplain",
+        "tier": 2,
+        "tenths": {
+          "str": 2,
+          "mag": 6,
+          "skl": 3,
+          "spd": 2,
+          "def": 2,
+          "res": 10,
+          "cmd": 9
+        },
+        "gains": {
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 11,
+        "classId": "chaplain",
+        "tier": 2,
+        "tenths": {
+          "str": 2,
+          "mag": 6,
+          "skl": 3,
+          "spd": 2,
+          "def": 2,
+          "res": 10,
+          "cmd": 9
+        },
+        "gains": {
+          "mag": 1,
+          "skl": 1,
+          "def": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 12,
+        "classId": "chaplain",
+        "tier": 2,
+        "tenths": {
+          "str": 2,
+          "mag": 6,
+          "skl": 3,
+          "spd": 2,
+          "def": 2,
+          "res": 10,
+          "cmd": 9
+        },
+        "gains": {
+          "mag": 1,
+          "cmd": 1
+        },
+        "hp": 3,
+        "lost": {
+          "res": 10
+        }
+      },
+      {
+        "level": 13,
+        "classId": "chaplain",
+        "tier": 2,
+        "tenths": {
+          "str": 2,
+          "mag": 6,
+          "skl": 3,
+          "spd": 2,
+          "def": 2,
+          "res": 10,
+          "cmd": 9
+        },
+        "gains": {
+          "cmd": 1
+        },
+        "hp": 3,
+        "lost": {
+          "res": 10
+        }
+      },
+      {
+        "level": 14,
+        "classId": "chaplain",
+        "tier": 2,
+        "tenths": {
+          "str": 2,
+          "mag": 6,
+          "skl": 3,
+          "spd": 2,
+          "def": 2,
+          "res": 10,
+          "cmd": 9
+        },
+        "gains": {
+          "str": 1,
+          "mag": 1,
+          "spd": 1
+        },
+        "hp": 3,
+        "lost": {
+          "res": 10
+        }
+      },
+      {
+        "level": 15,
+        "classId": "chaplain",
+        "tier": 2,
+        "tenths": {
+          "str": 2,
+          "mag": 6,
+          "skl": 3,
+          "spd": 2,
+          "def": 2,
+          "res": 10,
+          "cmd": 9
+        },
+        "gains": {
+          "skl": 1,
+          "cmd": 1
+        },
+        "hp": 3,
+        "lost": {
+          "res": 10
+        }
+      },
+      {
+        "level": 16,
+        "classId": "hierophant",
+        "tier": 3,
+        "tenths": {
+          "str": 1,
+          "mag": 9,
+          "skl": 3,
+          "spd": 1,
+          "def": 4,
+          "res": 12,
+          "cmd": 9
+        },
+        "gains": {
+          "mag": 1,
+          "def": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      }
+    ],
+    "promotionBonuses": [
+      {
+        "tier": 2,
+        "classId": "chaplain",
+        "stats": {
+          "res": 1,
+          "cmd": 1
+        }
+      },
+      {
+        "tier": 3,
+        "classId": "hierophant",
+        "stats": {
+          "mag": 2,
+          "res": 2,
+          "cmd": 2
+        }
+      }
+    ],
+    "rankBonuses": [
+      {
+        "classId": "hierophant",
+        "rank": 3,
+        "stat": "mag",
+        "value": 1
+      },
+      {
+        "classId": "hierophant",
+        "rank": 5,
+        "stat": "mag",
+        "value": 1
+      },
+      {
+        "classId": "hierophant",
+        "rank": 7,
+        "stat": "mag",
+        "value": 1
+      },
+      {
+        "classId": "hierophant",
+        "rank": 9,
+        "stat": "mag",
+        "value": 1
+      }
+    ],
+    "adaptations": [],
+    "people": "manaborne",
+    "peopleSubtype": "",
+    "background": null,
+    "talent": {
+      "id": "earlyPeak",
+      "stat": null,
+      "penaltyStat": null,
+      "proficiency": null,
+      "placement": {
+        "str": 0,
+        "mag": 4,
+        "skl": 0,
+        "spd": 0,
+        "def": 0,
+        "res": 4,
+        "cmd": 0
+      }
+    },
+    "personalGrowth": {
+      "str": 0,
+      "mag": 0,
+      "skl": 0,
+      "spd": 0,
+      "def": 0,
+      "res": 3,
+      "cmd": 3
+    },
+    "classes": [
+      {
+        "id": "acolyte",
+        "rank": 1,
+        "cp100": 0,
+        "choices": {}
+      },
+      {
+        "id": "chaplain",
+        "rank": 6,
+        "cp100": 2900,
+        "choices": {}
+      },
+      {
+        "id": "hierophant",
+        "rank": 10,
+        "cp100": 6767,
+        "choices": {}
+      }
+    ],
+    "activeClass": "hierophant",
+    "loadout": {
+      "secondary": "chaplain",
+      "reaction": "hierophantDivineShield",
+      "supports": [
+        "hierophantAnathema",
+        "chaplainSermon"
+      ],
+      "stance": null
+    },
+    "manaburn": 0,
+    "saturation": null,
+    "marks": 0,
+    "divineAttention": 0,
+    "static": 0,
+    "stolen": [],
+    "standingFaction": {
+      "crown": 40,
+      "army": 40,
+      "civilians": 40,
+      "temple": 40,
+      "mages": 40,
+      "brasswater": 40,
+      "underworld": 40,
+      "duneTribes": 40,
+      "offweiss": 40,
+      "council": 40,
+      "gravetide": 40,
+      "briarwall": 40,
+      "valedorn": 40,
+      "seastrand": 40
+    },
+    "dust": 15,
+    "storyGates": [],
+    "hp": {
+      "value": 100
+    },
+    "channel": {
+      "value": 51
+    },
+    "matter": {
+      "value": 0
+    },
+    "recruit": {
+      "profile": "veteran",
+      "ownerId": null,
+      "status": "known",
+      "personalSkillId": "personalPublicTrust",
+      "story": false,
+      "gmRun": true
+    },
+    "standingPersonal": {},
+    "notes": "<p>Senior priestess of the charitable faith, the most trusted public figure in Lathander.</p><p>Temple Standing, Civilians Standing. She knows what Mercer is. Personal skill Public Trust: Standing losses from Marks and Divine Attention are halved while she is Sworn to the party.</p><p>Personal skill Public Trust: Standing losses from Marks and Divine Attention are halved while she is Sworn.</p><p>Alia Carrow, Manaborne Human Hierophant of Lathander, level 16. Senior priestess of the charitable faith, the most trusted public figure in Lathander. Carries Royal Relic, Royal Light Armor, Royal Focus and Mana Bead. Alia counts the dead twice.</p>"
+  },
+  "items": [
+    {
+      "name": "Royal Relic",
+      "type": "weapon",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "royalRelic",
+        "line": "relic",
+        "tier": "royal",
+        "prefix": null,
+        "forge": 0,
+        "element": null,
+        "asSidearm": false,
+        "equipped": true,
+        "quantity": 1,
+        "description": ""
+      },
+      "_id": "3YkQYLbAl4kUXlaV",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Royal Light Armor",
+      "type": "armor",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "identifier": "royalLight",
+        "equipped": true,
+        "description": ""
+      },
+      "_id": "eohZ8Ui7cwBvzFfi",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Royal Focus",
+      "type": "offhand",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "identifier": "royalFocus",
+        "line": "focus",
+        "tier": "royal",
+        "equipped": true,
+        "description": ""
+      },
+      "_id": "qn4Wd26QhxDwZHgJ",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Mana Bead",
+      "type": "accessory",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "identifier": "manaBead",
+        "key": "manaBead",
+        "choices": {
+          "attribute": null,
+          "secondAttribute": null,
+          "skill": null
+        },
+        "equipped": true,
+        "description": ""
+      },
+      "_id": "PashTOlcSFgWwuSd",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Public Trust",
+      "type": "ability",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "identifier": "personalPublicTrust",
+        "type": "support",
+        "source": {
+          "kind": "personal",
+          "id": "npcAliaCarrow",
+          "rank": null
+        },
+        "description": "<p>Standing losses from Marks and Divine Attention are halved while she is Sworn.</p>",
+        "summary": "Standing losses from Marks and Divine Attention are halved while she is Sworn",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": null,
+        "heal": null,
+        "war": null,
+        "dungeon": null,
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "effects": [
+          {
+            "kind": "flag",
+            "key": "standingLossHalved",
+            "value": true
+          }
+        ],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [
+          "Standing losses"
+        ],
+        "automation": "partial"
+      },
+      "_id": "C4fp003h97VHOXPc",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "prototypeToken": {
+    "name": "Alia Carrow",
+    "actorLink": true,
+    "disposition": 0,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "flags": {
+    "deicide": {
+      "generated": {
+        "kind": "npc",
+        "seed": "aliaCarrow",
+        "input": {
+          "level": 16,
+          "classLine": [
+            "acolyte",
+            "chaplain",
+            "hierophant"
+          ],
+          "people": "manaborne",
+          "profile": "veteran",
+          "personalSkill": "personalPublicTrust",
+          "seed": "aliaCarrow",
+          "name": "Alia Carrow",
+          "faction": "lathander",
+          "role": "Senior priestess of the charitable faith, the most trusted public figure in Lathander",
+          "description": "Temple Standing, Civilians Standing. She knows what Mercer is. Personal skill Public Trust: Standing losses from Marks and Divine Attention are halved while she is Sworn to the party.",
+          "dials": {
+            "S": 45,
+            "L": 30
+          }
+        },
+        "role": "Senior priestess of the charitable faith, the most trusted public figure in Lathander",
+        "recruit": "Veteran Chaplain or Hierophant line, not a Prodigy"
+      },
+      "faction": "lathander",
+      "identifier": "aliaCarrow"
+    }
+  },
+  "_id": "2sw2hsb92NYC8Vjm",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

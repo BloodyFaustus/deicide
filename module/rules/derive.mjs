@@ -17,8 +17,10 @@ function stepDefinitions(state) {
   state.subtype = state.people?.subtypes?.[source.peopleSubtype] ?? null;
   state.background = lookup("origin", source.background) ?? null;
   state.talent = lookup("origin", source.talent?.id) ?? null;
-  state.flags = {...(state.people?.flags ?? {}), ...(state.subtype?.flags ?? {}), ...(state.background?.flags ?? {})};
+  state.flags = {...(state.people?.flags ?? {}), ...(state.subtype?.flags ?? {}), ...(state.background?.flags ?? {}), ...(state.context.effectFlags ?? {})};
   out.flags = state.flags;
+  out.tracksSaturationFlag = Boolean(state.flags.saturation) && !state.flags.noSaturation;
+  out.bond = state.context.bond ?? {rank: null, partners: []};
   out.missing = [];
   for ( const [kind, id, found] of [
     ["people", source.people, state.people], ["background", source.background, state.background],
@@ -35,17 +37,28 @@ function stepClasses(state) {
   for ( const entry of source.classes ?? [] ) {
     const data = lookup("class", entry.id);
     if ( !data ) { out.missing.push({type: "class", id: entry.id}); continue; }
-    state.classes.push({id: entry.id, rank: entry.rank ?? 1, cp: entry.cp ?? 0, choices: entry.choices ?? {}, data});
+    state.classes.push({id: entry.id, rank: entry.rank ?? 1, cp100: entry.cp100 ?? 0, choices: entry.choices ?? {}, data});
   }
-  state.active = state.classes.find(entry => entry.id === source.activeClass) ?? state.classes[0] ?? null;
+
+  const layered = state.classes.filter(entry => entry.data.layered);
+  state.layered = layered;
+  state.active = state.classes.find(entry => (entry.id === source.activeClass) && !entry.data.layered)
+    ?? state.classes.find(entry => !entry.data.layered) ?? null;
   const activeData = state.active?.data ?? null;
   out.activeClass = state.active?.id ?? null;
+  out.layeredClasses = layered.map(entry => entry.id);
   out.classTypes = [...(activeData?.types ?? [])];
   out.capTier = activeData?.tier ?? 1;
   out.caps = activeData
     ? classCaps(activeData, {talent: state.talent, talentChoice: source.talent, people: state.people})
     : attributeRecord(DEICIDE.caps[1].F);
-  out.classes = state.classes.map(({id, rank, cp, choices, data}) => ({id, rank, cp, choices, tier: data.tier}));
+
+  const tracksSaturation = Boolean(state.flags.saturation) && !state.flags.noSaturation;
+  if ( layered.some(entry => entry.data.grantsCap === "SS") && tracksSaturation ) {
+    for ( const attr of ATTRS ) out.caps[attr] = Math.max(out.caps[attr], DEICIDE.adaptationCap);
+    out.capGrade = "SS";
+  }
+  out.classes = state.classes.map(({id, rank, cp100, choices, data}) => ({id, rank, cp100, choices, tier: data.tier}));
 }
 
 function stepSkills(state) {
@@ -95,7 +108,8 @@ function stepSkills(state) {
   const ofType = (list, type) => list.filter(skill => skill.data.type === type);
   const all = Array.from(known.values());
   const activeId = state.active?.id ?? null;
-  const fromActive = skill => (skill.from !== "class") || (skill.classId === activeId);
+  const layeredIds = new Set((state.layered ?? []).map(entry => entry.id));
+  const fromActive = skill => (skill.from !== "class") || (skill.classId === activeId) || layeredIds.has(skill.classId);
 
   const loadout = source.loadout ?? {};
   const level = source.level ?? 1;
@@ -187,8 +201,19 @@ function stepModifiers(state) {
   if ( stance && (state.engine === "dungeon") ) {
     const skill = state.skills.known.get(stance);
     passive.push(skill);
-    push(skill.data.modifiers, skill.id, skill.data.name);
+    push(skill.data.stance?.modifiers?.length ? skill.data.stance.modifiers : skill.data.modifiers, skill.id, skill.data.name);
+
+    for ( const effect of skill.data.stance?.effects ?? [] ) {
+      if ( effect.kind === "flag" ) state.flags[effect.key] = effect.value ?? true;
+    }
   }
+
+  for ( const skill of passive ) {
+    for ( const effect of skill.data.effects ?? [] ) {
+      if ( (effect.kind === "flag") && ((effect.target ?? "self") === "self") ) state.flags[effect.key] = effect.value ?? true;
+    }
+  }
+  out.flags = state.flags;
 
   state.pool = pool;
   state.conditions = conditions;
@@ -372,6 +397,11 @@ function stepClassAccess(state) {
     const data = entry.system ?? entry;
     if ( data.enemyOnly ) continue;
     const result = meetsPrereq(data, out.proficiencies, source.level ?? 1, tierGates, gateContext);
+
+    if ( data.layered && !out.tracksSaturationFlag ) {
+      result.ok = false;
+      result.missing = [...result.missing, {kind: "saturation", value: "no Saturation track"}];
+    }
     out.availableClasses.push({
       id: data.identifier, tier: data.tier, owned: owned.has(data.identifier),
       ok: result.ok, levelOk: result.levelOk, levelGate: result.levelGate, missing: result.missing

@@ -35,7 +35,27 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "reveal",
+        "what": "nextEnemyAction",
+        "target": "self"
+      },
+      {
+        "kind": "flag",
+        "key": "cannotBeAmbushed",
+        "value": true,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "learn the next enemy action",
+      "Prevents the party being ambushed"
+    ],
+    "automation": "full",
     "identifier": "originOmen"
   },
   "effects": [],

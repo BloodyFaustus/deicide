@@ -1,0 +1,551 @@
+{
+  "name": "Emil Krauss",
+  "type": "character",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "level": 14,
+    "xp": 0,
+    "attributes": {
+      "str": 6,
+      "mag": 12,
+      "skl": 8,
+      "spd": 6,
+      "def": 6,
+      "res": 10,
+      "cmd": 6
+    },
+    "growthTenths": {
+      "str": 7,
+      "mag": 2,
+      "skl": 3,
+      "spd": 9,
+      "def": 0,
+      "res": 0,
+      "cmd": 0
+    },
+    "growthLog": [
+      {
+        "level": 1,
+        "classId": "adept",
+        "tier": 1,
+        "tenths": {},
+        "gains": {},
+        "hp": 2
+      },
+      {
+        "level": 2,
+        "classId": "adept",
+        "tier": 1,
+        "tenths": {
+          "str": 0,
+          "mag": 12,
+          "skl": 3,
+          "spd": 3,
+          "def": 1,
+          "res": 10,
+          "cmd": 1
+        },
+        "gains": {
+          "mag": 1,
+          "res": 1
+        },
+        "hp": 2
+      },
+      {
+        "level": 3,
+        "classId": "adept",
+        "tier": 1,
+        "tenths": {
+          "str": 0,
+          "mag": 12,
+          "skl": 3,
+          "spd": 3,
+          "def": 1,
+          "res": 10,
+          "cmd": 1
+        },
+        "gains": {
+          "mag": 1,
+          "res": 1
+        },
+        "hp": 2
+      },
+      {
+        "level": 4,
+        "classId": "adept",
+        "tier": 1,
+        "tenths": {
+          "str": 0,
+          "mag": 12,
+          "skl": 3,
+          "spd": 3,
+          "def": 1,
+          "res": 10,
+          "cmd": 1
+        },
+        "gains": {
+          "mag": 1,
+          "res": 1
+        },
+        "hp": 2
+      },
+      {
+        "level": 5,
+        "classId": "adept",
+        "tier": 1,
+        "tenths": {
+          "str": 0,
+          "mag": 12,
+          "skl": 3,
+          "spd": 3,
+          "def": 1,
+          "res": 10,
+          "cmd": 1
+        },
+        "gains": {
+          "mag": 1,
+          "skl": 1,
+          "spd": 1,
+          "res": 1
+        },
+        "hp": 2
+      },
+      {
+        "level": 6,
+        "classId": "adept",
+        "tier": 1,
+        "tenths": {
+          "str": 0,
+          "mag": 12,
+          "skl": 3,
+          "spd": 3,
+          "def": 1,
+          "res": 10,
+          "cmd": 1
+        },
+        "gains": {
+          "mag": 2,
+          "res": 1
+        },
+        "hp": 2
+      },
+      {
+        "level": 7,
+        "classId": "adept",
+        "tier": 1,
+        "tenths": {
+          "str": 0,
+          "mag": 12,
+          "skl": 3,
+          "spd": 3,
+          "def": 1,
+          "res": 10,
+          "cmd": 1
+        },
+        "gains": {
+          "mag": 1,
+          "res": 1
+        },
+        "hp": 2
+      },
+      {
+        "level": 8,
+        "classId": "battlemage",
+        "tier": 2,
+        "tenths": {
+          "str": 1,
+          "mag": 12,
+          "skl": 5,
+          "spd": 3,
+          "def": 2,
+          "res": 10,
+          "cmd": 2
+        },
+        "gains": {
+          "mag": 1,
+          "skl": 1,
+          "spd": 1,
+          "res": 1
+        },
+        "hp": 2
+      },
+      {
+        "level": 9,
+        "classId": "battlemage",
+        "tier": 2,
+        "tenths": {
+          "str": 1,
+          "mag": 12,
+          "skl": 5,
+          "spd": 3,
+          "def": 2,
+          "res": 10,
+          "cmd": 2
+        },
+        "gains": {
+          "mag": 1,
+          "def": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 2
+      },
+      {
+        "level": 10,
+        "classId": "battlemage",
+        "tier": 2,
+        "tenths": {
+          "str": 1,
+          "mag": 12,
+          "skl": 5,
+          "spd": 3,
+          "def": 2,
+          "res": 10,
+          "cmd": 2
+        },
+        "gains": {
+          "mag": 1,
+          "skl": 1,
+          "res": 1
+        },
+        "hp": 2
+      },
+      {
+        "level": 11,
+        "classId": "battlemage",
+        "tier": 2,
+        "tenths": {
+          "str": 1,
+          "mag": 12,
+          "skl": 5,
+          "spd": 3,
+          "def": 2,
+          "res": 10,
+          "cmd": 2
+        },
+        "gains": {
+          "mag": 2,
+          "spd": 1,
+          "res": 1
+        },
+        "hp": 2
+      },
+      {
+        "level": 12,
+        "classId": "battlemage",
+        "tier": 2,
+        "tenths": {
+          "str": 1,
+          "mag": 12,
+          "skl": 5,
+          "spd": 3,
+          "def": 2,
+          "res": 10,
+          "cmd": 2
+        },
+        "gains": {
+          "mag": 1,
+          "skl": 1,
+          "res": 1
+        },
+        "hp": 2
+      },
+      {
+        "level": 13,
+        "classId": "battlemage",
+        "tier": 2,
+        "tenths": {
+          "str": 1,
+          "mag": 12,
+          "skl": 5,
+          "spd": 3,
+          "def": 2,
+          "res": 10,
+          "cmd": 2
+        },
+        "gains": {
+          "res": 1
+        },
+        "hp": 2,
+        "lost": {
+          "mag": 12
+        }
+      },
+      {
+        "level": 14,
+        "classId": "battlemage",
+        "tier": 2,
+        "tenths": {
+          "str": 1,
+          "mag": 12,
+          "skl": 5,
+          "spd": 3,
+          "def": 2,
+          "res": 10,
+          "cmd": 2
+        },
+        "gains": {
+          "skl": 1,
+          "def": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 2,
+        "lost": {
+          "mag": 12
+        }
+      }
+    ],
+    "promotionBonuses": [
+      {
+        "tier": 2,
+        "classId": "battlemage",
+        "stats": {
+          "mag": 1,
+          "res": 1
+        }
+      }
+    ],
+    "rankBonuses": [],
+    "adaptations": [],
+    "people": "highElf",
+    "peopleSubtype": "",
+    "background": null,
+    "talent": {
+      "id": "savant",
+      "stat": null,
+      "penaltyStat": null,
+      "proficiency": "reason",
+      "placement": {}
+    },
+    "personalGrowth": {
+      "str": 0,
+      "mag": 3,
+      "skl": 0,
+      "spd": 0,
+      "def": 0,
+      "res": 3,
+      "cmd": 0
+    },
+    "classes": [
+      {
+        "id": "adept",
+        "rank": 6,
+        "cp100": 2537,
+        "choices": {}
+      },
+      {
+        "id": "battlemage",
+        "rank": 9,
+        "cp100": 5921,
+        "choices": {}
+      }
+    ],
+    "activeClass": "battlemage",
+    "loadout": {
+      "secondary": "adept",
+      "reaction": "battlemageManaShield",
+      "supports": [
+        "adeptFocus",
+        "battlemageSiegeMind"
+      ],
+      "stance": null
+    },
+    "manaburn": 0,
+    "saturation": null,
+    "marks": 0,
+    "divineAttention": 0,
+    "static": 0,
+    "stolen": [],
+    "standingFaction": {
+      "crown": 40,
+      "army": 40,
+      "civilians": 40,
+      "temple": 40,
+      "mages": 40,
+      "brasswater": 40,
+      "underworld": 40,
+      "duneTribes": 40,
+      "offweiss": 40,
+      "council": 40,
+      "gravetide": 40,
+      "briarwall": 40,
+      "valedorn": 40,
+      "seastrand": 40
+    },
+    "dust": 15,
+    "storyGates": [],
+    "hp": {
+      "value": 76
+    },
+    "channel": {
+      "value": 38
+    },
+    "matter": {
+      "value": 0
+    },
+    "recruit": {
+      "profile": "",
+      "ownerId": null,
+      "status": "",
+      "personalSkillId": "",
+      "story": false,
+      "gmRun": true
+    },
+    "standingPersonal": {},
+    "notes": "<p>Imperial magical researcher. Studies Mercer.</p><p>Battlemage then Magus line (Magus from level 16). Savant in Reason, an antagonist (enemy profile, named budget). The Krauss Engine is not in the Named table yet: he carries a generated kit until V writes it. This snapshot is level 14.</p><p>Emil Krauss, High Elf Battlemage of Offweiss, level 14. Imperial magical researcher. Studies Mercer. Carries Silver Tome, Silver Light Armor, Silver Banner and Silver Ring. Emil drinks only water in the field.</p>"
+  },
+  "items": [
+    {
+      "name": "Silver Tome",
+      "type": "weapon",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "silverTome",
+        "line": "tome",
+        "tier": "silver",
+        "prefix": null,
+        "forge": 0,
+        "element": null,
+        "asSidearm": false,
+        "equipped": true,
+        "quantity": 1,
+        "description": ""
+      },
+      "_id": "3IxO7J5UXyiEr4DR",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Silver Light Armor",
+      "type": "armor",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "identifier": "silverLight",
+        "equipped": true,
+        "description": ""
+      },
+      "_id": "W3EdEL0Zm304fn5s",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Silver Banner",
+      "type": "offhand",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "identifier": "silverBanner",
+        "line": "banner",
+        "tier": "silver",
+        "equipped": true,
+        "description": ""
+      },
+      "_id": "kBl89XBRdcwNWGlQ",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Silver Ring",
+      "type": "accessory",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "identifier": "silverRing",
+        "key": "silverRing",
+        "choices": {
+          "attribute": "mag",
+          "secondAttribute": null,
+          "skill": null
+        },
+        "equipped": true,
+        "description": ""
+      },
+      "_id": "1xD97zrZNKg4ytEO",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "prototypeToken": {
+    "name": "Emil Krauss",
+    "actorLink": true,
+    "disposition": -1,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "flags": {
+    "deicide": {
+      "generated": {
+        "kind": "npc",
+        "seed": "emilKrauss",
+        "input": {
+          "level": 14,
+          "classLine": [
+            "adept",
+            "battlemage",
+            "magus"
+          ],
+          "people": "highElf",
+          "profile": "enemy",
+          "talent": "savant",
+          "named": true,
+          "seed": "emilKrauss",
+          "name": "Emil Krauss",
+          "faction": "offweiss",
+          "role": "Imperial magical researcher. Studies Mercer",
+          "description": "Battlemage then Magus line (Magus from level 16). Savant in Reason, an antagonist (enemy profile, named budget). The Krauss Engine is not in the Named table yet: he carries a generated kit until V writes it. This snapshot is level 14.",
+          "dials": {
+            "S": 45,
+            "L": 30
+          }
+        },
+        "role": "Imperial magical researcher. Studies Mercer",
+        "recruit": null
+      },
+      "faction": "offweiss",
+      "identifier": "emilKrauss"
+    }
+  },
+  "_id": "JvvTHimQU07M6fwm",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

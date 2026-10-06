@@ -5,6 +5,8 @@ import * as resources from "./config/resources.mjs";
 import * as equipment from "./config/equipment.mjs";
 import * as strategic from "./config/strategic.mjs";
 import * as enemies from "./config/enemies.mjs";
+import * as generate from "./config/generate.mjs";
+import * as personalSkills from "./config/personalSkills.mjs";
 
 export const SYSTEM_ID = "deicide";
 
@@ -131,7 +133,22 @@ export const DEICIDE = {
   difficulty: enemies.difficulty,
   bossDifficultyRows: enemies.bossDifficultyRows,
   bossLevelGap: enemies.bossLevelGap,
-  monsterTags: enemies.monsterTags
+  monsterTags: enemies.monsterTags,
+
+  generate: {
+    npcBudget: generate.npcBudget,
+    npcProfiles: generate.npcProfiles,
+    npcCp: generate.npcCp,
+    npcEquipment: generate.npcEquipment,
+    npcPrefixWeights: generate.npcPrefixWeights,
+    slayerFor: generate.slayerFor,
+    army: generate.army,
+    loot: generate.loot,
+    benchmarkMonster: generate.benchmarkMonster,
+    traits: generate.traits,
+    names: generate.names
+  },
+  personalSkills: {named: personalSkills.named, pools: personalSkills.pools, byId: personalSkills.byId}
 };
 
 export default DEICIDE;

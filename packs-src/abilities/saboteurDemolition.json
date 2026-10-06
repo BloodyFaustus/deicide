@@ -46,7 +46,25 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "terrain",
+        "op": "remove",
+        "tileType": "wall"
+      },
+      {
+        "kind": "cancel",
+        "what": "barrier"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "2 Mt or 1 Dust",
+      "destroy a Wall tile or Barrier"
+    ],
+    "automation": "full",
     "identifier": "saboteurDemolition"
   },
   "effects": [],

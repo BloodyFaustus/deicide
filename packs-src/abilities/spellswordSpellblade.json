@@ -55,7 +55,14 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "partial",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "vs lower defense"
+    ],
+    "automation": "full",
     "identifier": "spellswordSpellblade"
   },
   "effects": [],

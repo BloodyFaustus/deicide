@@ -48,7 +48,34 @@
     "roll": {
       "formula": "3 * skl"
     },
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "cancel",
+        "what": "triggeringAction"
+      }
+    ],
+    "reaction": {
+      "trigger": "enemyCast",
+      "window": {
+        "tiles": 3,
+        "row": "any"
+      },
+      "roll": {
+        "d100Under": "3 * skl"
+      },
+      "cost": {
+        "channel": 4
+      },
+      "when": {
+        "actionTag": "faith"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "enemy casts Faith within 3"
+    ],
+    "automation": "full",
     "identifier": "voidcallerNullWard"
   },
   "effects": [],

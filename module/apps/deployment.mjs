@@ -32,7 +32,7 @@ export class Deployment extends HandlebarsApplicationMixin(ApplicationV2) {
     const row = actor => ({
       id: actor.id, name: actor.name, img: actor.img, level: actor.system.level ?? null,
       status: actor.system.recruit?.status ?? "", selected: this.#selected.has(actor.id),
-      detail: actor.type === "company" ? `Q${actor.system.quality} S${actor.system.strength}${actor.system.routed ? ", routed" : ""}` : `level ${actor.system.level}, ${actor.derived?.activeClass ?? ""}`
+      detail: actor.type === "company" ? `Q${actor.system.quality} S${actor.system.strength}${actor.system.routed ? `, ${game.i18n.localize("DEICIDE.Company.Routed")}` : ""}` : game.i18n.format("DEICIDE.Deployment.Detail", {level: actor.system.level, className: actor.derived?.activeClass ?? ""})
     });
     const counts = {
       sheets: story.filter(a => this.#selected.has(a.id)).length,

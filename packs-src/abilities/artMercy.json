@@ -45,6 +45,13 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "heal becomes a row heal"
+    ],
     "art": {
       "lines": [
         "relic"
@@ -52,9 +59,11 @@
       "minTier": "iron",
       "spellMight": 0,
       "rowHealFraction": 0.5,
-      "nextMatterCost": null
+      "nextMatterCost": null,
+      "targetDef": 0,
+      "turns": 0
     },
-    "automation": "manual",
+    "automation": "full",
     "identifier": "artMercy"
   },
   "effects": [],

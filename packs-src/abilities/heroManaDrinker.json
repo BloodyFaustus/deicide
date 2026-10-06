@@ -46,7 +46,29 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "pool",
+        "key": "saturation",
+        "delta": 1,
+        "target": "self"
+      }
+    ],
+    "reaction": {
+      "trigger": "hitBySpell",
+      "window": {
+        "self": true
+      },
+      "when": {
+        "actionTag": "reason"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "gain 1 Saturation"
+    ],
+    "automation": "full",
     "identifier": "heroManaDrinker"
   },
   "effects": [],

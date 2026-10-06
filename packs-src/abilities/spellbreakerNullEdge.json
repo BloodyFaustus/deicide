@@ -34,7 +34,25 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "removeStatus",
+        "statusId": "warded",
+        "target": "target",
+        "chance": "onHit",
+        "trigger": "ownAttack",
+        "when": {
+          "actionSource": "weapon"
+        }
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "weapon hits remove Warded"
+    ],
+    "automation": "full",
     "identifier": "spellbreakerNullEdge"
   },
   "effects": [],

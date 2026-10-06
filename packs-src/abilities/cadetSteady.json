@@ -34,7 +34,21 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "flag",
+        "key": "ignoreFirstMorale",
+        "value": true,
+        "target": "companiesInRadius"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "ignore first morale check"
+    ],
+    "automation": "full",
     "identifier": "cadetSteady"
   },
   "effects": [],

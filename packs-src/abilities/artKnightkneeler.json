@@ -64,6 +64,11 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [],
     "art": {
       "lines": [
         "lance",
@@ -72,9 +77,11 @@
       "minTier": "steel",
       "spellMight": 0,
       "rowHealFraction": 0,
-      "nextMatterCost": null
+      "nextMatterCost": null,
+      "targetDef": 0,
+      "turns": 0
     },
-    "automation": "partial",
+    "automation": "full",
     "identifier": "artKnightkneeler"
   },
   "effects": [],

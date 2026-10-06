@@ -34,7 +34,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "reveal",
+        "what": "hpChannelSaturation",
+        "target": "target"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "see HP",
+      "Channel",
+      "Saturation of any target"
+    ],
+    "automation": "full",
     "identifier": "plagueDoctorDiagnose"
   },
   "effects": [],

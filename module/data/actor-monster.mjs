@@ -20,6 +20,7 @@ export class MonsterData extends foundry.abstract.TypeDataModel {
       res: new fields.NumberField({required: true, integer: true, min: 0, initial: 5}),
       spd: new fields.NumberField({required: true, integer: true, min: 0, initial: 10}),
       mag: new fields.NumberField({required: true, integer: true, min: 0, initial: 0}),
+      skl: new fields.NumberField({required: true, integer: true, min: 0, initial: 0}),
       delay: new fields.SchemaField({
         mode: new fields.StringField({required: true, choices: ["spd", "fixed"], initial: "spd"}),
         value: new fields.NumberField({required: true, integer: true, min: 0, initial: 30})
@@ -39,6 +40,7 @@ export class MonsterData extends foundry.abstract.TypeDataModel {
       yield: new fields.SchemaField({
         saturation: new fields.NumberField({required: true, integer: true, min: 0, initial: 0}),
         dust: new fields.NumberField({required: true, integer: true, min: 0, initial: 0}),
+        divineAttention: new fields.NumberField({required: true, integer: true, min: 0, initial: 0}),
         drops: new fields.ArrayField(new fields.StringField({required: true, blank: false}))
       }),
       row: new fields.StringField({required: true, choices: DEICIDE.dungeon.rows, initial: "front"}),
@@ -69,7 +71,7 @@ export class MonsterData extends foundry.abstract.TypeDataModel {
       kind: "monster",
       name: this.parent?.name ?? "",
       level: this.level,
-      attributes: {str: 0, mag: this.mag, skl: 0, spd: this.spd, def: this.def, res: this.res, cmd: 0},
+      attributes: {str: 0, mag: this.mag, skl: this.skl, spd: this.spd, def: this.def, res: this.res, cmd: 0},
       defense: {def: this.def, res: this.res, avoid: 0},
       hp: {value: this.hp.value, max: this.hp.max},
       classTypes: Array.from(this.tags).filter(tag => tag in DEICIDE.classTypes),

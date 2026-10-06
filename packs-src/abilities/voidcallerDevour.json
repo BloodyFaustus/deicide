@@ -60,7 +60,21 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "partial",
+    "effects": [
+      {
+        "kind": "heal",
+        "amount": "floor(damage / 2)",
+        "target": "self",
+        "chance": "onHit"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "heals you half"
+    ],
+    "automation": "full",
     "identifier": "voidcallerDevour"
   },
   "effects": [],

@@ -31,6 +31,11 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
       saturation: new fields.NumberField({required: true, nullable: true, integer: true, min: 0, max: 100, initial: null}),
       marks: new fields.NumberField({required: true, integer: true, min: 0, initial: 0}),
       divineAttention: new fields.NumberField({required: true, integer: true, min: 0, initial: 0}),
+      divineAttentionLog: new fields.ArrayField(new fields.SchemaField({
+        source: new fields.StringField({required: true, blank: true, initial: ""}),
+        delta: new fields.NumberField({required: true, integer: true, initial: 0}),
+        month: new fields.NumberField({required: true, integer: true, min: 1, initial: 1})
+      })),
       static: new fields.NumberField({required: true, integer: true, min: 0, initial: 0}),
       stolen: new fields.ArrayField(new fields.ObjectField()),
 
@@ -49,7 +54,7 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
       classes: new fields.ArrayField(new fields.SchemaField({
         id: new fields.StringField({required: true, blank: false}),
         rank: new fields.NumberField({required: true, integer: true, min: 1, max: DEICIDE.maxRank, initial: 1}),
-        cp: new fields.NumberField({required: true, integer: true, min: 0, initial: 0}),
+        cp100: new fields.NumberField({required: true, integer: true, min: 0, initial: 0}),
         choices: new fields.ObjectField()
       })),
       activeClass: new fields.StringField({required: true, blank: true, initial: ""}),
@@ -115,6 +120,10 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
       .map(item => ({identifier: item.system.identifier, type: item.type, system: item.system}));
     const lookup = api?.catalog ? api.catalog.lookup(overrides) : () => null;
     const mode = sceneMode();
+
+    const effects = api?.statuses?.modifiers ? api.statuses.modifiers(actor) : {modifiers: [], flags: {}};
+    const combat = globalThis.game?.combat?.started ? game.combat : null;
+    const fromField = (api?.field && combat) ? api.field.modifiers(actor, api.field.snapshot(combat)) : {modifiers: [], flags: {}, bond: {rank: null, partners: []}};
     this.derived = deriveCharacter(this, {
       lookup,
       equipment: this.equipment,
@@ -124,6 +133,9 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
         arena: mode === "arena",
         statuses: Array.from(actor?.statuses ?? []),
         attuned: this.attuned,
+        modifiers: [...effects.modifiers, ...fromField.modifiers],
+        effectFlags: {...effects.flags, ...fromField.flags},
+        bond: fromField.bond,
         levelCap: api?.nation?.levelCap ?? DEICIDE.pacing.defaults.L,
         tierGates: api?.nation?.tierGates ?? null,
         classCatalog: api?.catalog?.all("class") ?? [],
@@ -149,6 +161,13 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
   static migrateData(source) {
 
     if ( source.schemaVersion === undefined ) source.schemaVersion = CHARACTER_SCHEMA_VERSION;
+
+    for ( const entry of source.classes ?? [] ) {
+      if ( (entry.cp100 === undefined) && (entry.cp !== undefined) ) {
+        entry.cp100 = Math.round(entry.cp * 100);
+        delete entry.cp;
+      }
+    }
     return super.migrateData(source);
   }
 }

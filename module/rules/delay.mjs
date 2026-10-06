@@ -53,3 +53,13 @@ export function projectQueue(entries, count = 10) {
   }
   return order;
 }
+
+export function guardPreview(entries, currentId, count = 10) {
+  const working = entries.map(entry => {
+    if ( entry.id !== currentId ) return {...entry};
+    const guardDelay = actionDelay({weight: DEICIDE.dungeonActions.guard.weight, spd: entry.spd ?? 0, fixed: entry.fixed ?? null});
+    const halvedNext = Math.max(Math.floor((entry.delay ?? DEICIDE.delay.min) / DEICIDE.delay.guardDivisor), DEICIDE.delay.absoluteMin);
+    return {...entry, nextTick: entry.nextTick + guardDelay, delay: halvedNext, guarded: true};
+  });
+  return projectQueue(working, count);
+}

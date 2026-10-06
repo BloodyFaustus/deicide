@@ -1,0 +1,56 @@
+<div class="gm-tool-root">
+  <div class="columns">
+    <div class="fields">
+      <div class="form-group"><label>{{localize "DEICIDE.Generate.Name"}}</label><input type="text" name="name" value="{{input.name}}" placeholder="{{localize 'DEICIDE.Generate.NameHint'}}"></div>
+      <div class="form-group"><label>{{localize "DEICIDE.Generate.Level"}}</label><input type="number" name="level" value="{{input.level}}" min="1" max="30"></div>
+      <div class="form-group"><label>{{localize "DEICIDE.Generate.BaseClass"}}</label>
+        <select name="base">{{#each classes.tier1}}<option value="{{id}}" {{#if (eq id @root.input.base)}}selected{{/if}}>{{name}}</option>{{/each}}</select></div>
+      <div class="form-group"><label>{{localize "DEICIDE.Generate.Tier2"}}</label>
+        <select name="tier2"><option value="">{{localize "DEICIDE.Generate.None"}}</option>{{#each classes.tier2}}<option value="{{id}}" {{#if (eq id @root.input.tier2)}}selected{{/if}}>{{name}}{{#if enemyOnly}} ({{localize "DEICIDE.Generate.EnemyOnly"}}){{/if}}</option>{{/each}}</select></div>
+      <div class="form-group"><label>{{localize "DEICIDE.Generate.Tier3"}}</label>
+        <select name="tier3"><option value="">{{localize "DEICIDE.Generate.None"}}</option>{{#each classes.tier3}}<option value="{{id}}" {{#if (eq id @root.input.tier3)}}selected{{/if}}>{{name}}{{#if enemyOnly}} ({{localize "DEICIDE.Generate.EnemyOnly"}}){{/if}}</option>{{/each}}</select></div>
+      <div class="form-group"><label>{{localize "DEICIDE.Generate.People"}}</label>
+        <select name="people">{{#each peoples}}<option value="{{id}}" {{#if (eq id @root.input.people)}}selected{{/if}}>{{name}}</option>{{/each}}</select></div>
+      {{#if subtypes.length}}
+      <div class="form-group"><label>{{localize "DEICIDE.Generate.Subtype"}}</label>
+        <select name="subtype"><option value="">{{localize "DEICIDE.Generate.None"}}</option>{{#each subtypes}}<option value="{{this}}" {{#if (eq this @root.input.subtype)}}selected{{/if}}>{{this}}</option>{{/each}}</select></div>
+      {{/if}}
+      <div class="form-group"><label>{{localize "DEICIDE.Generate.ProfileLabel"}}</label>
+        <select name="profile">{{#each profiles}}<option value="{{id}}" {{#if (eq id @root.input.profile)}}selected{{/if}}>{{label}}</option>{{/each}}</select></div>
+      <div class="form-group"><label>{{localize "DEICIDE.Generate.Talent"}}</label>
+        <select name="talent"><option value="">{{localize "DEICIDE.Generate.FromProfile"}}</option>{{#each talents}}<option value="{{id}}" {{#if (eq id @root.input.talent)}}selected{{/if}}>{{name}}</option>{{/each}}</select></div>
+      <div class="form-group"><label>{{localize "DEICIDE.Generate.Faction"}}</label>
+        <select name="faction">{{#each factions}}<option value="{{id}}" {{#if (eq id @root.input.faction)}}selected{{/if}}>{{label}}</option>{{/each}}</select></div>
+      <div class="form-group"><label>{{localize "DEICIDE.Generate.Budget"}}</label><input type="number" name="budgetDust" value="{{input.budgetDust}}" min="0" placeholder="{{localize 'DEICIDE.Generate.BudgetHint'}}"></div>
+      <div class="form-group"><label>{{localize "DEICIDE.Generate.PersonalSkill"}}</label>
+        <select name="personalSkill"><option value="">{{localize "DEICIDE.Generate.FromPool"}}</option>{{#each pool}}<option value="{{id}}" {{#if (eq id @root.input.personalSkill)}}selected{{/if}}>{{name}}: {{summary}}</option>{{/each}}</select></div>
+      <div class="form-group"><label>{{localize "DEICIDE.Generate.NamedOfficer"}}</label><input type="checkbox" name="named" {{#if input.named}}checked{{/if}}></div>
+      <div class="form-group"><label>{{localize "DEICIDE.Generate.NamedItems"}}</label><input type="text" name="namedItems" value="{{input.namedItems}}" placeholder="breakwaterAegis, theQuietPistol"></div>
+      <div class="form-group"><label>{{localize "DEICIDE.Generate.Role"}}</label><input type="text" name="role" value="{{input.role}}"></div>
+      <div class="form-group"><label>{{localize "DEICIDE.Generate.Seed"}}</label>
+        <div class="seed"><input type="text" name="seed" value="{{input.seed}}"><button type="button" data-action="reroll" data-tooltip="{{localize 'DEICIDE.Generate.RerollHint'}}"><i class="fa-solid fa-dice"></i></button></div></div>
+      <p class="buttons">
+        <button type="button" data-action="generate"><i class="fa-solid fa-wand-magic-sparkles"></i> {{localize "DEICIDE.Generate.Preview"}}</button>
+        {{#if isGM}}<button type="button" data-action="create" {{#unless result.ok}}disabled{{/unless}}><i class="fa-solid fa-user-plus"></i> {{localize "DEICIDE.Generate.CreateActor"}}</button>{{/if}}
+      </p>
+    </div>
+    <div class="preview">
+      {{#if result}}
+        {{#if result.errors.length}}<ul class="warnings">{{#each result.errors}}<li class="warn">{{this}}</li>{{/each}}</ul>{{/if}}
+        {{#if result.ok}}
+        <p class="summary">{{result.summary}}</p>
+        <table class="detail">
+          <tr><th>{{localize "DEICIDE.Generate.Ranks"}}</th><td>{{result.ranks}}</td></tr>
+          <tr><th>{{localize "DEICIDE.Generate.HP"}}</th><td>{{result.detail.hp}}</td></tr>
+          <tr><th>{{localize "DEICIDE.Generate.Attributes"}}</th><td>{{#each result.attributes}}{{abbr}} {{value}} {{/each}}</td></tr>
+          <tr><th>{{localize "DEICIDE.Generate.BudgetSpent"}}</th><td>{{result.detail.spent}} / {{result.detail.budget}} ({{result.detail.tier}})</td></tr>
+          <tr><th>{{localize "DEICIDE.Generate.Items"}}</th><td>{{#each result.items}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}</td></tr>
+          <tr><th>{{localize "DEICIDE.Generate.CpTotal"}}</th><td>{{result.detail.totalCp100}} (P {{result.detail.P}})</td></tr>
+        </table>
+        {{/if}}
+      {{else}}
+        <p class="empty">{{localize "DEICIDE.Generate.PreviewHint"}}</p>
+      {{/if}}
+    </div>
+  </div>
+</div>

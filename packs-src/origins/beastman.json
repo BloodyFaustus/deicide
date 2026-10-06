@@ -5,7 +5,7 @@
   "img": "icons/svg/mystery-man.svg",
   "system": {
     "kind": "people",
-    "description": "<p>Subtype swaps one D. Avian: Flying starts D, SPD D becomes SKL D. Feline: starting SPD +2.</p>",
+    "description": "<p>Feline: starting SPD +2. Canine: starting SKL +2. Ursine: starting STR +2. Avian: Flying starts D, growth SKL D, STR D, SPD E, DEF E.</p>",
     "growth": {
       "spd": "D",
       "str": "D",
@@ -17,6 +17,18 @@
         "name": "Feline",
         "startBonus": {
           "spd": 2
+        }
+      },
+      "canine": {
+        "name": "Canine",
+        "startBonus": {
+          "skl": 2
+        }
+      },
+      "ursine": {
+        "name": "Ursine",
+        "startBonus": {
+          "str": 2
         }
       },
       "avian": {

@@ -46,7 +46,30 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "redirect",
+        "to": "self"
+      },
+      {
+        "kind": "heal",
+        "amount": "floor(mag / 2)",
+        "target": "ally"
+      }
+    ],
+    "reaction": {
+      "trigger": "allyHit",
+      "window": {
+        "tiles": 2,
+        "row": "any"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "take it and heal them MAG/2"
+    ],
+    "automation": "full",
     "identifier": "paladinIntercede"
   },
   "effects": [],

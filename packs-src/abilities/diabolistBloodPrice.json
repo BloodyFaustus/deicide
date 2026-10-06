@@ -46,7 +46,27 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "pool",
+        "key": "channel",
+        "delta": "+allyChannel",
+        "target": "self"
+      }
+    ],
+    "reaction": {
+      "trigger": "allyDowned",
+      "window": {
+        "tiles": 2,
+        "row": "any"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "you gain their Channel"
+    ],
+    "automation": "full",
     "identifier": "diabolistBloodPrice"
   },
   "effects": [],

@@ -32,9 +32,27 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "attackElement",
+        "value": "chosen",
+        "when": {
+          "actionId": "spellswordSpellblade"
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Spellblade takes a chosen element tag"
+    ],
+    "automation": "full",
+    "choices": [
+      "element"
+    ],
     "identifier": "spellswordElementalEdge"
   },
   "effects": [],

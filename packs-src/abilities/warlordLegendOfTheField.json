@@ -34,7 +34,26 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "aura",
+        "radius": 99,
+        "target": "companiesInRadius",
+        "modifiers": [
+          {
+            "key": "quality",
+            "value": 1
+          }
+        ]
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "companies in radius Quality \\+1"
+    ],
+    "automation": "full",
     "identifier": "warlordLegendOfTheField"
   },
   "effects": [],

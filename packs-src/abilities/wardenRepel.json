@@ -46,7 +46,21 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "move",
+        "mode": "push",
+        "tiles": 1,
+        "target": "radius"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "push radius 1 one tile or force swap"
+    ],
+    "automation": "full",
     "identifier": "wardenRepel"
   },
   "effects": [],

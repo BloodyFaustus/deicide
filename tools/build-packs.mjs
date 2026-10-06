@@ -4,11 +4,13 @@ import {join} from "node:path";
 import {compilePack} from "@foundryvtt/foundryvtt-cli";
 import {PACKS, PACKS_OUT, readSources} from "./lib/sources.mjs";
 
-const COLLECTIONS = {Item: "items", Actor: "actors", JournalEntry: "journal"};
+const COLLECTIONS = {Item: "items", Actor: "actors", JournalEntry: "journal", Scene: "scenes"};
 const EMBEDDED = {
   actors: {items: "items", effects: "effects"},
   items: {effects: "effects"},
-  journal: {pages: "pages"}
+  journal: {pages: "pages"},
+  scenes: {levels: "levels", regions: "regions", tokens: "tokens"},
+  regions: {behaviors: "behaviors"}
 };
 
 function addKeys(doc, collection, parentKeyPath = "", parentIdPath = "") {

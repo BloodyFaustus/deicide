@@ -5,7 +5,7 @@
   "img": "icons/svg/village.svg",
   "system": {
     "kind": "background",
-    "description": "<p>Rogue Rank 2.</p>",
+    "description": "<p>Rogue Rank 2. Standing Underworld 55.</p>",
     "points": {
       "skl": 2,
       "spd": 2
@@ -16,7 +16,10 @@
           "id": "rogue",
           "rank": 2
         }
-      ]
+      ],
+      "standing": {
+        "underworld": 55
+      }
     },
     "identifier": "guildThief"
   },

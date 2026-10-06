@@ -279,12 +279,22 @@ export function applyRankBonus(actorData, classData, rank, caps, stat) {
   return [...existing, {classId: classData.identifier, rank, stat: chosen, value: 1}];
 }
 
-export function rankForCp(cp) {
+export function rankForCp(cp100) {
+  const cp = cp100 / 100;
   let rank = 1;
   for ( let i = 0; i < DEICIDE.rankCp.length; i++ ) {
     if ( cp >= DEICIDE.rankCp[i] ) rank = i + 1;
   }
   return rank;
+}
+
+export function cp100ForRank(rank) {
+  return cpForRank(rank) * 100;
+}
+
+export function formatCp(cp100) {
+  const cp = (cp100 ?? 0) / 100;
+  return Number.isInteger(cp) ? String(cp) : cp.toFixed(2);
 }
 
 export function cpForRank(rank) {

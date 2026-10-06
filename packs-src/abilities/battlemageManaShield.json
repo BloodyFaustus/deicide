@@ -44,9 +44,30 @@
     },
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "damageTaken",
+        "op": "add",
+        "value": "-floor(mag / 2)"
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": {
+      "trigger": "hitByAttack",
+      "window": {
+        "self": true
+      },
+      "cost": {
+        "channel": 2
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "2 Ch reduces damage by MAG/2"
+    ],
+    "automation": "full",
     "identifier": "battlemageManaShield"
   },
   "effects": [],

@@ -113,7 +113,7 @@ export const monsters = [
     ]
   },
   {
-    id: "wrath", name: "Wrath", level: 22, tags: ["homunculus", "boss"], boss: true, hp: 450, def: 14, res: 12, spd: 15, mag: 16,
+    id: "wrath", name: "Wrath", level: 20, tags: ["homunculus", "boss"], boss: true, hp: 450, def: 14, res: 12, spd: 15, mag: 16,
     delay: {mode: "fixed", value: 30}, yield: {drops: ["redWater", "redWater", "stoneFragment"]},
     phaseBreaks: [{percent: 50, note: "Frenzy: Delay 20. Cleave hits all enemies."}],
     moves: [
@@ -124,7 +124,7 @@ export const monsters = [
     ]
   },
   {
-    id: "pride", name: "Pride", level: 28, tags: ["homunculus", "boss"], boss: true, hp: 600, def: 20, res: 20, spd: 18, mag: 26,
+    id: "pride", name: "Pride", level: 26, tags: ["homunculus", "boss"], boss: true, hp: 600, def: 20, res: 20, spd: 18, mag: 26,
     delay: {mode: "fixed", value: 30}, yield: {drops: ["redWater", "redWater", "redWater", "philosophersStone"]},
     phaseBreaks: [{percent: 50, note: "Ascension: SS stats, Delay 25, Decree twice per action."}],
     moves: [
@@ -136,15 +136,21 @@ export const monsters = [
   },
 
   {
-    id: "caldusRime", name: "Caldus Rime, Divine Agent", level: 30, tags: ["divine", "boss"], boss: true, divineBeing: true,
-    hp: 900, def: 30, res: 42, spd: 20, mag: 32, delay: {mode: "fixed", value: 25}, yield: {},
-    phaseBreaks: [{percent: 50, note: "Every company on the map routs."}],
+    id: "caldusRime", name: "Caldus Rime, Divine Agent", level: 30, tags: ["divine", "boss"], classTypes: ["officer", "caster"],
+    boss: true, divineBeing: true,
+    hp: 900, def: 30, res: 42, skl: 30, spd: 24, mag: 34, delay: {mode: "fixed", value: 25},
+    weakness: "void", yield: {drops: ["caldussMantle"], divineAttention: 2},
+    phaseBreaks: [
+      {percent: 50, note: "Every company on any War map in the same session routs (narrative flag). Judgement twice per turn."},
+      {percent: 25, note: "Delay 20. Erasure hits a row."}
+    ],
     moves: [
       move("Judgement", 20, "all", {defense: "res", element: "divine"}),
-      move("Erasure", null, "single", {note: "The target loses 10 Saturation."}),
-      move("Unmaking", null, "self", {note: "Reaction: alchemy against him fails on d100 over 50."})
+      move("Erasure", null, "single", {note: "Against a mana hero: Saturation minus 10. Against Mercer: 20 Burn and Divine Attention +1. Against anyone else: Channel set to 0."}),
+      move("Decree of Silence", null, "row", {statuses: [{id: "silenced", turns: 2}], note: "One row, Silenced 2 turns."}),
+      move("Unmaking", null, "self", {note: "Reaction: direct alchemy targeting him fails on d100 over 50. The alchemist still pays the Soul Price."})
     ],
-    description: "Divine Agent. Halves every tag except Void and Truth."
+    description: "Divine Agent. Weakness Void (x1.5). Truth deals full damage. Every other tag x0.5 (divine being). Drops Caldus's Mantle (Named, Act III) and Divine Attention +2 for the party as a whole. Never fought in War Mode."
   }
 ];
 

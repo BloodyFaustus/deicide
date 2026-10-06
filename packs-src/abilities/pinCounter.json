@@ -52,7 +52,29 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "counter",
+        "might": -2
+      }
+    ],
+    "reaction": {
+      "trigger": "hitByAttack",
+      "window": {
+        "self": true
+      },
+      "when": {
+        "attackerRange": {
+          "max": 1
+        }
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "attack back at Might minus 2"
+    ],
+    "automation": "full",
     "identifier": "pinCounter"
   },
   "effects": [],

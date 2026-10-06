@@ -1,0 +1,670 @@
+{
+  "name": "General Corvin Hale",
+  "type": "character",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "level": 16,
+    "xp": 0,
+    "attributes": {
+      "str": 12,
+      "mag": 6,
+      "skl": 8,
+      "spd": 6,
+      "def": 8,
+      "res": 8,
+      "cmd": 14
+    },
+    "growthTenths": {
+      "str": 1,
+      "mag": 5,
+      "skl": 9,
+      "spd": 0,
+      "def": 1,
+      "res": 0,
+      "cmd": 9
+    },
+    "growthLog": [
+      {
+        "level": 1,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {},
+        "gains": {},
+        "hp": 3
+      },
+      {
+        "level": 2,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {
+          "str": 6,
+          "mag": 3,
+          "skl": 4,
+          "spd": 2,
+          "def": 2,
+          "res": 4,
+          "cmd": 8
+        },
+        "gains": {},
+        "hp": 3
+      },
+      {
+        "level": 3,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {
+          "str": 6,
+          "mag": 3,
+          "skl": 4,
+          "spd": 2,
+          "def": 2,
+          "res": 4,
+          "cmd": 8
+        },
+        "gains": {
+          "str": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 4,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {
+          "str": 6,
+          "mag": 3,
+          "skl": 4,
+          "spd": 2,
+          "def": 2,
+          "res": 4,
+          "cmd": 8
+        },
+        "gains": {
+          "skl": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 5,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {
+          "str": 6,
+          "mag": 3,
+          "skl": 4,
+          "spd": 2,
+          "def": 2,
+          "res": 4,
+          "cmd": 8
+        },
+        "gains": {
+          "str": 1,
+          "mag": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 6,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {
+          "str": 6,
+          "mag": 3,
+          "skl": 4,
+          "spd": 2,
+          "def": 2,
+          "res": 4,
+          "cmd": 8
+        },
+        "gains": {
+          "str": 1,
+          "skl": 1,
+          "spd": 1,
+          "def": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 7,
+        "classId": "cadet",
+        "tier": 1,
+        "tenths": {
+          "str": 6,
+          "mag": 3,
+          "skl": 4,
+          "spd": 2,
+          "def": 2,
+          "res": 4,
+          "cmd": 8
+        },
+        "gains": {},
+        "hp": 3
+      },
+      {
+        "level": 8,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 7,
+          "mag": 3,
+          "skl": 5,
+          "spd": 2,
+          "def": 3,
+          "res": 4,
+          "cmd": 10
+        },
+        "gains": {
+          "str": 1,
+          "mag": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 9,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 7,
+          "mag": 3,
+          "skl": 5,
+          "spd": 2,
+          "def": 3,
+          "res": 4,
+          "cmd": 10
+        },
+        "gains": {
+          "str": 1,
+          "skl": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 10,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 7,
+          "mag": 3,
+          "skl": 5,
+          "spd": 2,
+          "def": 3,
+          "res": 4,
+          "cmd": 10
+        },
+        "gains": {
+          "def": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 11,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 7,
+          "mag": 3,
+          "skl": 5,
+          "spd": 2,
+          "def": 3,
+          "res": 4,
+          "cmd": 10
+        },
+        "gains": {
+          "str": 1,
+          "mag": 1,
+          "skl": 1,
+          "spd": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 12,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 7,
+          "mag": 3,
+          "skl": 5,
+          "spd": 2,
+          "def": 3,
+          "res": 4,
+          "cmd": 10
+        },
+        "gains": {
+          "str": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 13,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 7,
+          "mag": 3,
+          "skl": 5,
+          "spd": 2,
+          "def": 3,
+          "res": 4,
+          "cmd": 10
+        },
+        "gains": {
+          "skl": 1,
+          "def": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 14,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 7,
+          "mag": 3,
+          "skl": 5,
+          "spd": 2,
+          "def": 3,
+          "res": 4,
+          "cmd": 10
+        },
+        "gains": {
+          "str": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 15,
+        "classId": "captain",
+        "tier": 2,
+        "tenths": {
+          "str": 7,
+          "mag": 3,
+          "skl": 5,
+          "spd": 2,
+          "def": 3,
+          "res": 4,
+          "cmd": 10
+        },
+        "gains": {
+          "str": 1,
+          "mag": 1,
+          "skl": 1
+        },
+        "hp": 3,
+        "lost": {
+          "cmd": 10
+        }
+      },
+      {
+        "level": 16,
+        "classId": "warlord",
+        "tier": 3,
+        "tenths": {
+          "str": 9,
+          "mag": 3,
+          "skl": 5,
+          "spd": 2,
+          "def": 5,
+          "res": 4,
+          "cmd": 11
+        },
+        "gains": {
+          "str": 1,
+          "spd": 1,
+          "def": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "hp": 4
+      }
+    ],
+    "promotionBonuses": [
+      {
+        "tier": 2,
+        "classId": "captain",
+        "stats": {
+          "cmd": 1
+        }
+      },
+      {
+        "tier": 3,
+        "classId": "warlord",
+        "stats": {
+          "str": 2,
+          "def": 2,
+          "cmd": 2
+        }
+      }
+    ],
+    "rankBonuses": [
+      {
+        "classId": "warlord",
+        "rank": 3,
+        "stat": "cmd",
+        "value": 1
+      }
+    ],
+    "adaptations": [],
+    "people": "manaborne",
+    "peopleSubtype": "",
+    "background": null,
+    "talent": {
+      "id": "earlyPeak",
+      "stat": null,
+      "penaltyStat": null,
+      "proficiency": null,
+      "placement": {
+        "str": 4,
+        "mag": 0,
+        "skl": 0,
+        "spd": 0,
+        "def": 0,
+        "res": 0,
+        "cmd": 4
+      }
+    },
+    "personalGrowth": {
+      "str": 3,
+      "mag": 0,
+      "skl": 0,
+      "spd": 0,
+      "def": 0,
+      "res": 0,
+      "cmd": 3
+    },
+    "classes": [
+      {
+        "id": "cadet",
+        "rank": 1,
+        "cp100": 0,
+        "choices": {}
+      },
+      {
+        "id": "captain",
+        "rank": 6,
+        "cp100": 2900,
+        "choices": {
+          "weapon": "sword"
+        }
+      },
+      {
+        "id": "warlord",
+        "rank": 10,
+        "cp100": 6767,
+        "choices": {
+          "weapon": "sword"
+        }
+      }
+    ],
+    "activeClass": "warlord",
+    "loadout": {
+      "secondary": "captain",
+      "reaction": "warlordVeto",
+      "supports": [
+        "captainLogistics",
+        "warlordGrandCommand"
+      ],
+      "stance": null
+    },
+    "manaburn": 0,
+    "saturation": null,
+    "marks": 0,
+    "divineAttention": 0,
+    "static": 0,
+    "stolen": [],
+    "standingFaction": {
+      "crown": 40,
+      "army": 40,
+      "civilians": 40,
+      "temple": 40,
+      "mages": 40,
+      "brasswater": 40,
+      "underworld": 40,
+      "duneTribes": 40,
+      "offweiss": 40,
+      "council": 40,
+      "gravetide": 40,
+      "briarwall": 40,
+      "valedorn": 40,
+      "seastrand": 40
+    },
+    "dust": 15,
+    "storyGates": [],
+    "hp": {
+      "value": 101
+    },
+    "channel": {
+      "value": 16
+    },
+    "matter": {
+      "value": 0
+    },
+    "recruit": {
+      "profile": "veteran",
+      "ownerId": null,
+      "status": "attached",
+      "personalSkillId": "personalOldGuard",
+      "story": false,
+      "gmRun": true
+    },
+    "standingPersonal": {
+      "party": 40
+    },
+    "notes": "<p>Commander of the Royal Army, professional rival then partner, possible later opponent.</p><p>Command anchor from the Officers track. Personal skill Old Guard: companies in radius ignore the first rout. Can turn against Mercer if Divine Attention passes 6.</p><p>Personal skill Old Guard: companies in radius ignore the first rout check of the battle.</p><p>General Corvin Hale, Manaborne Human Warlord of Lathander, level 16. Commander of the Royal Army, professional rival then partner, possible later opponent. Carries Royal Keen Sword, Royal Medium Armor and Royal Banner. Corvin remembers every face and no names.</p>"
+  },
+  "items": [
+    {
+      "name": "Royal Keen Sword",
+      "type": "weapon",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "royalKeenSword",
+        "line": "sword",
+        "tier": "royal",
+        "prefix": "keen",
+        "forge": 0,
+        "element": null,
+        "asSidearm": false,
+        "equipped": true,
+        "quantity": 1,
+        "description": ""
+      },
+      "_id": "g1Hy2c2Byw8yTXyz",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Royal Medium Armor",
+      "type": "armor",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "identifier": "royalMedium",
+        "equipped": true,
+        "description": ""
+      },
+      "_id": "o15SwMbqOOWBdHM5",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Royal Banner",
+      "type": "offhand",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "identifier": "royalBanner",
+        "line": "banner",
+        "tier": "royal",
+        "equipped": true,
+        "description": ""
+      },
+      "_id": "vavn3Vs30eJkfL1f",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Old Guard",
+      "type": "ability",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "identifier": "personalOldGuard",
+        "type": "support",
+        "source": {
+          "kind": "personal",
+          "id": "npcCorvinHale",
+          "rank": null
+        },
+        "description": "<p>Companies in radius ignore the first rout check of the battle.</p>",
+        "summary": "companies in radius ignore the first rout check of the battle",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": null,
+        "heal": null,
+        "war": null,
+        "dungeon": null,
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "effects": [
+          {
+            "kind": "flag",
+            "key": "ignoreFirstMorale",
+            "value": true,
+            "target": "companiesInRadius"
+          }
+        ],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [
+          "ignore the first rout"
+        ],
+        "automation": "partial"
+      },
+      "_id": "zcTGGq80dwuP78L9",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "prototypeToken": {
+    "name": "General Corvin Hale",
+    "actorLink": true,
+    "disposition": 0,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "flags": {
+    "deicide": {
+      "generated": {
+        "kind": "npc",
+        "seed": "corvinHale",
+        "input": {
+          "level": 16,
+          "classLine": [
+            "cadet",
+            "captain",
+            "warlord"
+          ],
+          "people": "manaborne",
+          "profile": "veteran",
+          "personalSkill": "personalOldGuard",
+          "seed": "corvinHale",
+          "choices": {
+            "captain": {
+              "weapon": "sword"
+            },
+            "warlord": {
+              "weapon": "sword"
+            }
+          },
+          "name": "General Corvin Hale",
+          "faction": "lathander",
+          "role": "Commander of the Royal Army, professional rival then partner, possible later opponent",
+          "description": "Command anchor from the Officers track. Personal skill Old Guard: companies in radius ignore the first rout. Can turn against Mercer if Divine Attention passes 6.",
+          "dials": {
+            "S": 45,
+            "L": 30
+          }
+        },
+        "role": "Commander of the Royal Army, professional rival then partner, possible later opponent",
+        "recruit": "Veteran Warlord, Early Peak, joins Attached by rank not trust"
+      },
+      "faction": "lathander",
+      "identifier": "corvinHale"
+    }
+  },
+  "_id": "Yg7k4fwOjYaz1ySX",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

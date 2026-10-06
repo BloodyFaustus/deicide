@@ -34,7 +34,19 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "reveal",
+        "what": "fog",
+        "radius": 6,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "outriderScoutAhead"
   },
   "effects": [],

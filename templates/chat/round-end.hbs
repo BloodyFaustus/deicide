@@ -1,11 +1,11 @@
 <div class="deicide-card round-end">
-  <h3>Round {{round}} ends</h3>
+  <h3>{{localize "DEICIDE.Card.RoundEnds" round=round}}</h3>
   <ul class="plain">
     {{#each log}}
       {{#if (eq kind "morale")}}
-        <li><strong>{{name}}</strong>: morale d100 {{roll}} against {{threshold}}, {{#if passed}}holds{{else}}routs{{/if}}.</li>
+        <li><strong>{{name}}</strong>: {{localize "DEICIDE.Card.MoraleLine" roll=roll threshold=threshold}} {{#if passed}}{{localize "DEICIDE.Card.Holds"}}{{else}}{{localize "DEICIDE.Card.Routs"}}{{/if}}.</li>
       {{else}}
-        <li><strong>{{name}}</strong>: {{statusId}}{{#if burn}} deals {{burn}} Burn{{/if}}{{#if ended}} ends{{/if}}.</li>
+        <li><strong>{{name}}</strong>: {{statusId}}{{#if burn}} {{localize "DEICIDE.Card.DealsBurn" burn=burn}}{{/if}}{{#if ended}} {{localize "DEICIDE.Card.Ends"}}{{/if}}.</li>
       {{/if}}
     {{/each}}
   </ul>

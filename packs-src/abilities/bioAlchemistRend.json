@@ -61,7 +61,14 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "partial",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "single"
+    ],
+    "automation": "full",
     "identifier": "bioAlchemistRend"
   },
   "effects": [],

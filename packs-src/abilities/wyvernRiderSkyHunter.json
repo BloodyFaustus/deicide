@@ -34,9 +34,22 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "effectiveness.bowVsFlying",
+        "op": "set",
+        "value": 1.5
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "bow damage x1\\.5 instead of x2"
+    ],
+    "automation": "full",
     "identifier": "wyvernRiderSkyHunter"
   },
   "effects": [],

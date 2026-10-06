@@ -43,6 +43,23 @@
       }
     ],
     "roll": null,
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": {
+      "modifiers": [
+        {
+          "key": "attributes.str",
+          "value": 3
+        },
+        {
+          "key": "attributes.spd",
+          "value": -2
+        }
+      ],
+      "effects": []
+    },
+    "coverage": [],
     "automation": "full",
     "identifier": "lancerLancerStance"
   },

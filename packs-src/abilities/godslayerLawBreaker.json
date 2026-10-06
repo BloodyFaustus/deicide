@@ -16,8 +16,8 @@
     "direct": false,
     "trigger": "",
     "usage": {
-      "limit": null,
-      "per": null
+      "limit": 1,
+      "per": "session"
     },
     "cost": {
       "channel": 0,
@@ -34,7 +34,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "flag",
+        "key": "capGradeEncounter",
+        "value": "SSS",
+        "target": "self",
+        "duration": "encounter"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "SSS cap for one encounter per session"
+    ],
+    "automation": "full",
     "identifier": "godslayerLawBreaker"
   },
   "effects": [],

@@ -1,0 +1,499 @@
+{
+  "name": "Petra Sigrun",
+  "type": "character",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "level": 7,
+    "xp": 0,
+    "attributes": {
+      "str": 8,
+      "mag": 6,
+      "skl": 14,
+      "spd": 14,
+      "def": 8,
+      "res": 6,
+      "cmd": 6
+    },
+    "growthTenths": {
+      "str": 5,
+      "mag": 2,
+      "skl": 9,
+      "spd": 8,
+      "def": 6,
+      "res": 6,
+      "cmd": 3
+    },
+    "growthLog": [
+      {
+        "level": 1,
+        "classId": "rogue",
+        "tier": 1,
+        "tenths": {},
+        "gains": {},
+        "hp": 3
+      },
+      {
+        "level": 2,
+        "classId": "rogue",
+        "tier": 1,
+        "tenths": {
+          "str": 6,
+          "mag": 2,
+          "skl": 11,
+          "spd": 7,
+          "def": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "gains": {
+          "skl": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 3,
+        "classId": "rogue",
+        "tier": 1,
+        "tenths": {
+          "str": 6,
+          "mag": 2,
+          "skl": 11,
+          "spd": 7,
+          "def": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "gains": {
+          "str": 1,
+          "skl": 1,
+          "spd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 4,
+        "classId": "rogue",
+        "tier": 1,
+        "tenths": {
+          "str": 6,
+          "mag": 2,
+          "skl": 11,
+          "spd": 7,
+          "def": 1,
+          "res": 1,
+          "cmd": 1
+        },
+        "gains": {
+          "skl": 1,
+          "spd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 5,
+        "classId": "assassin",
+        "tier": 2,
+        "tenths": {
+          "str": 9,
+          "mag": 2,
+          "skl": 12,
+          "spd": 9,
+          "def": 1,
+          "res": 1,
+          "cmd": 0
+        },
+        "gains": {
+          "str": 1,
+          "skl": 1,
+          "spd": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 6,
+        "classId": "assassin",
+        "tier": 2,
+        "tenths": {
+          "str": 9,
+          "mag": 2,
+          "skl": 12,
+          "spd": 9,
+          "def": 1,
+          "res": 1,
+          "cmd": 0
+        },
+        "gains": {
+          "str": 1,
+          "mag": 1,
+          "skl": 1
+        },
+        "hp": 3
+      },
+      {
+        "level": 7,
+        "classId": "assassin",
+        "tier": 2,
+        "tenths": {
+          "str": 9,
+          "mag": 2,
+          "skl": 12,
+          "spd": 9,
+          "def": 1,
+          "res": 1,
+          "cmd": 0
+        },
+        "gains": {
+          "str": 1,
+          "skl": 1,
+          "spd": 1
+        },
+        "hp": 3
+      }
+    ],
+    "promotionBonuses": [
+      {
+        "tier": 2,
+        "classId": "assassin",
+        "stats": {
+          "str": 1,
+          "skl": 1,
+          "spd": 1
+        }
+      }
+    ],
+    "rankBonuses": [
+      {
+        "classId": "assassin",
+        "rank": 3,
+        "stat": "skl",
+        "value": 1
+      },
+      {
+        "classId": "assassin",
+        "rank": 5,
+        "stat": "skl",
+        "value": 1
+      }
+    ],
+    "adaptations": [],
+    "people": "foreignHuman",
+    "peopleSubtype": "",
+    "background": null,
+    "talent": {
+      "id": "earlyPeak",
+      "stat": null,
+      "penaltyStat": null,
+      "proficiency": null,
+      "placement": {
+        "str": 0,
+        "mag": 0,
+        "skl": 4,
+        "spd": 4,
+        "def": 0,
+        "res": 0,
+        "cmd": 0
+      }
+    },
+    "personalGrowth": {
+      "str": 3,
+      "mag": 0,
+      "skl": 3,
+      "spd": 0,
+      "def": 0,
+      "res": 0,
+      "cmd": 0
+    },
+    "classes": [
+      {
+        "id": "rogue",
+        "rank": 7,
+        "cp100": 3300,
+        "choices": {}
+      },
+      {
+        "id": "assassin",
+        "rank": 5,
+        "cp100": 2960,
+        "choices": {}
+      }
+    ],
+    "activeClass": "assassin",
+    "loadout": {
+      "secondary": "rogue",
+      "reaction": null,
+      "supports": [
+        "rogueLockpick",
+        "assassinLethality"
+      ],
+      "stance": null
+    },
+    "manaburn": 0,
+    "saturation": null,
+    "marks": 0,
+    "divineAttention": 0,
+    "static": 0,
+    "stolen": [],
+    "standingFaction": {
+      "crown": 40,
+      "army": 40,
+      "civilians": 40,
+      "temple": 40,
+      "mages": 40,
+      "brasswater": 40,
+      "underworld": 40,
+      "duneTribes": 40,
+      "offweiss": 40,
+      "council": 40,
+      "gravetide": 40,
+      "briarwall": 40,
+      "valedorn": 40,
+      "seastrand": 40
+    },
+    "dust": 15,
+    "storyGates": [],
+    "hp": {
+      "value": 55
+    },
+    "channel": {
+      "value": 10
+    },
+    "matter": {
+      "value": 0
+    },
+    "recruit": {
+      "profile": "veteran",
+      "ownerId": null,
+      "status": "known",
+      "personalSkillId": "personalHuntersPatience",
+      "story": false,
+      "gmRun": true
+    },
+    "standingPersonal": {},
+    "notes": "<p>Imperial special operations commander, the party's recurring martial rival, possible defector.</p><p>Starts as Assassin (Rogue 7, Assassin 5) at party level +2 on first appearance, rebuilt at party level +2 on every appearance with one more Tier 3 step each time (Shadow, then Spellbreaker if the party has mages). Early Peak Talent. She escapes at 25 percent HP unless pinned by two adjacent characters. Recruitable in Act II at personal Standing 60 if Offweiss has burned her (Legitimacy of Offweiss below 5 on the Offweiss sheet). This snapshot is level 7 (party level 5 plus 2).</p><p>Personal skill Hunter's Patience: Off Map works from any edge on round 1.</p><p>Petra Sigrun, Foreign Human Assassin of Offweiss, level 7. Imperial special operations commander, the party's recurring martial rival, possible defector. Carries Steel Sword, Steel Medium Armor, Steel Buckler and Iron Ring. Petra knows every smuggler's dock by name.</p>"
+  },
+  "items": [
+    {
+      "name": "Steel Sword",
+      "type": "weapon",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "steelSword",
+        "line": "sword",
+        "tier": "steel",
+        "prefix": null,
+        "forge": 0,
+        "element": null,
+        "asSidearm": false,
+        "equipped": true,
+        "quantity": 1,
+        "description": ""
+      },
+      "_id": "9wcLmTfyR1bb2F5G",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Steel Medium Armor",
+      "type": "armor",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "identifier": "steelMedium",
+        "equipped": true,
+        "description": ""
+      },
+      "_id": "v0phejn0OvlBs2qi",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Steel Buckler",
+      "type": "offhand",
+      "img": "icons/svg/shield.svg",
+      "system": {
+        "identifier": "steelBuckler",
+        "line": "buckler",
+        "tier": "steel",
+        "equipped": true,
+        "description": ""
+      },
+      "_id": "oVU0scJqjQoTgelk",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Iron Ring",
+      "type": "accessory",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "identifier": "ironRing",
+        "key": "ironRing",
+        "choices": {
+          "attribute": "skl",
+          "secondAttribute": null,
+          "skill": null
+        },
+        "equipped": true,
+        "description": ""
+      },
+      "_id": "FtsVC0xM5476Be1a",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "name": "Hunter's Patience",
+      "type": "ability",
+      "img": "icons/svg/upgrade.svg",
+      "system": {
+        "identifier": "personalHuntersPatience",
+        "type": "support",
+        "source": {
+          "kind": "personal",
+          "id": "npcPetraSigrun",
+          "rank": null
+        },
+        "description": "<p>Off Map works from any edge on round 1.</p>",
+        "summary": "Off Map works from any edge on round 1",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": null,
+        "heal": null,
+        "war": null,
+        "dungeon": null,
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "effects": [
+          {
+            "kind": "flag",
+            "key": "offMapAnyEdge",
+            "value": true
+          }
+        ],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [
+          "Off Map"
+        ],
+        "automation": "partial"
+      },
+      "_id": "RoItYtmtjo1ufFqn",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "prototypeToken": {
+    "name": "Petra Sigrun",
+    "actorLink": true,
+    "disposition": -1,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg"
+    }
+  },
+  "flags": {
+    "deicide": {
+      "generated": {
+        "kind": "npc",
+        "seed": "petraSigrun",
+        "input": {
+          "level": 7,
+          "classLine": [
+            "rogue",
+            "assassin"
+          ],
+          "people": "foreignHuman",
+          "profile": "veteran",
+          "named": true,
+          "ranks": {
+            "rogue": 7,
+            "assassin": 5
+          },
+          "classAt": {
+            "assassin": 5
+          },
+          "personalSkill": "personalHuntersPatience",
+          "seed": "petraSigrun",
+          "name": "Petra Sigrun",
+          "faction": "offweiss",
+          "role": "Imperial special operations commander, the party's recurring martial rival, possible defector",
+          "description": "Starts as Assassin (Rogue 7, Assassin 5) at party level +2 on first appearance, rebuilt at party level +2 on every appearance with one more Tier 3 step each time (Shadow, then Spellbreaker if the party has mages). Early Peak Talent. She escapes at 25 percent HP unless pinned by two adjacent characters. Recruitable in Act II at personal Standing 60 if Offweiss has burned her (Legitimacy of Offweiss below 5 on the Offweiss sheet). This snapshot is level 7 (party level 5 plus 2).",
+          "dials": {
+            "S": 45,
+            "L": 30
+          }
+        },
+        "role": "Imperial special operations commander, the party's recurring martial rival, possible defector",
+        "recruit": null
+      },
+      "faction": "offweiss",
+      "identifier": "petraSigrun"
+    }
+  },
+  "_id": "C7OXwrJlKvFvLdQK",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

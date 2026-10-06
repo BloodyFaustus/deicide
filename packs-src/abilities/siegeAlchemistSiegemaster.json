@@ -35,9 +35,27 @@
       "note": "Ranges are War Mode numbers."
     },
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "range.max",
+        "value": 2,
+        "when": {
+          "actionId": [
+            "siegeAlchemistStoneLance",
+            "siegeAlchemistShell"
+          ]
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Stone Lance and Shell range \\+2"
+    ],
+    "automation": "full",
     "identifier": "siegeAlchemistSiegemaster"
   },
   "effects": [],

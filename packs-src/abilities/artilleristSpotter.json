@@ -34,7 +34,21 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "flag",
+        "key": "lineOfSightFromCompanies",
+        "value": true,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "companies in radius give you line of sight"
+    ],
+    "automation": "full",
     "identifier": "artilleristSpotter"
   },
   "effects": [],

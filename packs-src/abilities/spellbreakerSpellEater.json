@@ -48,7 +48,32 @@
     "roll": {
       "formula": "3 * skl"
     },
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "cancel",
+        "what": "triggeringAction"
+      },
+      {
+        "kind": "pool",
+        "key": "channel",
+        "delta": 2,
+        "target": "self"
+      }
+    ],
+    "reaction": {
+      "trigger": "enemyCast",
+      "window": {
+        "tiles": 3,
+        "row": "any"
+      },
+      "roll": {
+        "d100Under": "3 * skl"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "spellbreakerSpellEater"
   },
   "effects": [],

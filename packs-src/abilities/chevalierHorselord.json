@@ -36,10 +36,29 @@
       {
         "key": "move",
         "value": 2
+      },
+      {
+        "key": "terrainCost.river",
+        "op": "set",
+        "value": 3
       }
     ],
     "roll": null,
-    "automation": "partial",
+    "effects": [
+      {
+        "kind": "flag",
+        "key": "riverPassable",
+        "value": true,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "river passable"
+    ],
+    "automation": "full",
     "identifier": "chevalierHorselord"
   },
   "effects": [],

@@ -3,44 +3,53 @@
     <img class="profile" src="{{actor.img}}" alt="{{actor.name}}" data-action="editImage" data-edit="img">
     <div class="identity">
       <input type="text" name="name" value="{{actor.name}}">
-      <p class="line">Level <input type="number" name="system.level" value="{{system.level}}" min="1" class="tiny"> {{#if derived.isBoss}}Boss, {{/if}}Hit {{derived.hit}}%, Avoid {{derived.avoid}}{{#if derived.fixedDelay}}, Delay {{derived.fixedDelay}}{{/if}}</p>
+      <p class="line">{{localize "DEICIDE.Common.Level"}} <input type="number" name="system.level" value="{{system.level}}" min="1" class="tiny"> {{#if derived.isBoss}}{{localize "DEICIDE.Common.Boss"}}, {{/if}}{{localize "DEICIDE.Common.Hit"}} {{derived.hit}}%, {{localize "DEICIDE.Common.Avoid"}} {{derived.avoid}}{{#if derived.fixedDelay}}, {{localize "DEICIDE.Monster.Delay"}} {{derived.fixedDelay}}{{/if}}</p>
     </div>
   </header>
-  <div class="hp-bar" data-tooltip="HP"><span class="fill" style="width: {{hpPercent}}%"></span><span class="text">HP {{system.hp.value}} / {{system.hp.max}} (phase {{derived.phase}})</span></div>
+  <div class="hp-bar" data-tooltip="{{localize 'DEICIDE.Common.HP'}}"><span class="fill" style="width: {{hpPercent}}%"></span><span class="text">{{localize "DEICIDE.Common.HP"}} {{system.hp.value}} / {{system.hp.max}} ({{localize "DEICIDE.Monster.Phase"}} {{derived.phase}})</span></div>
   <div class="grid four">
-    <label>HP <input type="number" name="system.hp.value" value="{{system.hp.value}}" min="0"></label>
-    <label>Max HP <input type="number" name="system.hp.max" value="{{system.hp.max}}" min="1"></label>
-    <label>DEF <input type="number" name="system.def" value="{{system.def}}" min="0"></label>
-    <label>RES <input type="number" name="system.res" value="{{system.res}}" min="0"></label>
-    <label>SPD <input type="number" name="system.spd" value="{{system.spd}}" min="0"></label>
-    <label>MAG <input type="number" name="system.mag" value="{{system.mag}}" min="0"></label>
-    <label>Delay <select name="system.delay.mode"><option value="spd" {{#if (eq system.delay.mode "spd")}}selected{{/if}}>by SPD</option><option value="fixed" {{#if (eq system.delay.mode "fixed")}}selected{{/if}}>fixed</option></select></label>
-    <label>Fixed value <input type="number" name="system.delay.value" value="{{system.delay.value}}" min="0"></label>
-    <label>Hit override <input type="number" name="system.hitBase" value="{{system.hitBase}}" placeholder="formula"></label>
-    <label>Weakness <select name="system.weakness"><option value="">none</option>{{#each elements}}<option value="{{id}}" {{#if (eq id @root.system.weakness)}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
-    <label>Resistance <select name="system.resistance"><option value="">none</option>{{#each elements}}<option value="{{id}}" {{#if (eq id @root.system.resistance)}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
-    <label><input type="checkbox" name="system.boss" {{#if system.boss}}checked{{/if}}> Boss</label>
-    <label><input type="checkbox" name="system.divineBeing" {{#if system.divineBeing}}checked{{/if}}> Divine being</label>
-    <label>Row <select name="system.row"><option value="front" {{#if (eq system.row "front")}}selected{{/if}}>front</option><option value="back" {{#if (eq system.row "back")}}selected{{/if}}>back</option></select></label>
+    <label>{{localize "DEICIDE.Common.HP"}} <input type="number" name="system.hp.value" value="{{system.hp.value}}" min="0"></label>
+    <label>{{localize "DEICIDE.Common.MaxHP"}} <input type="number" name="system.hp.max" value="{{system.hp.max}}" min="1"></label>
+    <label>{{localize "DEICIDE.Common.DEF"}} <input type="number" name="system.def" value="{{system.def}}" min="0"></label>
+    <label>{{localize "DEICIDE.Common.RES"}} <input type="number" name="system.res" value="{{system.res}}" min="0"></label>
+    <label>{{localize "DEICIDE.Common.SPD"}} <input type="number" name="system.spd" value="{{system.spd}}" min="0"></label>
+    <label>{{localize "DEICIDE.Common.MAG"}} <input type="number" name="system.mag" value="{{system.mag}}" min="0"></label>
+    <label>{{localize "DEICIDE.Monster.Delay"}} <select name="system.delay.mode"><option value="spd" {{#if (eq system.delay.mode "spd")}}selected{{/if}}>{{localize "DEICIDE.Monster.BySpd"}}</option><option value="fixed" {{#if (eq system.delay.mode "fixed")}}selected{{/if}}>{{localize "DEICIDE.Monster.Fixed"}}</option></select></label>
+    <label>{{localize "DEICIDE.Monster.FixedValue"}} <input type="number" name="system.delay.value" value="{{system.delay.value}}" min="0"></label>
+    <label>{{localize "DEICIDE.Monster.HitOverride"}} <input type="number" name="system.hitBase" value="{{system.hitBase}}" placeholder="{{localize 'DEICIDE.Monster.Formula'}}"></label>
+    <label>{{localize "DEICIDE.Monster.Weakness"}} <select name="system.weakness"><option value="">{{localize "DEICIDE.Common.None"}}</option>{{#each elements}}<option value="{{id}}" {{#if (eq id @root.system.weakness)}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+    <label>{{localize "DEICIDE.Monster.Resistance"}} <select name="system.resistance"><option value="">{{localize "DEICIDE.Common.None"}}</option>{{#each elements}}<option value="{{id}}" {{#if (eq id @root.system.resistance)}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+    <label><input type="checkbox" name="system.boss" {{#if system.boss}}checked{{/if}}> {{localize "DEICIDE.Common.Boss"}}</label>
+    <label><input type="checkbox" name="system.divineBeing" {{#if system.divineBeing}}checked{{/if}}> {{localize "DEICIDE.Monster.Divine"}}</label>
+    <label>{{localize "DEICIDE.Common.Row"}} <select name="system.row"><option value="front" {{#if (eq system.row "front")}}selected{{/if}}>{{localize "DEICIDE.Common.Front"}}</option><option value="back" {{#if (eq system.row "back")}}selected{{/if}}>{{localize "DEICIDE.Common.Back"}}</option></select></label>
   </div>
   <p class="tags">
     {{#each tags}}<label class="tag"><input type="checkbox" data-tag="{{id}}" {{#if active}}checked{{/if}}> {{label}}</label>{{/each}}
     {{#each classTypeTags}}<label class="tag"><input type="checkbox" data-tag="{{id}}" {{#if active}}checked{{/if}}> {{label}}</label>{{/each}}
   </p>
-  <h3>Moves <button type="button" class="inline-control icon fa-solid fa-plus" data-action="addMove" data-tooltip="New move"></button></h3>
+  <h3>{{localize "DEICIDE.Monster.Moves"}} <button type="button" class="inline-control icon fa-solid fa-plus" data-action="addMove" data-tooltip="{{localize 'DEICIDE.Monster.NewMove'}}"></button></h3>
   <ul class="item-list plain">
     {{#each moves}}
     <li class="item-row" data-item-id="{{id}}">
       <span class="name" data-action="editItem">{{name}}{{#if direct}} <span class="truth">TRUE</span>{{/if}}</span>
       <span class="summary">{{summary}}</span>
-      <button type="button" class="use" data-action="useMove" data-tooltip="Use on targets"><i class="fa-solid fa-play"></i></button>
+      <button type="button" class="use" data-action="useMove" data-tooltip="{{localize 'DEICIDE.Monster.UseMove'}}"><i class="fa-solid fa-play"></i></button>
       <button type="button" class="inline-control icon fa-solid fa-trash" data-action="deleteItem"></button>
     </li>
     {{/each}}
   </ul>
-  <h3>Phase breaks</h3>
-  <ul class="plain">{{#each system.phaseBreaks}}<li>{{percent}} percent: {{note}}</li>{{else}}<li class="empty">None.</li>{{/each}}</ul>
-  <h3>Yield</h3>
-  <p class="stat-line"><span>Saturation {{system.yield.saturation}}</span><span>Dust {{system.yield.dust}}</span><span>Drops {{#each system.yield.drops}}{{this}} {{/each}}</span></p>
+  <h3>{{localize "DEICIDE.Monster.PhaseBreaks"}} <button type="button" class="inline-control icon fa-solid fa-plus" data-action="addPhaseBreak" data-tooltip="{{localize 'DEICIDE.Monster.PhaseAdd'}}"></button></h3>
+  <ul class="plain phase-breaks">
+    {{#each phaseBreaks}}
+    <li class="phase-break {{#if triggered}}done{{/if}}">
+      <input type="number" name="system.phaseBreaks.{{@index}}.percent" value="{{percent}}" min="1" max="99" class="tiny"> <span>{{localize "DEICIDE.Common.Percent"}}</span>
+      <input type="text" name="system.phaseBreaks.{{@index}}.note" value="{{note}}" placeholder="{{localize 'DEICIDE.Monster.PhaseNote'}}">
+      <label class="tag"><input type="checkbox" name="system.phaseBreaks.{{@index}}.triggered" {{#if triggered}}checked{{/if}}> {{localize "DEICIDE.Monster.PhaseTriggered"}}</label>
+      <button type="button" class="inline-control icon fa-solid fa-trash" data-action="removePhaseBreak" data-index="{{@index}}"></button>
+    </li>
+    {{else}}<li class="empty">{{localize "DEICIDE.Monster.NoPhase"}}</li>{{/each}}
+  </ul>
+  <h3>{{localize "DEICIDE.Monster.Yield"}}</h3>
+  <p class="stat-line"><span>{{localize "DEICIDE.Character.Saturation"}} {{system.yield.saturation}}</span><span>{{localize "DEICIDE.Common.Dust"}} {{system.yield.dust}}</span><span>{{localize "DEICIDE.Monster.Drops"}} {{#each system.yield.drops}}{{this}} {{/each}}</span></p>
   <div class="description">{{{descriptionHtml}}}</div>
 </section>

@@ -46,7 +46,33 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "revive",
+        "fraction": 0.5,
+        "target": "ally"
+      },
+      {
+        "kind": "pool",
+        "key": "divineAttention",
+        "delta": 1,
+        "target": "self"
+      }
+    ],
+    "reaction": {
+      "trigger": "allyDowned",
+      "window": {
+        "tiles": 3,
+        "row": "any"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "they live at half HP",
+      "Divine Attention \\+1"
+    ],
+    "automation": "full",
     "identifier": "philosopherReconstitute"
   },
   "effects": [],

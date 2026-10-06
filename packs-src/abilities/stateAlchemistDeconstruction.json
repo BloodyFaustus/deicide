@@ -61,7 +61,27 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "partial",
+    "effects": [
+      {
+        "kind": "flag",
+        "key": "companyQualityMinus1",
+        "value": true,
+        "target": "target",
+        "chance": "onHit",
+        "when": {
+          "targetType": "company"
+        }
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "single",
+      "Against a company",
+      "Quality minus 1 permanently"
+    ],
+    "automation": "full",
     "identifier": "stateAlchemistDeconstruction"
   },
   "effects": [],

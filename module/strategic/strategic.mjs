@@ -2,6 +2,7 @@ import {DEICIDE} from "../config.mjs";
 import {evaluate} from "../core/expression.mjs";
 import {d100} from "../core/random.mjs";
 import {encounterAwards} from "../rules/pacing.mjs";
+import {formatCp} from "../rules/growth.mjs";
 
 function logEntry(nation, text, changes = {}) {
   return [...nation.system.log.map(entry => entry.toObject?.() ?? entry), {month: nation.system.warMonth, text, changes}];
@@ -95,11 +96,11 @@ export async function awardEncounter(actors, {kind, enemyTier = 1, difficulty = 
     const status = actor.system.recruit.status;
     const statusMultiplier = status === "attached" ? DEICIDE.xp.attachedMultiplier : 1;
     const xp = Math.round(awards.xp * multiplier * statusMultiplier);
-    const cp = status === "attached" ? 0 : awards.cp;
+    const cp100 = status === "attached" ? 0 : awards.cp100;
     await actor.update({"system.dust": actor.system.dust + awards.dust});
     const levels = xp ? await actor.awardXp(xp) : 0;
-    if ( cp ) await actor.awardCp(cp);
-    lines.push(`${actor.name}: ${xp} XP${levels ? ` (+${levels} level${levels > 1 ? "s" : ""})` : ""}, ${cp} CP, ${awards.dust} Dust`);
+    if ( cp100 ) await actor.awardCp(cp100);
+    lines.push(`${actor.name}: ${xp} XP${levels ? ` (+${levels} level${levels > 1 ? "s" : ""})` : ""}, ${formatCp(cp100)} CP, ${awards.dust} Dust`);
   }
   await ChatMessage.implementation.create({content: `<div class="deicide-card awards"><h3>Awards (${kind}, P ${game.deicide.nation.P.toFixed(2)})</h3><ul>${lines.map(l => `<li>${l}</li>`).join("")}</ul></div>`, speaker: {alias: "Deicide"}});
   return lines;

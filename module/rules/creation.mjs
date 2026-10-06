@@ -1,5 +1,5 @@
 import {DEICIDE} from "../config.mjs";
-import {attributeRecord, cpForRank, levelOneEntry, sumRecords, validatePersonalGrowth} from "./growth.mjs";
+import {attributeRecord, cp100ForRank, levelOneEntry, sumRecords, validatePersonalGrowth} from "./growth.mjs";
 
 const ATTRS = DEICIDE.attributeIds;
 
@@ -24,7 +24,7 @@ export function startingClasses(baseClass, background, choices = {}) {
     ranks.set(grant.id, Math.max(ranks.get(grant.id) ?? 0, grant.rank ?? 1));
   }
   const classes = Array.from(ranks.entries()).map(([id, rank]) => ({
-    id, rank, cp: cpForRank(rank), choices: choices[id] ?? {}
+    id, rank, cp100: cp100ForRank(rank), choices: choices[id] ?? {}
   }));
   return {classes, activeClass: background?.grants?.activeClass ?? baseClass.identifier};
 }
@@ -36,7 +36,7 @@ export function createCharacter(inputs, lookup) {
   const baseClass = lookup("class", inputs.baseClass);
   const talent = inputs.talent?.id ? lookup("origin", inputs.talent.id) : null;
   if ( !people ) errors.push(`Unknown people "${inputs.people}"`);
-  if ( !background ) errors.push(`Unknown background "${inputs.background}"`);
+  if ( inputs.background && !background ) errors.push(`Unknown background "${inputs.background}"`);
   if ( !baseClass ) errors.push(`Unknown base class "${inputs.baseClass}"`);
   if ( inputs.talent?.id && !talent ) errors.push(`Unknown Talent "${inputs.talent.id}"`);
   if ( !baseClass ) return {system: null, errors};
@@ -63,7 +63,7 @@ export function createCharacter(inputs, lookup) {
 
   const starting = startingClasses(baseClass, background, inputs.classChoices);
   const classes = inputs.classes
-    ? inputs.classes.map(entry => ({id: entry.id, rank: entry.rank ?? 1, cp: entry.cp ?? cpForRank(entry.rank ?? 1), choices: entry.choices ?? {}}))
+    ? inputs.classes.map(entry => ({id: entry.id, rank: entry.rank ?? 1, cp100: entry.cp100 ?? cp100ForRank(entry.rank ?? 1), choices: entry.choices ?? {}}))
     : starting.classes;
   const activeClass = inputs.activeClass ?? starting.activeClass;
   const activeData = lookup("class", activeClass) ?? baseClass;
@@ -83,6 +83,8 @@ export function createCharacter(inputs, lookup) {
     : {id: null, stat: null, penaltyStat: null, proficiency: null, placement: {}};
 
   const standing = {};
+  for ( const faction of Object.keys(DEICIDE.factions) ) standing[faction] = DEICIDE.standing.default;
+  for ( const [faction, value] of Object.entries(grants.standingBonus ?? {}) ) standing[faction] = (standing[faction] ?? DEICIDE.standing.default) + value;
   for ( const [faction, value] of Object.entries(grants.standing ?? {}) ) standing[faction] = value;
 
   const system = {

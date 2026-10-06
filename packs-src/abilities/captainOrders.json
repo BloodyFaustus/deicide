@@ -34,7 +34,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "oneCompany",
+      "effects": [
+        {
+          "kind": "grantAction",
+          "count": 1,
+          "scope": "oneCompany",
+          "target": "companies"
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "captainOrders"
   },
   "effects": [],

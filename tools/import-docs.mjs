@@ -1,10 +1,25 @@
-import {readFileSync} from "node:fs";
+import {readFileSync, readdirSync, existsSync} from "node:fs";
 import {join} from "node:path";
+import {pathToFileURL} from "node:url";
 import {DEICIDE} from "../module/config.mjs";
 import {ROOT, camelId, pascalId, stableId, writeSource} from "./lib/sources.mjs";
 import {sections, tables, findSection} from "./lib/markdown.mjs";
+import {gradeAutomation} from "./lib/automation.mjs";
 import {peoples, backgrounds, talents, originAbilities} from "./content/origins.mjs";
 import {classOverrides, abilityOverrides, enemyClasses} from "./content/overrides.mjs";
+
+const automationData = {};
+const automationDir = join(ROOT, "tools", "content", "automation");
+if ( existsSync(automationDir) ) {
+  for ( const file of readdirSync(automationDir).filter(name => name.endsWith(".mjs")).sort() ) {
+    const module = await import(pathToFileURL(join(automationDir, file)).href);
+    for ( const [id, data] of Object.entries(module.default ?? {}) ) {
+      if ( automationData[id] ) console.warn(`Automation data for ${id} appears twice (${file})`);
+      automationData[id] = data;
+    }
+  }
+}
+export const automationIds = new Set(Object.keys(automationData));
 
 const force = process.argv.includes("--force");
 const ATTRS = DEICIDE.attributeIds;
@@ -341,13 +356,6 @@ function abilityDocument({id, name, type, direct, text, source, classData, extra
   if ( /Mana Piercing/.test(text) ) tags.push("manaPiercing");
   if ( classData?.types?.includes("flying") && /\b(Dive|fly|flight|air|sky)\b/i.test(`${name} ${text}`) ) tags.push("flight");
 
-  let automation = parsed.automation;
-  if ( !passive ) {
-    if ( attack || heal ) automation = (attack?.bonuses?.length || /\bor\b|then|until|if\b/.test(text)) ? "partial" : "partial";
-    else automation = "manual";
-    if ( (type === "command") ) automation = "manual";
-  }
-
   const system = {
     type,
     source,
@@ -366,13 +374,35 @@ function abilityDocument({id, name, type, direct, text, source, classData, extra
     statuses: (type === "action") || (type === "reaction") ? parseStatuses(text) : [],
     modifiers: parsed.modifiers,
     roll: null,
-    automation
+    effects: [],
+    reaction: null,
+    command: null,
+    stance: null,
+    coverage: [],
+    automation: "manual"
   };
   deepMerge(system, extra ?? {});
   deepMerge(system, abilityOverrides[id] ?? {});
+  deepMerge(system, automationData[id] ?? {});
+  normalizeAutomation(system, type);
   if ( system.attack && !system.attack.bonuses ) system.attack.bonuses = [];
+  system.automation = gradeAutomation(system).automation;
   report.automation[system.automation] = (report.automation[system.automation] ?? 0) + 1;
   return document("ability", id, name, system, ICONS[type] ?? ICONS.action);
+}
+
+function normalizeAutomation(system, type) {
+  if ( type === "stance" ) {
+    system.stance ??= {};
+    system.stance.modifiers = system.stance.modifiers?.length ? system.stance.modifiers : (system.modifiers ?? []);
+    system.stance.effects = system.stance.effects ?? [];
+    system.modifiers = system.stance.modifiers;
+  }
+  if ( type === "reaction" ) {
+    if ( system.reaction && system.roll?.formula && !system.reaction.roll ) system.reaction.roll = {d100Under: system.roll.formula};
+    if ( system.reaction?.roll?.d100Under && !system.roll ) system.roll = {formula: system.reaction.roll.d100Under};
+  }
+  if ( (type === "command") && system.command ) system.command.target ??= "companiesInRadius";
 }
 
 function run() {
@@ -506,10 +536,12 @@ function run() {
       },
       heal: null,
       war: {range: art.range ?? null, area: {shape: "single", size: 1}, target: "enemy", movement: null, terrain: false},
-      dungeon: null, statuses: [], modifiers: [], roll: null,
-      art: {lines: art.lines, minTier: art.minTier, spellMight: art.spellMight ?? 0, rowHealFraction: art.rowHealFraction ?? 0, nextMatterCost: art.nextMatterCost ?? null},
-      automation: caster ? "manual" : "partial"
+      dungeon: null, statuses: [], modifiers: [], roll: null, effects: [], reaction: null, command: null, stance: null,
+      coverage: [art.rowHealFraction ? "heal becomes a row heal" : null, art.ignoreWarded ? "ignores Warded on an adjacent target" : null].filter(Boolean),
+      art: {lines: art.lines, minTier: art.minTier, spellMight: art.spellMight ?? 0, rowHealFraction: art.rowHealFraction ?? 0, nextMatterCost: art.nextMatterCost ?? null, targetDef: art.targetDef ?? 0, turns: art.turns ?? 0},
+      automation: "manual"
     };
+    system.automation = gradeAutomation(system).automation;
     abilities.push(document("ability", id, name, system, ICONS.action));
   }
 

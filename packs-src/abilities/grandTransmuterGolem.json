@@ -50,7 +50,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "summon",
+        "companyType": "construct",
+        "strength": 60,
+        "quality": 3,
+        "duration": "battle"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Construct company Strength 60 Quality 3"
+    ],
+    "automation": "full",
     "identifier": "grandTransmuterGolem"
   },
   "effects": [],

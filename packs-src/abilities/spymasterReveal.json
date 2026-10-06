@@ -31,8 +31,8 @@
     "heal": null,
     "war": {
       "range": [
-        0,
-        0
+        1,
+        99
       ],
       "area": {
         "shape": "single",
@@ -46,7 +46,18 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "reveal",
+        "what": "doctrineAndStrength",
+        "target": "target"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "spymasterReveal"
   },
   "effects": [],

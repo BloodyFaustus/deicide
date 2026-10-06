@@ -2,7 +2,7 @@
   "id": "deicide",
   "title": "Deicide",
   "description": "Deicide: How to Kill a God. A JRPG tactics system with two combat engines, War Mode on a square grid and Dungeon Mode on rows and ticks, over a 12 month War Clock. Private table system.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "compatibility": {
     "minimum": "14",
     "verified": "14.364",
@@ -66,6 +66,7 @@
     {"name": "deicide-named", "label": "Named Items", "path": "packs/deicide-named", "type": "Item", "system": "deicide"},
     {"name": "deicide-companies", "label": "Companies and Ships", "path": "packs/deicide-companies", "type": "Actor", "system": "deicide"},
     {"name": "deicide-monsters", "label": "Monsters", "path": "packs/deicide-monsters", "type": "Actor", "system": "deicide"},
+    {"name": "deicide-npcs", "label": "Named NPCs", "path": "packs/deicide-npcs", "type": "Actor", "system": "deicide"},
     {"name": "deicide-scenarios", "label": "Scenarios", "path": "packs/deicide-scenarios", "type": "JournalEntry", "system": "deicide"}
   ],
   "packFolders": [
@@ -75,7 +76,7 @@
       "packs": [
         "deicide-classes", "deicide-abilities", "deicide-origins", "deicide-weapons", "deicide-armor",
         "deicide-accessories", "deicide-consumables", "deicide-named", "deicide-companies", "deicide-monsters",
-        "deicide-scenarios"
+        "deicide-npcs", "deicide-scenarios"
       ]
     }
   ],

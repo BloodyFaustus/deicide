@@ -46,7 +46,23 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "aura",
+        "radius": 99,
+        "target": "companiesInRadius",
+        "flags": {
+          "passMorale": true
+        }
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "morale auto pass for companies in radius"
+    ],
+    "automation": "full",
     "identifier": "imperialLegionaryDiscipline"
   },
   "effects": [],

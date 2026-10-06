@@ -34,7 +34,33 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "companiesInRadius",
+      "companyTypes": [
+        "battlemage"
+      ],
+      "effects": [
+        {
+          "kind": "applyStatus",
+          "statusId": "ordered",
+          "target": "companies",
+          "turns": "thisPhase",
+          "modifiers": [
+            {
+              "key": "quality",
+              "value": 3
+            }
+          ]
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [
+      "this volley"
+    ],
+    "automation": "full",
     "identifier": "magusFieldOfRuin"
   },
   "effects": [],

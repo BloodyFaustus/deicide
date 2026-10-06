@@ -43,6 +43,23 @@
       }
     ],
     "roll": null,
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": {
+      "modifiers": [
+        {
+          "key": "avoid",
+          "value": 10
+        },
+        {
+          "key": "defense.def",
+          "value": -2
+        }
+      ],
+      "effects": []
+    },
+    "coverage": [],
     "automation": "full",
     "identifier": "corsairSwashbuckle"
   },

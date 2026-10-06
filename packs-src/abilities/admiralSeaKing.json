@@ -34,7 +34,29 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "aura",
+        "radius": 99,
+        "target": "companiesInRadius",
+        "modifiers": [
+          {
+            "key": "quality",
+            "value": 2
+          }
+        ],
+        "when": {
+          "mode": "naval"
+        }
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "ships you command Quality \\+2"
+    ],
+    "automation": "full",
     "identifier": "admiralSeaKing"
   },
   "effects": [],

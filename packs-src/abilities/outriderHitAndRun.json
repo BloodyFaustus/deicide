@@ -46,7 +46,36 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "move",
+        "mode": "retreat",
+        "tiles": 2,
+        "target": "self"
+      },
+      {
+        "kind": "cancel",
+        "what": "triggeringAction",
+        "when": {
+          "actionMelee": true
+        }
+      }
+    ],
+    "reaction": {
+      "trigger": "targetedByAttack",
+      "window": {
+        "self": true
+      },
+      "when": {
+        "attackerRange": {
+          "max": 1
+        }
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "outriderHitAndRun"
   },
   "effects": [],

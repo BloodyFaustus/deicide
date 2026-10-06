@@ -32,9 +32,21 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "companyStartStrength",
+        "value": 10
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "companies you command start at Strength \\+10"
+    ],
+    "automation": "full",
     "identifier": "captainLogistics"
   },
   "effects": [],

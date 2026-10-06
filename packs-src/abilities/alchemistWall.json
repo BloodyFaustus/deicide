@@ -49,7 +49,19 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "terrain",
+        "op": "wall",
+        "side": "ally",
+        "row": "front"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "alchemistWall"
   },
   "effects": [],

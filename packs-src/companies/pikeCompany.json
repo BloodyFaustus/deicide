@@ -26,6 +26,9 @@
     "name": "Pike Company",
     "actorLink": true,
     "displayBars": 50,
+    "bar1": {
+      "attribute": "hp"
+    },
     "texture": {
       "src": "icons/svg/tower.svg"
     }

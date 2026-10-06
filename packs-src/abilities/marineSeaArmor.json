@@ -32,9 +32,22 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "effectiveness.piercingVsArmored",
+        "op": "set",
+        "value": 1.5
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Armored x2 weaknesses become x1\\.5"
+    ],
+    "automation": "full",
     "identifier": "marineSeaArmor"
   },
   "effects": [],

@@ -34,7 +34,18 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "reveal",
+        "what": "hpAndStatuses",
+        "target": "target"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "bioAlchemistAnatomist"
   },
   "effects": [],

@@ -46,7 +46,25 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "terrain",
+        "op": "remove",
+        "delay": "roundEnd"
+      },
+      {
+        "kind": "cancel",
+        "what": "barrier",
+        "delay": "roundEnd"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "a Wall tile or Barrier is destroyed at end of round"
+    ],
+    "automation": "full",
     "identifier": "dustwrightFuse"
   },
   "effects": [],

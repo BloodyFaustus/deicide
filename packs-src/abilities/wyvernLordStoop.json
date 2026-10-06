@@ -46,7 +46,24 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "counter"
+      }
+    ],
+    "reaction": {
+      "trigger": "allyTargeted",
+      "window": {
+        "tiles": 4,
+        "row": "any"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "enemy within 4 attacks ally"
+    ],
+    "automation": "full",
     "identifier": "wyvernLordStoop"
   },
   "effects": [],

@@ -34,7 +34,26 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "companiesInRadius",
+      "effects": [
+        {
+          "kind": "aura",
+          "radius": 3,
+          "target": "enemies",
+          "flags": {
+            "cannotRaiseWarded": true
+          }
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [
+      "enemy casters within 3 of companies in radius cannot raise Warded"
+    ],
+    "automation": "full",
     "identifier": "spellbreakerSuppression"
   },
   "effects": [],

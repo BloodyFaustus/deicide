@@ -49,7 +49,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "terrain",
+        "op": "set",
+        "side": "ally",
+        "row": "front"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "change one tile type or raise or remove a Wall",
+      "Dungeon: row Barrier 4 x MAG"
+    ],
+    "automation": "full",
     "identifier": "transmuterTransmuteTerrain"
   },
   "effects": [],

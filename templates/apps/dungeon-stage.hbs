@@ -1,42 +1,63 @@
 <div class="stage-root">
   {{#unless combat}}
-    <p class="empty">No Dungeon combat is running.</p>
+    <p class="empty">{{localize "DEICIDE.Stage.NoCombat"}}</p>
   {{else}}
   <header class="stage-header">
-    <span class="tick">Tick {{tick}}</span>
-    <span class="current">{{#if currentName}}{{currentName}} acts{{/if}}</span>
-    {{#if isGM}}
+    {{#if started}}
+    <span class="tick">{{localize "DEICIDE.Stage.Tick"}} {{tick}}</span>
+    <span class="current">{{#if currentName}}{{localize "DEICIDE.Stage.Acts" name=currentName}}{{/if}}</span>
     <span class="controls">
-      <button type="button" data-action="endAction" data-weight="6" data-tooltip="Light action, Weight 6">W6</button>
-      <button type="button" data-action="endAction" data-weight="8" data-tooltip="Standard action, Weight 8">W8</button>
-      <button type="button" data-action="endAction" data-weight="12" data-tooltip="Heavy action, Weight 12">W12</button>
-      <button type="button" data-action="endAction" data-weight="6" data-guard="true" data-tooltip="Guard"><i class="fa-solid fa-shield-halved"></i></button>
+      <button type="button" data-action="endAction" data-weight="6" data-tooltip="{{localize 'DEICIDE.Stage.W6'}}">W6</button>
+      <button type="button" data-action="endAction" data-weight="8" data-tooltip="{{localize 'DEICIDE.Stage.W8'}}">W8</button>
+      <button type="button" data-action="endAction" data-weight="12" data-tooltip="{{localize 'DEICIDE.Stage.W12'}}">W12</button>
+      <button type="button" data-action="endAction" data-weight="6" data-guard="true" data-tooltip="{{localize 'DEICIDE.Stage.Guard'}}" {{#unless currentCanGuard}}disabled{{/unless}}><i class="fa-solid fa-shield-halved"></i></button>
+      <button type="button" data-action="toggleGuardPreview" class="{{#if guardPreview}}on{{/if}}" data-tooltip="{{localize 'DEICIDE.Stage.GuardPreview'}}"><i class="fa-solid fa-eye"></i></button>
+      {{#if currentIsParty}}<button type="button" data-action="flee" data-tooltip="{{localize 'DEICIDE.Stage.FleeHint'}}"><i class="fa-solid fa-person-running"></i> {{localize "DEICIDE.Stage.Flee"}}{{#if flee}} {{flee.chance}}%{{/if}}</button>{{/if}}
+    </span>
+    {{else}}
+    <span class="setup">
+      <label>{{localize "DEICIDE.Stage.Surprise"}}
+        <span class="choices">
+          {{#each surpriseOptions}}<button type="button" data-action="setSurprise" data-surprise="{{id}}" class="{{#if (eq id @root.surprise)}}on{{/if}}">{{localize label}}</button>{{/each}}
+        </span>
+      </label>
+      {{#if isGM}}<button type="button" data-action="beginCombat"><i class="fa-solid fa-swords"></i> {{localize "DEICIDE.Stage.Begin"}}</button>{{/if}}
     </span>
     {{/if}}
   </header>
 
+  {{#each bosses}}
+  <div class="phase-banner boss">
+    <strong>{{name}}</strong> {{percent}}%, {{localize "DEICIDE.Stage.Phase"}} {{phase}}
+    <span class="breaks">{{#each breaks}}<span class="break {{#if triggered}}done{{/if}}" data-tooltip="{{note}}">{{percent}}%</span>{{/each}}</span>
+  </div>
+  {{/each}}
+
   <div class="battlefield">
     {{#each rows as |sideRows side|}}
     <div class="side side-{{side}}">
-      <h3>{{#if (eq side "party")}}Party{{else}}Enemy{{/if}}</h3>
+      <h3>{{#if (eq side "party")}}{{localize "DEICIDE.Stage.Party"}}{{else}}{{localize "DEICIDE.Stage.Enemy"}}{{/if}}</h3>
       {{#each sideRows as |list row|}}
       <div class="row-cell" data-side="{{side}}" data-row="{{row}}">
         <div class="row-title">
-          <span>{{row}} row ({{list.length}}/{{@root.capacity}})</span>
-          <span class="barrier" data-action="setBarrier" data-side="{{side}}" data-row="{{row}}" data-tooltip="Barrier pool. Click to set.">
-            <i class="fa-solid fa-shield"></i> {{lookup (lookup @root.barriers side) row}}
+          <span>{{localize (concat "DEICIDE.Stage.Row." row)}} ({{list.length}}/{{@root.capacity}})</span>
+          {{#with (lookup (lookup @root.barriers side) row) as |barrier|}}
+          <span class="barrier" data-action="setBarrier" data-side="{{side}}" data-row="{{row}}" data-tooltip="{{localize 'DEICIDE.Stage.BarrierHint'}}">
+            <i class="fa-solid fa-shield"></i> {{barrier.pool}}
+            <span class="barrier-bar"><span class="fill" style="width: {{barrier.width}}%"></span></span>
           </span>
+          {{/with}}
         </div>
         <div class="units">
           {{#each list}}
-          <div class="unit {{#if current}}current{{/if}} {{#if defeated}}defeated{{/if}} {{#if targeted}}targeted{{/if}}" draggable="true" data-combatant-id="{{id}}" data-action="target" data-tooltip="Click to target. Drag to another row.">
+          <div class="unit {{#if current}}current{{/if}} {{#if defeated}}defeated{{/if}} {{#if targeted}}targeted{{/if}} {{#if fled}}fled{{/if}}" draggable="true" data-combatant-id="{{id}}" data-action="target" data-tooltip="{{localize 'DEICIDE.Stage.UnitHint'}}">
             <img src="{{img}}" alt="{{name}}">
             <div class="unit-text">
               <strong>{{name}}</strong>
-              <span class="small">{{hp}} {{#if guard}}<i class="fa-solid fa-shield-halved"></i>{{/if}} tick {{nextTick}}</span>
+              <span class="small">{{hp}} {{#if guard}}<i class="fa-solid fa-shield-halved"></i>{{/if}} {{localize "DEICIDE.Stage.TickShort"}} {{nextTick}}</span>
               {{#if statuses.length}}<span class="small statuses">{{#each statuses}}{{this}} {{/each}}</span>{{/if}}
             </div>
-            <button type="button" class="inline-control icon fa-solid fa-right-left" data-action="swapRow" data-tooltip="Swap row"></button>
+            <button type="button" class="inline-control icon fa-solid fa-right-left" data-action="swapRow" data-tooltip="{{#if canSwap}}{{localize 'DEICIDE.Stage.SwapRow'}}{{else}}{{localize 'DEICIDE.Stage.SwapBlocked'}}{{/if}}" {{#unless canSwap}}disabled{{/unless}}></button>
           </div>
           {{/each}}
         </div>
@@ -46,9 +67,15 @@
     {{/each}}
   </div>
 
+  {{#if started}}
   <footer class="queue">
-    <span class="label">Next 10:</span>
-    {{#each projection}}<span class="projected" data-tooltip="Tick {{tick}}">{{name}}</span>{{/each}}
+    <span class="label">{{localize "DEICIDE.Stage.Next"}}</span>
+    {{#each projection}}<span class="projected" data-tooltip="{{localize 'DEICIDE.Stage.Tick'}} {{tick}}">{{name}}</span>{{/each}}
+    {{#if guardPreview}}
+    <span class="label guard">{{localize "DEICIDE.Stage.IfGuard"}}</span>
+    {{#each guardProjection}}<span class="projected {{#if current}}current{{/if}}" data-tooltip="{{localize 'DEICIDE.Stage.Tick'}} {{tick}}">{{name}}</span>{{/each}}
+    {{/if}}
   </footer>
+  {{/if}}
   {{/unless}}
 </div>

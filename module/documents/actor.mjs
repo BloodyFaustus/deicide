@@ -1,7 +1,7 @@
 import {DEICIDE, SYSTEM_ID} from "../config.mjs";
 import {createCharacter, issuedKit} from "../rules/creation.mjs";
 import {
-  applyLevel, applyPromotion, applyRankBonus, assignFlex, classCaps, cpForRank, rankForCp, trainedAttributes
+  applyLevel, applyPromotion, applyRankBonus, assignFlex, classCaps, cp100ForRank, rankForCp, trainedAttributes
 } from "../rules/growth.mjs";
 import {xpToNext} from "../rules/pacing.mjs";
 
@@ -35,7 +35,7 @@ export class DeicideActor extends foundry.documents.Actor {
     if ( allowed === false ) return false;
     const prototypeToken = {};
     if ( data.type === "character" ) Object.assign(prototypeToken, {actorLink: true, disposition: CONST.TOKEN_DISPOSITIONS.FRIENDLY, displayBars: CONST.TOKEN_DISPLAY_MODES.OWNER_HOVER});
-    if ( data.type === "company" ) Object.assign(prototypeToken, {actorLink: true, displayBars: CONST.TOKEN_DISPLAY_MODES.ALWAYS});
+    if ( data.type === "company" ) Object.assign(prototypeToken, {actorLink: true, displayBars: CONST.TOKEN_DISPLAY_MODES.ALWAYS, bar1: {attribute: "hp"}});
     if ( data.type === "monster" ) Object.assign(prototypeToken, {actorLink: false, disposition: CONST.TOKEN_DISPOSITIONS.HOSTILE, displayBars: CONST.TOKEN_DISPLAY_MODES.OWNER_HOVER});
     if ( Object.keys(prototypeToken).length ) this.updateSource({prototypeToken});
   }
@@ -109,8 +109,8 @@ export class DeicideActor extends foundry.documents.Actor {
     if ( !entry ) throw new Error("No active class");
     const classData = this.activeClassData;
     const before = entry.rank;
-    entry.cp += amount;
-    const newRank = Math.max(entry.rank, rankForCp(entry.cp));
+    entry.cp100 += Math.round(amount);
+    const newRank = Math.max(entry.rank, rankForCp(entry.cp100));
     let rankBonuses = this.system.toObject().rankBonuses;
     const caps = classCaps(classData, {
       talent: this.system.talent.id ? this.lookup("origin", this.system.talent.id) : null,
@@ -130,7 +130,7 @@ export class DeicideActor extends foundry.documents.Actor {
     if ( !classData ) throw new Error(`Unknown class "${classId}"`);
     const source = this.system.toObject();
     const classes = [...source.classes];
-    if ( !classes.some(c => c.id === classId) ) classes.push({id: classId, rank: 1, cp: cpForRank(1), choices});
+    if ( !classes.some(c => c.id === classId) ) classes.push({id: classId, rank: 1, cp100: cp100ForRank(1), choices});
     const caps = classCaps(classData, {
       talent: source.talent.id ? this.lookup("origin", source.talent.id) : null, talentChoice: source.talent,
       people: this.lookup("origin", source.people)

@@ -5,7 +5,7 @@
   "img": "icons/svg/village.svg",
   "system": {
     "kind": "background",
-    "description": "<p>Soldier Rank 2.</p>",
+    "description": "<p>Soldier Rank 2. Standing Army 55.</p>",
     "points": {
       "def": 2,
       "cmd": 2
@@ -16,7 +16,10 @@
           "id": "soldier",
           "rank": 2
         }
-      ]
+      ],
+      "standing": {
+        "army": 55
+      }
     },
     "identifier": "conscript"
   },

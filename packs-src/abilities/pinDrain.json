@@ -34,7 +34,25 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "heal",
+        "amount": "floor(damage / 2)",
+        "target": "self",
+        "chance": "onHit",
+        "trigger": "ownAttack",
+        "when": {
+          "actionTag": "reason"
+        }
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Reason spells heal you for half the damage dealt"
+    ],
+    "automation": "full",
     "identifier": "pinDrain"
   },
   "effects": [],

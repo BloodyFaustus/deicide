@@ -50,7 +50,36 @@
     "roll": {
       "formula": "20 + 3 * skl - 2 * casterMag"
     },
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "cancel",
+        "what": "triggeringAction"
+      },
+      {
+        "kind": "pool",
+        "key": "stolen",
+        "delta": "+ability",
+        "target": "self"
+      }
+    ],
+    "reaction": {
+      "trigger": "enemyCast",
+      "window": {
+        "tiles": 3,
+        "row": "any"
+      },
+      "roll": {
+        "d100Under": "20 + 3 * skl - 2 * casterMag"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "2 slots",
+      "3 at level 15",
+      "Release with the caster's Might and your SKL"
+    ],
+    "automation": "full",
     "identifier": "originSpellthief"
   },
   "effects": [],

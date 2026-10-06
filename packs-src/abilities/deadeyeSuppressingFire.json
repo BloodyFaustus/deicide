@@ -34,7 +34,33 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "companiesInRadius",
+      "companyTypes": [
+        "archer"
+      ],
+      "effects": [
+        {
+          "kind": "applyStatus",
+          "statusId": "ordered",
+          "target": "companies",
+          "turns": "thisPhase",
+          "modifiers": [
+            {
+              "key": "targetMove",
+              "value": -2
+            }
+          ]
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [
+      "archer companies in radius inflict Move minus 2"
+    ],
+    "automation": "full",
     "identifier": "deadeyeSuppressingFire"
   },
   "effects": [],

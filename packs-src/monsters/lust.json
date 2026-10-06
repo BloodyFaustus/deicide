@@ -14,6 +14,7 @@
     "res": 20,
     "spd": 14,
     "mag": 20,
+    "skl": 0,
     "delay": {
       "mode": "fixed",
       "value": 30
@@ -41,7 +42,8 @@
       "drops": [
         "redWater",
         "stoneFragment"
-      ]
+      ],
+      "divineAttention": 0
     },
     "row": "front",
     "description": "<p></p>",
@@ -110,6 +112,11 @@
         "modifiers": [],
         "roll": null,
         "art": null,
+        "effects": [],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [],
         "automation": "manual"
       },
       "effects": [],
@@ -192,6 +199,11 @@
         "modifiers": [],
         "roll": null,
         "art": null,
+        "effects": [],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [],
         "automation": "partial"
       },
       "effects": [],
@@ -260,6 +272,11 @@
         "modifiers": [],
         "roll": null,
         "art": null,
+        "effects": [],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [],
         "automation": "manual"
       },
       "effects": [],
@@ -351,7 +368,12 @@
         "modifiers": [],
         "roll": null,
         "art": null,
-        "automation": "partial"
+        "effects": [],
+        "reaction": null,
+        "command": null,
+        "stance": null,
+        "coverage": [],
+        "automation": "full"
       },
       "effects": [],
       "folder": null,

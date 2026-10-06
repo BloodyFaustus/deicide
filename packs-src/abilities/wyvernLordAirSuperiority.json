@@ -34,9 +34,22 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "effectiveness.bowVsFlying",
+        "op": "set",
+        "value": 1.25
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "bow x1\\.25 against you"
+    ],
+    "automation": "full",
     "identifier": "wyvernLordAirSuperiority"
   },
   "effects": [],

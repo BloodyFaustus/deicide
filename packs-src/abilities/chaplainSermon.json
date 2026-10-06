@@ -34,7 +34,20 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "standing",
+        "faction": "civilians",
+        "delta": 10,
+        "scope": "character",
+        "once": true
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "chaplainSermon"
   },
   "effects": [],

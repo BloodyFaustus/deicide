@@ -34,7 +34,30 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "companiesInRadius",
+      "effects": [
+        {
+          "kind": "applyStatus",
+          "statusId": "ordered",
+          "target": "companies",
+          "turns": "thisPhase",
+          "modifiers": [
+            {
+              "key": "avoid",
+              "value": 20
+            }
+          ]
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [
+      "companies in radius gain Fort Avoid this phase"
+    ],
+    "automation": "full",
     "identifier": "transmuterEarthworks"
   },
   "effects": [],

@@ -32,9 +32,26 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "cost.matter",
+        "op": "set",
+        "value": 0,
+        "when": {
+          "firstThisEncounter": true,
+          "actionSource": "alchemy"
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "first transmutation each encounter costs 0 Mt"
+    ],
+    "automation": "full",
     "identifier": "stateAlchemistArray"
   },
   "effects": [],

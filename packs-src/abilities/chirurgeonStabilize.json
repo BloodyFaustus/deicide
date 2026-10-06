@@ -48,7 +48,23 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "partial",
+    "effects": [
+      {
+        "kind": "heal",
+        "amount": "skl",
+        "target": "ally"
+      }
+    ],
+    "reaction": {
+      "trigger": "allyDowned",
+      "window": {
+        "adjacent": true
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "chirurgeonStabilize"
   },
   "effects": [],

@@ -46,7 +46,24 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "move",
+        "mode": "pull",
+        "tiles": 1,
+        "target": "attacker"
+      }
+    ],
+    "reaction": {
+      "trigger": "enemyMoved",
+      "window": {
+        "adjacent": true
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "corsairGrapnel"
   },
   "effects": [],

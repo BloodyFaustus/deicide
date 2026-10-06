@@ -34,7 +34,27 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "companiesInRadius",
+      "companyTypes": [
+        "flying"
+      ],
+      "effects": [
+        {
+          "kind": "move",
+          "mode": "carry",
+          "tiles": 6,
+          "target": "companies"
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [
+      "flying companies in radius deliver a company 6 tiles"
+    ],
+    "automation": "full",
     "identifier": "wyvernLordDropFormation"
   },
   "effects": [],

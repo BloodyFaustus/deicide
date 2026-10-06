@@ -44,9 +44,29 @@
     },
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "defense.def",
+        "value": 4
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "redirect",
+        "to": "self"
+      }
+    ],
+    "reaction": {
+      "trigger": "allyHit",
+      "window": {
+        "adjacent": true
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "knightGuardian"
   },
   "effects": [],

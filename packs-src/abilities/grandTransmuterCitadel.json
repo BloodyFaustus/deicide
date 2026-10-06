@@ -50,7 +50,23 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "terrain",
+        "op": "fort3x3",
+        "tileType": "fort",
+        "size": 3,
+        "side": "ally",
+        "row": "front"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "raise a 3 by 3 Fort"
+    ],
+    "automation": "full",
     "identifier": "grandTransmuterCitadel"
   },
   "effects": [],

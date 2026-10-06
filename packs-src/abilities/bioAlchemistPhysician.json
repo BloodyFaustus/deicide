@@ -32,9 +32,24 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "heal.rowFull",
+        "value": 1,
+        "when": {
+          "actionId": "bioAlchemistAlchemicalMedicine"
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Alchemical Medicine becomes a row heal at full value"
+    ],
+    "automation": "full",
     "identifier": "bioAlchemistPhysician"
   },
   "effects": [],

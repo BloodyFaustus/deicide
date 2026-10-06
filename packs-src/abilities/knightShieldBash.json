@@ -55,7 +55,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "partial",
+    "effects": [
+      {
+        "kind": "applyStatus",
+        "statusId": "rooted",
+        "target": "target",
+        "turns": 1,
+        "chance": "onHit"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "target loses next Canto or Swap"
+    ],
+    "automation": "full",
     "identifier": "knightShieldBash"
   },
   "effects": [],

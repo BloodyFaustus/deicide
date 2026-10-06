@@ -32,9 +32,31 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "damageTaken",
+        "op": "mul",
+        "value": 0.5,
+        "when": {
+          "actionTag": [
+            "reason",
+            "faith",
+            "void"
+          ]
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Reason",
+      "Faith",
+      "and Void damage against you halved"
+    ],
+    "automation": "full",
     "identifier": "spellbreakerMageBane"
   },
   "effects": [],

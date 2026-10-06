@@ -32,11 +32,11 @@
     "war": {
       "range": [
         0,
-        0
+        3
       ],
       "area": {
-        "shape": "single",
-        "size": 1
+        "shape": "blast",
+        "size": 3
       },
       "target": "enemy",
       "movement": null,
@@ -46,7 +46,21 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "flag",
+        "key": "forceMoraleCheck",
+        "value": true,
+        "target": "enemies"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "enemy companies within 3 morale check"
+    ],
+    "automation": "full",
     "identifier": "warlordWarCry"
   },
   "effects": [],

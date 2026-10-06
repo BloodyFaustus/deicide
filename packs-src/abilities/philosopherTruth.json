@@ -61,7 +61,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "partial",
+    "effects": [
+      {
+        "kind": "pool",
+        "key": "divineAttention",
+        "delta": 3,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "SP 0",
+      "Divine Attention \\+3"
+    ],
+    "automation": "full",
     "identifier": "philosopherTruth"
   },
   "effects": [],

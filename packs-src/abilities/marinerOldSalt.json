@@ -32,9 +32,21 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "shipQuality",
+        "value": 1
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "ships you crew Quality \\+1"
+    ],
+    "automation": "full",
     "identifier": "marinerOldSalt"
   },
   "effects": [],

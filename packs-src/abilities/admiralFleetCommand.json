@@ -32,9 +32,25 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "commandRadius",
+        "op": "set",
+        "value": 99,
+        "when": {
+          "mode": "naval"
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "command radius covers all ships"
+    ],
+    "automation": "full",
     "identifier": "admiralFleetCommand"
   },
   "effects": [],

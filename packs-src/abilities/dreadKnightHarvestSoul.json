@@ -34,7 +34,21 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "heal",
+        "amount": 15,
+        "target": "self",
+        "trigger": "onKillCharacter"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "killing a character restores 15 HP"
+    ],
+    "automation": "full",
     "identifier": "dreadKnightHarvestSoul"
   },
   "effects": [],

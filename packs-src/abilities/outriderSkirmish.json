@@ -42,7 +42,23 @@
       }
     ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": {
+      "modifiers": [
+        {
+          "key": "avoid",
+          "value": 10,
+          "when": {
+            "movedAtLeast": 1
+          }
+        }
+      ],
+      "effects": []
+    },
+    "coverage": [],
+    "automation": "full",
     "identifier": "outriderSkirmish"
   },
   "effects": [],

@@ -47,6 +47,27 @@
       }
     ],
     "roll": null,
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": {
+      "modifiers": [
+        {
+          "key": "defense.def",
+          "value": 4
+        },
+        {
+          "key": "defense.res",
+          "value": 4
+        },
+        {
+          "key": "delay",
+          "value": 10
+        }
+      ],
+      "effects": []
+    },
+    "coverage": [],
     "automation": "full",
     "identifier": "paladinAegis"
   },

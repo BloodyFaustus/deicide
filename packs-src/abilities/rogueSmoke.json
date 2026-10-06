@@ -49,7 +49,21 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "applyStatus",
+        "statusId": "smoke",
+        "target": "radius",
+        "turns": 2
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "one row or radius 1 Avoid \\+15 for 2 turns"
+    ],
+    "automation": "full",
     "identifier": "rogueSmoke"
   },
   "effects": [],

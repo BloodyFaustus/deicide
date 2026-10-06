@@ -48,7 +48,26 @@
     "roll": {
       "formula": "3 * skl"
     },
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "cancel",
+        "what": "command"
+      }
+    ],
+    "reaction": {
+      "trigger": "enemyCommand",
+      "window": {
+        "tiles": 6,
+        "row": "any"
+      },
+      "roll": {
+        "d100Under": "3 * skl"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "saboteurCutLines"
   },
   "effects": [],

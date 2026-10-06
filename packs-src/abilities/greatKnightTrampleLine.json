@@ -49,7 +49,28 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "move",
+        "mode": "through",
+        "tiles": 3,
+        "target": "self"
+      },
+      {
+        "kind": "damage",
+        "amount": 8,
+        "tag": "strength",
+        "target": "target",
+        "ignoresDefense": true
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "8 Strength each"
+    ],
+    "automation": "full",
     "identifier": "greatKnightTrampleLine"
   },
   "effects": [],

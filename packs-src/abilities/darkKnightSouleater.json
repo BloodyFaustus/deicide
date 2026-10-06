@@ -34,7 +34,25 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "heal",
+        "amount": "floor(damage / 4)",
+        "target": "self",
+        "chance": "onHit",
+        "trigger": "ownAttack",
+        "when": {
+          "actionId": "darkKnightDarkness"
+        }
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Darkness heals a quarter of damage dealt"
+    ],
+    "automation": "full",
     "identifier": "darkKnightSouleater"
   },
   "effects": [],

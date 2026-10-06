@@ -45,6 +45,11 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [],
     "art": {
       "lines": [
         "gauntlet"
@@ -52,9 +57,11 @@
       "minTier": "steel",
       "spellMight": 0,
       "rowHealFraction": 0,
-      "nextMatterCost": 0
+      "nextMatterCost": 0,
+      "targetDef": 0,
+      "turns": 0
     },
-    "automation": "manual",
+    "automation": "full",
     "identifier": "artReconstitute"
   },
   "effects": [],

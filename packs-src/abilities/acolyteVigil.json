@@ -32,9 +32,21 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "healing.cleanse",
+        "value": 1
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "heals also remove one status"
+    ],
+    "automation": "full",
     "identifier": "acolyteVigil"
   },
   "effects": [],

@@ -31,11 +31,25 @@ export class CompanyData extends foundry.abstract.TypeDataModel {
   }
 
   prepareDerivedData() {
-    const stats = companyStats(this);
+
+    const orders = game.deicide?.statuses?.modifiers ? game.deicide.statuses.modifiers(this.parent) : {modifiers: [], flags: {}};
+    const qualityBonus = orders.modifiers.filter(m => m.key === "quality" && !m.when).reduce((sum, m) => sum + Number(m.value), 0);
+    const quality = Math.min(Math.max(this.quality + qualityBonus, 1), 5);
+    const stats = companyStats({quality, strength: this.strength, type: this.type, shipClass: this.shipClass});
+    const sum = key => orders.modifiers.filter(m => m.key === key && !m.when).reduce((total, m) => total + Number(m.value), 0);
     this.derived = {
       ...stats,
-      qualityGrade: qualityGrade(this.quality),
-      typeLabel: DEICIDE.companyTypes[this.type]?.label ?? this.type
+      effectiveQuality: quality,
+      qualityGrade: qualityGrade(quality),
+      typeLabel: DEICIDE.companyTypes[this.type]?.label ?? this.type,
+      orders,
+      def: stats.def + sum("defense.def"),
+      move: (stats.move ?? 4) + sum("move"),
+      strikes: 1 + sum("strikes"),
+      hitBonus: sum("hit"),
+      mightBonus: sum("might"),
+      avoidBonus: sum("avoid"),
+      flags: orders.flags
     };
     this.hp = {value: this.strength, max: 100};
   }
@@ -47,15 +61,15 @@ export class CompanyData extends foundry.abstract.TypeDataModel {
       name: this.parent?.name ?? "",
       level: 0,
       attributes: {str: 0, mag: 0, skl: 0, spd: 0, def: d.def, res: d.res, cmd: 0},
-      defense: {def: d.def, res: d.res, avoid: 0},
+      defense: {def: d.def, res: d.res, avoid: d.avoidBonus ?? 0},
       hp: {value: this.strength, max: 100},
       classTypes: [],
       tags: ["company", this.type],
-      statuses: [],
+      statuses: Array.from(this.parent?.statuses ?? []),
       affinities: [],
       immunities: [],
-      modifiers: [],
-      hitBase: 70 + 5 * this.quality
+      modifiers: d.orders?.modifiers ?? [],
+      hitBase: 70 + 5 * (d.effectiveQuality ?? this.quality)
     };
   }
 }

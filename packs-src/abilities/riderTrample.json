@@ -49,7 +49,28 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "move",
+        "mode": "through",
+        "tiles": 1,
+        "target": "self"
+      },
+      {
+        "kind": "damage",
+        "amount": 5,
+        "tag": "strength",
+        "target": "target",
+        "ignoresDefense": true
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "5 Strength damage"
+    ],
+    "automation": "full",
     "identifier": "riderTrample"
   },
   "effects": [],

@@ -1,9 +1,10 @@
 import {DEICIDE} from "../config.mjs";
 import {formatGraded, gradeFor} from "../rules/grades.mjs";
 import {xpToNext} from "../rules/pacing.mjs";
-import {cpForRank, levelOneEntry, validatePersonalGrowth} from "../rules/growth.mjs";
+import {cp100ForRank, formatCp, levelOneEntry, validatePersonalGrowth} from "../rules/growth.mjs";
 import {promotionCost} from "../rules/economy.mjs";
 import {dungeonProfile} from "../rules/collapse.mjs";
+import {describeEffects} from "../rules/effects.mjs";
 import {createCharacter, validateTalentPlacement} from "../rules/creation.mjs";
 import {sceneMode} from "../hooks/scene-mode.mjs";
 import {DeicideActorSheetBase} from "./base-sheets.mjs";
@@ -37,6 +38,7 @@ export class CharacterSheet extends DeicideActorSheetBase {
       changePool: CharacterSheet.#onChangePool,
       classTree: CharacterSheet.#onClassTree,
       creation: CharacterSheet.#onCreation,
+      logDivine: CharacterSheet.#onLogDivine,
       placeFlex: CharacterSheet.#onPlaceFlex,
       addBond: CharacterSheet.#onAddBond,
       removeBond: CharacterSheet.#onRemoveBond,
@@ -128,6 +130,8 @@ export class CharacterSheet extends DeicideActorSheetBase {
       levelCap: game.deicide.nation.levelCap
     };
     context.defense = derived.defense ?? {def: 0, res: 0, avoid: 0};
+    context.soulPricePool = game.i18n.localize(derived.soulPricePayer === "hp" ? "DEICIDE.Common.HP" : "DEICIDE.Common.Channel");
+    context.divineLog = [...(system.divineAttentionLog ?? [])].reverse().slice(0, 20);
     context.proficiencies = DEICIDE.proficiencyIds.map(id => ({
       id, label: game.i18n.localize(DEICIDE.proficiencies[id].label), grade: derived.proficiencies?.[id] ?? null
     }));
@@ -136,10 +140,12 @@ export class CharacterSheet extends DeicideActorSheetBase {
 
     context.classes = (derived.classes ?? []).map(entry => {
       const data = lookup("class", entry.id);
-      const next = entry.rank < DEICIDE.maxRank ? cpForRank(entry.rank + 1) : null;
+      const next = entry.rank < DEICIDE.maxRank ? cp100ForRank(entry.rank + 1) : null;
+      const floor = cp100ForRank(entry.rank);
       return {
         ...entry, name: data?.name ?? entry.id, active: entry.id === system.activeClass,
-        nextCp: next, progress: next ? Math.min(100, Math.round((entry.cp - cpForRank(entry.rank)) / (next - cpForRank(entry.rank)) * 100)) : 100,
+        cp: formatCp(entry.cp100), nextCp: next === null ? null : formatCp(next),
+        progress: next ? Math.min(100, Math.round((entry.cp100 - floor) / (next - floor) * 100)) : 100,
         skills: (data?.skills ?? []).map(skill => ({...skill, name: lookup("ability", skill.id)?.name ?? skill.id, known: entry.rank >= skill.rank}))
       };
     });
@@ -174,6 +180,7 @@ export class CharacterSheet extends DeicideActorSheetBase {
         isAction: type === "action", isReaction: type === "reaction", isSupport: type === "support", isStance: type === "stance",
         isCommand: type === "command", isMastery: type === "mastery",
         active: activeSet.has(id), slotted: loadout.supports?.includes(id), isReactionSlot: loadout.reaction === id, isStanceActive: loadout.stance === id,
+        breakdown: abilityBreakdown(data),
         cost: Object.entries(data.cost ?? {}).filter(([, v]) => v).map(([k, v]) => `${v} ${k === "soulPrice" ? "SP" : k}`).join(", "),
         weight: data.weight, war: data.war, dungeon: profile ?? previewProfile, source: data.source,
         inAvailable: Object.values(available).some(list => list.includes(id)) || type === "mastery"
@@ -361,8 +368,8 @@ export class CharacterSheet extends DeicideActorSheetBase {
 
   static async #onAwardCp() {
     const amount = await foundry.applications.api.DialogV2.prompt({
-      window: {title: "Award CP"}, content: `<input type="number" name="cp" value="${DEICIDE.cp.dungeonFight}" min="0" autofocus>`,
-      ok: {label: "Award", callback: (event, button) => Number(button.form.elements.cp.value)}
+      window: {title: "Award CP"}, content: `<input type="number" name="cp" value="${DEICIDE.cp.dungeonFight}" min="0" step="0.01" autofocus>`,
+      ok: {label: "Award", callback: (event, button) => Math.round(Number(button.form.elements.cp.value) * 100)}
     });
     if ( amount > 0 ) {
       const result = await this.document.awardCp(amount);
@@ -420,8 +427,7 @@ export class CharacterSheet extends DeicideActorSheetBase {
 
   static async #onSetStance(event, target) {
     const id = target.dataset.abilityId;
-    const current = this.document.system.loadout.stance;
-    await this.document.update({"system.loadout.stance": current === id ? null : id});
+    await game.deicide.stances.toggle(this.document, id);
   }
 
   static async #onChangePool(event, target) {
@@ -498,31 +504,41 @@ export class CharacterSheet extends DeicideActorSheetBase {
     const classes = catalog.all("class", e => (e.system.tier === 1) && !e.system.enemyOnly);
     const options = list => list.map(e => `<option value="${e.identifier}">${e.name}</option>`).join("");
     const attrInputs = (name, initial) => DEICIDE.attributeIds.map(id => `<label>${DEICIDE.attributes[id].abbr}<input type="number" name="${name}.${id}" value="${initial[id] ?? 0}" min="0" max="4"></label>`).join("");
+    const L = key => game.i18n.localize(`DEICIDE.Character.Creation.${key}`);
+    const attrOptions = DEICIDE.attributeIds.map(id => `<option value="${id}">${DEICIDE.attributes[id].abbr}</option>`).join("");
+    const subtypes = peoples.flatMap(e => Object.keys(e.system.subtypes ?? {}));
+    const partners = game.actors.filter(a => (a.type === "character") && (a.id !== actor.id));
+    const beltDust = DEICIDE.economy.startingBeltDust;
     const content = `
       <div class="deicide-creation">
-        <p>Base 6 in every attribute, plus the class start spread (12), background points (4), and any Talent start points.</p>
-        <label>People <select name="people">${options(peoples)}</select></label>
-        <label>Subtype <input type="text" name="peopleSubtype" placeholder="feline, avian"></label>
-        <label>Background <select name="background">${options(backgrounds)}</select></label>
-        <label>Base class <select name="baseClass">${options(classes)}</select></label>
-        <label>Talent <select name="talent">${options(talents)}</select></label>
-        <label>Talent stat (Prodigy) <select name="talentStat"><option value="">none</option>${DEICIDE.attributeIds.map(id => `<option value="${id}">${DEICIDE.attributes[id].abbr}</option>`).join("")}</select></label>
-        <label>Penalty stat (Prodigy) <select name="talentPenalty"><option value="">none</option>${DEICIDE.attributeIds.map(id => `<option value="${id}">${DEICIDE.attributes[id].abbr}</option>`).join("")}</select></label>
-        <label>Proficiency (Savant) <select name="talentProficiency"><option value="">none</option>${DEICIDE.proficiencyIds.map(id => `<option value="${id}">${game.i18n.localize(DEICIDE.proficiencies[id].label)}</option>`).join("")}</select></label>
-        <fieldset><legend>Personal growth line, 6 tenths, at most 3 in one</legend>${attrInputs("growth", {})}</fieldset>
-        <fieldset><legend>Early Peak placement, 8 points, at most 4 in one</legend>${attrInputs("placement", {})}</fieldset>
-        <label><input type="checkbox" name="kit" checked> Issue the class's Iron kit and ${DEICIDE.economy.startingBeltDust} Dust of belt</label>
-        <p class="hint">This rebuilds the level 1 character. Owned items stay.</p>
+        <p>${L("Intro")}</p>
+        <label>${L("Name")} <input type="text" name="name" value="${actor.name}"></label>
+        <label>${L("People")} <select name="people">${options(peoples)}</select></label>
+        <label>${L("Subtype")} <input type="text" name="peopleSubtype" list="deicide-subtypes" placeholder="${L("SubtypeHint")}"><datalist id="deicide-subtypes">${subtypes.map(s => `<option value="${s}">`).join("")}</datalist></label>
+        <label>${L("Background")} <select name="background">${options(backgrounds)}</select></label>
+        <label>${L("BaseClass")} <select name="baseClass">${options(classes)}</select></label>
+        <label>${L("Talent")} <select name="talent">${options(talents)}</select></label>
+        <label>${L("TalentStat")} <select name="talentStat"><option value="">${L("NoBond")}</option>${attrOptions}</select></label>
+        <label>${L("PenaltyStat")} <select name="talentPenalty"><option value="">${L("NoBond")}</option>${attrOptions}</select></label>
+        <label>${L("Proficiency")} <select name="talentProficiency"><option value="">${L("NoBond")}</option>${DEICIDE.proficiencyIds.map(id => `<option value="${id}">${game.i18n.localize(DEICIDE.proficiencies[id].label)}</option>`).join("")}</select></label>
+        <fieldset><legend>${L("Growth")}</legend>${attrInputs("growth", {})}</fieldset>
+        <fieldset><legend>${L("Placement")}</legend>${attrInputs("placement", {})}</fieldset>
+        <label><input type="checkbox" name="kit" checked> ${L("Kit")}</label>
+        <label>${game.i18n.format("DEICIDE.Character.Creation.Belt", {dust: beltDust})} <input type="text" name="belt" value="${L("BeltHint")}"></label>
+        <label>${L("Bond")} <select name="bond"><option value="">${L("NoBond")}</option>${partners.map(a => `<option value="${a.id}">${a.name}</option>`).join("")}</select></label>
+        <p class="hint">${L("Hint")}</p>
       </div>`;
     const result = await foundry.applications.api.DialogV2.prompt({
-      window: {title: `Create ${actor.name}`}, position: {width: 560}, content,
-      ok: {label: "Build", callback: (event, button) => {
+      window: {title: game.i18n.format("DEICIDE.Character.Creation.Title", {name: actor.name})}, position: {width: 560}, content,
+      ok: {label: L("Build"), callback: (event, button) => {
         const form = new FormData(button.form);
         const read = prefix => Object.fromEntries(DEICIDE.attributeIds.map(id => [id, Number(form.get(`${prefix}.${id}`)) || 0]));
         return {
+          name: String(form.get("name") ?? "").trim(),
           people: form.get("people"), peopleSubtype: form.get("peopleSubtype"), background: form.get("background"), baseClass: form.get("baseClass"),
           talent: {id: form.get("talent"), stat: form.get("talentStat") || null, penaltyStat: form.get("talentPenalty") || null, proficiency: form.get("talentProficiency") || null, placement: read("placement")},
-          personalGrowth: read("growth"), kit: form.get("kit") === "on"
+          personalGrowth: read("growth"), kit: form.get("kit") === "on",
+          belt: String(form.get("belt") ?? "").split(",").map(s => s.trim()).filter(Boolean), bond: form.get("bond") || null
         };
       }}
     });
@@ -534,16 +550,66 @@ export class CharacterSheet extends DeicideActorSheetBase {
     const errors = [...growthCheck.errors, ...placementCheck.errors];
     const built = createCharacter(result, lookup);
     errors.push(...built.errors);
+
+    let beltCost = 0;
+    for ( const id of result.belt ) {
+      const row = DEICIDE.consumables[id];
+      if ( !row ) errors.push(game.i18n.format("DEICIDE.Character.Creation.UnknownBelt", {id}));
+      else beltCost += row.price ?? 0;
+    }
+    if ( beltCost > beltDust ) errors.push(game.i18n.format("DEICIDE.Character.Creation.BeltTooDear", {cost: beltCost, max: beltDust}));
     if ( errors.length ) return ui.notifications.error(errors.join(" "));
-    await actor.update({system: _replace(built.system)});
+    const bonds = result.bond ? [{actorId: result.bond, points: DEICIDE.bonds.ranks[0].points, skill: "", broken: false}] : [];
+    await actor.update({name: result.name || actor.name, system: _replace({...built.system, bonds})});
     if ( result.kit ) {
       const baseClass = lookup("class", result.baseClass);
-      const kit = {...(baseClass.kit ?? {}), belt: ["salve", "salve"]};
-      await actor.grantKit(kit);
+      await actor.grantKit({...(baseClass.kit ?? {}), belt: result.belt});
+    }
+    if ( result.bond ) {
+
+      const partner = game.actors.get(result.bond);
+      if ( partner && !partner.system.bonds.some(b => b.actorId === actor.id) ) {
+        await partner.update({"system.bonds": [...partner.system.bonds.map(b => b.toObject?.() ?? b), {actorId: actor.id, points: DEICIDE.bonds.ranks[0].points, skill: "", broken: false}]});
+      }
     }
     await actor.update({"system.hp.value": actor.system.hp.max, "system.channel.value": actor.system.channel.max, "system.matter.value": actor.system.matter.max});
-    ui.notifications.info(`${actor.name} built at level 1.`);
+    ui.notifications.info(game.i18n.format("DEICIDE.Character.Creation.Done", {name: actor.name}));
+  }
+
+  static async #onLogDivine() {
+    const actor = this.document;
+    const month = game.deicide.nation.actor?.system.warMonth ?? 1;
+    const entry = await foundry.applications.api.DialogV2.prompt({
+      window: {title: game.i18n.localize("DEICIDE.Character.DivineLog")},
+      content: `<p>${game.i18n.localize("DEICIDE.Character.DivineLogPrompt")}</p><label>${game.i18n.localize("DEICIDE.Character.DivineLogSource")} <input type="text" name="source" autofocus></label><label>${game.i18n.localize("DEICIDE.Character.DivineLogDelta")} <input type="number" name="delta" value="1" step="1"></label>`,
+      ok: {label: game.i18n.localize("DEICIDE.Character.DivineLogOk"), callback: (event, button) => ({source: button.form.elements.source.value.trim(), delta: Number(button.form.elements.delta.value) || 0})}
+    });
+    if ( !entry || !entry.source ) return;
+    const log = [...actor.system.divineAttentionLog.map(e => e.toObject?.() ?? e), {...entry, month}];
+    await actor.update({"system.divineAttentionLog": log, "system.divineAttention": Math.max(actor.system.divineAttention + entry.delta, 0)});
   }
 }
 
 export {gradeFor, levelOneEntry};
+
+export function abilityBreakdown(data) {
+  const lines = [];
+  const attack = data.attack;
+  if ( attack ) {
+    const basis = game.i18n.localize(DEICIDE.attackBases[attack.basis]?.label ?? attack.basis);
+    lines.push(`Attack: ${basis} + ${game.i18n.localize(DEICIDE.mightSources[attack.source]?.label ?? attack.source)}${attack.might ? ` + ${attack.might}` : ""} vs ${game.i18n.localize(DEICIDE.defenses[attack.defense]?.label ?? attack.defense)}${attack.element ? `, ${attack.element}` : ""}${attack.strikes > 1 ? `, ${attack.strikes} strikes` : ""}${attack.crit ? `, crit +${attack.crit}` : ""}${attack.ignoreDef ? `, ignores ${attack.ignoreDef} DEF` : ""}`);
+    for ( const bonus of attack.bonuses ?? [] ) lines.push(`Might +${bonus.might} when ${Object.entries(bonus.when ?? {}).map(([k, v]) => `${k} ${Array.isArray(v) ? v.join(" or ") : v}`).join(", ")}`);
+  }
+  if ( data.heal ) lines.push(`Heal: ${data.heal.formula}`);
+  const costs = Object.entries(data.cost ?? {}).filter(([, v]) => v).map(([k, v]) => `${v} ${k === "soulPrice" ? "Soul Price" : k}`);
+  if ( costs.length ) lines.push(`Costs: ${costs.join(", ")}`);
+  if ( data.usage?.limit ) lines.push(`Once per ${data.usage.per}`);
+  const mods = data.stance?.modifiers?.length ? data.stance.modifiers : (data.modifiers ?? []);
+  for ( const m of mods ) lines.push(`${m.key} ${m.op === "mul" ? "x" : m.op === "set" ? "=" : (Number(m.value) >= 0 && typeof m.value === "number" ? "+" : "")}${m.value}${m.when ? ` when ${Object.entries(m.when).map(([k, v]) => `${k} ${Array.isArray(v) ? v.join(" or ") : typeof v === "object" ? JSON.stringify(v) : v}`).join(", ")}` : ""}`);
+  for ( const status of data.statuses ?? [] ) lines.push(`Apply ${status.id}${status.turns ? ` for ${status.turns} turns` : ""} on ${status.target}${status.onCrit ? " on crit" : ""}`);
+  for ( const line of describeEffects([...(data.effects ?? []), ...(data.stance?.effects ?? [])]) ) lines.push(line);
+  if ( data.reaction?.trigger ) lines.push(`Reaction on ${Array.isArray(data.reaction.trigger) ? data.reaction.trigger.join(" or ") : data.reaction.trigger}${data.reaction.window?.tiles ? ` within ${data.reaction.window.tiles} tiles` : data.reaction.window?.adjacent ? " when adjacent" : ""}${data.reaction.roll?.d100Under ? `, d100 under ${data.reaction.roll.d100Under}` : ""}${data.reaction.usesPerRound ? `, ${data.reaction.usesPerRound} per round` : ""}`);
+  if ( data.command ) lines.push(`Command: ${data.command.target}${data.command.companyTypes ? ` (${data.command.companyTypes.join(", ")})` : ""}${data.command.roll?.d100Under ? `, d100 under ${data.command.roll.d100Under}` : ""}: ${describeEffects(data.command.effects ?? []).join("; ")}`);
+  if ( data.dungeon?.note ) lines.push(`Dungeon: ${data.dungeon.note}`);
+  return lines.join("\n");
+}

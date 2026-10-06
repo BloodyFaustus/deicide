@@ -3,14 +3,17 @@
     <img class="profile" src="{{actor.img}}" alt="{{actor.name}}" data-action="editImage" data-edit="img">
     <div class="identity">
       <input type="text" name="name" value="{{actor.name}}">
-      <p class="line">War Clock month {{system.warMonth}}, week {{system.warWeek}}{{#if stage}}, {{stage}}{{/if}}{{#if derived.dustCollapse}}, <strong class="warn">Dust collapse</strong>{{/if}}</p>
+      <p class="line">{{localize "DEICIDE.Nation.Clock" month=system.warMonth week=system.warWeek}}{{#if stage}}, {{stage}}{{/if}}{{#if derived.dustCollapse}}, <strong class="warn">{{localize "DEICIDE.Nation.DustCollapse"}}</strong>{{/if}}</p>
     </div>
-    {{#if isGM}}<button type="button" data-action="advanceWeek" data-tooltip="Long rest or camp: +1 week"><i class="fa-solid fa-calendar-plus"></i> +1 week</button>{{/if}}
+    {{#if isGM}}
+    <button type="button" data-action="advanceWeek" data-tooltip="{{localize 'DEICIDE.Nation.AdvanceWeekHint'}}"><i class="fa-solid fa-calendar-plus"></i> {{localize "DEICIDE.Nation.AdvanceWeek"}}</button>
+    <button type="button" data-action="advanceMonth" data-tooltip="{{localize 'DEICIDE.Nation.AdvanceMonthHint'}}"><i class="fa-solid fa-calendar-days"></i> {{localize "DEICIDE.Nation.AdvanceMonth"}}</button>
+    {{/if}}
   </header>
 
   <div class="columns">
     <div class="column">
-      <h3>Tracks <small>Lathander / Offweiss</small></h3>
+      <h3>{{localize "DEICIDE.Nation.Tracks"}} <small>{{localize "DEICIDE.Nation.TracksHint"}}</small></h3>
       <table class="tracks-table">
         {{#each tracks}}
         <tr>
@@ -18,43 +21,43 @@
           <td><input type="number" name="system.tracks.{{id}}" value="{{value}}" min="0" max="10" class="tiny"></td>
           <td><input type="number" name="system.offweissTracks.{{id}}" value="{{offweiss}}" min="0" max="10" class="tiny offweiss"></td>
           <td class="effect">{{effect}}</td>
-          <td>{{#if (and @root.isGM fundable fundCost)}}<button type="button" class="inline-control" data-action="fundTrack" data-track="{{id}}" data-tooltip="Raise with personal Dust">{{fundCost}}</button>{{/if}}</td>
+          <td>{{#if (and @root.isGM fundable fundCost)}}<button type="button" class="inline-control" data-action="fundTrack" data-track="{{id}}" data-tooltip="{{localize 'DEICIDE.Nation.FundHint'}}">{{fundCost}}</button>{{/if}}</td>
         </tr>
         {{/each}}
       </table>
-      <h3>Battle values</h3>
+      <h3>{{localize "DEICIDE.Nation.BattleValues"}}</h3>
       <ul class="plain values">{{#each values}}<li><span>{{key}}</span><strong>{{value}}</strong></li>{{/each}}</ul>
     </div>
     <div class="column">
-      <h3>Pacing</h3>
+      <h3>{{localize "DEICIDE.Nation.Pacing"}}</h3>
       <div class="grid two">
-        <label>N (sheets) <input type="number" name="system.pacing.N" value="{{system.pacing.N}}" min="1"></label>
-        <label>S (sessions) <input type="number" name="system.pacing.S" value="{{system.pacing.S}}" min="1"></label>
-        <label>L (level cap) <select name="system.pacing.L">{{#each levelCaps}}<option value="{{this}}" {{#if (eq this @root.system.pacing.L)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
-        <label>P <strong>{{derived.displayP}}</strong></label>
-        <label>Tier gates <strong>{{derived.tierGates.[0]}} / {{derived.tierGates.[1]}} / {{derived.tierGates.[2]}}</strong></label>
-        <label>Death rule <select name="system.deathRule">{{#each deathRules}}<option value="{{this}}" {{#if (eq this @root.system.deathRule)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
-        <label>Nation Dust <input type="number" name="system.dust" value="{{system.dust}}" min="0"></label>
-        <label>Month <input type="number" name="system.warMonth" value="{{system.warMonth}}" min="1" max="12"></label>
+        <label>{{localize "DEICIDE.Nation.N"}} <input type="number" name="system.pacing.N" value="{{system.pacing.N}}" min="1"></label>
+        <label>{{localize "DEICIDE.Nation.S"}} <input type="number" name="system.pacing.S" value="{{system.pacing.S}}" min="1"></label>
+        <label>{{localize "DEICIDE.Nation.L"}} <select name="system.pacing.L">{{#each levelCaps}}<option value="{{this}}" {{#if (eq this @root.system.pacing.L)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
+        <label>{{localize "DEICIDE.Nation.P"}} <strong>{{derived.displayP}}</strong></label>
+        <label>{{localize "DEICIDE.Nation.TierGates"}} <strong>{{derived.tierGates.[0]}} / {{derived.tierGates.[1]}} / {{derived.tierGates.[2]}}</strong></label>
+        <label>{{localize "DEICIDE.Nation.DeathRule"}} <select name="system.deathRule">{{#each deathRules}}<option value="{{this}}" {{#if (eq this @root.system.deathRule)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
+        <label>{{localize "DEICIDE.Nation.NationDust"}} <input type="number" name="system.dust" value="{{system.dust}}" min="0"></label>
+        <label>{{localize "DEICIDE.Common.Month"}} <input type="number" name="system.warMonth" value="{{system.warMonth}}" min="1" max="12"></label>
       </div>
-      <h3>Fleet</h3>
+      <h3>{{localize "DEICIDE.Nation.Fleet"}}</h3>
       <div class="grid three">
-        <label>Sloops <input type="number" name="system.fleet.sloop" value="{{system.fleet.sloop}}" min="0"></label>
-        <label>Frigates <input type="number" name="system.fleet.frigate" value="{{system.fleet.frigate}}" min="0"></label>
-        <label>Ships of the line <input type="number" name="system.fleet.shipOfTheLine" value="{{system.fleet.shipOfTheLine}}" min="0"></label>
+        <label>{{localize "DEICIDE.Nation.Sloops"}} <input type="number" name="system.fleet.sloop" value="{{system.fleet.sloop}}" min="0"></label>
+        <label>{{localize "DEICIDE.Nation.Frigates"}} <input type="number" name="system.fleet.frigate" value="{{system.fleet.frigate}}" min="0"></label>
+        <label>{{localize "DEICIDE.Nation.ShipsOfTheLine"}} <input type="number" name="system.fleet.shipOfTheLine" value="{{system.fleet.shipOfTheLine}}" min="0"></label>
       </div>
-      <h3>Ventures {{#if isGM}}<button type="button" class="inline-control icon fa-solid fa-plus" data-action="addVenture"></button> <button type="button" class="inline-control icon fa-solid fa-dice" data-action="resolveVentures" data-tooltip="Resolve due ventures"></button>{{/if}}</h3>
+      <h3>{{localize "DEICIDE.Nation.Ventures"}} {{#if isGM}}<button type="button" class="inline-control icon fa-solid fa-plus" data-action="addVenture"></button> <button type="button" class="inline-control icon fa-solid fa-dice" data-action="resolveVentures" data-tooltip="{{localize 'DEICIDE.Nation.ResolveVentures'}}"></button>{{/if}}</h3>
       <ul class="plain">
-        {{#each ventures}}<li class="{{#if resolved}}resolved{{/if}}">{{type}}, month {{startMonth}} to {{resolvesAt}}{{#if resolved}}: {{result}}{{else}}{{#if due}} (due){{/if}}{{/if}} <button type="button" class="inline-control icon fa-solid fa-xmark" data-action="removeEntry" data-list="ventures" data-id="{{id}}"></button></li>{{else}}<li class="empty">None.</li>{{/each}}
+        {{#each ventures}}<li class="{{#if resolved}}resolved{{/if}}">{{localize "DEICIDE.Nation.VentureLine" type=type start=startMonth end=resolvesAt}}{{#if resolved}}: {{result}}{{else}}{{#if due}} {{localize "DEICIDE.Nation.Due"}}{{/if}}{{/if}} <button type="button" class="inline-control icon fa-solid fa-xmark" data-action="removeEntry" data-list="ventures" data-id="{{id}}"></button></li>{{else}}<li class="empty">{{localize "DEICIDE.Common.None"}}</li>{{/each}}
       </ul>
-      <h3>Debts {{#if isGM}}<button type="button" class="inline-control icon fa-solid fa-plus" data-action="addDebt"></button> <button type="button" class="inline-control icon fa-solid fa-clock" data-action="tickDebts" data-tooltip="Session: 5 Dust per debt"></button>{{/if}}</h3>
+      <h3>{{localize "DEICIDE.Nation.Debts"}} {{#if isGM}}<button type="button" class="inline-control icon fa-solid fa-plus" data-action="addDebt"></button> <button type="button" class="inline-control icon fa-solid fa-clock" data-action="tickDebts" data-tooltip="{{localize 'DEICIDE.Nation.TickDebts'}}"></button>{{/if}}</h3>
       <ul class="plain">
-        {{#each debts}}<li>{{amount}} Dust to the {{creditor}}{{#if debtor}} ({{debtor}}){{/if}} <button type="button" class="inline-control icon fa-solid fa-xmark" data-action="removeEntry" data-list="debts" data-id="{{id}}"></button></li>{{else}}<li class="empty">None.</li>{{/each}}
+        {{#each debts}}<li>{{localize "DEICIDE.Nation.DebtLine" amount=amount creditor=creditor}}{{#if debtor}} ({{debtor}}){{/if}} <button type="button" class="inline-control icon fa-solid fa-xmark" data-action="removeEntry" data-list="debts" data-id="{{id}}"></button></li>{{else}}<li class="empty">{{localize "DEICIDE.Common.None"}}</li>{{/each}}
       </ul>
     </div>
   </div>
-  <h3>Log</h3>
-  <ul class="plain log">{{#each log}}<li><small>M{{month}}</small> {{text}}</li>{{else}}<li class="empty">Nothing yet.</li>{{/each}}</ul>
-  <h3>Notes</h3>
+  <h3>{{localize "DEICIDE.Nation.Log"}}</h3>
+  <ul class="plain log">{{#each log}}<li><small>M{{month}}</small> {{text}}</li>{{else}}<li class="empty">{{localize "DEICIDE.Nation.NothingYet"}}</li>{{/each}}</ul>
+  <h3>{{localize "DEICIDE.Common.Notes"}}</h3>
   <prose-mirror name="system.notes" value="{{system.notes}}" document-uuid="{{actor.uuid}}" toggled>{{{notesHtml}}}</prose-mirror>
 </section>

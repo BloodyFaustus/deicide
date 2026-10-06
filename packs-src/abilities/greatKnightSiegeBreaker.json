@@ -34,7 +34,21 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "flag",
+        "key": "ignoresWallOnCharge",
+        "value": true,
+        "target": "self"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "ignores Wall and Barrier on charge"
+    ],
+    "automation": "full",
     "identifier": "greatKnightSiegeBreaker"
   },
   "effects": [],

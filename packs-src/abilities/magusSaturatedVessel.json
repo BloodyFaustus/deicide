@@ -40,7 +40,14 @@
       }
     ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Overcast Burn halved \\(floor 1\\)"
+    ],
+    "automation": "full",
     "identifier": "magusSaturatedVessel"
   },
   "effects": [],

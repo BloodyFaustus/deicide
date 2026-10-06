@@ -1,44 +1,44 @@
 <section class="tab abilities {{tab.cssClass}}" data-tab="abilities" data-group="primary">
   <div class="toolbar">
     <span class="mode-badge {{mode}}">{{modeLabel}}</span>
-    <label class="toggle"><input type="checkbox" data-action="toggleCollapse" {{#if collapsePreview}}checked{{/if}}> Collapse preview</label>
-    <label>Secondary set
+    <label class="toggle"><input type="checkbox" data-action="toggleCollapse" {{#if collapsePreview}}checked{{/if}}> {{localize "DEICIDE.Character.CollapsePreview"}}</label>
+    <label>{{localize "DEICIDE.Character.SecondarySet"}}
       <select data-loadout="secondary">
-        <option value="">none</option>
-        {{#each loadout.secondaryOptions}}<option value="{{id}}" {{#if (eq id @root.loadout.secondary)}}selected{{/if}}>{{name}} (Rank {{rank}})</option>{{/each}}
+        <option value="">{{localize "DEICIDE.Common.None"}}</option>
+        {{#each loadout.secondaryOptions}}<option value="{{id}}" {{#if (eq id @root.loadout.secondary)}}selected{{/if}}>{{localize "DEICIDE.Character.RankOption" name=name rank=rank}}</option>{{/each}}
       </select>
     </label>
-    <label>Reaction
+    <label>{{localize "DEICIDE.Character.Reaction"}}
       <select data-loadout="reaction">
-        <option value="">none</option>
+        <option value="">{{localize "DEICIDE.Common.None"}}</option>
         {{#each loadout.reactionOptions}}<option value="{{id}}" {{#if (eq id @root.loadout.reaction)}}selected{{/if}}>{{name}}</option>{{/each}}
       </select>
     </label>
-    <span class="hint">Supports {{loadout.supports.length}} / {{loadout.supportSlots}}</span>
+    <span class="hint">{{localize "DEICIDE.Character.Supports" count=loadout.supports.length slots=loadout.supportSlots}}</span>
   </div>
 
   {{#each abilityGroups}}
-  <h3 class="{{#if hidden}}muted{{/if}}">{{label}}{{#if hidden}} <small>(not in {{@root.modeLabel}})</small>{{/if}}</h3>
+  <h3 class="{{#if hidden}}muted{{/if}}">{{label}}{{#if hidden}} <small>{{localize "DEICIDE.Character.NotInMode" mode=@root.modeLabel}}</small>{{/if}}</h3>
   <ul class="ability-list plain">
     {{#each entries}}
     <li class="ability {{#unless usable}}unusable{{/unless}} {{#if active}}active{{/if}}" data-ability-id="{{id}}">
       <div class="ability-main">
-        <strong data-action="openEntry" data-type="ability" data-identifier="{{id}}">{{name}}</strong>
-        <span class="automation {{automation}}" data-tooltip="{{#if (eq automation 'full')}}Fully automated{{else}}{{#if (eq automation 'partial')}}Numbers automated, riders by hand{{else}}Text only, apply by hand{{/if}}{{/if}}">{{automation}}</span>
+        <strong data-action="openEntry" data-type="ability" data-identifier="{{id}}" data-tooltip="{{breakdown}}" data-tooltip-direction="RIGHT">{{name}}</strong>
+        <span class="automation {{automation}}" data-tooltip="{{#if (eq automation 'full')}}{{localize 'DEICIDE.Character.AutoFull'}}{{else}}{{#if (eq automation 'partial')}}{{localize 'DEICIDE.Character.AutoPartial'}}{{else}}{{localize 'DEICIDE.Character.AutoManual'}}{{/if}}{{/if}}">{{automation}}</span>
         {{#if cost}}<span class="cost">{{cost}}</span>{{/if}}
         {{#if weight}}<span class="weight">W{{weight}}</span>{{/if}}
         {{#if isSupport}}
-          <button type="button" class="slot {{#if slotted}}on{{/if}}" data-action="toggleSupport" data-ability-id="{{id}}">{{#if slotted}}slotted{{else}}slot{{/if}}</button>
+          <button type="button" class="slot {{#if slotted}}on{{/if}}" data-action="toggleSupport" data-ability-id="{{id}}">{{#if slotted}}{{localize "DEICIDE.Character.Slotted"}}{{else}}{{localize "DEICIDE.Character.Slot"}}{{/if}}</button>
         {{/if}}
         {{#if isStance}}
-          <button type="button" class="slot {{#if isStanceActive}}on{{/if}}" data-action="setStance" data-ability-id="{{id}}">{{#if isStanceActive}}active{{else}}adopt{{/if}}</button>
+          <button type="button" class="slot {{#if isStanceActive}}on{{/if}}" data-action="setStance" data-ability-id="{{id}}">{{#if isStanceActive}}{{localize "DEICIDE.Character.Active"}}{{else}}{{localize "DEICIDE.Character.Adopt"}}{{/if}}</button>
         {{/if}}
-        {{#if isAction}}{{#if usable}}<button type="button" class="use" data-action="useAbility" data-ability-id="{{id}}" data-tooltip="Use on targets. Alt for flank."><i class="fa-solid fa-play"></i></button>{{/if}}{{/if}}
-        {{#if isReaction}}{{#if usable}}<button type="button" class="use" data-action="useAbility" data-ability-id="{{id}}" data-tooltip="Resolve the reaction"><i class="fa-solid fa-reply"></i></button>{{/if}}{{/if}}
+        {{#if isAction}}{{#if usable}}<button type="button" class="use" data-action="useAbility" data-ability-id="{{id}}" data-tooltip="{{localize 'DEICIDE.Character.UseHint'}}"><i class="fa-solid fa-play"></i></button>{{/if}}{{/if}}
+        {{#if isReaction}}{{#if usable}}<button type="button" class="use" data-action="useAbility" data-ability-id="{{id}}" data-tooltip="{{localize 'DEICIDE.Character.ReactHint'}}"><i class="fa-solid fa-reply"></i></button>{{/if}}{{/if}}
       </div>
       <p class="summary">{{summary}}</p>
       {{#if dungeon}}
-      <p class="collapse">Dungeon: {{#if dungeon.available}}{{dungeon.reach}} reach, {{dungeon.target}} target{{#if dungeon.rowSwap}}, forced row swap{{/if}}{{#if dungeon.barrier}}, Barrier {{dungeon.barrier.pool}}{{/if}}, Weight {{dungeon.weight}}{{#if dungeon.note}}. {{dungeon.note}}{{/if}}{{else}}unavailable{{#if dungeon.note}}. {{dungeon.note}}{{/if}}{{/if}}{{#if dungeon.requiresArena}} (Arena only){{/if}}</p>
+      <p class="collapse">{{localize "DEICIDE.Character.DungeonLine"}} {{#if dungeon.available}}{{dungeon.reach}} {{localize "DEICIDE.Character.Reach"}}, {{dungeon.target}} {{localize "DEICIDE.Character.Target"}}{{#if dungeon.rowSwap}}, {{localize "DEICIDE.Character.RowSwap"}}{{/if}}{{#if dungeon.barrier}}, {{localize "DEICIDE.Character.Barrier"}} {{dungeon.barrier.pool}}{{/if}}, {{localize "DEICIDE.Common.Weight"}} {{dungeon.weight}}{{#if dungeon.note}}. {{dungeon.note}}{{/if}}{{else}}{{localize "DEICIDE.Character.Unavailable"}}{{#if dungeon.note}}. {{dungeon.note}}{{/if}}{{/if}}{{#if dungeon.requiresArena}} {{localize "DEICIDE.Character.ArenaOnly"}}{{/if}}</p>
       {{/if}}
     </li>
     {{/each}}
@@ -46,7 +46,7 @@
   {{/each}}
 
   {{#if engines.length}}
-  <h3>Origin engines</h3>
+  <h3>{{localize "DEICIDE.Character.Engines"}}</h3>
   <ul class="ability-list plain">
     {{#each engines}}
     <li class="ability engine" data-ability-id="{{id}}">
@@ -60,7 +60,7 @@
   {{/if}}
 
   {{#if weaponArts.length}}
-  <h3>Combat arts <small>from the wielded weapon</small></h3>
+  <h3>{{localize "DEICIDE.Character.Arts"}} <small>{{localize "DEICIDE.Character.ArtsHint"}}</small></h3>
   <ul class="ability-list plain">
     {{#each weaponArts}}
     <li class="ability art" data-ability-id="{{id}}">

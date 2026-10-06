@@ -52,7 +52,22 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "pool",
+        "key": "channel",
+        "delta": "floor(damage / 4)",
+        "target": "self",
+        "chance": "onHit"
+      }
+    ],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Weapon hit restores Channel equal to damage/4"
+    ],
+    "automation": "full",
     "identifier": "pinLancet"
   },
   "effects": [],

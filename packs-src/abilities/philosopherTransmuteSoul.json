@@ -61,7 +61,16 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "partial",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "single",
+      "0 Mt",
+      "SP 0 while the Stone is bonded"
+    ],
+    "automation": "full",
     "identifier": "philosopherTransmuteSoul"
   },
   "effects": [],

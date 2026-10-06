@@ -43,7 +43,14 @@
       }
     ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Spellblade uses STR \\+ MAG"
+    ],
+    "automation": "full",
     "identifier": "spellswordTwinDiscipline"
   },
   "effects": [],

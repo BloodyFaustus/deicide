@@ -46,7 +46,30 @@
     "statuses": [],
     "modifiers": [],
     "roll": null,
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "redirect",
+        "to": "self"
+      },
+      {
+        "kind": "applyStatus",
+        "statusId": "voidEdge",
+        "target": "self",
+        "turns": 1
+      }
+    ],
+    "reaction": {
+      "trigger": "allyHit",
+      "window": {
+        "adjacent": true
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Void Might \\+2 next turn"
+    ],
+    "automation": "full",
     "identifier": "darkKnightGrimGuard"
   },
   "effects": [],

@@ -36,7 +36,31 @@
     "roll": {
       "formula": "3 * skl - 2 * enemyOfficerCmd"
     },
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": {
+      "target": "oneEnemyCompany",
+      "radius": 6,
+      "roll": {
+        "d100Under": "3 * skl - 2 * enemyOfficerCmd"
+      },
+      "effects": [
+        {
+          "kind": "applyStatus",
+          "statusId": "misdirected",
+          "target": "companies",
+          "turns": "thisPhase",
+          "params": {
+            "doctrine": "hold"
+          }
+        }
+      ]
+    },
+    "stance": null,
+    "coverage": [
+      "one enemy company adopts Hold next phase"
+    ],
+    "automation": "full",
     "identifier": "saboteurMisdirect"
   },
   "effects": [],

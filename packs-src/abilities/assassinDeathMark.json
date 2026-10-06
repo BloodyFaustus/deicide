@@ -32,9 +32,26 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "crit",
+        "op": "set",
+        "value": 100,
+        "when": {
+          "targetUndamaged": true,
+          "firstThisEncounter": true
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "first hit per encounter on an undamaged target auto crits"
+    ],
+    "automation": "full",
     "identifier": "assassinDeathMark"
   },
   "effects": [],

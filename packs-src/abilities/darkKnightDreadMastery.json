@@ -32,9 +32,28 @@
     "war": null,
     "dungeon": null,
     "statuses": [],
-    "modifiers": [],
+    "modifiers": [
+      {
+        "key": "cost.hp",
+        "op": "mul",
+        "value": 0.5,
+        "when": {
+          "actionId": [
+            "darkKnightDarkness",
+            "darkKnightAbyssCleave"
+          ]
+        }
+      }
+    ],
     "roll": null,
-    "automation": "manual",
+    "effects": [],
+    "reaction": null,
+    "command": null,
+    "stance": null,
+    "coverage": [
+      "Darkness and Abyss Cleave cost half HP"
+    ],
+    "automation": "full",
     "identifier": "darkKnightDreadMastery"
   },
   "effects": [],

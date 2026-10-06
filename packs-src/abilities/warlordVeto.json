@@ -48,7 +48,26 @@
     "roll": {
       "formula": "3 * cmd"
     },
-    "automation": "manual",
+    "effects": [
+      {
+        "kind": "cancel",
+        "what": "command"
+      }
+    ],
+    "reaction": {
+      "trigger": "enemyCommand",
+      "window": {
+        "tiles": 99,
+        "row": "any"
+      },
+      "roll": {
+        "d100Under": "3 * cmd"
+      }
+    },
+    "command": null,
+    "stance": null,
+    "coverage": [],
+    "automation": "full",
     "identifier": "warlordVeto"
   },
   "effects": [],

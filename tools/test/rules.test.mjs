@@ -8,7 +8,7 @@ import {seededRng} from "../../module/core/random.mjs";
 import {gradeFor, tenthsFor, qualityGrade, formatGraded, stepGrade} from "../../module/rules/grades.mjs";
 import {
   scaleLine, classGrowthLine, applyLevel, capFor, classCaps, promotionBonusFor, applyPromotion, applyRankBonus,
-  highestGrowthStats, rankForCp, trainedAttributes, levelOneEntry, attributeRecord
+  highestGrowthStats, rankForCp, cp100ForRank, formatCp, trainedAttributes, levelOneEntry, attributeRecord
 } from "../../module/rules/growth.mjs";
 import {proficiencies, meetsPrereq, tierGatesFor, meetsWeaponGate, gradeForRank} from "../../module/rules/proficiency.mjs";
 import {baseDelay, actionDelay, projectQueue, startingTicks, dismountPenalty} from "../../module/rules/delay.mjs";
@@ -130,16 +130,20 @@ suite("growth", test => {
     assert.equal(applyRankBonus(state, knight, 4, caps).length, 0);
     assert.equal(trainedAttributes({...state, promotionBonuses: promoted, rankBonuses: ranked}).str, 12);
   });
-  test("rank for CP", () => {
+  test("rank for CP stored in hundredths", () => {
     assert.equal(rankForCp(0), 1);
-    assert.equal(rankForCp(3), 2);
-    assert.equal(rankForCp(6), 2);
-    assert.equal(rankForCp(63), 10);
-    assert.equal(rankForCp(999), 10);
+    assert.equal(rankForCp(299), 1);
+    assert.equal(rankForCp(300), 2);
+    assert.equal(rankForCp(600), 2);
+    assert.equal(rankForCp(6300), 10);
+    assert.equal(rankForCp(99900), 10);
+    assert.equal(cp100ForRank(3), 700);
+    assert.equal(formatCp(700), "7");
+    assert.equal(formatCp(44), "0.44");
   });
-  test("level 30 regression builds (deltas logged, not failed)", ({note}) => {
+  test("level 30 regression builds are hard assertions", () => {
     const builds = tables.buildsLevel30_regression;
-    const lines = [];
+    const failures = [];
     for ( const [name, build] of Object.entries(builds) ) {
       if ( name.startsWith("_") ) continue;
       const people = lookup("origin", build.people);
@@ -164,12 +168,14 @@ suite("growth", test => {
       }
       const final = trainedAttributes(state);
       const hp = evaluate(DEICIDE.formulas.hp, {level: 30, classHp: state.growthLog.reduce((sum, entry) => sum + entry.hp, 0), bonus: 0});
-      const deltas = Object.entries(build.expected)
-        .filter(([key]) => DEICIDE.attributeIds.includes(key) || (key === "hp"))
-        .map(([key, expected]) => `${key} ${key === "hp" ? hp : final[key]} (expected ${expected}, delta ${(key === "hp" ? hp : final[key]) - expected})`);
-      lines.push(`${name}: ${deltas.join(", ")}`);
+      const channel = evaluate(DEICIDE.formulas.channel, final);
+      const actual = {...final, hp, channel};
+      for ( const [key, expected] of Object.entries(build.expected) ) {
+        if ( !(key in actual) ) continue;
+        if ( actual[key] !== expected ) failures.push(`${name}.${key}: ${actual[key]} (expected ${expected})`);
+      }
     }
-    for ( const line of lines ) note(line);
+    assert.deepEqual(failures, []);
   });
 });
 
@@ -282,7 +288,8 @@ suite("pacing", test => {
     assert.equal(catchUpMultiplier(16, 15), 0);
     const awards = encounterAwards({kind: "boss", level: 10, dials: {S: 45, L: 30}});
     assert.equal(awards.xp, 151);
-    assert.equal(awards.cp, 5);
+    assert.equal(awards.cp100, 503);
+    assert.equal(awards.cp, 5.03);
     assert.equal(stageCapacity(4), 6);
     assert.equal(stageCapacity(5), 7);
     assert.equal(stageCapacity(9), 8);
