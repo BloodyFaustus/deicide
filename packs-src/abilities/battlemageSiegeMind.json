@@ -1,0 +1,55 @@
+{
+  "_id": "h4aGp1bUW67cGiqD",
+  "name": "Siege Mind",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "class",
+      "id": "battlemage",
+      "rank": 4
+    },
+    "description": "<p>Spell range +1.</p>",
+    "summary": "spell range +1",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "range.max",
+        "value": 1,
+        "when": {
+          "actionSource": "spell"
+        }
+      }
+    ],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "battlemageSiegeMind"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

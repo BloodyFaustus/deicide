@@ -1,0 +1,94 @@
+{
+  "_id": "LATBkPzE78nLtwR4",
+  "name": "Godslayer",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 4,
+    "types": [],
+    "growth": {
+      "str": "A",
+      "mag": "A",
+      "skl": "S",
+      "spd": "B",
+      "def": "B",
+      "res": "A",
+      "cmd": "C"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "chosenWeapon",
+        "alchemy"
+      ],
+      "secondary": [
+        "reason",
+        "faith"
+      ]
+    },
+    "trainsText": "chosen weapon, Alchemy / Reason, Faith",
+    "startSpread": {},
+    "prerequisites": {
+      "any": [
+        {
+          "prof": "alchemy",
+          "grade": "B"
+        },
+        {
+          "classRank": {
+            "id": "spellbreaker",
+            "rank": 7
+          }
+        }
+      ]
+    },
+    "prerequisiteText": "Spellbreaker B or Alchemy B, plus a divine relic. Act III.",
+    "storyGate": "divineRelic",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "godslayerTruthEdge",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "godslayerDeicideArray",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "godslayerUnmake",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "godslayerAnomaly",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "godslayerLawBreaker",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [
+      "weapon"
+    ],
+    "kit": {},
+    "description": "",
+    "identifier": "godslayer",
+    "ladder": "legend"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

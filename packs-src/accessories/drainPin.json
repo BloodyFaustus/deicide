@@ -1,0 +1,20 @@
+{
+  "_id": "jrmENhTDg2608DBT",
+  "name": "Drain Pin",
+  "type": "pin",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "ability": "pinDrain",
+    "price": 45,
+    "description": "<p>Reason spells heal you for half the damage dealt.</p>",
+    "equipped": false,
+    "identifier": "drainPin"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

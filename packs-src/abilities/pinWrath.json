@@ -1,0 +1,55 @@
+{
+  "_id": "XzcC6HLw4Il5who7",
+  "name": "Wrath",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "pin",
+      "id": "wrathPin",
+      "rank": null
+    },
+    "description": "<p>At or below half HP, crit +30.</p>",
+    "summary": "At or below half HP, crit +30",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "crit",
+        "value": 30,
+        "when": {
+          "hpAtMost": 0.5
+        }
+      }
+    ],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "pinWrath"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

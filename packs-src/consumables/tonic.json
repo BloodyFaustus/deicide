@@ -1,0 +1,24 @@
+{
+  "_id": "gMrQkBHWoFSBYP84",
+  "name": "Tonic",
+  "type": "consumable",
+  "img": "icons/svg/chest.svg",
+  "system": {
+    "key": "tonic",
+    "kind": "belt",
+    "quantity": 1,
+    "description": "<p>Heal 30. 5 Dust.</p>",
+    "identifier": "tonic"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

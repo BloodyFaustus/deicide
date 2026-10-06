@@ -1,0 +1,55 @@
+{
+  "_id": "nCg42ZX7IgTIhiHo",
+  "name": "Night Vessel",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "type": "mastery",
+    "source": {
+      "kind": "class",
+      "id": "darkMage",
+      "rank": 10
+    },
+    "description": "<p>Void spells cost 1 less Channel.</p>",
+    "summary": "Void spells cost 1 less Channel",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "cost.channel",
+        "value": -1,
+        "when": {
+          "actionElement": "void"
+        }
+      }
+    ],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "darkMageNightVessel"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

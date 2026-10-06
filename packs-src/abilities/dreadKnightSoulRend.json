@@ -1,0 +1,79 @@
+{
+  "_id": "Ovgw3KYkaCeNpgiP",
+  "name": "Soul Rend",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "dreadKnight",
+      "rank": 2
+    },
+    "description": "<p>Sword M12 Void W10, costs 10 HP, target Silenced 1 turn.</p>",
+    "summary": "sword M12 Void W10, costs 10 HP, target Silenced 1 turn",
+    "tags": [
+      "void"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 10,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 10,
+    "attack": {
+      "basis": "str",
+      "source": "weapon",
+      "defense": "def",
+      "might": 12,
+      "element": "void",
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [
+        "sword"
+      ],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": []
+    },
+    "heal": null,
+    "war": {
+      "range": null,
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [
+      {
+        "id": "silenced",
+        "turns": 1,
+        "target": "target",
+        "onCrit": false
+      }
+    ],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "dreadKnightSoulRend"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

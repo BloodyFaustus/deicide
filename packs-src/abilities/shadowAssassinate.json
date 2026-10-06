@@ -1,0 +1,83 @@
+{
+  "_id": "YgjTbjFopIE8g6fd",
+  "name": "Assassinate",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "shadow",
+      "rank": 2
+    },
+    "description": "<p>Dagger M10 W6, Officer tag +15, auto crit from flank.</p>",
+    "summary": "dagger M10 W6, Officer tag +15, auto crit from flank",
+    "tags": [
+      "officer"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 6,
+    "attack": {
+      "basis": "str",
+      "source": "weapon",
+      "defense": "def",
+      "might": 10,
+      "element": null,
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [
+        "dagger"
+      ],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": [
+        {
+          "when": {
+            "targetClassType": "officer",
+            "flankOrBackRow": true
+          },
+          "might": 9
+        }
+      ],
+      "autoCritWhen": {
+        "flank": true
+      }
+    },
+    "heal": null,
+    "war": {
+      "range": null,
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "shadowAssassinate"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

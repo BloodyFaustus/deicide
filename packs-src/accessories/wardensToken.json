@@ -1,0 +1,28 @@
+{
+  "_id": "BNsDUQmRp7hw2rvB",
+  "name": "Warden's Token",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "wardensToken",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>immune to plagueBurn. 10 Dust.</p>",
+    "equipped": false,
+    "identifier": "wardensToken"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

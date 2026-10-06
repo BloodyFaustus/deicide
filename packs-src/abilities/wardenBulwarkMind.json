@@ -1,0 +1,52 @@
+{
+  "_id": "TiyLO6dWw4KOtdes",
+  "name": "Bulwark Mind",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "class",
+      "id": "warden",
+      "rank": 4
+    },
+    "description": "<p>RES +3.</p>",
+    "summary": "RES +3",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "defense.res",
+        "value": 3
+      }
+    ],
+    "roll": null,
+    "automation": "full",
+    "identifier": "wardenBulwarkMind"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

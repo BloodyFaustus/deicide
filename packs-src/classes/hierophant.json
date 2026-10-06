@@ -1,0 +1,97 @@
+{
+  "_id": "5FJ4uZT3ZfqVrLUI",
+  "name": "Hierophant",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 3,
+    "types": [
+      "caster"
+    ],
+    "growth": {
+      "str": "D",
+      "mag": "S",
+      "skl": "C",
+      "spd": "D",
+      "def": "B",
+      "res": "S",
+      "cmd": "A"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "faith",
+        "reason"
+      ],
+      "secondary": [
+        "authority",
+        "armor"
+      ]
+    },
+    "trainsText": "Faith, Reason / Authority, Armor",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "faith",
+          "grade": "B"
+        },
+        {
+          "prof": "reason",
+          "grade": "C"
+        }
+      ]
+    },
+    "prerequisiteText": "Faith B, Reason C",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "hierophantMassWard",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "hierophantConsecrate",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "hierophantJudgement",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "hierophantAnathema",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "hierophantDivineShield",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "hierophantEngineOfFaith",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "hierophant",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

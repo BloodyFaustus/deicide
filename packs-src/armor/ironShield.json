@@ -1,0 +1,24 @@
+{
+  "_id": "0GNslX7wl3fJvtOr",
+  "name": "Iron Shield",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "shield",
+    "tier": "iron",
+    "description": "<p>def +2, avoid -5.</p>",
+    "equipped": false,
+    "identifier": "ironShield"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

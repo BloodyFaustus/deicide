@@ -1,0 +1,95 @@
+{
+  "_id": "XAyQ6Bcrh9n0rnfz",
+  "name": "Scout",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 1,
+    "types": [
+      "infantry"
+    ],
+    "growth": {
+      "str": "C",
+      "mag": "F",
+      "skl": "A",
+      "spd": "S",
+      "def": "D",
+      "res": "D",
+      "cmd": "D"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "bow",
+        "gun"
+      ],
+      "secondary": [
+        "sword",
+        "riding"
+      ]
+    },
+    "trainsText": "Bow, Gun / Sword, Riding",
+    "startSpread": {
+      "skl": 4,
+      "spd": 4,
+      "str": 2,
+      "def": 2
+    },
+    "prerequisites": null,
+    "prerequisiteText": "",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "scoutMarkTarget",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "scoutQuickshot",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "scoutPathfinder",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "scoutVolley",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "scoutSidestep",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "scoutEagleEye",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {
+      "weapon": "ironBow",
+      "offhand": "ironQuiver",
+      "armor": "ironLight"
+    },
+    "description": "",
+    "identifier": "scout",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

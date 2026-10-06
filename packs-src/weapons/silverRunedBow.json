@@ -1,0 +1,28 @@
+{
+  "_id": "yqnkkYM9ZcnLlBU4",
+  "name": "Silver Runed Bow",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "bow",
+    "tier": "silver",
+    "prefix": "runed",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 13, Accuracy +15, Crit 15, Range 2 to 3, Weight 8. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverRunedBow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

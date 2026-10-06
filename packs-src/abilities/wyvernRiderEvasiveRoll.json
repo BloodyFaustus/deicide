@@ -1,0 +1,59 @@
+{
+  "_id": "IU1vfATIRPh1mDUj",
+  "name": "Evasive Roll",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "type": "reaction",
+    "source": {
+      "kind": "class",
+      "id": "wyvernRider",
+      "rank": 8
+    },
+    "description": "<p>Targeted by bow, Avoid +20, once per round.</p>",
+    "summary": "targeted by bow, Avoid +20, once per round",
+    "tags": [],
+    "direct": false,
+    "trigger": "targeted by bow, Avoid +20, once per round",
+    "usage": {
+      "limit": 1,
+      "per": "round"
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "self",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "wyvernRiderEvasiveRoll"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

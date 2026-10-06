@@ -1,0 +1,154 @@
+{
+  "_id": "X3Va0xmddzLc23NW",
+  "name": "Dust Golem",
+  "type": "monster",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "identifier": "dustGolem",
+    "level": 16,
+    "hp": {
+      "value": 110,
+      "max": 110
+    },
+    "def": 24,
+    "res": 18,
+    "spd": 6,
+    "mag": 0,
+    "delay": {
+      "mode": "spd",
+      "value": 30
+    },
+    "hitBase": null,
+    "tags": [
+      "construct"
+    ],
+    "boss": false,
+    "divineBeing": false,
+    "weakness": "truth",
+    "resistance": "stone",
+    "immunities": [
+      "poison",
+      "burn"
+    ],
+    "phaseBreaks": [],
+    "yield": {
+      "saturation": 0,
+      "dust": 10,
+      "drops": []
+    },
+    "row": "front",
+    "description": "<p></p>",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Dust Golem",
+    "disposition": -1,
+    "actorLink": false,
+    "texture": {
+      "src": "icons/svg/skull.svg"
+    }
+  },
+  "items": [
+    {
+      "_id": "xrwz4Tz8OwyB7RWA",
+      "name": "Slam",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "dustGolemSlam",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "dustGolem",
+          "rank": null
+        },
+        "description": "<p>M34 row.</p>",
+        "summary": "M34 row",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": {
+          "basis": "flat",
+          "source": "none",
+          "defense": "def",
+          "might": 34,
+          "element": null,
+          "hit": 0,
+          "crit": 0,
+          "weaponLines": [],
+          "strikes": 1,
+          "ignoreDef": 0,
+          "bonuses": [],
+          "ignoreAvoid": false,
+          "perTile": null
+        },
+        "heal": null,
+        "war": {
+          "range": [
+            1,
+            1
+          ],
+          "area": {
+            "shape": "blast",
+            "size": 1
+          },
+          "target": "enemy",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "row",
+          "note": ""
+        },
+        "statuses": [
+          {
+            "target": "target",
+            "onCrit": false,
+            "id": "stagger",
+            "turns": 1
+          }
+        ],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "partial"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true,
+      "startingStatuses": []
+    }
+  }
+}

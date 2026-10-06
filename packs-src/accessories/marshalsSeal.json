@@ -1,0 +1,28 @@
+{
+  "_id": "h8X4WJyZN89IrBnw",
+  "name": "Marshal's Seal",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "marshalsSeal",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>command radius +2, companies morale +10. 33 Dust.</p>",
+    "equipped": false,
+    "identifier": "marshalsSeal"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

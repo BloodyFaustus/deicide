@@ -1,0 +1,13 @@
+<header class="sheet-header item-header">
+  <img class="profile" src="{{item.img}}" alt="{{item.name}}" data-action="editImage" data-edit="img">
+  <div class="identity">
+    <input type="text" name="name" value="{{item.name}}">
+    <p class="line">
+      <span class="type">{{typeLabel}}</span>
+      <label>id <input type="text" name="system.identifier" value="{{system.identifier}}" class="identifier"></label>
+      {{#if (ne system.equipped undefined)}}
+        <button type="button" class="inline-control {{#if system.equipped}}on{{/if}}" data-action="toggleEquipped">{{#if system.equipped}}equipped{{else}}equip{{/if}}</button>
+      {{/if}}
+    </p>
+  </div>
+</header>

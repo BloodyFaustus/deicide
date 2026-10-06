@@ -1,0 +1,28 @@
+{
+  "_id": "46aSMIBz1nREhc4p",
+  "name": "Royal Reach Dagger",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "dagger",
+    "tier": "royal",
+    "prefix": "reach",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 12, Accuracy +30, Crit 25, Range 1 to 2, Weight 2. B to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "royalReachDagger"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

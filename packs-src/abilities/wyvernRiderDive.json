@@ -1,0 +1,73 @@
+{
+  "_id": "vY37lAyp60PTjnEy",
+  "name": "Dive",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "wyvernRider",
+      "rank": 1
+    },
+    "description": "<p>Axe M10 W10, ignores terrain.</p>",
+    "summary": "axe M10 W10, ignores terrain",
+    "tags": [
+      "flight"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 10,
+    "attack": {
+      "basis": "str",
+      "source": "weapon",
+      "defense": "def",
+      "might": 10,
+      "element": null,
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [
+        "axe"
+      ],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": [],
+      "ignoreTerrainAvoid": true
+    },
+    "heal": null,
+    "war": {
+      "range": null,
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "wyvernRiderDive"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

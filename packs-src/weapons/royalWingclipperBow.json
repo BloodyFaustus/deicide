@@ -1,0 +1,28 @@
+{
+  "_id": "wd6p84XpYQrJo1mL",
+  "name": "Royal Wingclipper Bow",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "bow",
+    "tier": "royal",
+    "prefix": "wingclipper",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 16, Accuracy +20, Crit 15, Range 2 to 3, Weight 6. B to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "royalWingclipperBow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

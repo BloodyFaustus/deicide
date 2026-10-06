@@ -1,0 +1,24 @@
+{
+  "_id": "BBkdGKpxfuAWIdVm",
+  "name": "Iron Satchel",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "satchel",
+    "tier": "iron",
+    "description": "<p>matter +2.</p>",
+    "equipped": false,
+    "identifier": "ironSatchel"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

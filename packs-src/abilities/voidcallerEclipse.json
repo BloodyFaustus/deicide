@@ -1,0 +1,47 @@
+{
+  "_id": "zExcllCIOaDyBewH",
+  "name": "Eclipse",
+  "type": "ability",
+  "img": "icons/svg/sound.svg",
+  "system": {
+    "type": "command",
+    "source": {
+      "kind": "class",
+      "id": "voidcaller",
+      "rank": 6
+    },
+    "description": "<p>Companies in radius immune to Divine effects this phase.</p>",
+    "summary": "companies in radius immune to Divine effects this phase",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "voidcallerEclipse"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

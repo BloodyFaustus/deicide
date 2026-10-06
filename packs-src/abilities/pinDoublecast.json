@@ -1,0 +1,47 @@
+{
+  "_id": "qzKXZ7xx8RcpBpt4",
+  "name": "Doublecast",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "pin",
+      "id": "doublecastPin",
+      "rank": null
+    },
+    "description": "<p>Once per encounter, cast two spells as one Action at full cost, Weight 12.</p>",
+    "summary": "Once per encounter, cast two spells as one Action at full cost, Weight 12",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": 1,
+      "per": "encounter"
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "pinDoublecast"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

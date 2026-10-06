@@ -1,0 +1,54 @@
+{
+  "_id": "LpRaAlreLa5adAym",
+  "name": "Lord of the Sky",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "type": "mastery",
+    "source": {
+      "kind": "class",
+      "id": "wyvernLord",
+      "rank": 10
+    },
+    "description": "<p>Move +3.</p>",
+    "summary": "Move +3",
+    "tags": [
+      "flight"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "move",
+        "value": 3
+      }
+    ],
+    "roll": null,
+    "automation": "full",
+    "identifier": "wyvernLordLordOfTheSky"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

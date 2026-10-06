@@ -1,0 +1,45 @@
+{
+  "_id": "AsvI2E17wIqHw1q2",
+  "name": "Cavalry Company",
+  "type": "company",
+  "img": "icons/svg/tower.svg",
+  "system": {
+    "identifier": "cavalryCompany",
+    "strength": 100,
+    "quality": 1,
+    "type": "cavalry",
+    "shipClass": null,
+    "side": "lathander",
+    "doctrine": null,
+    "screenOfficerId": null,
+    "veterancy": 0,
+    "veterancyQuality": 0,
+    "owner": null,
+    "banner": "",
+    "named": false,
+    "routed": false,
+    "acted": false,
+    "facing": 0,
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Cavalry Company",
+    "actorLink": true,
+    "displayBars": 50,
+    "texture": {
+      "src": "icons/svg/tower.svg"
+    }
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

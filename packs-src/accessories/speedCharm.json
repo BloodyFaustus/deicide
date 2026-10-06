@@ -1,0 +1,28 @@
+{
+  "_id": "dXDjWmDwddgir1j6",
+  "name": "Speed Charm",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "speedCharm",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>Avoid +10. 10 Dust.</p>",
+    "equipped": false,
+    "identifier": "speedCharm"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "_id": "8acmdwKIfgd2842o",
+  "name": "Demolition",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "saboteur",
+      "rank": 1
+    },
+    "description": "<p>2 Mt or 1 Dust, destroy a Wall tile or Barrier, W8.</p>",
+    "summary": "2 Mt or 1 Dust, destroy a Wall tile or Barrier, W8",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 2,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "tile",
+      "movement": null,
+      "terrain": true
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "saboteurDemolition"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

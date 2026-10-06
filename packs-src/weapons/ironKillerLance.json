@@ -1,0 +1,28 @@
+{
+  "_id": "RJ5iuDGwQzDlyyAo",
+  "name": "Iron Killer Lance",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "lance",
+    "tier": "iron",
+    "prefix": "killer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 7, Accuracy +5, Crit 25, Range 1, Weight 8. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironKillerLance"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

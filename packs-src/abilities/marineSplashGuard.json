@@ -1,0 +1,59 @@
+{
+  "_id": "2Qu7QRFzGTMgYlur",
+  "name": "Splash Guard",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "type": "reaction",
+    "source": {
+      "kind": "class",
+      "id": "marine",
+      "rank": 8
+    },
+    "description": "<p>Blast damage halved.</p>",
+    "summary": "blast damage halved",
+    "tags": [],
+    "direct": false,
+    "trigger": "blast damage halved",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "self",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "marineSplashGuard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

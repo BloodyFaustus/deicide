@@ -1,0 +1,47 @@
+{
+  "_id": "0BukqoQZgiEfYQno",
+  "name": "Siege Breaker",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "type": "mastery",
+    "source": {
+      "kind": "class",
+      "id": "greatKnight",
+      "rank": 10
+    },
+    "description": "<p>Ignores Wall and Barrier on charge.</p>",
+    "summary": "ignores Wall and Barrier on charge",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "greatKnightSiegeBreaker"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

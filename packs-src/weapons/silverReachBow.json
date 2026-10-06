@@ -1,0 +1,28 @@
+{
+  "_id": "3w2JGok7XIk8UxCf",
+  "name": "Silver Reach Bow",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "bow",
+    "tier": "silver",
+    "prefix": "reach",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 11, Accuracy +15, Crit 15, Range 2 to 4, Weight 8. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverReachBow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "M4eshxVmO1cTcQs6",
+  "name": "Iron Horseslayer Sword",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "sword",
+    "tier": "iron",
+    "prefix": "horseslayer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 5, Accuracy +10, Crit 5, Range 1, Weight 6. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironHorseslayerSword"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

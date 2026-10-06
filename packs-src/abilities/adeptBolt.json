@@ -1,0 +1,73 @@
+{
+  "_id": "2iya7oSdyA0RaANd",
+  "name": "Bolt",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "adept",
+      "rank": 1
+    },
+    "description": "<p>MAG M6 W8, range 1 to 2, 2 Ch.</p>",
+    "summary": "MAG M6 W8, range 1 to 2, 2 Ch",
+    "tags": [
+      "reason"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 2,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": {
+      "basis": "mag",
+      "source": "spell",
+      "defense": "res",
+      "might": 6,
+      "element": null,
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": []
+    },
+    "heal": null,
+    "war": {
+      "range": [
+        1,
+        2
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "adeptBolt"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

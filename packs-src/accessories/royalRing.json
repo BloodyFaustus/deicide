@@ -1,0 +1,28 @@
+{
+  "_id": "Xy3SUWkK5UfFinwj",
+  "name": "Royal Ring",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "royalRing",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>one attribute +4, a second +1. 45 Dust.</p>",
+    "equipped": false,
+    "identifier": "royalRing"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

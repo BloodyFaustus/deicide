@@ -1,0 +1,28 @@
+{
+  "_id": "FVxrXxWgTFCLVB7k",
+  "name": "Silver Mageslayer Bow",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "bow",
+    "tier": "silver",
+    "prefix": "mageslayer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 12, Accuracy +15, Crit 15, Range 2 to 3, Weight 8. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverMageslayerBow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

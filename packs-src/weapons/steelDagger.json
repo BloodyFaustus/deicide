@@ -1,0 +1,28 @@
+{
+  "_id": "ZDAeEWuAlBTDeh7Y",
+  "name": "Steel Dagger",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "dagger",
+    "tier": "steel",
+    "prefix": null,
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 7, Accuracy +20, Crit 20, Range 1, Weight 4. D to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "steelDagger"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "aVHMRW5LJyns2H7z",
+  "name": "Common Elf",
+  "type": "origin",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "kind": "people",
+    "description": "<p>None.</p>",
+    "growth": {
+      "spd": "D",
+      "skl": "D",
+      "mag": "E",
+      "res": "E"
+    },
+    "identifier": "commonElf"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

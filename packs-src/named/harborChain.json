@@ -1,0 +1,57 @@
+{
+  "_id": "dKi2VVEYt7seuAnD",
+  "name": "Harbor Chain",
+  "type": "named",
+  "img": "icons/svg/holy-shield.svg",
+  "system": {
+    "fills": "weapon",
+    "base": {
+      "line": "axe",
+      "tier": "royal"
+    },
+    "stats": {
+      "might": 20,
+      "acc": 15,
+      "crit": 10,
+      "weight": 8,
+      "range": [
+        1,
+        1
+      ],
+      "effectiveVs": "mounted"
+    },
+    "modifiers": [
+      {
+        "key": "might",
+        "value": 4,
+        "when": {
+          "targetClassType": "naval"
+        }
+      }
+    ],
+    "special": "",
+    "drawback": {
+      "text": "1 Dust per battle.",
+      "flags": {
+        "dustPerBattle": 1
+      },
+      "refund": "dustPerUse"
+    },
+    "pp": 38,
+    "hook": "Admiral Soren Kade.",
+    "description": "<p>Royal Axe, Horseslayer, Might +4 vs Naval.</p><p>Drawback: 1 Dust per battle.</p>",
+    "equipped": false,
+    "identifier": "harborChain"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

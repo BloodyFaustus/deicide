@@ -1,0 +1,49 @@
+{
+  "_id": "EU6DbuJcFgPdbL72",
+  "name": "Red Blade",
+  "type": "named",
+  "img": "icons/svg/holy-shield.svg",
+  "system": {
+    "fills": "weapon",
+    "base": {
+      "line": "sword",
+      "tier": "royal"
+    },
+    "stats": {
+      "might": 18,
+      "acc": 25,
+      "crit": 15,
+      "weight": 4,
+      "range": [
+        1,
+        1
+      ]
+    },
+    "modifiers": [],
+    "special": "Each hit on a Homunculus or mana beast yields 1 Saturation (mana hero) or 1 Matter (alchemist).",
+    "drawback": {
+      "text": "1 Mark on first equip (mana hero) or Divine Attention +1 (Mercer).",
+      "flags": {
+        "markOnFirstEquip": 1,
+        "divineAttentionOnEquip": 1
+      },
+      "refund": "markOnFirstEquip"
+    },
+    "pp": 40,
+    "hook": "Homunculus harvest.",
+    "description": "<p>Royal Sword, Might +2.</p><p>Drawback: 1 Mark on first equip (mana hero) or Divine Attention +1 (Mercer).</p>",
+    "equipped": false,
+    "identifier": "redBlade"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

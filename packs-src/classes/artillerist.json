@@ -1,0 +1,105 @@
+{
+  "_id": "KICAGuuJICm0YC4m",
+  "name": "Artillerist",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 3,
+    "types": [
+      "infantry"
+    ],
+    "growth": {
+      "str": "B",
+      "mag": "B",
+      "skl": "S",
+      "spd": "C",
+      "def": "C",
+      "res": "C",
+      "cmd": "B"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "gun",
+        "reason"
+      ],
+      "secondary": [
+        "authority",
+        "alchemy"
+      ]
+    },
+    "trainsText": "Gun, Reason / Authority, Alchemy",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "gun",
+          "grade": "B"
+        },
+        {
+          "any": [
+            {
+              "prof": "reason",
+              "grade": "C"
+            },
+            {
+              "prof": "authority",
+              "grade": "C"
+            }
+          ]
+        }
+      ]
+    },
+    "prerequisiteText": "Gun B, Reason C or Authority C",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "artilleristCannon",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "artilleristSpotter",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "artilleristSiegeLine",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "artilleristBreachShot",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "artilleristBrace",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "artilleristBombard",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "artillerist",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

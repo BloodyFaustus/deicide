@@ -1,0 +1,24 @@
+{
+  "_id": "PORVzutpBuYxkXoj",
+  "name": "Smoke Vial",
+  "type": "consumable",
+  "img": "icons/svg/chest.svg",
+  "system": {
+    "key": "smokeVial",
+    "kind": "belt",
+    "quantity": 1,
+    "description": "<p>Own row Avoid +15 for 2 turns. 4 Dust.</p>",
+    "identifier": "smokeVial"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<section class="deicide-inspector">
+  <header class="inspector-header">
+    <img class="profile" src="{{item.img}}" alt="{{item.name}}" data-action="editImage" data-edit="img">
+    <div class="titles">
+      <input type="text" name="name" value="{{item.name}}">
+      <p class="type">{{localize (concat "TYPES.Item." item.type)}} {{#if system.identifier}}({{system.identifier}}){{/if}}</p>
+    </div>
+  </header>
+  {{#if descriptionHtml}}<div class="description">{{{descriptionHtml}}}</div>{{/if}}
+  <details open>
+    <summary>Derived data</summary>
+    <pre>{{derivedJson}}</pre>
+  </details>
+  <details>
+    <summary>Stored data</summary>
+    <pre>{{sourceJson}}</pre>
+  </details>
+</section>

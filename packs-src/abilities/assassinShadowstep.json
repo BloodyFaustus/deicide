@@ -1,0 +1,65 @@
+{
+  "_id": "GBW3Rod3KhXFAaeP",
+  "name": "Shadowstep",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "assassin",
+      "rank": 4
+    },
+    "description": "<p>W4, move 3 ignoring enemies or free row swap.</p>",
+    "summary": "W4, move 3 ignoring enemies or free row swap",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 4,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        3
+      ],
+      "area": {
+        "shape": "self",
+        "size": 0
+      },
+      "target": "self",
+      "movement": "self",
+      "terrain": false
+    },
+    "dungeon": {
+      "reach": "self",
+      "target": "self",
+      "rowSwap": true,
+      "weight": 4,
+      "note": "Free row swap."
+    },
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "assassinShadowstep"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

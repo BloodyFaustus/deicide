@@ -1,0 +1,106 @@
+{
+  "_id": "eEuLoRj5w6on3Cob",
+  "name": "Dustwright",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "caster",
+      "naval"
+    ],
+    "growth": {
+      "str": "C",
+      "mag": "A",
+      "skl": "B",
+      "spd": "C",
+      "def": "C",
+      "res": "C",
+      "cmd": "B"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "alchemy",
+        "gun"
+      ],
+      "secondary": [
+        "seamanship",
+        "authority"
+      ]
+    },
+    "trainsText": "Alchemy, Gun / Seamanship, Authority",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "alchemy",
+          "grade": "C"
+        },
+        {
+          "any": [
+            {
+              "prof": "seamanship",
+              "grade": "D"
+            },
+            {
+              "prof": "gun",
+              "grade": "D"
+            }
+          ]
+        }
+      ]
+    },
+    "prerequisiteText": "Alchemy C, Seamanship D or Gun D",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "dustwrightRefine",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "dustwrightPowderCharge",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "dustwrightQuartermaster",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "dustwrightFleetOrdnance",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "dustwrightFuse",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "dustwrightDustLord",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "dustwright",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

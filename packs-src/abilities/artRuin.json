@@ -1,0 +1,67 @@
+{
+  "_id": "19oryI6R20ed8z0w",
+  "name": "Ruin",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "art",
+      "id": "ruin",
+      "rank": null
+    },
+    "description": "<p>Spell Might +6, 0 Channel. tome at silver or better. Costs 6 HP. Weight 8.</p>",
+    "summary": "Spell Might +6, 0 Channel. tome at silver or better. Costs 6 HP. Weight 8.",
+    "tags": [
+      "art"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 6,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": null,
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "art": {
+      "lines": [
+        "tome"
+      ],
+      "minTier": "silver",
+      "spellMight": 6,
+      "rowHealFraction": 0,
+      "nextMatterCost": null
+    },
+    "automation": "manual",
+    "identifier": "artRuin"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

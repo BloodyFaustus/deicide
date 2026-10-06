@@ -1,0 +1,65 @@
+{
+  "_id": "KKOokHu8ps6DSU7Y",
+  "name": "Lancet",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "pin",
+      "id": "lancetPin",
+      "rank": null
+    },
+    "description": "<p>Weapon hit restores Channel equal to damage/4, Weight 8.</p>",
+    "summary": "Weapon hit restores Channel equal to damage/4, Weight 8",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": {
+      "basis": "str",
+      "source": "weapon",
+      "defense": "def",
+      "might": 0,
+      "bonuses": []
+    },
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "self",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "pinLancet"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

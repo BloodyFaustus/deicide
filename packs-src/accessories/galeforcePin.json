@@ -1,0 +1,20 @@
+{
+  "_id": "K4rXjmxqRB5mPoSn",
+  "name": "Galeforce Pin",
+  "type": "pin",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "ability": "pinGaleforce",
+    "price": 60,
+    "description": "<p>Killing a character or routing a company refunds your Action, once per round.</p>",
+    "equipped": false,
+    "identifier": "galeforcePin"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

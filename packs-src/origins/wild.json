@@ -1,0 +1,19 @@
+{
+  "_id": "c6bmWxTrv2iofZKz",
+  "name": "Wild",
+  "type": "origin",
+  "img": "icons/svg/light.svg",
+  "system": {
+    "kind": "talent",
+    "description": "<p>Growth rolled: each level, each stat, d100 under growth tenths x 10 gives +1. Seven d100 per level on one chat card.</p>",
+    "wild": true,
+    "identifier": "wild"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

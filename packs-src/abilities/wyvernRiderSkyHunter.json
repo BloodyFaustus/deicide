@@ -1,0 +1,49 @@
+{
+  "_id": "lQH43ArCUchaBnqH",
+  "name": "Sky Hunter",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "type": "mastery",
+    "source": {
+      "kind": "class",
+      "id": "wyvernRider",
+      "rank": 10
+    },
+    "description": "<p>Bow damage x1.5 instead of x2.</p>",
+    "summary": "bow damage x1.5 instead of x2",
+    "tags": [
+      "flight"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "wyvernRiderSkyHunter"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,72 @@
+{
+  "_id": "axp2ZpXOSK1k2326",
+  "name": "Abyss Cleave",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "darkKnight",
+      "rank": 6
+    },
+    "description": "<p>Sword M10 Void W10, line 2, costs 10 HP.</p>",
+    "summary": "sword M10 Void W10, line 2, costs 10 HP",
+    "tags": [
+      "void"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 10,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 10,
+    "attack": {
+      "basis": "str",
+      "source": "weapon",
+      "defense": "def",
+      "might": 10,
+      "element": "void",
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [
+        "sword"
+      ],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": []
+    },
+    "heal": null,
+    "war": {
+      "range": null,
+      "area": {
+        "shape": "line",
+        "size": 2
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "darkKnightAbyssCleave"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

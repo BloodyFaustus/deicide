@@ -1,0 +1,28 @@
+{
+  "_id": "PWQekuUSGDtgtl2F",
+  "name": "Iron Killer Gun",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "gun",
+    "tier": "iron",
+    "prefix": "killer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 8, Accuracy +15, Crit 35, Range 2, Weight 10. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironKillerGun"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

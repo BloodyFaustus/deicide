@@ -1,0 +1,28 @@
+{
+  "_id": "TUf1v0udtz9vsynW",
+  "name": "Iron Gauntlet",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "gauntlet",
+    "tier": "iron",
+    "prefix": null,
+    "forge": 0,
+    "element": null,
+    "description": "<p>Gauntlet. Bonus +2, Matter +2, Accuracy +10. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironGauntlet"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

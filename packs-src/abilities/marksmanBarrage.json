@@ -1,0 +1,47 @@
+{
+  "_id": "Oq5MvBI1lODNmAqM",
+  "name": "Barrage",
+  "type": "ability",
+  "img": "icons/svg/sound.svg",
+  "system": {
+    "type": "command",
+    "source": {
+      "kind": "class",
+      "id": "marksman",
+      "rank": 6
+    },
+    "description": "<p>Archer companies in radius fire twice.</p>",
+    "summary": "archer companies in radius fire twice",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "marksmanBarrage"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,59 @@
+{
+  "_id": "nDZeFQ9XNSM6Wa60",
+  "name": "Grapple",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "mariner",
+      "rank": 6
+    },
+    "description": "<p>Pull 1 tile or force row swap, W8.</p>",
+    "summary": "pull 1 tile or force row swap, W8",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "self",
+      "movement": "pull",
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "marinerGrapple"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

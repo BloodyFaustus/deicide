@@ -1,0 +1,22 @@
+{
+  "_id": "C31kl9S2l3rhUeAM",
+  "name": "Summoned",
+  "type": "origin",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "kind": "people",
+    "description": "<p>Hero rules by background. Mana bearing Summoned use Saturation. Mercer does not.</p>",
+    "growth": {},
+    "flags": {
+      "saturation": true
+    },
+    "identifier": "summoned"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

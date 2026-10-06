@@ -1,0 +1,28 @@
+{
+  "_id": "tTPBvOD8jsHoTVso",
+  "name": "Silver Killer Axe",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "axe",
+    "tier": "silver",
+    "prefix": "killer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 15, Accuracy +10, Crit 35, Range 1, Weight 10. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverKillerAxe"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "ri21pxpLkByx1U5z",
+  "name": "Silver Shield",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "shield",
+    "tier": "silver",
+    "description": "<p>def +4, res +2, avoid -5.</p>",
+    "equipped": false,
+    "identifier": "silverShield"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

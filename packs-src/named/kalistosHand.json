@@ -1,0 +1,57 @@
+{
+  "_id": "bYCxWO1iJ3FTCble",
+  "name": "Kalisto's Hand",
+  "type": "named",
+  "img": "icons/svg/holy-shield.svg",
+  "system": {
+    "fills": "weapon",
+    "base": {
+      "line": "gauntlet",
+      "tier": "royal"
+    },
+    "stats": {
+      "alchemyBonus": 14,
+      "matter": 6,
+      "acc": 25
+    },
+    "modifiers": [
+      {
+        "key": "matter.max",
+        "value": 6
+      },
+      {
+        "key": "harvest.yield",
+        "op": "max",
+        "value": 4
+      },
+      {
+        "key": "soulPrice",
+        "value": -2
+      }
+    ],
+    "special": "",
+    "drawback": {
+      "text": "Divine Attention +1 while equipped.",
+      "flags": {
+        "divineAttentionEquipped": 1
+      },
+      "refund": "divineAttentionEquipped"
+    },
+    "pp": 42,
+    "hook": "Kalisto's tomb, month 5.",
+    "description": "<p>Royal Gauntlet. Alchemy +14 total, Matter +6, Harvest 4, Soul Prices minus 2.</p><p>Drawback: Divine Attention +1 while equipped.</p>",
+    "equipped": false,
+    "identifier": "kalistosHand"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

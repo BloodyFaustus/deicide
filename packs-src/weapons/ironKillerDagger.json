@@ -1,0 +1,28 @@
+{
+  "_id": "bDxZzWphSY1yHKGi",
+  "name": "Iron Killer Dagger",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "dagger",
+    "tier": "iron",
+    "prefix": "killer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 3, Accuracy +15, Crit 40, Range 1, Weight 4. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironKillerDagger"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

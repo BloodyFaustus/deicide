@@ -1,0 +1,24 @@
+{
+  "_id": "b6rYUlt0PNYzsnXb",
+  "name": "Dust Draught",
+  "type": "consumable",
+  "img": "icons/svg/chest.svg",
+  "system": {
+    "key": "dustDraught",
+    "kind": "belt",
+    "quantity": 1,
+    "description": "<p>Restore 4 Channel, 2 Burn. 6 Dust.</p>",
+    "identifier": "dustDraught"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

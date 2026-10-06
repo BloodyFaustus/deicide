@@ -1,0 +1,62 @@
+{
+  "_id": "5Vhz6YmFGGrH7vnv",
+  "name": "Bridge",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "transmuter",
+      "rank": 2
+    },
+    "description": "<p>4 Mt, river line of 4 becomes Road for the battle, W8.</p>",
+    "summary": "4 Mt, river line of 4 becomes Road for the battle, W8",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 4,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "tile",
+      "movement": null,
+      "terrain": true
+    },
+    "dungeon": {
+      "available": false,
+      "note": "No rivers in Dungeon Mode."
+    },
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "transmuterBridge"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

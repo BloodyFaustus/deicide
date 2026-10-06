@@ -1,0 +1,97 @@
+{
+  "_id": "i41ITcmeyRtDnM02",
+  "name": "Warden",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "caster"
+    ],
+    "growth": {
+      "str": "D",
+      "mag": "A",
+      "skl": "C",
+      "spd": "D",
+      "def": "B",
+      "res": "S",
+      "cmd": "C"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "faith",
+        "armor"
+      ],
+      "secondary": [
+        "reason",
+        "authority"
+      ]
+    },
+    "trainsText": "Faith, Armor / Reason, Authority",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "faith",
+          "grade": "C"
+        },
+        {
+          "prof": "reason",
+          "grade": "D"
+        }
+      ]
+    },
+    "prerequisiteText": "Faith C, Reason D",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "wardenBarrier",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "wardenShieldOfFaith",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "wardenBulwarkMind",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "wardenSanctifiedGround",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "wardenRepel",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "wardenBarrierEngine",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "warden",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

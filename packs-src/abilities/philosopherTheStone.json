@@ -1,0 +1,58 @@
+{
+  "_id": "d937a6EDMoWb1dgd",
+  "name": "The Stone",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "class",
+      "id": "philosopher",
+      "rank": 2
+    },
+    "description": "<p>Matter costs 0, Soul Prices 0, Divine Attention +1 per session.</p>",
+    "summary": "Matter costs 0, Soul Prices 0, Divine Attention +1 per session",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "cost.matter",
+        "op": "set",
+        "value": 0
+      },
+      {
+        "key": "soulPrice.multiplier",
+        "op": "set",
+        "value": 0
+      }
+    ],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "philosopherTheStone"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

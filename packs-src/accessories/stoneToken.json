@@ -1,0 +1,28 @@
+{
+  "_id": "KLzpMo9xWTI39q15",
+  "name": "Stone Token",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "stoneToken",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>immune to stone. 10 Dust.</p>",
+    "equipped": false,
+    "identifier": "stoneToken"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

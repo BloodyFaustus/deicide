@@ -1,0 +1,22 @@
+{
+  "_id": "mWvxxOWoBZgGanx0",
+  "name": "Iron Heavy Armor",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "<p>DEF +5, RES +0, Burden 2. Needs Armor D.</p>",
+    "equipped": false,
+    "identifier": "ironHeavy"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "QYb4EecvilnzGG92",
+  "name": "Breaker",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "knight",
+      "rank": 6
+    },
+    "description": "<p>M10 W12, ignores 5 DEF.</p>",
+    "summary": "M10 W12, ignores 5 DEF",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 12,
+    "attack": {
+      "basis": "str",
+      "source": "weapon",
+      "defense": "def",
+      "might": 10,
+      "element": null,
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [],
+      "strikes": 1,
+      "ignoreDef": 5,
+      "bonuses": []
+    },
+    "heal": null,
+    "war": {
+      "range": null,
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "knightBreaker"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

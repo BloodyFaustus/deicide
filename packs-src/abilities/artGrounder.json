@@ -1,0 +1,87 @@
+{
+  "_id": "bkToHk8BZ9wgxQB6",
+  "name": "Grounder",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "art",
+      "id": "grounder",
+      "rank": null
+    },
+    "description": "<p>Might +4, x2 vs flying. sword, lance at steel or better. Costs 4 HP. Weight 8.</p>",
+    "summary": "Might +4, x2 vs flying. sword, lance at steel or better. Costs 4 HP. Weight 8.",
+    "tags": [
+      "art"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 4,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": {
+      "basis": "str",
+      "source": "weapon",
+      "defense": "def",
+      "might": 4,
+      "element": null,
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [
+        "sword",
+        "lance"
+      ],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": [],
+      "effectiveVs": "flying",
+      "rangeMax": 0,
+      "range": null,
+      "ignoreWarded": false
+    },
+    "heal": null,
+    "war": {
+      "range": null,
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "art": {
+      "lines": [
+        "sword",
+        "lance"
+      ],
+      "minTier": "steel",
+      "spellMight": 0,
+      "rowHealFraction": 0,
+      "nextMatterCost": null
+    },
+    "automation": "partial",
+    "identifier": "artGrounder"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

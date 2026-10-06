@@ -1,0 +1,28 @@
+{
+  "_id": "5Xs3kLERxEDSDh68",
+  "name": "Royal Reach Bow",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "bow",
+    "tier": "royal",
+    "prefix": "reach",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 15, Accuracy +20, Crit 15, Range 2 to 4, Weight 6. B to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "royalReachBow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

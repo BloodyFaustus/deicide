@@ -1,0 +1,36 @@
+<nav class="combat-controls deicide-footer" data-tooltip-direction="UP">
+  {{#if hasCombat}}
+    {{#if combat.started}}
+      {{#if (eq engine "war")}}
+        {{#if user.isGM}}
+          <button type="button" class="combat-control" data-action="previousTurn" data-tooltip="Previous phase"><i class="fa-solid fa-backward-step"></i></button>
+          {{#if pendingDecisions}}
+            <button type="button" class="combat-control" data-action="resolveAll" data-tooltip="Resolve every pending doctrine"><i class="fa-solid fa-forward-fast"></i> Auto resolve</button>
+            <button type="button" class="combat-control" data-action="replan" data-tooltip="Plan the enemy phase again"><i class="fa-solid fa-rotate"></i></button>
+          {{/if}}
+          <button type="button" class="combat-control" data-action="endPhase" data-tooltip="End {{#if (eq phase 'enemy')}}the round{{else}}the Lathander phase{{/if}}"><i class="fa-solid fa-forward-step"></i> End phase</button>
+          <button type="button" class="combat-control" data-action="endCombat" data-tooltip="End combat"><i class="fa-solid fa-xmark"></i></button>
+        {{else}}
+          <span class="phase-note">{{#if (eq phase 'enemy')}}Enemy phase{{else}}Lathander phase{{/if}}</span>
+        {{/if}}
+      {{/if}}
+      {{#if (eq engine "dungeon")}}
+        {{#if user.isGM}}
+          <button type="button" class="combat-control" data-action="previousTurn" data-tooltip="Undo the last action"><i class="fa-solid fa-backward-step"></i></button>
+          <button type="button" class="combat-control" data-action="endAction" data-weight="6" data-tooltip="Light action, Weight 6">W6</button>
+          <button type="button" class="combat-control" data-action="endAction" data-weight="8" data-tooltip="Standard action, Weight 8">W8</button>
+          <button type="button" class="combat-control" data-action="endAction" data-weight="12" data-tooltip="Heavy action, Weight 12">W12</button>
+          <button type="button" class="combat-control" data-action="endAction" data-weight="6" data-guard="true" data-tooltip="Guard: Weight 6, half damage, next Delay halved"><i class="fa-solid fa-shield-halved"></i></button>
+          <button type="button" class="combat-control" data-action="openStage" data-tooltip="Open the Dungeon stage"><i class="fa-solid fa-table-cells-large"></i></button>
+          <button type="button" class="combat-control" data-action="endCombat" data-tooltip="End combat"><i class="fa-solid fa-xmark"></i></button>
+        {{else}}
+          <button type="button" class="combat-control" data-action="openStage" data-tooltip="Open the Dungeon stage"><i class="fa-solid fa-table-cells-large"></i> Stage</button>
+        {{/if}}
+      {{/if}}
+    {{else}}
+      {{#if user.isGM}}
+        <button type="button" class="combat-control combat-control-lg" data-action="startCombat"><i class="fa-solid fa-swords"></i> Begin {{engineLabel}}</button>
+      {{/if}}
+    {{/if}}
+  {{/if}}
+</nav>

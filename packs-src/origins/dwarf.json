@@ -1,0 +1,27 @@
+{
+  "_id": "hIunD48ps94MJIC5",
+  "name": "Dwarf",
+  "type": "origin",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "kind": "people",
+    "description": "<p>Armor proficiency starts D.</p>",
+    "growth": {
+      "str": "D",
+      "def": "D",
+      "skl": "E",
+      "res": "E"
+    },
+    "proficiencies": {
+      "armor": "D"
+    },
+    "identifier": "dwarf"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

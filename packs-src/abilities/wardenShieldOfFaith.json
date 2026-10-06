@@ -1,0 +1,59 @@
+{
+  "_id": "dNx052bqoG0mTnp7",
+  "name": "Shield of Faith",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "type": "reaction",
+    "source": {
+      "kind": "class",
+      "id": "warden",
+      "rank": 2
+    },
+    "description": "<p>Ally hit, absorb MAG/2.</p>",
+    "summary": "ally hit, absorb MAG/2",
+    "tags": [],
+    "direct": false,
+    "trigger": "ally hit, absorb MAG/2",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "ally",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "wardenShieldOfFaith"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

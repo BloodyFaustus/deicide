@@ -1,0 +1,80 @@
+{
+  "_id": "gB6ag0ibV24zla2H",
+  "name": "Silent Kill",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "assassin",
+      "rank": 2
+    },
+    "description": "<p>Dagger M6 W6, Officer tag +12.</p>",
+    "summary": "dagger M6 W6, Officer tag +12",
+    "tags": [
+      "officer"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 6,
+    "attack": {
+      "basis": "str",
+      "source": "weapon",
+      "defense": "def",
+      "might": 6,
+      "element": null,
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [
+        "dagger"
+      ],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": [
+        {
+          "when": {
+            "targetClassType": "officer",
+            "flankOrBackRow": true
+          },
+          "might": 6
+        }
+      ]
+    },
+    "heal": null,
+    "war": {
+      "range": null,
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "assassinSilentKill"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

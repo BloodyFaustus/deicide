@@ -1,0 +1,28 @@
+{
+  "_id": "0YH9lpXTWXg0p7Jo",
+  "name": "Royal Keen Dagger",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "dagger",
+    "tier": "royal",
+    "prefix": "keen",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 13, Accuracy +45, Crit 25, Range 1, Weight 2. B to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "royalKeenDagger"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

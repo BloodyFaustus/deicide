@@ -1,0 +1,24 @@
+{
+  "_id": "CrnAEExTdyeK8D7A",
+  "name": "Phoenix Ash",
+  "type": "consumable",
+  "img": "icons/svg/chest.svg",
+  "system": {
+    "key": "phoenixAsh",
+    "kind": "belt",
+    "quantity": 1,
+    "description": "<p>Revive a Downed ally at 25 percent. 40 Dust.</p>",
+    "identifier": "phoenixAsh"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

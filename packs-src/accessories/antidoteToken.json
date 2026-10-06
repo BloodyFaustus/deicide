@@ -1,0 +1,28 @@
+{
+  "_id": "hrcERqPkDySqTkTc",
+  "name": "Antidote Token",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "antidoteToken",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>immune to poison. 10 Dust.</p>",
+    "equipped": false,
+    "identifier": "antidoteToken"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

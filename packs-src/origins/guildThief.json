@@ -1,0 +1,30 @@
+{
+  "_id": "66X4i8FLqQb5itl0",
+  "name": "Guild Thief",
+  "type": "origin",
+  "img": "icons/svg/village.svg",
+  "system": {
+    "kind": "background",
+    "description": "<p>Rogue Rank 2.</p>",
+    "points": {
+      "skl": 2,
+      "spd": 2
+    },
+    "grants": {
+      "classes": [
+        {
+          "id": "rogue",
+          "rank": 2
+        }
+      ]
+    },
+    "identifier": "guildThief"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

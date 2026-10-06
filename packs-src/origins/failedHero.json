@@ -1,0 +1,34 @@
+{
+  "_id": "wDJea5i1U7gwE4Tx",
+  "name": "Failed Hero",
+  "type": "origin",
+  "img": "icons/svg/village.svg",
+  "system": {
+    "kind": "background",
+    "description": "<p>Saturation at half gain, Channel +4, Hero class at Saturation 50.</p>",
+    "points": {
+      "mag": 2,
+      "res": 2
+    },
+    "modifiers": [
+      {
+        "key": "channel.max",
+        "value": 4,
+        "stage": "innate"
+      }
+    ],
+    "flags": {
+      "saturationRate": 0.5
+    },
+    "grants": {},
+    "story": true,
+    "identifier": "failedHero"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

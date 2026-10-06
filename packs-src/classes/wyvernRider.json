@@ -1,0 +1,105 @@
+{
+  "_id": "n7SbzQ1z313rL21P",
+  "name": "Wyvern Rider",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "flying"
+    ],
+    "growth": {
+      "str": "A",
+      "mag": "E",
+      "skl": "B",
+      "spd": "A",
+      "def": "B",
+      "res": "C",
+      "cmd": "C"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "flying",
+        "axe"
+      ],
+      "secondary": [
+        "lance",
+        "authority"
+      ]
+    },
+    "trainsText": "Flying, Axe / Lance, Authority",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "flying",
+          "grade": "D"
+        },
+        {
+          "any": [
+            {
+              "prof": "axe",
+              "grade": "C"
+            },
+            {
+              "prof": "lance",
+              "grade": "C"
+            }
+          ]
+        }
+      ]
+    },
+    "prerequisiteText": "Flying D, Axe C or Lance C",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "wyvernRiderDive",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "wyvernRiderUpdraft",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "wyvernRiderTalonGrip",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "wyvernRiderAirScreen",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "wyvernRiderEvasiveRoll",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "wyvernRiderSkyHunter",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "wyvernRider",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

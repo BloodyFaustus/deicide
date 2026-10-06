@@ -1,0 +1,24 @@
+{
+  "_id": "Lf6Wl1s0EVaI1cwW",
+  "name": "Foreign Human",
+  "type": "origin",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "kind": "people",
+    "description": "<p>None.</p>",
+    "growth": {
+      "skl": "D",
+      "spd": "D",
+      "str": "E",
+      "mag": "E"
+    },
+    "identifier": "foreignHuman"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

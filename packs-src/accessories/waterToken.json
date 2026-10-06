@@ -1,0 +1,28 @@
+{
+  "_id": "1aIvgfRZEojry39M",
+  "name": "Water Token",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "waterToken",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>immune to water. 10 Dust.</p>",
+    "equipped": false,
+    "identifier": "waterToken"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

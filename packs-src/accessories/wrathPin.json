@@ -1,0 +1,20 @@
+{
+  "_id": "63rOn7ib6ByJHs1W",
+  "name": "Wrath Pin",
+  "type": "pin",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "ability": "pinWrath",
+    "price": 45,
+    "description": "<p>At or below half HP, crit +30.</p>",
+    "equipped": false,
+    "identifier": "wrathPin"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

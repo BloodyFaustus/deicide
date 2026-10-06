@@ -1,0 +1,28 @@
+{
+  "_id": "bYCvU7rer5yd8O2s",
+  "name": "Steel Mageslayer Axe",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "axe",
+    "tier": "steel",
+    "prefix": "mageslayer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 12, Accuracy +5, Crit 5, Range 1, Weight 10. D to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "steelMageslayerAxe"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

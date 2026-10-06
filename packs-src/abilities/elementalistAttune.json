@@ -1,0 +1,47 @@
+{
+  "_id": "SKileJ54TYiNCR84",
+  "name": "Attune",
+  "type": "ability",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "type": "stance",
+    "source": {
+      "kind": "class",
+      "id": "elementalist",
+      "rank": 1
+    },
+    "description": "<p>Choose a natural element, Might +2 with it.</p>",
+    "summary": "choose a natural element, Might +2 with it",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "elementalistAttune"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

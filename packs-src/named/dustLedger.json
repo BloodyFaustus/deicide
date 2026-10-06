@@ -1,0 +1,45 @@
+{
+  "_id": "xO5ewabSApt763dz",
+  "name": "Dust Ledger",
+  "type": "named",
+  "img": "icons/svg/holy-shield.svg",
+  "system": {
+    "fills": "accessory",
+    "base": null,
+    "stats": {},
+    "modifiers": [
+      {
+        "key": "income.multiplier",
+        "op": "mul",
+        "value": 1.5
+      }
+    ],
+    "special": "Brasswater Standing +20 while equipped.",
+    "drawback": {
+      "text": "Crown Standing minus 20 while equipped.",
+      "flags": {
+        "standingEquipped": {
+          "brasswater": 20,
+          "crown": -20
+        }
+      },
+      "refund": "standingMinus20"
+    },
+    "pp": 30,
+    "hook": "Mirella Dant.",
+    "description": "<p>Personal Dust income +50 percent. Brasswater Standing +20.</p><p>Drawback: Crown Standing minus 20 while equipped.</p>",
+    "equipped": false,
+    "identifier": "dustLedger"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

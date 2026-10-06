@@ -1,0 +1,20 @@
+{
+  "_id": "BGvN3MqAfcyxpdqK",
+  "name": "Doublecast Pin",
+  "type": "pin",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "ability": "pinDoublecast",
+    "price": 60,
+    "description": "<p>Once per encounter, cast two spells as one Action at full cost, Weight 12.</p>",
+    "equipped": false,
+    "identifier": "doublecastPin"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

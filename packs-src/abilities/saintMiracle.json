@@ -1,0 +1,59 @@
+{
+  "_id": "waoYpzfRxKbTBLFJ",
+  "name": "Miracle",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "type": "reaction",
+    "source": {
+      "kind": "class",
+      "id": "saint",
+      "rank": 6
+    },
+    "description": "<p>Ally dies, they live at full HP, once per campaign.</p>",
+    "summary": "ally dies, they live at full HP, once per campaign",
+    "tags": [],
+    "direct": false,
+    "trigger": "ally dies, they live at full HP, once per campaign",
+    "usage": {
+      "limit": 1,
+      "per": "campaign"
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "ally",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "saintMiracle"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

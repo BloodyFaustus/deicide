@@ -1,0 +1,863 @@
+:root {
+  --deicide-accent: #8c2f2f;
+  --deicide-accent-soft: rgba(140, 47, 47, 0.18);
+  --deicide-ok: #3f7a3f;
+  --deicide-ok-soft: rgba(63, 122, 63, 0.2);
+  --deicide-locked: rgba(120, 120, 120, 0.25);
+  --deicide-owned: rgba(70, 110, 160, 0.25);
+  --deicide-line: rgba(0, 0, 0, 0.18);
+  --deicide-panel: rgba(0, 0, 0, 0.06);
+  --deicide-truth: #b03030;
+}
+
+.deicide.sheet {
+  .sheet-header {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    padding: 0.5rem 0.5rem 0.25rem;
+    border-bottom: 1px solid var(--deicide-line);
+
+    .profile {
+      width: 72px;
+      height: 72px;
+      object-fit: cover;
+      border: 1px solid var(--deicide-line);
+      cursor: pointer;
+      flex: 0 0 72px;
+    }
+
+    .identity {
+      flex: 1;
+      min-width: 0;
+
+      input[name="name"] {
+        font-size: var(--font-size-20);
+        font-weight: bold;
+        width: 100%;
+        height: 2rem;
+      }
+
+      .line {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem 0.75rem;
+        margin: 0.25rem 0 0;
+        align-items: center;
+        font-size: var(--font-size-12);
+      }
+
+      .origin span {
+        opacity: 0.85;
+      }
+    }
+
+    .header-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      flex: 0 0 auto;
+    }
+  }
+
+  .tab {
+    padding: 0.5rem;
+  }
+
+  h3 {
+    margin: 0.75rem 0 0.35rem;
+    font-size: var(--font-size-14);
+    border-bottom: 1px solid var(--deicide-line);
+    padding-bottom: 0.15rem;
+
+    small {
+      font-weight: normal;
+      opacity: 0.7;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .columns {
+    display: flex;
+    gap: 1rem;
+
+    .column {
+      flex: 1;
+      min-width: 0;
+    }
+  }
+
+  .grid {
+    display: grid;
+    gap: 0.35rem 0.75rem;
+
+    &.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    &.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    &.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      font-size: var(--font-size-12);
+
+      input, select {
+        margin-top: 0.15rem;
+      }
+    }
+  }
+
+  input.tiny { width: 3.2rem; }
+  input.small { width: 5rem; }
+  input.identifier { width: 14rem; font-family: var(--font-monospace); font-size: var(--font-size-11); }
+
+  ul.plain {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .stat-line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    margin: 0.25rem 0;
+    font-size: var(--font-size-12);
+  }
+
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    .hint {
+      font-size: var(--font-size-11);
+      opacity: 0.75;
+    }
+
+    label {
+      font-size: var(--font-size-12);
+    }
+  }
+
+  .hint, .empty {
+    font-size: var(--font-size-11);
+    opacity: 0.7;
+  }
+
+  .warn {
+    color: var(--deicide-accent);
+    font-weight: bold;
+  }
+
+  .mode-badge {
+    padding: 0.1rem 0.5rem;
+    border-radius: 3px;
+    font-size: var(--font-size-11);
+    background: var(--deicide-panel);
+    border: 1px solid var(--deicide-line);
+
+    &.war { border-color: var(--deicide-accent); }
+    &.dungeon, &.arena { border-color: var(--deicide-ok); }
+  }
+
+  .badge {
+    padding: 0 0.4rem;
+    border-radius: 3px;
+    background: var(--deicide-accent-soft);
+    font-size: var(--font-size-11);
+  }
+
+  button.inline-control {
+    font-size: var(--font-size-11);
+    padding: 0 0.4rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+
+    &.on {
+      background: var(--deicide-ok-soft);
+      border-color: var(--deicide-ok);
+    }
+  }
+
+  .truth {
+    color: var(--deicide-truth);
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+
+  details summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: var(--font-size-12);
+  }
+
+  textarea {
+    width: 100%;
+    font-family: var(--font-monospace);
+    font-size: var(--font-size-11);
+  }
+
+  pre {
+    max-height: 420px;
+    overflow: auto;
+    font-size: var(--font-size-11);
+    white-space: pre-wrap;
+    word-break: break-word;
+    background: var(--deicide-panel);
+    padding: 0.5rem;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.75rem;
+
+    .tag {
+      font-size: var(--font-size-11);
+    }
+  }
+}
+
+.deicide.sheet.character {
+  .attribute-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th {
+      text-align: left;
+      width: 3.5rem;
+      font-size: var(--font-size-12);
+    }
+
+    td.value {
+      font-weight: bold;
+      font-variant-numeric: tabular-nums;
+    }
+
+    td.detail small {
+      opacity: 0.7;
+    }
+
+    tr.at-cap td.value { color: var(--deicide-accent); }
+    tr.over-cap td.value { color: var(--deicide-truth); }
+  }
+
+  .pool {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin: 0.25rem 0;
+    font-size: var(--font-size-12);
+
+    label {
+      width: 4.5rem;
+      font-weight: bold;
+    }
+
+    input {
+      width: 3.5rem;
+      text-align: center;
+    }
+
+    button.step {
+      width: 1.5rem;
+      height: 1.5rem;
+      line-height: 1;
+      padding: 0;
+    }
+
+    .no-mana {
+      font-style: italic;
+      opacity: 0.8;
+    }
+  }
+
+  .tracks {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.25rem 0.75rem;
+
+    label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: var(--font-size-12);
+
+      input, select { width: 4.5rem; }
+    }
+  }
+
+  .proficiencies {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.1rem 0.75rem;
+    font-size: var(--font-size-12);
+
+    li {
+      display: flex;
+      justify-content: space-between;
+
+      &.untrained { opacity: 0.5; }
+    }
+  }
+
+  .flex-pending button {
+    font-size: var(--font-size-11);
+    height: 1.5rem;
+    line-height: 1;
+  }
+
+  .class-list .class-row {
+    padding: 0.35rem 0.5rem;
+    margin-bottom: 0.35rem;
+    background: var(--deicide-panel);
+    border-left: 3px solid transparent;
+
+    &.active { border-left-color: var(--deicide-accent); }
+
+    .class-main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+      font-size: var(--font-size-12);
+
+      strong { cursor: pointer; }
+      .bar {
+        flex: 1;
+        min-width: 4rem;
+        height: 0.5rem;
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+        overflow: hidden;
+
+        .fill { display: block; height: 100%; background: var(--deicide-accent); }
+      }
+    }
+
+    .ladder {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 0.75rem;
+      margin-top: 0.25rem;
+      font-size: var(--font-size-11);
+
+      li.locked { opacity: 0.5; }
+      li small { opacity: 0.7; }
+    }
+  }
+
+  .available li {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: var(--font-size-12);
+    padding: 0.2rem 0.4rem;
+    border-left: 3px solid var(--deicide-locked);
+
+    &.ok { border-left-color: var(--deicide-ok); background: var(--deicide-ok-soft); }
+    &.locked { opacity: 0.8; }
+    strong { cursor: pointer; }
+    .missing { font-size: var(--font-size-11); opacity: 0.8; }
+  }
+
+  .ability-list .ability {
+    padding: 0.3rem 0.5rem;
+    margin-bottom: 0.3rem;
+    background: var(--deicide-panel);
+    border-left: 3px solid transparent;
+
+    &.unusable { opacity: 0.55; }
+    &.active { border-left-color: var(--deicide-ok); }
+
+    .ability-main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+      font-size: var(--font-size-12);
+
+      strong { cursor: pointer; }
+      .cost, .weight, .typeLabel { opacity: 0.8; font-size: var(--font-size-11); }
+      .automation {
+        font-size: var(--font-size-10);
+        padding: 0 0.3rem;
+        border-radius: 3px;
+        border: 1px solid var(--deicide-line);
+
+        &.full { border-color: var(--deicide-ok); }
+        &.manual { opacity: 0.6; }
+      }
+      button.use, button.slot {
+        margin-left: auto;
+        height: 1.5rem;
+        line-height: 1;
+        font-size: var(--font-size-11);
+      }
+      button.slot.on { background: var(--deicide-ok-soft); border-color: var(--deicide-ok); }
+      button.use + button.slot, button.slot + button.use { margin-left: 0; }
+    }
+
+    .summary, .collapse {
+      margin: 0.15rem 0 0;
+      font-size: var(--font-size-11);
+    }
+
+    .collapse { opacity: 0.8; font-style: italic; }
+  }
+
+  h3.muted { opacity: 0.6; }
+
+  .slots {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+
+    .slot-box {
+      background: var(--deicide-panel);
+      padding: 0.35rem 0.5rem;
+      min-height: 3rem;
+
+      > label { font-weight: bold; font-size: var(--font-size-12); display: block; }
+      .empty { font-size: var(--font-size-11); opacity: 0.6; }
+    }
+  }
+
+  .item-row {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: var(--font-size-12);
+    padding: 0.2rem 0.3rem;
+    border-bottom: 1px solid var(--deicide-line);
+
+    img { width: 24px; height: 24px; object-fit: cover; }
+    .name { font-weight: bold; cursor: pointer; }
+    .summary { flex: 1; opacity: 0.85; font-size: var(--font-size-11); }
+    .pp, .type, .quantity { font-size: var(--font-size-11); opacity: 0.8; }
+    &.equipped { background: var(--deicide-ok-soft); }
+    &.on-belt { background: var(--deicide-ok-soft); }
+    &.invalid { outline: 1px solid var(--deicide-accent); }
+  }
+
+  .standing-list li {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: var(--font-size-12);
+    padding: 0.15rem 0;
+
+    span { flex: 1; }
+    input { width: 4rem; }
+    small { width: 3.5rem; opacity: 0.8; }
+    &.band-hostile small { color: var(--deicide-truth); }
+    &.band-patron small, &.band-allied small { color: var(--deicide-ok); }
+  }
+
+  .bond-list li {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    font-size: var(--font-size-12);
+
+    input { width: 3.5rem; }
+    &.broken { opacity: 0.5; text-decoration: line-through; }
+  }
+
+  .recruit {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.25rem 0.75rem;
+    font-size: var(--font-size-12);
+
+    label { display: flex; flex-direction: column; }
+  }
+}
+
+.deicide.sheet.company, .deicide.sheet.monster, .deicide.sheet.nation {
+  .company-sheet, .monster-sheet, .nation-sheet { padding: 0.5rem; }
+
+  .strength-bar, .hp-bar {
+    position: relative;
+    height: 1.4rem;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 0.5rem 0;
+
+    .fill { position: absolute; inset: 0 auto 0 0; background: var(--deicide-accent); }
+    .text { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: var(--font-size-12); }
+  }
+
+  .pips {
+    display: flex;
+    gap: 0.3rem;
+
+    .pip {
+      width: 0.9rem;
+      height: 0.9rem;
+      border-radius: 50%;
+      border: 1px solid var(--deicide-line);
+
+      &.on { background: var(--deicide-accent); }
+    }
+  }
+
+  .item-row {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: var(--font-size-12);
+    padding: 0.2rem 0.3rem;
+    border-bottom: 1px solid var(--deicide-line);
+
+    .name { font-weight: bold; cursor: pointer; }
+    .summary { flex: 1; opacity: 0.85; font-size: var(--font-size-11); }
+    button.use { height: 1.5rem; line-height: 1; }
+  }
+
+  .tracks-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--font-size-12);
+
+    th { text-align: left; }
+    td { padding: 0.1rem 0.25rem; }
+    td.effect { font-size: var(--font-size-10); opacity: 0.8; }
+    input.offweiss { opacity: 0.7; }
+  }
+
+  .values li, .log li {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-size-11);
+  }
+
+  .log li { justify-content: flex-start; gap: 0.5rem; }
+  li.resolved { opacity: 0.7; }
+}
+
+.deicide.sheet.item {
+  .item-body { padding: 0.5rem; }
+
+  .growth-table {
+    width: 100%;
+    text-align: center;
+    font-size: var(--font-size-12);
+
+    input { width: 2rem; text-align: center; }
+    small { font-size: var(--font-size-10); opacity: 0.8; }
+  }
+
+  ul.pp li {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-size-12);
+
+    &.total { border-top: 1px solid var(--deicide-line); margin-top: 0.2rem; padding-top: 0.2rem; }
+  }
+
+  .ladder li { font-size: var(--font-size-12); }
+  .ladder code { font-size: var(--font-size-10); opacity: 0.7; }
+}
+
+.deicide.sheet .deicide-inspector {
+  padding: 0.5rem;
+  font-size: var(--font-size-13);
+
+  .inspector-header {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    .profile { width: 64px; height: 64px; object-fit: cover; cursor: pointer; }
+    .titles { flex: 1; }
+    .titles input[name="name"] { font-size: var(--font-size-20); font-weight: bold; width: 100%; }
+    .type { margin: 0.25rem 0 0; opacity: 0.8; }
+  }
+}
+
+.deicide-card {
+  font-size: var(--font-size-12);
+
+  .card-header {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.25rem;
+
+    img { width: 36px; height: 36px; object-fit: cover; border: 1px solid var(--deicide-line); }
+    h3 { margin: 0; font-size: var(--font-size-14); }
+    .meta { margin: 0; font-size: var(--font-size-11); opacity: 0.8; }
+  }
+
+  .description { font-style: italic; margin: 0.25rem 0; }
+
+  .attributes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.15rem 0.6rem;
+    margin: 0.25rem 0;
+    font-size: var(--font-size-11);
+    opacity: 0.85;
+  }
+
+  ul.plain { list-style: none; margin: 0; padding: 0; }
+  .costs li { font-size: var(--font-size-11); }
+
+  .target {
+    margin-top: 0.4rem;
+    padding: 0.3rem 0.4rem;
+    background: rgba(0, 0, 0, 0.06);
+    border-left: 3px solid var(--deicide-accent);
+
+    h4 { margin: 0 0 0.2rem; font-size: var(--font-size-12); }
+    .roll-line { margin: 0; }
+    .strikes li.hit { font-weight: bold; }
+    .strikes li.miss { opacity: 0.7; }
+    .strikes li.crit { color: var(--deicide-accent); }
+    .breakdown summary { cursor: pointer; }
+    .breakdown li { font-size: var(--font-size-11); }
+    .statuses { margin: 0.15rem 0; font-size: var(--font-size-11); }
+    button.apply { margin-top: 0.25rem; font-size: var(--font-size-11); height: 1.6rem; line-height: 1; }
+  }
+
+  .truth { color: var(--deicide-truth); font-weight: bold; letter-spacing: 0.05em; }
+  .note { font-size: var(--font-size-11); opacity: 0.8; font-style: italic; }
+  &.round-end li, &.tick li { font-size: var(--font-size-11); }
+}
+
+.deicide-tracker {
+  .phase-banner {
+    padding: 0.3rem 0.5rem;
+    font-size: var(--font-size-12);
+    background: var(--deicide-accent-soft);
+
+    &.enemy { background: rgba(60, 60, 60, 0.35); }
+    &.dungeon { background: var(--deicide-ok-soft); }
+    .phase-label { margin-left: 0.5rem; }
+  }
+
+  .side-header, .row-header {
+    padding: 0.15rem 0.5rem;
+    font-size: var(--font-size-11);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+  }
+
+  .row-header { padding-left: 1rem; text-transform: none; }
+
+  li.combatant.acted { opacity: 0.5; }
+  li.combatant.can-act { box-shadow: inset 3px 0 0 var(--deicide-ok); }
+  li.combatant.current { box-shadow: inset 3px 0 0 var(--deicide-accent); }
+
+  .strength, .tick {
+    font-size: var(--font-size-11);
+    padding: 0 0.3rem;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.2);
+
+    &.wavering { color: var(--deicide-truth); }
+  }
+
+  .decision {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    font-size: var(--font-size-11);
+
+    .text { flex: 1; }
+  }
+
+  .projection-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+
+    .projected {
+      font-size: var(--font-size-10);
+      padding: 0 0.3rem;
+      border-radius: 3px;
+      background: rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.deicide-footer {
+  flex-wrap: wrap;
+  gap: 0.25rem;
+
+  .combat-control { font-size: var(--font-size-11); }
+  .phase-note { font-size: var(--font-size-11); opacity: 0.8; }
+}
+
+.deicide.dungeon-stage {
+  .stage-root { display: flex; flex-direction: column; height: 100%; gap: 0.5rem; padding: 0.5rem; }
+
+  .stage-header {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    font-size: var(--font-size-12);
+
+    .tick { font-weight: bold; }
+    .controls { margin-left: auto; display: flex; gap: 0.25rem; }
+    .controls button { height: 1.6rem; line-height: 1; font-size: var(--font-size-11); }
+  }
+
+  .battlefield {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    flex: 1;
+    min-height: 0;
+
+    .side h3 { margin: 0 0 0.25rem; font-size: var(--font-size-13); }
+    .side-enemy { order: 2; }
+
+    .row-cell {
+      min-height: 7rem;
+      margin-bottom: 0.5rem;
+      padding: 0.3rem;
+      border: 1px dashed var(--deicide-line);
+      border-radius: 4px;
+
+      &.drop-target { background: var(--deicide-ok-soft); border-style: solid; }
+
+      .row-title {
+        display: flex;
+        justify-content: space-between;
+        font-size: var(--font-size-11);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        opacity: 0.85;
+
+        .barrier { cursor: pointer; }
+      }
+
+      .units { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.3rem; }
+    }
+
+    .unit {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.2rem 0.3rem;
+      background: var(--deicide-panel);
+      border-left: 3px solid transparent;
+      border-radius: 3px;
+      cursor: grab;
+      min-width: 9rem;
+
+      img { width: 28px; height: 28px; object-fit: cover; }
+      .unit-text { display: flex; flex-direction: column; font-size: var(--font-size-11); }
+      .small { font-size: var(--font-size-10); opacity: 0.8; }
+      &.current { border-left-color: var(--deicide-accent); }
+      &.targeted { outline: 2px solid var(--deicide-accent); }
+      &.defeated { opacity: 0.4; }
+    }
+  }
+
+  .queue {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    align-items: center;
+    font-size: var(--font-size-11);
+
+    .projected { padding: 0 0.3rem; border-radius: 3px; background: var(--deicide-panel); }
+  }
+}
+
+.deicide.class-tree {
+  .class-tree-root { display: flex; gap: 0.75rem; height: 100%; padding: 0.5rem; }
+
+  .profs {
+    flex: 0 0 12rem;
+    font-size: var(--font-size-12);
+
+    h3 { margin: 0 0 0.25rem; font-size: var(--font-size-13); }
+    li { display: flex; justify-content: space-between; }
+    .legend { margin-top: 0.75rem; font-size: var(--font-size-11); }
+    .swatch { display: inline-block; width: 0.8rem; height: 0.8rem; margin-right: 0.2rem; vertical-align: middle; border: 1px solid var(--deicide-line); }
+    .swatch.owned { background: var(--deicide-owned); }
+    .swatch.ok { background: var(--deicide-ok-soft); }
+    .swatch.locked { background: var(--deicide-locked); }
+  }
+
+  .tiers {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.5rem;
+    flex: 1;
+    overflow: auto;
+
+    .tier h3 { margin: 0 0 0.25rem; font-size: var(--font-size-13); }
+    .tier h3 small { font-weight: normal; opacity: 0.7; }
+  }
+
+  .class-card {
+    padding: 0.3rem 0.4rem;
+    margin-bottom: 0.35rem;
+    border-left: 3px solid var(--deicide-locked);
+    background: var(--deicide-locked);
+    font-size: var(--font-size-11);
+
+    &.ok { background: var(--deicide-ok-soft); border-left-color: var(--deicide-ok); }
+    &.owned { background: var(--deicide-owned); border-left-color: #4a6f9e; }
+    &.active { outline: 1px solid var(--deicide-accent); }
+
+    header { display: flex; justify-content: space-between; gap: 0.25rem; }
+    header strong { cursor: pointer; }
+    .types { opacity: 0.8; }
+    p { margin: 0.1rem 0; }
+    .growth { font-family: var(--font-monospace); font-size: var(--font-size-10); }
+    .missing { color: var(--deicide-truth); }
+    button { margin-top: 0.2rem; font-size: var(--font-size-11); height: 1.5rem; line-height: 1; }
+  }
+}
+
+.deicide.deployment {
+  .deployment-root { padding: 0.5rem; font-size: var(--font-size-12); }
+  .summary { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+  .warnings { margin: 0.25rem 0; padding-left: 1.2rem; }
+  .ok { color: var(--deicide-ok); }
+  h3 { margin: 0.6rem 0 0.25rem; font-size: var(--font-size-13); border-bottom: 1px solid var(--deicide-line); }
+  .pick-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.2rem 0.4rem;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+
+    img { width: 24px; height: 24px; object-fit: cover; }
+    small { opacity: 0.75; }
+    &.selected { background: var(--deicide-ok-soft); border-left-color: var(--deicide-ok); }
+    &.empty { cursor: default; opacity: 0.7; }
+  }
+}
+
+.deicide-creation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: var(--font-size-12);
+
+  label { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
+  fieldset { display: flex; flex-wrap: wrap; gap: 0.25rem 0.5rem; }
+  fieldset label { flex-direction: column; }
+  fieldset input { width: 3rem; }
+}
+
+.deicide-scenario-view {
+  .kind { font-size: var(--font-size-12); }
+  .controls button { font-size: var(--font-size-12); }
+  pre { font-size: var(--font-size-10); }
+}

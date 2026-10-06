@@ -1,0 +1,74 @@
+{
+  "_id": "fAFvxz13s9tBTP0w",
+  "name": "Unmake",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "stateAlchemist",
+      "rank": 8
+    },
+    "description": "<p>Truth M18, destroys one Barrier, ward, or relic, 4 Mt, SP 12, W12.</p>",
+    "summary": "Truth M18, destroys one Barrier, ward, or relic, 4 Mt, SP 12, W12",
+    "tags": [
+      "alchemy",
+      "truth"
+    ],
+    "direct": true,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 4,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 12
+    },
+    "weight": 12,
+    "attack": {
+      "basis": "mag",
+      "source": "alchemy",
+      "defense": "none",
+      "might": 18,
+      "element": "truth",
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": []
+    },
+    "heal": null,
+    "war": {
+      "range": [
+        1,
+        1
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "stateAlchemistUnmake"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

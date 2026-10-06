@@ -1,0 +1,66 @@
+{
+  "_id": "5qGAhRE3Pa1aSeF0",
+  "name": "Hunter's Mark",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "ranger",
+      "rank": 1
+    },
+    "description": "<p>W6, Might +3 vs target 3 turns.</p>",
+    "summary": "W6, Might +3 vs target 3 turns",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 6,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [
+      {
+        "id": "marked",
+        "turns": 3,
+        "target": "target",
+        "onCrit": false
+      }
+    ],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "rangerHuntersMark"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,97 @@
+{
+  "_id": "1MW02zDteszg42I4",
+  "name": "Halberdier",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "infantry"
+    ],
+    "growth": {
+      "str": "A",
+      "mag": "F",
+      "skl": "A",
+      "spd": "C",
+      "def": "A",
+      "res": "D",
+      "cmd": "B"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "lance",
+        "armor"
+      ],
+      "secondary": [
+        "axe",
+        "authority"
+      ]
+    },
+    "trainsText": "Lance, Armor / Axe, Authority",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "lance",
+          "grade": "C"
+        },
+        {
+          "prof": "armor",
+          "grade": "D"
+        }
+      ]
+    },
+    "prerequisiteText": "Lance C, Armor D",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "halberdierReach",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "halberdierSweep",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "halberdierPikeWall",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "halberdierImpale",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "halberdierSetSpear",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "halberdierPhalanx",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "halberdier",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,22 @@
+{
+  "_id": "0T37UElfZUUfdfBC",
+  "name": "Royal Heavy Armor",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "<p>DEF +11, RES +3, HP +5, Burden 2. Needs Armor B.</p>",
+    "equipped": false,
+    "identifier": "royalHeavy"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

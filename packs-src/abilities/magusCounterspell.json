@@ -1,0 +1,61 @@
+{
+  "_id": "K7L3mQnvfCTQqH2v",
+  "name": "Counterspell",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "type": "reaction",
+    "source": {
+      "kind": "class",
+      "id": "magus",
+      "rank": 4
+    },
+    "description": "<p>D100 under 10 + 3 x SKL minus 2 x caster MAG cancels, 4 Ch.</p>",
+    "summary": "d100 under 10 + 3 x SKL minus 2 x caster MAG cancels, 4 Ch",
+    "tags": [],
+    "direct": false,
+    "trigger": "d100 under 10 + 3 x SKL minus 2 x caster MAG cancels, 4 Ch",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 4,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "self",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": {
+      "formula": "10 + 3 * skl - 2 * casterMag"
+    },
+    "automation": "manual",
+    "identifier": "magusCounterspell"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

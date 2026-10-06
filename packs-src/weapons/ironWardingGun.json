@@ -1,0 +1,28 @@
+{
+  "_id": "Gg26WT2Qc0qCg3J5",
+  "name": "Iron Warding Gun",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "gun",
+    "tier": "iron",
+    "prefix": "warding",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 9, Accuracy +15, Crit 10, Range 2, Weight 10. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironWardingGun"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

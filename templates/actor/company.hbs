@@ -1,0 +1,37 @@
+<section class="company-sheet">
+  <header class="sheet-header">
+    <img class="profile" src="{{actor.img}}" alt="{{actor.name}}" data-action="editImage" data-edit="img">
+    <div class="identity">
+      <input type="text" name="name" value="{{actor.name}}">
+      <p class="line">{{derived.typeLabel}}{{#if system.shipClass}} ({{system.shipClass}}){{/if}}, Quality {{system.quality}} ({{derived.qualityGrade}}){{#if system.named}}, named{{/if}}{{#if system.routed}}, routed{{/if}}</p>
+    </div>
+  </header>
+  <div class="strength-bar" data-tooltip="Strength">
+    <span class="fill" style="width: {{system.strength}}%"></span>
+    <span class="text">Strength {{system.strength}}</span>
+  </div>
+  <div class="grid two">
+    <label>Strength <input type="number" name="system.strength" value="{{system.strength}}" min="0" max="100"></label>
+    <label>Quality <input type="number" name="system.quality" value="{{system.quality}}" min="1" max="5"> <small>cap {{qualityCap}}</small></label>
+    <label>Type <select name="system.type">{{#each types}}<option value="{{id}}" {{#if (eq id @root.system.type)}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+    <label>Ship class <select name="system.shipClass"><option value="">none</option>{{#each ships}}<option value="{{this}}" {{#if (eq this @root.system.shipClass)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
+    <label>Side <select name="system.side">{{#each sides}}<option value="{{this}}" {{#if (eq this @root.system.side)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
+    <label>Doctrine <select name="system.doctrine"><option value="">none (player run)</option>{{#each doctrines}}<option value="{{id}}" {{#if (eq id @root.system.doctrine)}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+    <label>Owner <select name="system.owner"><option value="">none</option>{{#each owners}}<option value="{{id}}" {{#if (eq id @root.system.owner)}}selected{{/if}}>{{name}}</option>{{/each}}</select></label>
+    <label>Banner <input type="text" name="system.banner" value="{{system.banner}}"></label>
+  </div>
+  <h3>Derived</h3>
+  <p class="stat-line"><span>DEF {{derived.def}}</span><span>RES {{derived.res}}</span><span>vs character {{derived.atkVsCharacter}}</span><span>vs company {{derived.atkVsCompany}}</span><span>Move {{derived.move}}</span><span>Range {{derived.range.[0]}} to {{derived.range.[1]}}</span>{{#if derived.broadsides}}<span>{{derived.broadsides}} broadsides, Might {{derived.broadsideMight}}</span>{{/if}}</p>
+  <p class="stat-line">{{#if derived.wavering}}<span class="warn">Below 30: morale check each round</span>{{/if}}{{#if derived.routed}}<span class="warn">Routed</span>{{/if}}</p>
+  <h3>Veterancy <small>{{system.veterancy}} of 5</small></h3>
+  <p class="pips">{{#each pips}}<span class="pip {{#if this}}on{{/if}}"></span>{{/each}}</p>
+  {{#if isGM}}
+  <p class="toolbar">
+    <button type="button" data-action="veterancy">End of battle bookkeeping</button>
+    {{#if upgradeCost}}<button type="button" data-action="upgrade">Quality +1 ({{upgradeCost}} Nation Dust)</button>{{/if}}
+    {{#if system.routed}}<button type="button" data-action="reserve">Return from Reserve</button>{{/if}}
+  </p>
+  {{/if}}
+  <h3>Notes</h3>
+  <prose-mirror name="system.notes" value="{{system.notes}}" document-uuid="{{actor.uuid}}" toggled>{{{notesHtml}}}</prose-mirror>
+</section>

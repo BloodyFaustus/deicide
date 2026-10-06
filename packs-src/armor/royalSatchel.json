@@ -1,0 +1,24 @@
+{
+  "_id": "amfIkvH3Wz6yubKH",
+  "name": "Royal Satchel",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "satchel",
+    "tier": "royal",
+    "description": "<p>matter +5, harvest +1.</p>",
+    "equipped": false,
+    "identifier": "royalSatchel"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "TKcSpIQMDkA0No6r",
+  "name": "Silver Warding Axe",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "axe",
+    "tier": "silver",
+    "prefix": "warding",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 16, Accuracy +10, Crit 10, Range 1, Weight 10. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverWardingAxe"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

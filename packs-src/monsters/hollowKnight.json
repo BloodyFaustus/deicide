@@ -1,0 +1,145 @@
+{
+  "_id": "2iH9UA32vqPjm0wB",
+  "name": "Hollow Knight",
+  "type": "monster",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "identifier": "hollowKnight",
+    "level": 12,
+    "hp": {
+      "value": 70,
+      "max": 70
+    },
+    "def": 20,
+    "res": 10,
+    "spd": 9,
+    "mag": 0,
+    "delay": {
+      "mode": "spd",
+      "value": 30
+    },
+    "hitBase": null,
+    "tags": [
+      "undead",
+      "armored"
+    ],
+    "boss": false,
+    "divineBeing": false,
+    "weakness": "divine",
+    "resistance": "void",
+    "immunities": [],
+    "phaseBreaks": [],
+    "yield": {
+      "saturation": 3,
+      "dust": 0,
+      "drops": []
+    },
+    "row": "front",
+    "description": "<p>Reforms once at 25 percent HP.</p>",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Hollow Knight",
+    "disposition": -1,
+    "actorLink": false,
+    "texture": {
+      "src": "icons/svg/skull.svg"
+    }
+  },
+  "items": [
+    {
+      "_id": "YjwLicYe6vpuS8SA",
+      "name": "Corrupted Cleave",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "hollowKnightCorruptedCleave",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "hollowKnight",
+          "rank": null
+        },
+        "description": "<p>M28 row.</p>",
+        "summary": "M28 row",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": {
+          "basis": "flat",
+          "source": "none",
+          "defense": "def",
+          "might": 28,
+          "element": null,
+          "hit": 0,
+          "crit": 0,
+          "weaponLines": [],
+          "strikes": 1,
+          "ignoreDef": 0,
+          "bonuses": [],
+          "ignoreAvoid": false,
+          "perTile": null
+        },
+        "heal": null,
+        "war": {
+          "range": [
+            1,
+            1
+          ],
+          "area": {
+            "shape": "blast",
+            "size": 1
+          },
+          "target": "enemy",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "row",
+          "note": ""
+        },
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "partial"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true,
+      "startingStatuses": []
+    }
+  }
+}

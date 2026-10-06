@@ -1,0 +1,60 @@
+{
+  "_id": "MBeCG1vqotIEqLfI",
+  "name": "Bulwark",
+  "type": "ability",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "type": "stance",
+    "source": {
+      "kind": "class",
+      "id": "knight",
+      "rank": 1
+    },
+    "description": "<p>DEF +6, RES +2, Delay +10.</p>",
+    "summary": "DEF +6, RES +2, Delay +10",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "defense.def",
+        "value": 6
+      },
+      {
+        "key": "defense.res",
+        "value": 2
+      },
+      {
+        "key": "delay",
+        "value": 10
+      }
+    ],
+    "roll": null,
+    "automation": "full",
+    "identifier": "knightBulwark"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

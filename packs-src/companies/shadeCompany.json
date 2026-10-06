@@ -1,0 +1,45 @@
+{
+  "_id": "djkAhdfQUnD2JuI0",
+  "name": "Shade Company",
+  "type": "company",
+  "img": "icons/svg/tower.svg",
+  "system": {
+    "identifier": "shadeCompany",
+    "strength": 100,
+    "quality": 1,
+    "type": "shade",
+    "shipClass": null,
+    "side": "lathander",
+    "doctrine": null,
+    "screenOfficerId": null,
+    "veterancy": 0,
+    "veterancyQuality": 0,
+    "owner": null,
+    "banner": "",
+    "named": false,
+    "routed": false,
+    "acted": false,
+    "facing": 0,
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Shade Company",
+    "actorLink": true,
+    "displayBars": 50,
+    "texture": {
+      "src": "icons/svg/tower.svg"
+    }
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

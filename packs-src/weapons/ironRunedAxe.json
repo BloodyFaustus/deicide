@@ -1,0 +1,28 @@
+{
+  "_id": "Oyu7SbeSWTUD0WMJ",
+  "name": "Iron Runed Axe",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "axe",
+    "tier": "iron",
+    "prefix": "runed",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 10, Accuracy +0, Crit 0, Range 1, Weight 10. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironRunedAxe"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

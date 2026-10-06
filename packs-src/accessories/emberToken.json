@@ -1,0 +1,28 @@
+{
+  "_id": "WnXRPm6kworwjP2G",
+  "name": "Ember Token",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "emberToken",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>immune to fire. 10 Dust.</p>",
+    "equipped": false,
+    "identifier": "emberToken"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

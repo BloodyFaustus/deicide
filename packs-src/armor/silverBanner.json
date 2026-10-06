@@ -1,0 +1,24 @@
+{
+  "_id": "2cMO1iM3Iwf7CqhY",
+  "name": "Silver Banner",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "banner",
+    "tier": "silver",
+    "description": "<p>commandRadius +1.</p>",
+    "equipped": false,
+    "identifier": "silverBanner"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

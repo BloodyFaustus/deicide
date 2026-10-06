@@ -1,0 +1,28 @@
+{
+  "_id": "gXEvEEYR0ncH1mFH",
+  "name": "Steel Reach Sword",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "sword",
+    "tier": "steel",
+    "prefix": "reach",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 7, Accuracy +15, Crit 10, Range 1 to 2, Weight 6. D to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "steelReachSword"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

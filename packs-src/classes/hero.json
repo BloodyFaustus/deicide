@@ -1,0 +1,72 @@
+{
+  "_id": "wURRpXpRMPCWloHh",
+  "name": "Hero",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 4,
+    "types": [],
+    "growth": {},
+    "hp": 0,
+    "trains": {
+      "primary": [],
+      "secondary": []
+    },
+    "trainsText": "Grants SS cap",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "saturation": 50
+        }
+      ]
+    },
+    "prerequisiteText": "Any mana bearing Summoned at Saturation 50, layered on any class",
+    "storyGate": "heroAwakening",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "heroAdaptation",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "heroHerosPresence",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "heroSaturatedStrike",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "heroManaDrinker",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "heroWeaponOfWar",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": true,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "grantsCap": "SS",
+    "identifier": "hero",
+    "ladder": "legend"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

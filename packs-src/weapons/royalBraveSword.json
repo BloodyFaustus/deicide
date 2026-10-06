@@ -1,0 +1,28 @@
+{
+  "_id": "7YM2Kk1EGBvmVQzT",
+  "name": "Royal Brave Sword",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "sword",
+    "tier": "royal",
+    "prefix": "brave",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 12, Accuracy +25, Crit 15, Range 1, Weight 8. B to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "royalBraveSword"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "lFeyQHWjxvkgq0xm",
+  "name": "Steel Warding Lance",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "lance",
+    "tier": "steel",
+    "prefix": "warding",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 11, Accuracy +10, Crit 5, Range 1, Weight 8. D to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "steelWardingLance"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

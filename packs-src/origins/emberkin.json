@@ -1,0 +1,27 @@
+{
+  "_id": "Kw8YkoESuV7Jc58Q",
+  "name": "Emberkin",
+  "type": "origin",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "kind": "people",
+    "description": "<p>Overcast Burn 1 per point instead of 2. The floor of 1 still applies.</p>",
+    "growth": {
+      "mag": "D",
+      "str": "D",
+      "spd": "E",
+      "def": "E"
+    },
+    "flags": {
+      "overcastBurnPerPoint": 1
+    },
+    "identifier": "emberkin"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "lSUlQU8OMXX26Smq",
+  "name": "Steel Keen Dagger",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "dagger",
+    "tier": "steel",
+    "prefix": "keen",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 6, Accuracy +35, Crit 20, Range 1, Weight 4. D to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "steelKeenDagger"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

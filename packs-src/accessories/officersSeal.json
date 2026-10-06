@@ -1,0 +1,28 @@
+{
+  "_id": "JqAdSoxC2ZrBBBNs",
+  "name": "Officer's Seal",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "officersSeal",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>command radius +1. 10 Dust.</p>",
+    "equipped": false,
+    "identifier": "officersSeal"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

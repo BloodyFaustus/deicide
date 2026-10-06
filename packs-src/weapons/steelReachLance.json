@@ -1,0 +1,28 @@
+{
+  "_id": "mEDCGupmPFXjoaqu",
+  "name": "Steel Reach Lance",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "lance",
+    "tier": "steel",
+    "prefix": "reach",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 9, Accuracy +10, Crit 5, Range 1 to 2, Weight 8. D to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "steelReachLance"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

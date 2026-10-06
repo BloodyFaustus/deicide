@@ -1,0 +1,105 @@
+{
+  "_id": "x0SEdtSGcVx64wrB",
+  "name": "Plague Doctor",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 3,
+    "types": [
+      "caster"
+    ],
+    "growth": {
+      "str": "C",
+      "mag": "A",
+      "skl": "A",
+      "spd": "C",
+      "def": "B",
+      "res": "A",
+      "cmd": "C"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "faith",
+        "alchemy"
+      ],
+      "secondary": [
+        "reason",
+        "gun"
+      ]
+    },
+    "trainsText": "Faith, Alchemy / Reason, Gun",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "any": [
+            {
+              "prof": "faith",
+              "grade": "B"
+            },
+            {
+              "prof": "alchemy",
+              "grade": "B"
+            }
+          ]
+        },
+        {
+          "prof": "reason",
+          "grade": "C"
+        }
+      ]
+    },
+    "prerequisiteText": "Faith B or Alchemy B, Reason C",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "plagueDoctorDiagnose",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "plagueDoctorPurge",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "plagueDoctorInoculate",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "plagueDoctorQuarantine",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "plagueDoctorCulture",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "plagueDoctorCure",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "plagueDoctor",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

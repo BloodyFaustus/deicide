@@ -1,0 +1,28 @@
+{
+  "_id": "RjpH0JIFfTb39zIK",
+  "name": "Silver Mageslayer Lance",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "lance",
+    "tier": "silver",
+    "prefix": "mageslayer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 13, Accuracy +15, Crit 10, Range 1, Weight 8. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverMageslayerLance"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

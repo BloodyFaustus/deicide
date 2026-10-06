@@ -1,0 +1,28 @@
+{
+  "_id": "rkKlC1tNGMdxk36F",
+  "name": "Silver Lance",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "lance",
+    "tier": "silver",
+    "prefix": null,
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 14, Accuracy +15, Crit 10, Range 1, Weight 8. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverLance"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

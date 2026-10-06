@@ -1,0 +1,28 @@
+{
+  "_id": "pHBDZeJiNXwNU7pl",
+  "name": "Steel Killer Bow",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "bow",
+    "tier": "steel",
+    "prefix": "killer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 9, Accuracy +10, Crit 35, Range 2 to 3, Weight 8. D to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "steelKillerBow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "4jtR1sU5j72oIm0q",
+  "name": "Silver Reach Dagger",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "dagger",
+    "tier": "silver",
+    "prefix": "reach",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 8, Accuracy +25, Crit 25, Range 1 to 2, Weight 4. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverReachDagger"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

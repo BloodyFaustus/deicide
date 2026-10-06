@@ -1,0 +1,20 @@
+{
+  "_id": "BwkJ9VocVyg16K3P",
+  "name": "Counter Pin",
+  "type": "pin",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "ability": "pinCounter",
+    "price": 45,
+    "description": "<p>When hit in melee, attack back at Might minus 2.</p>",
+    "equipped": false,
+    "identifier": "counterPin"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

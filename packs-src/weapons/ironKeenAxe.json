@@ -1,0 +1,28 @@
+{
+  "_id": "QLGAYBvwIN3Z1cQ4",
+  "name": "Iron Keen Axe",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "axe",
+    "tier": "iron",
+    "prefix": "keen",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 9, Accuracy +15, Crit 0, Range 1, Weight 10. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironKeenAxe"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

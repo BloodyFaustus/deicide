@@ -1,0 +1,55 @@
+{
+  "_id": "JjP0e6azAQdMt7zY",
+  "name": "Reload",
+  "type": "ability",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "type": "stance",
+    "source": {
+      "kind": "class",
+      "id": "gunner",
+      "rank": 1
+    },
+    "description": "<p>Next gun attack Might +4.</p>",
+    "summary": "next gun attack Might +4",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "might",
+        "value": 4,
+        "when": {
+          "actionWeaponLine": "gun"
+        }
+      }
+    ],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "gunnerReload"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

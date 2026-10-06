@@ -1,0 +1,63 @@
+{
+  "_id": "ZR3d0KJIHJ06TeiG",
+  "name": "Spellthief",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "type": "reaction",
+    "source": {
+      "kind": "origin",
+      "id": "spellthiefBloodline"
+    },
+    "description": "<p>Enemy cast within 3 tiles (War) or any row (Dungeon), d100 under 20 + 3 x SKL minus 2 x caster MAG cancels and stores it. 2 slots, 3 at level 15. Release with the caster's Might and your SKL.</p>",
+    "summary": "enemy cast within 3 tiles (War) or any row (Dungeon), d100 under 20 + 3 x SKL minus 2 x caster MAG cancels and stores it. 2 slots, 3 at level 15. Release with the caster's Might and your SKL",
+    "tags": [],
+    "direct": false,
+    "trigger": "enemy cast within 3 tiles (War) or any row (Dungeon), d100 under 20 + 3 x SKL minus 2 x caster MAG cancels and stores it. 2 slots, 3 at level 15. Release with the caster's Might and your SKL",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": {
+      "reach": "any",
+      "note": "Triggers on an enemy cast from any row."
+    },
+    "statuses": [],
+    "modifiers": [],
+    "roll": {
+      "formula": "20 + 3 * skl - 2 * casterMag"
+    },
+    "automation": "manual",
+    "identifier": "originSpellthief"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

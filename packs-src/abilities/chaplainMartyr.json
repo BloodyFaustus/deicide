@@ -1,0 +1,47 @@
+{
+  "_id": "4AFJPAE3chEvdszy",
+  "name": "Martyr",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "type": "mastery",
+    "source": {
+      "kind": "class",
+      "id": "chaplain",
+      "rank": 10
+    },
+    "description": "<p>Heals +50 percent.</p>",
+    "summary": "heals +50 percent",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "chaplainMartyr"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

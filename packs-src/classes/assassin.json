@@ -1,0 +1,104 @@
+{
+  "_id": "86y1BGdPu8prwBAc",
+  "name": "Assassin",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "infantry"
+    ],
+    "growth": {
+      "str": "A",
+      "mag": "E",
+      "skl": "S",
+      "spd": "S",
+      "def": "D",
+      "res": "D",
+      "cmd": "F"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "sword"
+      ],
+      "secondary": [
+        "bow",
+        "gun"
+      ]
+    },
+    "trainsText": "Sword / Bow, Gun",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "sword",
+          "grade": "C"
+        },
+        {
+          "any": [
+            {
+              "prof": "bow",
+              "grade": "D"
+            },
+            {
+              "prof": "gun",
+              "grade": "D"
+            }
+          ]
+        }
+      ]
+    },
+    "prerequisiteText": "Sword C, Bow D or Gun D",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "assassinLethality",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "assassinSilentKill",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "assassinShadowstep",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "assassinPoisonEdge",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "assassinVanish",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "assassinDeathMark",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "assassin",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,74 @@
+{
+  "_id": "skUfB7CB3WwqsIbk",
+  "name": "Rend",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "bioAlchemist",
+      "rank": 6
+    },
+    "description": "<p>Truth M10, single, 2 Mt, SP 6, W8.</p>",
+    "summary": "Truth M10, single, 2 Mt, SP 6, W8",
+    "tags": [
+      "alchemy",
+      "truth"
+    ],
+    "direct": true,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 2,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 6
+    },
+    "weight": 8,
+    "attack": {
+      "basis": "mag",
+      "source": "alchemy",
+      "defense": "none",
+      "might": 10,
+      "element": "truth",
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": []
+    },
+    "heal": null,
+    "war": {
+      "range": [
+        1,
+        1
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "bioAlchemistRend"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

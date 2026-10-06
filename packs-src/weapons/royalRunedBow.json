@@ -1,0 +1,28 @@
+{
+  "_id": "aNYPTwtMUc0Cqg3k",
+  "name": "Royal Runed Bow",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "bow",
+    "tier": "royal",
+    "prefix": "runed",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 17, Accuracy +20, Crit 15, Range 2 to 3, Weight 6. B to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "royalRunedBow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

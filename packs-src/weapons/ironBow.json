@@ -1,0 +1,28 @@
+{
+  "_id": "Ly6X0VmO3zxtj1w5",
+  "name": "Iron Bow",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "bow",
+    "tier": "iron",
+    "prefix": null,
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 7, Accuracy +5, Crit 5, Range 2 to 3, Weight 8. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironBow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "_id": "yxjFXeNJXp3b6JwX",
+  "name": "Chevalier",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 3,
+    "types": [
+      "mounted"
+    ],
+    "growth": {
+      "str": "A",
+      "mag": "F",
+      "skl": "A",
+      "spd": "S",
+      "def": "B",
+      "res": "D",
+      "cmd": "C"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "riding",
+        "lance"
+      ],
+      "secondary": [
+        "sword",
+        "authority"
+      ]
+    },
+    "trainsText": "Riding, Lance / Sword, Authority",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "riding",
+          "grade": "B"
+        },
+        {
+          "prof": "lance",
+          "grade": "C"
+        }
+      ]
+    },
+    "prerequisiteText": "Riding B, Lance C",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "chevalierDoubleCanto",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "chevalierLightningLance",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "chevalierOutflank",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "chevalierPursuit",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "chevalierEvasion",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "chevalierHorselord",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "chevalier",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

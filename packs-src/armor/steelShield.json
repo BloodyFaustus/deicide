@@ -1,0 +1,24 @@
+{
+  "_id": "MlOsdYw3iduzwkno",
+  "name": "Steel Shield",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "shield",
+    "tier": "steel",
+    "description": "<p>def +3, res +1, avoid -5.</p>",
+    "equipped": false,
+    "identifier": "steelShield"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "Tp7Nk1cJ2bGod5rj",
+  "name": "Channel Bead",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "channelBead",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>Channel +4. 10 Dust.</p>",
+    "equipped": false,
+    "identifier": "channelBead"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

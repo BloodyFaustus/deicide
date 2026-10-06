@@ -1,0 +1,28 @@
+{
+  "_id": "CpbqYd7CrH1hNTgr",
+  "name": "Sableborn",
+  "type": "origin",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "kind": "people",
+    "description": "<p>Cannot gain Marks from exposure. Manaburn minus 2 per long rest.</p>",
+    "growth": {
+      "res": "D",
+      "skl": "D",
+      "spd": "E",
+      "mag": "E"
+    },
+    "flags": {
+      "noExposureMarks": true,
+      "manaburnLongRest": 2
+    },
+    "identifier": "sableborn"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,73 @@
+{
+  "_id": "fOkQz0d6ZvvpxJbb",
+  "name": "Annihilate",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "magus",
+      "rank": 2
+    },
+    "description": "<p>MAG M14 W12, blast 2, 6 Ch.</p>",
+    "summary": "MAG M14 W12, blast 2, 6 Ch",
+    "tags": [
+      "reason"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 6,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 12,
+    "attack": {
+      "basis": "mag",
+      "source": "spell",
+      "defense": "res",
+      "might": 14,
+      "element": null,
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": []
+    },
+    "heal": null,
+    "war": {
+      "range": [
+        1,
+        2
+      ],
+      "area": {
+        "shape": "blast",
+        "size": 2
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "magusAnnihilate"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

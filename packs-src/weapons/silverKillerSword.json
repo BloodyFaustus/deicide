@@ -1,0 +1,28 @@
+{
+  "_id": "rgkEiFWfTJir2DpS",
+  "name": "Silver Killer Sword",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "sword",
+    "tier": "silver",
+    "prefix": "killer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 11, Accuracy +20, Crit 40, Range 1, Weight 6. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverKillerSword"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

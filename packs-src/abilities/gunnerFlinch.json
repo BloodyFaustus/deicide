@@ -1,0 +1,59 @@
+{
+  "_id": "6HlBZgs77IvWhOHn",
+  "name": "Flinch",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "type": "reaction",
+    "source": {
+      "kind": "class",
+      "id": "gunner",
+      "rank": 8
+    },
+    "description": "<p>Hit at range 1, shoot and swap row.</p>",
+    "summary": "hit at range 1, shoot and swap row",
+    "tags": [],
+    "direct": false,
+    "trigger": "hit at range 1, shoot and swap row",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        1,
+        1
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "self",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "gunnerFlinch"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

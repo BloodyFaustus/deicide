@@ -1,0 +1,312 @@
+{
+  "mercer": {
+    "people": "summoned",
+    "background": "summonedHero",
+    "talent": {
+      "id": "earlyPeak",
+      "placement": {
+        "str": 2,
+        "mag": 2,
+        "skl": 2,
+        "def": 2
+      }
+    },
+    "personalGrowth": {
+      "str": 0,
+      "mag": 3,
+      "skl": 2,
+      "spd": 0,
+      "def": 1,
+      "res": 0,
+      "cmd": 0
+    },
+    "classes": [
+      {
+        "id": "alchemist",
+        "rank": 10,
+        "cp": 63
+      },
+      {
+        "id": "stateAlchemist",
+        "rank": 1,
+        "cp": 0
+      }
+    ],
+    "activeClass": "stateAlchemist",
+    "startSpread": {
+      "mag": 4,
+      "cmd": 4,
+      "skl": 2,
+      "res": 2
+    },
+    "attributes": {
+      "str": 8,
+      "mag": 14,
+      "skl": 10,
+      "spd": 6,
+      "def": 8,
+      "res": 8,
+      "cmd": 12
+    },
+    "grades": {
+      "str": "E",
+      "mag": "C",
+      "skl": "D",
+      "spd": "E",
+      "def": "E",
+      "res": "E",
+      "cmd": "D"
+    },
+    "hp": 25,
+    "channel": null,
+    "manaburn": null,
+    "matterCap": 16,
+    "matterCapBreakdown": {
+      "base": 6,
+      "strQuarter": 2,
+      "circle": 4,
+      "ironGauntlet": 2,
+      "ironSatchel": 2
+    },
+    "move": 5,
+    "commandRadius": 3,
+    "divineAttention": 0,
+    "capTier": 3,
+    "equipment": {
+      "weapon": "ironGauntlet",
+      "offhand": "ironSatchel",
+      "armor": "ironMedium",
+      "belt": [
+        "salve",
+        "salve",
+        "manaCrystal",
+        "manaCrystal"
+      ]
+    },
+    "skills": [
+      "alchemistTransmuteStrike",
+      "alchemistStoneSpike",
+      "alchemistHarvestEye",
+      "alchemistWall",
+      "alchemistDeconstruct",
+      "alchemistCircle",
+      "stateAlchemistDeconstruction"
+    ],
+    "expectedAttacks": {
+      "stoneSpike": {
+        "attack": 24,
+        "type": "physical",
+        "matter": 2,
+        "range": [
+          1,
+          3
+        ]
+      },
+      "deconstruction": {
+        "attack": 30,
+        "type": "truth",
+        "matter": 3,
+        "soulPriceHp": 8
+      },
+      "deconstructionWithRedWater": {
+        "attack": 36,
+        "type": "truth",
+        "matter": 3,
+        "soulPriceHp": 0
+      }
+    }
+  },
+  "hyacinth": {
+    "people": "halfElf",
+    "background": "manaburnSurvivor",
+    "talent": {
+      "id": "prodigy",
+      "stat": "mag",
+      "penaltyStat": "def"
+    },
+    "personalGrowth": {
+      "str": 0,
+      "mag": 3,
+      "skl": 1,
+      "spd": 1,
+      "def": 0,
+      "res": 1,
+      "cmd": 0
+    },
+    "classes": [
+      {
+        "id": "adept",
+        "rank": 3,
+        "cp": 7
+      }
+    ],
+    "activeClass": "adept",
+    "attributes": {
+      "str": 6,
+      "mag": 16,
+      "skl": 8,
+      "spd": 6,
+      "def": 6,
+      "res": 10,
+      "cmd": 6
+    },
+    "hp": 24,
+    "channelBase": 17,
+    "channelAfterOrigin": 8,
+    "channelWithKit": 11,
+    "manaburn": 60,
+    "move": 5,
+    "commandRadius": 2,
+    "capTier": 1,
+    "equipment": {
+      "weapon": "ironTome",
+      "offhand": "ironFocus",
+      "armor": "ironLight",
+      "belt": [
+        "salve",
+        "salve",
+        "dustDraught"
+      ]
+    },
+    "skills": [
+      "adeptBolt",
+      "adeptWardSelf"
+    ],
+    "expectedAttacks": {
+      "bolt": {
+        "attack": 24,
+        "type": "magical",
+        "channel": 2,
+        "castsBeforeOvercast": 5
+      }
+    }
+  },
+  "rista": {
+    "people": "foreignHuman",
+    "background": "spellthiefBloodline",
+    "talent": {
+      "id": "steady"
+    },
+    "personalGrowth": {
+      "str": 1,
+      "mag": 0,
+      "skl": 3,
+      "spd": 2,
+      "def": 0,
+      "res": 0,
+      "cmd": 0
+    },
+    "classes": [
+      {
+        "id": "rogue",
+        "rank": 2,
+        "cp": 3
+      }
+    ],
+    "activeClass": "rogue",
+    "attributes": {
+      "str": 8,
+      "mag": 6,
+      "skl": 12,
+      "spd": 12,
+      "def": 8,
+      "res": 6,
+      "cmd": 6
+    },
+    "hp": 25,
+    "channel": 10,
+    "manaburn": 0,
+    "stolenSlots": 2,
+    "move": 5,
+    "commandRadius": 2,
+    "capTier": 1,
+    "equipment": {
+      "weapon": "ironDagger",
+      "offhand": "ironBuckler",
+      "armor": "ironLight",
+      "belt": [
+        "salve",
+        "salve",
+        "smokeVial"
+      ]
+    },
+    "skills": [
+      "rogueFlank",
+      "rogueShiv"
+    ],
+    "expectedAttacks": {
+      "shiv": {
+        "attack": 16,
+        "type": "physical",
+        "critPercent": 31
+      }
+    }
+  },
+  "xidrathira": {
+    "people": "beastman",
+    "peopleSubtype": "feline",
+    "background": "duneHunter",
+    "talent": {
+      "id": "lateBloomer"
+    },
+    "personalGrowth": {
+      "str": 2,
+      "mag": 1,
+      "skl": 1,
+      "spd": 2,
+      "def": 0,
+      "res": 0,
+      "cmd": 0
+    },
+    "classes": [
+      {
+        "id": "soldier",
+        "rank": 2,
+        "cp": 3
+      }
+    ],
+    "activeClass": "soldier",
+    "attributes": {
+      "str": 12,
+      "mag": 6,
+      "skl": 8,
+      "spd": 10,
+      "def": 10,
+      "res": 6,
+      "cmd": 8
+    },
+    "hp": 26,
+    "channel": 10,
+    "manaburn": 0,
+    "staticMax": 5,
+    "move": 5,
+    "commandRadius": 2,
+    "capTier": 1,
+    "equipment": {
+      "weapon": "ironLance",
+      "offhand": "ironBuckler",
+      "armor": "ironMedium",
+      "belt": [
+        "salve",
+        "salve",
+        "antidote"
+      ]
+    },
+    "skills": [
+      "soldierShieldWall",
+      "soldierBash",
+      "originLightningStrike"
+    ],
+    "expectedAttacks": {
+      "lance": {
+        "attack": 20,
+        "type": "physical"
+      },
+      "lightningStrike": {
+        "attack": 13,
+        "type": "lightning",
+        "channel": 2
+      }
+    }
+  }
+}

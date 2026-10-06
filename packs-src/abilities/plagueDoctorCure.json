@@ -1,0 +1,47 @@
+{
+  "_id": "fKh7VW96WyEckcHK",
+  "name": "Cure",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "type": "mastery",
+    "source": {
+      "kind": "class",
+      "id": "plagueDoctor",
+      "rank": 10
+    },
+    "description": "<p>Remove 10 Manaburn permanently, once per session.</p>",
+    "summary": "remove 10 Manaburn permanently, once per session",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": 1,
+      "per": "session"
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "plagueDoctorCure"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

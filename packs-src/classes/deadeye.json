@@ -1,0 +1,113 @@
+{
+  "_id": "BcUR05drUcBYYKYy",
+  "name": "Deadeye",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 3,
+    "types": [
+      "infantry"
+    ],
+    "growth": {
+      "str": "A",
+      "mag": "F",
+      "skl": "S",
+      "spd": "A",
+      "def": "C",
+      "res": "D",
+      "cmd": "D"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "bow",
+        "gun"
+      ],
+      "secondary": [
+        "sword",
+        "riding"
+      ]
+    },
+    "trainsText": "Bow, Gun / Sword, Riding",
+    "startSpread": {},
+    "prerequisites": {
+      "any": [
+        {
+          "all": [
+            {
+              "prof": "bow",
+              "grade": "B"
+            },
+            {
+              "prof": "gun",
+              "grade": "C"
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "prof": "gun",
+              "grade": "B"
+            },
+            {
+              "prof": "bow",
+              "grade": "C"
+            }
+          ]
+        }
+      ]
+    },
+    "prerequisiteText": "Bow B or Gun B, the other C",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "deadeyeDeadCalm",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "deadeyeHeadshot",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "deadeyeSnipersNest",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "deadeyeSuppressingFire",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "deadeyeOverwatch",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "deadeyeTrueShot",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "deadeye",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "DEfbH3LrwRz6Su48",
+  "name": "Iron Siege Bow",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "bow",
+    "tier": "iron",
+    "prefix": "siege",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 5, Accuracy +5, Crit 5, Range 3 to 6, Weight 10. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironSiegeBow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

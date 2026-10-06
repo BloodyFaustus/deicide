@@ -1,0 +1,59 @@
+{
+  "_id": "0uOXoVcgnjBOy5CS",
+  "name": "Repel",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "warden",
+      "rank": 8
+    },
+    "description": "<p>Push radius 1 one tile or force swap, W10, 3 Ch.</p>",
+    "summary": "push radius 1 one tile or force swap, W10, 3 Ch",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 3,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 10,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "blast",
+        "size": 1
+      },
+      "target": "self",
+      "movement": "push",
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "wardenRepel"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

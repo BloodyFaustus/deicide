@@ -1,0 +1,28 @@
+{
+  "_id": "xyuwvslk9zBXljdF",
+  "name": "Silver Relic",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "relic",
+    "tier": "silver",
+    "prefix": null,
+    "forge": 0,
+    "element": null,
+    "description": "<p>Relic. Bonus +8, Channel +3, Accuracy +20. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverRelic"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

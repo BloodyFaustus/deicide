@@ -1,0 +1,66 @@
+{
+  "_id": "RYwohYHMSvU0jEL7",
+  "name": "Writ of Silence",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "inquisitor",
+      "rank": 8
+    },
+    "description": "<p>W8, target Silenced 2 turns, 3 Ch.</p>",
+    "summary": "W8, target Silenced 2 turns, 3 Ch",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 3,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [
+      {
+        "id": "silenced",
+        "turns": 2,
+        "target": "target",
+        "onCrit": false
+      }
+    ],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "inquisitorWritOfSilence"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,75 @@
+<section class="tab abilities {{tab.cssClass}}" data-tab="abilities" data-group="primary">
+  <div class="toolbar">
+    <span class="mode-badge {{mode}}">{{modeLabel}}</span>
+    <label class="toggle"><input type="checkbox" data-action="toggleCollapse" {{#if collapsePreview}}checked{{/if}}> Collapse preview</label>
+    <label>Secondary set
+      <select data-loadout="secondary">
+        <option value="">none</option>
+        {{#each loadout.secondaryOptions}}<option value="{{id}}" {{#if (eq id @root.loadout.secondary)}}selected{{/if}}>{{name}} (Rank {{rank}})</option>{{/each}}
+      </select>
+    </label>
+    <label>Reaction
+      <select data-loadout="reaction">
+        <option value="">none</option>
+        {{#each loadout.reactionOptions}}<option value="{{id}}" {{#if (eq id @root.loadout.reaction)}}selected{{/if}}>{{name}}</option>{{/each}}
+      </select>
+    </label>
+    <span class="hint">Supports {{loadout.supports.length}} / {{loadout.supportSlots}}</span>
+  </div>
+
+  {{#each abilityGroups}}
+  <h3 class="{{#if hidden}}muted{{/if}}">{{label}}{{#if hidden}} <small>(not in {{@root.modeLabel}})</small>{{/if}}</h3>
+  <ul class="ability-list plain">
+    {{#each entries}}
+    <li class="ability {{#unless usable}}unusable{{/unless}} {{#if active}}active{{/if}}" data-ability-id="{{id}}">
+      <div class="ability-main">
+        <strong data-action="openEntry" data-type="ability" data-identifier="{{id}}">{{name}}</strong>
+        <span class="automation {{automation}}" data-tooltip="{{#if (eq automation 'full')}}Fully automated{{else}}{{#if (eq automation 'partial')}}Numbers automated, riders by hand{{else}}Text only, apply by hand{{/if}}{{/if}}">{{automation}}</span>
+        {{#if cost}}<span class="cost">{{cost}}</span>{{/if}}
+        {{#if weight}}<span class="weight">W{{weight}}</span>{{/if}}
+        {{#if isSupport}}
+          <button type="button" class="slot {{#if slotted}}on{{/if}}" data-action="toggleSupport" data-ability-id="{{id}}">{{#if slotted}}slotted{{else}}slot{{/if}}</button>
+        {{/if}}
+        {{#if isStance}}
+          <button type="button" class="slot {{#if isStanceActive}}on{{/if}}" data-action="setStance" data-ability-id="{{id}}">{{#if isStanceActive}}active{{else}}adopt{{/if}}</button>
+        {{/if}}
+        {{#if isAction}}{{#if usable}}<button type="button" class="use" data-action="useAbility" data-ability-id="{{id}}" data-tooltip="Use on targets. Alt for flank."><i class="fa-solid fa-play"></i></button>{{/if}}{{/if}}
+        {{#if isReaction}}{{#if usable}}<button type="button" class="use" data-action="useAbility" data-ability-id="{{id}}" data-tooltip="Resolve the reaction"><i class="fa-solid fa-reply"></i></button>{{/if}}{{/if}}
+      </div>
+      <p class="summary">{{summary}}</p>
+      {{#if dungeon}}
+      <p class="collapse">Dungeon: {{#if dungeon.available}}{{dungeon.reach}} reach, {{dungeon.target}} target{{#if dungeon.rowSwap}}, forced row swap{{/if}}{{#if dungeon.barrier}}, Barrier {{dungeon.barrier.pool}}{{/if}}, Weight {{dungeon.weight}}{{#if dungeon.note}}. {{dungeon.note}}{{/if}}{{else}}unavailable{{#if dungeon.note}}. {{dungeon.note}}{{/if}}{{/if}}{{#if dungeon.requiresArena}} (Arena only){{/if}}</p>
+      {{/if}}
+    </li>
+    {{/each}}
+  </ul>
+  {{/each}}
+
+  {{#if engines.length}}
+  <h3>Origin engines</h3>
+  <ul class="ability-list plain">
+    {{#each engines}}
+    <li class="ability engine" data-ability-id="{{id}}">
+      <div class="ability-main"><strong data-action="openEntry" data-type="ability" data-identifier="{{id}}">{{name}}</strong><span class="typeLabel">{{typeLabel}}</span>
+        {{#if isReaction}}<button type="button" class="use" data-action="useAbility" data-ability-id="{{id}}"><i class="fa-solid fa-reply"></i></button>{{/if}}
+      </div>
+      <p class="summary">{{summary}}</p>
+    </li>
+    {{/each}}
+  </ul>
+  {{/if}}
+
+  {{#if weaponArts.length}}
+  <h3>Combat arts <small>from the wielded weapon</small></h3>
+  <ul class="ability-list plain">
+    {{#each weaponArts}}
+    <li class="ability art" data-ability-id="{{id}}">
+      <div class="ability-main"><strong>{{name}}</strong>{{#if cost}}<span class="cost">{{cost}}</span>{{/if}}<span class="weight">W{{weight}}</span>
+        {{#if usable}}<button type="button" class="use" data-action="useAbility" data-ability-id="{{id}}"><i class="fa-solid fa-play"></i></button>{{/if}}
+      </div>
+      <p class="summary">{{summary}}</p>
+    </li>
+    {{/each}}
+  </ul>
+  {{/if}}
+</section>

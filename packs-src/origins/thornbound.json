@@ -1,0 +1,30 @@
+{
+  "_id": "3cAXTYu1rGXslabj",
+  "name": "Thornbound",
+  "type": "origin",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "kind": "people",
+    "description": "<p>Ignores plague zone Burn. Manaburn minus 2 per long rest.</p>",
+    "growth": {
+      "def": "D",
+      "res": "D",
+      "str": "E",
+      "mag": "E"
+    },
+    "flags": {
+      "immunities": [
+        "plagueBurn"
+      ],
+      "manaburnLongRest": 2
+    },
+    "identifier": "thornbound"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

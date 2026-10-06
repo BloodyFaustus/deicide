@@ -1,0 +1,24 @@
+{
+  "_id": "X1Ya4nz7jF95LSZJ",
+  "name": "Refined Draught",
+  "type": "consumable",
+  "img": "icons/svg/chest.svg",
+  "system": {
+    "key": "refinedDraught",
+    "kind": "belt",
+    "quantity": 1,
+    "description": "<p>Restore 8 Channel, 2 Burn. 14 Dust.</p>",
+    "identifier": "refinedDraught"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

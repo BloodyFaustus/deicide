@@ -1,0 +1,152 @@
+<section class="item-body type-{{type}}">
+  {{#if (eq type "ability")}}
+    <div class="grid three">
+      <label>Type <select name="system.type">{{#each skillTypes}}<option value="{{id}}" {{#if (eq id @root.system.type)}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>
+      <label>Weight <input type="number" name="system.weight" value="{{system.weight}}" min="0" placeholder="8"></label>
+      <label>Automation <select name="system.automation">{{#each automationLevels}}<option value="{{this}}" {{#if (eq this @root.system.automation)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
+      <label>Source <input type="text" name="system.source.id" value="{{system.source.id}}"> rank <input type="number" name="system.source.rank" value="{{system.source.rank}}" class="tiny"></label>
+      <label>Tags <input type="text" data-list="tags" value="{{#each system.tags}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}" placeholder="reason, officer"></label>
+      <label><input type="checkbox" name="system.direct" {{#if system.direct}}checked{{/if}}> DIRECT (Truth)</label>
+      <label>Channel <input type="number" name="system.cost.channel" value="{{system.cost.channel}}" min="0"></label>
+      <label>Matter <input type="number" name="system.cost.matter" value="{{system.cost.matter}}" min="0"></label>
+      <label>HP <input type="number" name="system.cost.hp" value="{{system.cost.hp}}" min="0"></label>
+      <label>Dust <input type="number" name="system.cost.dust" value="{{system.cost.dust}}" min="0"></label>
+      <label>Soul Price <input type="number" name="system.cost.soulPrice" value="{{system.cost.soulPrice}}" min="0"></label>
+      <label>Uses <input type="number" name="system.usage.limit" value="{{system.usage.limit}}" min="1" class="tiny"> per <input type="text" name="system.usage.per" value="{{system.usage.per}}" class="small"></label>
+    </div>
+    <label>Summary <input type="text" name="system.summary" value="{{system.summary}}"></label>
+    {{#if (eq system.type "reaction")}}<label>Trigger <input type="text" name="system.trigger" value="{{system.trigger}}"></label>{{/if}}
+    <details open><summary>Engines: {{engineLabels}}. Collapse preview</summary>
+      <p class="collapse">War: {{#if system.war}}range {{system.war.range}}, {{system.war.area.shape}} {{system.war.area.size}}, target {{system.war.target}}{{#if system.war.movement}}, {{system.war.movement}}{{/if}}{{#if system.war.terrain}}, terrain{{/if}}{{else}}none{{/if}}</p>
+      <p class="collapse">Dungeon: {{#if collapse.available}}{{collapse.reach}} reach, {{collapse.target}} target, Weight {{collapse.weight}}{{#if collapse.rowSwap}}, row swap{{/if}}{{#if collapse.barrier}}, Barrier {{collapse.barrier.formula}}{{/if}}{{#if collapse.overridden}} (override){{/if}}{{#if collapse.requiresArena}}, Arena only{{/if}}{{else}}unavailable{{/if}}{{#if collapse.note}}. {{collapse.note}}{{/if}}</p>
+    </details>
+    <details><summary>Attack (JSON)</summary><textarea data-json="attack" rows="8">{{attackJson}}</textarea></details>
+    <details><summary>War profile (JSON)</summary><textarea data-json="war" rows="6">{{warJson}}</textarea></details>
+    <details><summary>Dungeon override (JSON, null derives)</summary><textarea data-json="dungeon" rows="5">{{dungeonJson}}</textarea></details>
+    <details><summary>Modifiers (JSON)</summary><textarea data-json="modifiers" rows="6">{{modifiersJson}}</textarea><p class="hint">{{#each modifierList}}{{this}}; {{/each}}</p></details>
+    <details><summary>Statuses (JSON)</summary><textarea data-json="statuses" rows="4">{{statusesJson}}</textarea></details>
+  {{/if}}
+
+  {{#if (eq type "class")}}
+    <div class="grid three">
+      <label>Tier <input type="number" name="system.tier" value="{{system.tier}}" min="1" max="4"></label>
+      <label>HP growth <input type="number" name="system.hp" value="{{system.hp}}" min="0"></label>
+      <label>Move override <input type="number" name="system.move" value="{{system.move}}" placeholder="by type"></label>
+      <label>Story gate <input type="text" name="system.storyGate" value="{{system.storyGate}}"></label>
+      <label>Ladder <select name="system.ladder"><option value="standard" {{#if (eq system.ladder "standard")}}selected{{/if}}>standard</option><option value="legend" {{#if (eq system.ladder "legend")}}selected{{/if}}>legend</option></select></label>
+      <label><input type="checkbox" name="system.enemyOnly" {{#if system.enemyOnly}}checked{{/if}}> Enemy only</label>
+    </div>
+    <p class="tags">{{#each types}}<label class="tag"><input type="checkbox" data-class-type="{{id}}" {{#if active}}checked{{/if}}> {{label}}</label>{{/each}}</p>
+    <h3>Growth <small>printed {{derived.printedTenths}} tenths, scaled to {{derived.tierTotalTenths}}</small></h3>
+    <table class="growth-table"><tr>{{#each growth}}<th>{{abbr}}</th>{{/each}}</tr>
+      <tr>{{#each growth}}<td><input type="text" name="system.growth.{{attr}}" value="{{letter}}" class="tiny" maxlength="1"></td>{{/each}}</tr>
+      <tr>{{#each growth}}<td><small>{{tenths}} tenths, cap {{cap}}</small></td>{{/each}}</tr>
+    </table>
+    <label>Trains primary <input type="text" data-list="trains.primary" value="{{trainsPrimary}}"></label>
+    <label>Trains secondary <input type="text" data-list="trains.secondary" value="{{trainsSecondary}}"></label>
+    <label>Prerequisite text <input type="text" name="system.prerequisiteText" value="{{system.prerequisiteText}}"></label>
+    <details><summary>Prerequisites (JSON)</summary><textarea data-json="prerequisites" rows="5">{{prerequisitesJson}}</textarea></details>
+    <h3>Skill ladder</h3>
+    <ul class="plain ladder">{{#each skills}}<li><small>R{{rank}}</small> {{name}} <code>{{id}}</code>{{#if mastery}} (Mastery){{/if}}</li>{{/each}}</ul>
+    <h3>Start spread</h3>
+    <div class="grid four">{{#each growth}}<label>{{abbr}} <input type="number" name="system.startSpread.{{attr}}" value="{{lookup @root.system.startSpread attr}}" min="0"></label>{{/each}}</div>
+  {{/if}}
+
+  {{#if (eq type "origin")}}
+    <div class="grid two">
+      <label>Kind <select name="system.kind">{{#each kinds}}<option value="{{this}}" {{#if (eq this @root.system.kind)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
+      <label><input type="checkbox" name="system.story" {{#if system.story}}checked{{/if}}> Story origin</label>
+    </div>
+    <label>Text <input type="text" name="system.text" value="{{system.text}}"></label>
+    <details open><summary>Mechanics (read only view, edit the fields below)</summary><pre>{{detailJson}}</pre></details>
+    <details><summary>Modifiers (JSON)</summary><textarea data-json="modifiers" rows="5">{{originJson.modifiers}}</textarea></details>
+    <details><summary>Flags (JSON)</summary><textarea data-json="flags" rows="4">{{originJson.flags}}</textarea></details>
+    <details><summary>Grants (JSON, backgrounds)</summary><textarea data-json="grants" rows="5">{{originJson.grants}}</textarea></details>
+    <details><summary>Points (JSON, backgrounds)</summary><textarea data-json="points" rows="3">{{originJson.points}}</textarea></details>
+    <details><summary>Growth (JSON, peoples)</summary><textarea data-json="growth" rows="3">{{originJson.growth}}</textarea></details>
+    <details><summary>Subtypes (JSON, peoples)</summary><textarea data-json="subtypes" rows="4">{{originJson.subtypes}}</textarea></details>
+  {{/if}}
+
+  {{#if (eq type "weapon")}}
+    <div class="grid four">
+      <label>Line <select name="system.line">{{#each lines}}<option value="{{this}}" {{#if (eq this @root.system.line)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
+      <label>Tier <select name="system.tier">{{#each tiers}}<option value="{{this}}" {{#if (eq this @root.system.tier)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
+      <label>Prefix <select name="system.prefix"><option value="">none</option>{{#each prefixes}}<option value="{{this}}" {{#if (eq this @root.system.prefix)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
+      <label>Forge <input type="number" name="system.forge" value="{{system.forge}}" min="0" max="3"></label>
+      {{#if (eq system.prefix "runed")}}<label>Element <select name="system.element"><option value="">choose</option>{{#each elements}}<option value="{{id}}" {{#if (eq id @root.system.element)}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>{{/if}}
+      <label><input type="checkbox" name="system.asSidearm" {{#if system.asSidearm}}checked{{/if}}> Sidearm (offhand)</label>
+      <label>Quantity <input type="number" name="system.quantity" value="{{system.quantity}}" min="0"></label>
+    </div>
+    {{#if derived.invalid}}<p class="warn">{{derived.invalid}}</p>{{/if}}
+    <h3>Profile</h3>
+    {{#if derived.caster}}
+    <p class="stat-line"><span>Bonus +{{#if derived.spellBonus}}{{derived.spellBonus}}{{else}}{{derived.alchemyBonus}}{{/if}}</span>{{#if derived.healBonus}}<span>Heal +{{derived.healBonus}}</span>{{/if}}{{#if derived.channel}}<span>Channel +{{derived.channel}}</span>{{/if}}{{#if derived.matter}}<span>Matter +{{derived.matter}}</span>{{/if}}<span>Acc +{{derived.acc}}</span><span>Crit {{derived.crit}}</span>{{#if derived.spellWeight}}<span>Spell Weight {{derived.spellWeight}}</span>{{/if}}</p>
+    {{else}}
+    <p class="stat-line"><span>Might {{derived.might}}</span><span>Acc +{{derived.acc}}</span><span>Crit {{derived.crit}}</span><span>Range {{derived.range.[0]}} to {{derived.range.[1]}}</span><span>Weight {{derived.weight}}</span>{{#if derived.effectiveVs}}<span>x2 vs {{derived.effectiveVs}}</span>{{/if}}{{#if derived.attacksTwice}}<span>Brave</span>{{/if}}{{#if derived.res}}<span>RES +{{derived.res}}</span>{{/if}}</p>
+    {{/if}}
+    <p class="stat-line"><span>Gate {{derived.gate}}</span><span>Prof {{derived.prof}}</span></p>
+    <h3>Power Points <small>price = floor(PP squared / 5)</small></h3>
+    <ul class="plain pp">{{#each ppBreakdown}}<li><span>{{label}}</span><strong>{{value}}</strong></li>{{/each}}<li class="total"><span>Total {{derived.pp}} PP</span><strong>{{derived.price}} Dust</strong> <small>(sells {{derived.sellPrice}})</small></li></ul>
+    {{#if arts.length}}<p class="stat-line">Arts: {{#each arts}}<span>{{this}}</span>{{/each}}</p>{{/if}}
+  {{/if}}
+
+  {{#if (eq type "armor")}}
+    <p class="stat-line"><span>DEF +{{derived.def}}</span><span>RES +{{derived.res}}</span><span>Burden {{derived.burden}}</span>{{#if derived.avoid}}<span>Avoid +{{derived.avoid}}</span>{{/if}}{{#if derived.hp}}<span>HP +{{derived.hp}}</span>{{/if}}<span>PP {{derived.pp}}</span><span>{{derived.price}} Dust</span></p>
+    {{#unless derived.known}}<p class="warn">Unknown armor id. Use one of the table ids (ironLight to royalHeavy) or make a Named item.</p>{{/unless}}
+  {{/if}}
+
+  {{#if (eq type "offhand")}}
+    <div class="grid two">
+      <label>Line <select name="system.line">{{#each lines}}<option value="{{this}}" {{#if (eq this @root.system.line)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
+      <label>Tier <select name="system.tier">{{#each tiers}}<option value="{{this}}" {{#if (eq this @root.system.tier)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
+    </div>
+    {{#if derived.invalid}}<p class="warn">{{derived.invalid}}</p>{{/if}}
+    <p class="stat-line">{{#each modifierList}}<span>{{this}}</span>{{/each}}<span>{{derived.price}} Dust</span></p>
+  {{/if}}
+
+  {{#if (eq type "accessory")}}
+    <div class="grid two">
+      <label>Table entry <select name="system.key">{{#each keys}}<option value="{{this}}" {{#if (eq this @root.system.key)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
+      {{#if needsAttribute}}<label>Attribute <select name="system.choices.attribute"><option value="">choose</option>{{#each attributes}}<option value="{{id}}" {{#if (eq id @root.system.choices.attribute)}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>{{/if}}
+      {{#if needsSecond}}<label>Second attribute <select name="system.choices.secondAttribute"><option value="">choose</option>{{#each attributes}}<option value="{{id}}" {{#if (eq id @root.system.choices.secondAttribute)}}selected{{/if}}>{{label}}</option>{{/each}}</select></label>{{/if}}
+      {{#if needsSkill}}<label>Skill id <input type="text" name="system.choices.skill" value="{{system.choices.skill}}" placeholder="soldierBash"></label>{{/if}}
+    </div>
+    <p class="stat-line">{{#each modifierList}}<span>{{this}}</span>{{/each}}{{#if derived.immune.length}}<span>immune {{derived.immune}}</span>{{/if}}<span>{{derived.price}} Dust</span></p>
+  {{/if}}
+
+  {{#if (eq type "pin")}}
+    <div class="grid two">
+      <label>Ability id <input type="text" name="system.ability" value="{{system.ability}}"></label>
+      <label>Price <input type="number" name="system.price" value="{{system.price}}" min="0"></label>
+    </div>
+  {{/if}}
+
+  {{#if (eq type "consumable")}}
+    <div class="grid three">
+      <label>Kind <select name="system.kind"><option value="belt" {{#if (eq system.kind "belt")}}selected{{/if}}>belt</option><option value="supply" {{#if (eq system.kind "supply")}}selected{{/if}}>War supply</option></select></label>
+      <label>Table entry <select name="system.key">{{#each keys}}<option value="{{this}}" {{#if (eq this @root.system.key)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
+      <label>Quantity <input type="number" name="system.quantity" value="{{system.quantity}}" min="0"></label>
+      <label><input type="checkbox" name="system.onBelt" {{#if system.onBelt}}checked{{/if}}> On the Belt</label>
+    </div>
+    {{#if derived.price}}<p class="stat-line"><span>{{derived.price}} Dust</span></p>{{/if}}
+  {{/if}}
+
+  {{#if (eq type "named")}}
+    <div class="grid three">
+      <label>Fills slot <select name="system.fills">{{#each slots}}<option value="{{this}}" {{#if (eq this @root.system.fills)}}selected{{/if}}>{{this}}</option>{{/each}}</select></label>
+      <label>Base line <input type="text" name="system.base.line" value="{{system.base.line}}" placeholder="sword"></label>
+      <label>Base tier <input type="text" name="system.base.tier" value="{{system.base.tier}}" placeholder="royal"></label>
+      <label>PP <input type="number" name="system.pp" value="{{system.pp}}" min="0"> <small>{{#if (gt system.pp 45)}}over 45{{/if}}{{#if (lt system.pp 32)}}under 32{{/if}}</small></label>
+      <label>Hook <input type="text" name="system.hook" value="{{system.hook}}"></label>
+      <label>Special <input type="text" name="system.special" value="{{system.special}}"></label>
+    </div>
+    <p class="stat-line">{{#if derived.might}}<span>Might {{derived.might}}</span>{{/if}}{{#if derived.acc}}<span>Acc +{{derived.acc}}</span>{{/if}}{{#if derived.crit}}<span>Crit {{derived.crit}}</span>{{/if}}{{#if derived.alchemyBonus}}<span>Alchemy +{{derived.alchemyBonus}}</span>{{/if}}{{#each modifierList}}<span>{{this}}</span>{{/each}}</p>
+    <details open><summary>Stats (JSON, override the base line)</summary><textarea data-json="stats" rows="5">{{statsJson}}</textarea></details>
+    <details><summary>Modifiers (JSON)</summary><textarea data-json="modifiers" rows="5">{{modifiersJson}}</textarea></details>
+    <details open><summary>Drawback (JSON, required)</summary><textarea data-json="drawback" rows="4">{{drawbackJson}}</textarea></details>
+    {{#unless system.drawback.text}}<p class="warn">A Named item needs a drawback.</p>{{/unless}}
+  {{/if}}
+
+  <h3>Description</h3>
+  <prose-mirror name="system.description" value="{{system.description}}" document-uuid="{{item.uuid}}" toggled>{{{descriptionHtml}}}</prose-mirror>
+</section>

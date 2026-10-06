@@ -1,0 +1,28 @@
+{
+  "_id": "KtRWiqpDOrf59vYV",
+  "name": "Silver Gauntlet",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "gauntlet",
+    "tier": "silver",
+    "prefix": null,
+    "forge": 0,
+    "element": null,
+    "description": "<p>Gauntlet. Bonus +8, Matter +4, Accuracy +20. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverGauntlet"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

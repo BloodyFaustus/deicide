@@ -1,0 +1,28 @@
+{
+  "_id": "pFgJ4c8KFWpWq9mD",
+  "name": "Skill Pin",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "skillPin",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>one Rank 1 or 2 skill from any class. 12 Dust.</p>",
+    "equipped": false,
+    "identifier": "skillPin"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "xi9q4HpSZhABLhIr",
+  "name": "Longshot",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "class",
+      "id": "marksman",
+      "rank": 4
+    },
+    "description": "<p>Bow range 2 to 4.</p>",
+    "summary": "bow range 2 to 4",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "range.max",
+        "value": 1,
+        "when": {
+          "actionWeaponLine": "bow"
+        }
+      }
+    ],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "marksmanLongshot"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

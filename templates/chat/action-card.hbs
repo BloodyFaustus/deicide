@@ -1,0 +1,52 @@
+<div class="deicide-card action {{mode}}">
+  <header class="card-header">
+    <img src="{{actor.img}}" alt="{{actor.name}}">
+    <div>
+      <h3>{{abilityName}}</h3>
+      <p class="meta">{{actor.name}}{{#if weight}}, Weight {{weight}}{{/if}}{{#if (eq automation "manual")}}, text only{{/if}}{{#if (eq automation "partial")}}, numbers automated, riders by hand{{/if}}</p>
+    </div>
+  </header>
+  {{#if description}}<p class="description">{{description}}</p>{{/if}}
+  <p class="attributes">{{#each attributes}}<span>{{this}}</span>{{/each}}</p>
+
+  {{#if costs}}
+  <ul class="costs plain">
+    {{#if costs.channel}}<li>Channel {{costs.channel.paid}} paid{{#if costs.channel.overcast}}, Overcast {{costs.channel.overcast}} for {{costs.channel.burn}} Burn{{/if}}</li>{{/if}}
+    {{#if costs.matter}}<li>Matter {{costs.matter}}</li>{{/if}}
+    {{#if costs.hp}}<li>HP {{costs.hp}}</li>{{/if}}
+    {{#if costs.dust}}<li>Dust {{costs.dust}}</li>{{/if}}
+    {{#if costs.soulPrice}}<li>Soul Price {{costs.soulPrice.price}}{{#if costs.soulPrice.catalyst}} paid by {{costs.soulPrice.catalyst}}{{else}}{{#if costs.soulPrice.hp}} in HP{{else}} in Channel{{/if}}{{/if}}</li>{{/if}}
+    {{#if costs.static}}<li>Static {{costs.static}} spent</li>{{/if}}
+  </ul>
+  {{/if}}
+
+  {{#each targets as |target index|}}
+  <section class="target">
+    <h4>{{target.name}}{{#if target.self}} (self){{/if}}</h4>
+    {{#if target.hit}}
+    <p class="roll-line">Hit {{target.hit.chance}}%{{#if target.crit.chance}}, Crit {{target.crit.chance}}%{{/if}}</p>
+    <ul class="strikes plain">
+      {{#each target.strikes}}
+        <li class="{{#if hit}}hit{{else}}miss{{/if}} {{#if crit}}crit{{/if}}">
+          {{#if hitRoll}}d100 {{hitRoll}}{{else}}auto{{/if}}: {{#if hit}}hit{{#if critRoll}}, crit d100 {{critRoll}}{{/if}}{{#if crit}}, CRIT{{/if}}, <strong>{{damage}}</strong>{{else}}miss{{/if}}
+        </li>
+      {{/each}}
+    </ul>
+    <details class="breakdown">
+      <summary>{{#if target.isTruth}}<span class="truth">TRUE</span> {{/if}}{{target.typeLabel}} {{target.damage.total}} ({{target.damage.critTotal}} on crit), {{target.defenseLabel}}</summary>
+      <ul class="plain">
+        {{#each target.parts}}<li>{{label}}: {{value}}</li>{{/each}}
+        <li>Defense: {{target.damage.defense}}</li>
+        {{#each target.multipliers}}<li>x{{value}} ({{id}})</li>{{/each}}
+        <li>Crit multiplier: x{{target.damage.critMultiplier}}</li>
+      </ul>
+    </details>
+    {{/if}}
+    {{#if target.heal}}<p class="roll-line">Heals <strong>{{target.heal.total}}</strong></p>{{/if}}
+    {{#if target.statuses.length}}<p class="statuses">Statuses: {{#each target.statuses}}{{id}}{{#if turns}} ({{turns}} turns){{/if}} {{/each}}</p>{{/if}}
+    <button type="button" class="apply" data-action="applyTarget" data-index="{{index}}">Apply{{#if target.total}} {{target.total}} damage{{/if}}{{#if target.heal}} heal{{/if}}{{#if target.statuses.length}} and statuses{{/if}}</button>
+  </section>
+  {{/each}}
+  {{#unless targets.length}}<p class="no-targets">No targets.</p>{{/unless}}
+  {{#if dungeon.note}}<p class="note">{{dungeon.note}}</p>{{/if}}
+</div>

@@ -1,0 +1,28 @@
+{
+  "_id": "qen5VOuz3glCrXVp",
+  "name": "Steel Keen Axe",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "axe",
+    "tier": "steel",
+    "prefix": "keen",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 12, Accuracy +20, Crit 5, Range 1, Weight 10. D to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "steelKeenAxe"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

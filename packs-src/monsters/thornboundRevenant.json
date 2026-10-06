@@ -1,0 +1,219 @@
+{
+  "_id": "RO5LkfeMHY6p16Tt",
+  "name": "Thornbound Revenant",
+  "type": "monster",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "identifier": "thornboundRevenant",
+    "level": 14,
+    "hp": {
+      "value": 80,
+      "max": 80
+    },
+    "def": 14,
+    "res": 20,
+    "spd": 11,
+    "mag": 0,
+    "delay": {
+      "mode": "spd",
+      "value": 30
+    },
+    "hitBase": null,
+    "tags": [
+      "plant"
+    ],
+    "boss": false,
+    "divineBeing": false,
+    "weakness": "fire",
+    "resistance": "water",
+    "immunities": [],
+    "phaseBreaks": [],
+    "yield": {
+      "saturation": 3,
+      "dust": 0,
+      "drops": []
+    },
+    "row": "front",
+    "description": "<p></p>",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Thornbound Revenant",
+    "disposition": -1,
+    "actorLink": false,
+    "texture": {
+      "src": "icons/svg/skull.svg"
+    }
+  },
+  "items": [
+    {
+      "_id": "Ei3FVWMyZPm2UpjG",
+      "name": "Lash",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "thornboundRevenantLash",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "thornboundRevenant",
+          "rank": null
+        },
+        "description": "<p>M30 single.</p>",
+        "summary": "M30 single",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": {
+          "basis": "flat",
+          "source": "none",
+          "defense": "def",
+          "might": 30,
+          "element": null,
+          "hit": 0,
+          "crit": 0,
+          "weaponLines": [],
+          "strikes": 1,
+          "ignoreDef": 0,
+          "bonuses": [],
+          "ignoreAvoid": false,
+          "perTile": null
+        },
+        "heal": null,
+        "war": {
+          "range": [
+            1,
+            1
+          ],
+          "area": {
+            "shape": "single",
+            "size": 1
+          },
+          "target": "enemy",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "single",
+          "note": ""
+        },
+        "statuses": [
+          {
+            "target": "target",
+            "onCrit": false,
+            "id": "pinned",
+            "turns": 1
+          }
+        ],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "partial"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "_id": "eEFrm8k8EvxvRCgJ",
+      "name": "Root",
+      "type": "ability",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "identifier": "thornboundRevenantRoot",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "thornboundRevenant",
+          "rank": null
+        },
+        "description": "<p>Heals 10 per turn while in a plague zone..</p>",
+        "summary": "Heals 10 per turn while in a plague zone.",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": null,
+        "heal": null,
+        "war": {
+          "range": [
+            0,
+            0
+          ],
+          "area": {
+            "shape": "self",
+            "size": 0
+          },
+          "target": "self",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "self",
+          "note": "Heals 10 per turn while in a plague zone."
+        },
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "manual"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true,
+      "startingStatuses": []
+    }
+  }
+}

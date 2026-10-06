@@ -1,0 +1,24 @@
+{
+  "_id": "eeGFEeoHXRabNTpE",
+  "name": "Philosopher's Stone",
+  "type": "consumable",
+  "img": "icons/svg/chest.svg",
+  "system": {
+    "key": "philosophersStone",
+    "kind": "belt",
+    "quantity": 1,
+    "description": "<p> Not sold.</p>",
+    "identifier": "philosophersStone"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

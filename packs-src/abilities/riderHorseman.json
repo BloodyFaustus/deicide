@@ -1,0 +1,52 @@
+{
+  "_id": "HrxRO1ntuDotn3xt",
+  "name": "Horseman",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "class",
+      "id": "rider",
+      "rank": 4
+    },
+    "description": "<p>Riding secondary trains at primary pace.</p>",
+    "summary": "Riding secondary trains at primary pace",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "proficiency.pace.riding",
+        "value": 1
+      }
+    ],
+    "roll": null,
+    "automation": "full",
+    "identifier": "riderHorseman"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

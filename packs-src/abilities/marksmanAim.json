@@ -1,0 +1,56 @@
+{
+  "_id": "QrA8TpPKu8un03GE",
+  "name": "Aim",
+  "type": "ability",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "type": "stance",
+    "source": {
+      "kind": "class",
+      "id": "marksman",
+      "rank": 1
+    },
+    "description": "<p>Hit +15, Delay +5.</p>",
+    "summary": "Hit +15, Delay +5",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "hit",
+        "value": 15
+      },
+      {
+        "key": "delay",
+        "value": 5
+      }
+    ],
+    "roll": null,
+    "automation": "full",
+    "identifier": "marksmanAim"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

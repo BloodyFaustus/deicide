@@ -1,0 +1,97 @@
+{
+  "_id": "NvvxQLCnusrT15VY",
+  "name": "Spymaster",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 3,
+    "types": [
+      "officer"
+    ],
+    "growth": {
+      "str": "C",
+      "mag": "C",
+      "skl": "S",
+      "spd": "B",
+      "def": "C",
+      "res": "B",
+      "cmd": "S"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "authority",
+        "sword"
+      ],
+      "secondary": [
+        "gun",
+        "alchemy"
+      ]
+    },
+    "trainsText": "Authority, Sword / Gun, Alchemy",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "authority",
+          "grade": "B"
+        },
+        {
+          "prof": "sword",
+          "grade": "C"
+        }
+      ]
+    },
+    "prerequisiteText": "Authority B, Sword C",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "spymasterNetwork",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "spymasterReveal",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "spymasterTurncoat",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "spymasterPlantAgent",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "spymasterCounterintel",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "spymasterShadowCabinet",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "spymaster",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

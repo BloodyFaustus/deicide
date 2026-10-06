@@ -1,0 +1,91 @@
+{
+  "_id": "psHaILLhjzMjGD2E",
+  "name": "Point Blank",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "art",
+      "id": "pointBlank",
+      "rank": null
+    },
+    "description": "<p>Might +6, Range 1, ignores Warded on an adjacent target. gun at steel or better. Costs 4 HP. Weight 8.</p>",
+    "summary": "Might +6, Range 1, ignores Warded on an adjacent target. gun at steel or better. Costs 4 HP. Weight 8.",
+    "tags": [
+      "art"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 4,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": {
+      "basis": "str",
+      "source": "weapon",
+      "defense": "def",
+      "might": 6,
+      "element": null,
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [
+        "gun"
+      ],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": [],
+      "effectiveVs": null,
+      "rangeMax": 0,
+      "range": [
+        1,
+        1
+      ],
+      "ignoreWarded": true
+    },
+    "heal": null,
+    "war": {
+      "range": [
+        1,
+        1
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "art": {
+      "lines": [
+        "gun"
+      ],
+      "minTier": "steel",
+      "spellMight": 0,
+      "rowHealFraction": 0,
+      "nextMatterCost": null
+    },
+    "automation": "partial",
+    "identifier": "artPointblank"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

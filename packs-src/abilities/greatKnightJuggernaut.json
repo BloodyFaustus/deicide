@@ -1,0 +1,77 @@
+{
+  "_id": "lz22QO2S9Sb9kmy3",
+  "name": "Juggernaut",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "greatKnight",
+      "rank": 1
+    },
+    "description": "<p>Lance M12 W12, +2 per tile moved max +8.</p>",
+    "summary": "lance M12 W12, +2 per tile moved max +8",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 12,
+    "attack": {
+      "basis": "str",
+      "source": "weapon",
+      "defense": "def",
+      "might": 12,
+      "element": null,
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [
+        "lance"
+      ],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": [],
+      "perTile": {
+        "might": 2,
+        "per": 1,
+        "max": 8
+      }
+    },
+    "heal": null,
+    "war": {
+      "range": null,
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": {
+      "note": "No tiles to move. +0 outside an Arena."
+    },
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "greatKnightJuggernaut"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

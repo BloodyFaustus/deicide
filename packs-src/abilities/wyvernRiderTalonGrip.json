@@ -1,0 +1,62 @@
+{
+  "_id": "Fr79Su5HHBaMc0i5",
+  "name": "Talon Grip",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "wyvernRider",
+      "rank": 4
+    },
+    "description": "<p>Carry adjacent ally 4 tiles, W8.</p>",
+    "summary": "carry adjacent ally 4 tiles, W8",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "ally",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": {
+      "requiresArena": true,
+      "note": "A flight skill. Carry one ally to the other row in an Arena."
+    },
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "wyvernRiderTalonGrip"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

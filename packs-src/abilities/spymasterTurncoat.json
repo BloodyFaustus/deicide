@@ -1,0 +1,49 @@
+{
+  "_id": "qH6B1ntuLWkjHYOW",
+  "name": "Turncoat",
+  "type": "ability",
+  "img": "icons/svg/sound.svg",
+  "system": {
+    "type": "command",
+    "source": {
+      "kind": "class",
+      "id": "spymaster",
+      "rank": 4
+    },
+    "description": "<p>One enemy company under Strength 40 joins you, d100 under 3 x SKL minus 2 x enemy officer CMD.</p>",
+    "summary": "one enemy company under Strength 40 joins you, d100 under 3 x SKL minus 2 x enemy officer CMD",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": {
+      "formula": "3 * skl - 2 * enemyOfficerCmd"
+    },
+    "automation": "manual",
+    "identifier": "spymasterTurncoat"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

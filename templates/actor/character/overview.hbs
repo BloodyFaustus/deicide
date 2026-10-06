@@ -1,0 +1,87 @@
+<section class="tab overview {{tab.cssClass}}" data-tab="overview" data-group="primary">
+  <div class="columns">
+    <div class="column attributes">
+      <h3>Attributes <small>current/cap (grade)</small></h3>
+      <table class="attribute-table">
+        {{#each attributes}}
+        <tr class="{{#if overCap}}over-cap{{/if}} {{#if atCap}}at-cap{{/if}}">
+          <th data-tooltip="{{label}}">{{abbr}}</th>
+          <td class="value">{{display}}</td>
+          <td class="detail" data-tooltip="Base {{base}}, trained {{trained}}{{#if adaptation}}, Adaptations +{{adaptation}}{{/if}}{{#if accessory}}, accessories +{{accessory}}{{/if}}{{#if bonus}}, other {{bonus}}{{/if}}">
+            <small>{{trained}}{{#if accessory}} +{{accessory}}{{/if}}{{#if bonus}} {{#if (gt bonus 0)}}+{{/if}}{{bonus}}{{/if}}</small>
+          </td>
+        </tr>
+        {{/each}}
+      </table>
+      {{#if pendingFlex.length}}
+      <p class="flex-pending">Flex points to place: {{#each pendingFlex}}<button type="button" data-action="placeFlex" data-level="{{this}}">level {{this}}</button>{{/each}}</p>
+      {{/if}}
+      <h3>Defense</h3>
+      <p class="stat-line"><span>DEF {{defense.def}}</span><span>RES {{defense.res}}</span><span>Avoid {{#if (gt defense.avoid 0)}}+{{/if}}{{defense.avoid}}</span></p>
+      <p class="stat-line"><span>Move {{derived.move}}</span><span>Command radius {{derived.commandRadius}}</span><span>{{#each classTypes}}{{this}} {{/each}}</span></p>
+      <p class="stat-line"><span>Harvest {{derived.harvestYield}}</span><span>Overcast Burn {{derived.overcastBurnPerPoint}} per point</span>{{#if derived.soulPricePayer}}<span>Soul Price in {{#if (eq derived.soulPricePayer "hp")}}HP{{else}}Channel{{/if}}</span>{{/if}}</p>
+    </div>
+
+    <div class="column pools">
+      <h3>Pools</h3>
+      <div class="pool hp">
+        <label>HP</label>
+        <button type="button" class="step" data-action="changePool" data-pool="hp" data-delta="-1">-</button>
+        <input type="number" name="system.hp.value" value="{{pools.hp.value}}" min="0"> / {{pools.hp.max}}
+        <button type="button" class="step" data-action="changePool" data-pool="hp" data-delta="1">+</button>
+      </div>
+      <div class="pool channel">
+        <label>Channel</label>
+        {{#if pools.channel}}
+          <button type="button" class="step" data-action="changePool" data-pool="channel" data-delta="-1">-</button>
+          <input type="number" name="system.channel.value" value="{{pools.channel.value}}" min="0"> / {{pools.channel.max}}
+          <button type="button" class="step" data-action="changePool" data-pool="channel" data-delta="1">+</button>
+          <small data-tooltip="Formula {{pools.channel.formula}}, after origin {{pools.channel.innate}}">(base {{pools.channel.formula}})</small>
+        {{else}}
+          <span class="no-mana">No mana</span>
+        {{/if}}
+      </div>
+      {{#if pools.matter}}
+      <div class="pool matter">
+        <label>Matter</label>
+        <button type="button" class="step" data-action="changePool" data-pool="matter" data-delta="-1">-</button>
+        <input type="number" name="system.matter.value" value="{{pools.matter.value}}" min="0"> / {{pools.matter.max}}
+        <button type="button" class="step" data-action="changePool" data-pool="matter" data-delta="1">+</button>
+      </div>
+      {{/if}}
+      {{#if pools.static}}
+      <div class="pool static">
+        <label>Static</label>
+        <button type="button" class="step" data-action="changePool" data-pool="static" data-delta="-1">-</button>
+        <input type="number" name="system.static" value="{{pools.static.value}}" min="0"> / {{pools.static.max}}
+        <button type="button" class="step" data-action="changePool" data-pool="static" data-delta="1">+</button>
+      </div>
+      {{/if}}
+      {{#if pools.stolen}}
+      <div class="pool stolen">
+        <label>Stolen slots</label>
+        <span>{{pools.stolen.stored.length}} / {{pools.stolen.slots}}</span>
+      </div>
+      {{/if}}
+
+      <h3>Tracks</h3>
+      <div class="tracks">
+        {{#if (ne tracks.manaburn null)}}<label>Manaburn <input type="number" name="system.manaburn" value="{{tracks.manaburn}}" min="0" max="100"></label>{{/if}}
+        {{#if (ne tracks.saturation null)}}<label>Saturation <input type="number" name="system.saturation" value="{{tracks.saturation}}" min="0" max="100"></label>{{/if}}
+        {{#if (ne tracks.divineAttention null)}}<label>Divine Attention <input type="number" name="system.divineAttention" value="{{tracks.divineAttention}}" min="0"></label>{{/if}}
+        <label>Marks <input type="number" name="system.marks" value="{{tracks.marks}}" min="0"></label>
+        <label>Dust <input type="number" name="system.dust" value="{{system.dust}}" min="0"></label>
+        <label>Debt <input type="number" name="system.debt" value="{{system.debt}}" min="0"></label>
+        <label>Row <select name="system.row"><option value="front" {{#if (eq system.row "front")}}selected{{/if}}>front</option><option value="back" {{#if (eq system.row "back")}}selected{{/if}}>back</option></select></label>
+      </div>
+
+      <h3>Proficiencies</h3>
+      <ul class="proficiencies plain">
+        {{#each proficiencies}}<li class="{{#unless grade}}untrained{{/unless}}"><span>{{label}}</span><strong>{{#if grade}}{{grade}}{{else}}&mdash;{{/if}}</strong></li>{{/each}}
+      </ul>
+    </div>
+  </div>
+  {{#if derived.missing.length}}
+  <p class="warning">Missing catalog entries: {{#each derived.missing}}{{type}} {{id}} {{/each}}</p>
+  {{/if}}
+</section>

@@ -1,0 +1,62 @@
+{
+  "_id": "CYAnxmldqapxCWOT",
+  "name": "Smoke",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "rogue",
+      "rank": 6
+    },
+    "description": "<p>W6, one row or radius 1 Avoid +15 for 2 turns.</p>",
+    "summary": "W6, one row or radius 1 Avoid +15 for 2 turns",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 6,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "blast",
+        "size": 1
+      },
+      "target": "ally",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": {
+      "target": "row",
+      "side": "ally"
+    },
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "rogueSmoke"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,87 @@
+{
+  "_id": "3DR5irXjYaoTkwLk",
+  "name": "Deadeye Shot",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "art",
+      "id": "deadeyeShot",
+      "rank": null
+    },
+    "description": "<p>Range +2, crit +20. bow, gun at royal or better. Costs 8 HP. Weight 12.</p>",
+    "summary": "Range +2, crit +20. bow, gun at royal or better. Costs 8 HP. Weight 12.",
+    "tags": [
+      "art"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 8,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 12,
+    "attack": {
+      "basis": "str",
+      "source": "weapon",
+      "defense": "def",
+      "might": 0,
+      "element": null,
+      "hit": 0,
+      "crit": 20,
+      "weaponLines": [
+        "bow",
+        "gun"
+      ],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": [],
+      "effectiveVs": null,
+      "rangeMax": 2,
+      "range": null,
+      "ignoreWarded": false
+    },
+    "heal": null,
+    "war": {
+      "range": null,
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "art": {
+      "lines": [
+        "bow",
+        "gun"
+      ],
+      "minTier": "royal",
+      "spellMight": 0,
+      "rowHealFraction": 0,
+      "nextMatterCost": null
+    },
+    "automation": "partial",
+    "identifier": "artDeadeyeshot"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

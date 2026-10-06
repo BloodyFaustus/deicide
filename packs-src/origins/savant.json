@@ -1,0 +1,28 @@
+{
+  "_id": "5MzN8JJjB6pPeo58",
+  "name": "Savant",
+  "type": "origin",
+  "img": "icons/svg/light.svg",
+  "system": {
+    "kind": "talent",
+    "description": "<p>One proficiency starts D and trains one step faster. Growth total minus 0.2.</p>",
+    "choices": [
+      "proficiency"
+    ],
+    "proficiency": {
+      "startGrade": "D",
+      "steps": 1
+    },
+    "growth": {
+      "totalMod": -2
+    },
+    "identifier": "savant"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

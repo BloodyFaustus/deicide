@@ -1,0 +1,62 @@
+{
+  "_id": "FSiVS9iWsZvK4Ii2",
+  "name": "Wall",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "alchemist",
+      "rank": 6
+    },
+    "description": "<p>3 Mt, raise a Wall tile or row Barrier 4 x MAG, W8.</p>",
+    "summary": "3 Mt, raise a Wall tile or row Barrier 4 x MAG, W8",
+    "tags": [
+      "alchemy",
+      "terrain"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 3,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "tile",
+      "movement": null,
+      "terrain": true
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "alchemistWall"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

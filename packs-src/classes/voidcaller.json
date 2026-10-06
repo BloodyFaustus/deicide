@@ -1,0 +1,105 @@
+{
+  "_id": "l5Nl2svZ0UBu6sxR",
+  "name": "Voidcaller",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 3,
+    "types": [
+      "caster"
+    ],
+    "growth": {
+      "str": "E",
+      "mag": "S",
+      "skl": "A",
+      "spd": "C",
+      "def": "D",
+      "res": "S",
+      "cmd": "C"
+    },
+    "hp": 2,
+    "trains": {
+      "primary": [
+        "void",
+        "reason"
+      ],
+      "secondary": [
+        "faith",
+        "alchemy"
+      ]
+    },
+    "trainsText": "Void, Reason / Faith, Alchemy",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "void",
+          "grade": "B"
+        },
+        {
+          "any": [
+            {
+              "prof": "reason",
+              "grade": "C"
+            },
+            {
+              "prof": "faith",
+              "grade": "C"
+            }
+          ]
+        }
+      ]
+    },
+    "prerequisiteText": "Void B, Reason C or Faith C",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "voidcallerDevour",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "voidcallerUnlight",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "voidcallerNullWard",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "voidcallerEclipse",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "voidcallerOblivion",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "voidcallerVoidborn",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "voidcaller",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

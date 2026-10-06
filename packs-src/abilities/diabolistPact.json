@@ -1,0 +1,52 @@
+{
+  "_id": "bLGMMkyCyz9yBrA2",
+  "name": "Pact",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "class",
+      "id": "diabolist",
+      "rank": 4
+    },
+    "description": "<p>Divine Attention +1, Channel +10.</p>",
+    "summary": "Divine Attention +1, Channel +10",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "channel.max",
+        "value": 10
+      }
+    ],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "diabolistPact"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

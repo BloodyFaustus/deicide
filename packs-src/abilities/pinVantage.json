@@ -1,0 +1,59 @@
+{
+  "_id": "Hx4CDrVN3UgWokmL",
+  "name": "Vantage",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "type": "reaction",
+    "source": {
+      "kind": "pin",
+      "id": "vantagePin",
+      "rank": null
+    },
+    "description": "<p>When attacked at or below half HP, you strike first.</p>",
+    "summary": "When attacked at or below half HP, you strike first",
+    "tags": [],
+    "direct": false,
+    "trigger": "When attacked at or below half HP, you strike first",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "self",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "pinVantage"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

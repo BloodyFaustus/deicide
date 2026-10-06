@@ -1,0 +1,24 @@
+{
+  "_id": "FcXQUIEzysc3lq1T",
+  "name": "Royal Buckler",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "buckler",
+    "tier": "royal",
+    "description": "<p>def +2, avoid +10.</p>",
+    "equipped": false,
+    "identifier": "royalBuckler"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "_id": "lR2ySOZH0JvLa78a",
+  "name": "Prodigy",
+  "type": "origin",
+  "img": "icons/svg/light.svg",
+  "system": {
+    "kind": "talent",
+    "description": "<p>That stat growth +0.3 and cap +2. One other stat growth minus 0.2.</p>",
+    "choices": [
+      "stat",
+      "penaltyStat"
+    ],
+    "growth": {
+      "chosen": {
+        "stat": 3,
+        "penaltyStat": -2
+      }
+    },
+    "caps": {
+      "chosen": {
+        "stat": 2
+      }
+    },
+    "identifier": "prodigy"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

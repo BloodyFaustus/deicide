@@ -1,0 +1,24 @@
+{
+  "_id": "t2z7JLVOwGHMFMM7",
+  "name": "Royal Shield",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "shield",
+    "tier": "royal",
+    "description": "<p>def +5, res +3, negateHitPerEncounter +1.</p>",
+    "equipped": false,
+    "identifier": "royalShield"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

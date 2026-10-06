@@ -1,0 +1,24 @@
+{
+  "_id": "pPevCk001NGvJkMZ",
+  "name": "Silver Quiver",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "quiver",
+    "tier": "silver",
+    "description": "<p>acc +15.</p>",
+    "equipped": false,
+    "identifier": "silverQuiver"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

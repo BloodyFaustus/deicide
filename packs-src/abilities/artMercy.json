@@ -1,0 +1,67 @@
+{
+  "_id": "OnnglJLDGCVNbadK",
+  "name": "Mercy",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "art",
+      "id": "mercy",
+      "rank": null
+    },
+    "description": "<p>heal becomes a row heal at half value. relic at iron or better. Costs 4 HP. Weight 8.</p>",
+    "summary": "heal becomes a row heal at half value. relic at iron or better. Costs 4 HP. Weight 8.",
+    "tags": [
+      "art"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 4,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": null,
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "art": {
+      "lines": [
+        "relic"
+      ],
+      "minTier": "iron",
+      "spellMight": 0,
+      "rowHealFraction": 0.5,
+      "nextMatterCost": null
+    },
+    "automation": "manual",
+    "identifier": "artMercy"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

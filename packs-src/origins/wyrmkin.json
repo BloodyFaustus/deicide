@@ -1,0 +1,34 @@
+{
+  "_id": "Ohj3b9fMeMa7m1pu",
+  "name": "Wyrmkin",
+  "type": "origin",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "kind": "people",
+    "description": "<p>Channel +6. Flying starts D.</p>",
+    "growth": {
+      "mag": "D",
+      "str": "D",
+      "res": "E",
+      "def": "E"
+    },
+    "modifiers": [
+      {
+        "key": "channel.max",
+        "value": 6,
+        "stage": "innate"
+      }
+    ],
+    "proficiencies": {
+      "flying": "D"
+    },
+    "identifier": "wyrmkin"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

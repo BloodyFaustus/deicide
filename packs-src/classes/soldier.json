@@ -1,0 +1,95 @@
+{
+  "_id": "Kps8ZoMx4lfVOwVo",
+  "name": "Soldier",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 1,
+    "types": [
+      "infantry"
+    ],
+    "growth": {
+      "str": "A",
+      "mag": "F",
+      "skl": "C",
+      "spd": "D",
+      "def": "S",
+      "res": "D",
+      "cmd": "C"
+    },
+    "hp": 4,
+    "trains": {
+      "primary": [
+        "sword",
+        "armor"
+      ],
+      "secondary": [
+        "lance",
+        "authority"
+      ]
+    },
+    "trainsText": "Sword, Armor / Lance, Authority",
+    "startSpread": {
+      "str": 4,
+      "def": 4,
+      "skl": 2,
+      "cmd": 2
+    },
+    "prerequisites": null,
+    "prerequisiteText": "",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "soldierShieldWall",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "soldierBash",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "soldierHoldTheLine",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "soldierCleave",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "soldierBrace",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "soldierVeteran",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {
+      "weapon": "ironSword",
+      "offhand": "ironBuckler",
+      "armor": "ironMedium"
+    },
+    "description": "",
+    "identifier": "soldier",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

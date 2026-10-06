@@ -1,0 +1,59 @@
+{
+  "_id": "bCTEthK2CkNUeMwa",
+  "name": "Hit and Run",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "type": "reaction",
+    "source": {
+      "kind": "class",
+      "id": "outrider",
+      "rank": 8
+    },
+    "description": "<p>Attacked at range 1, retreat 2 tiles first.</p>",
+    "summary": "attacked at range 1, retreat 2 tiles first",
+    "tags": [],
+    "direct": false,
+    "trigger": "attacked at range 1, retreat 2 tiles first",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        1,
+        1
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "self",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "outriderHitAndRun"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "5YoODkoDPrhg97QX",
+  "name": "Alchemist's Pouch",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "alchemistsPouch",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>Matter cap +6, Harvest +1. 16 Dust.</p>",
+    "equipped": false,
+    "identifier": "alchemistsPouch"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

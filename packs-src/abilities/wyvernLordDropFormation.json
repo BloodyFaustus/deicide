@@ -1,0 +1,47 @@
+{
+  "_id": "A6aEK1mwKfzgVwsu",
+  "name": "Drop Formation",
+  "type": "ability",
+  "img": "icons/svg/sound.svg",
+  "system": {
+    "type": "command",
+    "source": {
+      "kind": "class",
+      "id": "wyvernLord",
+      "rank": 4
+    },
+    "description": "<p>Flying companies in radius deliver a company 6 tiles.</p>",
+    "summary": "flying companies in radius deliver a company 6 tiles",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "wyvernLordDropFormation"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

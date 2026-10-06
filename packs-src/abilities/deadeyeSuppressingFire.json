@@ -1,0 +1,47 @@
+{
+  "_id": "jMIWWzdEt0dwdc9Y",
+  "name": "Suppressing Fire",
+  "type": "ability",
+  "img": "icons/svg/sound.svg",
+  "system": {
+    "type": "command",
+    "source": {
+      "kind": "class",
+      "id": "deadeye",
+      "rank": 6
+    },
+    "description": "<p>Archer companies in radius inflict Move minus 2.</p>",
+    "summary": "archer companies in radius inflict Move minus 2",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "deadeyeSuppressingFire"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

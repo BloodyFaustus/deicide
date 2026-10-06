@@ -1,0 +1,93 @@
+{
+  "_id": "7IX81DegHSShTlbo",
+  "name": "Adept",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 1,
+    "types": [
+      "caster"
+    ],
+    "growth": {
+      "str": "F",
+      "mag": "S",
+      "skl": "C",
+      "spd": "D",
+      "def": "E",
+      "res": "A",
+      "cmd": "D"
+    },
+    "hp": 2,
+    "trains": {
+      "primary": [
+        "reason"
+      ],
+      "secondary": [
+        "faith",
+        "void"
+      ]
+    },
+    "trainsText": "Reason / Faith, Void",
+    "startSpread": {
+      "mag": 6,
+      "res": 4,
+      "skl": 2
+    },
+    "prerequisites": null,
+    "prerequisiteText": "",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "adeptBolt",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "adeptWardSelf",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "adeptFocus",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "adeptBurst",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "adeptManaSense",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "adeptDeepChannel",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {
+      "weapon": "ironTome",
+      "offhand": "ironFocus",
+      "armor": "ironLight"
+    },
+    "description": "",
+    "identifier": "adept",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

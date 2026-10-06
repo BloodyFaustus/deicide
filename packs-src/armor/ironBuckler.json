@@ -1,0 +1,24 @@
+{
+  "_id": "kBBMJeHcNTc0mwpX",
+  "name": "Iron Buckler",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "buckler",
+    "tier": "iron",
+    "description": "<p>def +1.</p>",
+    "equipped": false,
+    "identifier": "ironBuckler"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

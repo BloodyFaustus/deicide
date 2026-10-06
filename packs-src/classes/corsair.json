@@ -1,0 +1,98 @@
+{
+  "_id": "1ptwtAjDiBWF4Ayq",
+  "name": "Corsair",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "naval",
+      "infantry"
+    ],
+    "growth": {
+      "str": "B",
+      "mag": "E",
+      "skl": "A",
+      "spd": "A",
+      "def": "C",
+      "res": "D",
+      "cmd": "C"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "seamanship",
+        "sword"
+      ],
+      "secondary": [
+        "gun",
+        "authority"
+      ]
+    },
+    "trainsText": "Seamanship, Sword / Gun, Authority",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "seamanship",
+          "grade": "C"
+        },
+        {
+          "prof": "sword",
+          "grade": "D"
+        }
+      ]
+    },
+    "prerequisiteText": "Seamanship C, Sword D",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "corsairBoardingCut",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "corsairSwashbuckle",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "corsairPistolHand",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "corsairBroadside",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "corsairGrapnel",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "corsairDreadCaptain",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "corsair",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

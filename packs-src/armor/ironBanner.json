@@ -1,0 +1,24 @@
+{
+  "_id": "3avzbNrupwumUcwu",
+  "name": "Iron Banner",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "banner",
+    "tier": "iron",
+    "description": "<p>companyHit +5.</p>",
+    "equipped": false,
+    "identifier": "ironBanner"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

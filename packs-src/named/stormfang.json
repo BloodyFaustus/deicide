@@ -1,0 +1,57 @@
+{
+  "_id": "fwhwvWYhMtBmGY8w",
+  "name": "Stormfang",
+  "type": "named",
+  "img": "icons/svg/holy-shield.svg",
+  "system": {
+    "fills": "weapon",
+    "base": {
+      "line": "lance",
+      "tier": "royal"
+    },
+    "stats": {
+      "might": 18,
+      "acc": 20,
+      "crit": 10,
+      "weight": 6,
+      "range": [
+        1,
+        2
+      ],
+      "element": "lightning"
+    },
+    "modifiers": [
+      {
+        "key": "static.max",
+        "op": "max",
+        "value": 7
+      }
+    ],
+    "special": "",
+    "drawback": {
+      "text": "Crown Standing minus 20 while equipped.",
+      "flags": {
+        "standingEquipped": {
+          "crown": -20
+        }
+      },
+      "refund": "standingMinus20"
+    },
+    "pp": 39,
+    "hook": "XidraThira's tribe.",
+    "description": "<p>Royal Lance with the lightning tag, Reach, and a Static cap of 7.</p><p>Drawback: Crown Standing minus 20 while equipped.</p>",
+    "equipped": false,
+    "identifier": "stormfang"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

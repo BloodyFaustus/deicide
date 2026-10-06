@@ -1,0 +1,26 @@
+<section class="deicide-inspector">
+  <header class="inspector-header">
+    <img class="profile" src="{{actor.img}}" alt="{{actor.name}}" data-action="editImage" data-edit="img">
+    <div class="titles">
+      <input type="text" name="name" value="{{actor.name}}">
+      <p class="type">{{localize (concat "TYPES.Actor." actor.type)}}</p>
+    </div>
+    <button type="button" data-action="resetActor"><i class="fa-solid fa-rotate"></i> Recompute</button>
+  </header>
+  <details open>
+    <summary>Derived data</summary>
+    <pre>{{derivedJson}}</pre>
+  </details>
+  <details>
+    <summary>Stored data</summary>
+    <pre>{{sourceJson}}</pre>
+  </details>
+  <details open>
+    <summary>Items ({{items.length}})</summary>
+    <ul class="plain">
+      {{#each items}}
+      <li>{{type}}: {{name}}{{#if equipped}} (equipped){{/if}}</li>
+      {{/each}}
+    </ul>
+  </details>
+</section>

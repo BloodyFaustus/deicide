@@ -1,0 +1,24 @@
+{
+  "_id": "HoqqFDV731Tju40U",
+  "name": "Rally Horn",
+  "type": "consumable",
+  "img": "icons/svg/chest.svg",
+  "system": {
+    "key": "rallyHorn",
+    "kind": "belt",
+    "quantity": 1,
+    "description": "<p>War only, companies in radius pass morale. 10 Dust.</p>",
+    "identifier": "rallyHorn"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

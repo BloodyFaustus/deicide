@@ -1,0 +1,26 @@
+<header class="sheet-header character-header">
+  <img class="profile" src="{{actor.img}}" alt="{{actor.name}}" data-action="editImage" data-edit="img">
+  <div class="identity">
+    <input type="text" name="name" value="{{actor.name}}" placeholder="Name">
+    <div class="line">
+      <span>Level <input type="number" name="system.level" value="{{system.level}}" min="1" class="tiny"></span>
+      <span>XP <input type="number" name="system.xp" value="{{system.xp}}" min="0" class="small"> / {{tracks.xpNext}}</span>
+      <span class="active-class">{{#each classes}}{{#if active}}{{name}} Rank {{rank}}{{/if}}{{/each}}</span>
+    </div>
+    <div class="line origin">
+      <span>{{origin.people.name}}{{#if subtypeName}} ({{subtypeName}}){{/if}}</span>
+      <span>{{origin.background.name}}</span>
+      <span>{{origin.talent.name}}{{#if talentChoices}} ({{talentChoices}}){{/if}}</span>
+      <span class="mode-badge {{mode}}" data-tooltip="Scene mode">{{modeLabel}}</span>
+    </div>
+  </div>
+  <div class="header-actions">
+    <button type="button" data-action="basicAttack" data-tooltip="Basic weapon Attack. Alt for flank."><i class="fa-solid fa-sword"></i> Attack</button>
+    {{#if derived.isAlchemist}}<button type="button" data-action="harvest" data-tooltip="Harvest an adjacent Matter tile"><i class="fa-solid fa-hand-holding"></i> Harvest</button>{{/if}}
+    <button type="button" data-action="rest" data-tooltip="Short, long, or camp rest"><i class="fa-solid fa-campground"></i> Rest</button>
+    {{#if isGM}}
+    <button type="button" data-action="levelUp" data-tooltip="Gain one level in the active class"><i class="fa-solid fa-arrow-up"></i> Level</button>
+    <button type="button" data-action="creation" data-tooltip="Rebuild at level 1 from creation choices"><i class="fa-solid fa-wand-magic-sparkles"></i></button>
+    {{/if}}
+  </div>
+</header>

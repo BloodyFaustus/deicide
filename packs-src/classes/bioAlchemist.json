@@ -1,0 +1,105 @@
+{
+  "_id": "Xz5tIxCxC42IYx3G",
+  "name": "Bio Alchemist",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "caster"
+    ],
+    "growth": {
+      "str": "D",
+      "mag": "A",
+      "skl": "A",
+      "spd": "C",
+      "def": "C",
+      "res": "A",
+      "cmd": "C"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "alchemy",
+        "faith"
+      ],
+      "secondary": [
+        "reason",
+        "gun"
+      ]
+    },
+    "trainsText": "Alchemy, Faith / Reason, Gun",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "alchemy",
+          "grade": "C"
+        },
+        {
+          "any": [
+            {
+              "prof": "faith",
+              "grade": "D"
+            },
+            {
+              "prof": "reason",
+              "grade": "D"
+            }
+          ]
+        }
+      ]
+    },
+    "prerequisiteText": "Alchemy C, Faith D or Reason D",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "bioAlchemistAlchemicalMedicine",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "bioAlchemistMendFlesh",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "bioAlchemistAnatomist",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "bioAlchemistRend",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "bioAlchemistGraft",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "bioAlchemistPhysician",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "bioAlchemist",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

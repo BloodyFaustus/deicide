@@ -1,0 +1,50 @@
+{
+  "_id": "5temidxzzZDPS4Wi",
+  "name": "Off Map",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "class",
+      "id": "shadow",
+      "rank": 1
+    },
+    "description": "<p>Deploy from any map edge on round 2.</p>",
+    "summary": "deploy from any map edge on round 2",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": {
+      "available": false,
+      "note": "No map edges in Dungeon Mode."
+    },
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "shadowOffMap"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

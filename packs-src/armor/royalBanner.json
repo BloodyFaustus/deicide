@@ -1,0 +1,24 @@
+{
+  "_id": "GB2lLgocr9p9ceeZ",
+  "name": "Royal Banner",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "banner",
+    "tier": "royal",
+    "description": "<p>commandRadius +1, companyAvoid +5.</p>",
+    "equipped": false,
+    "identifier": "royalBanner"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

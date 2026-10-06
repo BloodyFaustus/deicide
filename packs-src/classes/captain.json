@@ -1,0 +1,99 @@
+{
+  "_id": "ijWXrpKNsDxPgzIy",
+  "name": "Captain",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "officer"
+    ],
+    "growth": {
+      "str": "B",
+      "mag": "E",
+      "skl": "B",
+      "spd": "C",
+      "def": "B",
+      "res": "C",
+      "cmd": "S"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "authority",
+        "chosenWeapon"
+      ],
+      "secondary": [
+        "riding",
+        "armor"
+      ]
+    },
+    "trainsText": "Authority, chosen weapon / Riding, Armor",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "authority",
+          "grade": "C"
+        },
+        {
+          "prof": "anyWeapon",
+          "grade": "D"
+        }
+      ]
+    },
+    "prerequisiteText": "Authority C, any weapon D",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "captainOrders",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "captainCutDown",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "captainLogistics",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "captainFlankOrder",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "captainShieldRing",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "captainFieldMarshal",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [
+      "weapon"
+    ],
+    "kit": {},
+    "description": "",
+    "identifier": "captain",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

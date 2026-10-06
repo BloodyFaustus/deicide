@@ -1,0 +1,45 @@
+{
+  "_id": "9JVmZ4SlOgLcbebl",
+  "name": "Ship of the Line",
+  "type": "company",
+  "img": "icons/svg/anchor.svg",
+  "system": {
+    "identifier": "shipOfTheLine",
+    "strength": 100,
+    "quality": 3,
+    "type": "ship",
+    "shipClass": "shipOfTheLine",
+    "side": "lathander",
+    "doctrine": null,
+    "screenOfficerId": null,
+    "veterancy": 0,
+    "veterancyQuality": 0,
+    "owner": null,
+    "banner": "",
+    "named": false,
+    "routed": false,
+    "acted": false,
+    "facing": 0,
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Ship of the Line",
+    "actorLink": true,
+    "displayBars": 50,
+    "texture": {
+      "src": "icons/svg/anchor.svg"
+    }
+  },
+  "items": [],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

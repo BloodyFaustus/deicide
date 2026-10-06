@@ -1,0 +1,56 @@
+{
+  "_id": "W84O0FIXoiSff5jX",
+  "name": "Lethality",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "class",
+      "id": "assassin",
+      "rank": 1
+    },
+    "description": "<p>Crit x2.0 vs Officer type.</p>",
+    "summary": "crit x2.0 vs Officer type",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "critMultiplier",
+        "op": "set",
+        "value": 2,
+        "when": {
+          "targetClassType": "officer"
+        }
+      }
+    ],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "assassinLethality"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

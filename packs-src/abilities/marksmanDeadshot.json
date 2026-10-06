@@ -1,0 +1,52 @@
+{
+  "_id": "s1bwhmYs3lHOzO6c",
+  "name": "Deadshot",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "type": "mastery",
+    "source": {
+      "kind": "class",
+      "id": "marksman",
+      "rank": 10
+    },
+    "description": "<p>Crit +15.</p>",
+    "summary": "crit +15",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "crit",
+        "value": 15
+      }
+    ],
+    "roll": null,
+    "automation": "full",
+    "identifier": "marksmanDeadshot"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

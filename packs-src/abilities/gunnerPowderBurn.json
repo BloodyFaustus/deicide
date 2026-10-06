@@ -1,0 +1,55 @@
+{
+  "_id": "OPlS3s2ZGxG3vIcb",
+  "name": "Powder Burn",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "class",
+      "id": "gunner",
+      "rank": 4
+    },
+    "description": "<p>Gun crit +10.</p>",
+    "summary": "gun crit +10",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "crit",
+        "value": 10,
+        "when": {
+          "actionWeaponLine": "gun"
+        }
+      }
+    ],
+    "roll": null,
+    "automation": "full",
+    "identifier": "gunnerPowderBurn"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

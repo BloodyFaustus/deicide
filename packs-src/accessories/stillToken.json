@@ -1,0 +1,28 @@
+{
+  "_id": "FJMgCQXfM15tKGnp",
+  "name": "Still Token",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "stillToken",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>immune to stagger. 10 Dust.</p>",
+    "equipped": false,
+    "identifier": "stillToken"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

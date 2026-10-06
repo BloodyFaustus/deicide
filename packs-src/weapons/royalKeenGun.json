@@ -1,0 +1,28 @@
+{
+  "_id": "6XUR4Cq0ncK6P21p",
+  "name": "Royal Keen Gun",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "gun",
+    "tier": "royal",
+    "prefix": "keen",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 18, Accuracy +45, Crit 20, Range 2, Weight 8. B to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "royalKeenGun"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

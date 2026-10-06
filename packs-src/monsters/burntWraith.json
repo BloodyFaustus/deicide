@@ -1,0 +1,149 @@
+{
+  "_id": "DDDSvPUmSiNE580d",
+  "name": "Burnt Wraith",
+  "type": "monster",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "identifier": "burntWraith",
+    "level": 7,
+    "hp": {
+      "value": 40,
+      "max": 40
+    },
+    "def": 6,
+    "res": 16,
+    "spd": 10,
+    "mag": 12,
+    "delay": {
+      "mode": "spd",
+      "value": 30
+    },
+    "hitBase": null,
+    "tags": [
+      "undead",
+      "caster"
+    ],
+    "boss": false,
+    "divineBeing": false,
+    "weakness": "divine",
+    "resistance": "fire",
+    "immunities": [
+      "poison"
+    ],
+    "phaseBreaks": [],
+    "yield": {
+      "saturation": 2,
+      "dust": 0,
+      "drops": []
+    },
+    "row": "front",
+    "description": "<p>Arrives Warded.</p>",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Burnt Wraith",
+    "disposition": -1,
+    "actorLink": false,
+    "texture": {
+      "src": "icons/svg/skull.svg"
+    }
+  },
+  "items": [
+    {
+      "_id": "KmxoETqs62xTNt80",
+      "name": "Manaburn Touch",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "burntWraithManaburnTouch",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "burntWraith",
+          "rank": null
+        },
+        "description": "<p>M14 single. The target gains 3 Manaburn..</p>",
+        "summary": "M14 single. The target gains 3 Manaburn.",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": {
+          "basis": "flat",
+          "source": "none",
+          "defense": "res",
+          "might": 14,
+          "element": null,
+          "hit": 0,
+          "crit": 0,
+          "weaponLines": [],
+          "strikes": 1,
+          "ignoreDef": 0,
+          "bonuses": [],
+          "ignoreAvoid": false,
+          "perTile": null
+        },
+        "heal": null,
+        "war": {
+          "range": [
+            1,
+            1
+          ],
+          "area": {
+            "shape": "single",
+            "size": 1
+          },
+          "target": "enemy",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "single",
+          "note": "The target gains 3 Manaburn."
+        },
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "partial"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true,
+      "startingStatuses": [
+        "warded"
+      ]
+    }
+  }
+}

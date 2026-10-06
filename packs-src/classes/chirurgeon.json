@@ -1,0 +1,97 @@
+{
+  "_id": "yY5auejTmySCRice",
+  "name": "Chirurgeon",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "infantry"
+    ],
+    "growth": {
+      "str": "D",
+      "mag": "B",
+      "skl": "B",
+      "spd": "C",
+      "def": "C",
+      "res": "B",
+      "cmd": "D"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "faith",
+        "alchemy"
+      ],
+      "secondary": [
+        "reason",
+        "gun"
+      ]
+    },
+    "trainsText": "Faith, Alchemy / Reason, Gun",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "faith",
+          "grade": "D"
+        },
+        {
+          "prof": "reason",
+          "grade": "D"
+        }
+      ]
+    },
+    "prerequisiteText": "Faith D, Reason D",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "chirurgeonFieldDressing",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "chirurgeonAntidote",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "chirurgeonTriage",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "chirurgeonPlagueKit",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "chirurgeonStabilize",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "chirurgeonSurgeon",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "chirurgeon",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,85 @@
+{
+  "_id": "mxMt2Jwy953N5uHl",
+  "name": "Curved Shot",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "art",
+      "id": "curvedShot",
+      "rank": null
+    },
+    "description": "<p>Range +1, Accuracy +20. bow at iron or better. Costs 3 HP. Weight 8.</p>",
+    "summary": "Range +1, Accuracy +20. bow at iron or better. Costs 3 HP. Weight 8.",
+    "tags": [
+      "art"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 3,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": {
+      "basis": "str",
+      "source": "weapon",
+      "defense": "def",
+      "might": 0,
+      "element": null,
+      "hit": 20,
+      "crit": 0,
+      "weaponLines": [
+        "bow"
+      ],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": [],
+      "effectiveVs": null,
+      "rangeMax": 1,
+      "range": null,
+      "ignoreWarded": false
+    },
+    "heal": null,
+    "war": {
+      "range": null,
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "art": {
+      "lines": [
+        "bow"
+      ],
+      "minTier": "iron",
+      "spellMight": 0,
+      "rowHealFraction": 0,
+      "nextMatterCost": null
+    },
+    "automation": "partial",
+    "identifier": "artCurvedshot"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "ewIPi1BV0WEqWPkz",
+  "name": "Royal Killer Axe",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "axe",
+    "tier": "royal",
+    "prefix": "killer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 19, Accuracy +15, Crit 35, Range 1, Weight 8. B to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "royalKillerAxe"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

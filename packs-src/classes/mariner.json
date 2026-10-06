@@ -1,0 +1,95 @@
+{
+  "_id": "bVbzbWTwzVxKqMIQ",
+  "name": "Mariner",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 1,
+    "types": [
+      "naval"
+    ],
+    "growth": {
+      "str": "B",
+      "mag": "F",
+      "skl": "C",
+      "spd": "B",
+      "def": "C",
+      "res": "D",
+      "cmd": "D"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "seamanship",
+        "axe"
+      ],
+      "secondary": [
+        "gun",
+        "bow"
+      ]
+    },
+    "trainsText": "Seamanship, Axe / Gun, Bow",
+    "startSpread": {
+      "str": 4,
+      "spd": 4,
+      "skl": 2,
+      "def": 2
+    },
+    "prerequisites": null,
+    "prerequisiteText": "",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "marinerSeaLegs",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "marinerHack",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "marinerRigging",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "marinerGrapple",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "marinerBraceDeck",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "marinerOldSalt",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {
+      "weapon": "ironAxe",
+      "offhand": "ironBuckler",
+      "armor": "ironLight"
+    },
+    "description": "",
+    "identifier": "mariner",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

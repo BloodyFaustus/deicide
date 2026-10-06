@@ -1,0 +1,28 @@
+{
+  "_id": "Lx3a160QX4ZRRIIj",
+  "name": "Royal Armorslayer Gun",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "gun",
+    "tier": "royal",
+    "prefix": "armorslayer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 18, Accuracy +30, Crit 20, Range 2, Weight 8. B to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "royalArmorslayerGun"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

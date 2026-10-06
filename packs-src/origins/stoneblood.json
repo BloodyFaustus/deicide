@@ -1,0 +1,30 @@
+{
+  "_id": "7gx5ctLGdBV5RRZd",
+  "name": "Stoneblood",
+  "type": "origin",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "kind": "people",
+    "description": "<p>MAG growth F in every class. RES doubled against corruption effects.</p>",
+    "growth": {
+      "str": "D",
+      "def": "D",
+      "skl": "E",
+      "cmd": "E"
+    },
+    "classGrowthLocks": {
+      "mag": "F"
+    },
+    "flags": {
+      "corruptionResDoubled": true
+    },
+    "identifier": "stoneblood"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

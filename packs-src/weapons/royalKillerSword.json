@@ -1,0 +1,28 @@
+{
+  "_id": "9jqCNV6h8QWq2RhO",
+  "name": "Royal Killer Sword",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "sword",
+    "tier": "royal",
+    "prefix": "killer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 15, Accuracy +25, Crit 40, Range 1, Weight 4. B to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "royalKillerSword"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

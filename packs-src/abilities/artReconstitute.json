@@ -1,0 +1,67 @@
+{
+  "_id": "bOgoKk68HA0Rm62w",
+  "name": "Reconstitute",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "art",
+      "id": "reconstitute",
+      "rank": null
+    },
+    "description": "<p>next transmutation costs 0 Matter. gauntlet at steel or better. Costs 5 HP. Weight 8.</p>",
+    "summary": "next transmutation costs 0 Matter. gauntlet at steel or better. Costs 5 HP. Weight 8.",
+    "tags": [
+      "art"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 5,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": null,
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "art": {
+      "lines": [
+        "gauntlet"
+      ],
+      "minTier": "steel",
+      "spellMight": 0,
+      "rowHealFraction": 0,
+      "nextMatterCost": 0
+    },
+    "automation": "manual",
+    "identifier": "artReconstitute"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

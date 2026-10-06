@@ -1,0 +1,28 @@
+{
+  "_id": "A0BoQnhKLoj9345e",
+  "name": "Iron Ring",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "ironRing",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>one attribute +2. 10 Dust.</p>",
+    "equipped": false,
+    "identifier": "ironRing"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

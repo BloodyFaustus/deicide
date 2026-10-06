@@ -1,0 +1,27 @@
+{
+  "_id": "RCU1zoGhCXBP8ixz",
+  "name": "Tidekin",
+  "type": "origin",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "kind": "people",
+    "description": "<p>Seamanship starts D.</p>",
+    "growth": {
+      "spd": "D",
+      "skl": "D",
+      "res": "E",
+      "cmd": "E"
+    },
+    "proficiencies": {
+      "seamanship": "D"
+    },
+    "identifier": "tidekin"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

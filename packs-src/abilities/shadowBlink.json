@@ -1,0 +1,59 @@
+{
+  "_id": "RsMMyadFGUYBdwUH",
+  "name": "Blink",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "type": "reaction",
+    "source": {
+      "kind": "class",
+      "id": "shadow",
+      "rank": 8
+    },
+    "description": "<p>Targeted, teleport 3 tiles or swap row.</p>",
+    "summary": "targeted, teleport 3 tiles or swap row",
+    "tags": [],
+    "direct": false,
+    "trigger": "targeted, teleport 3 tiles or swap row",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "self",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "shadowBlink"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

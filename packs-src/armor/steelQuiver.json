@@ -1,0 +1,24 @@
+{
+  "_id": "nvW4NBHczKkXAppX",
+  "name": "Steel Quiver",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "quiver",
+    "tier": "steel",
+    "description": "<p>acc +10.</p>",
+    "equipped": false,
+    "identifier": "steelQuiver"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

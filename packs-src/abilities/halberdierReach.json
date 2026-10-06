@@ -1,0 +1,55 @@
+{
+  "_id": "iZyrlgl7LxTnE8pI",
+  "name": "Reach",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "class",
+      "id": "halberdier",
+      "rank": 1
+    },
+    "description": "<p>Lance range 1 to 2.</p>",
+    "summary": "lance range 1 to 2",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "range.max",
+        "value": 1,
+        "when": {
+          "actionWeaponLine": "lance"
+        }
+      }
+    ],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "halberdierReach"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

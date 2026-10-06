@@ -1,0 +1,229 @@
+{
+  "_id": "TTlK1mQfhivWTmii",
+  "name": "Wyrm Spawn",
+  "type": "monster",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "identifier": "wyrmSpawn",
+    "level": 22,
+    "hp": {
+      "value": 120,
+      "max": 120
+    },
+    "def": 20,
+    "res": 22,
+    "spd": 18,
+    "mag": 0,
+    "delay": {
+      "mode": "spd",
+      "value": 30
+    },
+    "hitBase": null,
+    "tags": [
+      "beast",
+      "flying"
+    ],
+    "boss": false,
+    "divineBeing": false,
+    "weakness": "frost",
+    "resistance": "fire",
+    "immunities": [],
+    "phaseBreaks": [],
+    "yield": {
+      "saturation": 4,
+      "dust": 0,
+      "drops": []
+    },
+    "row": "front",
+    "description": "<p></p>",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Wyrm Spawn",
+    "disposition": -1,
+    "actorLink": false,
+    "texture": {
+      "src": "icons/svg/skull.svg"
+    }
+  },
+  "items": [
+    {
+      "_id": "6wsBocglCjfUUIhu",
+      "name": "Dive",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "wyrmSpawnDive",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "wyrmSpawn",
+          "rank": null
+        },
+        "description": "<p>M40 single.</p>",
+        "summary": "M40 single",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": {
+          "basis": "flat",
+          "source": "none",
+          "defense": "def",
+          "might": 40,
+          "element": null,
+          "hit": 0,
+          "crit": 0,
+          "weaponLines": [],
+          "strikes": 1,
+          "ignoreDef": 0,
+          "bonuses": [],
+          "ignoreAvoid": true,
+          "perTile": null
+        },
+        "heal": null,
+        "war": {
+          "range": [
+            1,
+            1
+          ],
+          "area": {
+            "shape": "single",
+            "size": 1
+          },
+          "target": "enemy",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "single",
+          "note": ""
+        },
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "partial"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "_id": "3r9zz6R4jwkqRwvP",
+      "name": "Breath",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "wyrmSpawnBreath",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "wyrmSpawn",
+          "rank": null
+        },
+        "description": "<p>M34 line 3.</p>",
+        "summary": "M34 line 3",
+        "tags": [
+          "fire"
+        ],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": {
+          "basis": "flat",
+          "source": "none",
+          "defense": "res",
+          "might": 34,
+          "element": "fire",
+          "hit": 0,
+          "crit": 0,
+          "weaponLines": [],
+          "strikes": 1,
+          "ignoreDef": 0,
+          "bonuses": [],
+          "ignoreAvoid": false,
+          "perTile": null
+        },
+        "heal": null,
+        "war": {
+          "range": [
+            1,
+            1
+          ],
+          "area": {
+            "shape": "line",
+            "size": 3
+          },
+          "target": "enemy",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "column",
+          "note": ""
+        },
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "partial"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true,
+      "startingStatuses": []
+    }
+  }
+}

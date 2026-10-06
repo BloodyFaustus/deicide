@@ -1,0 +1,8 @@
+<div class="deicide-card tick">
+  <p><strong>Tick {{tick}}</strong>: {{name}} acts.</p>
+  {{#if ticked.length}}
+  <ul class="plain">
+    {{#each ticked}}<li>{{statusId}}{{#if burn}}: {{burn}} Burn{{/if}}{{#if ended}} ends{{/if}}.</li>{{/each}}
+  </ul>
+  {{/if}}
+</div>

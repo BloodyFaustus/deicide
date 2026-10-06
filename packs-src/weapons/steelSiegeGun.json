@@ -1,0 +1,28 @@
+{
+  "_id": "GYu9OUmhPJFfScaI",
+  "name": "Steel Siege Gun",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "gun",
+    "tier": "steel",
+    "prefix": "siege",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 10, Accuracy +20, Crit 15, Range 3 to 6, Weight 12. D to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "steelSiegeGun"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

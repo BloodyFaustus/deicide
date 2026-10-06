@@ -1,0 +1,28 @@
+{
+  "_id": "ac1yO2Tst8gRoVYh",
+  "name": "Iron Tome",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "tome",
+    "tier": "iron",
+    "prefix": null,
+    "forge": 0,
+    "element": null,
+    "description": "<p>Tome. Bonus +2, Channel +1, Accuracy +10. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironTome"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

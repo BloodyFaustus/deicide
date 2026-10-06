@@ -1,0 +1,55 @@
+{
+  "_id": "sDKnRptZ5cAmei6y",
+  "name": "Skirmish",
+  "type": "ability",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "type": "stance",
+    "source": {
+      "kind": "class",
+      "id": "outrider",
+      "rank": 2
+    },
+    "description": "<p>Avoid +10 after moving.</p>",
+    "summary": "Avoid +10 after moving",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "avoid",
+        "value": 10,
+        "when": {
+          "movedAtLeast": 1
+        }
+      }
+    ],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "outriderSkirmish"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

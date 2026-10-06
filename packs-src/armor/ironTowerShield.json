@@ -1,0 +1,24 @@
+{
+  "_id": "PHEGS3M4ZAM8lKqj",
+  "name": "Iron Tower Shield",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "towerShield",
+    "tier": "iron",
+    "description": "<p>def +5, avoid -15, move -1.</p>",
+    "equipped": false,
+    "identifier": "ironTowerShield"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

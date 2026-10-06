@@ -1,0 +1,28 @@
+{
+  "_id": "2UMs21okn5BCiX2F",
+  "name": "Iron Gun",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "gun",
+    "tier": "iron",
+    "prefix": null,
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 9, Accuracy +15, Crit 10, Range 2, Weight 10. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironGun"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

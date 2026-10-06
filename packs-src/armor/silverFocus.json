@@ -1,0 +1,24 @@
+{
+  "_id": "DoIP2EIJty42K1SB",
+  "name": "Silver Focus",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "focus",
+    "tier": "silver",
+    "description": "<p>channel +4.</p>",
+    "equipped": false,
+    "identifier": "silverFocus"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

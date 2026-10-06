@@ -1,0 +1,52 @@
+{
+  "_id": "0fH4bqv7oMNkrjJw",
+  "name": "Circle",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "type": "mastery",
+    "source": {
+      "kind": "class",
+      "id": "alchemist",
+      "rank": 10
+    },
+    "description": "<p>Matter capacity +4.</p>",
+    "summary": "Matter capacity +4",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "matter.max",
+        "value": 4
+      }
+    ],
+    "roll": null,
+    "automation": "full",
+    "identifier": "alchemistCircle"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

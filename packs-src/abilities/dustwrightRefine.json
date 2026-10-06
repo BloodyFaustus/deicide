@@ -1,0 +1,62 @@
+{
+  "_id": "uLe1sCouQcdUxlH2",
+  "name": "Refine",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "dustwright",
+      "rank": 1
+    },
+    "description": "<p>Between sessions, 10 Mt to 5 Dust, once per session.</p>",
+    "summary": "between sessions, 10 Mt to 5 Dust, once per session",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": 1,
+      "per": "session"
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "self",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": {
+      "available": false,
+      "note": "Between sessions only."
+    },
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "dustwrightRefine"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

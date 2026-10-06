@@ -1,0 +1,28 @@
+{
+  "_id": "dM26PGNkN0ybiTRG",
+  "name": "Sure Hand",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "sureHand",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>Accuracy +10. 10 Dust.</p>",
+    "equipped": false,
+    "identifier": "sureHand"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

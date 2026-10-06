@@ -1,0 +1,28 @@
+{
+  "_id": "Edg32fiEa6jpVqA8",
+  "name": "Iron Runed Sword",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "sword",
+    "tier": "iron",
+    "prefix": "runed",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 6, Accuracy +10, Crit 5, Range 1, Weight 6. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironRunedSword"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

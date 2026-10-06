@@ -1,0 +1,24 @@
+{
+  "_id": "1I3gOAhE6vsjK2Ah",
+  "name": "Steel Focus",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "focus",
+    "tier": "steel",
+    "description": "<p>channel +3.</p>",
+    "equipped": false,
+    "identifier": "steelFocus"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

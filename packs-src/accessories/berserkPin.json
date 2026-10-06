@@ -1,0 +1,20 @@
+{
+  "_id": "MEVoXCy6W58ARQVW",
+  "name": "Berserk Pin",
+  "type": "pin",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "ability": "pinBerserk",
+    "price": 45,
+    "description": "<p>STR +6, Might +4, cannot Guard, take +25 percent damage, Delay minus 10.</p>",
+    "equipped": false,
+    "identifier": "berserkPin"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

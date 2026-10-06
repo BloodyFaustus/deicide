@@ -1,0 +1,97 @@
+{
+  "_id": "L4KpXn521QrCd8Ps",
+  "name": "Lancer",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "mounted"
+    ],
+    "growth": {
+      "str": "A",
+      "mag": "F",
+      "skl": "B",
+      "spd": "A",
+      "def": "B",
+      "res": "D",
+      "cmd": "C"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "riding",
+        "lance"
+      ],
+      "secondary": [
+        "sword",
+        "armor"
+      ]
+    },
+    "trainsText": "Riding, Lance / Sword, Armor",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "riding",
+          "grade": "C"
+        },
+        {
+          "prof": "lance",
+          "grade": "C"
+        }
+      ]
+    },
+    "prerequisiteText": "Riding C, Lance C",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "lancerLanceCharge",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "lancerLancerStance",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "lancerShock",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "lancerWedge",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "lancerHoldReins",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "lancerLanceOfTheCrown",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "lancer",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

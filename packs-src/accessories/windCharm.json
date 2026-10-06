@@ -1,0 +1,28 @@
+{
+  "_id": "aoqZ0Br2SRyVokoi",
+  "name": "Wind Charm",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "windCharm",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>Avoid +15, Move +1. 24 Dust.</p>",
+    "equipped": false,
+    "identifier": "windCharm"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

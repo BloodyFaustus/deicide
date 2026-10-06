@@ -1,0 +1,78 @@
+{
+  "_id": "IzVieXbMqCg5NA2O",
+  "name": "Smite the Anomaly",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "saint",
+      "rank": 4
+    },
+    "description": "<p>Divine M16, x2 vs Summoned, W12, 6 Ch.</p>",
+    "summary": "Divine M16, x2 vs Summoned, W12, 6 Ch",
+    "tags": [
+      "faith",
+      "divine"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 6,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 12,
+    "attack": {
+      "basis": "mag",
+      "source": "spell",
+      "defense": "res",
+      "might": 16,
+      "element": "divine",
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": [],
+      "multiplierVs": {
+        "targetTag": "summoned",
+        "value": 2
+      }
+    },
+    "heal": null,
+    "war": {
+      "range": [
+        1,
+        2
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "saintSmiteTheAnomaly"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

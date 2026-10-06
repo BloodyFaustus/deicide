@@ -1,0 +1,98 @@
+{
+  "_id": "e1asVuMRDK7Tw76Y",
+  "name": "Chaplain",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "caster",
+      "officer"
+    ],
+    "growth": {
+      "str": "D",
+      "mag": "B",
+      "skl": "C",
+      "spd": "D",
+      "def": "C",
+      "res": "A",
+      "cmd": "A"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "faith",
+        "authority"
+      ],
+      "secondary": [
+        "sword",
+        "armor"
+      ]
+    },
+    "trainsText": "Faith, Authority / Sword, Armor",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "faith",
+          "grade": "C"
+        },
+        {
+          "prof": "authority",
+          "grade": "D"
+        }
+      ]
+    },
+    "prerequisiteText": "Faith C, Authority D",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "chaplainHymn",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "chaplainSmite",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "chaplainSermon",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "chaplainLastRites",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "chaplainRallyCry",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "chaplainMartyr",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "chaplain",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

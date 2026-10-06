@@ -1,0 +1,22 @@
+{
+  "_id": "2HelvSeNSIlTiYYg",
+  "name": "Steel Heavy Armor",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "<p>DEF +7, RES +1, Burden 2. Needs Armor D.</p>",
+    "equipped": false,
+    "identifier": "steelHeavy"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

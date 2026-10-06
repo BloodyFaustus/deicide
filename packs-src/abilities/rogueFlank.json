@@ -1,0 +1,55 @@
+{
+  "_id": "XpOaiZTJh72jZoDF",
+  "name": "Flank",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "class",
+      "id": "rogue",
+      "rank": 1
+    },
+    "description": "<p>Might +3 from flank or back row.</p>",
+    "summary": "Might +3 from flank or back row",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "might",
+        "value": 3,
+        "when": {
+          "flankOrBackRow": true
+        }
+      }
+    ],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "rogueFlank"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

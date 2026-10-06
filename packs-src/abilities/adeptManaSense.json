@@ -1,0 +1,59 @@
+{
+  "_id": "PDooJnxTPL3KTGF6",
+  "name": "Mana Sense",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "type": "reaction",
+    "source": {
+      "kind": "class",
+      "id": "adept",
+      "rank": 8
+    },
+    "description": "<p>Enemy cast within 3, RES +4 against it.</p>",
+    "summary": "enemy cast within 3, RES +4 against it",
+    "tags": [],
+    "direct": false,
+    "trigger": "enemy cast within 3, RES +4 against it",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "adeptManaSense"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

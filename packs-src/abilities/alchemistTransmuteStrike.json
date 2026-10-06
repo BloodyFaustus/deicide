@@ -1,0 +1,66 @@
+{
+  "_id": "GzrIKnKLGW3KbvBR",
+  "name": "Transmute Strike",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "alchemist",
+      "rank": 1
+    },
+    "description": "<p>STR + MAG/2 physical, 0 Mt, W8.</p>",
+    "summary": "STR + MAG/2 physical, 0 Mt, W8",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": {
+      "basis": "hybrid",
+      "source": "alchemy",
+      "defense": "def",
+      "might": 0,
+      "element": null,
+      "bonuses": []
+    },
+    "heal": null,
+    "war": {
+      "range": [
+        1,
+        1
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "alchemistTransmuteStrike"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

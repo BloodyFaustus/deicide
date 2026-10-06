@@ -1,0 +1,59 @@
+{
+  "_id": "FWchnQDmsifWEM83",
+  "name": "Mana Drinker",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "type": "reaction",
+    "source": {
+      "kind": "class",
+      "id": "hero",
+      "rank": 6
+    },
+    "description": "<p>Hit by Reason spell, gain 1 Saturation.</p>",
+    "summary": "hit by Reason spell, gain 1 Saturation",
+    "tags": [],
+    "direct": false,
+    "trigger": "hit by Reason spell, gain 1 Saturation",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "self",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "heroManaDrinker"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

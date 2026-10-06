@@ -1,0 +1,43 @@
+{
+  "_id": "zGlO6Y1dNiwcoKR3",
+  "name": "Lathander's Crown Seal",
+  "type": "named",
+  "img": "icons/svg/holy-shield.svg",
+  "system": {
+    "fills": "accessory",
+    "base": null,
+    "stats": {},
+    "modifiers": [
+      {
+        "key": "commandRadius",
+        "value": 3
+      },
+      {
+        "key": "company.quality",
+        "value": 1
+      }
+    ],
+    "special": "",
+    "drawback": {
+      "text": "Legitimacy minus 1 if lost or the wearer defects.",
+      "flags": {},
+      "refund": null
+    },
+    "pp": 36,
+    "hook": "King Edric.",
+    "description": "<p>Command radius +3. Companies in radius Quality +1.</p><p>Drawback: Legitimacy minus 1 if lost or the wearer defects.</p>",
+    "equipped": false,
+    "identifier": "lathandersCrownSeal"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "_id": "bbA06zlQHvlhft0g",
+  "name": "Mend",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "acolyte",
+      "rank": 1
+    },
+    "description": "<p>Heal 2 x MAG, range 1 to 2, W8, 2 Ch.</p>",
+    "summary": "heal 2 x MAG, range 1 to 2, W8, 2 Ch",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 2,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": null,
+    "heal": {
+      "formula": "2 * mag"
+    },
+    "war": {
+      "range": [
+        1,
+        2
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "ally",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "acolyteMend"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

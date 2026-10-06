@@ -1,0 +1,97 @@
+{
+  "_id": "aDsdvgz9H4tfplC9",
+  "name": "Knight",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "armored"
+    ],
+    "growth": {
+      "str": "S",
+      "mag": "F",
+      "skl": "B",
+      "spd": "D",
+      "def": "S",
+      "res": "C",
+      "cmd": "C"
+    },
+    "hp": 4,
+    "trains": {
+      "primary": [
+        "sword",
+        "armor"
+      ],
+      "secondary": [
+        "lance",
+        "axe"
+      ]
+    },
+    "trainsText": "Sword, Armor / Lance, Axe",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "sword",
+          "grade": "C"
+        },
+        {
+          "prof": "armor",
+          "grade": "D"
+        }
+      ]
+    },
+    "prerequisiteText": "Sword C, Armor D",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "knightBulwark",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "knightShieldBash",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "knightGuardian",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "knightBreaker",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "knightFortress",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "knightImmovable",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "knight",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

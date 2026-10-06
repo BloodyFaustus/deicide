@@ -1,0 +1,47 @@
+{
+  "_id": "g9U7Bn5Faf3qzdTx",
+  "name": "Surgeon",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "type": "mastery",
+    "source": {
+      "kind": "class",
+      "id": "chirurgeon",
+      "rank": 10
+    },
+    "description": "<p>Revive a Downed ally at 25 percent, once per dungeon.</p>",
+    "summary": "revive a Downed ally at 25 percent, once per dungeon",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": 1,
+      "per": "dungeon"
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "chirurgeonSurgeon"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

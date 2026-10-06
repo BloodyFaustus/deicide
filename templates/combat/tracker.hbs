@@ -1,0 +1,88 @@
+<ol class="combat-tracker plain deicide-tracker {{engine}}">
+  {{#unless started}}
+    {{#each turns}}
+      <li class="combatant {{css}}" data-combatant-id="{{id}}" data-action="activateCombatant">
+        <img class="token-image" src="{{img}}" alt="{{name}}" loading="lazy">
+        <div class="token-name"><strong class="name">{{name}}</strong></div>
+      </li>
+    {{/each}}
+  {{/unless}}
+
+  {{#if started}}
+  {{#if (eq engine "war")}}
+    <li class="phase-banner {{phase}}">
+      <strong>Round {{@root.combat.round}}</strong> <span class="phase-label">{{phaseLabel}}</span>
+    </li>
+    {{#each groups as |group side|}}
+      <li class="side-header side-{{side}}">{{#if (eq side "party")}}Lathander{{else}}Enemy{{/if}}</li>
+      {{#each group}}
+        <li class="combatant {{css}} {{#if acted}}acted{{/if}} {{#if canAct}}can-act{{/if}}" data-combatant-id="{{id}}" data-action="activateCombatant">
+          <img class="token-image" src="{{img}}" alt="{{name}}" loading="lazy">
+          <div class="token-name">
+            <strong class="name">{{name}}</strong>
+            <div class="combatant-controls">
+              {{#if strength}}<span class="strength {{#if wavering}}wavering{{/if}}" data-tooltip="Strength and Quality">{{strength}} ({{quality}})</span>{{/if}}
+              {{#if @root.user.isGM}}
+              <button type="button" class="inline-control combatant-control icon fa-solid {{#if acted}}fa-rotate-left{{else}}fa-check{{/if}}" data-action="toggleActed" data-tooltip="{{#if acted}}Undo acted{{else}}Mark acted{{/if}}"></button>
+              <button type="button" class="inline-control combatant-control icon fa-solid {{#if hidden}}fa-eye-slash{{else}}fa-eye{{/if}}" data-action="toggleHidden" data-tooltip="Toggle visibility"></button>
+              <button type="button" class="inline-control combatant-control icon fa-solid fa-skull" data-action="toggleDefeated" data-tooltip="Toggle defeated"></button>
+              {{/if}}
+            </div>
+            {{#if effects.icons.length}}
+            <div class="token-effects" data-tooltip="{{effects.tooltip}}">
+              {{#each effects.icons}}<img class="token-effect" src="{{img}}" alt="{{name}}">{{/each}}
+            </div>
+            {{/if}}
+          </div>
+        </li>
+      {{/each}}
+    {{/each}}
+    {{#if pendingDecisions}}
+      <li class="side-header doctrine">Enemy doctrines ({{pendingDecisions}} pending)</li>
+      {{#each doctrineQueue}}
+        {{#unless confirmed}}
+        <li class="decision" data-company-id="{{companyId}}">
+          <span class="text">{{effective}}{{#if move}}, move to {{move.x}},{{move.y}}{{/if}}{{#if attack}}, attack at range {{attack.distance}}{{/if}}</span>
+          {{#if @root.user.isGM}}<button type="button" class="inline-control icon fa-solid fa-play" data-action="resolveDecision" data-company-id="{{companyId}}" data-tooltip="Resolve"></button>{{/if}}
+        </li>
+        {{/unless}}
+      {{/each}}
+    {{/if}}
+  {{/if}}
+
+  {{#if (eq engine "dungeon")}}
+    <li class="phase-banner dungeon"><strong>Tick {{tick}}</strong></li>
+    {{#each rows as |sideRows side|}}
+      <li class="side-header side-{{side}}">{{#if (eq side "party")}}Party{{else}}Enemy{{/if}}</li>
+      {{#each sideRows as |rowList row|}}
+        <li class="row-header">{{row}} row</li>
+        {{#each rowList}}
+          <li class="combatant {{css}} {{#if current}}current{{/if}}" data-combatant-id="{{id}}" data-action="activateCombatant">
+            <img class="token-image" src="{{img}}" alt="{{name}}" loading="lazy">
+            <div class="token-name">
+              <strong class="name">{{name}}</strong>
+              <div class="combatant-controls">
+                <span class="tick" data-tooltip="Next Tick">{{nextTick}}</span>
+                {{#if guard}}<i class="fa-solid fa-shield-halved" data-tooltip="Guard: next Delay halved"></i>{{/if}}
+                {{#if @root.user.isGM}}
+                <button type="button" class="inline-control combatant-control icon fa-solid fa-right-left" data-action="swapRow" data-tooltip="Swap row"></button>
+                <button type="button" class="inline-control combatant-control icon fa-solid fa-skull" data-action="toggleDefeated" data-tooltip="Toggle defeated"></button>
+                {{/if}}
+              </div>
+              {{#if effects.icons.length}}
+              <div class="token-effects" data-tooltip="{{effects.tooltip}}">
+                {{#each effects.icons}}<img class="token-effect" src="{{img}}" alt="{{name}}">{{/each}}
+              </div>
+              {{/if}}
+            </div>
+          </li>
+        {{/each}}
+      {{/each}}
+    {{/each}}
+    <li class="side-header projection">Next 10</li>
+    <li class="projection-strip">
+      {{#each projection}}<span class="projected" data-tooltip="Tick {{tick}}">{{name}}</span>{{/each}}
+    </li>
+  {{/if}}
+  {{/if}}
+</ol>

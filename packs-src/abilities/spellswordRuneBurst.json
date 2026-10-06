@@ -1,0 +1,73 @@
+{
+  "_id": "gIGlkvZFSI3rZQDm",
+  "name": "Rune Burst",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "spellsword",
+      "rank": 6
+    },
+    "description": "<p>MAG M8 W10, blast 1, 3 Ch.</p>",
+    "summary": "MAG M8 W10, blast 1, 3 Ch",
+    "tags": [
+      "reason"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 3,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 10,
+    "attack": {
+      "basis": "mag",
+      "source": "spell",
+      "defense": "res",
+      "might": 8,
+      "element": null,
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": []
+    },
+    "heal": null,
+    "war": {
+      "range": [
+        1,
+        2
+      ],
+      "area": {
+        "shape": "blast",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "spellswordRuneBurst"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

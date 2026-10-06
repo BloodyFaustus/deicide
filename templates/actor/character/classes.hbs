@@ -1,0 +1,47 @@
+<section class="tab classes {{tab.cssClass}}" data-tab="classes" data-group="primary">
+  <div class="toolbar">
+    {{#if isGM}}
+    <button type="button" data-action="awardXp"><i class="fa-solid fa-star"></i> Award XP</button>
+    <button type="button" data-action="awardCp"><i class="fa-solid fa-medal"></i> Award CP</button>
+    {{/if}}
+    <button type="button" data-action="classTree"><i class="fa-solid fa-sitemap"></i> Class tree</button>
+    <span class="hint">Tier gates: 2 at level {{tierGates.[0]}}, 3 at {{tierGates.[1]}}, 4 at {{tierGates.[2]}}. Cap tier {{derived.capTier}}.</span>
+  </div>
+
+  <h3>Classes</h3>
+  <ul class="class-list plain">
+    {{#each classes}}
+    <li class="class-row {{#if active}}active{{/if}}">
+      <div class="class-main">
+        <strong data-action="openEntry" data-type="class" data-identifier="{{id}}">{{name}}</strong>
+        <span>Tier {{tier}}, Rank {{rank}}</span>
+        <span class="cp" data-tooltip="Cumulative CP">CP {{cp}}{{#if nextCp}} / {{nextCp}}{{/if}}</span>
+        <span class="bar"><span class="fill" style="width: {{progress}}%"></span></span>
+        {{#unless active}}<button type="button" data-action="activateClass" data-class-id="{{id}}">Make active</button>{{else}}<span class="badge">active</span>{{/unless}}
+      </div>
+      <ul class="ladder plain">
+        {{#each skills}}<li class="{{#if known}}known{{else}}locked{{/if}}"><small>R{{rank}}</small> {{name}}</li>{{/each}}
+      </ul>
+    </li>
+    {{/each}}
+  </ul>
+
+  <h3>Reachable classes <small>green can be entered now</small></h3>
+  <ul class="available plain">
+    {{#each availableClasses}}
+    <li class="{{#if ok}}ok{{else}}locked{{/if}}">
+      <strong data-action="openEntry" data-type="class" data-identifier="{{id}}">{{name}}</strong>
+      <span>Tier {{tier}}</span>
+      {{#if ok}}
+        {{#if cost}}
+          <button type="button" data-action="commission" data-class-id="{{id}}" data-tooltip="{{cost.dust}} Dust{{#if cost.legitimacy}} and {{cost.legitimacy}} Legitimacy{{/if}}">{{#if (eq tier 3)}}Royal Warrant{{else}}Commission{{/if}} ({{cost.dust}} Dust)</button>
+        {{else}}
+          <button type="button" data-action="addClass" data-class-id="{{id}}">Enter</button>
+        {{/if}}
+      {{else}}
+        <span class="missing">{{missingText}}</span>
+      {{/if}}
+    </li>
+    {{/each}}
+  </ul>
+</section>

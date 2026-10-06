@@ -1,0 +1,28 @@
+{
+  "_id": "Ucz8wAovQdT1TTN1",
+  "name": "Silver Bow",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "bow",
+    "tier": "silver",
+    "prefix": null,
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 13, Accuracy +15, Crit 15, Range 2 to 3, Weight 8. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverBow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

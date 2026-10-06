@@ -1,0 +1,57 @@
+{
+  "_id": "9ln2K2GVnwzop010",
+  "name": "Iron Wall",
+  "type": "ability",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "type": "stance",
+    "source": {
+      "kind": "class",
+      "id": "greatKnight",
+      "rank": 2
+    },
+    "description": "<p>DEF +8, Move 3.</p>",
+    "summary": "DEF +8, Move 3",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "defense.def",
+        "value": 8
+      },
+      {
+        "key": "move",
+        "op": "set",
+        "value": 3
+      }
+    ],
+    "roll": null,
+    "automation": "full",
+    "identifier": "greatKnightIronWall"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

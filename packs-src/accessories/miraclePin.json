@@ -1,0 +1,20 @@
+{
+  "_id": "5Kf445MI8p50koIs",
+  "name": "Miracle Pin",
+  "type": "pin",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "ability": "pinMiracle",
+    "price": 45,
+    "description": "<p>Once per encounter, survive a lethal hit at 1 HP.</p>",
+    "equipped": false,
+    "identifier": "miraclePin"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

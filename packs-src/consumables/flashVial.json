@@ -1,0 +1,24 @@
+{
+  "_id": "ux4yA3wecsKGC2Fl",
+  "name": "Flash Vial",
+  "type": "consumable",
+  "img": "icons/svg/chest.svg",
+  "system": {
+    "key": "flashVial",
+    "kind": "belt",
+    "quantity": 1,
+    "description": "<p>Enemy row Accuracy -15 for 2 turns. 4 Dust.</p>",
+    "identifier": "flashVial"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

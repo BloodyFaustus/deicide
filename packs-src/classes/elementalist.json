@@ -1,0 +1,100 @@
+{
+  "_id": "1FZ6a5cKUubK0KXI",
+  "name": "Elementalist",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "caster",
+      "infantry"
+    ],
+    "growth": {
+      "str": "D",
+      "mag": "S",
+      "skl": "C",
+      "spd": "A",
+      "def": "E",
+      "res": "B",
+      "cmd": "D"
+    },
+    "hp": 2,
+    "trains": {
+      "primary": [
+        "reason",
+        "chosenWeapon"
+      ],
+      "secondary": [
+        "faith",
+        "riding"
+      ]
+    },
+    "trainsText": "Reason, chosen weapon / Faith, Riding",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "reason",
+          "grade": "C"
+        },
+        {
+          "prof": "anyWeapon",
+          "grade": "D"
+        }
+      ]
+    },
+    "prerequisiteText": "Reason C, any weapon D (locked at entry)",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "elementalistAttune",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "elementalistLightningStrike",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "elementalistConduit",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "elementalistStorm",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "elementalistDischarge",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "elementalistElementalBody",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [
+      "weapon"
+    ],
+    "kit": {},
+    "description": "",
+    "identifier": "elementalist",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

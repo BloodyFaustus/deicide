@@ -1,0 +1,31 @@
+{
+  "_id": "lK27wYkFXpXtjlwl",
+  "name": "High Elf",
+  "type": "origin",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "kind": "people",
+    "description": "<p>Channel +2.</p>",
+    "growth": {
+      "mag": "D",
+      "res": "D",
+      "spd": "E",
+      "skl": "E"
+    },
+    "modifiers": [
+      {
+        "key": "channel.max",
+        "value": 2,
+        "stage": "innate"
+      }
+    ],
+    "identifier": "highElf"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

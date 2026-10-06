@@ -1,0 +1,48 @@
+{
+  "_id": "usFsQ7YTB5ycRVZm",
+  "name": "Omen",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "origin",
+      "id": "duneHunter"
+    },
+    "description": "<p>Once per encounter, learn the next enemy action. Prevents the party being ambushed.</p>",
+    "summary": "once per encounter, learn the next enemy action. Prevents the party being ambushed",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": 1,
+      "per": "encounter"
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": {
+      "note": "Learn the next enemy action. The party cannot be ambushed."
+    },
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "originOmen"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

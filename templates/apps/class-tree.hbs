@@ -1,0 +1,29 @@
+<div class="class-tree-root">
+  <aside class="profs">
+    <h3>Proficiencies</h3>
+    <ul class="plain">
+      {{#each proficiencies}}<li><span>{{label}}</span><strong>{{grade}}</strong></li>{{/each}}
+    </ul>
+    <p class="legend"><span class="swatch owned"></span> owned <span class="swatch ok"></span> reachable <span class="swatch locked"></span> locked</p>
+  </aside>
+  <div class="tiers">
+    {{#each tiers}}
+    <section class="tier">
+      <h3>Tier {{tier}} <small>{{#if (eq tier 1)}}level 1{{else}}{{#if (eq gate "story")}}story gate{{else}}level {{gate}}{{/if}}{{/if}}</small></h3>
+      {{#each classes}}
+      <div class="class-card {{#if owned}}owned{{else}}{{#if ok}}ok{{else}}locked{{/if}}{{/if}} {{#if active}}active{{/if}}" data-class-id="{{id}}">
+        <header>
+          <strong data-action="openClass" data-class-id="{{id}}">{{name}}</strong>
+          <span class="types">{{types}}</span>
+        </header>
+        <p class="growth">{{growth}}</p>
+        <p class="trains">{{trains}}</p>
+        {{#if prerequisiteText}}<p class="prereq">Needs {{prerequisiteText}}</p>{{/if}}
+        {{#if missing}}<p class="missing">Missing: {{missing}}</p>{{/if}}
+        {{#if (and @root.actor ok)}}{{#unless owned}}<button type="button" data-action="addClass" data-class-id="{{id}}">Enter at Rank 1</button>{{/unless}}{{/if}}
+      </div>
+      {{/each}}
+    </section>
+    {{/each}}
+  </div>
+</div>

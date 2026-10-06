@@ -1,0 +1,76 @@
+{
+  "_id": "85oeSEsATyxZSGAS",
+  "name": "Cannon",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "artillerist",
+      "rank": 1
+    },
+    "description": "<p>Gun M16 W12, range 3 to 8, blast 1, 2 Dust.</p>",
+    "summary": "gun M16 W12, range 3 to 8, blast 1, 2 Dust",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 2,
+      "soulPrice": 0
+    },
+    "weight": 12,
+    "attack": {
+      "basis": "str",
+      "source": "weapon",
+      "defense": "def",
+      "might": 16,
+      "element": null,
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [
+        "gun"
+      ],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": []
+    },
+    "heal": null,
+    "war": {
+      "range": [
+        3,
+        8
+      ],
+      "area": {
+        "shape": "blast",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": {
+      "requiresArena": true,
+      "note": "A siege weapon. Arena only. One enemy row."
+    },
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "artilleristCannon"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "29zSSNi6K22zmnGC",
+  "name": "Steel Keen Bow",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "bow",
+    "tier": "steel",
+    "prefix": "keen",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 9, Accuracy +25, Crit 10, Range 2 to 3, Weight 8. D to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "steelKeenBow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

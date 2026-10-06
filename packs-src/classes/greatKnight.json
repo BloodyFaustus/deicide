@@ -1,0 +1,102 @@
+{
+  "_id": "seD8UeBxfmJd03iD",
+  "name": "Great Knight",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 3,
+    "types": [
+      "armored",
+      "mounted"
+    ],
+    "growth": {
+      "str": "S",
+      "mag": "F",
+      "skl": "B",
+      "spd": "C",
+      "def": "S",
+      "res": "D",
+      "cmd": "C"
+    },
+    "hp": 4,
+    "trains": {
+      "primary": [
+        "lance",
+        "armor"
+      ],
+      "secondary": [
+        "riding",
+        "axe"
+      ]
+    },
+    "trainsText": "Lance, Armor / Riding, Axe",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "lance",
+          "grade": "B"
+        },
+        {
+          "prof": "armor",
+          "grade": "C"
+        },
+        {
+          "prof": "riding",
+          "grade": "C"
+        }
+      ]
+    },
+    "prerequisiteText": "Lance B, Armor C, Riding C",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "greatKnightJuggernaut",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "greatKnightIronWall",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "greatKnightTrampleLine",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "greatKnightArmoredWedge",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "greatKnightUnbreakable",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "greatKnightSiegeBreaker",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "greatKnight",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

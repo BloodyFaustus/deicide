@@ -1,0 +1,33 @@
+{
+  "_id": "rxjjkH9Qs1eWb1Ut",
+  "name": "Noble Cadet",
+  "type": "origin",
+  "img": "icons/svg/village.svg",
+  "system": {
+    "kind": "background",
+    "description": "<p>Cadet Rank 2, Crown Standing +20.</p>",
+    "points": {
+      "cmd": 2,
+      "skl": 2
+    },
+    "grants": {
+      "classes": [
+        {
+          "id": "cadet",
+          "rank": 2
+        }
+      ],
+      "standingBonus": {
+        "crown": 20
+      }
+    },
+    "identifier": "nobleCadet"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

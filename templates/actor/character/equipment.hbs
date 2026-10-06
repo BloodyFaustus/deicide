@@ -1,0 +1,68 @@
+<section class="tab equipment {{tab.cssClass}}" data-tab="equipment" data-group="primary">
+  <h3>Slots <small>Dust {{dust}}</small></h3>
+  <div class="slots">
+    {{#each equipment.slots}}
+    <div class="slot-box">
+      <label>{{label}}{{#if (gt count 1)}} ({{items.length}}/{{count}}){{/if}}</label>
+      {{#each items}}
+      <div class="item-row" data-item-id="{{id}}">
+        <img src="{{img}}" alt="{{name}}">
+        <span class="name" data-action="editItem">{{name}}</span>
+        <span class="summary">{{summary}}</span>
+        <button type="button" class="inline-control icon fa-solid fa-xmark" data-action="toggleEquipped" data-tooltip="Unequip"></button>
+      </div>
+      {{else}}
+      <span class="empty">empty</span>
+      {{/each}}
+    </div>
+    {{/each}}
+  </div>
+
+  <h3>Belt <small>{{equipment.belt.length}} items, {{equipment.beltSlots}} slots, Dungeon only</small></h3>
+  <ul class="item-list plain">
+    {{#each equipment.belt}}
+    <li class="item-row {{#if onBelt}}on-belt{{/if}}" data-item-id="{{id}}">
+      <img src="{{img}}" alt="{{name}}">
+      <span class="name" data-action="editItem">{{name}}</span>
+      <span class="quantity">x{{quantity}}</span>
+      <span class="summary">{{summary}}</span>
+      <button type="button" class="inline-control {{#if onBelt}}on{{/if}}" data-action="toggleBelt" data-tooltip="On the Belt">{{#if onBelt}}on belt{{else}}pack{{/if}}</button>
+      <button type="button" class="inline-control icon fa-solid fa-trash" data-action="deleteItem" data-tooltip="Delete"></button>
+    </li>
+    {{/each}}
+  </ul>
+
+  <h3>Inventory <small>PP and price shown</small></h3>
+  <ul class="item-list plain">
+    {{#each equipment.inventory}}
+    <li class="item-row {{#if equipped}}equipped{{/if}} {{#if invalid}}invalid{{/if}}" data-item-id="{{id}}" draggable="true">
+      <img src="{{img}}" alt="{{name}}">
+      <span class="name" data-action="editItem">{{name}}{{#if named}} <i class="fa-solid fa-star" data-tooltip="Named"></i>{{/if}}</span>
+      <span class="type">{{typeLabel}}</span>
+      <span class="summary">{{summary}}</span>
+      <span class="pp" data-tooltip="Power Points and price">{{#if pp}}PP {{pp}}{{/if}}{{#if price}}, {{price}} Dust{{/if}}</span>
+      <button type="button" class="inline-control {{#if equipped}}on{{/if}}" data-action="toggleEquipped">{{#if equipped}}equipped{{else}}equip{{/if}}</button>
+      <button type="button" class="inline-control icon fa-solid fa-trash" data-action="deleteItem" data-tooltip="Delete"></button>
+    </li>
+    {{/each}}
+  </ul>
+
+  {{#if equipment.supplies.length}}
+  <h3>War supplies</h3>
+  <ul class="item-list plain">
+    {{#each equipment.supplies}}
+    <li class="item-row" data-item-id="{{id}}"><img src="{{img}}" alt="{{name}}"><span class="name" data-action="editItem">{{name}}</span><span class="quantity">x{{quantity}}</span><span class="summary">{{summary}}</span><button type="button" class="inline-control icon fa-solid fa-trash" data-action="deleteItem"></button></li>
+    {{/each}}
+  </ul>
+  {{/if}}
+
+  {{#if equipment.other.length}}
+  <h3>Owned overrides <small>class, origin, and ability items on this sheet override the catalog</small></h3>
+  <ul class="item-list plain">
+    {{#each equipment.other}}
+    <li class="item-row" data-item-id="{{id}}"><img src="{{img}}" alt="{{name}}"><span class="name" data-action="editItem">{{name}}</span><span class="type">{{typeLabel}}</span><button type="button" class="inline-control icon fa-solid fa-trash" data-action="deleteItem"></button></li>
+    {{/each}}
+  </ul>
+  {{/if}}
+  <p class="hint">Drag items from a compendium onto the sheet. Dropping a class adds it at Rank 1 (Alt makes it active). Dropping an origin sets it.</p>
+</section>

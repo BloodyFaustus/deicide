@@ -1,0 +1,44 @@
+{
+  "_id": "MekXz6Pl9y5w30QV",
+  "name": "Beastman",
+  "type": "origin",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "kind": "people",
+    "description": "<p>Subtype swaps one D. Avian: Flying starts D, SPD D becomes SKL D. Feline: starting SPD +2.</p>",
+    "growth": {
+      "spd": "D",
+      "str": "D",
+      "skl": "E",
+      "def": "E"
+    },
+    "subtypes": {
+      "feline": {
+        "name": "Feline",
+        "startBonus": {
+          "spd": 2
+        }
+      },
+      "avian": {
+        "name": "Avian",
+        "growth": {
+          "skl": "D",
+          "str": "D",
+          "spd": "E",
+          "def": "E"
+        },
+        "proficiencies": {
+          "flying": "D"
+        }
+      }
+    },
+    "identifier": "beastman"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,50 @@
+{
+  "_id": "tb4HJCztafuBv4CN",
+  "name": "Double Canto",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "class",
+      "id": "chevalier",
+      "rank": 1
+    },
+    "description": "<p>Canto before and after acting.</p>",
+    "summary": "Canto before and after acting",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": {
+      "requiresArena": true,
+      "note": "No Canto in Dungeon Mode unless the scene is an Arena."
+    },
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "chevalierDoubleCanto"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

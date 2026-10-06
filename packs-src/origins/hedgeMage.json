@@ -1,0 +1,36 @@
+{
+  "_id": "OgOz23vkHxp1Taxv",
+  "name": "Hedge Mage",
+  "type": "origin",
+  "img": "icons/svg/village.svg",
+  "system": {
+    "kind": "background",
+    "description": "<p>Adept Rank 2, Void E, Civilians Standing minus 10.</p>",
+    "points": {
+      "mag": 2,
+      "res": 2
+    },
+    "grants": {
+      "classes": [
+        {
+          "id": "adept",
+          "rank": 2
+        }
+      ],
+      "proficiencies": {
+        "void": "E"
+      },
+      "standingBonus": {
+        "civilians": -10
+      }
+    },
+    "identifier": "hedgeMage"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,52 @@
+{
+  "_id": "HuY3nSkOmQb93NMT",
+  "name": "Immovable",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "type": "mastery",
+    "source": {
+      "kind": "class",
+      "id": "knight",
+      "rank": 10
+    },
+    "description": "<p>Immune to push, pull, swap.</p>",
+    "summary": "immune to push, pull, swap",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "immune",
+        "value": "rowSwap"
+      }
+    ],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "knightImmovable"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

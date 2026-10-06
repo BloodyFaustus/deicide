@@ -1,0 +1,65 @@
+{
+  "_id": "21Iw29XmY461OmUr",
+  "name": "Barrier",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "warden",
+      "rank": 1
+    },
+    "description": "<p>Tile or row Barrier absorbs 3 x MAG, W8, 3 Ch.</p>",
+    "summary": "tile or row Barrier absorbs 3 x MAG, W8, 3 Ch",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 3,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "tile",
+      "movement": null,
+      "terrain": true
+    },
+    "dungeon": {
+      "barrier": {
+        "formula": "3 * mag"
+      },
+      "target": "row",
+      "side": "ally"
+    },
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "wardenBarrier"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

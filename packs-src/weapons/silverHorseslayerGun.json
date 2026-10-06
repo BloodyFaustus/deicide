@@ -1,0 +1,28 @@
+{
+  "_id": "Zh74R4oMFeHaGkSM",
+  "name": "Silver Horseslayer Gun",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "gun",
+    "tier": "silver",
+    "prefix": "horseslayer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 14, Accuracy +25, Crit 20, Range 2, Weight 10. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverHorseslayerGun"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

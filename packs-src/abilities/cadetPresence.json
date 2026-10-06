@@ -1,0 +1,52 @@
+{
+  "_id": "UrkXXn1gUe81FRAZ",
+  "name": "Presence",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "type": "mastery",
+    "source": {
+      "kind": "class",
+      "id": "cadet",
+      "rank": 10
+    },
+    "description": "<p>Command radius +1.</p>",
+    "summary": "command radius +1",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "commandRadius",
+        "value": 1
+      }
+    ],
+    "roll": null,
+    "automation": "full",
+    "identifier": "cadetPresence"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

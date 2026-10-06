@@ -1,0 +1,22 @@
+{
+  "_id": "uh4Yzbd2hFMbdR7f",
+  "name": "Silver Light Armor",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "<p>DEF +3, RES +3, Burden 0.</p>",
+    "equipped": false,
+    "identifier": "silverLight"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

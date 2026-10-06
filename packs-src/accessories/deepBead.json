@@ -1,0 +1,28 @@
+{
+  "_id": "m90n68xyLX1GXVlz",
+  "name": "Deep Bead",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "deepBead",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>Channel +8. 12 Dust.</p>",
+    "equipped": false,
+    "identifier": "deepBead"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

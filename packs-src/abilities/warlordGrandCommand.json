@@ -1,0 +1,52 @@
+{
+  "_id": "vwXvA8hHv70v7B6e",
+  "name": "Grand Command",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "class",
+      "id": "warlord",
+      "rank": 1
+    },
+    "description": "<p>Command radius +2.</p>",
+    "summary": "command radius +2",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "commandRadius",
+        "value": 2
+      }
+    ],
+    "roll": null,
+    "automation": "full",
+    "identifier": "warlordGrandCommand"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

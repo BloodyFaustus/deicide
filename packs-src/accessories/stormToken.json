@@ -1,0 +1,28 @@
+{
+  "_id": "YmjhQnD6XH9KPni4",
+  "name": "Storm Token",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "stormToken",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>immune to lightning. 10 Dust.</p>",
+    "equipped": false,
+    "identifier": "stormToken"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "_id": "6q1ZNree6npjR0Ct",
+  "name": "Vitrean",
+  "type": "origin",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "kind": "people",
+    "description": "<p>Channel +4. 20 Burn in one encounter causes Crystalline.</p>",
+    "growth": {
+      "res": "D",
+      "mag": "D",
+      "def": "E",
+      "skl": "E"
+    },
+    "modifiers": [
+      {
+        "key": "channel.max",
+        "value": 4,
+        "stage": "innate"
+      }
+    ],
+    "flags": {
+      "crystallineAtBurn": 20
+    },
+    "identifier": "vitrean"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

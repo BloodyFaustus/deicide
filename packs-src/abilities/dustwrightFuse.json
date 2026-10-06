@@ -1,0 +1,59 @@
+{
+  "_id": "pp7K9ESraC7j2bRp",
+  "name": "Fuse",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "dustwright",
+      "rank": 8
+    },
+    "description": "<p>A Wall tile or Barrier is destroyed at end of round, 2 Dust, W6.</p>",
+    "summary": "a Wall tile or Barrier is destroyed at end of round, 2 Dust, W6",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 2,
+      "soulPrice": 0
+    },
+    "weight": 6,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "tile",
+      "movement": null,
+      "terrain": true
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "dustwrightFuse"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

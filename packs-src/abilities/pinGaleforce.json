@@ -1,0 +1,47 @@
+{
+  "_id": "mztFdMX0GnrnLhis",
+  "name": "Galeforce",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "pin",
+      "id": "galeforcePin",
+      "rank": null
+    },
+    "description": "<p>Killing a character or routing a company refunds your Action, once per round.</p>",
+    "summary": "Killing a character or routing a company refunds your Action, once per round",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": 1,
+      "per": "round"
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "pinGaleforce"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

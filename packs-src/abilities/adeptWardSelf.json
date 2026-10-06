@@ -1,0 +1,66 @@
+{
+  "_id": "U6Gm2VbqQ8ivPRy4",
+  "name": "Ward Self",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "adept",
+      "rank": 2
+    },
+    "description": "<p>Raise Warded, W6, 2 Ch.</p>",
+    "summary": "raise Warded, W6, 2 Ch",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 2,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 6,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "self",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [
+      {
+        "id": "warded",
+        "turns": null,
+        "target": "self",
+        "onCrit": false
+      }
+    ],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "adeptWardSelf"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

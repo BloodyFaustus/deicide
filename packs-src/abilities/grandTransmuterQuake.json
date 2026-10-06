@@ -1,0 +1,80 @@
+{
+  "_id": "22rzANHB3uFjrTHp",
+  "name": "Quake",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "grandTransmuter",
+      "rank": 8
+    },
+    "description": "<p>6 Mt, radius 2 M16 physical and Pinned, W12.</p>",
+    "summary": "6 Mt, radius 2 M16 physical and Pinned, W12",
+    "tags": [
+      "alchemy"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 6,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 12,
+    "attack": {
+      "basis": "mag",
+      "source": "alchemy",
+      "defense": "def",
+      "might": 16,
+      "element": null,
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": []
+    },
+    "heal": null,
+    "war": {
+      "range": [
+        1,
+        1
+      ],
+      "area": {
+        "shape": "blast",
+        "size": 2
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [
+      {
+        "id": "pinned",
+        "turns": 1,
+        "target": "target",
+        "onCrit": false
+      }
+    ],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "grandTransmuterQuake"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

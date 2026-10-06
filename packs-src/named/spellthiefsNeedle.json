@@ -1,0 +1,57 @@
+{
+  "_id": "NZqhEYaDoww3Qscl",
+  "name": "Spellthief's Needle",
+  "type": "named",
+  "img": "icons/svg/holy-shield.svg",
+  "system": {
+    "fills": "weapon",
+    "base": {
+      "line": "dagger",
+      "tier": "royal"
+    },
+    "stats": {
+      "might": 14,
+      "acc": 30,
+      "crit": 25,
+      "weight": 2,
+      "range": [
+        1,
+        1
+      ]
+    },
+    "modifiers": [
+      {
+        "key": "stolen.slots",
+        "value": 1
+      },
+      {
+        "key": "stolen.might",
+        "value": 4
+      }
+    ],
+    "special": "",
+    "drawback": {
+      "text": "2 Burn per release.",
+      "flags": {
+        "burnPerRelease": 2
+      },
+      "refund": "burnPerUse2"
+    },
+    "pp": 38,
+    "hook": "Rista's lineage.",
+    "description": "<p>Royal Dagger. Stolen slots +1. Stolen spells keep the caster's Might +4.</p><p>Drawback: 2 Burn per release.</p>",
+    "equipped": false,
+    "identifier": "spellthiefsNeedle"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

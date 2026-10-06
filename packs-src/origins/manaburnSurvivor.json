@@ -1,0 +1,43 @@
+{
+  "_id": "u04JnlKer4jlv0mw",
+  "name": "Manaburn Survivor",
+  "type": "origin",
+  "img": "icons/svg/village.svg",
+  "system": {
+    "kind": "background",
+    "description": "<p>Channel halved. Overcast: +1 Might per point as well as 2 Burn. Manaburn starts 60. Adept Rank 3 (military asset).</p>",
+    "points": {
+      "mag": 4
+    },
+    "modifiers": [
+      {
+        "key": "channel.max",
+        "op": "mul",
+        "value": 0.5,
+        "stage": "origin"
+      }
+    ],
+    "flags": {
+      "manaburnThresholds": false,
+      "overcastMight": 1
+    },
+    "grants": {
+      "classes": [
+        {
+          "id": "adept",
+          "rank": 3
+        }
+      ],
+      "manaburn": 60
+    },
+    "story": true,
+    "identifier": "manaburnSurvivor"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

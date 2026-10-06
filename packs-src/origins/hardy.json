@@ -1,0 +1,31 @@
+{
+  "_id": "lqzGo4Cd4OdGx2A9",
+  "name": "Hardy",
+  "type": "origin",
+  "img": "icons/svg/light.svg",
+  "system": {
+    "kind": "talent",
+    "description": "<p>HP growth +1 per level, DEF and RES cap +1. STR and MAG growth minus 0.1.</p>",
+    "hpPerLevel": 1,
+    "caps": {
+      "flat": {
+        "def": 1,
+        "res": 1
+      }
+    },
+    "growth": {
+      "perStat": {
+        "str": -1,
+        "mag": -1
+      }
+    },
+    "identifier": "hardy"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

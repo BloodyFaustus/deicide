@@ -1,0 +1,25 @@
+{
+  "_id": "ZZoI9cdc6KlbV1nF",
+  "name": "Early Peak",
+  "type": "origin",
+  "img": "icons/svg/light.svg",
+  "system": {
+    "kind": "talent",
+    "description": "<p>Starting attributes +8 (max 4 in one). All growth minus 0.3 total.</p>",
+    "start": {
+      "points": 8,
+      "maxPerStat": 4
+    },
+    "growth": {
+      "totalMod": -3
+    },
+    "identifier": "earlyPeak"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

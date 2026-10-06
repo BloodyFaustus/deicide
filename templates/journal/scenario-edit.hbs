@@ -1,0 +1,13 @@
+<div class="deicide-scenario-edit">
+  <div class="form-group">
+    <label>Kind</label>
+    <select name="system.kind"><option value="war" {{#if (eq system.kind "war")}}selected{{/if}}>War scenario</option><option value="dungeon" {{#if (eq system.kind "dungeon")}}selected{{/if}}>Dungeon expedition</option></select>
+  </div>
+  <div class="form-group"><label>War month</label><input type="number" name="system.warMonth" value="{{system.warMonth}}" min="1" max="12"></div>
+  <div class="form-group"><label>Difficulty</label><select name="system.difficulty">{{#each difficulties}}<option value="{{this}}" {{#if (eq this @root.system.difficulty)}}selected{{/if}}>{{this}}</option>{{/each}}</select></div>
+  <div class="form-group"><label>Payout tracks (JSON)</label><textarea name="payoutTracksJson" rows="3">{{tracksJson}}</textarea></div>
+  <div class="form-group"><label>Payout Dust</label><input type="number" name="system.payout.dust" value="{{system.payout.dust}}" min="0"></div>
+  <div class="form-group"><label>Drops</label><input type="text" name="dropsText" value="{{dropsText}}" placeholder="redWater, steelGauntlet"></div>
+  <div class="form-group"><label>Card (JSON)</label><textarea name="cardJson" rows="12">{{cardJson}}</textarea></div>
+  <div class="form-group stacked"><label>Briefing</label><prose-mirror name="system.description" value="{{system.description}}" document-uuid="{{page.uuid}}" toggled>{{{descriptionHtml}}}</prose-mirror></div>
+</div>

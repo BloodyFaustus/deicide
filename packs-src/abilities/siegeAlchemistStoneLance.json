@@ -1,0 +1,73 @@
+{
+  "_id": "L45z1axPvP3nhhGA",
+  "name": "Stone Lance",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "siegeAlchemist",
+      "rank": 1
+    },
+    "description": "<p>MAG M8 physical, range 2 to 5, line 3, 2 Mt, W8.</p>",
+    "summary": "MAG M8 physical, range 2 to 5, line 3, 2 Mt, W8",
+    "tags": [
+      "alchemy"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 2,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": {
+      "basis": "mag",
+      "source": "alchemy",
+      "defense": "def",
+      "might": 8,
+      "element": null,
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": []
+    },
+    "heal": null,
+    "war": {
+      "range": [
+        2,
+        5
+      ],
+      "area": {
+        "shape": "line",
+        "size": 3
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "siegeAlchemistStoneLance"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

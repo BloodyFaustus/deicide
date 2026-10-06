@@ -1,0 +1,166 @@
+{
+  "_id": "ndtQ17WbjVRa8vFz",
+  "name": "The Drowned Foundry",
+  "pages": [
+    {
+      "_id": "MyQ61SQn5nG57rV2",
+      "name": "Dungeon expedition card",
+      "type": "scenario",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "system": {
+        "identifier": "theDrownedFoundry",
+        "kind": "dungeon",
+        "warMonth": 5,
+        "difficulty": "standard",
+        "card": {
+          "region": "Saltmarch wetlands",
+          "floors": [
+            {
+              "rooms": [
+                "entry hall",
+                "flooded gallery",
+                "overseer's office"
+              ],
+              "shortRest": true,
+              "matterSurfaces": "stone"
+            },
+            {
+              "rooms": [
+                "forge floor",
+                "locked vault",
+                "plague corridor"
+              ],
+              "shortRest": false,
+              "matterSurfaces": "metal"
+            },
+            {
+              "rooms": [
+                "drowned arena"
+              ],
+              "shortRest": false,
+              "matterSurfaces": "stone"
+            }
+          ],
+          "encounters": [
+            {
+              "room": "entry hall",
+              "enemies": [
+                "manaHound",
+                "manaHound",
+                "manaHound"
+              ],
+              "surprise": "none",
+              "arena": false,
+              "difficulty": "standard"
+            },
+            {
+              "room": "flooded gallery",
+              "enemies": [
+                "manaHound",
+                "manaHound",
+                "manaHound"
+              ],
+              "surprise": "none",
+              "arena": false,
+              "difficulty": "standard"
+            },
+            {
+              "room": "overseer's office",
+              "enemies": [
+                "crystalStalker"
+              ],
+              "surprise": "party",
+              "arena": false,
+              "difficulty": "standard"
+            },
+            {
+              "room": "forge floor",
+              "enemies": [
+                "burntWraith",
+                "burntWraith"
+              ],
+              "surprise": "none",
+              "arena": false,
+              "difficulty": "standard"
+            }
+          ],
+          "boss": {
+            "id": "mireDrake",
+            "room": "drowned arena",
+            "phaseBreaks": [
+              50
+            ]
+          },
+          "hazards": {
+            "plagueZones": [
+              {
+                "room": "plague corridor",
+                "rounds": 4
+              }
+            ],
+            "manaburnExposure": true,
+            "traps": []
+          },
+          "vault": {
+            "room": "locked vault",
+            "loot": [
+              "steelGauntlet"
+            ]
+          },
+          "deployment": {
+            "sheets": "N",
+            "swornSlots": 2
+          }
+        },
+        "payout": {
+          "tracks": {
+            "weapons": 2,
+            "magical": 1
+          },
+          "drops": [
+            "redWater"
+          ],
+          "dust": 60,
+          "applied": false
+        },
+        "description": "<p>Month 5. Floor 1 (stone): two Mana Hound packs of 3, one Crystal Stalker, a short rest. Floor 2 (metal): a Burnt Wraith pair (Warded), a locked vault with a Steel Gauntlet, a plague corridor of 4 rounds. Floor 3 (stone): the Mire Drake in an Arena.</p><p>Payout: Weapons +2, Magical +1, 1 Red Water, 60 Dust.</p>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    },
+    {
+      "_id": "Z9F0pgJiSJU574de",
+      "name": "Briefing",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Month 5. Floor 1 (stone): two Mana Hound packs of 3, one Crystal Stalker, a short rest. Floor 2 (metal): a Burnt Wraith pair (Warded), a locked vault with a Steel Gauntlet, a plague corridor of 4 rounds. Floor 3 (stone): the Mire Drake in an Arena.</p><p>Payout: Weapons +2, Magical +1, 1 Red Water, 60 Dust.</p>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "TJ8Gcvt8Yp3B2rXl",
+  "name": "Iron Runed Gun",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "gun",
+    "tier": "iron",
+    "prefix": "runed",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 9, Accuracy +15, Crit 10, Range 2, Weight 10. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironRunedGun"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

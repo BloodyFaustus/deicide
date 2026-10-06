@@ -1,0 +1,611 @@
+{
+  "grades": {
+    "F": [
+      1,
+      4
+    ],
+    "E": [
+      5,
+      8
+    ],
+    "D": [
+      9,
+      12
+    ],
+    "C": [
+      13,
+      16
+    ],
+    "B": [
+      17,
+      20
+    ],
+    "A": [
+      21,
+      24
+    ],
+    "S": [
+      25,
+      28
+    ],
+    "S+": [
+      29,
+      30
+    ],
+    "SS": [
+      31,
+      40
+    ],
+    "SSS": [
+      41,
+      50
+    ]
+  },
+  "growthTenths": {
+    "F": 0,
+    "E": 1,
+    "D": 2,
+    "C": 3,
+    "B": 5,
+    "A": 7,
+    "S": 9
+  },
+  "tierGrowthTotal": {
+    "1": 2,
+    "2": 2.5,
+    "3": 3,
+    "4": 3.2
+  },
+  "peopleGrowthTotal": 0.6,
+  "personalGrowthTotal": 0.6,
+  "personalGrowthMaxPerStat": 0.3,
+  "caps": {
+    "1": {
+      "S": 20,
+      "A": 19,
+      "B": 18,
+      "C": 17,
+      "D": 16,
+      "E": 15,
+      "F": 15
+    },
+    "2": {
+      "S": 26,
+      "A": 25,
+      "B": 23,
+      "C": 21,
+      "D": 19,
+      "E": 17,
+      "F": 17
+    },
+    "3": {
+      "S": 30,
+      "A": 29,
+      "B": 27,
+      "C": 25,
+      "D": 23,
+      "E": 21,
+      "F": 21
+    },
+    "4": {
+      "S": 30,
+      "A": 30,
+      "B": 28,
+      "C": 26,
+      "D": 24,
+      "E": 22,
+      "F": 22
+    }
+  },
+  "promotionBonus": {
+    "2": 1,
+    "3": 2
+  },
+  "rankCp": [
+    0,
+    3,
+    7,
+    12,
+    18,
+    25,
+    33,
+    42,
+    52,
+    63
+  ],
+  "rankProficiency": {
+    "primary": {
+      "1": "E",
+      "3": "D",
+      "5": "C",
+      "7": "B",
+      "9": "A",
+      "10": "S"
+    },
+    "secondary": {
+      "2": "E",
+      "4": "D",
+      "6": "C",
+      "8": "B",
+      "10": "A"
+    }
+  },
+  "xpToNext": "50 * level",
+  "xpTotal": "25 * L * (L - 1)",
+  "pacing": {
+    "formula": "25*L*(L-1) / (480*S)",
+    "defaults": {
+      "N": 4,
+      "S": 45,
+      "L": 30
+    },
+    "tierGates": {
+      "20": [
+        5,
+        11,
+        13
+      ],
+      "25": [
+        7,
+        13,
+        17
+      ],
+      "30": [
+        8,
+        16,
+        20
+      ]
+    }
+  },
+  "delay": {
+    "formula": "10*weight - 2*spd",
+    "min": 20,
+    "weights": {
+      "light": 6,
+      "standard": 8,
+      "heavy": 12
+    }
+  },
+  "hit": "75 + 2*skl + weaponAcc - (2*targetSpd + terrainAvoid)",
+  "crit": "floor(skl/2) + weaponCrit",
+  "critMultiplier": 1.5,
+  "doubling": {
+    "mode": "war",
+    "spdGap": 5,
+    "maxWeight": 10
+  },
+  "channel": "4 + floor(mag/2) + floor(res/2)",
+  "overcast": {
+    "burnPerPoint": 2,
+    "floor": 1
+  },
+  "matterCap": "6 + floor(str/4)",
+  "commandRadius": "1 + floor(cmd/5)",
+  "hp": "20 + 2*level + sum(classHpGrowth) + bonuses",
+  "company": {
+    "def": "4 + 2*quality",
+    "res": "2 + 2*quality",
+    "atkVsCharacter": "4*quality + floor(strength/5)",
+    "atkVsCompany": "3*quality + floor(strength/10)",
+    "hit": "70 + 5*quality - avoid - 2*spd",
+    "moraleBelow": 30,
+    "morale": "d100 < 40 + 10*quality + (inRadius ? 5 : 0)",
+    "veterancyPromote": 5
+  },
+  "benchmarks": [
+    {
+      "level": 1,
+      "partyHp": 25,
+      "partyDef": 8,
+      "stdHp": 20,
+      "stdDef": 7,
+      "stdMight": 12,
+      "bossHp": 120,
+      "bossDef": 9,
+      "bossSingle": 22,
+      "bossArea": 16,
+      "companyQ": 1
+    },
+    {
+      "level": 5,
+      "partyHp": 40,
+      "partyDef": 11,
+      "stdHp": 35,
+      "stdDef": 9,
+      "stdMight": 16,
+      "bossHp": 200,
+      "bossDef": 12,
+      "bossSingle": 28,
+      "bossArea": 20,
+      "companyQ": 2
+    },
+    {
+      "level": 10,
+      "partyHp": 55,
+      "partyDef": 14,
+      "stdHp": 50,
+      "stdDef": 12,
+      "stdMight": 22,
+      "bossHp": 320,
+      "bossDef": 15,
+      "bossSingle": 34,
+      "bossArea": 26,
+      "companyQ": 3
+    },
+    {
+      "level": 15,
+      "partyHp": 75,
+      "partyDef": 18,
+      "stdHp": 70,
+      "stdDef": 15,
+      "stdMight": 28,
+      "bossHp": 420,
+      "bossDef": 19,
+      "bossSingle": 40,
+      "bossArea": 32,
+      "companyQ": 3
+    },
+    {
+      "level": 20,
+      "partyHp": 100,
+      "partyDef": 22,
+      "stdHp": 90,
+      "stdDef": 18,
+      "stdMight": 34,
+      "bossHp": 500,
+      "bossDef": 22,
+      "bossSingle": 46,
+      "bossArea": 38,
+      "companyQ": 4
+    },
+    {
+      "level": 25,
+      "partyHp": 130,
+      "partyDef": 26,
+      "stdHp": 105,
+      "stdDef": 21,
+      "stdMight": 40,
+      "bossHp": 600,
+      "bossDef": 26,
+      "bossSingle": 52,
+      "bossArea": 44,
+      "companyQ": 5
+    },
+    {
+      "level": 30,
+      "partyHp": 170,
+      "partyDef": 30,
+      "stdHp": 120,
+      "stdDef": 24,
+      "stdMight": 46,
+      "bossHp": 700,
+      "bossDef": 29,
+      "bossSingle": 58,
+      "bossArea": 50,
+      "companyQ": 5
+    }
+  ],
+  "weaponGenerator": {
+    "lines": {
+      "sword": {
+        "prof": "sword",
+        "might": 6,
+        "acc": 10,
+        "crit": 5,
+        "range": [
+          1,
+          1
+        ],
+        "weight": 6,
+        "pp": 9
+      },
+      "lance": {
+        "prof": "lance",
+        "might": 8,
+        "acc": 5,
+        "crit": 0,
+        "range": [
+          1,
+          1
+        ],
+        "weight": 8,
+        "pp": 9
+      },
+      "axe": {
+        "prof": "axe",
+        "might": 10,
+        "acc": 0,
+        "crit": 0,
+        "range": [
+          1,
+          1
+        ],
+        "weight": 10,
+        "pp": 10
+      },
+      "bow": {
+        "prof": "bow",
+        "might": 7,
+        "acc": 5,
+        "crit": 5,
+        "range": [
+          2,
+          3
+        ],
+        "weight": 8,
+        "pp": 9
+      },
+      "gun": {
+        "prof": "gun",
+        "might": 9,
+        "acc": 15,
+        "crit": 10,
+        "range": [
+          2,
+          2
+        ],
+        "weight": 10,
+        "pp": 10,
+        "drawback": "mightZeroVsWarded"
+      },
+      "dagger": {
+        "prof": "sword",
+        "might": 4,
+        "acc": 15,
+        "crit": 15,
+        "range": [
+          1,
+          1
+        ],
+        "weight": 4,
+        "pp": 10
+      },
+      "tome": {
+        "prof": "reason",
+        "spellBonus": 2,
+        "channel": 1,
+        "acc": 10,
+        "pp": 9
+      },
+      "relic": {
+        "prof": "faith",
+        "spellBonus": 2,
+        "healBonus": 2,
+        "channel": 1,
+        "acc": 10,
+        "pp": 9
+      },
+      "gauntlet": {
+        "prof": "alchemy",
+        "alchemyBonus": 2,
+        "matter": 2,
+        "acc": 10,
+        "pp": 9
+      }
+    },
+    "tiers": {
+      "iron": {
+        "might": 0,
+        "acc": 0,
+        "crit": 0,
+        "weight": 0,
+        "pp": 0,
+        "gate": "E",
+        "casterBonus": 2,
+        "casterChannel": 1,
+        "casterMatter": 2
+      },
+      "steel": {
+        "might": 3,
+        "acc": 5,
+        "crit": 5,
+        "weight": 0,
+        "pp": 5,
+        "gate": "D",
+        "casterBonus": 5,
+        "casterChannel": 2,
+        "casterMatter": 3
+      },
+      "silver": {
+        "might": 6,
+        "acc": 10,
+        "crit": 10,
+        "weight": 0,
+        "pp": 10,
+        "gate": "C",
+        "casterBonus": 8,
+        "casterChannel": 3,
+        "casterMatter": 4
+      },
+      "royal": {
+        "might": 10,
+        "acc": 15,
+        "crit": 10,
+        "weight": -2,
+        "pp": 19,
+        "gate": "B",
+        "casterBonus": 12,
+        "casterChannel": 4,
+        "casterMatter": 5,
+        "casterSpellWeight": -1
+      }
+    },
+    "prefixes": {
+      "killer": {
+        "crit": 25,
+        "might": -1,
+        "pp": 4,
+        "allowed": "any"
+      },
+      "keen": {
+        "acc": 15,
+        "might": -1,
+        "pp": 2,
+        "allowed": "any"
+      },
+      "reach": {
+        "rangeMax": 1,
+        "might": -2,
+        "pp": 2,
+        "allowed": [
+          "sword",
+          "lance",
+          "axe",
+          "dagger",
+          "bow"
+        ]
+      },
+      "warding": {
+        "res": 2,
+        "pp": 4,
+        "allowed": "any"
+      },
+      "runed": {
+        "elementTag": "chosenNatural",
+        "channelPerAttack": 1,
+        "pp": 0,
+        "allowed": [
+          "sword",
+          "lance",
+          "axe",
+          "dagger",
+          "bow",
+          "gun"
+        ]
+      },
+      "armorslayer": {
+        "effectiveVs": "armored",
+        "might": -1,
+        "pp": 5,
+        "allowed": "any"
+      },
+      "horseslayer": {
+        "effectiveVs": "mounted",
+        "might": -1,
+        "pp": 5,
+        "allowed": "any"
+      },
+      "wingclipper": {
+        "effectiveVs": "flying",
+        "might": -1,
+        "pp": 5,
+        "allowed": "any"
+      },
+      "mageslayer": {
+        "effectiveVs": "caster",
+        "might": -1,
+        "pp": 5,
+        "allowed": "any"
+      },
+      "siege": {
+        "range": [
+          3,
+          6
+        ],
+        "might": -2,
+        "weight": 2,
+        "pp": 2,
+        "allowed": [
+          "bow",
+          "gun"
+        ]
+      },
+      "brave": {
+        "attacksTwice": true,
+        "might": -4,
+        "weight": 4,
+        "pp": 2,
+        "allowed": "any",
+        "tiers": [
+          "silver",
+          "royal"
+        ]
+      }
+    },
+    "price": "floor(pp*pp/5)",
+    "forge": {
+      "maxLevel": 3,
+      "mightPerLevel": 1,
+      "accPerLevel": 5,
+      "cost": [
+        20,
+        40,
+        80
+      ],
+      "requiresWeaponsTrack": 4
+    },
+    "expected": {
+      "ironSword": {
+        "pp": 9,
+        "price": 16
+      },
+      "royalAxe": {
+        "pp": 29,
+        "price": 168
+      },
+      "steelKillerSword": {
+        "pp": 18,
+        "price": 64
+      },
+      "silverHorseslayerLance": {
+        "pp": 24,
+        "price": 115
+      },
+      "royalBraveAxe": {
+        "pp": 31,
+        "price": 192
+      }
+    }
+  },
+  "buildsLevel30_regression": {
+    "paladinLine": {
+      "classes": [
+        "soldier 1-7",
+        "knight 8-15",
+        "paladin 16-30"
+      ],
+      "people": "manaborne",
+      "expected": {
+        "str": 30,
+        "mag": 9,
+        "skl": 21,
+        "spd": 11,
+        "def": 30,
+        "res": 17,
+        "cmd": 18,
+        "hp": 200
+      }
+    },
+    "magusLine": {
+      "classes": [
+        "adept 1-7",
+        "battlemage 8-15",
+        "magus 16-30"
+      ],
+      "people": "highElf",
+      "expected": {
+        "str": 7,
+        "mag": 30,
+        "skl": 21,
+        "spd": 14,
+        "def": 10,
+        "res": 27,
+        "cmd": 14,
+        "hp": 82,
+        "channel": 48
+      }
+    },
+    "spellswordLine": {
+      "classes": [
+        "soldier 1-7",
+        "spellsword 8-30"
+      ],
+      "people": "foreignHuman",
+      "expected": {
+        "str": 23,
+        "mag": 23,
+        "note": "capped by Tier 2 B caps"
+      }
+    }
+  }
+}

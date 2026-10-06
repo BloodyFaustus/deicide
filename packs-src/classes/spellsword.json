@@ -1,0 +1,113 @@
+{
+  "_id": "aZdPV3R15WwediPK",
+  "name": "Spellsword",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "infantry"
+    ],
+    "growth": {
+      "str": "B",
+      "mag": "B",
+      "skl": "B",
+      "spd": "C",
+      "def": "C",
+      "res": "B",
+      "cmd": "D"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "sword",
+        "reason"
+      ],
+      "secondary": [
+        "armor",
+        "faith"
+      ]
+    },
+    "trainsText": "Sword, Reason / Armor, Faith",
+    "startSpread": {},
+    "prerequisites": {
+      "any": [
+        {
+          "all": [
+            {
+              "prof": "sword",
+              "grade": "C"
+            },
+            {
+              "prof": "reason",
+              "grade": "D"
+            }
+          ]
+        },
+        {
+          "all": [
+            {
+              "prof": "reason",
+              "grade": "C"
+            },
+            {
+              "prof": "sword",
+              "grade": "D"
+            }
+          ]
+        }
+      ]
+    },
+    "prerequisiteText": "Sword C + Reason D, or Reason C + Sword D",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "spellswordSpellblade",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "spellswordWardEdge",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "spellswordElementalEdge",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "spellswordRuneBurst",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "spellswordRiposte",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "spellswordTwinDiscipline",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "spellsword",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,20 @@
+{
+  "_id": "E805iz5iaslKPMpa",
+  "name": "Vantage Pin",
+  "type": "pin",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "ability": "pinVantage",
+    "price": 45,
+    "description": "<p>When attacked at or below half HP, you strike first.</p>",
+    "equipped": false,
+    "identifier": "vantagePin"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

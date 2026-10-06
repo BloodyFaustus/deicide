@@ -1,0 +1,28 @@
+{
+  "_id": "arLKjhtfO2LrXa2c",
+  "name": "Royal Warding Lance",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "lance",
+    "tier": "royal",
+    "prefix": "warding",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 18, Accuracy +20, Crit 10, Range 1, Weight 6. B to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "royalWardingLance"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

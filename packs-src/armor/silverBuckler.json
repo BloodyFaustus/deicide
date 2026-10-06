@@ -1,0 +1,24 @@
+{
+  "_id": "3A5CTuN9pSDTCP3n",
+  "name": "Silver Buckler",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "buckler",
+    "tier": "silver",
+    "description": "<p>def +2, avoid +5.</p>",
+    "equipped": false,
+    "identifier": "silverBuckler"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

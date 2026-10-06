@@ -1,0 +1,28 @@
+{
+  "_id": "9arDy62yKtw3ddg3",
+  "name": "Silver Reach Sword",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "sword",
+    "tier": "silver",
+    "prefix": "reach",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 10, Accuracy +20, Crit 15, Range 1 to 2, Weight 6. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverReachSword"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

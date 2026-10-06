@@ -1,0 +1,28 @@
+{
+  "_id": "64L8CcFgKs13ZVJv",
+  "name": "Iron Keen Lance",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "lance",
+    "tier": "iron",
+    "prefix": "keen",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 7, Accuracy +20, Crit 0, Range 1, Weight 8. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironKeenLance"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "3WCzRfstgbsD56uS",
+  "name": "Silver Brave Axe",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "axe",
+    "tier": "silver",
+    "prefix": "brave",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 12, Accuracy +10, Crit 10, Range 1, Weight 14. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverBraveAxe"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

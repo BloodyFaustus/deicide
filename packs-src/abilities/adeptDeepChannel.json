@@ -1,0 +1,52 @@
+{
+  "_id": "iOL6gWjguZw3WgbL",
+  "name": "Deep Channel",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "type": "mastery",
+    "source": {
+      "kind": "class",
+      "id": "adept",
+      "rank": 10
+    },
+    "description": "<p>Channel +MAG/4.</p>",
+    "summary": "Channel +MAG/4",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "channel.max",
+        "value": "floor(mag / 4)"
+      }
+    ],
+    "roll": null,
+    "automation": "full",
+    "identifier": "adeptDeepChannel"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

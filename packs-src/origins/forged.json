@@ -1,0 +1,30 @@
+{
+  "_id": "tco7shqvJynSe14c",
+  "name": "Forged",
+  "type": "origin",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "kind": "people",
+    "description": "<p>No Channel. No Manaburn. 1 Dust per week maintenance or minus 2 all stats.</p>",
+    "growth": {
+      "def": "D",
+      "str": "D",
+      "res": "E",
+      "skl": "E"
+    },
+    "flags": {
+      "noChannel": true,
+      "noManaburn": true,
+      "maintenanceDust": 1,
+      "maintenancePenalty": -2
+    },
+    "identifier": "forged"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

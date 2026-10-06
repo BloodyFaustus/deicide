@@ -1,0 +1,28 @@
+{
+  "_id": "axH5sSn5dlAXTGeK",
+  "name": "Iron Killer Bow",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "bow",
+    "tier": "iron",
+    "prefix": "killer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 6, Accuracy +5, Crit 30, Range 2 to 3, Weight 8. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironKillerBow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

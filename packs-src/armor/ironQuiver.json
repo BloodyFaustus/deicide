@@ -1,0 +1,24 @@
+{
+  "_id": "pIsM7FJF6d2yEXSY",
+  "name": "Iron Quiver",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "quiver",
+    "tier": "iron",
+    "description": "<p>acc +5.</p>",
+    "equipped": false,
+    "identifier": "ironQuiver"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

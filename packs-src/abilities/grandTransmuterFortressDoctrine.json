@@ -1,0 +1,47 @@
+{
+  "_id": "K7kna4Nz3xeblVJd",
+  "name": "Fortress Doctrine",
+  "type": "ability",
+  "img": "icons/svg/sound.svg",
+  "system": {
+    "type": "command",
+    "source": {
+      "kind": "class",
+      "id": "grandTransmuter",
+      "rank": 6
+    },
+    "description": "<p>Companies in radius inside Forts heal 20 percent.</p>",
+    "summary": "companies in radius inside Forts heal 20 percent",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "grandTransmuterFortressDoctrine"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

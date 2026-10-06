@@ -1,0 +1,57 @@
+{
+  "_id": "IGSWe5Yp7D54S12A",
+  "name": "Dead Calm",
+  "type": "ability",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "type": "stance",
+    "source": {
+      "kind": "class",
+      "id": "deadeye",
+      "rank": 1
+    },
+    "description": "<p>Hit +20, Move 0.</p>",
+    "summary": "Hit +20, Move 0",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "hit",
+        "value": 20
+      },
+      {
+        "key": "move",
+        "op": "set",
+        "value": 0
+      }
+    ],
+    "roll": null,
+    "automation": "full",
+    "identifier": "deadeyeDeadCalm"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

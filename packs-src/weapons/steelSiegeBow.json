@@ -1,0 +1,28 @@
+{
+  "_id": "1INzt0S5nmkbUm8M",
+  "name": "Steel Siege Bow",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "bow",
+    "tier": "steel",
+    "prefix": "siege",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 8, Accuracy +10, Crit 10, Range 3 to 6, Weight 10. D to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "steelSiegeBow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

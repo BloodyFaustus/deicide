@@ -1,0 +1,28 @@
+{
+  "_id": "5iBAZkssYFdjxNZ2",
+  "name": "Royal Tome",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "tome",
+    "tier": "royal",
+    "prefix": null,
+    "forge": 0,
+    "element": null,
+    "description": "<p>Tome. Bonus +12, Channel +4, Accuracy +25. B to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "royalTome"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

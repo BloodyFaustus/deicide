@@ -1,0 +1,73 @@
+{
+  "_id": "6IEI7ACdEeNk6Ywu",
+  "name": "Lightning Strike",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "elementalist",
+      "rank": 2
+    },
+    "description": "<p>MAG M7 W8, line 2, 2 Ch (element follows Attune).</p>",
+    "summary": "MAG M7 W8, line 2, 2 Ch (element follows Attune)",
+    "tags": [
+      "reason"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 2,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": {
+      "basis": "mag",
+      "source": "spell",
+      "defense": "res",
+      "might": 7,
+      "element": null,
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": []
+    },
+    "heal": null,
+    "war": {
+      "range": [
+        1,
+        2
+      ],
+      "area": {
+        "shape": "line",
+        "size": 2
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "elementalistLightningStrike"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

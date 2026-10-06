@@ -1,0 +1,35 @@
+{
+  "_id": "tbatX5Jb4K1nr9Vw",
+  "name": "Spellthief Bloodline",
+  "type": "origin",
+  "img": "icons/svg/village.svg",
+  "system": {
+    "kind": "background",
+    "description": "<p>Spellthief reaction, 2 Stolen slots (3 at level 15). Rogue Rank 2.</p>",
+    "points": {
+      "skl": 2,
+      "spd": 2
+    },
+    "grants": {
+      "classes": [
+        {
+          "id": "rogue",
+          "rank": 2
+        }
+      ],
+      "engines": [
+        "originSpellthief"
+      ],
+      "stolenSlots": true
+    },
+    "story": true,
+    "identifier": "spellthiefBloodline"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

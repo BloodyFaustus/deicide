@@ -1,0 +1,24 @@
+{
+  "_id": "Xfr9kqJ9gPxvqTWo",
+  "name": "Mana Crystal",
+  "type": "consumable",
+  "img": "icons/svg/chest.svg",
+  "system": {
+    "key": "manaCrystal",
+    "kind": "belt",
+    "quantity": 1,
+    "description": "<p>Matter +4. 5 Dust.</p>",
+    "identifier": "manaCrystal"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

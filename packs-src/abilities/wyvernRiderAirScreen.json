@@ -1,0 +1,49 @@
+{
+  "_id": "Ifn645qiC2mJ1euk",
+  "name": "Air Screen",
+  "type": "ability",
+  "img": "icons/svg/sound.svg",
+  "system": {
+    "type": "command",
+    "source": {
+      "kind": "class",
+      "id": "wyvernRider",
+      "rank": 6
+    },
+    "description": "<p>Flying companies in radius Avoid +10.</p>",
+    "summary": "flying companies in radius Avoid +10",
+    "tags": [
+      "flight"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "wyvernRiderAirScreen"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

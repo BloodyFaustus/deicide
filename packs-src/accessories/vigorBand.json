@@ -1,0 +1,28 @@
+{
+  "_id": "2jga2rz0kIstFpBd",
+  "name": "Vigor Band",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "vigorBand",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>HP +10. 10 Dust.</p>",
+    "equipped": false,
+    "identifier": "vigorBand"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

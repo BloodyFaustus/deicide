@@ -1,0 +1,52 @@
+{
+  "_id": "IxSKJXYLRXYdfOxB",
+  "name": "Focus",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "class",
+      "id": "adept",
+      "rank": 4
+    },
+    "description": "<p>Channel +3.</p>",
+    "summary": "Channel +3",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "channel.max",
+        "value": 3
+      }
+    ],
+    "roll": null,
+    "automation": "full",
+    "identifier": "adeptFocus"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,59 @@
+{
+  "_id": "Ayj1h1INF9EY55cW",
+  "name": "Deconstruct",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "type": "reaction",
+    "source": {
+      "kind": "class",
+      "id": "alchemist",
+      "rank": 8
+    },
+    "description": "<p>Targeted by physical, 1 Mt for DEF +5.</p>",
+    "summary": "targeted by physical, 1 Mt for DEF +5",
+    "tags": [],
+    "direct": false,
+    "trigger": "Targeted by a physical attack.",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 1,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "self",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "alchemistDeconstruct"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

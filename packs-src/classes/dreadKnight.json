@@ -1,0 +1,105 @@
+{
+  "_id": "q01Fw9x2w05d7rpB",
+  "name": "Dread Knight",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 3,
+    "types": [
+      "armored"
+    ],
+    "growth": {
+      "str": "S",
+      "mag": "B",
+      "skl": "A",
+      "spd": "D",
+      "def": "S",
+      "res": "B",
+      "cmd": "C"
+    },
+    "hp": 4,
+    "trains": {
+      "primary": [
+        "sword",
+        "void"
+      ],
+      "secondary": [
+        "armor",
+        "authority"
+      ]
+    },
+    "trainsText": "Sword, Void / Armor, Authority",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "void",
+          "grade": "B"
+        },
+        {
+          "any": [
+            {
+              "prof": "sword",
+              "grade": "C"
+            },
+            {
+              "prof": "lance",
+              "grade": "C"
+            }
+          ]
+        }
+      ]
+    },
+    "prerequisiteText": "Void B, Sword C or Lance C",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "dreadKnightPall",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "dreadKnightSoulRend",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "dreadKnightHarvestSoul",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "dreadKnightBlackBanner",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "dreadKnightUndying",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "dreadKnightLordOfThePall",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "dreadKnight",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

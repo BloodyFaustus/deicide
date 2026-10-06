@@ -1,0 +1,59 @@
+{
+  "_id": "EDsttCawiHwvbBUP",
+  "name": "Blood Price",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "type": "reaction",
+    "source": {
+      "kind": "class",
+      "id": "diabolist",
+      "rank": 6
+    },
+    "description": "<p>Ally within 2 reduced to 0, you gain their Channel.</p>",
+    "summary": "ally within 2 reduced to 0, you gain their Channel",
+    "tags": [],
+    "direct": false,
+    "trigger": "ally within 2 reduced to 0, you gain their Channel",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "self",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "diabolistBloodPrice"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

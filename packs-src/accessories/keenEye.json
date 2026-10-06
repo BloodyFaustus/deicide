@@ -1,0 +1,28 @@
+{
+  "_id": "c9Ga4MWM4RLjTyfS",
+  "name": "Keen Eye",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "keenEye",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>Accuracy +5, Crit +10. 10 Dust.</p>",
+    "equipped": false,
+    "identifier": "keenEye"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

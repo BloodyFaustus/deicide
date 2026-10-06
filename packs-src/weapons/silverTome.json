@@ -1,0 +1,28 @@
+{
+  "_id": "aSNb3t0UZpp60eX0",
+  "name": "Silver Tome",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "tome",
+    "tier": "silver",
+    "prefix": null,
+    "forge": 0,
+    "element": null,
+    "description": "<p>Tome. Bonus +8, Channel +3, Accuracy +20. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverTome"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

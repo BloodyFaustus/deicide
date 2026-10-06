@@ -1,0 +1,164 @@
+{
+  "TYPES": {
+    "Actor": {
+      "character": "Character",
+      "company": "Company",
+      "monster": "Monster",
+      "nation": "Nation"
+    },
+    "Item": {
+      "ability": "Ability",
+      "class": "Class",
+      "origin": "Origin",
+      "weapon": "Weapon",
+      "armor": "Armor",
+      "offhand": "Offhand",
+      "accessory": "Accessory",
+      "pin": "Gimmick Pin",
+      "consumable": "Consumable",
+      "named": "Named Item"
+    },
+    "Combat": {
+      "war": "War Mode",
+      "dungeon": "Dungeon Mode"
+    },
+    "Combatant": {
+      "unit": "Unit"
+    },
+    "ActiveEffect": {
+      "status": "Status"
+    },
+    "ChatMessage": {
+      "action": "Action"
+    },
+    "RegionBehavior": {
+      "terrain": "Deicide Terrain"
+    },
+    "JournalEntryPage": {
+      "scenario": "Scenario Card"
+    }
+  },
+  "DEICIDE": {
+    "Sheet": {
+      "Inspector": "Deicide Inspector",
+      "Character": "Character Sheet",
+      "Company": "Company Sheet",
+      "Monster": "Monster Sheet",
+      "Nation": "Nation Sheet",
+      "Item": "Deicide Item",
+      "Scenario": "Scenario Card",
+      "Tab": {
+        "overview": "Overview",
+        "classes": "Classes",
+        "abilities": "Abilities",
+        "equipment": "Equipment",
+        "standing": "Standing",
+        "notes": "Notes"
+      }
+    },
+    "Slot": {
+      "weapon": "Weapon", "offhand": "Offhand", "armor": "Armor", "accessory": "Accessories", "pin": "Gimmick pin", "belt": "Belt"
+    },
+    "TrackEffect": {
+      "soldiers": "Companies per battle = 2 x Soldiers.",
+      "officers": "NPC command anchors per battle = Officers / 2. Sworn slots in War = Officers + 2.",
+      "fortifications": "Fort Avoid +3 per point. Barrier engines per battle = Fortifications / 3. Fort Kits per battle = Fortifications.",
+      "dust": "Commissions, Warrants, ammunition. Collapse rules at months 5 and 6 below 3.",
+      "allies": "Foreign companies per battle = Allies / 2.",
+      "magical": "Battlemage company Quality cap = 1 + Magical / 3.",
+      "intelligence": "Pre battle reveals and sabotage = Intelligence / 3.",
+      "weapons": "Company Quality cap = 1 + Weapons / 3. Royal shop at 6. Forging at 4. Gimmick pins at 5. Named forge at 8.",
+      "legitimacy": "Warrants cost 1. At 0 the Crown cannot promote or recruit.",
+      "navy": "Ships per naval battle = Navy."
+    },
+    "WarClockStage": {
+      "reorganization": "Reorganization",
+      "sabotage": "Sabotage",
+      "resourceCrisis": "Resource crisis",
+      "internalCrisis": "Internal crisis",
+      "imperialVanguard": "Imperial vanguard",
+      "invasion": "Invasion"
+    },
+    "Attribute": {
+      "str": "Strength",
+      "mag": "Magic",
+      "alchemy": "Alchemy",
+      "skl": "Skill",
+      "spd": "Speed",
+      "def": "Defense",
+      "res": "Resistance",
+      "cmd": "Command"
+    },
+    "Proficiency": {
+      "sword": "Sword", "lance": "Lance", "axe": "Axe", "bow": "Bow", "gun": "Gun",
+      "reason": "Reason", "faith": "Faith", "void": "Void", "alchemy": "Alchemy",
+      "authority": "Authority", "armor": "Armor", "riding": "Riding", "flying": "Flying", "seamanship": "Seamanship"
+    },
+    "ClassType": {
+      "infantry": "Infantry", "armored": "Armored", "mounted": "Mounted", "flying": "Flying",
+      "naval": "Naval", "caster": "Caster", "officer": "Officer", "monster": "Monster"
+    },
+    "Mode": {
+      "war": "War Mode", "dungeon": "Dungeon Mode", "arena": "Arena", "naval": "Naval"
+    },
+    "SkillType": {
+      "action": "Action", "reaction": "Reaction", "support": "Support", "command": "Command",
+      "stance": "Stance", "mastery": "Mastery"
+    },
+    "Element": {
+      "fire": "Fire", "lightning": "Lightning", "frost": "Frost", "stone": "Stone", "wind": "Wind",
+      "water": "Water", "divine": "Divine", "void": "Void", "truth": "Truth"
+    },
+    "AttackBasis": {
+      "str": "STR", "mag": "MAG", "hybrid": "STR + MAG/2", "twin": "STR + MAG", "flat": "Flat"
+    },
+    "MightSource": {
+      "weapon": "Weapon Might", "spell": "Tome or Relic bonus", "alchemy": "Gauntlet bonus", "heal": "Relic heal bonus", "none": "None"
+    },
+    "Defense": {
+      "def": "DEF", "res": "RES", "lower": "Lower of DEF and RES", "none": "None"
+    },
+    "Terrain": {
+      "plain": "Plain", "road": "Road", "forest": "Forest", "hill": "Hill", "rock": "Rock",
+      "fort": "Fort", "wall": "Wall", "river": "River", "plague": "Plague zone"
+    },
+    "Status": {
+      "poison": "Poison", "stagger": "Stagger", "pinned": "Pinned", "warded": "Warded", "barrier": "Barrier",
+      "guard": "Guard", "attuned": "Attuned", "marked": "Marked", "silenced": "Silenced", "cloaked": "Cloaked",
+      "crystalline": "Crystalline", "thrall": "Thrall", "downed": "Downed", "routed": "Routed"
+    },
+    "Faction": {
+      "crown": "Crown", "army": "Lathander Army", "civilians": "Civilians", "temple": "Temple",
+      "mages": "Mage communities", "brasswater": "Brasswater League", "underworld": "Underworld",
+      "duneTribes": "Dune tribes", "offweiss": "Offweiss", "council": "Council", "gravetide": "Gravetide Isles",
+      "briarwall": "Briarwall Marches", "valedorn": "Valedorn Concord", "seastrand": "Seastrand Dominion"
+    },
+    "Tier": {
+      "iron": "Iron", "steel": "Steel", "silver": "Silver", "royal": "Royal", "named": "Named"
+    },
+    "CompanyType": {
+      "infantry": "Infantry", "pike": "Pike", "archer": "Archer", "cavalry": "Cavalry", "battlemage": "Battlemage",
+      "siege": "Siege", "ship": "Ship", "legionary": "Legionary", "shade": "Shade", "animal": "Animal", "construct": "Construct"
+    },
+    "Doctrine": {
+      "hold": "Hold", "advance": "Advance", "volley": "Volley", "screen": "Screen"
+    },
+    "Track": {
+      "soldiers": "Soldiers", "officers": "Officers", "fortifications": "Fortifications", "dust": "Dust",
+      "allies": "Allies", "magical": "Magical Resources", "intelligence": "Intelligence", "weapons": "Weapons",
+      "legitimacy": "Legitimacy", "navy": "Navy"
+    },
+    "MonsterTag": {
+      "beast": "Beast", "swarm": "Swarm", "undead": "Undead", "plant": "Plant", "construct": "Construct",
+      "homunculus": "Homunculus", "divine": "Divine", "boss": "Boss"
+    },
+    "Terrain.FIELDS": {
+      "terrain": {"label": "Terrain type"},
+      "avoid": {"label": "Avoid override", "hint": "Leave blank to use the terrain table."},
+      "moveCost": {"label": "Move cost override", "hint": "Leave blank to use the terrain table."},
+      "matter": {"label": "Matter tile override"},
+      "plagueZone": {"label": "Plague zone", "hint": "2 Burn per round to non Thornbound."},
+      "elevation": {"label": "Elevation"}
+    }
+  }
+}

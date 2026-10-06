@@ -1,0 +1,22 @@
+{
+  "_id": "gA1UDPvtfY55A9j7",
+  "name": "Royal Medium Armor",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "<p>DEF +6, RES +4, Burden 1.</p>",
+    "equipped": false,
+    "identifier": "royalMedium"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

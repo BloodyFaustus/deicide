@@ -1,0 +1,20 @@
+{
+  "_id": "Nn61rycZwtXJM6Tl",
+  "name": "Dual Wield Pin",
+  "type": "pin",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "ability": "pinDualWield",
+    "price": 60,
+    "description": "<p>Sidearm attacks with every weapon attack at Might minus 3.</p>",
+    "equipped": false,
+    "identifier": "dualWieldPin"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

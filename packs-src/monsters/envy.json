@@ -1,0 +1,374 @@
+{
+  "_id": "yVA6Dpithpa0uXP3",
+  "name": "Envy",
+  "type": "monster",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "identifier": "envy",
+    "level": 18,
+    "hp": {
+      "value": 350,
+      "max": 350
+    },
+    "def": 14,
+    "res": 16,
+    "spd": 16,
+    "mag": 20,
+    "delay": {
+      "mode": "fixed",
+      "value": 30
+    },
+    "hitBase": null,
+    "tags": [
+      "homunculus",
+      "boss"
+    ],
+    "boss": true,
+    "divineBeing": false,
+    "weakness": null,
+    "resistance": null,
+    "immunities": [],
+    "phaseBreaks": [
+      {
+        "percent": 50,
+        "note": "Usurp: copies a PC's Mastery.",
+        "triggered": false
+      }
+    ],
+    "yield": {
+      "saturation": 0,
+      "dust": 0,
+      "drops": [
+        "redWater",
+        "stoneFragment"
+      ]
+    },
+    "row": "front",
+    "description": "<p></p>",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Envy",
+    "disposition": -1,
+    "actorLink": false,
+    "texture": {
+      "src": "icons/svg/skull.svg"
+    }
+  },
+  "items": [
+    {
+      "_id": "I4Z0bRoPR43sVdI4",
+      "name": "Mimic",
+      "type": "ability",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "identifier": "envyMimic",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "envy",
+          "rank": null
+        },
+        "description": "<p>Copies the last PC action..</p>",
+        "summary": "Copies the last PC action.",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": null,
+        "heal": null,
+        "war": {
+          "range": [
+            0,
+            0
+          ],
+          "area": {
+            "shape": "single",
+            "size": 1
+          },
+          "target": "enemy",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "single",
+          "note": "Copies the last PC action."
+        },
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "manual"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "_id": "i5Z3JA8YK5yGsY64",
+      "name": "Rend",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "envyRend",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "envy",
+          "rank": null
+        },
+        "description": "<p>M24 single.</p>",
+        "summary": "M24 single",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": {
+          "basis": "flat",
+          "source": "none",
+          "defense": "def",
+          "might": 24,
+          "element": null,
+          "hit": 0,
+          "crit": 0,
+          "weaponLines": [],
+          "strikes": 1,
+          "ignoreDef": 0,
+          "bonuses": [],
+          "ignoreAvoid": false,
+          "perTile": null
+        },
+        "heal": null,
+        "war": {
+          "range": [
+            1,
+            1
+          ],
+          "area": {
+            "shape": "single",
+            "size": 1
+          },
+          "target": "enemy",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "single",
+          "note": ""
+        },
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "partial"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "_id": "XPYm1Dzl51tY9fgz",
+      "name": "Spite",
+      "type": "ability",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "identifier": "envySpite",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "envy",
+          "rank": null
+        },
+        "description": "<p>6 Burn to the PC with the highest MAG..</p>",
+        "summary": "6 Burn to the PC with the highest MAG.",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": null,
+        "heal": null,
+        "war": {
+          "range": [
+            0,
+            0
+          ],
+          "area": {
+            "shape": "single",
+            "size": 1
+          },
+          "target": "enemy",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "single",
+          "note": "6 Burn to the PC with the highest MAG."
+        },
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "manual"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "_id": "SbDDH8kf7m7JR1LX",
+      "name": "Erase",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "envyErase",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "envy",
+          "rank": null
+        },
+        "description": "<p>M14 single. The target loses one Support until a long rest..</p>",
+        "summary": "M14 single. The target loses one Support until a long rest.",
+        "tags": [
+          "truth"
+        ],
+        "direct": true,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": {
+          "basis": "flat",
+          "source": "none",
+          "defense": "none",
+          "might": 14,
+          "element": "truth",
+          "hit": 0,
+          "crit": 0,
+          "weaponLines": [],
+          "strikes": 1,
+          "ignoreDef": 0,
+          "bonuses": [],
+          "ignoreAvoid": false,
+          "perTile": null
+        },
+        "heal": null,
+        "war": {
+          "range": [
+            1,
+            1
+          ],
+          "area": {
+            "shape": "single",
+            "size": 1
+          },
+          "target": "enemy",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "single",
+          "note": "The target loses one Support until a long rest."
+        },
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "partial"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true,
+      "startingStatuses": []
+    }
+  }
+}

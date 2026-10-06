@@ -1,0 +1,28 @@
+{
+  "_id": "IfrJEqKpBzvYjDAp",
+  "name": "Steel Ring",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "steelRing",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>one attribute +3. 16 Dust.</p>",
+    "equipped": false,
+    "identifier": "steelRing"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

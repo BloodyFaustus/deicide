@@ -1,0 +1,20 @@
+{
+  "_id": "O5Jtk7YXuLq3B93t",
+  "name": "Lancet Pin",
+  "type": "pin",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "ability": "pinLancet",
+    "price": 45,
+    "description": "<p>Weapon hit restores Channel equal to damage/4, Weight 8.</p>",
+    "equipped": false,
+    "identifier": "lancetPin"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

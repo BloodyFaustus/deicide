@@ -1,0 +1,105 @@
+{
+  "_id": "h8a6JxGrtdcB3enO",
+  "name": "Transmuter",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "caster"
+    ],
+    "growth": {
+      "str": "C",
+      "mag": "S",
+      "skl": "B",
+      "spd": "D",
+      "def": "B",
+      "res": "B",
+      "cmd": "C"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "alchemy",
+        "armor"
+      ],
+      "secondary": [
+        "authority",
+        "riding"
+      ]
+    },
+    "trainsText": "Alchemy, Armor / Authority, Riding",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "alchemy",
+          "grade": "C"
+        },
+        {
+          "any": [
+            {
+              "prof": "armor",
+              "grade": "D"
+            },
+            {
+              "prof": "authority",
+              "grade": "D"
+            }
+          ]
+        }
+      ]
+    },
+    "prerequisiteText": "Alchemy C, Armor D or Authority D",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "transmuterTransmuteTerrain",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "transmuterBridge",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "transmuterMason",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "transmuterEarthworks",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "transmuterCollapse",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "transmuterArchitect",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "transmuter",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

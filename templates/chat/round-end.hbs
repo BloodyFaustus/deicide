@@ -1,0 +1,12 @@
+<div class="deicide-card round-end">
+  <h3>Round {{round}} ends</h3>
+  <ul class="plain">
+    {{#each log}}
+      {{#if (eq kind "morale")}}
+        <li><strong>{{name}}</strong>: morale d100 {{roll}} against {{threshold}}, {{#if passed}}holds{{else}}routs{{/if}}.</li>
+      {{else}}
+        <li><strong>{{name}}</strong>: {{statusId}}{{#if burn}} deals {{burn}} Burn{{/if}}{{#if ended}} ends{{/if}}.</li>
+      {{/if}}
+    {{/each}}
+  </ul>
+</div>

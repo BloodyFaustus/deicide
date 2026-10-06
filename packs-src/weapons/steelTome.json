@@ -1,0 +1,28 @@
+{
+  "_id": "4JOh2mOWAP0vdfux",
+  "name": "Steel Tome",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "tome",
+    "tier": "steel",
+    "prefix": null,
+    "forge": 0,
+    "element": null,
+    "description": "<p>Tome. Bonus +5, Channel +2, Accuracy +15. D to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "steelTome"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

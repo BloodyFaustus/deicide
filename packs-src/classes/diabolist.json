@@ -1,0 +1,92 @@
+{
+  "_id": "jKHOkBF5dwVGI83i",
+  "name": "Diabolist",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 4,
+    "types": [],
+    "growth": {
+      "str": "D",
+      "mag": "S",
+      "skl": "C",
+      "spd": "C",
+      "def": "D",
+      "res": "A",
+      "cmd": "C"
+    },
+    "hp": 2,
+    "trains": {
+      "primary": [
+        "reason",
+        "faith"
+      ],
+      "secondary": [
+        "alchemy",
+        "sword"
+      ]
+    },
+    "trainsText": "Reason, Faith (inverted) / Alchemy, Sword",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "void",
+          "grade": "B"
+        },
+        {
+          "marks": 3
+        },
+        {
+          "story": "redWater"
+        }
+      ]
+    },
+    "prerequisiteText": "Void B, a completed ritual, Red Water, 3 Marks. Rank bought with rituals.",
+    "storyGate": "diabolistRitual",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "diabolistRedDraught",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "diabolistSummonShade",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "diabolistPact",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "diabolistBloodPrice",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "diabolistApotheosis",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "diabolist",
+    "ladder": "legend"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

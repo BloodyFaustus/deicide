@@ -1,0 +1,52 @@
+{
+  "_id": "zkhFQaJG0qyODB32",
+  "name": "Horselord",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "type": "mastery",
+    "source": {
+      "kind": "class",
+      "id": "chevalier",
+      "rank": 10
+    },
+    "description": "<p>Move +2, river passable.</p>",
+    "summary": "Move +2, river passable",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "move",
+        "value": 2
+      }
+    ],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "chevalierHorselord"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

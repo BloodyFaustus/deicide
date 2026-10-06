@@ -1,0 +1,28 @@
+{
+  "_id": "GuC5Xi3yG7EMUSxu",
+  "name": "Mana Bead",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "manaBead",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>Channel +10, Overcast Burn minus 1 per point (floor 1). 39 Dust.</p>",
+    "equipped": false,
+    "identifier": "manaBead"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

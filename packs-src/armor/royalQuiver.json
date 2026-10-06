@@ -1,0 +1,24 @@
+{
+  "_id": "kPV0G4IPYbsO3qTI",
+  "name": "Royal Quiver",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "quiver",
+    "tier": "royal",
+    "description": "<p>acc +20.</p>",
+    "equipped": false,
+    "identifier": "royalQuiver"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

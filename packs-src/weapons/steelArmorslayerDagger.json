@@ -1,0 +1,28 @@
+{
+  "_id": "2GUGe4KQ4mLnNbF1",
+  "name": "Steel Armorslayer Dagger",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "dagger",
+    "tier": "steel",
+    "prefix": "armorslayer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 6, Accuracy +20, Crit 20, Range 1, Weight 4. D to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "steelArmorslayerDagger"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

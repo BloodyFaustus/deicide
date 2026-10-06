@@ -1,0 +1,92 @@
+{
+  "id": "deicide",
+  "title": "Deicide",
+  "description": "Deicide: How to Kill a God. A JRPG tactics system with two combat engines, War Mode on a square grid and Dungeon Mode on rows and ticks, over a 12 month War Clock. Private table system.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.364",
+    "maximum": "14"
+  },
+  "authors": [
+    {"name": "V"}
+  ],
+  "esmodules": ["module/deicide.mjs"],
+  "styles": ["styles/deicide.css"],
+  "languages": [
+    {"lang": "en", "name": "English", "path": "lang/en.json"}
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {"htmlFields": ["notes"]},
+      "company": {"htmlFields": ["notes"]},
+      "monster": {"htmlFields": ["description", "notes"]},
+      "nation": {"htmlFields": ["notes"]}
+    },
+    "Item": {
+      "ability": {"htmlFields": ["description"]},
+      "class": {"htmlFields": ["description"]},
+      "origin": {"htmlFields": ["description"]},
+      "weapon": {"htmlFields": ["description"]},
+      "armor": {"htmlFields": ["description"]},
+      "offhand": {"htmlFields": ["description"]},
+      "accessory": {"htmlFields": ["description"]},
+      "pin": {"htmlFields": ["description"]},
+      "consumable": {"htmlFields": ["description"]},
+      "named": {"htmlFields": ["description"]}
+    },
+    "Combat": {
+      "war": {},
+      "dungeon": {}
+    },
+    "Combatant": {
+      "unit": {}
+    },
+    "ActiveEffect": {
+      "status": {"htmlFields": ["description"]}
+    },
+    "ChatMessage": {
+      "action": {}
+    },
+    "RegionBehavior": {
+      "terrain": {}
+    },
+    "JournalEntryPage": {
+      "scenario": {"htmlFields": ["description"]}
+    }
+  },
+  "packs": [
+    {"name": "deicide-classes", "label": "Classes", "path": "packs/deicide-classes", "type": "Item", "system": "deicide"},
+    {"name": "deicide-abilities", "label": "Abilities", "path": "packs/deicide-abilities", "type": "Item", "system": "deicide"},
+    {"name": "deicide-origins", "label": "Origins", "path": "packs/deicide-origins", "type": "Item", "system": "deicide"},
+    {"name": "deicide-weapons", "label": "Weapons", "path": "packs/deicide-weapons", "type": "Item", "system": "deicide"},
+    {"name": "deicide-armor", "label": "Armor and Offhands", "path": "packs/deicide-armor", "type": "Item", "system": "deicide"},
+    {"name": "deicide-accessories", "label": "Accessories and Pins", "path": "packs/deicide-accessories", "type": "Item", "system": "deicide"},
+    {"name": "deicide-consumables", "label": "Consumables and Supplies", "path": "packs/deicide-consumables", "type": "Item", "system": "deicide"},
+    {"name": "deicide-named", "label": "Named Items", "path": "packs/deicide-named", "type": "Item", "system": "deicide"},
+    {"name": "deicide-companies", "label": "Companies and Ships", "path": "packs/deicide-companies", "type": "Actor", "system": "deicide"},
+    {"name": "deicide-monsters", "label": "Monsters", "path": "packs/deicide-monsters", "type": "Actor", "system": "deicide"},
+    {"name": "deicide-scenarios", "label": "Scenarios", "path": "packs/deicide-scenarios", "type": "JournalEntry", "system": "deicide"}
+  ],
+  "packFolders": [
+    {
+      "name": "Deicide",
+      "sorting": "m",
+      "packs": [
+        "deicide-classes", "deicide-abilities", "deicide-origins", "deicide-weapons", "deicide-armor",
+        "deicide-accessories", "deicide-consumables", "deicide-named", "deicide-companies", "deicide-monsters",
+        "deicide-scenarios"
+      ]
+    }
+  ],
+  "grid": {
+    "type": 1,
+    "distance": 10,
+    "units": "m",
+    "diagonals": 0
+  },
+  "primaryTokenAttribute": "hp",
+  "secondaryTokenAttribute": "channel",
+  "initiative": "0",
+  "socket": true
+}

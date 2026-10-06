@@ -1,0 +1,24 @@
+{
+  "_id": "vlUaoS0AU39vs3lr",
+  "name": "Fort Kit",
+  "type": "consumable",
+  "img": "icons/svg/chest.svg",
+  "system": {
+    "key": "fortKit",
+    "kind": "supply",
+    "quantity": 1,
+    "description": "<p>One plain tile becomes fort. 20 Dust.</p>",
+    "identifier": "fortKit"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

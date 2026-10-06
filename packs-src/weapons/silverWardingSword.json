@@ -1,0 +1,28 @@
+{
+  "_id": "8tH9XM0S3m0qOapK",
+  "name": "Silver Warding Sword",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "sword",
+    "tier": "silver",
+    "prefix": "warding",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 12, Accuracy +20, Crit 15, Range 1, Weight 6. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverWardingSword"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

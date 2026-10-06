@@ -1,0 +1,52 @@
+{
+  "_id": "I9ZjARdoktnXCyzN",
+  "name": "Updraft",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "class",
+      "id": "wyvernRider",
+      "rank": 2
+    },
+    "description": "<p>Move +1.</p>",
+    "summary": "Move +1",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "move",
+        "value": 1
+      }
+    ],
+    "roll": null,
+    "automation": "full",
+    "identifier": "wyvernRiderUpdraft"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "jHp1QfO0VQTEbRQj",
+  "name": "Silver Killer Lance",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "lance",
+    "tier": "silver",
+    "prefix": "killer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 13, Accuracy +15, Crit 35, Range 1, Weight 8. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverKillerLance"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

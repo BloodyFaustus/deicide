@@ -1,0 +1,87 @@
+{
+  "_id": "YX10mcArgN1ZpkjT",
+  "name": "Sunder",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "art",
+      "id": "sunder",
+      "rank": null
+    },
+    "description": "<p>Might +6, ignores 5 DEF. sword, axe at silver or better. Costs 5 HP. Weight 8.</p>",
+    "summary": "Might +6, ignores 5 DEF. sword, axe at silver or better. Costs 5 HP. Weight 8.",
+    "tags": [
+      "art"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 5,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 8,
+    "attack": {
+      "basis": "str",
+      "source": "weapon",
+      "defense": "def",
+      "might": 6,
+      "element": null,
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [
+        "sword",
+        "axe"
+      ],
+      "strikes": 1,
+      "ignoreDef": 5,
+      "bonuses": [],
+      "effectiveVs": null,
+      "rangeMax": 0,
+      "range": null,
+      "ignoreWarded": false
+    },
+    "heal": null,
+    "war": {
+      "range": null,
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "art": {
+      "lines": [
+        "sword",
+        "axe"
+      ],
+      "minTier": "silver",
+      "spellMight": 0,
+      "rowHealFraction": 0,
+      "nextMatterCost": null
+    },
+    "automation": "partial",
+    "identifier": "artSunder"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

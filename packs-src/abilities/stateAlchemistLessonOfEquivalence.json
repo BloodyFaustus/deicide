@@ -1,0 +1,47 @@
+{
+  "_id": "BE88klhrvhhL6HzF",
+  "name": "Lesson of Equivalence",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "class",
+      "id": "stateAlchemist",
+      "rank": 2
+    },
+    "description": "<p>Between sessions, certify one character into Alchemist. Divine Attention +2.</p>",
+    "summary": "between sessions, certify one character into Alchemist. Divine Attention +2",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "stateAlchemistLessonOfEquivalence"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

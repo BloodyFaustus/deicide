@@ -1,0 +1,50 @@
+{
+  "_id": "6zS8CIjcEl1Cn2T9",
+  "name": "Siegemaster",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "type": "mastery",
+    "source": {
+      "kind": "class",
+      "id": "siegeAlchemist",
+      "rank": 10
+    },
+    "description": "<p>Stone Lance and Shell range +2.</p>",
+    "summary": "Stone Lance and Shell range +2",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": {
+      "available": false,
+      "note": "Ranges are War Mode numbers."
+    },
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "siegeAlchemistSiegemaster"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

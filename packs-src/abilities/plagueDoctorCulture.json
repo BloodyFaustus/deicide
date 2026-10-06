@@ -1,0 +1,63 @@
+{
+  "_id": "eh4D7eZ9IlXcIVfW",
+  "name": "Culture",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "plagueDoctor",
+      "rank": 8
+    },
+    "description": "<p>Plague zone tile or row, 2 Burn per turn, W10, 3 Ch.</p>",
+    "summary": "plague zone tile or row, 2 Burn per turn, W10, 3 Ch",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 3,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 10,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "tile",
+      "movement": null,
+      "terrain": true
+    },
+    "dungeon": {
+      "target": "row",
+      "barrier": null,
+      "note": "One enemy row takes 2 Burn per turn."
+    },
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "plagueDoctorCulture"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

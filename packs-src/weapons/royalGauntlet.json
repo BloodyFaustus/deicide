@@ -1,0 +1,28 @@
+{
+  "_id": "WhQMU1BKBW8WZ2QT",
+  "name": "Royal Gauntlet",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "gauntlet",
+    "tier": "royal",
+    "prefix": null,
+    "forge": 0,
+    "element": null,
+    "description": "<p>Gauntlet. Bonus +12, Matter +5, Accuracy +25. B to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "royalGauntlet"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

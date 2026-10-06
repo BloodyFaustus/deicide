@@ -1,0 +1,28 @@
+{
+  "_id": "1F2HmXdkvGgGXHC3",
+  "name": "Silver Ring",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "silverRing",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>one attribute +4. 28 Dust.</p>",
+    "equipped": false,
+    "identifier": "silverRing"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "_id": "oIY3ZBhwOLLzXE6v",
+  "name": "Rider",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 1,
+    "types": [
+      "mounted"
+    ],
+    "growth": {
+      "str": "B",
+      "mag": "F",
+      "skl": "C",
+      "spd": "A",
+      "def": "C",
+      "res": "D",
+      "cmd": "C"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "riding",
+        "lance"
+      ],
+      "secondary": [
+        "sword",
+        "flying"
+      ]
+    },
+    "trainsText": "Riding, Lance / Sword, Flying",
+    "startSpread": {
+      "spd": 4,
+      "str": 4,
+      "skl": 2,
+      "cmd": 2
+    },
+    "prerequisites": null,
+    "prerequisiteText": "",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "riderCharge",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "riderTrample",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "riderHorseman",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "riderWheel",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "riderReinIn",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "riderOutrun",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {
+      "weapon": "ironLance",
+      "offhand": "ironBuckler",
+      "armor": "ironMedium"
+    },
+    "description": "",
+    "identifier": "rider",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

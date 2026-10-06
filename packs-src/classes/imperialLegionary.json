@@ -1,0 +1,77 @@
+{
+  "_id": "aK9xog3HFAHhD6ZV",
+  "name": "Imperial Legionary",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "armored",
+      "infantry"
+    ],
+    "growth": {
+      "str": "B",
+      "mag": "F",
+      "skl": "C",
+      "spd": "D",
+      "def": "S",
+      "res": "C",
+      "cmd": "C"
+    },
+    "hp": 4,
+    "trains": {
+      "primary": [
+        "lance",
+        "armor"
+      ],
+      "secondary": [
+        "sword",
+        "authority"
+      ]
+    },
+    "trainsText": "",
+    "startSpread": {},
+    "prerequisites": null,
+    "prerequisiteText": "",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "imperialLegionaryTestudo",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "imperialLegionaryShieldPush",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "imperialLegionaryCohort",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "imperialLegionaryDiscipline",
+        "mastery": false
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": true,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "<p>Lance S, DEF S, companies count Quality 5.</p>",
+    "ladder": "standard",
+    "identifier": "imperialLegionary"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

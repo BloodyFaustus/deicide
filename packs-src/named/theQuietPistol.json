@@ -1,0 +1,49 @@
+{
+  "_id": "wUV3jUXGRhAQzkQ4",
+  "name": "The Quiet Pistol",
+  "type": "named",
+  "img": "icons/svg/holy-shield.svg",
+  "system": {
+    "fills": "offhand",
+    "base": {
+      "line": "gun",
+      "tier": "royal"
+    },
+    "stats": {
+      "might": 19,
+      "acc": 30,
+      "crit": 40,
+      "weight": 8,
+      "range": [
+        2,
+        2
+      ],
+      "mightVsWarded": 6
+    },
+    "modifiers": [],
+    "special": "",
+    "drawback": {
+      "text": "1 Dust per shot.",
+      "flags": {
+        "dustPerUse": 1
+      },
+      "refund": "dustPerUse"
+    },
+    "pp": 40,
+    "hook": "Rook Maren.",
+    "description": "<p>Royal Gun as a sidearm. Might 6 vs Warded. Crit +20.</p><p>Drawback: 1 Dust per shot.</p>",
+    "equipped": false,
+    "identifier": "theQuietPistol"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

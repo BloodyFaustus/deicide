@@ -1,0 +1,22 @@
+{
+  "_id": "PUBq1XliVc5WxfzK",
+  "name": "Iron Light Armor",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "<p>DEF +1, RES +1, Burden 0.</p>",
+    "equipped": false,
+    "identifier": "ironLight"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

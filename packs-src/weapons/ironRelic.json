@@ -1,0 +1,28 @@
+{
+  "_id": "OqsCAMFE6rXfIFj9",
+  "name": "Iron Relic",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "relic",
+    "tier": "iron",
+    "prefix": null,
+    "forge": 0,
+    "element": null,
+    "description": "<p>Relic. Bonus +2, Channel +1, Accuracy +10. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironRelic"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

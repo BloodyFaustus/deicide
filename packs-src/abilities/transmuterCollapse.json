@@ -1,0 +1,76 @@
+{
+  "_id": "GlYF0y6XSVMcrG6T",
+  "name": "Collapse",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "transmuter",
+      "rank": 8
+    },
+    "description": "<p>4 Mt, a Wall or Hill falls, M14 physical to adjacent, W12.</p>",
+    "summary": "4 Mt, a Wall or Hill falls, M14 physical to adjacent, W12",
+    "tags": [
+      "alchemy"
+    ],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 4,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 12,
+    "attack": {
+      "basis": "mag",
+      "source": "alchemy",
+      "defense": "def",
+      "might": 14,
+      "element": null,
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": []
+    },
+    "heal": null,
+    "war": {
+      "range": [
+        1,
+        1
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": {
+      "target": "row",
+      "note": "Needs a stone or metal surface. M14 physical to one enemy row."
+    },
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "transmuterCollapse"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

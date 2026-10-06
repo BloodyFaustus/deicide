@@ -1,0 +1,28 @@
+{
+  "_id": "ZhH3JtGP11frnqeG",
+  "name": "Steel Killer Dagger",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "dagger",
+    "tier": "steel",
+    "prefix": "killer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 6, Accuracy +20, Crit 45, Range 1, Weight 4. D to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "steelKillerDagger"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

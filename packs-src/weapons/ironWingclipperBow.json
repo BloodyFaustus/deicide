@@ -1,0 +1,28 @@
+{
+  "_id": "diyFRCIcUYYeqOXu",
+  "name": "Iron Wingclipper Bow",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "bow",
+    "tier": "iron",
+    "prefix": "wingclipper",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 6, Accuracy +5, Crit 5, Range 2 to 3, Weight 8. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironWingclipperBow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

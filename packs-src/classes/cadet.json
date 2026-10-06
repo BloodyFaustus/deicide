@@ -1,0 +1,96 @@
+{
+  "_id": "hrXQVcGaWqfxmLrT",
+  "name": "Cadet",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 1,
+    "types": [
+      "officer"
+    ],
+    "growth": {
+      "str": "B",
+      "mag": "E",
+      "skl": "B",
+      "spd": "C",
+      "def": "C",
+      "res": "C",
+      "cmd": "A"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "authority",
+        "lance"
+      ],
+      "secondary": [
+        "sword",
+        "riding"
+      ]
+    },
+    "trainsText": "Authority, Lance / Sword, Riding",
+    "startSpread": {
+      "cmd": 4,
+      "str": 2,
+      "skl": 2,
+      "def": 2,
+      "res": 2
+    },
+    "prerequisites": null,
+    "prerequisiteText": "",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "cadetAdvance",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "cadetThrust",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "cadetSteady",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "cadetFormUp",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "cadetCover",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "cadetPresence",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {
+      "weapon": "ironLance",
+      "offhand": "ironBanner",
+      "armor": "ironMedium"
+    },
+    "description": "",
+    "identifier": "cadet",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

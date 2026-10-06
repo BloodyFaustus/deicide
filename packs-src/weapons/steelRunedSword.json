@@ -1,0 +1,28 @@
+{
+  "_id": "qSo3npB8AbmgddL3",
+  "name": "Steel Runed Sword",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "sword",
+    "tier": "steel",
+    "prefix": "runed",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 9, Accuracy +15, Crit 10, Range 1, Weight 6. D to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "steelRunedSword"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

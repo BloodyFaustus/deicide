@@ -1,0 +1,22 @@
+{
+  "_id": "Qv4uGPSkNS0D67NQ",
+  "name": "Royal Light Armor",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "<p>DEF +4, RES +4, Avoid +5, Burden 0.</p>",
+    "equipped": false,
+    "identifier": "royalLight"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

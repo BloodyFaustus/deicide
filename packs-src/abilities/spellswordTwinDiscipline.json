@@ -1,0 +1,56 @@
+{
+  "_id": "y4dSgMpdqnc35ILb",
+  "name": "Twin Discipline",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "type": "mastery",
+    "source": {
+      "kind": "class",
+      "id": "spellsword",
+      "rank": 10
+    },
+    "description": "<p>Spellblade uses STR + MAG.</p>",
+    "summary": "Spellblade uses STR + MAG",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "attackBasis",
+        "basis": "twin",
+        "value": 0,
+        "when": {
+          "actionId": "spellswordSpellblade"
+        }
+      }
+    ],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "spellswordTwinDiscipline"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

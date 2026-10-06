@@ -1,0 +1,55 @@
+{
+  "_id": "2fm0KxSMRgo3HE8u",
+  "name": "Summoned Hero",
+  "type": "origin",
+  "img": "icons/svg/village.svg",
+  "system": {
+    "kind": "background",
+    "description": "<p>No Channel, no Manaburn, Soul Price in HP, Divine Attention by acts, arrives with Alchemist 10 and State Alchemist 1.</p>",
+    "points": {
+      "mag": 2,
+      "cmd": 2
+    },
+    "flags": {
+      "noChannel": true,
+      "noManaburn": true,
+      "noSoul": true,
+      "noSaturation": true,
+      "divineAttentionByActs": true,
+      "alchemyLabel": true,
+      "gmRun": true,
+      "cannotBeSworn": true
+    },
+    "grants": {
+      "classes": [
+        {
+          "id": "alchemist",
+          "rank": 10
+        },
+        {
+          "id": "stateAlchemist",
+          "rank": 1
+        }
+      ],
+      "activeClass": "stateAlchemist",
+      "standing": {
+        "crown": 50,
+        "army": 40,
+        "civilians": 30,
+        "temple": 20
+      },
+      "storyGates": [
+        "alchemistCertification"
+      ]
+    },
+    "story": true,
+    "identifier": "summonedHero"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

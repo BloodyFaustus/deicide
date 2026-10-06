@@ -1,0 +1,94 @@
+{
+  "_id": "jAJQLymU0gJidUWH",
+  "name": "Rogue",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 1,
+    "types": [
+      "infantry"
+    ],
+    "growth": {
+      "str": "C",
+      "mag": "E",
+      "skl": "S",
+      "spd": "A",
+      "def": "D",
+      "res": "D",
+      "cmd": "E"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "sword"
+      ],
+      "secondary": [
+        "bow",
+        "gun"
+      ]
+    },
+    "trainsText": "Sword / Bow, Gun",
+    "startSpread": {
+      "skl": 4,
+      "spd": 4,
+      "str": 2,
+      "def": 2
+    },
+    "prerequisites": null,
+    "prerequisiteText": "",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "rogueFlank",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "rogueShiv",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "rogueLockpick",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "rogueSmoke",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "rogueEvade",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "rogueOpportunist",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {
+      "weapon": "ironDagger",
+      "offhand": "ironBuckler",
+      "armor": "ironLight"
+    },
+    "description": "",
+    "identifier": "rogue",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

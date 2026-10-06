@@ -1,0 +1,21 @@
+{
+  "_id": "6CJC1auB0gwuxJGI",
+  "name": "Steady",
+  "type": "origin",
+  "img": "icons/svg/light.svg",
+  "system": {
+    "kind": "talent",
+    "description": "<p>+1 flex point every 3 levels.</p>",
+    "flex": {
+      "every": 3
+    },
+    "identifier": "steady"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "W5K5W9WHQndrZYMC",
+  "name": "Heart Band",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "heartBand",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>HP +20, DEF +1. 20 Dust.</p>",
+    "equipped": false,
+    "identifier": "heartBand"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

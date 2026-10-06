@@ -1,0 +1,105 @@
+{
+  "_id": "c2iatfjFFn9NaG0O",
+  "name": "Ranger",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "infantry"
+    ],
+    "growth": {
+      "str": "B",
+      "mag": "D",
+      "skl": "A",
+      "spd": "A",
+      "def": "C",
+      "res": "C",
+      "cmd": "D"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "bow",
+        "sword"
+      ],
+      "secondary": [
+        "riding",
+        "gun"
+      ]
+    },
+    "trainsText": "Bow, Sword / Riding, Gun",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "bow",
+          "grade": "C"
+        },
+        {
+          "any": [
+            {
+              "prof": "riding",
+              "grade": "D"
+            },
+            {
+              "prof": "sword",
+              "grade": "D"
+            }
+          ]
+        }
+      ]
+    },
+    "prerequisiteText": "Bow C, Riding D or Sword D",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "rangerHuntersMark",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "rangerTwinShot",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "rangerWoodcraft",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "rangerBeastCall",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "rangerAmbush",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "rangerTrailblazer",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "ranger",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,86 @@
+{
+  "_id": "tnW75rEtHfKB09xX",
+  "name": "Philosopher",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 4,
+    "types": [],
+    "growth": {
+      "str": "C",
+      "mag": "S",
+      "skl": "S",
+      "spd": "C",
+      "def": "C",
+      "res": "A",
+      "cmd": "B"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "alchemy",
+        "authority"
+      ],
+      "secondary": [
+        "gun",
+        "faith"
+      ]
+    },
+    "trainsText": "Alchemy, Authority / Gun, Faith",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "alchemy",
+          "grade": "A"
+        }
+      ]
+    },
+    "prerequisiteText": "Alchemy A, a bonded Philosopher's Stone",
+    "storyGate": "bondedPhilosophersStone",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "philosopherTransmuteSoul",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "philosopherTheStone",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "philosopherGreatWork",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "philosopherReconstitute",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "philosopherTruth",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "philosopher",
+    "ladder": "legend"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

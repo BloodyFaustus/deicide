@@ -1,0 +1,28 @@
+{
+  "_id": "oceCBTN9qws7jWqb",
+  "name": "Matter Pouch",
+  "type": "accessory",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "key": "matterPouch",
+    "choices": {
+      "attribute": null,
+      "secondAttribute": null,
+      "skill": null
+    },
+    "description": "<p>Matter cap +3. 10 Dust.</p>",
+    "equipped": false,
+    "identifier": "matterPouch"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

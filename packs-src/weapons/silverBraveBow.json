@@ -1,0 +1,28 @@
+{
+  "_id": "IUPUBYY2u5KvbOWk",
+  "name": "Silver Brave Bow",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "bow",
+    "tier": "silver",
+    "prefix": "brave",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 9, Accuracy +15, Crit 15, Range 2 to 3, Weight 12. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverBraveBow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

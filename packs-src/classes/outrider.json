@@ -1,0 +1,105 @@
+{
+  "_id": "tIdzzEFk4Nw7wTnA",
+  "name": "Outrider",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "mounted"
+    ],
+    "growth": {
+      "str": "B",
+      "mag": "F",
+      "skl": "B",
+      "spd": "S",
+      "def": "C",
+      "res": "D",
+      "cmd": "B"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "riding",
+        "bow"
+      ],
+      "secondary": [
+        "sword",
+        "authority"
+      ]
+    },
+    "trainsText": "Riding, Bow / Sword, Authority",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "riding",
+          "grade": "C"
+        },
+        {
+          "any": [
+            {
+              "prof": "bow",
+              "grade": "D"
+            },
+            {
+              "prof": "sword",
+              "grade": "D"
+            }
+          ]
+        }
+      ]
+    },
+    "prerequisiteText": "Riding C, Bow D or Sword D",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "outriderHarass",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "outriderSkirmish",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "outriderScoutAhead",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "outriderSweepFlank",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "outriderHitAndRun",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "outriderCourier",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "outrider",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

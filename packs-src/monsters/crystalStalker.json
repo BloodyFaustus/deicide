@@ -1,0 +1,212 @@
+{
+  "_id": "u5Js8WFJrOscVOBI",
+  "name": "Crystal Stalker",
+  "type": "monster",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "identifier": "crystalStalker",
+    "level": 5,
+    "hp": {
+      "value": 36,
+      "max": 36
+    },
+    "def": 11,
+    "res": 9,
+    "spd": 14,
+    "mag": 0,
+    "delay": {
+      "mode": "spd",
+      "value": 30
+    },
+    "hitBase": null,
+    "tags": [
+      "beast"
+    ],
+    "boss": false,
+    "divineBeing": false,
+    "weakness": "stone",
+    "resistance": "frost",
+    "immunities": [],
+    "phaseBreaks": [],
+    "yield": {
+      "saturation": 2,
+      "dust": 0,
+      "drops": []
+    },
+    "row": "front",
+    "description": "<p></p>",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Crystal Stalker",
+    "disposition": -1,
+    "actorLink": false,
+    "texture": {
+      "src": "icons/svg/skull.svg"
+    }
+  },
+  "items": [
+    {
+      "_id": "5hGbiwTeWGmXU6PC",
+      "name": "Shard Spit",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "crystalStalkerShardSpit",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "crystalStalker",
+          "rank": null
+        },
+        "description": "<p>M16 single.</p>",
+        "summary": "M16 single",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": {
+          "basis": "flat",
+          "source": "none",
+          "defense": "def",
+          "might": 16,
+          "element": null,
+          "hit": 0,
+          "crit": 0,
+          "weaponLines": [],
+          "strikes": 1,
+          "ignoreDef": 0,
+          "bonuses": [],
+          "ignoreAvoid": false,
+          "perTile": null
+        },
+        "heal": null,
+        "war": {
+          "range": [
+            2,
+            3
+          ],
+          "area": {
+            "shape": "single",
+            "size": 1
+          },
+          "target": "enemy",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "single",
+          "note": ""
+        },
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "partial"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "_id": "bvUQuBQQqyZvXvOs",
+      "name": "Refract",
+      "type": "ability",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "identifier": "crystalStalkerRefract",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "crystalStalker",
+          "rank": null
+        },
+        "description": "<p>Reason damage against it is halved..</p>",
+        "summary": "Reason damage against it is halved.",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": null,
+        "heal": null,
+        "war": {
+          "range": [
+            0,
+            0
+          ],
+          "area": {
+            "shape": "self",
+            "size": 0
+          },
+          "target": "self",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "self",
+          "note": "Reason damage against it is halved."
+        },
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "manual"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true,
+      "startingStatuses": []
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "JiZGAWY0f7whGAfk",
+  "name": "Half Elf",
+  "type": "origin",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "kind": "people",
+    "description": "<p>None.</p>",
+    "growth": {
+      "mag": "D",
+      "spd": "D",
+      "skl": "E",
+      "res": "E"
+    },
+    "identifier": "halfElf"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

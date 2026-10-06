@@ -1,0 +1,74 @@
+{
+  "_id": "3jMuHpCegEZ5yZES",
+  "name": "Deconstruction",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "stateAlchemist",
+      "rank": 1
+    },
+    "description": "<p>Truth M14, single, 3 Mt, SP 8, W8. Against a company, Quality minus 1 permanently.</p>",
+    "summary": "Truth M14, single, 3 Mt, SP 8, W8. Against a company, Quality minus 1 permanently",
+    "tags": [
+      "alchemy",
+      "truth"
+    ],
+    "direct": true,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 3,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 8
+    },
+    "weight": 8,
+    "attack": {
+      "basis": "mag",
+      "source": "alchemy",
+      "defense": "none",
+      "might": 14,
+      "element": "truth",
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": []
+    },
+    "heal": null,
+    "war": {
+      "range": [
+        1,
+        1
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "stateAlchemistDeconstruction"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

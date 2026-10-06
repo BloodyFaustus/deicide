@@ -1,0 +1,381 @@
+{
+  "_id": "JNdJR3d5lCkGpQ6X",
+  "name": "Lust",
+  "type": "monster",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "identifier": "lust",
+    "level": 12,
+    "hp": {
+      "value": 300,
+      "max": 300
+    },
+    "def": 12,
+    "res": 20,
+    "spd": 14,
+    "mag": 20,
+    "delay": {
+      "mode": "fixed",
+      "value": 30
+    },
+    "hitBase": null,
+    "tags": [
+      "homunculus",
+      "boss"
+    ],
+    "boss": true,
+    "divineBeing": false,
+    "weakness": null,
+    "resistance": null,
+    "immunities": [],
+    "phaseBreaks": [
+      {
+        "percent": 50,
+        "note": "Thrall: a Downed PC fights for Lust until healed.",
+        "triggered": false
+      }
+    ],
+    "yield": {
+      "saturation": 0,
+      "dust": 0,
+      "drops": [
+        "redWater",
+        "stoneFragment"
+      ]
+    },
+    "row": "front",
+    "description": "<p></p>",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Lust",
+    "disposition": -1,
+    "actorLink": false,
+    "texture": {
+      "src": "icons/svg/skull.svg"
+    }
+  },
+  "items": [
+    {
+      "_id": "xC9n56yk9rVx3TvB",
+      "name": "Allure",
+      "type": "ability",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "identifier": "lustAllure",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "lust",
+          "rank": null
+        },
+        "description": "<p>One PC attacks an ally on its next turn..</p>",
+        "summary": "One PC attacks an ally on its next turn.",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": null,
+        "heal": null,
+        "war": {
+          "range": [
+            0,
+            0
+          ],
+          "area": {
+            "shape": "single",
+            "size": 1
+          },
+          "target": "enemy",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "single",
+          "note": "One PC attacks an ally on its next turn."
+        },
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "manual"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "_id": "BnPRsSqOvXvAzrtT",
+      "name": "Drain",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "lustDrain",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "lust",
+          "rank": null
+        },
+        "description": "<p>M18 single. Heals Lust for the damage dealt..</p>",
+        "summary": "M18 single. Heals Lust for the damage dealt.",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": {
+          "basis": "flat",
+          "source": "none",
+          "defense": "res",
+          "might": 18,
+          "element": null,
+          "hit": 0,
+          "crit": 0,
+          "weaponLines": [],
+          "strikes": 1,
+          "ignoreDef": 0,
+          "bonuses": [],
+          "ignoreAvoid": false,
+          "perTile": null
+        },
+        "heal": null,
+        "war": {
+          "range": [
+            1,
+            1
+          ],
+          "area": {
+            "shape": "single",
+            "size": 1
+          },
+          "target": "enemy",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "single",
+          "note": "Heals Lust for the damage dealt."
+        },
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "partial"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "_id": "9fOyaF0bAkQ4VzcN",
+      "name": "Veil",
+      "type": "ability",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "identifier": "lustVeil",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "lust",
+          "rank": null
+        },
+        "description": "<p>Avoid +20 until hit..</p>",
+        "summary": "Avoid +20 until hit.",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": null,
+        "heal": null,
+        "war": {
+          "range": [
+            0,
+            0
+          ],
+          "area": {
+            "shape": "self",
+            "size": 0
+          },
+          "target": "self",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "self",
+          "note": "Avoid +20 until hit."
+        },
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "manual"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "_id": "lJ38sSFLrxZVZPWZ",
+      "name": "Caress",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "lustCaress",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "lust",
+          "rank": null
+        },
+        "description": "<p>M12 single.</p>",
+        "summary": "M12 single",
+        "tags": [
+          "truth"
+        ],
+        "direct": true,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": {
+          "basis": "flat",
+          "source": "none",
+          "defense": "none",
+          "might": 12,
+          "element": "truth",
+          "hit": 0,
+          "crit": 0,
+          "weaponLines": [],
+          "strikes": 1,
+          "ignoreDef": 0,
+          "bonuses": [],
+          "ignoreAvoid": false,
+          "perTile": null
+        },
+        "heal": null,
+        "war": {
+          "range": [
+            1,
+            1
+          ],
+          "area": {
+            "shape": "single",
+            "size": 1
+          },
+          "target": "enemy",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "single",
+          "note": ""
+        },
+        "statuses": [
+          {
+            "target": "target",
+            "onCrit": true,
+            "id": "thrall",
+            "turns": null
+          }
+        ],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "partial"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true,
+      "startingStatuses": []
+    }
+  }
+}

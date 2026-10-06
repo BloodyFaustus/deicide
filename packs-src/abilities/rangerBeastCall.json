@@ -1,0 +1,63 @@
+{
+  "_id": "MixU7UEab2BJHUHv",
+  "name": "Beast Call",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "ranger",
+      "rank": 6
+    },
+    "description": "<p>Summon animal company Strength 40 Quality 2, once per encounter.</p>",
+    "summary": "summon animal company Strength 40 Quality 2, once per encounter",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": 1,
+      "per": "encounter"
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "self",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": {
+      "target": "self",
+      "summon": true,
+      "note": "The company enters as one combatant: HP equal to Strength, DEF and RES from Quality, attacks as a company against characters. It takes a front row slot."
+    },
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "rangerBeastCall"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,28 @@
+{
+  "_id": "SUMxprzH6JFLUwgz",
+  "name": "Silver Runed Dagger",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "dagger",
+    "tier": "silver",
+    "prefix": "runed",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 10, Accuracy +25, Crit 25, Range 1, Weight 4. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverRunedDagger"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

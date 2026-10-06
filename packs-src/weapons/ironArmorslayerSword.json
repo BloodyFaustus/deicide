@@ -1,0 +1,28 @@
+{
+  "_id": "Bkg8XAqz2vxhEgCe",
+  "name": "Iron Armorslayer Sword",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "sword",
+    "tier": "iron",
+    "prefix": "armorslayer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 5, Accuracy +10, Crit 5, Range 1, Weight 6. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironArmorslayerSword"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

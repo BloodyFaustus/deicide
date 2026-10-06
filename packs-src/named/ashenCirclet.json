@@ -1,0 +1,50 @@
+{
+  "_id": "MWBfJfI20rq0wHT6",
+  "name": "Ashen Circlet",
+  "type": "named",
+  "img": "icons/svg/holy-shield.svg",
+  "system": {
+    "fills": "accessory",
+    "base": null,
+    "stats": {},
+    "modifiers": [
+      {
+        "key": "channel.max",
+        "value": 12
+      },
+      {
+        "key": "overcast.burnPerPoint",
+        "value": -1
+      },
+      {
+        "key": "attributes.mag",
+        "value": 2,
+        "accessory": true
+      }
+    ],
+    "special": "",
+    "drawback": {
+      "text": "Divine Attention +1 while equipped.",
+      "flags": {
+        "divineAttentionEquipped": 1
+      },
+      "refund": "divineAttentionEquipped"
+    },
+    "pp": 33,
+    "hook": "Hyacinth's island ruins.",
+    "description": "<p>Channel +12. Overcast Burn minus 1 per point (floor 1). MAG +2.</p><p>Drawback: Divine Attention +1 while equipped.</p>",
+    "equipped": false,
+    "identifier": "ashenCirclet"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

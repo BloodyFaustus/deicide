@@ -1,0 +1,97 @@
+{
+  "_id": "DqH2AdTWFYYhEyX7",
+  "name": "Dark Knight",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "infantry"
+    ],
+    "growth": {
+      "str": "A",
+      "mag": "B",
+      "skl": "B",
+      "spd": "C",
+      "def": "B",
+      "res": "C",
+      "cmd": "D"
+    },
+    "hp": 4,
+    "trains": {
+      "primary": [
+        "sword",
+        "void"
+      ],
+      "secondary": [
+        "armor",
+        "lance"
+      ]
+    },
+    "trainsText": "Sword, Void / Armor, Lance",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "sword",
+          "grade": "C"
+        },
+        {
+          "prof": "void",
+          "grade": "D"
+        }
+      ]
+    },
+    "prerequisiteText": "Sword C, Void D",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "darkKnightDarkness",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "darkKnightSouleater",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "darkKnightGrimGuard",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "darkKnightAbyssCleave",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "darkKnightLastBreath",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "darkKnightDreadMastery",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "darkKnight",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

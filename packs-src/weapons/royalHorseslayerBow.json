@@ -1,0 +1,28 @@
+{
+  "_id": "D7Y83PkPp6wy05ua",
+  "name": "Royal Horseslayer Bow",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "bow",
+    "tier": "royal",
+    "prefix": "horseslayer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 16, Accuracy +20, Crit 15, Range 2 to 3, Weight 6. B to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "royalHorseslayerBow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

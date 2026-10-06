@@ -1,0 +1,95 @@
+{
+  "_id": "T1BKAlhhAp1UAyyE",
+  "name": "Alchemist",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 1,
+    "types": [
+      "caster"
+    ],
+    "growth": {
+      "str": "C",
+      "mag": "A",
+      "skl": "B",
+      "spd": "D",
+      "def": "C",
+      "res": "C",
+      "cmd": "C"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "alchemy",
+        "gun"
+      ],
+      "secondary": [
+        "sword",
+        "authority"
+      ]
+    },
+    "trainsText": "Alchemy, Gun / Sword, Authority",
+    "startSpread": {
+      "mag": 4,
+      "cmd": 4,
+      "skl": 2,
+      "res": 2
+    },
+    "prerequisites": null,
+    "prerequisiteText": "",
+    "storyGate": "alchemistCertification",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "alchemistTransmuteStrike",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "alchemistStoneSpike",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "alchemistHarvestEye",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "alchemistWall",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "alchemistDeconstruct",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "alchemistCircle",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {
+      "weapon": "ironGauntlet",
+      "offhand": "ironSatchel",
+      "armor": "ironMedium"
+    },
+    "description": "",
+    "identifier": "alchemist",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

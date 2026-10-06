@@ -1,0 +1,28 @@
+{
+  "_id": "cJ5KOF1BS5Ki57ED",
+  "name": "Royal Horseslayer Gun",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "gun",
+    "tier": "royal",
+    "prefix": "horseslayer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 18, Accuracy +30, Crit 20, Range 2, Weight 8. B to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "royalHorseslayerGun"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

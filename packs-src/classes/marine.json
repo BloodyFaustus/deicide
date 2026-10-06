@@ -1,0 +1,106 @@
+{
+  "_id": "I38ulzcRXHA5CS1z",
+  "name": "Marine",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "naval",
+      "armored"
+    ],
+    "growth": {
+      "str": "A",
+      "mag": "F",
+      "skl": "B",
+      "spd": "C",
+      "def": "A",
+      "res": "D",
+      "cmd": "C"
+    },
+    "hp": 4,
+    "trains": {
+      "primary": [
+        "seamanship",
+        "axe"
+      ],
+      "secondary": [
+        "armor",
+        "gun"
+      ]
+    },
+    "trainsText": "Seamanship, Axe / Armor, Gun",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "seamanship",
+          "grade": "C"
+        },
+        {
+          "any": [
+            {
+              "prof": "armor",
+              "grade": "D"
+            },
+            {
+              "prof": "axe",
+              "grade": "C"
+            }
+          ]
+        }
+      ]
+    },
+    "prerequisiteText": "Seamanship C, Armor D or Axe C",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "marineShieldDeck",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "marineBoardingAxe",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "marineSeaArmor",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "marineHoldFast",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "marineSplashGuard",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "marineLeatherneck",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "marine",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "dr4904IuHpvndj9p",
+  "name": "Manaborne Human",
+  "type": "origin",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "kind": "people",
+    "description": "<p>None.</p>",
+    "growth": {
+      "mag": "D",
+      "res": "D",
+      "skl": "E",
+      "cmd": "E"
+    },
+    "identifier": "manaborne"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,53 @@
+{
+  "_id": "MYE5S4j9SKhGbjhp",
+  "name": "Harvest Eye",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "class",
+      "id": "alchemist",
+      "rank": 4
+    },
+    "description": "<p>Harvest yields 3.</p>",
+    "summary": "Harvest yields 3",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "harvest.yield",
+        "op": "max",
+        "value": 3
+      }
+    ],
+    "roll": null,
+    "automation": "full",
+    "identifier": "alchemistHarvestEye"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

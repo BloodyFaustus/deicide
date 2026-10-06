@@ -1,0 +1,24 @@
+{
+  "_id": "pa5iPH6WRNCsEt1A",
+  "name": "Elixir",
+  "type": "consumable",
+  "img": "icons/svg/chest.svg",
+  "system": {
+    "key": "elixir",
+    "kind": "belt",
+    "quantity": 1,
+    "description": "<p>Heal 60, remove 1 status. 15 Dust.</p>",
+    "identifier": "elixir"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

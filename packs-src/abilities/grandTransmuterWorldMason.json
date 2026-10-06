@@ -1,0 +1,50 @@
+{
+  "_id": "JhMrfYxbTVitmNVe",
+  "name": "World Mason",
+  "type": "ability",
+  "img": "icons/svg/aura.svg",
+  "system": {
+    "type": "mastery",
+    "source": {
+      "kind": "class",
+      "id": "grandTransmuter",
+      "rank": 10
+    },
+    "description": "<p>Transmute Terrain is a free action once per round.</p>",
+    "summary": "Transmute Terrain is a free action once per round",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": 1,
+      "per": "round"
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": {
+      "available": false,
+      "note": "Transmute Terrain has no free action in Dungeon Mode."
+    },
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "grandTransmuterWorldMason"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

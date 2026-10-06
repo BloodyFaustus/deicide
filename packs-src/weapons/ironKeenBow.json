@@ -1,0 +1,28 @@
+{
+  "_id": "X9pdjAjbjnCHI1du",
+  "name": "Iron Keen Bow",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "bow",
+    "tier": "iron",
+    "prefix": "keen",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 6, Accuracy +20, Crit 5, Range 2 to 3, Weight 8. E to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "ironKeenBow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

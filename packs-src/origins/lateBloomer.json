@@ -1,0 +1,30 @@
+{
+  "_id": "lTXqxjl5G2e3mnKo",
+  "name": "Late Bloomer",
+  "type": "origin",
+  "img": "icons/svg/light.svg",
+  "system": {
+    "kind": "talent",
+    "description": "<p>All growth minus 0.1 per stat through level 14, plus 0.2 per stat from 15.</p>",
+    "growth": {
+      "allStats": [
+        {
+          "maxLevel": 14,
+          "value": -1
+        },
+        {
+          "minLevel": 15,
+          "value": 2
+        }
+      ]
+    },
+    "identifier": "lateBloomer"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

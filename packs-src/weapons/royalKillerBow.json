@@ -1,0 +1,28 @@
+{
+  "_id": "7stLQ2oxxztK7Iua",
+  "name": "Royal Killer Bow",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "bow",
+    "tier": "royal",
+    "prefix": "killer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 16, Accuracy +20, Crit 40, Range 2 to 3, Weight 6. B to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "royalKillerBow"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

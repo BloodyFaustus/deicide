@@ -1,0 +1,98 @@
+{
+  "_id": "OxfVJ5AZEvt4hpyj",
+  "name": "Siege Alchemist",
+  "type": "class",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "tier": 2,
+    "types": [
+      "caster",
+      "officer"
+    ],
+    "growth": {
+      "str": "C",
+      "mag": "A",
+      "skl": "A",
+      "spd": "D",
+      "def": "C",
+      "res": "C",
+      "cmd": "B"
+    },
+    "hp": 3,
+    "trains": {
+      "primary": [
+        "alchemy",
+        "gun"
+      ],
+      "secondary": [
+        "authority",
+        "armor"
+      ]
+    },
+    "trainsText": "Alchemy, Gun / Authority, Armor",
+    "startSpread": {},
+    "prerequisites": {
+      "all": [
+        {
+          "prof": "alchemy",
+          "grade": "C"
+        },
+        {
+          "prof": "gun",
+          "grade": "D"
+        }
+      ]
+    },
+    "prerequisiteText": "Alchemy C, Gun D",
+    "storyGate": "",
+    "skills": [
+      {
+        "rank": 1,
+        "id": "siegeAlchemistStoneLance",
+        "mastery": false
+      },
+      {
+        "rank": 2,
+        "id": "siegeAlchemistShell",
+        "mastery": false
+      },
+      {
+        "rank": 4,
+        "id": "siegeAlchemistGunsmith",
+        "mastery": false
+      },
+      {
+        "rank": 6,
+        "id": "siegeAlchemistOrdnanceDoctrine",
+        "mastery": false
+      },
+      {
+        "rank": 8,
+        "id": "siegeAlchemistBreach",
+        "mastery": false
+      },
+      {
+        "rank": 10,
+        "id": "siegeAlchemistSiegemaster",
+        "mastery": true
+      }
+    ],
+    "move": null,
+    "affinities": [],
+    "enemyOnly": false,
+    "layered": false,
+    "grantsFullTruth": false,
+    "choices": [],
+    "kit": {},
+    "description": "",
+    "identifier": "siegeAlchemist",
+    "ladder": "standard"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

@@ -1,0 +1,310 @@
+{
+  "_id": "UehkOUB8SZFYW6Rx",
+  "name": "Mire Drake",
+  "type": "monster",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "identifier": "mireDrake",
+    "level": 10,
+    "hp": {
+      "value": 320,
+      "max": 320
+    },
+    "def": 15,
+    "res": 13,
+    "spd": 12,
+    "mag": 0,
+    "delay": {
+      "mode": "fixed",
+      "value": 30
+    },
+    "hitBase": null,
+    "tags": [
+      "boss",
+      "beast"
+    ],
+    "boss": true,
+    "divineBeing": false,
+    "weakness": "lightning",
+    "resistance": "water",
+    "immunities": [],
+    "phaseBreaks": [
+      {
+        "percent": 50,
+        "note": "Bog Breath hits all enemies.",
+        "triggered": false
+      }
+    ],
+    "yield": {
+      "saturation": 5,
+      "dust": 0,
+      "drops": [
+        "silverWeapon"
+      ]
+    },
+    "row": "front",
+    "description": "<p></p>",
+    "notes": ""
+  },
+  "prototypeToken": {
+    "name": "Mire Drake",
+    "disposition": -1,
+    "actorLink": false,
+    "texture": {
+      "src": "icons/svg/skull.svg"
+    }
+  },
+  "items": [
+    {
+      "_id": "qT04xVEpZeo1RuW4",
+      "name": "Bog Breath",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "mireDrakeBogBreath",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "mireDrake",
+          "rank": null
+        },
+        "description": "<p>M26 row.</p>",
+        "summary": "M26 row",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": {
+          "basis": "flat",
+          "source": "none",
+          "defense": "def",
+          "might": 26,
+          "element": null,
+          "hit": 0,
+          "crit": 0,
+          "weaponLines": [],
+          "strikes": 1,
+          "ignoreDef": 0,
+          "bonuses": [],
+          "ignoreAvoid": false,
+          "perTile": null
+        },
+        "heal": null,
+        "war": {
+          "range": [
+            1,
+            1
+          ],
+          "area": {
+            "shape": "blast",
+            "size": 1
+          },
+          "target": "enemy",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "row",
+          "note": ""
+        },
+        "statuses": [
+          {
+            "target": "target",
+            "onCrit": false,
+            "id": "pinned",
+            "turns": 1
+          }
+        ],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "partial"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "_id": "rw2XCiFRE95F5iJ9",
+      "name": "Tail",
+      "type": "ability",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "identifier": "mireDrakeTail",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "mireDrake",
+          "rank": null
+        },
+        "description": "<p>M34 single.</p>",
+        "summary": "M34 single",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": {
+          "basis": "flat",
+          "source": "none",
+          "defense": "def",
+          "might": 34,
+          "element": null,
+          "hit": 0,
+          "crit": 0,
+          "weaponLines": [],
+          "strikes": 1,
+          "ignoreDef": 0,
+          "bonuses": [],
+          "ignoreAvoid": false,
+          "perTile": null
+        },
+        "heal": null,
+        "war": {
+          "range": [
+            1,
+            1
+          ],
+          "area": {
+            "shape": "single",
+            "size": 1
+          },
+          "target": "enemy",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "single",
+          "note": ""
+        },
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "partial"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    },
+    {
+      "_id": "42NuMVrF4ffMGorr",
+      "name": "Submerge",
+      "type": "ability",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "identifier": "mireDrakeSubmerge",
+        "type": "action",
+        "source": {
+          "kind": "monster",
+          "id": "mireDrake",
+          "rank": null
+        },
+        "description": "<p>Untargetable until its next action, then Ambush: the next move auto hits..</p>",
+        "summary": "Untargetable until its next action, then Ambush: the next move auto hits.",
+        "tags": [],
+        "direct": false,
+        "trigger": "",
+        "usage": {
+          "limit": null,
+          "per": null,
+          "used": 0
+        },
+        "cost": {
+          "channel": 0,
+          "matter": 0,
+          "hp": 0,
+          "dust": 0,
+          "soulPrice": 0
+        },
+        "weight": null,
+        "attack": null,
+        "heal": null,
+        "war": {
+          "range": [
+            0,
+            0
+          ],
+          "area": {
+            "shape": "self",
+            "size": 0
+          },
+          "target": "self",
+          "movement": null,
+          "terrain": false
+        },
+        "dungeon": {
+          "target": "self",
+          "note": "Untargetable until its next action, then Ambush: the next move auto hits."
+        },
+        "statuses": [],
+        "modifiers": [],
+        "roll": null,
+        "art": null,
+        "automation": "manual"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "deicide": {
+          "generated": true
+        }
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true,
+      "startingStatuses": []
+    }
+  }
+}

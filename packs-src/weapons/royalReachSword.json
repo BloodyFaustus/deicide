@@ -1,0 +1,28 @@
+{
+  "_id": "fHUD30FOfr1wPV7s",
+  "name": "Royal Reach Sword",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "sword",
+    "tier": "royal",
+    "prefix": "reach",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 14, Accuracy +25, Crit 15, Range 1 to 2, Weight 4. B to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "royalReachSword"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

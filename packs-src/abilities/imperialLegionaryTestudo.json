@@ -1,0 +1,52 @@
+{
+  "_id": "bTZs6B2HKcM47H28",
+  "name": "Testudo",
+  "type": "ability",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "type": "stance",
+    "source": {
+      "kind": "class",
+      "id": "imperialLegionary",
+      "rank": 1
+    },
+    "description": "<p>DEF +8.</p>",
+    "summary": "DEF +8",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [
+      {
+        "key": "defense.def",
+        "value": 8
+      }
+    ],
+    "roll": null,
+    "automation": "full",
+    "identifier": "imperialLegionaryTestudo"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

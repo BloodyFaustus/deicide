@@ -1,0 +1,22 @@
+{
+  "_id": "ecGJdIXdCnG97j2k",
+  "name": "Iron Medium Armor",
+  "type": "armor",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "description": "<p>DEF +3, RES +1, Burden 1.</p>",
+    "equipped": false,
+    "identifier": "ironMedium"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

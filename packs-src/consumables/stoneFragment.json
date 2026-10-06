@@ -1,0 +1,24 @@
+{
+  "_id": "qZI00QhJFSZJaLK0",
+  "name": "Stone Fragment",
+  "type": "consumable",
+  "img": "icons/svg/chest.svg",
+  "system": {
+    "key": "stoneFragment",
+    "kind": "belt",
+    "quantity": 1,
+    "description": "<p> Not sold.</p>",
+    "identifier": "stoneFragment"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

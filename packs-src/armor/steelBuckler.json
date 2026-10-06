@@ -1,0 +1,24 @@
+{
+  "_id": "YmiU0jc5abtIbmrK",
+  "name": "Steel Buckler",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "buckler",
+    "tier": "steel",
+    "description": "<p>def +1, avoid +5.</p>",
+    "equipped": false,
+    "identifier": "steelBuckler"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

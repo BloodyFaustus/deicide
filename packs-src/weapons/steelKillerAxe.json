@@ -1,0 +1,28 @@
+{
+  "_id": "WoyeL5s4S3hs6TlQ",
+  "name": "Steel Killer Axe",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "axe",
+    "tier": "steel",
+    "prefix": "killer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 12, Accuracy +5, Crit 30, Range 1, Weight 10. D to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "steelKillerAxe"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

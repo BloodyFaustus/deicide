@@ -1,0 +1,30 @@
+{
+  "_id": "FRQgg9TjRk18iexo",
+  "name": "Conscript",
+  "type": "origin",
+  "img": "icons/svg/village.svg",
+  "system": {
+    "kind": "background",
+    "description": "<p>Soldier Rank 2.</p>",
+    "points": {
+      "def": 2,
+      "cmd": 2
+    },
+    "grants": {
+      "classes": [
+        {
+          "id": "soldier",
+          "rank": 2
+        }
+      ]
+    },
+    "identifier": "conscript"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

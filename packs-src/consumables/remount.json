@@ -1,0 +1,24 @@
+{
+  "_id": "Pp1YQCG5a1FxANm2",
+  "name": "Remount",
+  "type": "consumable",
+  "img": "icons/svg/chest.svg",
+  "system": {
+    "key": "remount",
+    "kind": "supply",
+    "quantity": 1,
+    "description": "<p>A dismounted character regains its mount in an Arena. 15 Dust.</p>",
+    "identifier": "remount"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

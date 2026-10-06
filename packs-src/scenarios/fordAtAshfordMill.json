@@ -1,0 +1,136 @@
+{
+  "_id": "SW5GjGG7tN8WqFeH",
+  "name": "Ford at Ashford Mill",
+  "pages": [
+    {
+      "_id": "d5TMH8qTBRpliFqj",
+      "name": "War scenario card",
+      "type": "scenario",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "system": {
+        "identifier": "fordAtAshfordMill",
+        "kind": "war",
+        "warMonth": 3,
+        "difficulty": "standard",
+        "card": {
+          "map": {
+            "size": [
+              24,
+              20
+            ],
+            "grid": "square",
+            "terrainRegions": [
+              "river with a ford and a bridge",
+              "Hill on the Lathander side"
+            ],
+            "fog": false
+          },
+          "flags": {
+            "naval": false,
+            "arena": false
+          },
+          "victory": {
+            "type": "survive",
+            "rounds": 10,
+            "note": "Hold the ford and the bridge for 10 rounds."
+          },
+          "defeat": "Meridian saboteurs reach the mill. Dust track minus 1.",
+          "deployment": {
+            "sheets": "N",
+            "swornSlots": "officers + 2",
+            "companySlots": "2 x soldiers"
+          },
+          "enemy": {
+            "officers": [
+              {
+                "classLine": [
+                  "cadet",
+                  "captain"
+                ],
+                "level": 6,
+                "profile": "standard"
+              }
+            ],
+            "companies": [
+              {
+                "type": "infantry",
+                "quality": 2,
+                "strength": 100,
+                "doctrine": "advance",
+                "count": 5
+              },
+              {
+                "type": "archer",
+                "quality": 2,
+                "strength": 100,
+                "doctrine": "volley",
+                "count": 2
+              }
+            ],
+            "reinforcements": [
+              {
+                "round": 4,
+                "edge": "east",
+                "companies": [
+                  {
+                    "type": "cavalry",
+                    "quality": 3,
+                    "strength": 100,
+                    "doctrine": "advance"
+                  }
+                ]
+              }
+            ]
+          },
+          "intelligence": []
+        },
+        "payout": {
+          "tracks": {
+            "fortifications": 1,
+            "soldiers": 1
+          },
+          "drops": [],
+          "dust": 0,
+          "applied": false
+        },
+        "description": "<p>Month 3. A 24 by 20 map with a river crossed by a ford and a bridge, and a Hill on the Lathander side. Hold the ford and the bridge for 10 rounds.</p><p>Enemy: a level 6 Captain, 5 infantry companies at Quality 2 on Advance, 2 archer companies at Quality 2 on Volley, and 1 cavalry company at Quality 3 arriving on round 4 from the east edge.</p><p>Payout: Fortifications +1, Soldiers +1. Defeat: Meridian saboteurs reach the mill, Dust minus 1.</p>"
+      },
+      "sort": 100000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    },
+    {
+      "_id": "CjvG6GzekBYwOiyI",
+      "name": "Briefing",
+      "type": "text",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "text": {
+        "format": 1,
+        "content": "<p>Month 3. A 24 by 20 map with a river crossed by a ford and a bridge, and a Hill on the Lathander side. Hold the ford and the bridge for 10 rounds.</p><p>Enemy: a level 6 Captain, 5 infantry companies at Quality 2 on Advance, 2 archer companies at Quality 2 on Volley, and 1 cavalry company at Quality 3 arriving on round 4 from the east edge.</p><p>Payout: Fortifications +1, Soldiers +1. Defeat: Meridian saboteurs reach the mill, Dust minus 1.</p>"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {}
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

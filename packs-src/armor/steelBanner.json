@@ -1,0 +1,24 @@
+{
+  "_id": "TuoWZiNZPGudFIYo",
+  "name": "Steel Banner",
+  "type": "offhand",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "line": "banner",
+    "tier": "steel",
+    "description": "<p>companyMorale +10.</p>",
+    "equipped": false,
+    "identifier": "steelBanner"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "_id": "Wo8uy1B31NaVoym7",
+  "name": "Boarding Cut",
+  "type": "ability",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "type": "action",
+    "source": {
+      "kind": "class",
+      "id": "corsair",
+      "rank": 1
+    },
+    "description": "<p>Sword M6 W6, +4 vs Naval.</p>",
+    "summary": "sword M6 W6, +4 vs Naval",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": 6,
+    "attack": {
+      "basis": "str",
+      "source": "weapon",
+      "defense": "def",
+      "might": 6,
+      "element": null,
+      "hit": 0,
+      "crit": 0,
+      "weaponLines": [
+        "sword"
+      ],
+      "strikes": 1,
+      "ignoreDef": 0,
+      "bonuses": [
+        {
+          "when": {
+            "targetClassType": "naval"
+          },
+          "might": 4
+        }
+      ]
+    },
+    "heal": null,
+    "war": {
+      "range": null,
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "enemy",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "partial",
+    "identifier": "corsairBoardingCut"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

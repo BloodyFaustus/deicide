@@ -1,0 +1,28 @@
+{
+  "_id": "qdWdm4BvHnciGr3M",
+  "name": "Silver Killer Dagger",
+  "type": "weapon",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "line": "dagger",
+    "tier": "silver",
+    "prefix": "killer",
+    "forge": 0,
+    "element": null,
+    "description": "<p>Might 9, Accuracy +25, Crit 50, Range 1, Weight 4. C to wield.</p>",
+    "equipped": false,
+    "quantity": 1,
+    "identifier": "silverKillerDagger"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "deicide": {
+      "generated": true
+    }
+  }
+}

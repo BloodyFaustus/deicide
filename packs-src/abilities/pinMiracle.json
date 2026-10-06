@@ -1,0 +1,59 @@
+{
+  "_id": "vZSzJH2TBzjjVzUa",
+  "name": "Miracle",
+  "type": "ability",
+  "img": "icons/svg/shield.svg",
+  "system": {
+    "type": "reaction",
+    "source": {
+      "kind": "pin",
+      "id": "miraclePin",
+      "rank": null
+    },
+    "description": "<p>Once per encounter, survive a lethal hit at 1 HP.</p>",
+    "summary": "Once per encounter, survive a lethal hit at 1 HP",
+    "tags": [],
+    "direct": false,
+    "trigger": "Once per encounter, survive a lethal hit at 1 HP",
+    "usage": {
+      "limit": 1,
+      "per": "encounter"
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": {
+      "range": [
+        0,
+        0
+      ],
+      "area": {
+        "shape": "single",
+        "size": 1
+      },
+      "target": "self",
+      "movement": null,
+      "terrain": false
+    },
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "pinMiracle"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

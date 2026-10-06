@@ -1,0 +1,19 @@
+<div class="deicide-card action company">
+  <header class="card-header">
+    <img src="{{attacker.img}}" alt="{{attacker.name}}">
+    <div>
+      <h3>{{attacker.name}} attacks {{target.name}}</h3>
+      <p class="meta">Quality {{attacker.system.quality}} ({{attacker.system.derived.qualityGrade}}), Strength {{attacker.system.strength}}{{#if charge}}, charge{{/if}}</p>
+    </div>
+  </header>
+  <p class="roll-line">Hit {{hit}}%: d100 {{roll}}, {{#if success}}hit{{else}}miss{{/if}}</p>
+  <details class="breakdown">
+    <summary>{{#if (eq targetKind "company")}}Strength{{else}}HP{{/if}} loss {{damage.total}}</summary>
+    <ul class="plain">
+      <li>Attack {{damage.attack}}</li>
+      <li>Defense {{damage.defense}}</li>
+      {{#if (ne damage.multiplier 1)}}<li>x{{damage.multiplier}}</li>{{/if}}
+    </ul>
+  </details>
+  {{#if success}}<button type="button" class="apply" data-action="applyTarget" data-index="0">Apply {{damage.total}}</button>{{/if}}
+</div>

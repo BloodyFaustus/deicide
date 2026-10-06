@@ -1,0 +1,38 @@
+{
+  "_id": "8Mlw0F0PeRA6Sa3A",
+  "name": "Dune Hunter",
+  "type": "origin",
+  "img": "icons/svg/village.svg",
+  "system": {
+    "kind": "background",
+    "description": "<p>Static (max 5), Omen, Lightning Strike origin Action. Soldier Rank 2.</p>",
+    "points": {
+      "str": 2,
+      "spd": 2
+    },
+    "grants": {
+      "classes": [
+        {
+          "id": "soldier",
+          "rank": 2
+        }
+      ],
+      "abilities": [
+        "originLightningStrike"
+      ],
+      "engines": [
+        "originOmen"
+      ],
+      "staticCharge": true
+    },
+    "story": true,
+    "identifier": "duneHunter"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}

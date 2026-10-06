@@ -1,0 +1,47 @@
+{
+  "_id": "oKHN8UbBbwJQY3t4",
+  "name": "Dual Wield",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "type": "support",
+    "source": {
+      "kind": "pin",
+      "id": "dualWieldPin",
+      "rank": null
+    },
+    "description": "<p>Sidearm attacks with every weapon attack at Might minus 3.</p>",
+    "summary": "Sidearm attacks with every weapon attack at Might minus 3",
+    "tags": [],
+    "direct": false,
+    "trigger": "",
+    "usage": {
+      "limit": null,
+      "per": null
+    },
+    "cost": {
+      "channel": 0,
+      "matter": 0,
+      "hp": 0,
+      "dust": 0,
+      "soulPrice": 0
+    },
+    "weight": null,
+    "attack": null,
+    "heal": null,
+    "war": null,
+    "dungeon": null,
+    "statuses": [],
+    "modifiers": [],
+    "roll": null,
+    "automation": "manual",
+    "identifier": "pinDualWield"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {}
+}
